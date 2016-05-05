@@ -22,6 +22,13 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('dist/css'));
 });
 
+// Watch Files For Changes
+gulp.task('watch', function() {
+    gulp.watch('js/*.js', ['lint', 'scripts']);
+    gulp.watch('components/*.jsx', ['lint', 'scripts']);
+    gulp.watch('scss/*.scss', ['sass']);
+});
+
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
     return gulp.src('js/*.js')
@@ -30,12 +37,6 @@ gulp.task('scripts', function() {
         .pipe(rename('all.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
-});
-
-// Watch Files For Changes
-gulp.task('watch', function() {
-    gulp.watch('js/*.js', ['lint', 'scripts']);
-    gulp.watch('scss/*.scss', ['sass']);
 });
 
 // Default Task
