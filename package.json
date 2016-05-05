@@ -1,0 +1,23 @@
+{
+  "name": "urban-college-affordability",
+  "version": "0.0.1",
+  "description": "Static reports of college affordability.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/phase2tech/urban-college-affordability.git"
+  },
+  "keywords": [
+    "urban",
+    "college"
+  ],
+  "author": "Peter Cho",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/phase2tech/urban-college-affordability#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
