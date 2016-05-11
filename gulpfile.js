@@ -1,12 +1,30 @@
+'use strict';
+
 // Include gulp
-var gulp = require('gulp');
+let gulp = require('gulp');
 
 // Include Our Plugins
-var jshint = require('gulp-jshint');
-var sass = require('gulp-sass');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var rename = require('gulp-rename');
+let fs = require('fs'),
+  react = require('react'),
+  reactDOM = require('react-dom/server'),
+  babel = require('gulp-babel'),
+  jshint = require('gulp-jshint'),
+  sass = require('gulp-sass'),
+  concat = require('gulp-concat'),
+  uglify = require('gulp-uglify'),
+  rename = require('gulp-rename'),
+  babelRegister = require('babel-register')({
+    extensions: ['.jsx']
+  });
+
+//let Test = require('components/test/test');
+
+gulp.task('create', function() {
+  console.log('asd');
+  return gulp.src('components/**/*.jsx')
+    .pipe(babel())
+    .pipe(gulp.dest('dist/sdf'));
+});
 
 // Lint Tasks
 // > gulp lint
@@ -19,7 +37,7 @@ gulp.task('lint', function() {
 // Compile Our Sass
 // > gulp sass
 gulp.task('sass', function() {
-  return gulp.src('scss/*.scss')
+  return gulp.src('components/**/*.scss')
     .pipe(sass())
     .pipe(gulp.dest('dist/css'));
 });
