@@ -1,29 +1,40 @@
+/** @jsx React.DOM */
 'use strict';
 
 // Include gulp
 let gulp = require('gulp');
 
+require('babel-core/register');
+
 // Include Our Plugins
 let fs = require('fs'),
-  react = require('react'),
-  reactDOM = require('react-dom/server'),
+  React = require('react'),
+  ReactDOMServer = require('react-dom/server'),
+  wiredep = require('wiredep').stream,
   babel = require('gulp-babel'),
   jshint = require('gulp-jshint'),
   sass = require('gulp-sass'),
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
-  rename = require('gulp-rename'),
-  babelRegister = require('babel-register')({
-    extensions: ['.jsx']
-  });
+  rename = require('gulp-rename');
 
-//let Test = require('components/test/test');
+require('node-jsx').install();
 
+let Test = React.createFactory(require('./components/test/test'));
+
+
+// Create static artifact
 gulp.task('create', function() {
-  console.log('asd');
-  return gulp.src('components/**/*.jsx')
-    .pipe(babel())
-    .pipe(gulp.dest('dist/sdf'));
+
+  gulp.src('components/**/*.jsx')
+    .pipe(ReactDOMServer.renderToStaticMarkup(Test({})))
+    .pipe(dest('dist', {ext: '.html'}))
+    .pipe(gulp.dest('dist/qwer'));
+
+  // gulp.src('components/**/*.jsx')
+  //   .pipe(babel())
+  //   .pipe(gulp.dest('dist/sdf'));
+  return;
 });
 
 // Lint Tasks

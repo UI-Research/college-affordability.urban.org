@@ -1,10 +1,11 @@
+const React = require('react');
 
-var Test = React.createClass({
-  render: function() {
+const Test = React.createClass({
+  render: () => {
     return (
-      <div className="commentBox">
-        Hello, world! I am a CommentBox.
-      </div>
+      <h1>asdf</h1>
     );
   }
 });
+
+module.exports = Test;
