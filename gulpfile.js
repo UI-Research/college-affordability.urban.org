@@ -16,7 +16,11 @@ let fs = require('fs'),
   sass = require('gulp-sass'),
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
-  rename = require('gulp-rename');
+  rename = require('gulp-rename'),
+  fs = require('fs'),
+  parallel = require('concurrent-transform'),
+  os = require('os'),
+  imageResize = require('gulp-image-resize');
 
 require('node-jsx').install();
 
@@ -74,12 +78,7 @@ gulp.task('scripts', function() {
 
 // Generate low and high quality versions of images.
 // > gulp processImages
-gulp.task('processImages', function () {
-  let fs = require('fs');
-  let parallel = require('concurrent-transform');
-  let os = require('os');
-  let imageResize = require('gulp-image-resize');
-  
+gulp.task('processImages', function () {  
   fs.stat('images', function (err, stats) {
     if (err && err.code === 'ENOENT') {
       console.log('Can not process images - images directory does not exist');
