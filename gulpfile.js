@@ -72,8 +72,13 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('dist/js'));
 });
 
+// Generate low and high quality versions of images.
+// > gulp processImages
 gulp.task('processImages', function () {
   let fs = require('fs');
+  let parallel = require('concurrent-transform');
+  let os = require('os');
+  let imageResize = require('gulp-image-resize');
   
   fs.stat('images', function (err, stats) {
     if (err && err.code === 'ENOENT') {
@@ -84,20 +89,20 @@ gulp.task('processImages', function () {
       throw err;
     }
     if (stats.isDirectory()) {
-      let parallel = require('concurrent-transform');
-      let os = require('os');
-      let imageResize = require('gulp-image-resize');
-
-      gulp.src('images/*.{jpg,png}')
+      // Generate low quality thumbnail image version to serve static pages faster.
+      gulp.src('images/**/*.{jpg,png}')
         .pipe(parallel(
-          imageResize({ width: 200, height: 200, quality: 0.6 }),
+          // Crop to exact size.
+          imageResize({ width: 200, height: 200, quality: 0.4, crop: true }),
           os.cpus().length
         ))
         .pipe(gulp.dest('dist/images/preview'));
       
+      // Generate high quality, image version that is still not too large.
       gulp.src('images/*.{jpg,png}')
         .pipe(parallel(
-          imageResize({ width: 1200, height: 900, quality: 1 }),
+          // No cropping, allows to maintain aspect ratio.
+          imageResize({ width: 1200, height: 1000, quality: 1 }),
           os.cpus().length
         ))
         .pipe(gulp.dest('dist/images/large'));
