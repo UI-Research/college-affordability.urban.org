@@ -43,6 +43,8 @@
     "react-dom": "^15.0.2",
     "react-tools": "^0.13.3",
     "webpack": "^1.13.0",
-    "wiredep": "^4.0.0"
+    "wiredep": "^4.0.0",
+    "gulp-image-resize": "^0.8.0",
+    "concurrent-transform": "^1.0.0"
   }
 }

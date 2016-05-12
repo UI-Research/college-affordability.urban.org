@@ -64,12 +64,45 @@ gulp.task('watch', function() {
 // Concatenate & Minify JS
 // > gulp scripts
 gulp.task('scripts', function() {
-    return gulp.src('js/*.js')
-      .pipe(concat('all.js'))
-      .pipe(gulp.dest('dist'))
-      .pipe(rename('all.min.js'))
-      .pipe(uglify())
-      .pipe(gulp.dest('dist/js'));
+  return gulp.src('js/*.js')
+    .pipe(concat('all.js'))
+    .pipe(gulp.dest('dist'))
+    .pipe(rename('all.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('dist/js'));
+});
+
+gulp.task('processImages', function () {
+  let fs = require('fs');
+  
+  fs.stat('images', function (err, stats) {
+    if (err && err.code === 'ENOENT') {
+      console.log('Can not process images - images directory does not exist');
+      return false;
+    }
+    else if (err) {
+      throw err;
+    }
+    if (stats.isDirectory()) {
+      let parallel = require('concurrent-transform');
+      let os = require('os');
+      let imageResize = require('gulp-image-resize');
+
+      gulp.src('images/*.{jpg,png}')
+        .pipe(parallel(
+          imageResize({ width: 200, height: 200, quality: 0.6 }),
+          os.cpus().length
+        ))
+        .pipe(gulp.dest('dist/images/preview'));
+      
+      gulp.src('images/*.{jpg,png}')
+        .pipe(parallel(
+          imageResize({ width: 1200, height: 900, quality: 1 }),
+          os.cpus().length
+        ))
+        .pipe(gulp.dest('dist/images/large'));
+    }
+  });
 });
 
 // Default Tasks
