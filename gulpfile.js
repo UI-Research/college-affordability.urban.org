@@ -10,7 +10,7 @@ require('babel-core/register');
 let fs = require('fs'),
   React = require('react'),
   ReactDOMServer = require('react-dom/server'),
-  wiredep = require('wiredep').stream,
+  glob = require('glob'),
   babel = require('gulp-babel'),
   jshint = require('gulp-jshint'),
   sass = require('gulp-sass'),
@@ -26,16 +26,31 @@ let Test = React.createFactory(require('./components/test/test'));
 // Create static artifact
 gulp.task('create', function() {
 
-  gulp.src('components/**/*.jsx')
-    .pipe(ReactDOMServer.renderToStaticMarkup(Test({})))
-    .pipe(dest('dist', {ext: '.html'}))
-    .pipe(gulp.dest('dist/qwer'));
+  let options = {};
+
+  glob('pages/**/*.jsx', (er, files) => {
+
+    files.map( (file) => {
+      //console.log(file);
+      let Trigger = React.createFactory(require('./' + file));
+      console.log(ReactDOMServer.renderToStaticMarkup(Trigger()));
+    })
+
+
+    //console.log(ReactDOMServer.renderToStaticMarkup(Test({})));
+  });
+
+  // gulp.src('components/**/*.jsx')
+  //   .pipe(ReactDOMServer.renderToStaticMarkup(Test({})))
+  //   .pipe(testega())
+  //   .pipe(gulp.dest('dist/qwer'));
 
   // gulp.src('components/**/*.jsx')
   //   .pipe(babel())
   //   .pipe(gulp.dest('dist/sdf'));
   return;
 });
+
 
 // Lint Tasks
 // > gulp lint
