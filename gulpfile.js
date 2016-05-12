@@ -99,7 +99,7 @@ gulp.task('processImages', function () {
         .pipe(gulp.dest('dist/images/preview'));
       
       // Generate high quality, image version that is still not too large.
-      gulp.src('images/*.{jpg,png}')
+      gulp.src('images/**/*.{jpg,png}')
         .pipe(parallel(
           // No cropping, allows to maintain aspect ratio.
           imageResize({ width: 1200, height: 1000, quality: 1 }),
