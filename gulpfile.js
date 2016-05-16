@@ -26,6 +26,9 @@ require('node-jsx').install();
 
 let Test = React.createFactory(require('./components/test/test'));
 
+let src_image_dir = 'images',
+  dist_image_dir = 'dist/images';
+
 
 // Create static artifact
 gulp.task('create', function() {
@@ -89,22 +92,22 @@ gulp.task('processImages', function () {
     }
     if (stats.isDirectory()) {
       // Generate low quality thumbnail image version to serve static pages faster.
-      gulp.src('images/**/*.{jpg,png}')
+      gulp.src(src_image_dir + '/**/*.{jpg,png}')
         .pipe(parallel(
           // Crop to exact size.
           imageResize({ width: 200, height: 200, quality: 0.4, crop: true }),
           os.cpus().length
         ))
-        .pipe(gulp.dest('dist/images/preview'));
+        .pipe(gulp.dest(dist_image_dir + '/preview'));
       
       // Generate high quality, image version that is still not too large.
-      gulp.src('images/**/*.{jpg,png}')
+      gulp.src(src_image_dir + '/**/*.{jpg,png}')
         .pipe(parallel(
           // No cropping, allows to maintain aspect ratio.
           imageResize({ width: 1200, height: 1000, quality: 1 }),
           os.cpus().length
         ))
-        .pipe(gulp.dest('dist/images/large'));
+        .pipe(gulp.dest(dist_image_dir + '/large'));
     }
   });
 });
