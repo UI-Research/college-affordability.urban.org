@@ -2,12 +2,6 @@
 
 This repository encompasses the Urban College Affordability Static Site Generation Project.
 
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
 ### Set up ###
 
 1. Install Homebrew (http://brew.sh/)
