@@ -2,7 +2,8 @@
 'use strict';
 
 // Include gulp
-let gulp = require('gulp');
+let gulp = require('gulp'),
+    sass = require('gulp-sass');
 
 require('babel-core/register');
 
@@ -13,7 +14,6 @@ let fs = require('fs-extra'),
   glob = require('glob'),
   babel = require('gulp-babel'),
   jshint = require('gulp-jshint'),
-  sass = require('gulp-sass'),
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
   rename = require('gulp-rename');
@@ -23,11 +23,9 @@ require('node-jsx').install();
 
 // Create static artifact
 gulp.task('create', function() {
-
   let options = {};
 
   glob('pages/**/*.jsx', (er, files) => {
-
     files.map( (file) => {
       console.log(file);
       let filepath = file.split('/');
@@ -41,7 +39,6 @@ gulp.task('create', function() {
       fs.mkdirsSync('dist');
       fs.writeFile('dist/' + filepath, ReactDOMServer.renderToStaticMarkup(fragment()));
     })
-
   });
 
   return;
@@ -61,7 +58,9 @@ gulp.task('lint', function() {
 gulp.task('sass', function() {
   return gulp.src('components/**/*.scss')
     .pipe(concat('all.css'))
-    .pipe(sass({outputStyle: 'compressed'})).on('error', sass.logError)
+    .pipe(sass({
+      outputStyle: 'compressed'
+    })).on('error', sass.logError)
     .pipe(gulp.dest('dist/css'));
 });
 

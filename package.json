@@ -44,6 +44,7 @@
     "map-stream": "0.0.6",
     "marked": "^0.3.5",
     "node-jsx": "^0.13.3",
+    "node-reset-scss": "^1.0.1",
     "react": "^15.0.2",
     "react-dom": "^15.0.2",
     "react-router": "^2.4.0",
