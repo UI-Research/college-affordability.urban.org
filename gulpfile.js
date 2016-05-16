@@ -22,7 +22,8 @@ require('node-jsx').install();
 
 
 // Create static artifact
-gulp.task('create', function() {
+// > gulp react
+gulp.task('react', function() {
   let options = {};
 
   glob('pages/**/*.jsx', (er, files) => {
@@ -85,4 +86,4 @@ gulp.task('scripts', function() {
 
 // Default Tasks
 // > gulp
-gulp.task('default', ['lint', 'sass', 'scripts', 'watch']);
+gulp.task('default', ['lint', 'sass', 'react', 'scripts', 'watch']);
