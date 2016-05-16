@@ -1,6 +1,8 @@
 /** @jsx React.DOM */
 'use strict';
 
+const DATA_REPO_URL = 'https://github.com/UrbanInstitute/ed-data';
+
 // Include gulp
 let gulp = require('gulp'),
     sass = require('gulp-sass');
@@ -95,7 +97,8 @@ gulp.task('clone-data', function () {
   try {
     let stats = fs.statSync(urban_repo_dir);
     if (stats.isDirectory()) {
-      del.sync([urban_repo_dir + '/**', urban_repo_dir], { force: true });
+      del.sync(urban_repo_dir + '/**', { force: true });
+      del.sync(urban_repo_dir, { force: true });
       console.log('removed existing dir ' + urban_repo_dir);
     }
   }
@@ -106,7 +109,7 @@ gulp.task('clone-data', function () {
     }
   }
   
-  git.clone('https://github.com/UrbanInstitute/ed-data', { args: urban_repo_dir }, function (err) {
+  git.clone(DATA_REPO_URL, { args: urban_repo_dir }, function (err) {
     if (err) {
       throw err;
     }
