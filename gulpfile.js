@@ -40,7 +40,6 @@ gulp.task('create', function() {
 
       fs.mkdirsSync('dist');
       fs.writeFile('dist/' + filepath, ReactDOMServer.renderToStaticMarkup(fragment()));
-      console.log(ReactDOMServer.renderToStaticMarkup(fragment()));
     })
 
   });
@@ -61,7 +60,8 @@ gulp.task('lint', function() {
 // > gulp sass
 gulp.task('sass', function() {
   return gulp.src('components/**/*.scss')
-    .pipe(sass())
+    .pipe(concat('all.css'))
+    .pipe(sass({outputStyle: 'compressed'})).on('error', sass.logError)
     .pipe(gulp.dest('dist/css'));
 });
 
