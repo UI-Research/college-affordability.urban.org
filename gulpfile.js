@@ -1,7 +1,10 @@
 /** @jsx React.DOM */
 'use strict';
 
-const DATA_REPO_URL = 'https://github.com/UrbanInstitute/ed-data';
+// Urban's data git repo.
+const URBAN_REPO_URL = 'https://github.com/UrbanInstitute/ed-data';
+// The local dir for Urban's data.
+const URBAN_DATA_DIR = 'external_data';
 
 // Include gulp
 let gulp = require('gulp'),
@@ -20,12 +23,10 @@ let fs = require('fs-extra'),
   uglify = require('gulp-uglify'),
   rename = require('gulp-rename'),
   git = require('gulp-git'),
-  del = require('del');
+  del = require('del'),
+  winston = require('winston');
 
 require('node-jsx').install();
-
-
-let urban_repo_dir = 'external_data';
 
 
 // Create static artifact
@@ -95,11 +96,11 @@ gulp.task('scripts', function() {
 gulp.task('clone-data', function () {
   // Start fresh, remove if alredy exists.
   try {
-    let stats = fs.statSync(urban_repo_dir);
+    let stats = fs.statSync(URBAN_DATA_DIR);
     if (stats.isDirectory()) {
-      del.sync(urban_repo_dir + '/**', { force: true });
-      del.sync(urban_repo_dir, { force: true });
-      console.log('removed existing dir ' + urban_repo_dir);
+      del.sync(URBAN_DATA_DIR + '/**', { force: true });
+      del.sync(URBAN_DATA_DIR, { force: true });
+      winston.info('removed existing dir ' + URBAN_DATA_DIR);
     }
   }
   catch (e) {
@@ -109,7 +110,7 @@ gulp.task('clone-data', function () {
     }
   }
   
-  git.clone(DATA_REPO_URL, { args: urban_repo_dir }, function (err) {
+  git.clone(URBAN_REPO_URL, { args: URBAN_DATA_DIR }, function (err) {
     if (err) {
       throw err;
     }
