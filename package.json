@@ -44,6 +44,7 @@
     "react-tools": "^0.13.3",
     "webpack": "^1.13.0",
     "wiredep": "^4.0.0",
-    "gulp-git": "^1.7.1"
+    "gulp-git": "^1.7.1",
+    "del": "^2.2.0"
   }
 }

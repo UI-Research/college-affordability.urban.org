@@ -17,11 +17,14 @@ let fs = require('fs'),
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
   rename = require('gulp-rename'),
-  git = require('gulp-git');
+  git = require('gulp-git'),
+  del = require('del');
 
 require('node-jsx').install();
 
 let Test = React.createFactory(require('./components/test/test'));
+
+let urban_repo_dir = 'external_data';
 
 
 // Create static artifact
@@ -73,10 +76,25 @@ gulp.task('scripts', function() {
       .pipe(gulp.dest('dist/js'));
 });
 
-// Pull data from the repository.
-// > gulp pull-data
-gulp.task('pull-data', function () {
-  git.clone('https://github.com/UrbanInstitute/ed-data', { args: 'dist/ed-data' }, function (err) {
+// Clone/pull data from the repository.
+// > gulp clone-data
+gulp.task('clone-data', function () {
+  // Start fresh, remove if alredy exists.
+  try {
+    let stats = fs.statSync(urban_repo_dir);
+    if (stats.isDirectory()) {
+      del.sync([urban_repo_dir + '/**', urban_repo_dir], { force: true });
+      console.log('removed existing dir ' + urban_repo_dir);
+    }
+  }
+  catch (e) {
+    // ENOENT is not exists - throw if it's anything else.
+    if (e.code != 'ENOENT') {
+      throw e;
+    }
+  }
+  
+  git.clone('https://github.com/UrbanInstitute/ed-data', { args: urban_repo_dir }, function (err) {
     if (err) {
       throw err;
     }
