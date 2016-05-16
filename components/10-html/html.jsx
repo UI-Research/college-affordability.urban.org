@@ -4,12 +4,12 @@ const React = require('react');
 const HTML = React.createClass({
   propTypes: {
     title: React.PropTypes.string,
-    content: React.PropTypes.string,
+    template: React.PropTypes.string,
   },
   getDefaultProps: function() {
     return {
       title: 'Page',
-      content: 'Placeholder'
+      template: 'Placeholder'
     };
   },
   render: function() {
@@ -21,7 +21,7 @@ const HTML = React.createClass({
           <title>{this.props.title} - Urban Institute</title>
         </head>
         <body>
-          {this.props.content}
+          {this.props.template}
         </body>
       </html>
     );

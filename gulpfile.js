@@ -20,8 +20,6 @@ let fs = require('fs'),
 
 require('node-jsx').install();
 
-let Test = React.createFactory(require('./components/test/test'));
-
 
 // Create static artifact
 gulp.task('create', function() {
