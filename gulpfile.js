@@ -24,7 +24,7 @@ let fs = require('fs-extra'),
   rename = require('gulp-rename'),
   git = require('gulp-git'),
   del = require('del'),
-  winston = require('winston');
+  log = require('winston');
 
 require('node-jsx').install();
 
@@ -100,7 +100,7 @@ gulp.task('clone-data', function () {
     if (stats.isDirectory()) {
       del.sync(URBAN_DATA_DIR + '/**', { force: true });
       del.sync(URBAN_DATA_DIR, { force: true });
-      winston.info('removed existing dir ' + URBAN_DATA_DIR);
+      log.info('removed existing dir ' + URBAN_DATA_DIR);
     }
   }
   catch (e) {
