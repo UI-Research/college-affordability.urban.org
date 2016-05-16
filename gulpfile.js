@@ -29,23 +29,12 @@ gulp.task('create', function() {
   glob('pages/**/*.jsx', (er, files) => {
 
     files.map( (file) => {
-      //console.log(file);
       let Trigger = React.createFactory(require('./' + file));
       console.log(ReactDOMServer.renderToStaticMarkup(Trigger()));
     })
 
-
-    //console.log(ReactDOMServer.renderToStaticMarkup(Test({})));
   });
 
-  // gulp.src('components/**/*.jsx')
-  //   .pipe(ReactDOMServer.renderToStaticMarkup(Test({})))
-  //   .pipe(testega())
-  //   .pipe(gulp.dest('dist/qwer'));
-
-  // gulp.src('components/**/*.jsx')
-  //   .pipe(babel())
-  //   .pipe(gulp.dest('dist/sdf'));
   return;
 });
 
