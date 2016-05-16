@@ -7,10 +7,10 @@ let gulp = require('gulp');
 require('babel-core/register');
 
 // Include Our Plugins
-let fs = require('fs'),
+let fs = require('fs-extra'),
   React = require('react'),
   ReactDOMServer = require('react-dom/server'),
-  wiredep = require('wiredep').stream,
+  glob = require('glob'),
   babel = require('gulp-babel'),
   jshint = require('gulp-jshint'),
   sass = require('gulp-sass'),
@@ -20,22 +20,33 @@ let fs = require('fs'),
 
 require('node-jsx').install();
 
-let Test = React.createFactory(require('./components/test/test'));
-
 
 // Create static artifact
 gulp.task('create', function() {
 
-  gulp.src('components/**/*.jsx')
-    .pipe(ReactDOMServer.renderToStaticMarkup(Test({})))
-    .pipe(dest('dist', {ext: '.html'}))
-    .pipe(gulp.dest('dist/qwer'));
+  let options = {};
 
-  // gulp.src('components/**/*.jsx')
-  //   .pipe(babel())
-  //   .pipe(gulp.dest('dist/sdf'));
+  glob('pages/**/*.jsx', (er, files) => {
+
+    files.map( (file) => {
+      console.log(file);
+      let filepath = file.split('/');
+      filepath.shift();
+      filepath = filepath.join('/').replace('jsx', 'html');
+
+      console.log(filepath);
+
+      let fragment = React.createFactory(require('./' + file));
+
+      fs.mkdirsSync('dist');
+      fs.writeFile('dist/' + filepath, ReactDOMServer.renderToStaticMarkup(fragment()));
+    })
+
+  });
+
   return;
 });
+
 
 // Lint Tasks
 // > gulp lint
@@ -49,7 +60,8 @@ gulp.task('lint', function() {
 // > gulp sass
 gulp.task('sass', function() {
   return gulp.src('components/**/*.scss')
-    .pipe(sass())
+    .pipe(concat('all.css'))
+    .pipe(sass({outputStyle: 'compressed'})).on('error', sass.logError)
     .pipe(gulp.dest('dist/css'));
 });
 
@@ -58,7 +70,7 @@ gulp.task('sass', function() {
 gulp.task('watch', function() {
   gulp.watch('js/*.js', ['lint', 'scripts']);
   gulp.watch('components/*.jsx', ['lint', 'scripts']);
-  gulp.watch('scss/*.scss', ['sass']);
+  gulp.watch('components/**/*.scss', ['sass']);
 });
 
 // Concatenate & Minify JS
