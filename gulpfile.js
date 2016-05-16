@@ -16,7 +16,8 @@ let fs = require('fs'),
   sass = require('gulp-sass'),
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
-  rename = require('gulp-rename');
+  rename = require('gulp-rename'),
+  git = require('gulp-git');
 
 require('node-jsx').install();
 
@@ -71,6 +72,16 @@ gulp.task('scripts', function() {
       .pipe(uglify())
       .pipe(gulp.dest('dist/js'));
 });
+
+// Pull data from the repository.
+// > gulp pull-data
+gulp.task('pull-data', function () {
+  git.clone('https://github.com/UrbanInstitute/ed-data', { args: 'dist/ed-data' }, function (err) {
+    if (err) {
+      throw err;
+    }
+  });
+})
 
 // Default Tasks
 // > gulp
