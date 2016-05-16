@@ -7,7 +7,7 @@ let gulp = require('gulp');
 require('babel-core/register');
 
 // Include Our Plugins
-let fs = require('fs'),
+let fs = require('fs-extra'),
   React = require('react'),
   ReactDOMServer = require('react-dom/server'),
   glob = require('glob'),
@@ -29,8 +29,18 @@ gulp.task('create', function() {
   glob('pages/**/*.jsx', (er, files) => {
 
     files.map( (file) => {
-      let Trigger = React.createFactory(require('./' + file));
-      console.log(ReactDOMServer.renderToStaticMarkup(Trigger()));
+      console.log(file);
+      let filepath = file.split('/');
+      filepath.shift();
+      filepath = filepath.join('/').replace('jsx', 'html');
+
+      console.log(filepath);
+
+      let fragment = React.createFactory(require('./' + file));
+
+      fs.mkdirsSync('dist');
+      fs.writeFile('dist/' + filepath, ReactDOMServer.renderToStaticMarkup(fragment()));
+      console.log(ReactDOMServer.renderToStaticMarkup(fragment()));
     })
 
   });

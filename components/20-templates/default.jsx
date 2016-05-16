@@ -7,7 +7,7 @@ const HTML = require('../10-html/html.jsx');
 const TemplateDefault = React.createClass({
   propTypes: {
     title: React.PropTypes.string,
-    content: React.PropTypes.string
+    content: React.PropTypes.object
   },
   getDefaultProps: function() {
     return {

@@ -4,7 +4,7 @@ const React = require('react');
 const HTML = React.createClass({
   propTypes: {
     title: React.PropTypes.string,
-    template: React.PropTypes.string,
+    template: React.PropTypes.object,
   },
   getDefaultProps: function() {
     return {
