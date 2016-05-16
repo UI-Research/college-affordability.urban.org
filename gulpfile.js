@@ -70,7 +70,7 @@ gulp.task('sass', function() {
 gulp.task('watch', function() {
   gulp.watch('js/*.js', ['lint', 'scripts']);
   gulp.watch('components/*.jsx', ['lint', 'scripts']);
-  gulp.watch('scss/*.scss', ['sass']);
+  gulp.watch('components/**/*.scss', ['sass']);
 });
 
 // Concatenate & Minify JS
