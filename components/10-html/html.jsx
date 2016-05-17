@@ -22,6 +22,8 @@ const HTML = React.createClass({
         </head>
         <body>
           {this.props.template}
+          <script src="../bundle--home.js"></script>
+          <script src="../bundle--index.js"></script>
         </body>
       </html>
     );
