@@ -50,6 +50,9 @@
     "react-router": "^2.4.0",
     "react-tools": "^0.13.3",
     "webpack": "^1.13.0",
-    "wiredep": "^4.0.0"
+    "webpack-stream": "^3.2.0",
+    "wiredep": "^4.0.0",
+    "react-container-query": "^0.4.2",
+    "classnames": "^2.2.5"
   }
 }

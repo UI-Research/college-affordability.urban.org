@@ -16,7 +16,8 @@ let fs = require('fs-extra'),
   jshint = require('gulp-jshint'),
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
-  rename = require('gulp-rename');
+  rename = require('gulp-rename'),
+  webpack = require('webpack-stream');
 
 require('node-jsx').install();
 
@@ -75,14 +76,22 @@ gulp.task('watch', function() {
 // Concatenate & Minify JS
 // > gulp scripts
 gulp.task('scripts', function() {
-    return gulp.src('js/*.js')
-      .pipe(concat('all.js'))
-      .pipe(gulp.dest('dist'))
-      .pipe(rename('all.min.js'))
-      .pipe(uglify())
-      .pipe(gulp.dest('dist/js'));
+  return gulp.src('js/*.js')
+    .pipe(concat('all.js'))
+    .pipe(gulp.dest('dist'))
+    .pipe(rename('all.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('dist/js'));
+});
+
+// Generate a webpack bundle
+//> gulp webpack
+gulp.task('webpack', function() {
+  return gulp.src('js/react-container.js')
+  .pipe(webpack(require('./webpack.config.js')))
+  .pipe(gulp.dest('dist/bundles'));
 });
 
 // Default Tasks
 // > gulp
-gulp.task('default', ['lint', 'sass', 'scripts', 'watch']);
+gulp.task('default', ['lint', 'sass', 'scripts', 'webpack', 'watch']);
