@@ -10,11 +10,8 @@ const webpack = require('webpack'),
 let config = {
   entry: {
     // Add individual pages here.
-    'home': './pages/home/home.jsx',
     'about': './pages/about/about.jsx',
 
-    // Router file...
-    'index': './pages/index.js',
     vendor: [
       'react',
       'react-dom'

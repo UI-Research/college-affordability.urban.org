@@ -28,15 +28,10 @@ require('node-jsx').install();
 gulp.task('react', function() {
   let options = {};
 
-  gulp.src('pages/index.js')
-		.pipe(babel({
-			presets: ['es2015']
-		}))
-		.pipe(gulp.dest('dist'));
-
   glob('pages/**/*.jsx', (er, files) => {
     fs.mkdirsSync('dist');
     fs.mkdirsSync('dist/home');
+    fs.mkdirsSync('dist/about');
     files.map( (file) => {
       let filepath = file.split('/');
       filepath.shift();
