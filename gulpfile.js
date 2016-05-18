@@ -36,19 +36,21 @@ gulp.task('react', function() {
   let options = {};
 
   glob('pages/**/*.jsx', (er, files) => {
-    fs.mkdirsSync('dist');
-    fs.mkdirsSync('dist/home');
-    fs.mkdirsSync('dist/about');
-    files.map( (file) => {
-      let filepath = file.split('/');
-      filepath.shift();
-      filepath = filepath.join('/').replace('jsx', 'html');
+    // Clean artifacts directory.
+    fs.removeSync('dist/');
 
-      let fragment = React.createFactory(require('./' + file));
+    files.map( (filepath) => {
+      // Convert filename to .html .
+      let file = filepath.split('/');
+      file.shift();
+      file = file.join('/').replace('jsx', 'html');
+
+      // Creates HTML fragment for static page generation.
+      let fragment = React.createFactory(require('./' + filepath));
       fragment = ReactDOMServer.renderToStaticMarkup(fragment());
 
-      fs.mkdirsSync('dist');
-      fs.writeFile('dist/' + filepath, fragment);
+      // Write fragment to artifacts directory.
+      fs.outputFileSync('dist/' + file, fragment);
     })
   });
 
@@ -97,7 +99,7 @@ gulp.task('scripts', function() {
 // Clone/pull data from the repository.
 // > gulp clone-data
 gulp.task('clone-data', function () {
-  // Start fresh, remove if alredy exists.
+  // Start fresh, remove if already exists.
   try {
     let stats = fs.statSync(URBAN_DATA_DIR);
     if (stats.isDirectory()) {
