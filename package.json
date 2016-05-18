@@ -52,6 +52,9 @@
     "react-router": "^2.4.0",
     "react-tools": "^0.13.3",
     "webpack": "^1.13.0",
-    "wiredep": "^4.0.0"
+    "wiredep": "^4.0.0",
+    "gulp-git": "^1.7.1",
+    "del": "^2.2.0",
+    "winston": "^2.1.1"
   }
 }
