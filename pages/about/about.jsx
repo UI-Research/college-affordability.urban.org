@@ -5,6 +5,8 @@ const React = require('react'),
       ExecutionEnvironment = require('exenv');
 const TemplateDefault = require('../../components/20-templates/default.jsx');
 
+
+
 const About = React.createClass({
   render: function() {
     let content = <strong>About US !!!</strong>;
@@ -16,6 +18,7 @@ const About = React.createClass({
 });
 
 if (ExecutionEnvironment.canUseDOM) {
+  require('./about.scss');
   ReactDOM.render((
     <About />
   ), document.html);
