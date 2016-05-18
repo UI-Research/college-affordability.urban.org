@@ -1,6 +1,11 @@
 /** @jsx React.DOM */
 'use strict';
 
+// Urban's data git repo.
+const URBAN_REPO_URL = 'https://github.com/UrbanInstitute/ed-data';
+// The local dir for Urban's data.
+const URBAN_DATA_DIR = 'external_data';
+
 // Include gulp
 let gulp = require('gulp'),
     sass = require('gulp-sass');
@@ -16,7 +21,10 @@ let fs = require('fs-extra'),
   jshint = require('gulp-jshint'),
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
-  rename = require('gulp-rename');
+  rename = require('gulp-rename'),
+  git = require('gulp-git'),
+  del = require('del'),
+  log = require('winston');
 
 require('node-jsx').install();
 
@@ -82,6 +90,32 @@ gulp.task('scripts', function() {
       .pipe(uglify())
       .pipe(gulp.dest('dist/js'));
 });
+
+// Clone/pull data from the repository.
+// > gulp clone-data
+gulp.task('clone-data', function () {
+  // Start fresh, remove if alredy exists.
+  try {
+    let stats = fs.statSync(URBAN_DATA_DIR);
+    if (stats.isDirectory()) {
+      del.sync(URBAN_DATA_DIR + '/**', { force: true });
+      del.sync(URBAN_DATA_DIR, { force: true });
+      log.info('removed existing dir ' + URBAN_DATA_DIR);
+    }
+  }
+  catch (e) {
+    // ENOENT is not exists - throw if it's anything else.
+    if (e.code != 'ENOENT') {
+      throw e;
+    }
+  }
+  
+  git.clone(URBAN_REPO_URL, { args: URBAN_DATA_DIR }, function (err) {
+    if (err) {
+      throw err;
+    }
+  });
+})
 
 // Default Tasks
 // > gulp
