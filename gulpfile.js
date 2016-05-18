@@ -1,44 +1,54 @@
 /** @jsx React.DOM */
 'use strict';
 
-// Include gulp
+// Urban's data git repo.
+const URBAN_REPO_URL = 'https://github.com/UrbanInstitute/ed-data';
+// The local dir for Urban's data.
+const URBAN_DATA_DIR = 'external_data';
+
+// Include gulp and gulp plugins.
 let gulp = require('gulp'),
-    sass = require('gulp-sass');
+    sass = require('gulp-sass'),
+    babel = require('gulp-babel'),
+    jshint = require('gulp-jshint'),
+    concat = require('gulp-concat'),
+    uglify = require('gulp-uglify'),
+    rename = require('gulp-rename'),
+    git = require('gulp-git');
 
 require('babel-core/register');
 
-// Include Our Plugins
+// Include other plugins.
 let fs = require('fs-extra'),
   React = require('react'),
   ReactDOMServer = require('react-dom/server'),
   glob = require('glob'),
-  babel = require('gulp-babel'),
-  jshint = require('gulp-jshint'),
-  concat = require('gulp-concat'),
-  uglify = require('gulp-uglify'),
-  rename = require('gulp-rename'),
-  webpack = require('webpack-stream');
+  del = require('del'),
+  log = require('winston'),
+  webpack = require('webpack-stream'),
+  named = require('vinyl-named');
 
 require('node-jsx').install();
 
-
 // Create static artifact
-gulp.task('create', function() {
+// > gulp react
+gulp.task('react', function() {
   let options = {};
 
   glob('pages/**/*.jsx', (er, files) => {
+    fs.mkdirsSync('dist');
+    fs.mkdirsSync('dist/home');
+    fs.mkdirsSync('dist/about');
     files.map( (file) => {
-      console.log(file);
       let filepath = file.split('/');
       filepath.shift();
       filepath = filepath.join('/').replace('jsx', 'html');
 
-      console.log(filepath);
-
       let fragment = React.createFactory(require('./' + file));
+      fragment = ReactDOMServer.renderToStaticMarkup(fragment());
 
       fs.mkdirsSync('dist');
-      fs.writeFile('dist/' + filepath, ReactDOMServer.renderToStaticMarkup(fragment()));
+      fs.writeFile('dist/' + filepath, fragment);
     })
   });
 
@@ -84,14 +94,41 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('dist/js'));
 });
 
+// Clone/pull data from the repository.
+// > gulp clone-data
+gulp.task('clone-data', function () {
+  // Start fresh, remove if alredy exists.
+  try {
+    let stats = fs.statSync(URBAN_DATA_DIR);
+    if (stats.isDirectory()) {
+      del.sync(URBAN_DATA_DIR + '/**', { force: true });
+      del.sync(URBAN_DATA_DIR, { force: true });
+      log.info('removed existing dir ' + URBAN_DATA_DIR);
+    }
+  }
+  catch (e) {
+    // ENOENT is not exists - throw if it's anything else.
+    if (e.code != 'ENOENT') {
+      throw e;
+    }
+  }
+
+  git.clone(URBAN_REPO_URL, { args: URBAN_DATA_DIR }, function (err) {
+    if (err) {
+      throw err;
+    }
+  });
+})
+
 // Generate a webpack bundle
 //> gulp webpack
 gulp.task('webpack', function() {
-  return gulp.src('js/react-container.js')
-  .pipe(webpack(require('./webpack.config.js')))
-  .pipe(gulp.dest('dist/bundles'));
+  return gulp.src(['js/react-container.js', 'pages/about/about.jsx', 'js/vendor.js'])
+    .pipe(named())
+    .pipe(webpack(require('./webpack.config.js')))
+    .pipe(gulp.dest('dist'));
 });
 
 // Default Tasks
 // > gulp
-gulp.task('default', ['lint', 'sass', 'scripts', 'webpack', 'watch']);
+gulp.task('default', ['lint', 'sass', 'react', 'scripts', 'webpack', 'watch']);

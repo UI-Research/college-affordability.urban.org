@@ -21,7 +21,10 @@ const HTML = React.createClass({
           <title>{this.props.title} - Urban Institute</title>
         </head>
         <body>
-          {this.props.template}
+          <div id="container"></div>
+            {this.props.template}
+          <script src="../bundle--vendor.js"></script>
+          <script src="../bundle--about.js"></script>
         </body>
       </html>
     );

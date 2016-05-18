@@ -2,3 +2,7 @@ node_modules
 .DS_Store
 dist
 html
+external_data
+/.settings
+/.buildpath
+/.project
