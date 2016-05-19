@@ -1,31 +1,24 @@
 'use strict';
 
-const React = require('react');
+const React = require('react'),
+      ReactDOM = require('react-dom');
+const TemplateDefault = require('../components/20-templates/default.jsx');
 
 const ContainerPage = React.createClass({
-  propTypes: {
-    title: React.PropTypes.string
-  },
-  getDefaultProps: function() {
-    return {
-      title: 'React Container Demo'
-    };
-  },
-  render: function () {
+  render: function() {
+    let content = (
+    <div>
+      <div id="app"></div>
+      <script src="./bundle--vendor.js"></script>
+      <script src='./bundle--react-container.js'></script>
+    </div>
+    );
+    
+    let title = ('React Container Demo'),
+      includeHTML = true;
+
     return (
-      <html>
-        <head>
-          <meta charSet="utf-8" />
-          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <title>{this.props.title} - Urban Institute</title>
-          <link href="./css/all.css" media="all" rel="stylesheet" />
-        </head>
-        <body>
-          <div id="app"></div>
-          <script src='./bundle--vendor.js'></script>
-          <script src='./bundle--react-container.js'></script>
-        </body>
-      </html>
+      <TemplateDefault content={content} title={title} includeHTML={includeHTML} />
     );
   }
 });

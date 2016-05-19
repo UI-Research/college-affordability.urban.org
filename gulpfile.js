@@ -8,13 +8,13 @@ const URBAN_DATA_DIR = 'external_data';
 
 // Include gulp and gulp plugins.
 let gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    babel = require('gulp-babel'),
-    jshint = require('gulp-jshint'),
-    concat = require('gulp-concat'),
-    uglify = require('gulp-uglify'),
-    rename = require('gulp-rename'),
-    git = require('gulp-git');
+  sass = require('gulp-sass'),
+  babel = require('gulp-babel'),
+  jshint = require('gulp-jshint'),
+  concat = require('gulp-concat'),
+  uglify = require('gulp-uglify'),
+  rename = require('gulp-rename'),
+  git = require('gulp-git');
 
 require('babel-core/register');
 
@@ -57,7 +57,6 @@ gulp.task('react', function() {
   return;
 });
 
-
 // Lint Tasks
 // > gulp lint
 gulp.task('lint', function() {
@@ -99,21 +98,7 @@ gulp.task('scripts', function() {
 // Clone/pull data from the repository.
 // > gulp clone-data
 gulp.task('clone-data', function () {
-  // Start fresh, remove if already exists.
-  try {
-    let stats = fs.statSync(URBAN_DATA_DIR);
-    if (stats.isDirectory()) {
-      del.sync(URBAN_DATA_DIR + '/**', { force: true });
-      del.sync(URBAN_DATA_DIR, { force: true });
-      log.info('removed existing dir ' + URBAN_DATA_DIR);
-    }
-  }
-  catch (e) {
-    // ENOENT is not exists - throw if it's anything else.
-    if (e.code != 'ENOENT') {
-      throw e;
-    }
-  }
+  fs.removeSync(URBAN_DATA_DIR);
 
   git.clone(URBAN_REPO_URL, { args: URBAN_DATA_DIR }, function (err) {
     if (err) {
@@ -133,4 +118,4 @@ gulp.task('webpack', function() {
 
 // Default Tasks
 // > gulp
-gulp.task('default', ['lint', 'sass', 'react', 'scripts', 'webpack', 'watch']);
+gulp.task('default', ['lint', 'react', 'sass', 'scripts', 'webpack', 'watch']);

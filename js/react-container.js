@@ -3,6 +3,8 @@ import { render } from 'react-dom';
 import classnames from 'classnames';
 import { applyContainerQuery } from 'react-container-query';
 
+require('../components/react-container.scss');
+
 const query = {
   middle: {
     minWidth: 450,
