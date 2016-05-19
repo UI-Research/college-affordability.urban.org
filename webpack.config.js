@@ -28,6 +28,14 @@ let config = {
         loader: 'babel-loader'
       },
       {
+        test: /\.scss$/,
+        loaders: ['style', 'css', 'sass']
+      },
+      {
+        test: /\.css$/,
+        loaders: ['style', 'css']
+      },
+      {
         test: /\.html$/,
         loader: "file?name=[name].[ext]"
       }
