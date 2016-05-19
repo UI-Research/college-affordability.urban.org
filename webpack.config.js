@@ -30,11 +30,6 @@ let config = {
       {
         test: /\.html$/,
         loader: "file?name=[name].[ext]"
-      },
-      {
-        test: /\.js$/,
-        loader: 'babel',
-        exclude: /node_modules/
       }
     ]
   },

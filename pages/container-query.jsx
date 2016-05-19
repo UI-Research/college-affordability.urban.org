@@ -22,7 +22,8 @@ const ContainerPage = React.createClass({
         </head>
         <body>
           <div id="app"></div>
-          <script src='./bundles/react-container.bundle.js'></script>
+          <script src='./bundle--vendor.js'></script>
+          <script src='./bundle--react-container.js'></script>
         </body>
       </html>
     );
