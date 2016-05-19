@@ -46,8 +46,9 @@ gulp.task('react', function() {
       file = file.join('/').replace('jsx', 'html');
 
       // Creates HTML fragment for static page generation.
-      let fragment = React.createFactory(require('./' + filepath));
-      fragment = ReactDOMServer.renderToStaticMarkup(fragment());
+      //let fragment = React.createFactory(require('./' + filepath))();
+      let fragment = React.createElement(require('./' + filepath), { includeHTML: true });
+      fragment = ReactDOMServer.renderToStaticMarkup(fragment);
 
       // Write fragment to artifacts directory.
       fs.outputFileSync('dist/' + file, fragment);

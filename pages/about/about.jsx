@@ -6,13 +6,20 @@ const React = require('react'),
 const TemplateDefault = require('../../components/20-templates/default.jsx');
 
 
-
 const About = React.createClass({
+  propTypes: {
+    includeHTML: React.PropTypes.bool
+  },
+  getDefaultProps: function() {
+    return {
+      includeHTML: false
+    };
+  },
   render: function() {
-    let content = <strong>About US !!!</strong>;
+    let content = (<div id="asdf"><strong>About US !!!</strong></div>);
 
     return (
-      <TemplateDefault content={content} />
+      <TemplateDefault content={content} includeHTML={this.props.includeHTML} />
     );
   }
 });
@@ -21,7 +28,7 @@ if (ExecutionEnvironment.canUseDOM) {
   require('./about.scss');
   ReactDOM.render((
     <About />
-  ), document.html);
+  ), document.getElementById('container'));
 }
 
 module.exports = About;
