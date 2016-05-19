@@ -98,6 +98,7 @@ gulp.task('scripts', function() {
 // Clone/pull data from the repository.
 // > gulp clone-data
 gulp.task('clone-data', function () {
+  // Start fresh each time.
   fs.removeSync(URBAN_DATA_DIR);
 
   git.clone(URBAN_REPO_URL, { args: URBAN_DATA_DIR }, function (err) {
@@ -118,4 +119,4 @@ gulp.task('webpack', function() {
 
 // Default Tasks
 // > gulp
-gulp.task('default', ['lint', 'react', 'sass', 'scripts', 'webpack', 'watch']);
+gulp.task('default', ['lint', 'react', 'sass', 'scripts', 'webpack', 'clone-data', 'watch']);
