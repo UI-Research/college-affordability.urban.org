@@ -8,15 +8,6 @@ const webpack = require('webpack'),
 // let APP_DIR = path.resolve(__dirname, 'pages');
 
 let config = {
-/*
-  entry: {
-    // Always include vendor, but have other files come from gulp
-    vendor: [
-      'react',
-      'react-dom'
-    ]
-  },
-*/
   output: {
     filename: 'bundle--[name].js'
   },
@@ -26,6 +17,14 @@ let config = {
         test: /\.jsx?$/,
         loader: 'babel-loader',
         exclude: /node_modules/
+      },
+      {
+        test: /\.scss$/,
+        loaders: ['style', 'css', 'sass']
+      },
+      {
+        test: /\.css$/,
+        loaders: ['style', 'css']
       },
       {
         test: /\.html$/,
