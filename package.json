@@ -30,6 +30,7 @@
     "sass-loader": "^3.2.0"
   },
   "dependencies": {
+    "autoprefixer": "^6.3.6",
     "babel": "^6.5.2",
     "babel-core": "^6.8.0",
     "babel-loader": "^6.2.4",

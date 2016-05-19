@@ -6,6 +6,8 @@ const React = require('react'),
 const TemplateDefault = require('../../components/20-templates/default.jsx');
 const Text = require('../../components/30-components/basic/text/text.jsx');
 
+const d3 = require('d3');
+
 const About = React.createClass({
   propTypes: {
     includeHTML: React.PropTypes.bool

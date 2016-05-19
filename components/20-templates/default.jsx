@@ -2,6 +2,7 @@
 const React = require('react');
 
 const HTML = require('../10-html/html.jsx');
+const d3 = require('d3');
 
 const TemplateDefault = React.createClass({
   propTypes: {

@@ -1,6 +1,7 @@
 'use strict';
 
 const webpack = require('webpack'),
+      autoprefixer = require('autoprefixer'),
       glob = require('glob'),
       path = require('path');
 
@@ -12,9 +13,10 @@ let config = {
     // Add individual pages here.
     'about': './pages/about/about.jsx',
 
-    vendor: [
+    'vendor': [
       'react',
-      'react-dom'
+      'react-dom',
+      'd3'
     ]
   },
   output: {
@@ -41,6 +43,7 @@ let config = {
       }
     ]
   },
+  postcss: [ autoprefixer({ browsers: ['last 12 versions'] }) ],
   plugins: [
     // new webpack.optimize.UglifyJsPlugin({
     //   compress: {
