@@ -7,20 +7,18 @@ const TemplateDefault = React.createClass({
   propTypes: {
     includeHTML: React.PropTypes.bool,
 
-    title: React.PropTypes.string,
-    content: React.PropTypes.object
+    title: React.PropTypes.string
   },
   getDefaultProps: function() {
     return {
       includeHTML: false,
 
-      title: '',
-      content: ('<div>Page</div>'),
+      title: ''
     };
   },
   render: function() {
     return (
-      <HTML title={this.props.title} template={this.props.content} includeHTML={this.props.includeHTML} />
+      <HTML title={this.props.title} template={this.props.children} includeHTML={this.props.includeHTML} />
     );
   }
 });
