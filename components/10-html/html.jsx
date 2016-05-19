@@ -32,7 +32,7 @@ const HTML = React.createClass({
         </body>
       </html>
     );
-    let fragment = this.props.includeHTML ? html : this.props.content;
+    let fragment = this.props.includeHTML ? html : (<div>{this.props.template}</div>);
 
     return (fragment);
   }
