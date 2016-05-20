@@ -14,10 +14,8 @@ let gulp = require('gulp'),
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
   rename = require('gulp-rename'),
-  webpack = require('gulp-webpack'),
   git = require('gulp-git'),
-  imageResize = require('gulp-image-resize'),
-  git = require('gulp-git');
+  imageResize = require('gulp-image-resize');
 
 require('babel-core/register');
 
@@ -153,7 +151,7 @@ gulp.task('clone-data', function () {
 // Generate a webpack bundle
 //> gulp webpack
 gulp.task('webpack', function() {
-  return gulp.src(['js/react-container.js', 'pages/about/about.jsx', 'js/vendor.js'])
+  return gulp.src(['js/react-container.jsx', 'pages/about/about.jsx', 'js/vendor.jsx'])
     .pipe(named())
     .pipe(webpack(require('./webpack.config.js')))
     .pipe(gulp.dest('dist'));
@@ -161,4 +159,4 @@ gulp.task('webpack', function() {
 
 // Default Tasks
 // > gulp
-gulp.task('default', ['lint', 'react', 'sass', 'scripts', 'processImages', 'webpack', 'clone-data', 'watch']);
+gulp.task('default', ['lint', 'react', 'sass', 'scripts', 'processImages', 'clone-data', 'webpack', 'watch']);

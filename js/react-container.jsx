@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import { render } from 'react-dom';
-import classnames from 'classnames';
-import { applyContainerQuery } from 'react-container-query';
+const React = require('react'),
+  ReactDom = require('react-dom'),
+  Classnames = require('classnames'),
+  ReactContainerQuery = require('react-container-query');
 
 require('../components/react-container.scss');
 
@@ -15,10 +15,10 @@ const query = {
   },
 };
 
-class Item extends Component {
+class Item extends React.Component {
   render() {
     return (
-      <div className={classnames('item', 'clearfix', this.props.containerQuery)}>
+      <div className={Classnames('item', 'clearfix', this.props.containerQuery)}>
         <div className='image'></div>
         <div className='name'></div>
         <div className='text'>
@@ -31,9 +31,9 @@ class Item extends Component {
   }
 };
 
-const ResponsiveItem = applyContainerQuery(Item, query);
+const ResponsiveItem = ReactContainerQuery.applyContainerQuery(Item, query);
 
-class MyContainer extends Component {
+class MyContainer extends React.Component {
   render() {
     let items = [];
     for (let i = 0; i < 10; i++) {
@@ -48,4 +48,4 @@ class MyContainer extends Component {
   }
 };
       
-render(<MyContainer/>, document.getElementById('app'));
+ReactDom.render(<MyContainer/>, document.getElementById('app'));
