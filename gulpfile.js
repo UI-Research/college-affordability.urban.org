@@ -14,6 +14,9 @@ let gulp = require('gulp'),
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
   rename = require('gulp-rename'),
+  webpack = require('gulp-webpack'),
+  git = require('gulp-git'),
+  imageResize = require('gulp-image-resize'),
   git = require('gulp-git');
 
 require('babel-core/register');
@@ -22,11 +25,17 @@ require('babel-core/register');
 let fs = require('fs-extra'),
   React = require('react'),
   ReactDOMServer = require('react-dom/server'),
+  wiredep = require('wiredep').stream,
   glob = require('glob'),
   del = require('del'),
   log = require('winston'),
+  parallel = require('concurrent-transform'),
+  os = require('os'),
   webpack = require('webpack-stream'),
   named = require('vinyl-named');
+
+let src_image_dir = 'images',
+  dist_image_dir = 'dist/images';
 
 require('node-jsx').install();
 
@@ -95,6 +104,39 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('dist/js'));
 });
 
+// Generate low and high quality versions of images.
+// > gulp processImages
+gulp.task('processImages', function () {  
+  fs.stat('images', function (err, stats) {
+    if (err && err.code === 'ENOENT') {
+      console.log('Can not process images - images directory does not exist');
+      return false;
+    }
+    else if (err) {
+      throw err;
+    }
+    if (stats.isDirectory()) {
+      // Generate low quality thumbnail image version to serve static pages faster.
+      gulp.src(src_image_dir + '/**/*.{jpg,png}')
+        .pipe(parallel(
+          // Crop to exact size.
+          imageResize({ width: 200, height: 200, quality: 0.4, crop: true }),
+          os.cpus().length
+        ))
+        .pipe(gulp.dest(dist_image_dir + '/preview'));
+      
+      // Generate high quality, image version that is still not too large.
+      gulp.src(src_image_dir + '/**/*.{jpg,png}')
+        .pipe(parallel(
+          // No cropping, allows to maintain aspect ratio.
+          imageResize({ width: 1200, height: 1000, quality: 1 }),
+          os.cpus().length
+        ))
+        .pipe(gulp.dest(dist_image_dir + '/large'));
+    }
+  });
+});
+
 // Clone/pull data from the repository.
 // > gulp clone-data
 gulp.task('clone-data', function () {
@@ -119,4 +161,4 @@ gulp.task('webpack', function() {
 
 // Default Tasks
 // > gulp
-gulp.task('default', ['lint', 'react', 'sass', 'scripts', 'webpack', 'clone-data', 'watch']);
+gulp.task('default', ['lint', 'react', 'sass', 'scripts', 'processImages', 'webpack', 'clone-data', 'watch']);
