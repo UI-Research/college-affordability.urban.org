@@ -57,7 +57,8 @@
     "react-tools": "^0.13.3",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.0",
-    "winston": "^2.1.1",
-    "wiredep": "^4.0.0"
+    "wiredep": "^4.0.0",
+    "gulp-image-resize": "^0.8.0",
+    "concurrent-transform": "^1.0.0"
   }
 }
