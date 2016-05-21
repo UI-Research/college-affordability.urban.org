@@ -14,7 +14,7 @@ let gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
-    webpack = require('gulp-webpack');
+    webpack = require('gulp-webpack'),
     git = require('gulp-git'),
     imageResize = require('gulp-image-resize');
 
