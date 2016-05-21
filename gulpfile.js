@@ -104,4 +104,4 @@ gulp.task('clone-data', function () {
 
 // Default Tasks
 // > gulp
-gulp.task('default', ['lint', 'sass', 'react', 'scripts', 'watch']);
+gulp.task('default', ['lint', 'react']);
