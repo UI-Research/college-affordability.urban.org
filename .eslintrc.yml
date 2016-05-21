@@ -1,0 +1,27 @@
+extends: 'eslint:recommended'
+rules:
+  indent: ["error", 2, { "VariableDeclarator": { var: 2, let: 2, const: 3 } }]
+  quotes:
+    - 2
+    - single
+  linebreak-style:
+    - 2
+    - unix
+  semi:
+    - 2
+    - always
+  no-unused-vars:
+    - 1
+env:
+  es6: true
+  browser: true
+  node: true
+  jquery: true
+ecmaFeatures:
+  experimentalObjectRestSpread: true,
+  jsx: true,
+  modules: true
+plugins:
+  - react
+  - eslint-plugin-react
+parser: babel-eslint

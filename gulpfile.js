@@ -10,7 +10,7 @@ const URBAN_DATA_DIR = 'external_data';
 let gulp = require('gulp'),
     sass = require('gulp-sass'),
     babel = require('gulp-babel'),
-    jshint = require('gulp-jshint'),
+    eslint = require('gulp-eslint'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
@@ -61,21 +61,12 @@ gulp.task('react', function() {
 // Lint Tasks
 // > gulp lint
 gulp.task('lint', function() {
-  return gulp.src('js/*.js')
-    .pipe(jshint())
-    .pipe(jshint.reporter('default'));
+  return gulp.src(['components/**/*.jsx', 'pages/**/*.jsx'])
+    .pipe(eslint())
+    .pipe(eslint.format())
+    .pipe(eslint.failAfterError());
 });
 
-// Compile Our Sass
-// > gulp sass
-gulp.task('sass', function() {
-  return gulp.src('components/**/*.scss')
-    .pipe(concat('all.css'))
-    .pipe(sass({
-      outputStyle: 'compressed'
-    })).on('error', sass.logError)
-    .pipe(gulp.dest('dist/css'));
-});
 
 // Watch Files For Changes
 // > gulp watch
@@ -83,17 +74,6 @@ gulp.task('watch', function() {
   gulp.watch('js/*.js', ['lint', 'scripts']);
   gulp.watch('components/*.jsx', ['lint', 'scripts']);
   gulp.watch('components/**/*.scss', ['sass']);
-});
-
-// Concatenate & Minify JS
-// > gulp scripts
-gulp.task('scripts', function() {
-    return gulp.src('js/*.js')
-      .pipe(concat('all.js'))
-      .pipe(gulp.dest('dist'))
-      .pipe(rename('all.min.js'))
-      .pipe(uglify())
-      .pipe(gulp.dest('dist/js'));
 });
 
 // Clone/pull data from the repository.
