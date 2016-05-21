@@ -66,6 +66,7 @@
     "react-tools": "^0.13.3",
     "standard": "^7.1.0",
     "style-loader": "^0.13.1",
+    "vinyl-named": "^1.1.0",
     "webpack": "^1.13.0",
     "wiredep": "^4.0.0"
   }

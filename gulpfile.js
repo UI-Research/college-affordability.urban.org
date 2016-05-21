@@ -16,7 +16,8 @@ let gulp = require('gulp'),
     rename = require('gulp-rename'),
     webpack = require('gulp-webpack'),
     git = require('gulp-git'),
-    imageResize = require('gulp-image-resize');
+    imageResize = require('gulp-image-resize'),
+    named = require('vinyl-named');
 
 require('babel-core/register');
 
@@ -71,6 +72,16 @@ gulp.task('lint', function() {
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(eslint.failAfterError());
+});
+
+
+// Generate a webpack bundle
+//> gulp webpack
+gulp.task('webpack', function() {
+  return gulp.src(['js/react-container.jsx', 'pages/about/about.jsx', 'js/vendor.jsx'])
+    .pipe(named())
+    .pipe(webpack(require('./webpack.config.js')))
+    .pipe(gulp.dest('dist'));
 });
 
 
