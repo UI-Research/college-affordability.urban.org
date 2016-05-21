@@ -13,7 +13,7 @@ const TemplateDefault = React.createClass({
   render: function() {
     return (
       <div>
-        <h2>{this.props.title}</h2>
+        <h1>{this.props.title}</h1>
         <div>{this.props.children}</div>
       </div>
     );

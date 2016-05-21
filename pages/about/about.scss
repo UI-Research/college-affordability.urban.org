@@ -1,6 +1,10 @@
 body {
   transition: all 2.5s linear;
-  background-color: #FCC;
+  background-color: #CFC;
+
+  #container {
+    display: block !important;
+  }
 
   div {
     display: block;
