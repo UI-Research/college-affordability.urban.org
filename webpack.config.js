@@ -1,13 +1,25 @@
 'use strict';
 
 const webpack = require('webpack'),
-  glob = require('glob'),
-  path = require('path');
+      autoprefixer = require('autoprefixer'),
+      glob = require('glob'),
+      path = require('path');
 
 // let BUILD_DIR = path.resolve(__dirname, 'dist');
 // let APP_DIR = path.resolve(__dirname, 'pages');
 
 let config = {
+  cache: true,
+  entry: {
+    'vendor': [
+      'react',
+      'react-dom',
+      'd3'
+    ],
+
+    // Add individual pages here.
+    'about': './pages/about/about.jsx'
+  },
   output: {
     filename: 'bundle--[name].js'
   },
@@ -32,7 +44,9 @@ let config = {
       }
     ]
   },
+  postcss: [ autoprefixer({ browsers: ['last 12 versions'] }) ],
   plugins: [
+    new webpack.optimize.CommonsChunkPlugin('vendor', 'bundle--vendor.js')
     // new webpack.optimize.UglifyJsPlugin({
     //   compress: {
     //     warnings: false // https://github.com/webpack/webpack/issues/1496

@@ -5,12 +5,13 @@ const React = require('react');
 const HTML = React.createClass({
   propTypes: {
     includeHTML: React.PropTypes.bool,
-    title: React.PropTypes.string,
-    template: React.PropTypes.object,
+
+    title: React.PropTypes.string
   },
   getDefaultProps: function() {
     return {
       includeHTML: false,
+
       title: 'Page',
       template: 'Placeholder'
     };
