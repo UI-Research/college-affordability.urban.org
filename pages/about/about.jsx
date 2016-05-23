@@ -12,7 +12,7 @@ const About = React.createClass({
   render: function() {
 
     return (
-      <TemplateDefault title="About Us" includeHTML={this.props.includeHTML}>
+      <TemplateDefault title="About USA" includeHTML={this.props.includeHTML}>
         {Derp.content}
       </TemplateDefault>
     );

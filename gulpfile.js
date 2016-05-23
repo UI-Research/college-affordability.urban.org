@@ -1,4 +1,3 @@
-/** @jsx React.DOM */
 'use strict';
 
 // Urban's data git repo.
@@ -6,7 +5,7 @@ const URBAN_REPO_URL = 'https://github.com/UrbanInstitute/ed-data';
 // The local dir for Urban's data.
 const URBAN_DATA_DIR = 'external_data';
 
-// Include gulp
+// Include gulp + plugins.
 let gulp = require('gulp'),
     sass = require('gulp-sass'),
     babel = require('gulp-babel'),
@@ -21,7 +20,7 @@ let gulp = require('gulp'),
 
 require('babel-core/register');
 
-// Include Our Plugins
+// Include additioal dependencies.
 let fs = require('fs-extra'),
   React = require('react'),
   ReactDOMServer = require('react-dom/server'),
@@ -33,9 +32,20 @@ let fs = require('fs-extra'),
   os = require('os');
 
 let src_image_dir = 'images',
-  dist_image_dir = 'dist/images';
+    dist_image_dir = 'dist/images';
 
 require('node-jsx').install();
+
+
+// Lint Tasks
+// > gulp lint
+gulp.task('lint', function() {
+  return gulp.src(['components/**/*.jsx', 'pages/**/*.jsx'])
+    .pipe(eslint())
+    .pipe(eslint.format())
+    .pipe(eslint.failAfterError());
+});
+
 
 // Create static artifact
 // > gulp react
@@ -65,20 +75,13 @@ gulp.task('react', function() {
 });
 
 
-// Lint Tasks
-// > gulp lint
-gulp.task('lint', function() {
-  return gulp.src(['components/**/*.jsx', 'pages/**/*.jsx'])
-    .pipe(eslint())
-    .pipe(eslint.format())
-    .pipe(eslint.failAfterError());
-});
-
-
 // Generate a webpack bundle
 //> gulp webpack
 gulp.task('webpack', function() {
-  return gulp.src(['js/react-container.jsx', 'pages/about/about.jsx', 'js/vendor.jsx'])
+  return gulp.src([
+    'pages/about/about.jsx',
+    'js/vendor.jsx'
+    ])
     .pipe(named())
     .pipe(webpack(require('./webpack.config.js')))
     .pipe(gulp.dest('dist'));
@@ -87,11 +90,11 @@ gulp.task('webpack', function() {
 
 // Watch Files For Changes
 // > gulp watch
-gulp.task('watch', function() {
-  gulp.watch('js/*.js', ['lint', 'scripts']);
-  gulp.watch('components/*.jsx', ['lint', 'scripts']);
-  gulp.watch('components/**/*.scss', ['sass']);
+gulp.task('track', function() {
+  gulp.watch(['components/**/*.jsx', 'pages/**/*.jsx'], ['react', 'webpack']);
+  gulp.watch(['components/**/*.scss', 'pages/**/*.scss'], ['webpack']);
 });
+
 
 // Generate low and high quality versions of images.
 // > gulp processImages
@@ -126,6 +129,7 @@ gulp.task('processImages', function () {
   });
 });
 
+
 // Clone/pull data from the repository.
 // > gulp clone-data
 gulp.task('clone-data', function () {
@@ -154,4 +158,6 @@ gulp.task('clone-data', function () {
 
 // Default Tasks
 // > gulp
-gulp.task('default', ['lint', 'react']);
+gulp.task('default', ['lint', 'react', 'webpack']);
+// > gulp watch
+gulp.task('watch', ['react', 'webpack', 'track']);

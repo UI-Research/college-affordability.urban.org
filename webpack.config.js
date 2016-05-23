@@ -20,7 +20,7 @@ let config = {
     ]
   },
   output: {
-    path: './dist',
+    //path: './dist',
     filename: 'bundle--[name].js'
   },
   module: {
