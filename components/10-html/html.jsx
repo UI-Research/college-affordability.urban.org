@@ -27,6 +27,7 @@ const HTML = React.createClass({
           <div id="container">{this.props.children}</div>
 
           <script src="../bundle--vendor.js"></script>
+          <script src="../bundle--components.js"></script>
           <script src="../bundle--about.js"></script>
         </body>
       </html>
