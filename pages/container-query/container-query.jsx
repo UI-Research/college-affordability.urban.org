@@ -1,7 +1,6 @@
 'use strict';
 
-const React = require('react'),
-      ReactDOM = require('react-dom');
+const React = require('react');
 const TemplateDefault = require('../../components/20-templates/default/default.jsx');
 
 const ContainerPage = React.createClass({
@@ -15,7 +14,7 @@ const ContainerPage = React.createClass({
     );
 
     let title = ('React Container Demo'),
-      includeHTML = true;
+        includeHTML = true;
 
     return (
       <TemplateDefault content={content} title={title} includeHTML={includeHTML} />
