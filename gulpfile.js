@@ -78,10 +78,7 @@ gulp.task('react', function() {
 // Generate a webpack bundle
 //> gulp webpack
 gulp.task('webpack', function() {
-  return gulp.src([
-    'pages/about/about.jsx',
-    'js/vendor.jsx'
-    ])
+  return gulp.src([])
     .pipe(named())
     .pipe(webpack(require('./webpack.config.js')))
     .pipe(gulp.dest('dist'));

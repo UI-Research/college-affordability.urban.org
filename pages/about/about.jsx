@@ -4,8 +4,7 @@ const React = require('react'),
       ReactDOM = require('react-dom'),
       ExecutionEnvironment = require('exenv');
 const Template = require('../../components/20-templates/default.jsx');
-const global = require('../../components/global.jsx');
-const Text = require(global.components + '/basic/text/text.jsx');
+const Text = require('../../components/30-components/basic/text/text.jsx');
 
 let specifications = {
   'name': 'about',
@@ -29,7 +28,8 @@ const Page = React.createClass({
 });
 
 if (ExecutionEnvironment.canUseDOM) {
-  require('./' + specifications.name.toLowerCase() + '.scss');
+  //require('./' + specifications.name.toLowerCase() + '.scss');
+  require('./about.scss');
   ReactDOM.render((
     <Page />
   ), document.getElementById('container'));
