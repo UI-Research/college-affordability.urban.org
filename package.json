@@ -52,6 +52,7 @@
     "gulp-babel": "^6.1.2",
     "gulp-dest": "^0.2.3",
     "gulp-eslint": "^2.0.0",
+    "gulp-exec": "^2.1.2",
     "gulp-git": "^1.7.1",
     "gulp-image-resize": "^0.8.0",
     "gulp-react": "^3.1.0",

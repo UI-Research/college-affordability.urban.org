@@ -27,6 +27,7 @@ let fs = require('fs-extra'),
   wiredep = require('wiredep').stream,
   glob = require('glob'),
   del = require('del'),
+  exec = require('child_process').exec,
   log = require('winston'),
   parallel = require('concurrent-transform'),
   os = require('os');
@@ -77,19 +78,28 @@ gulp.task('react', function() {
 
 // Generate a webpack bundle
 //> gulp webpack
-gulp.task('webpack', function() {
-  return gulp.src([])
-    .pipe(named())
-    .pipe(webpack(require('./webpack.config.js')))
-    .pipe(gulp.dest('dist'));
+gulp.task('webpack', function(cb) {
+  exec('webpack', function (err, stdout, stderr) {
+    console.log(stdout);
+    console.log(stderr);
+    cb(err);
+  });
+});
+
+gulp.task('webpack-watch', function (cb) {
+  exec('webpack --watch', function (err, stdout, stderr) {
+    console.log(stdout);
+    console.log(stderr);
+    cb(stdout);
+  });
 });
 
 
 // Watch Files For Changes
 // > gulp watch
 gulp.task('track', function() {
-  gulp.watch(['components/**/*.jsx', 'pages/**/*.jsx'], ['react', 'webpack']);
-  gulp.watch(['components/**/*.scss', 'pages/**/*.scss'], ['webpack']);
+  gulp.watch(['components/**/*.jsx', 'pages/**/*.jsx'], ['react', 'webpack-watch']);
+  gulp.watch(['components/**/*.scss', 'pages/**/*.scss'], ['webpack-watch']);
 });
 
 
