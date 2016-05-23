@@ -9,7 +9,7 @@ const Text = require('../../components/30-components/basic/text/text.jsx');
 let specifications = {
   'name': 'about',
   'content': <div className='test'>
-        <Text title="Law & Order">
+        <Text title="Law & Orderasdf">
           <p>What are you doing?</p>
           <p>No me gusta</p>
         </Text>
@@ -22,6 +22,7 @@ const Page = React.createClass({
     return (
       <Template title="About USA" includeHTML={this.props.includeHTML}>
         {specifications.content}
+        <div>asdf</div>
       </Template>
     );
   }

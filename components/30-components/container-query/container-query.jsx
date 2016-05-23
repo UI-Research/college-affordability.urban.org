@@ -1,7 +1,7 @@
 const React = require('react'),
-  ReactDom = require('react-dom'),
-  Classnames = require('classnames'),
-  ReactContainerQuery = require('react-container-query');
+      ReactDom = require('react-dom'),
+      Classnames = require('classnames'),
+      ReactContainerQuery = require('react-container-query');
 
 require('../../../pages/container-query/container-query.scss');
 
@@ -12,7 +12,7 @@ const query = {
   },
   wide: {
     minWidth: 800
-  },
+  }
 };
 
 class Item extends React.Component {
@@ -29,7 +29,7 @@ class Item extends React.Component {
       </div>
     );
   }
-};
+}
 
 const ResponsiveItem = ReactContainerQuery.applyContainerQuery(Item, query);
 
@@ -46,6 +46,6 @@ class MyContainer extends React.Component {
     </div>
     );
   }
-};
-      
+}
+
 ReactDom.render(<MyContainer/>, document.getElementById('app'));

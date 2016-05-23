@@ -21,6 +21,7 @@ let config = {
     'about': './pages/about/about.jsx'
   },
   output: {
+    path: './dist',
     filename: 'bundle--[name].js'
   },
   module: {

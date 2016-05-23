@@ -20,7 +20,9 @@ const TemplateDefault = React.createClass({
   },
   render: function() {
     return (
-      <HTML title={this.props.title} template={this.props.children} includeHTML={this.props.includeHTML} />
+      <HTML title={this.props.title} includeHTML={this.props.includeHTML}>
+        {this.props.children}
+      </HTML>
     );
   }
 });
