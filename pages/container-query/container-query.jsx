@@ -2,7 +2,7 @@
 
 const React = require('react'),
       ReactDOM = require('react-dom');
-const TemplateDefault = require('../../components/20-templates/default.jsx');
+const TemplateDefault = require('../../components/20-templates/default/default.jsx');
 
 const ContainerPage = React.createClass({
   render: function() {
@@ -13,7 +13,7 @@ const ContainerPage = React.createClass({
       <script src='../bundle--container-query.js'></script>
     </div>
     );
-    
+
     let title = ('React Container Demo'),
       includeHTML = true;
 
