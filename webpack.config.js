@@ -49,7 +49,7 @@ let config = {
   },
   postcss: [ autoprefixer({ browsers: ['last 12 versions'] }) ],
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin(['vendor', 'components'], 'bundle--[name].js')
+    new webpack.optimize.CommonsChunkPlugin(['components', 'vendor'], 'bundle--[name].js')
     // new webpack.optimize.UglifyJsPlugin({
     //   compress: {
     //     warnings: false // https://github.com/webpack/webpack/issues/1496

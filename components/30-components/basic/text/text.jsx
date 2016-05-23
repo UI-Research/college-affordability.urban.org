@@ -1,6 +1,10 @@
 'use strict';
-const React = require('react');
-require('./text.scss');
+const React = require('react'),
+      ExecutionEnvironment = require('exenv');
+
+if (ExecutionEnvironment.canUseDOM) {
+  require('./text.scss');
+}
 
 const TemplateDefault = React.createClass({
   propTypes: {
