@@ -1,4 +1,5 @@
 'use strict';
+
 const React = require('react');
 
 const HTML = React.createClass({
@@ -11,8 +12,7 @@ const HTML = React.createClass({
     return {
       includeHTML: false,
 
-      title: 'Page',
-      template: 'Placeholder'
+      title: 'Page'
     };
   },
   render: function() {
@@ -24,14 +24,14 @@ const HTML = React.createClass({
           <title>{this.props.title} - Urban Institute</title>
         </head>
         <body>
-          <div id="container">{this.props.template}</div>
+          <div id="container">{this.props.children}</div>
 
           <script src="../bundle--vendor.js"></script>
           <script src="../bundle--about.js"></script>
         </body>
       </html>
     );
-    let fragment = this.props.includeHTML ? html : (<div>{this.props.template}</div>);
+    let fragment = this.props.includeHTML ? html : (<div>{this.props.children}</div>);
 
     return (fragment);
   }

@@ -13,14 +13,13 @@ let gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
-    webpack = require('gulp-webpack'),
     git = require('gulp-git'),
-    imageResize = require('gulp-image-resize'),
-    named = require('vinyl-named');
+    imageResize = require('gulp-image-resize');
 
 require('babel-core/register');
 
 // Include additioal dependencies.
+
 let fs = require('fs-extra'),
   React = require('react'),
   ReactDOMServer = require('react-dom/server'),
@@ -31,7 +30,8 @@ let fs = require('fs-extra'),
   spawn = require('child_process').spawn,
   log = require('winston'),
   parallel = require('concurrent-transform'),
-  os = require('os');
+  os = require('os'),
+  named = require('vinyl-named');
 
 let src_image_dir = 'images',
     dist_image_dir = 'dist/images';
@@ -150,21 +150,8 @@ gulp.task('processImages', function () {
 // Clone/pull data from the repository.
 // > gulp clone-data
 gulp.task('clone-data', function () {
-  // Start fresh, remove if already exists.
-  try {
-    let stats = fs.statSync(URBAN_DATA_DIR);
-    if (stats.isDirectory()) {
-      del.sync(URBAN_DATA_DIR + '/**', { force: true });
-      del.sync(URBAN_DATA_DIR, { force: true });
-      log.info('removed existing dir ' + URBAN_DATA_DIR);
-    }
-  }
-  catch (e) {
-    // ENOENT is not exists - throw if it's anything else.
-    if (e.code != 'ENOENT') {
-      throw e;
-    }
-  }
+  // Start fresh each time.
+  fs.removeSync(URBAN_DATA_DIR);
 
   git.clone(URBAN_REPO_URL, { args: URBAN_DATA_DIR }, function (err) {
     if (err) {
@@ -172,6 +159,7 @@ gulp.task('clone-data', function () {
     }
   });
 })
+
 
 // Default Tasks
 // > gulp

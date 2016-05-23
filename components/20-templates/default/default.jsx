@@ -1,8 +1,10 @@
 'use strict';
+
 const React = require('react');
 
-const HTML = require('../10-html/html.jsx');
-const d3 = require('d3');
+const HTML = require('../../10-html/html.jsx');
+
+const Header = require('./components/header.jsx');
 
 const TemplateDefault = React.createClass({
   propTypes: {
@@ -19,7 +21,10 @@ const TemplateDefault = React.createClass({
   },
   render: function() {
     return (
-      <HTML title={this.props.title} template={this.props.children} includeHTML={this.props.includeHTML} />
+      <HTML title={this.props.title} includeHTML={this.props.includeHTML}>
+        <Header />
+        {this.props.children}
+      </HTML>
     );
   }
 });
