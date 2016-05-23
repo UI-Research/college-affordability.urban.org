@@ -1,5 +1,10 @@
 'use strict';
-const React = require('react');
+const React = require('react'),
+      ExecutionEnvironment = require('exenv');
+
+if (ExecutionEnvironment.canUseDOM) {
+  require('./text.scss');
+}
 
 const TemplateDefault = React.createClass({
   propTypes: {
@@ -12,7 +17,7 @@ const TemplateDefault = React.createClass({
   },
   render: function() {
     return (
-      <div>
+      <div className="text_box">
         <h1>{this.props.title}</h1>
         <div>{this.props.children}</div>
       </div>

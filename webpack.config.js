@@ -5,8 +5,6 @@ const webpack = require('webpack'),
       glob = require('glob'),
       path = require('path');
 
-// let BUILD_DIR = path.resolve(__dirname, 'dist');
-// let APP_DIR = path.resolve(__dirname, 'pages');
 
 let config = {
   cache: true,
@@ -15,6 +13,11 @@ let config = {
       'react',
       'react-dom',
       'd3'
+    ],
+
+    // Add components here.
+    'components': [
+      './components/30-components/basic/text/text.jsx'
     ],
 
     // Add individual pages here.
@@ -47,7 +50,8 @@ let config = {
   },
   postcss: [ autoprefixer({ browsers: ['last 12 versions'] }) ],
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin('vendor', 'bundle--vendor.js')
+    // Pro-tip: Order matters here.
+    new webpack.optimize.CommonsChunkPlugin(['components', 'vendor'], 'bundle--[name].js')
     // new webpack.optimize.UglifyJsPlugin({
     //   compress: {
     //     warnings: false // https://github.com/webpack/webpack/issues/1496
