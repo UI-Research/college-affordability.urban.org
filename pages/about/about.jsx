@@ -11,7 +11,7 @@ let specifications = {
   'content': <div className='test'>
         <Text title="Law & Order">
           <p>What are you doing?</p>
-          <p>I don't like</p>
+          <p>No me gusta</p>
         </Text>
         <div id='asdf'><strong>About US !!!</strong></div>
       </div>

@@ -56,7 +56,8 @@ gulp.task('react', function() {
 
   glob('pages/**/*.jsx', (er, files) => {
     // Clean artifacts directory.
-    fs.removeSync('dist/');
+    // TODO: Move this to separate gulp task...
+    //fs.removeSync('dist/');
 
     files.map( (filepath) => {
       // Convert filename to .html .
