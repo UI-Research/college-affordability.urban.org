@@ -151,7 +151,7 @@ gulp.task('clone-data', function () {
 // Generate a webpack bundle
 //> gulp webpack
 gulp.task('webpack', function() {
-  return gulp.src(['js/react-container.jsx', 'pages/about/about.jsx', 'js/vendor.jsx'])
+  return gulp.src(['components/30-components/container-query/container-query.jsx', 'pages/about/about.jsx', 'js/vendor.jsx'])
     .pipe(named())
     .pipe(webpack(require('./webpack.config.js')))
     .pipe(gulp.dest('dist'));

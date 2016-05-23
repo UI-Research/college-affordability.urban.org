@@ -3,7 +3,7 @@ const React = require('react'),
   Classnames = require('classnames'),
   ReactContainerQuery = require('react-container-query');
 
-require('../components/react-container.scss');
+require('../../../pages/container-query/container-query.scss');
 
 const query = {
   middle: {
