@@ -17,9 +17,9 @@ const TemplateDefault = React.createClass({
   },
   render: function() {
     return (
-      <div className="text_box">
+      <div className="c_text">
         <h1>{this.props.title}</h1>
-        <div>{this.props.children}</div>
+        <div className="c_text__content">{this.props.children}</div>
       </div>
     );
   }
