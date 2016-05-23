@@ -87,8 +87,8 @@ gulp.task('webpack', function(cb) {
   });
 });
 
-gulp.task('webpack-watch', function (cb) {
-  const webpack_watch = spawn('webpack', ['--watch']);
+gulp.task('webpack-watch', (cb) => {
+  const webpack_watch = spawn('webpack', ['--watch', '--color']);
 
   webpack_watch.stdout.on('data', (data) => {
     console.log(`stdout: ${data}`);
