@@ -38,7 +38,7 @@ let specifications = {
 const Page = React.createClass({
   render: function() {
     return (
-      <Template title="About US" includeHTML={this.props.includeHTML}>
+      <Template title="About US" machineName={specifications.name} includeHTML={this.props.includeHTML}>
         {specifications.content}
       </Template>
     );

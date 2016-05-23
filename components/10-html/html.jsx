@@ -6,16 +6,19 @@ const HTML = React.createClass({
   propTypes: {
     includeHTML: React.PropTypes.bool,
 
-    title: React.PropTypes.string
+    title: React.PropTypes.string,
+    machineName: React.PropTypes.string
   },
   getDefaultProps: function() {
     return {
       includeHTML: false,
 
-      title: 'Page'
+      title: 'Page',
+      machineName: '',
     };
   },
   render: function() {
+    let pageBundle = `../bundle--${this.props.machineName}.js`;
     let html = (
       <html>
         <head>
@@ -28,7 +31,7 @@ const HTML = React.createClass({
 
           <script src="../bundle--vendor.js"></script>
           <script src="../bundle--components.js"></script>
-          <script src="../bundle--about.js"></script>
+          <script src={pageBundle}></script>
         </body>
       </html>
     );
