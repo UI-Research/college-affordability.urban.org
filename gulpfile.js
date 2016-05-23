@@ -104,7 +104,7 @@ gulp.task('scripts', function() {
 
 // Generate low and high quality versions of images.
 // > gulp processImages
-gulp.task('processImages', function () {  
+gulp.task('processImages', function () {
   fs.stat('images', function (err, stats) {
     if (err && err.code === 'ENOENT') {
       console.log('Can not process images - images directory does not exist');
@@ -122,7 +122,7 @@ gulp.task('processImages', function () {
           os.cpus().length
         ))
         .pipe(gulp.dest(dist_image_dir + '/preview'));
-      
+
       // Generate high quality, image version that is still not too large.
       gulp.src(src_image_dir + '/**/*.{jpg,png}')
         .pipe(parallel(
@@ -148,14 +148,6 @@ gulp.task('clone-data', function () {
   });
 })
 
-// Generate a webpack bundle
-//> gulp webpack
-gulp.task('webpack', function() {
-  return gulp.src(['components/30-components/container-query/container-query.jsx', 'pages/about/about.jsx', 'js/vendor.jsx'])
-    .pipe(named())
-    .pipe(webpack(require('./webpack.config.js')))
-    .pipe(gulp.dest('dist'));
-});
 
 // Default Tasks
 // > gulp
