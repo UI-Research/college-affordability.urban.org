@@ -57,7 +57,7 @@ const FAQ = React.createClass({
               <Question text={result.q} />
               <Answer text={result.a} />
             </div>
-          )
+          );
         })}
         </div>
       </div>

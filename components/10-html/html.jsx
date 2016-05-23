@@ -14,7 +14,7 @@ const HTML = React.createClass({
       includeHTML: false,
 
       title: 'Page',
-      machineName: '',
+      machineName: ''
     };
   },
   render: function() {

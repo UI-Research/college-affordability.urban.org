@@ -12,7 +12,8 @@ let config = {
     'vendor': [
       'react',
       'react-dom',
-      'd3'
+      'd3',
+      'lodash'
     ],
 
     // Add components here.
@@ -21,7 +22,8 @@ let config = {
     ],
 
     // Add individual pages here.
-    'about': './pages/about/about.jsx'
+    'about': './pages/about/about.jsx',
+    'test': './pages/test/test.jsx'
   },
   output: {
     path: './dist',
