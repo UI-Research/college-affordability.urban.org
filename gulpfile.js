@@ -28,6 +28,7 @@ let fs = require('fs-extra'),
   glob = require('glob'),
   del = require('del'),
   exec = require('child_process').exec,
+  spawn = require('child_process').spawn,
   log = require('winston'),
   parallel = require('concurrent-transform'),
   os = require('os');
@@ -87,10 +88,18 @@ gulp.task('webpack', function(cb) {
 });
 
 gulp.task('webpack-watch', function (cb) {
-  exec('webpack --watch', function (err, stdout, stderr) {
-    console.log(stdout);
-    console.log(stderr);
-    cb(stdout);
+  const webpack_watch = spawn('webpack', ['--watch']);
+
+  webpack_watch.stdout.on('data', (data) => {
+    console.log(`stdout: ${data}`);
+  });
+
+  webpack_watch.stderr.on('data', (data) => {
+    console.log(`stderr: ${data}`);
+  });
+
+  webpack_watch.on('close', (code) => {
+    console.log(`child process exited with code ${code}`);
   });
 });
 
