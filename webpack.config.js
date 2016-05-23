@@ -50,6 +50,7 @@ let config = {
   },
   postcss: [ autoprefixer({ browsers: ['last 12 versions'] }) ],
   plugins: [
+    // Pro-tip: Order matters here.
     new webpack.optimize.CommonsChunkPlugin(['components', 'vendor'], 'bundle--[name].js')
     // new webpack.optimize.UglifyJsPlugin({
     //   compress: {
