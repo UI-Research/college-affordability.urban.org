@@ -1,3 +1,7 @@
-p {
-  color: #00F;
+
+@import '../../00-global/_global.scss';
+
+.asdf {
+  color: #3F3;
+  background-color: $color--orange;
 }
