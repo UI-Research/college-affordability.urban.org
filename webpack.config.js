@@ -20,7 +20,9 @@ let config = {
       './components/20-templates/default/components/header.jsx',
       './components/30-components/basic/text/text.jsx',
       './components/30-components/basic/faq/faq.jsx',
-      './components/30-components/graphs/bar/bar.jsx'
+      './components/30-components/graphs/bar/bar.jsx',
+
+      './components/20-templates/default/default.jsx'
     ],
 
     // Add individual pages here.
