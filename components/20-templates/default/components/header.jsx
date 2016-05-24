@@ -1,11 +1,15 @@
 'use strict';
+const React = require('react'),
+      ExecutionEnvironment = require('exenv');
 
-const React = require('react');
+if (ExecutionEnvironment.canUseDOM) {
+  require('./header.scss');
+}
 
 const Header = React.createClass({
   render: function() {
     return (
-      <div>This is a header</div>
+      <header className="header-site">This is a header</header>
     );
   }
 });
