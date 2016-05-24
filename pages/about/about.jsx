@@ -37,7 +37,7 @@ let specifications = {
       </div>
 };
 
-const Page = React.createClass({
+const About = React.createClass({
   render: function() {
     return (
       <Template title="About US" machineName={specifications.name} includeHTML={this.props.includeHTML}>
@@ -50,8 +50,8 @@ const Page = React.createClass({
 if (ExecutionEnvironment.canUseDOM) {
   require('./' + specifications.name.toLowerCase() + '.scss');
   ReactDOM.render((
-    <Page />
+    <About />
   ), document.getElementById('container'));
 }
 
-module.exports = Page;
+module.exports = About;
