@@ -31,9 +31,10 @@ let specifications = {
           <p>Example of a text box?</p>
           <a href="http://www.google.com">This is a link</a>
         </Text>
+        <BarGraph data={[4, 8, 15, 16, 23, 42]} />
         <FAQ title="Frequently Asked Questions" set={faq} />
         <div className='asdf'><strong>Custom HTML</strong></div>
-        <BarGraph data={[4, 8, 15, 16, 23, 42]} />
+
       </div>
 };
 
