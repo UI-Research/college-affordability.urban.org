@@ -10,25 +10,26 @@ a {
 }
 
 h1, h2, h3, h4, h5 {
-  line-height: 1.5;
+  color: $color--black;
+  font-weight: normal;
 }
 
 h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1.6rem;
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 18px;
 }
 
 h2 {
-  font-size: 1.6rem;
-  font-weight: bold;
-  margin-bottom: 1.2rem;
+  font-size: 24px;
+  line-height: 31.2px;
+  margin-bottom: 12px;
 }
 
 h3 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 10px;
 }
 
 .main {

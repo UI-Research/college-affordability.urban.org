@@ -11,7 +11,9 @@ const Header = React.createClass({
   render: function() {
     return (
       <header className="header-site">
+        <div className="header-site__logo-wrapper">
         <a className="header-site__logo" alt="Urban Institute">Title</a>
+        </div>
         <div className="header-site__nav">
           <div className="nav-primary">
             <ul>

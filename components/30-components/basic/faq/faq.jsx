@@ -1,5 +1,10 @@
 'use strict';
-const React = require('react');
+const React = require('react'),
+      ExecutionEnvironment = require('exenv');
+
+if (ExecutionEnvironment.canUseDOM) {
+  require('./faq.scss');
+}
 
 const Question = React.createClass({
   propTypes: {
@@ -12,7 +17,7 @@ const Question = React.createClass({
   },
   render: function() {
     return (
-      <h3 className="c_faq__set__question">{this.props.text}</h3>
+      <h3 className="c-faq__set__question">{this.props.text}</h3>
     );
   }
 });
@@ -28,7 +33,7 @@ const Answer = React.createClass({
   },
   render: function() {
     return (
-      <div className="c_faq__set__answer">{this.props.text}</div>
+      <div className="c-faq__set__answer">{this.props.text}</div>
     );
   }
 });
@@ -48,9 +53,9 @@ const FAQ = React.createClass({
   },
   render: function() {
     return (
-      <div className="c_faq">
+      <div className="c-faq">
         <h2>{this.props.title}</h2>
-        <div className="c_faq__set">
+        <div className="c-faq__set">
         {this.props.set.map(function(result) {
           return (
             <div key={result.q}>
