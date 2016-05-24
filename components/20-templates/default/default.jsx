@@ -21,7 +21,7 @@ const TemplateDefault = React.createClass({
   },
   render: function() {
     return (
-      <HTML title={this.props.title} includeHTML={this.props.includeHTML}>
+      <HTML title={this.props.title} machineName={this.props.machineName} includeHTML={this.props.includeHTML}>
         <Header />
         {this.props.children}
       </HTML>

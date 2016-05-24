@@ -6,7 +6,7 @@ if (ExecutionEnvironment.canUseDOM) {
   require('./text.scss');
 }
 
-const TemplateDefault = React.createClass({
+const Text = React.createClass({
   propTypes: {
     title: React.PropTypes.string
   },
@@ -17,12 +17,12 @@ const TemplateDefault = React.createClass({
   },
   render: function() {
     return (
-      <div className="text_box">
+      <div className="c_text">
         <h1>{this.props.title}</h1>
-        <div>{this.props.children}</div>
+        <div className="c_text__content">{this.props.children}</div>
       </div>
     );
   }
 });
 
-module.exports = TemplateDefault;
+module.exports = Text;

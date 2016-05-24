@@ -17,7 +17,9 @@ let config = {
 
     // Add components here.
     'components': [
-      './components/30-components/basic/text/text.jsx'
+      './components/30-components/basic/text/text.jsx',
+      './components/30-components/basic/faq/faq.jsx',
+      './components/30-components/graphs/bar/bar.jsx'
     ],
 
     // Add individual pages here.
@@ -51,7 +53,7 @@ let config = {
   postcss: [ autoprefixer({ browsers: ['last 12 versions'] }) ],
   plugins: [
     // Pro-tip: Order matters here.
-    new webpack.optimize.CommonsChunkPlugin(['components', 'vendor'], 'bundle--[name].js')
+    new webpack.optimize.CommonsChunkPlugin(['components', 'vendor'], 'bundle--[name].js'),
     // new webpack.optimize.UglifyJsPlugin({
     //   compress: {
     //     warnings: false // https://github.com/webpack/webpack/issues/1496
