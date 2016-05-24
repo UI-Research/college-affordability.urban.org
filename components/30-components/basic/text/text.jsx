@@ -6,7 +6,7 @@ if (ExecutionEnvironment.canUseDOM) {
   require('./text.scss');
 }
 
-const TemplateDefault = React.createClass({
+const Text = React.createClass({
   propTypes: {
     title: React.PropTypes.string
   },
@@ -25,4 +25,4 @@ const TemplateDefault = React.createClass({
   }
 });
 
-module.exports = TemplateDefault;
+module.exports = Text;

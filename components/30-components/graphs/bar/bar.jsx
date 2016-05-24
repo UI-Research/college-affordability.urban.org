@@ -1,12 +1,15 @@
 'use strict';
+
 const React = require('react'),
+      d3 = require('d3'),
+      _ = require('lodash'),
       ExecutionEnvironment = require('exenv');
 
 if (ExecutionEnvironment.canUseDOM) {
-  //require('./text.scss');
+  require('./bar.scss');
 }
 
-const TemplateDefault = React.createClass({
+const BarGraph = React.createClass({
   propTypes: {
     title: React.PropTypes.string
   },
@@ -15,14 +18,28 @@ const TemplateDefault = React.createClass({
       title: ''
     };
   },
+  componentDidMount: function() {
+    //alert('qwer');
+    let data = this.props.data;
+    let x = d3.scale.linear()
+      .domain([0, d3.max(data)])
+      .range([0, 420]);
+
+    d3.select(".c_bar__container")
+      .selectAll("div")
+        .data(data)
+      .enter().append("div")
+        .style("width", function(d) { return x(d) + "px"; })
+        .text(function(d) { return d; });
+  },
   render: function() {
     return (
-      <div className="c_text">
+      <div className="c_bar">
         <h1>{this.props.title}</h1>
-        <div className="c_text__content">{this.props.children}</div>
+        <div className="c_bar__container">asdf</div>
       </div>
     );
   }
 });
 
-module.exports = TemplateDefault;
+module.exports = BarGraph;

@@ -2,10 +2,12 @@
 
 const React = require('react'),
       ReactDOM = require('react-dom'),
+      d3 = require('d3'),
       ExecutionEnvironment = require('exenv');
 const Template = require('../../components/20-templates/default/default.jsx');
 const Text = require('../../components/30-components/basic/text/text.jsx'),
-      FAQ = require('../../components/30-components/basic/faq/faq.jsx');
+      FAQ = require('../../components/30-components/basic/faq/faq.jsx'),
+      BarGraph = require('../../components/30-components/graphs/bar/bar.jsx');
 
 let faq = [
   {
@@ -31,7 +33,8 @@ let specifications = {
           <a href="http://www.google.com">This is a link</a>
         </Text>
         <FAQ title="Frequently Asked Questions" set={faq} />
-        <div id='asdf'><strong>Custom HTML</strong></div>
+        <div className='asdf'><strong>Custom HTML</strong></div>
+        <BarGraph data={[4, 8, 15, 16, 23, 42]} />
       </div>
 };
 

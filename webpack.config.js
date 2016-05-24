@@ -18,7 +18,9 @@ let config = {
 
     // Add components here.
     'components': [
-      './components/30-components/basic/text/text.jsx'
+      './components/30-components/basic/text/text.jsx',
+      './components/30-components/basic/faq/faq.jsx',
+      './components/30-components/graphs/bar/bar.jsx'
     ],
 
     // Add individual pages here.
