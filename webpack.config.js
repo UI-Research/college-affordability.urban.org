@@ -24,8 +24,7 @@ let config = {
     ],
 
     // Add individual pages here.
-    'about': './pages/about/about.jsx',
-    'test': './pages/test/test.jsx'
+    'about': './pages/about/about.jsx'
   },
   output: {
     path: './dist',
