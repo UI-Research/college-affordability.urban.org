@@ -1,6 +1,42 @@
-
 @import '../../00-global/_global.scss';
 
 body {
   color: $color--gray;
+  font-family: Lato, sans serif;
+}
+
+a {
+  color: $color--blue;
+}
+
+h1, h2, h3, h4, h5 {
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.6rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+p {
+  margin-bottom: 1rem;
 }

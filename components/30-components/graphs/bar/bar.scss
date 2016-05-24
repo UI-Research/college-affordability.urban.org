@@ -1,5 +1,7 @@
 .c_bar {
-  &__container {
+  margin-bottom: 2rem;
+
+  .c_bar__container {
     div {
       font: 10px sans-serif;
       background-color: steelblue;

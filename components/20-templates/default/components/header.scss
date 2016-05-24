@@ -1,4 +1,6 @@
+@import '../../../00-global/_global.scss';
+
 .header-site {
-  //background-color: red;
-  //background-image: url(./img/logo-reverse.svg) no-repeat;
+  background-color: $color--blue;
+  padding: 2rem;
 }
