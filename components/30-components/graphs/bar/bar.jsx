@@ -2,7 +2,6 @@
 
 const React = require('react'),
       d3 = require('d3'),
-      _ = require('lodash'),
       ExecutionEnvironment = require('exenv');
 
 if (ExecutionEnvironment.canUseDOM) {
@@ -19,17 +18,16 @@ const BarGraph = React.createClass({
     };
   },
   componentDidMount: function() {
-    //alert('qwer');
     let data = this.props.data;
     let x = d3.scale.linear()
       .domain([0, d3.max(data)])
       .range([0, 420]);
 
-    d3.select(".c_bar__container")
-      .selectAll("div")
+    d3.select('.c_bar__container')
+      .selectAll('div')
         .data(data)
-      .enter().append("div")
-        .style("width", function(d) { return x(d) + "px"; })
+      .enter().append('div')
+        .style('width', function(d) { return x(d) + 'px'; })
         .text(function(d) { return d; });
   },
   render: function() {
