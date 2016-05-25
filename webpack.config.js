@@ -48,6 +48,14 @@ let config = {
         loaders: ['style', 'css']
       },
       {
+        test: /\.svg$/,
+        loader: 'file-loader?name=/img/[name].[ext]'
+      },
+      {
+        test: /\.png$/,
+        loader: 'file?name=/img/[name].[ext]'
+      },
+      {
         test: /\.html$/,
         loader: "file?name=[name].[ext]"
       }
