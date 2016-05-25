@@ -20,7 +20,7 @@ let config = {
   },
   output: {
     path: './dist',
-    filename: 'bundle--[name].js'
+    filename: 'bundle--[name].js',
   },
   module: {
     loaders: [
@@ -48,6 +48,10 @@ let config = {
       {
         test: /\.html$/,
         loader: "file?name=[name].[ext]"
+      },
+      {
+        test: /\.(eot|ttf|woff|woff2)$/,
+        loader: 'file?name=/fonts/[name].[ext]'
       }
     ]
   },

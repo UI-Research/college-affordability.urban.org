@@ -50,8 +50,6 @@ const About = React.createClass({
   }
 });
 
-
-
 require('./' + specifications.name.toLowerCase() + '.scss');
 util.printToPage('about', About);
 
