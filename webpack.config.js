@@ -52,7 +52,7 @@ let config = {
         loader: 'file-loader?name=/img/[name].[ext]'
       },
       {
-        test: /\.png$/,
+        test: /\.(png|gif|jpe?g)$/,
         loader: 'file?name=/img/[name].[ext]'
       },
       {
