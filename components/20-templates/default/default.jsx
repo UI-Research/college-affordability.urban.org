@@ -5,11 +5,13 @@ const React = require('react'),
 
 const HTML = require('../../10-html/html.jsx');
 
-const Header = require('./components/header.jsx');
-
 if (ExecutionEnvironment.canUseDOM) {
   require('./default.scss');
 }
+
+const Header = require('./components/header.jsx');
+
+
 
 const TemplateDefault = React.createClass({
   propTypes: {
