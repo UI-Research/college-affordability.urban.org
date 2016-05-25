@@ -5,7 +5,6 @@ const webpack = require('webpack'),
       glob = require('glob'),
       path = require('path');
 
-
 let config = {
   cache: true,
   entry: {
@@ -17,9 +16,6 @@ let config = {
 
     // Auto-detect all components in directory.
     'components': glob.sync('./components/**/*.jsx'),
-
-    // Add individual pages here.
-    'about': './pages/about/about.jsx'
   },
   output: {
     path: './dist',
@@ -65,5 +61,17 @@ let config = {
     // })
   ]
 };
+
+
+// Cycle through /pages and detects all jsx to generate their respective pages.
+let pages = glob.sync('./pages/**/*.jsx');
+pages.map((file) => {
+  let key = file.split('/');
+  key = key.slice(-1)[0];
+  key = key.replace('.jsx', '');
+
+  config.entry[key] = file;
+});
+
 
 module.exports = config;
