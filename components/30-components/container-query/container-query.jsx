@@ -3,8 +3,6 @@ const React = require('react'),
       Classnames = require('classnames'),
       ReactContainerQuery = require('react-container-query');
 
-require('../../../pages/container-query/container-query.scss');
-
 const query = {
   middle: {
     minWidth: 450,
@@ -33,7 +31,7 @@ class Item extends React.Component {
 
 const ResponsiveItem = ReactContainerQuery.applyContainerQuery(Item, query);
 
-class MyContainer extends React.Component {
+class ContainerQueryTest extends React.Component {
   render() {
     let items = [];
     for (let i = 0; i < 10; i++) {
@@ -48,4 +46,4 @@ class MyContainer extends React.Component {
   }
 }
 
-ReactDom.render(<MyContainer/>, document.getElementById('app'));
+module.exports = ContainerQueryTest;
