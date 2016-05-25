@@ -56,6 +56,6 @@ const About = React.createClass({
 if (ExecutionEnvironment.canUseDOM) {
   require('./' + specifications.name.toLowerCase() + '.scss');
 }
-util.printToPage('about', __dirname, <About />);
+//util.printToPage('about', __dirname, <About />);
 
 module.exports = About;

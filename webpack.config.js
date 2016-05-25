@@ -19,6 +19,7 @@ let config = {
     'components': [
       './components/30-components/basic/text/text.jsx',
       './components/30-components/basic/faq/faq.jsx',
+      './components/30-components/basic/fonts/fonts.jsx',
       './components/30-components/graphs/bar/bar.jsx'
     ],
 
@@ -27,7 +28,8 @@ let config = {
   },
   output: {
     path: './dist',
-    filename: 'bundle--[name].js'
+    filename: 'bundle--[name].js',
+    publicPath: '../'
   },
   module: {
     loaders: [
@@ -47,6 +49,10 @@ let config = {
       {
         test: /\.html$/,
         loader: "file?name=[name].[ext]"
+      },
+      {
+        test: /\.(eot|ttf|woff|woff2)$/,
+        loader: 'file?name=fonts/[name].[ext]'
       }
     ]
   },

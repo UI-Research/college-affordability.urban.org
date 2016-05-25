@@ -78,6 +78,8 @@
     "classnames": "^2.2.5",
     "vinyl-named": "^1.1.0",
     "winston": "^2.2.0",
-    "wiredep": "^4.0.0"
+    "wiredep": "^4.0.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5"
   }
 }
