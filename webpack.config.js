@@ -15,15 +15,8 @@ let config = {
       'd3'
     ],
 
-    // Add components here.
-    'components': [
-      './components/20-templates/default/components/header.jsx',
-      './components/30-components/basic/text/text.jsx',
-      './components/30-components/basic/faq/faq.jsx',
-      './components/30-components/graphs/bar/bar.jsx',
-
-      './components/20-templates/default/default.jsx'
-    ],
+    // Auto-detect all components in directory.
+    'components': glob.sync('./components/**/*.jsx'),
 
     // Add individual pages here.
     'about': './pages/about/about.jsx'

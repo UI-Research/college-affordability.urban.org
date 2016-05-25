@@ -1,7 +1,6 @@
 'use strict';
 
 const React = require('react'),
-      ReactDOM = require('react-dom'),
       ExecutionEnvironment = require('exenv');
 const Template = require('../../components/20-templates/default/default.jsx');
 const Text = require('../../components/30-components/basic/text/text.jsx'),
