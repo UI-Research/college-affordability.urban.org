@@ -1,6 +1,7 @@
 'use strict';
 
 const React = require('react'),
+      ReactDOM = require('react-dom'),
       ExecutionEnvironment = require('exenv');
 
 module.exports = {
@@ -8,7 +9,7 @@ module.exports = {
   printToPage: (name, markup) => {
     if (ExecutionEnvironment.canUseDOM) {
       ReactDOM.render((
-        markup
+        React.createElement(markup, null)
       ), document.getElementById('container'));
     }
   }

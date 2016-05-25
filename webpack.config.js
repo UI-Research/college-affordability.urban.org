@@ -5,25 +5,18 @@ const webpack = require('webpack'),
       glob = require('glob'),
       path = require('path');
 
-
 let config = {
   cache: true,
   entry: {
+    // Add any third party modules you'd like included on all pages.
     'vendor': [
       'react',
       'react-dom',
       'd3'
     ],
 
-    // Add components here.
-    'components': [
-      './components/30-components/basic/text/text.jsx',
-      './components/30-components/basic/faq/faq.jsx',
-      './components/30-components/graphs/bar/bar.jsx'
-    ],
-
-    // Add individual pages here.
-    'about': './pages/about/about.jsx'
+    // Auto-detect all components in directory.
+    'components': glob.sync('./components/**/*.jsx'),
   },
   output: {
     path: './dist',
@@ -45,6 +38,14 @@ let config = {
         loaders: ['style', 'css']
       },
       {
+        test: /\.svg$/,
+        loader: 'file-loader?name=/img/[name].[ext]'
+      },
+      {
+        test: /\.(png|gif|jpe?g)$/,
+        loader: 'file?name=/img/[name].[ext]'
+      },
+      {
         test: /\.html$/,
         loader: "file?name=[name].[ext]"
       }
@@ -61,5 +62,17 @@ let config = {
     // })
   ]
 };
+
+
+// Cycle through /pages and detects all jsx to generate their respective pages.
+let pages = glob.sync('./pages/**/*.jsx');
+pages.map((file) => {
+  let key = file.split('/');
+  key = key.slice(-1)[0];
+  key = key.replace('.jsx', '');
+
+  config.entry[key] = file;
+});
+
 
 module.exports = config;

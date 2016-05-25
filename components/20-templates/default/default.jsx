@@ -1,10 +1,17 @@
 'use strict';
 
-const React = require('react');
+const React = require('react'),
+      ExecutionEnvironment = require('exenv');
 
 const HTML = require('../../10-html/html.jsx');
 
+if (ExecutionEnvironment.canUseDOM) {
+  require('./default.scss');
+}
+
 const Header = require('./components/header.jsx');
+
+
 
 const TemplateDefault = React.createClass({
   propTypes: {
@@ -23,7 +30,9 @@ const TemplateDefault = React.createClass({
     return (
       <HTML title={this.props.title} machineName={this.props.machineName} includeHTML={this.props.includeHTML}>
         <Header />
-        {this.props.children}
+        <div className="main">
+          {this.props.children}
+        </div>
       </HTML>
     );
   }

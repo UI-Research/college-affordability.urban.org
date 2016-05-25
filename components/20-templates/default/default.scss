@@ -1,3 +1,44 @@
+@import '../../00-global/_vendor.scss';
+@import '../../00-global/_global.scss';
+
+body {
+  color: $color--gray;
+  font-family: Lato, sans serif;
+}
+
+a {
+  color: $color--blue;
+}
+
+h1, h2, h3, h4, h5 {
+  color: $color--black;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 18px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 31.2px;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem 2rem;
+}
+
 p {
-  color: #00F;
+  margin-bottom: 1rem;
 }

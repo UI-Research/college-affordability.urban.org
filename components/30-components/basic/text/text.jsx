@@ -17,9 +17,9 @@ const Text = React.createClass({
   },
   render: function() {
     return (
-      <div className="c_text">
-        <h1>{this.props.title}</h1>
-        <div className="c_text__content">{this.props.children}</div>
+      <div className="c-text">
+        <h1 className="c-text__title">{this.props.title}</h1>
+        <div className="c-text__content">{this.props.children}</div>
       </div>
     );
   }
