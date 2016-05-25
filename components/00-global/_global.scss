@@ -1,9 +1,8 @@
 /**
  * _global.scss
- * Glboal SCSS for inclusion into main stylesheet.
+ * Global SCSS variables for inclusion into main stylesheet.
  */
 
-@import '../../node_modules/node-reset-scss/scss/_reset.scss';
 @import '_branding.scss';
 @import '_mixins.scss';
 @import '_helpers.scss';
