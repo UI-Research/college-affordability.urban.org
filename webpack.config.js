@@ -8,6 +8,7 @@ const webpack = require('webpack'),
 let config = {
   cache: true,
   entry: {
+    // Add any third party modules you'd like included on all pages.
     'vendor': [
       'react',
       'react-dom',
