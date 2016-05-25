@@ -1,7 +1,6 @@
 'use strict';
 
 const React = require('react'),
-      ReactDOM = require('react-dom'),
       ExecutionEnvironment = require('exenv');
 const Template = require('../../components/20-templates/default/default.jsx');
 const Text = require('../../components/30-components/basic/text/text.jsx'),
@@ -51,11 +50,7 @@ const About = React.createClass({
   }
 });
 
-
-
-if (ExecutionEnvironment.canUseDOM) {
-  require('./' + specifications.name.toLowerCase() + '.scss');
-}
-util.printToPage('about', __dirname, <About />);
+require('./' + specifications.name.toLowerCase() + '.scss');
+util.printToPage('about', About);
 
 module.exports = About;

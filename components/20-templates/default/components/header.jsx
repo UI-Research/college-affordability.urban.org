@@ -1,11 +1,43 @@
 'use strict';
+const React = require('react'),
+      ExecutionEnvironment = require('exenv');
 
-const React = require('react');
+if (ExecutionEnvironment.canUseDOM) {
+  require('./header.scss');
+  require('./nav-primary.scss');
+}
 
 const Header = React.createClass({
   render: function() {
     return (
-      <div>This is a header</div>
+      <header className="header-site">
+        <div className="header-site__logo-wrapper">
+        <a className="header-site__logo" alt="Urban Institute">LOGO</a>
+        </div>
+        <div className="header-site__right">
+          <div className="header-site__title">The College Affordability Project</div>
+          <div className="header-site__nav-primary-wrapper">
+            <div className="nav-primary">
+              <ul>
+                <li>
+                  <a href="#">Item 1</a>
+                  <ul>
+                    <li>
+                      <a href="#">Sub Item</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Item 2</a>
+                </li>
+                <li>
+                  <a href="#">Item 2</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
     );
   }
 });
