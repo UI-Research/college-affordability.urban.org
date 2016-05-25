@@ -2,5 +2,40 @@
 
 .header-site {
   background-color: $color--blue;
-  padding: 2rem;
+  width: 100%;
+  height: 75px;
+  @extend %clearfix;
+}
+
+.header-site__logo-wrapper {
+  background: $color--black;
+  width: 120px;
+  line-height: 75px;
+  float: left;
+  text-align: center;
+}
+
+.header-site__right {
+  line-height: 75px;
+  float: left;
+}
+
+.header-site__nav-primary-wrapper {
+  float: left;
+  margin-left: 2.25rem;
+  padding-left: 2.25rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-left: 1px solid white;
+  line-height: 35px;
+}
+
+.header-site__title {
+  font-size: 19px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  font-family: Futura, Arial, sans-serif;
+  float: left;
+  margin-left: 2.25rem;
 }

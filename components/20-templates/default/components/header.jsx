@@ -12,26 +12,29 @@ const Header = React.createClass({
     return (
       <header className="header-site">
         <div className="header-site__logo-wrapper">
-        <a className="header-site__logo" alt="Urban Institute">Title</a>
+        <a className="header-site__logo" alt="Urban Institute">LOGO</a>
         </div>
-        <div className="header-site__nav">
-          <div className="nav-primary">
-            <ul>
-              <li>
-                <a href="#">Item 1</a>
-                <ul>
-                  <li>
-                    <a href="#">Sub Item</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">Item 2</a>
-              </li>
-              <li>
-                <a href="#">Item 2</a>
-              </li>
-            </ul>
+        <div className="header-site__right">
+          <div className="header-site__title">The College Affordability Project</div>
+          <div className="header-site__nav-primary-wrapper">
+            <div className="nav-primary">
+              <ul>
+                <li>
+                  <a href="#">Item 1</a>
+                  <ul>
+                    <li>
+                      <a href="#">Sub Item</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Item 2</a>
+                </li>
+                <li>
+                  <a href="#">Item 2</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
