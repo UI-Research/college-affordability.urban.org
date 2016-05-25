@@ -7,14 +7,22 @@
   @extend %clearfix;
 }
 
+.header-site__logo {
+  background: url('./img/logo-reverse.svg') no-repeat center center;
+  display: block;
+  width: 120px;
+  height: 90px;
+  margin: 0 auto;
+}
+
 .header-site__logo-wrapper {
   background: $color--black;
   width: 140px;
-  line-height: 90px;
+  height: 90px;
   float: left;
   text-align: center;
 
-  background-image: url('./img/logo-reverse.svg');
+
 }
 
 .header-site__right {

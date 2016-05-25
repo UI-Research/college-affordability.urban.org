@@ -1,14 +1,14 @@
+@import '../../../00-global/_global.scss';
+
 .c-bar {
   margin-bottom: 2rem;
+}
 
-  .c-bar__container {
-    div {
-      font: 10px sans-serif;
-      background-color: steelblue;
-      text-align: right;
-      padding: 3px;
-      margin: 1px;
-      color: white;
-    }
-  }
+.c-bar__line {
+  font-size: 10px;
+  background-color: $color--blue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
 }

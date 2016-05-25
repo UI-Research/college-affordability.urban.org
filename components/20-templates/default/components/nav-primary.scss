@@ -32,8 +32,15 @@
     color: white;
     font-size: 19px;
     font-weight: 300;
-    text-decoration: none;
     text-transform: uppercase;
     font-family: lato, Arial, sans-serif;
+    line-height: 84px;
+
+
+    &:hover {
+      color: black;
+      border-bottom: 6px solid black;
+      text-decoration: none;
+    }
   }
 }

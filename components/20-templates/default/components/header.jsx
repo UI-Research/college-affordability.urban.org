@@ -12,7 +12,7 @@ const Header = React.createClass({
     return (
       <header className="header-site">
         <div className="header-site__logo-wrapper">
-        <a className="header-site__logo" alt="Urban Institute">LOGO</a>
+        <a href="/" className="header-site__logo" alt="Urban Institute"></a>
         </div>
         <div className="header-site__right">
           <div className="header-site__title">The College Affordability Project</div>
