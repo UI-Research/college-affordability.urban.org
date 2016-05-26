@@ -44,7 +44,7 @@
     font-weight: 300;
     text-transform: uppercase;
     font-family: lato, Arial, sans-serif;
-    line-height: 30px;
+    line-height: 34px;
 
     @include breakpoint($bp--large) {
       line-height: 84px;
