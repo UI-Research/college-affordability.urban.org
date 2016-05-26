@@ -1,8 +1,8 @@
 'use strict';
 
 const React = require('react'),
-  ExecutionEnvironment = require('exenv'),
-  util = require('../../helpers/util.jsx');
+      ExecutionEnvironment = require('exenv'),
+      util = require('../../helpers/util.jsx');
 const Template = require('../../components/20-templates/default/default.jsx');
 const ContainerQueryTest = require('../../components/30-components/container-query/container-query.jsx');
 
