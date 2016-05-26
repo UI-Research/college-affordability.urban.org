@@ -1,3 +1,5 @@
+@import '../../../00-global/_global.scss';
+
 .nav-primary {
   position: relative;
 
@@ -9,7 +11,15 @@
 
   li {
     display: inline-block;
-    margin: 0 4rem 0 0;
+    margin: 0 2rem 0 0;
+
+    @include breakpoint($bp--large) {
+      margin: 0 3rem 0 0;
+    }
+
+    @include breakpoint($bp--xlarge) {
+      margin: 0 4rem 0 0;
+    }
     
     ul {
       display: none;
@@ -30,12 +40,16 @@
   a {
     display: inline-block;
     color: white;
-    font-size: 19px;
+    font-size: 15px;
     font-weight: 300;
     text-transform: uppercase;
     font-family: lato, Arial, sans-serif;
-    line-height: 84px;
+    line-height: 30px;
 
+    @include breakpoint($bp--large) {
+      line-height: 84px;
+      font-size: 19px;
+    }
 
     &:hover {
       color: black;

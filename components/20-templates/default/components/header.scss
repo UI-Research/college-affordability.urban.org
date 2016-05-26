@@ -1,47 +1,95 @@
 @import '../../../00-global/_global.scss';
 
 .header-site {
-  background-color: $color--blue;
   width: 100%;
-  height: 90px;
-  @extend %clearfix;
+  @include clearfix();
+
+  @include breakpoint($bp--mid) {
+    height: 90px;
+    background-color: $color--blue;
+  }
 }
 
 .header-site__logo {
   background: url('./img/logo-reverse.svg') no-repeat center center;
   display: block;
-  width: 120px;
-  height: 90px;
+  width: 90px;
+  height: 70px;
   margin: 0 auto;
+
+  @include breakpoint($bp--mid) {
+    width: 120px;
+    height: 90px;
+  }
 }
 
 .header-site__logo-wrapper {
   background: $color--black;
-  width: 140px;
-  height: 90px;
-  float: left;
+  width: 120px;
+  height: 70px;
   text-align: center;
 
-
+  @include breakpoint($bp--mid) {
+    width: 140px;
+    height: 90px;
+    float: left;
+  }
 }
 
 .header-site__right {
-  line-height: 90px;
-  float: left;
+  @include breakpoint($bp--mid) {
+    float: left;
+    margin-left: 1rem;
+  }
+  @include breakpoint($bp--large) {
+    line-height: 90px;
+    margin-left: 0;
+  }
 }
 
 .header-site__nav-primary-wrapper {
-  float: left;
-  margin-left: 4rem;
-  line-height: 88px;
+  display: none;
+  
+  @include breakpoint($bp--mid) {
+    display: block;
+
+  }
+
+  @include breakpoint($bp--large) {
+    float: left;
+    margin-left: 3rem;
+    line-height: 88px;
+  }
+
+  @include breakpoint($bp--xlarge) {
+    margin-left: 4rem;
+  }
 }
 
 .header-site__title {
-  font-size: 19px;
+  background-color: $color--blue;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 15px;
   font-weight: bold;
   text-transform: uppercase;
   color: white;
   font-family: Futura, Arial, sans-serif;
-  float: left;
-  margin-left: 3rem;
+
+  @include breakpoint($bp--mid) {
+    float: left;
+    font-size: 19px;
+    background: transparent;
+    padding: 1.7rem 0 .5rem 0;
+    text-align: left;
+  }
+
+  @include breakpoint($bp--large) {
+    margin-left: 3rem;
+    padding: 0;
+  }
+
+  @include breakpoint($bp--xlarge) {
+    margin-left: 4rem;
+  }
 }

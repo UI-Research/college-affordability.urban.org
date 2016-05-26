@@ -2,3 +2,43 @@
  * _mixins.scss
  * SASS Mixins for inclusion into main stylesheet.
  */
+
+@mixin visuallyhidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+@mixin visuallyhidden-undo() {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding: auto;
+  border: auto;
+  overflow: visible;
+  clip: none;
+}
+
+@mixin add-prefix($property, $value) {
+  -webkit-#{$property}: $value;
+  -moz-#{$property}: $value;
+  -ms-#{$property}: $value;
+  #{$property}: $value;
+}
+
+@mixin clearfix() {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
