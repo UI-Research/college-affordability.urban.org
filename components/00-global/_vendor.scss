@@ -5,5 +5,10 @@
  */
 
 @import '../../node_modules/node-reset-scss/scss/_reset.scss';
+
+// Set up webpack.
+$fa-font-path: "~font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome.scss';
+
 @import 'fonts/lato/lato.scss';
 @import 'fonts/montserrat/montserrat.scss';

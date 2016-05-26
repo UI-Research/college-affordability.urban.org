@@ -35,8 +35,8 @@ let specifications = {
         </Text>
         <BarGraph data={[4, 8, 15, 16, 23, 42]} />
         <FAQ title="Frequently Asked Questions" set={faq} />
+        <i className="fa fa-camera-retro"></i> asdf
         <div className='asdf'><strong>Custom HTML</strong></div>
-
       </div>
 };
 

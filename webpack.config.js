@@ -38,7 +38,7 @@ let config = {
         loaders: ['style', 'css']
       },
       {
-        test: /\.svg$/,
+        test: /\.svg(\?.*$|$)/,
         loader: 'file-loader?name=/img/[name].[ext]'
       },
       {
@@ -50,7 +50,7 @@ let config = {
         loader: "file?name=[name].[ext]"
       },
       {
-        test: /\.(eot|ttf|woff|woff2)$/,
+        test: /\.(eot|ttf|woff|woff2)(\?.*$|$)/,
         loader: 'file?name=/fonts/[name].[ext]'
       }
     ]
