@@ -31,11 +31,11 @@ let config = {
       },
       {
         test: /\.scss$/,
-        loaders: ['style', 'css', 'sass']
+        loaders: ['style', 'css', 'sass', 'postcss-loader']
       },
       {
         test: /\.css$/,
-        loaders: ['style', 'css']
+        loaders: ['style', 'css', 'postcss-loader']
       },
       {
         test: /\.svg(\?.*$|$)/,
