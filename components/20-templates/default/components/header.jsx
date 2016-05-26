@@ -11,6 +11,7 @@ const Header = React.createClass({
   render: function() {
     return (
       <header className="header-site">
+        <div className="header-site__nav-mobile"><i className="fa fa-bars"></i><span>Menu</span></div>
         <div className="header-site__logo-wrapper">
         <a href="/" className="header-site__logo" alt="Urban Institute"></a>
         </div>

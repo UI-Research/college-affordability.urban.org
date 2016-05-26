@@ -93,3 +93,18 @@
     margin-left: 4rem;
   }
 }
+
+.header-site__nav-mobile {
+  position: absolute;
+  right: 13px;
+  top: 23px;
+  font-size: 20px;
+
+  @include breakpoint($bp--mid) {
+    display: none;
+  }
+
+  span {
+    margin-left: 6px;
+  }
+}
