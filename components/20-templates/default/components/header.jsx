@@ -19,10 +19,10 @@ const Header = React.createClass({
           <div className="header-site__title">The College Affordability Project</div>
           <div className="header-site__nav-primary-wrapper">
             <div className="nav-primary">
-              <ul>
+              <ul className="nav-primary__first-level">
                 <li>
                   <a href="#">Item 1</a>
-                  <ul>
+                  <ul className="nav-primary__second-level">
                     <li>
                       <a href="#">Sub Item</a>
                     </li>
