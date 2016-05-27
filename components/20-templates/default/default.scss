@@ -83,16 +83,24 @@ li {
   margin-left: 1.3rem;
 }
 
-.caption-top {
+.caption {
   font-size: 15px;
   font-style: italic;
   font-weight: 100;
-  margin-bottom: $space-single;
   color: $color--black;
+}
+
+.caption--top {
+  margin-bottom: $space-single;
 
   @include breakpoint($bp--mid) {
     width: 552px;
   }
+}
+
+.caption--bottom {
+  margin-top: $space-single;
+
 }
 
 .placeholder-viz {
@@ -100,6 +108,25 @@ li {
   height: 600px;
   background: $color--gray-5;
 }
+
+.placeholder-image-aligned-right {
+  width: 400px;
+  height: 250px;
+  background: $color--gray-5;
+}
+
+.media {
+}
+
+.media--right-align {
+  margin-bottom: $space-double;
+
+  @include breakpoint($bp--mid) {
+    float: right;
+    margin: 0 0 3rem 4rem;
+  }
+}
+
 
 /* Columns */
 

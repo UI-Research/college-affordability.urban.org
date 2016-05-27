@@ -3,6 +3,8 @@
 const React = require('react');
 const Template = require('../../components/20-templates/default/default.jsx');
 const Text = require('../../components/30-components/basic/text/text.jsx');
+const BarGraph = require('../../components/30-components/graphs/bar/bar.jsx');
+
 const util = require('../../helpers/util.jsx');
 
 let specifications = {
@@ -11,15 +13,19 @@ let specifications = {
     <div className='data-viz'>
       <Text title="Costs & Subsidies through Institutions">
         <h2>Overview</h2>
+        <div className="media media--right-align">
+          <BarGraph data={[4, 8, 15, 16, 23, 42]} />
+          <div className="caption caption--below">Caption for image for data visualization</div>
+        </div>
         <p>Before a student even gets his bill, the college has taken steps to reduce the price of higher education.</p>
         <p>To educate a student, a college must pay for instructors, student
           services, administrative support, and maintenance, at a bare minimum.
           To cover those costs, colleges and universities use revenues from:
         </p>
         <ul>
-          <li>Institutional subsidies</li>
-          <li>Endowments</li>
-          <li>State and local appropriations (public institutions only)</li>
+          <li><a href="#">Institutional subsidies</a></li>
+          <li><a href="#">Endowments</a></li>
+          <li><a href="#">State and local appropriations (public institutions only)</a></li>
         </ul>
         <p>Total education and related spending per student varies considerably across sectors. Part of the difference
           is accounted for by the cost differences in institutions’ activities. For example, public two-year colleges
@@ -34,7 +40,7 @@ let specifications = {
         </p>
         <hr />
         <h3>Spending Per Student</h3>
-        <div className="caption-top">
+        <div className="caption caption--top">
           Education and related spending per student, divided into net tuition revenue and subsidy, by sector and degree type, from 2005-06 to 2013-14
         </div>
         <div className="placeholder-viz"></div>
