@@ -25,13 +25,6 @@
   clip: none;
 }
 
-@mixin add-prefix($property, $value) {
-  -webkit-#{$property}: $value;
-  -moz-#{$property}: $value;
-  -ms-#{$property}: $value;
-  #{$property}: $value;
-}
-
 @mixin clearfix() {
   &:after {
     visibility: hidden;
