@@ -23,18 +23,19 @@ const BarGraph = React.createClass({
       .domain([0, d3.max(data)])
       .range([0, 420]);
 
-    d3.select('.c_bar__container')
+    d3.select('.c-bar__container')
       .selectAll('div')
         .data(data)
       .enter().append('div')
+        .classed('c-bar__line', true)
         .style('width', function(d) { return x(d) + 'px'; })
         .text(function(d) { return d; });
   },
   render: function() {
     return (
-      <div className="c_bar">
+      <div className="c-bar">
         <h1>{this.props.title}</h1>
-        <div className="c_bar__container">asdf</div>
+        <div id="barGraph" className="c-bar__container">asdf</div>
       </div>
     );
   }

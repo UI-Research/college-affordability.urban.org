@@ -1,0 +1,63 @@
+@import '../../../00-global/_global.scss';
+
+.nav-primary {
+  position: relative;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 2rem 0 0;
+
+    @include breakpoint($bp--large) {
+      margin: 0 3rem 0 0;
+    }
+
+    @include breakpoint($bp--xlarge) {
+      margin: 0 4rem 0 0;
+    }
+    
+    ul {
+      display: none;
+      position: absolute;
+    }
+    
+    &:hover {
+      ul {
+        display: block;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.nav-primary__first-level {
+  & > li > a {
+    display: inline-block;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-family: lato, Arial, sans-serif;
+    line-height: 26px;
+
+    @include breakpoint($bp--large) {
+      line-height: 84px;
+      font-size: 19px;
+    }
+  }
+
+  & > li:hover > a {
+    color: black;
+    border-bottom: 6px solid black;
+    text-decoration: none;
+  }
+}

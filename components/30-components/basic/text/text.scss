@@ -1,6 +1,5 @@
+@import '../../../00-global/_global.scss';
 
-.c_text {
-  background-color: #CFC;
-  padding: 2em;
-  display: block;
+.c-text {
+  margin-bottom: $space-double;
 }

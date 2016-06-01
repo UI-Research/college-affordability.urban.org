@@ -1,25 +1,32 @@
 'use strict';
 
-const React = require('react');
-const TemplateDefault = require('../../components/20-templates/default/default.jsx');
+const React = require('react'),
+      ExecutionEnvironment = require('exenv'),
+      util = require('../../helpers/util.jsx');
+const Template = require('../../components/20-templates/default/default.jsx');
+const ContainerQueryTest = require('../../components/30-components/container-query/container-query.jsx');
+
+let specifications = {
+  'name': 'container-query',
+  'content':
+    <div>
+      <ContainerQueryTest/>
+    </div>
+};
 
 const ContainerPage = React.createClass({
   render: function() {
-    let content = (
-    <div>
-      <div id="app"></div>
-      <script src="../bundle--vendor.js"></script>
-      <script src='../bundle--container-query.js'></script>
-    </div>
-    );
-
-    let title = ('React Container Demo'),
-        includeHTML = true;
-
     return (
-      <TemplateDefault content={content} title={title} includeHTML={includeHTML} />
+      <Template title="React Container Demo" machineName={specifications.name} includeHTML={this.props.includeHTML}>
+        {specifications.content}
+      </Template>
     );
   }
 });
+
+if (ExecutionEnvironment.canUseDOM) {
+  require('./' + specifications.name.toLowerCase() + '.scss');
+}
+util.printToPage('container-query', ContainerPage);
 
 module.exports = ContainerPage;
