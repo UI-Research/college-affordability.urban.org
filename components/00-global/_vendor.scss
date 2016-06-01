@@ -5,5 +5,12 @@
  */
 
 @import '../../node_modules/node-reset-scss/scss/_reset.scss';
+
+// Set up webpack integration for font-awesome.
+$fa-font-path: "~font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome.scss';
+
+// Branding fonts
+// TODO: Move to _branding.scss instead?
 @import 'fonts/lato/lato.scss';
 @import 'fonts/montserrat/montserrat.scss';

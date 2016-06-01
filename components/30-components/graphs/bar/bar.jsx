@@ -27,6 +27,7 @@ const BarGraph = React.createClass({
       .selectAll('div')
         .data(data)
       .enter().append('div')
+        .classed('c-bar__line', true)
         .style('width', function(d) { return x(d) + 'px'; })
         .text(function(d) { return d; });
   },

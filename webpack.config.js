@@ -31,14 +31,14 @@ let config = {
       },
       {
         test: /\.scss$/,
-        loaders: ['style', 'css', 'sass']
+        loaders: ['style', 'css', 'sass', 'postcss-loader']
       },
       {
         test: /\.css$/,
-        loaders: ['style', 'css']
+        loaders: ['style', 'css', 'postcss-loader']
       },
       {
-        test: /\.svg$/,
+        test: /\.svg(\?.*$|$)/,
         loader: 'file-loader?name=/img/[name].[ext]'
       },
       {
@@ -50,7 +50,7 @@ let config = {
         loader: "file?name=[name].[ext]"
       },
       {
-        test: /\.(eot|ttf|woff|woff2)$/,
+        test: /\.(eot|ttf|woff|woff2)(\?.*$|$)/,
         loader: 'file?name=/fonts/[name].[ext]'
       }
     ]

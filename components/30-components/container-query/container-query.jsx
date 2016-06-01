@@ -1,5 +1,4 @@
 const React = require('react'),
-      ReactDom = require('react-dom'),
       Classnames = require('classnames'),
       ReactContainerQuery = require('react-container-query');
 

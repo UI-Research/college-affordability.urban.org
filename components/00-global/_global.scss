@@ -3,6 +3,8 @@
  * Global SCSS variables for inclusion into main stylesheet.
  */
 
+@import '_variables.scss';
 @import '_branding.scss';
 @import '_mixins.scss';
-@import '_helpers.scss';
+@import '_breakpoints.scss';
+@import '../../node_modules/breakpoint-sass/stylesheets/breakpoint.scss';

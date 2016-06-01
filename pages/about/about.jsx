@@ -1,7 +1,6 @@
 'use strict';
 
-const React = require('react'),
-      ExecutionEnvironment = require('exenv');
+const React = require('react');
 const Template = require('../../components/20-templates/default/default.jsx');
 const Text = require('../../components/30-components/basic/text/text.jsx'),
       FAQ = require('../../components/30-components/basic/faq/faq.jsx'),
@@ -35,7 +34,15 @@ let specifications = {
         </Text>
         <BarGraph data={[4, 8, 15, 16, 23, 42]} />
         <FAQ title="Frequently Asked Questions" set={faq} />
+        <i className="fa fa-camera-retro"></i> asdf
         <div className='asdf'><strong>Custom HTML</strong></div>
+
+        <div className="grid">
+          <div className="col col--2-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis feugiat tellus, ac laoreet nulla dignissim vitae. Nullam vulputate ante in turpis rutrum semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus et scelerisque lectus. Vestibulum nec pretium lacus, id suscipit ligula. Praesent fermentum, sem eu hendrerit ultricies, metus odio luctus urna, ut lacinia diam odio quis neque. Aliquam bibendum lorem nec rhoncus fringilla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer cursus mi posuere, placerat lacus at, sodales nunc.
+          </div>
+          <div className="col col--1-3">Second colum</div>
+        </div>
 
       </div>
 };

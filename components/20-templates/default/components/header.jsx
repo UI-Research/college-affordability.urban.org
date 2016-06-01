@@ -11,17 +11,18 @@ const Header = React.createClass({
   render: function() {
     return (
       <header className="header-site">
+        <div className="header-site__nav-mobile"><i className="fa fa-bars"></i><span>Menu</span></div>
         <div className="header-site__logo-wrapper">
-        <a className="header-site__logo" alt="Urban Institute">LOGO</a>
+        <a href="/" className="header-site__logo" alt="Urban Institute"></a>
         </div>
         <div className="header-site__right">
           <div className="header-site__title">The College Affordability Project</div>
           <div className="header-site__nav-primary-wrapper">
             <div className="nav-primary">
-              <ul>
+              <ul className="nav-primary__first-level">
                 <li>
                   <a href="#">Item 1</a>
-                  <ul>
+                  <ul className="nav-primary__second-level">
                     <li>
                       <a href="#">Sub Item</a>
                     </li>
