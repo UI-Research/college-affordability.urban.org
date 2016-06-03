@@ -11,24 +11,10 @@ This repository encompasses the Urban College Affordability Static Site Generati
 
 ## How do I get started? ##
 
-This is a static site generator.  Out of the box, you should be able to execute the following to create a site based on custom components in the repo:
-
-
+This is a static site generator.  Webpack handles the compilation and bundling of static assets for use in production.  You can reference gulpfile.js for the list of commands you can use locally, but to compile all your assets (and your new changes) run the following:
 ```
 #!gulp
 gulp
-```
-
-
-## How do I start developing? ##
-
-### SASS ###
-CSS is managed as separate .scss files throughout the /components directory. Create any .scss file there and gulp will poll it and include it with the major artifact.
-
-To compile the sass files into a single compressed file in /dist, execute the following:
-```
-#!gulp
-gulp sass
 ```
 or if you'd like to incorporate a watch into your development workflow...
 ```
