@@ -41,6 +41,7 @@
     "babel-preset-stage-0": "^6.5.0",
     "babel-register": "^6.8.0",
     "breakpoint-sass": "^2.7.0",
+    "c3": "^0.4.11",
     "classnames": "^2.2.5",
     "concurrent-transform": "^1.0.0",
     "d3": "^3.5.17",

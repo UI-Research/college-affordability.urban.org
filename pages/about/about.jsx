@@ -4,7 +4,8 @@ const React = require('react');
 const Template = require('../../components/20-templates/default/default.jsx');
 const Text = require('../../components/30-components/basic/text/text.jsx'),
       FAQ = require('../../components/30-components/basic/faq/faq.jsx'),
-      BarGraph = require('../../components/30-components/graphs/bar/bar.jsx');
+      BarGraph = require('../../components/30-components/graphs/bar/bar.jsx'),
+      LineGraph = require('../../components/30-components/graphs/line/line.jsx');
 
 
 const util = require('../../helpers/util.jsx');
@@ -33,6 +34,11 @@ let specifications = {
           <a href="http://www.google.com">This is a link</a>
         </Text>
         <BarGraph data={[4, 8, 15, 16, 23, 42]} />
+        <LineGraph title="Derp" data={[4, 8, 15, 16, 23, 42]} />
+        <LineGraph title="Derp" data={[4, 8, 15, 16, 23, 42]} />
+        <LineGraph title="Derp" data={[4, 8, 15, 16, 23, 42]} />
+        <LineGraph title="Derp" data={[4, 8, 15, 16, 23, 42]} />
+        <LineGraph title="Derp" data={[4, 8, 15, 16, 23, 42]} />
         <FAQ title="Frequently Asked Questions" set={faq} />
         <i className="fa fa-camera-retro"></i> asdf
         <div className='asdf'><strong>Custom HTML</strong></div>

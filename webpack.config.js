@@ -12,7 +12,9 @@ let config = {
     'vendor': [
       'react',
       'react-dom',
-      'd3'
+      'd3',
+      'c3',
+      'lodash'
     ],
 
     // Auto-detect all components in directory.
@@ -24,33 +26,35 @@ let config = {
   },
   module: {
     loaders: [
+      // Javascript: js, jsx
       {
         test: /\.jsx?$/,
         loader: 'babel-loader',
         exclude: /node_modules/
       },
+      // CSS: scss, css
       {
-        test: /\.scss$/,
+        test: /\.s?css$/,
         loaders: ['style', 'css', 'sass', 'postcss-loader']
       },
-      {
-        test: /\.css$/,
-        loaders: ['style', 'css', 'postcss-loader']
-      },
+      // SVGs: svg, svg?something
       {
         test: /\.svg(\?.*$|$)/,
         loader: 'file-loader?name=/img/[name].[ext]'
       },
+      // Images: png, gif, jpg, jpeg
       {
         test: /\.(png|gif|jpe?g)$/,
         loader: 'file?name=/img/[name].[ext]'
       },
+      // HTML: htm, html
       {
-        test: /\.html$/,
+        test: /\.html?$/,
         loader: "file?name=[name].[ext]"
       },
+      // Font files: eot, ttf, woff, woff2
       {
-        test: /\.(eot|ttf|woff|woff2)(\?.*$|$)/,
+        test: /\.(eot|ttf|woff2?)(\?.*$|$)/,
         loader: 'file?name=/fonts/[name].[ext]'
       }
     ]
@@ -59,11 +63,18 @@ let config = {
   plugins: [
     // Pro-tip: Order matters here.
     new webpack.optimize.CommonsChunkPlugin(['components', 'vendor'], 'bundle--[name].js'),
-    // new webpack.optimize.UglifyJsPlugin({
-    //   compress: {
-    //     warnings: false // https://github.com/webpack/webpack/issues/1496
-    //   }
-    // })
+    // Use the production version of third party libraries.
+    new webpack.DefinePlugin({
+      'process.env':{
+        'NODE_ENV': JSON.stringify('production')
+      }
+    }),
+    // Minify assets.
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false // https://github.com/webpack/webpack/issues/1496
+      }
+    })
   ]
 };
 

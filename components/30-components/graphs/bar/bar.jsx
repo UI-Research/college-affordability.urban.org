@@ -35,7 +35,7 @@ const BarGraph = React.createClass({
     return (
       <div className="c-bar">
         <h1>{this.props.title}</h1>
-        <div id="barGraph" className="c-bar__container">asdf</div>
+        <div id="barGraph" className="c-bar__container"></div>
       </div>
     );
   }
