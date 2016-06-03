@@ -64,7 +64,6 @@ const LineGraph = React.createClass({
     }
   },
   render: function() {
-    console.log(this.props);
     return (
       <div className="c-line">
         <h1>{this.props.title}</h1>
