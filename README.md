@@ -25,9 +25,9 @@ gulp watch
 Pro-tips
 * The directory structure is set up in order. Files in the top level directory (/00-global) will be concatenated before a file in a lower level directory (30-components).  Keep this in mind when you determine priority in your CSS.
 
-## Contribution guidelines ##
+## How do I edit content? ##
 
-...
+Refer to the EDITING.md in this repository for guidelines.
 
 ## Who do I talk to? ##
 
