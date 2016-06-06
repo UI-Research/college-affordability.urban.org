@@ -33,7 +33,7 @@ let specifications = {
           <p>Example of a text box?</p>
           <a href="http://www.google.com">This is a link</a>
         </Text>
-        <img src={require('./files/PSVFcxr.jpg')} />
+        <img src={'/img/PSVFcxr.jpg'} />
         <BarGraph data={[4, 8, 15, 16, 23, 42]} />
         <LineGraph data={[4, 8, 15, 16, 23, 42]} />
         <FAQ title="Frequently Asked Questions" set={faq} />
