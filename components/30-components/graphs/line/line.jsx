@@ -15,17 +15,17 @@ const LineGraph = React.createClass({
   },
   getDefaultProps: function() {
     return {
-      title: '',
+      title: ''
     };
   },
   componentWillMount() {
     this.id = 'lineGraph' + util.uniqueID();
   },
   componentDidMount: function() {
-    let data = this.props.data;
     if (ExecutionEnvironment.canUseDOM) {
-      let c3 = require('c3');
-      let chart = c3.generate({
+      let c3 = require('c3'),
+          d3 = require('d3');
+      c3.generate({
         bindto: '#' + this.id,
         data: {
           columns: [
@@ -40,7 +40,7 @@ const LineGraph = React.createClass({
           }
         },
         transition: {
-            duration: 3000
+          duration: 3000
         },
         axis: {
           y: {
@@ -49,7 +49,7 @@ const LineGraph = React.createClass({
               position: 'outer-middle'
             },
             tick: {
-              format: d3.format("$,") // ADD
+              format: d3.format('$,') // ADD
             }
           },
           y2: {

@@ -33,9 +33,6 @@ let fs = require('fs-extra'),
   os = require('os'),
   named = require('vinyl-named');
 
-let src_image_dir = 'images',
-    dist_image_dir = 'dist/images';
-
 require('node-jsx').install();
 
 
@@ -49,16 +46,20 @@ gulp.task('lint', function() {
 });
 
 
+// Delete the artifacts directory
+// > gulp destroy
+gulp.task('destroy', function() {
+  // Clean artifacts directory.
+  fs.removeSync('dist/');
+});
+
+
 // Create static artifact
 // > gulp react
 gulp.task('react', function() {
   let options = {};
 
   glob('pages/**/*.jsx', (er, files) => {
-    // Clean artifacts directory.
-    // TODO: Move this to separate gulp task...
-    //fs.removeSync('dist/');
-
     files.map( (filepath) => {
       // Convert filename to .html .
       let file = filepath.split('/');
@@ -79,7 +80,7 @@ gulp.task('react', function() {
 
 
 // Generate a webpack bundle
-//> gulp webpack
+// > gulp webpack
 gulp.task('webpack', function(cb) {
   exec('webpack --color', function (err, stdout, stderr) {
     console.log(stdout);
@@ -88,6 +89,9 @@ gulp.task('webpack', function(cb) {
   });
 });
 
+
+// Same as 'gulp webpack' but spawned as a watch for automatic updates.
+// > gulp webpack-watch
 gulp.task('webpack-watch', (cb) => {
   const webpack_watch = spawn('webpack', ['--watch', '--color']);
 
@@ -110,13 +114,17 @@ gulp.task('webpack-watch', (cb) => {
 gulp.task('track', function() {
   gulp.watch(['components/**/*.jsx', 'pages/**/*.jsx'], ['react', 'webpack-watch']);
   gulp.watch(['components/**/*.scss', 'pages/**/*.scss'], ['webpack-watch']);
+  gulp.watch(['pages/**/*.{jpg,gif,png}'], ['images']);
 });
 
 
 // Generate low and high quality versions of images.
-// > gulp processImages
-gulp.task('processImages', function () {
-  fs.stat('images', function (err, stats) {
+// > gulp images
+gulp.task('images', function () {
+  let src_image_dir = 'pages',
+      dist_image_dir = 'dist/img';
+
+  fs.stat(src_image_dir, function (err, stats) {
     if (err && err.code === 'ENOENT') {
       console.log('Can not process images - images directory does not exist');
       return false;
@@ -126,22 +134,24 @@ gulp.task('processImages', function () {
     }
     if (stats.isDirectory()) {
       // Generate low quality thumbnail image version to serve static pages faster.
-      gulp.src(src_image_dir + '/**/*.{jpg,png}')
+      gulp.src(src_image_dir + '/**/*.{jpg,gif,png}')
         .pipe(parallel(
           // Crop to exact size.
-          imageResize({ width: 200, height: 200, quality: 0.4, crop: true }),
+          imageResize({ width: 50, height: 50, quality: 0.1, crop: true }),
           os.cpus().length
         ))
+        .pipe(rename({dirname: ''}))
         .pipe(gulp.dest(dist_image_dir + '/preview'));
 
       // Generate high quality, image version that is still not too large.
-      gulp.src(src_image_dir + '/**/*.{jpg,png}')
+      gulp.src(src_image_dir + '/**/*.{jpg,gif,png}')
         .pipe(parallel(
           // No cropping, allows to maintain aspect ratio.
           imageResize({ width: 1200, height: 1000, quality: 1 }),
           os.cpus().length
         ))
-        .pipe(gulp.dest(dist_image_dir + '/large'));
+        .pipe(rename({dirname: ''}))
+        .pipe(gulp.dest(dist_image_dir));
     }
   });
 });
@@ -163,6 +173,6 @@ gulp.task('clone-data', function () {
 
 // Default Tasks
 // > gulp
-gulp.task('default', ['lint', 'react', 'webpack']);
+gulp.task('default', ['destroy', 'lint', 'react', 'webpack']);
 // > gulp watch
-gulp.task('watch', ['react', 'webpack', 'track']);
+gulp.task('watch', ['destroy', 'lint', 'react', 'webpack', 'track']);
