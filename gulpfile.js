@@ -173,6 +173,6 @@ gulp.task('clone-data', function () {
 
 // Default Tasks
 // > gulp
-gulp.task('default', ['destroy', 'lint', 'react', 'webpack']);
+gulp.task('default', ['destroy', 'lint', 'images', 'react', 'webpack']);
 // > gulp watch
-gulp.task('watch', ['destroy', 'lint', 'react', 'webpack', 'track']);
+gulp.task('watch', ['destroy', 'lint', 'images', 'react', 'webpack', 'track']);
