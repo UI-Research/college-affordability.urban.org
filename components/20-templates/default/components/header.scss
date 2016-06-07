@@ -5,8 +5,11 @@
   @include clearfix();
 
   @include breakpoint($bp--mid) {
-    height: 90px;
+    height: 110px;
     background-color: $color--blue;
+  }
+  @include breakpoint($bp--large) {
+    height: 130px;
   }
 }
 
@@ -18,8 +21,11 @@
   margin: 0 auto;
 
   @include breakpoint($bp--mid) {
+    height: 110px;
+  }
+  @include breakpoint($bp--large) {
     width: 120px;
-    height: 90px;
+    height: 130px;
   }
 }
 
@@ -30,40 +36,50 @@
   text-align: center;
 
   @include breakpoint($bp--mid) {
-    width: 140px;
-    height: 90px;
+    width: 120px;
+    height: 110px;
     float: left;
+    margin-right: 1.25rem;
+  }
+  @include breakpoint($bp--large) {
+    width: 150px;
+    margin-right: 1.25rem;
+    height: 130px;
+  }
+  @include breakpoint($bp--xlarge) {
+    width: 200px;
+    margin-right: 2rem;
   }
 }
 
 .header-site__right {
   @include breakpoint($bp--mid) {
-    float: left;
-    margin-left: 1rem;
   }
   @include breakpoint($bp--large) {
-    line-height: 90px;
     margin-left: 0;
   }
 }
 
 .header-site__nav-primary-wrapper {
   display: none;
+  background-color: $color--blue;
   
   @include breakpoint($bp--mid) {
+    clear: both;
     display: block;
-
+    height: 37px;
+    padding-left: 1rem;
+    border-top: 1px solid white;
   }
 
   @include breakpoint($bp--large) {
-    float: left;
-    margin-left: 3rem;
-    line-height: 88px;
+    border: none;
+    height: auto;
+    clear: none;
+    background-color: transparent;
+    padding: 0.15rem 0 1rem 2rem;
   }
 
-  @include breakpoint($bp--xlarge) {
-    margin-left: 4rem;
-  }
 }
 
 .header-site__title {
@@ -77,20 +93,19 @@
   font-family: Futura, Arial, sans-serif;
 
   @include breakpoint($bp--mid) {
-    float: left;
     font-size: 19px;
+    letter-spacing: 2px;
     background: transparent;
-    padding: 1.7rem 0 .2rem 0;
+    padding: 2.7rem 0 1rem 0;
     text-align: left;
   }
 
   @include breakpoint($bp--large) {
-    margin-left: 3rem;
-    padding: 0;
+    padding: 1.7rem 0 0 2rem;
+    font-size: 24px;
   }
 
   @include breakpoint($bp--xlarge) {
-    margin-left: 4rem;
   }
 }
 

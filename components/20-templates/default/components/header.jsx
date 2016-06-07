@@ -16,12 +16,12 @@ const Header = React.createClass({
         <a href="/" className="header-site__logo" alt="Urban Institute"></a>
         </div>
         <div className="header-site__right">
-          <div className="header-site__title">The College Affordability Project</div>
+          <div className="header-site__title">Understanding College Affordability</div>
           <div className="header-site__nav-primary-wrapper">
             <div className="nav-primary">
               <ul className="nav-primary__first-level">
                 <li>
-                  <a href="#">Item 1</a>
+                  <a href="#">Defining Higher Education</a>
                   <ul className="nav-primary__second-level">
                     <li>
                       <a href="#">Sub Item</a>
@@ -29,10 +29,16 @@ const Header = React.createClass({
                   </ul>
                 </li>
                 <li>
-                  <a href="#">Item 2</a>
+                  <a href="#">Costs, Aid &amp; Prices</a>
                 </li>
                 <li>
-                  <a href="#">Item 2</a>
+                  <a href="#">Paying For College</a>
+                </li>
+                <li>
+                  <a href="#">After College</a>
+                </li>
+                <li>
+                  <a href="#">Student Profiles</a>
                 </li>
               </ul>
             </div>

@@ -63,6 +63,7 @@
     "gulp-image-resize": "^0.8.0",
     "gulp-react": "^3.1.0",
     "img-loader": "^1.2.2",
+    "lodash": "^4.13.1",
     "map-stream": "0.0.6",
     "marked": "^0.3.5",
     "node-jsx": "^0.13.3",

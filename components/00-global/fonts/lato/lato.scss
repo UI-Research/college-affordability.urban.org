@@ -1,5 +1,15 @@
 @font-face {
   font-family: 'Lato';
+  src: url('../../00-global/fonts/lato/Lato-Thin.eot');
+  src: url('../../00-global/fonts/lato/Lato-Thin.eot?#iefix') format('embedded-opentype'),
+  url('../../00-global/fonts/lato/Lato-Thin.woff2') format('woff2'),
+  url('../../00-global/fonts/lato/Lato-Thin.woff') format('woff'),
+  url('../../00-global/fonts/lato/Lato-Thin.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
   src: url('../../00-global/fonts/lato/Lato-Regular.eot');
   src: url('../../00-global/fonts/lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
        url('../../00-global/fonts/lato/Lato-Regular.woff2') format('woff2'),
