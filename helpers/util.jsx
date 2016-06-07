@@ -2,6 +2,7 @@
 
 const React = require('react'),
       ReactDOM = require('react-dom'),
+      _ = require('lodash'),
       ExecutionEnvironment = require('exenv');
 
 module.exports = {
@@ -12,5 +13,9 @@ module.exports = {
         React.createElement(markup, null)
       ), document.getElementById('container'));
     }
+  },
+  // Generate unique value for use with components ID
+  uniqueID: () => {
+    return _.uniqueId();
   }
 }
