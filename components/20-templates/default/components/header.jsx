@@ -5,6 +5,7 @@ const React = require('react'),
 if (ExecutionEnvironment.canUseDOM) {
   require('./header.scss');
   require('./nav-primary.scss');
+  require('./nav-utility.scss');
 }
 
 const Header = React.createClass({
@@ -39,6 +40,21 @@ const Header = React.createClass({
                 </li>
                 <li>
                   <a href="#">Student Profiles</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="header-site__nav-utility-wrapper">
+            <div className="nav-utility">
+              <ul className="nav-utility__first-level">
+                <li>
+                  <a href="#">About the Project</a>
+                </li>
+                <li>
+                  <a href="#">Research &amp; Resources</a>
+                </li>
+                <li>
+                  <a href="#">Chart Indexes</a>
                 </li>
               </ul>
             </div>

@@ -79,7 +79,12 @@
     background-color: transparent;
     padding: 0.15rem 0 1rem 2rem;
   }
+}
 
+.header-site__nav-utility-wrapper {
+  position: absolute;
+  top: 0;
+  right: 3rem;
 }
 
 .header-site__title {
