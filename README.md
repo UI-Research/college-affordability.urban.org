@@ -8,6 +8,7 @@ This repository encompasses the Urban College Affordability Static Site Generati
 1. Install node (brew install node)
 1. Install npm (sudo npm install npm -g)
 1. Install all dependencies (npm install)
+1. Install imagemagick on your machine (Refer to https://github.com/scalableminds/gulp-gm/blob/master/README.md for information on installing it on your machine).
 
 ## How do I get started? ##
 

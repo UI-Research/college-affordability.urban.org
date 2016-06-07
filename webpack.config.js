@@ -32,6 +32,10 @@ let config = {
         loader: 'babel-loader',
         exclude: /node_modules/
       },
+      {
+        test: /\.json$/,
+        loader: 'json'
+      },
       // CSS: scss, css
       {
         test: /\.s?css$/,

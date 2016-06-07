@@ -34,7 +34,7 @@ let specifications = {
           <a href="http://www.google.com">This is a link</a>
         </Text>
         <img src='/img/PSVFcxr.jpg' />
-        <BarGraph data={[4, 8, 15, 16, 23, 42]} />
+        <BarGraph title="My Bar Chart" file={require('./sample.json')} />
         <LineGraph data={[4, 8, 15, 16, 23, 42]} />
         <FAQ title="Frequently Asked Questions" set={faq} />
         <i className="fa fa-camera-retro"></i> asdf
