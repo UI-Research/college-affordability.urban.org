@@ -1,11 +1,16 @@
 'use strict';
 
-const React = require('react');
+const React = require('react'),
+      ExecutionEnvironment = require('exenv');
 const Template = require('../../components/20-templates/default/default.jsx');
 const Text = require('../../components/30-components/basic/text/text.jsx'),
       FAQ = require('../../components/30-components/basic/faq/faq.jsx'),
-      BarGraph = require('../../components/30-components/graphs/bar/bar.jsx');
+      BarGraph = require('../../components/30-components/graphs/bar/bar.jsx'),
+      PreviewImage = require('../../components/30-components/basic/previewImage/previewImage.jsx'),
+      ReactCSSTransitionGroup  = require('react-addons-css-transition-group');
 
+// react-lazyload doesn't support require().
+import LazyLoad from 'react-lazyload';
 
 const util = require('../../helpers/util.jsx');
 
@@ -32,8 +37,16 @@ let specifications = {
           <p>Example of a text box?</p>
           <a href="http://www.google.com">This is a link</a>
         </Text>
-        <BarGraph data={[4, 8, 15, 16, 23, 42]} />
-        <FAQ title="Frequently Asked Questions" set={faq} />
+            <BarGraph title="one" data={[4, 8, 15, 16, 23, 42]} />
+            <BarGraph title="two" data={[4, 8, 15, 16, 23, 42]} />
+            <BarGraph title="three" data={[4, 8, 15, 16, 23, 42]} />
+            <BarGraph title="four" data={[4, 8, 15, 16, 23, 42]} />
+            <BarGraph title="five" data={[4, 8, 15, 16, 23, 42]} />
+            <BarGraph title="six" data={[4, 8, 15, 16, 23, 42]} />
+            <BarGraph title="seven" data={[4, 8, 15, 16, 23, 42]} />
+        <LazyLoad height={200} throttle={100} offset={-200}>
+          <FAQ title="Frequently Asked Questions" set={faq} />
+        </LazyLoad>
         <i className="fa fa-camera-retro"></i> asdf
         <div className='asdf'><strong>Custom HTML</strong></div>
 
@@ -57,7 +70,10 @@ const About = React.createClass({
   }
 });
 
-require('./' + specifications.name.toLowerCase() + '.scss');
+if (ExecutionEnvironment.canUseDOM) {
+  require('./' + specifications.name.toLowerCase() + '.scss');
+  About.render();
+}
 util.printToPage('about', About);
 
 module.exports = About;
