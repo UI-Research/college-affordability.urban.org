@@ -12,16 +12,21 @@
   li {
     display: inline-block;
     list-style-type: none;
-    margin: 0 1rem 0 0;
+    margin: 0 0.25rem 0 0;
+  }
 
-    @include breakpoint($bp--mid) {
-      margin: 0 0.85rem 0 0;
-    }
-    @include breakpoint($bp--large) {
-      margin: 0 1.25rem 0 0;
-    }
-    @include breakpoint($bp--xlarge) {
-      margin: 0 2rem 0 0;
+  a {
+    background: lighten($color--blue, 10);
+    display: inline-block;
+    font-weight: normal;
+    font-size: 13px;
+    padding: 0 0.5rem;
+    color: white;
+
+    &:hover {
+      text-decoration: none;
+      background: white;
+      color: $color--blue;
     }
   }
 }

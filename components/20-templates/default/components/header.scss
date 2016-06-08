@@ -82,9 +82,20 @@
 }
 
 .header-site__nav-utility-wrapper {
-  position: absolute;
-  top: 0;
-  right: 3rem;
+  display: none;
+
+  @include breakpoint($bp--mid) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0.15rem;
+  }
+  @include breakpoint($bp--large) {
+    right: 1rem;
+  }
+  @include breakpoint($bp--xlarge) {
+    right: 2rem;
+  }
 }
 
 .header-site__title {
@@ -106,11 +117,12 @@
   }
 
   @include breakpoint($bp--large) {
-    padding: 1.7rem 0 0 2rem;
+    padding: 2.5rem 0 0 2rem;
     font-size: 24px;
   }
 
   @include breakpoint($bp--xlarge) {
+    padding: 1.7rem 0 0 2rem;
   }
 }
 
