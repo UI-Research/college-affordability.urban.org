@@ -1,4 +1,4 @@
-@import '../../../00-global/_global.scss';
+@import '_global.scss';
 
 .header-site {
   width: 100%;
@@ -49,7 +49,7 @@
 
 .header-site__nav-primary-wrapper {
   display: none;
-  
+
   @include breakpoint($bp--mid) {
     display: block;
 

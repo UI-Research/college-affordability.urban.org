@@ -1,4 +1,4 @@
-@import '../../../00-global/_global.scss';
+@import '_global.scss';
 
 .nav-primary {
   position: relative;
@@ -21,12 +21,12 @@
     @include breakpoint($bp--xlarge) {
       margin: 0 4rem 0 0;
     }
-    
+
     ul {
       display: none;
       position: absolute;
     }
-    
+
     &:hover {
       ul {
         display: block;

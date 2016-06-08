@@ -73,6 +73,9 @@ let config = {
       }
     ]
   },
+  sassLoader: {
+    includePaths: [path.resolve(__dirname, "./components/00-global")]
+  },
   postcss: [ autoprefixer({ browsers: ['last 12 versions'] }) ],
   plugins: [
     // Pro-tip: Order matters here.
