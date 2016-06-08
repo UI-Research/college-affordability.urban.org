@@ -29,7 +29,7 @@ const BarGraph = React.createClass({
       let data = this.props.file;
 
       // Identify DOM element we want to apply the graph to.
-      data.bindto = '#' + this.id,
+      data.bindto = '#' + this.id;
 
       // Force specify type of graph.
       data.data.type =  'bar';
