@@ -33,7 +33,7 @@ const LineGraph = React.createClass({
       // Force specify type of graph.
       data.data.type =  'line';
 
-      let chart = c3.generate(data);
+      c3.generate(data);
     }
   },
   render: function() {

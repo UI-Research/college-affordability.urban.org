@@ -34,7 +34,7 @@ const BarGraph = React.createClass({
       // Force specify type of graph.
       data.data.type =  'bar';
 
-      let chart = c3.generate(data);
+      c3.generate(data);
     }
   },
   render: function() {
