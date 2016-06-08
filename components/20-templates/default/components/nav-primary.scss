@@ -1,4 +1,4 @@
-@import '../../../00-global/_global.scss';
+@import '_global.scss';
 
 .nav-primary {
   position: relative;
@@ -28,7 +28,7 @@
       display: none;
       position: absolute;
     }
-    
+
     &:hover {
       ul {
         display: block;

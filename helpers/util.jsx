@@ -14,7 +14,11 @@ module.exports = {
       ), document.getElementById('container'));
     }
   },
-  // Generate unique value for use with components ID
+  // Identifies whether the DOM is available so scripts can latch on.  Useful when code relies on 'window' to be present.
+  canUseDOM: () => {
+    return ExecutionEnvironment.canUseDOM;
+  },
+  // Generate unique value for use with components ID.
   uniqueID: () => {
     return _.uniqueId();
   }

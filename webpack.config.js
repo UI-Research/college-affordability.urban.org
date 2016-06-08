@@ -24,6 +24,16 @@ let config = {
     path: './dist',
     filename: 'bundle--[name].js',
   },
+  resolve: {
+    // NOTE: Also add the same paths near the top of the gulp file where we
+    // include app-module-path.
+    modulesDirectories: [
+      'components',
+      'helpers',
+      'node_modules',
+    ],
+    extensions: ['', '.js', '.jsx']
+  },
   module: {
     loaders: [
       // Javascript: js, jsx
@@ -31,6 +41,10 @@ let config = {
         test: /\.jsx?$/,
         loader: 'babel-loader',
         exclude: /node_modules/
+      },
+      {
+        test: /\.json$/,
+        loader: 'json'
       },
       // CSS: scss, css
       {
@@ -58,6 +72,9 @@ let config = {
         loader: 'file?name=/fonts/[name].[ext]'
       }
     ]
+  },
+  sassLoader: {
+    includePaths: [path.resolve(__dirname, "./components/00-global")]
   },
   postcss: [ autoprefixer({ browsers: ['last 12 versions'] }) ],
   plugins: [

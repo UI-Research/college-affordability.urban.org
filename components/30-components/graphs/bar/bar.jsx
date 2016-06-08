@@ -1,12 +1,10 @@
 'use strict';
 
-const React = require('react'),
-      d3 = require('d3'),
-      ExecutionEnvironment = require('exenv');
+const React = require('react');
 
-const util = require('../../../../helpers/util.jsx');
+const util = require('util.jsx');
 
-if (ExecutionEnvironment.canUseDOM) {
+if (util.canUseDOM()) {
   require('./bar.scss');
 }
 
@@ -20,21 +18,24 @@ const BarGraph = React.createClass({
     };
   },
   componentWillMount() {
+    // Create unique ID for element.
     this.id = 'barGraph' + util.uniqueID();
   },
   componentDidMount: function() {
-    let data = this.props.data;
-    let x = d3.scale.linear()
-      .domain([0, d3.max(data)])
-      .range([0, 420]);
+    if (util.canUseDOM) {
+      const c3 = require('c3');
 
-    d3.select('#' + this.id)
-      .selectAll('div')
-        .data(data)
-      .enter().append('div')
-        .classed('c-bar__line', true)
-        .style('width', function(d) { return x(d) + 'px'; })
-        .text(function(d) { return d; });
+      // Acquire graph data.
+      let data = this.props.file;
+
+      // Identify DOM element we want to apply the graph to.
+      data.bindto = '#' + this.id;
+
+      // Force specify type of graph.
+      data.data.type =  'bar';
+
+      c3.generate(data);
+    }
   },
   render: function() {
     return (

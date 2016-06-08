@@ -1,4 +1,4 @@
-@import '../../../00-global/_global.scss';
+@import '_global.scss';
 
 .header-site {
   width: 100%;
@@ -63,7 +63,7 @@
 .header-site__nav-primary-wrapper {
   display: none;
   background-color: $color--blue;
-  
+
   @include breakpoint($bp--mid) {
     clear: both;
     display: block;
