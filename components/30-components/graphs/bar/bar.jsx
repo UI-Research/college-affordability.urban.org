@@ -1,11 +1,10 @@
 'use strict';
 
-const React = require('react'),
-      ExecutionEnvironment = require('exenv');
+const React = require('react');
 
 const util = require('../../../../helpers/util.jsx');
 
-if (ExecutionEnvironment.canUseDOM) {
+if (util.canUseDOM) {
   require('./bar.scss');
 }
 
@@ -23,7 +22,7 @@ const BarGraph = React.createClass({
     this.id = 'barGraph' + util.uniqueID();
   },
   componentDidMount: function() {
-    if (ExecutionEnvironment.canUseDOM) {
+    if (util.canUseDOM) {
       const c3 = require('c3');
 
       // Acquire graph data.
