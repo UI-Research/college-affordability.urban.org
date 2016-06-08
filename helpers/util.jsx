@@ -18,7 +18,7 @@ module.exports = {
   canUseDOM: () => {
     return ExecutionEnvironment.canUseDOM;
   },
-  // Generate unique value for use with components ID
+  // Generate unique value for use with components ID.
   uniqueID: () => {
     return _.uniqueId();
   }

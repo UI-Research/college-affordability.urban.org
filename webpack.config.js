@@ -24,6 +24,16 @@ let config = {
     path: './dist',
     filename: 'bundle--[name].js',
   },
+  resolve: {
+    // NOTE: Also add the same paths near the top of the gulp file where we
+    // include app-module-path.
+    modulesDirectories: [
+      'components',
+      'helpers',
+      'node_modules',
+    ],
+    extensions: ['', '.js', '.jsx']
+  },
   module: {
     loaders: [
       // Javascript: js, jsx

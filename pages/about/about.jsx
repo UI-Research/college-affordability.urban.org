@@ -1,14 +1,14 @@
 'use strict';
 
 const React = require('react');
-const Template = require('../../components/20-templates/default/default.jsx');
-const Text = require('../../components/30-components/basic/text/text.jsx'),
-      FAQ = require('../../components/30-components/basic/faq/faq.jsx'),
-      BarGraph = require('../../components/30-components/graphs/bar/bar.jsx'),
-      LineGraph = require('../../components/30-components/graphs/line/line.jsx');
+const Template = require('20-templates/default/default.jsx');
+const Text = require('30-components/basic/text/text.jsx'),
+      FAQ = require('30-components/basic/faq/faq.jsx'),
+      BarGraph = require('30-components/graphs/bar/bar.jsx'),
+      LineGraph = require('30-components/graphs/line/line.jsx');
 
 
-const util = require('../../helpers/util.jsx');
+const util = require('util.jsx');
 
 let faq = [
   {
@@ -58,7 +58,9 @@ const About = React.createClass({
   }
 });
 
-require('./' + specifications.name.toLowerCase() + '.scss');
+if (util.canUseDOM()) {
+  require('./' + specifications.name.toLowerCase() + '.scss');
+}
 util.printToPage('about', About);
 
 module.exports = About;

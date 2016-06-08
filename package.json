@@ -30,6 +30,7 @@
     "sass-loader": "^3.2.0"
   },
   "dependencies": {
+    "app-module-path": "^1.1.0",
     "autoprefixer": "^6.3.6",
     "babel": "^6.5.2",
     "babel-core": "^6.8.0",

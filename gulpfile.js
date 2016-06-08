@@ -6,34 +6,37 @@ const URBAN_REPO_URL = 'https://github.com/UrbanInstitute/ed-data';
 const URBAN_DATA_DIR = 'external_data';
 
 // Include gulp + plugins.
-let gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    babel = require('gulp-babel'),
-    eslint = require('gulp-eslint'),
-    concat = require('gulp-concat'),
-    uglify = require('gulp-uglify'),
-    rename = require('gulp-rename'),
-    git = require('gulp-git'),
-    imageResize = require('gulp-image-resize');
+const gulp = require('gulp'),
+      babel = require('gulp-babel'),
+      eslint = require('gulp-eslint'),
+      concat = require('gulp-concat'),
+      rename = require('gulp-rename'),
+      git = require('gulp-git'),
+      imageResize = require('gulp-image-resize');
 
 require('babel-core/register');
 
 // Include additioal dependencies.
-
-let fs = require('fs-extra'),
-  React = require('react'),
-  ReactDOMServer = require('react-dom/server'),
-  wiredep = require('wiredep').stream,
-  glob = require('glob'),
-  del = require('del'),
-  exec = require('child_process').exec,
-  spawn = require('child_process').spawn,
-  log = require('winston'),
-  parallel = require('concurrent-transform'),
-  os = require('os'),
-  named = require('vinyl-named');
+const fs = require('fs-extra'),
+      React = require('react'),
+      ReactDOMServer = require('react-dom/server'),
+      wiredep = require('wiredep').stream,
+      glob = require('glob'),
+      del = require('del'),
+      exec = require('child_process').exec,
+      spawn = require('child_process').spawn,
+      log = require('winston'),
+      parallel = require('concurrent-transform'),
+      os = require('os'),
+      named = require('vinyl-named');
 
 require('node-jsx').install();
+
+// Simplify include statements.  Add additonal base paths here for simplicity.
+// NOTE: Also add the same paths in webpack.config.js.
+let appPath = require('app-module-path');
+appPath.addPath(__dirname + '/components');
+appPath.addPath(__dirname + '/helpers');
 
 
 // Lint Tasks

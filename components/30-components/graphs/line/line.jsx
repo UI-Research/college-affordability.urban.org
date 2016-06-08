@@ -2,9 +2,9 @@
 
 const React = require('react');
 
-const util = require('../../../../helpers/util.jsx');
+const util = require('util.jsx');
 
-if (util.canUseDOM) {
+if (util.canUseDOM()) {
   require('./line.scss');
 }
 

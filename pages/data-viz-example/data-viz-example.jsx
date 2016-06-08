@@ -1,9 +1,9 @@
 'use strict';
 
 const React = require('react');
-const Template = require('../../components/20-templates/default/default.jsx');
-const Text = require('../../components/30-components/basic/text/text.jsx');
-const BarGraph = require('../../components/30-components/graphs/bar/bar.jsx');
+const Template = require('20-templates/default/default.jsx');
+const Text = require('30-components/basic/text/text.jsx');
+const BarGraph = require('30-components/graphs/bar/bar.jsx');
 
 const util = require('../../helpers/util.jsx');
 
