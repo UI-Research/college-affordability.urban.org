@@ -1,7 +1,6 @@
 'use strict';
 
 const React = require('react'),
-      c3 = require('c3'),
       ExecutionEnvironment = require('exenv');
 
 const util = require('../../../../helpers/util.jsx');
@@ -24,17 +23,20 @@ const BarGraph = React.createClass({
     this.id = 'barGraph' + util.uniqueID();
   },
   componentDidMount: function() {
-    // Acquire graph data.
-    let data = this.props.file;
+    if (ExecutionEnvironment.canUseDOM) {
+      const c3 = require('c3');
 
-    // Identify DOM element we want to apply the graph to.
-    data.bindto = '#' + this.id,
+      // Acquire graph data.
+      let data = this.props.file;
 
-    // Force specify type of graph.
-    data.data.type =  'bar';
+      // Identify DOM element we want to apply the graph to.
+      data.bindto = '#' + this.id,
 
-    c3.generate(data);
-    console.log(data);
+      // Force specify type of graph.
+      data.data.type =  'bar';
+
+      let chart = c3.generate(data);
+    }
   },
   render: function() {
     return (

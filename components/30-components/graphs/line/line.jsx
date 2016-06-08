@@ -23,51 +23,25 @@ const LineGraph = React.createClass({
   },
   componentDidMount: function() {
     if (ExecutionEnvironment.canUseDOM) {
-      let c3 = require('c3'),
-          d3 = require('d3');
-      c3.generate({
-        bindto: '#' + this.id,
-        data: {
-          columns: [
-            ['First', 30, 200, 100, 400, 150, 250],
-            ['Second', 50, 20, 10, 40, 15, 25]
-          ],
-          axes: {
-            'First': 'y2'
-          },
-          types: {
-            'Second': 'bar'
-          }
-        },
-        transition: {
-          duration: 3000
-        },
-        axis: {
-          y: {
-            label: {
-              text: 'Y Label',
-              position: 'outer-middle'
-            },
-            tick: {
-              format: d3.format('$,') // ADD
-            }
-          },
-          y2: {
-            show: true,
-            label: {
-              text: 'Y2 Label',
-              position: 'outer-middle'
-            }
-          }
-        }
-      });
+      const c3 = require('c3');
+
+      // Acquire graph data.
+      let data = this.props.file;
+
+      // Identify DOM element we want to apply the graph to.
+      data.bindto = '#' + this.id,
+
+      // Force specify type of graph.
+      data.data.type =  'line';
+
+      let chart = c3.generate(data);
     }
   },
   render: function() {
     return (
       <div className="c-line">
         <h1>{this.props.title}</h1>
-        <div id={this.id} className="c-line__container">asdf</div>
+        <div id={this.id} className="c-line__container"></div>
       </div>
     );
   }
