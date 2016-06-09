@@ -3,7 +3,7 @@
 const React = require('react'),
       ExecutionEnvironment = require('exenv');
 
-const HTML = require('../../10-html/html.jsx');
+const HTML = require('10-html/html.jsx');
 
 if (ExecutionEnvironment.canUseDOM) {
   require('./default.scss');

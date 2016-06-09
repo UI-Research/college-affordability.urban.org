@@ -3,18 +3,18 @@
 const React = require('react'),
       ExecutionEnvironment = require('exenv'),
       ReactCSSTransitionGroup  = require('react-addons-css-transition-group');
-const Template = require('../../components/20-templates/default/default.jsx');
-const Text = require('../../components/30-components/basic/text/text.jsx'),
-      FAQ = require('../../components/30-components/basic/faq/faq.jsx'),
-      BarGraph = require('../../components/30-components/graphs/bar/bar.jsx'),
-      LineGraph = require('../../components/30-components/graphs/line/line.jsx'),
-      PreviewImage = require('../../components/30-components/basic/previewImage/previewImage.jsx');
+const Template = require('20-templates/default/default.jsx');
+const Text = require('30-components/basic/text/text.jsx'),
+      FAQ = require('30-components/basic/faq/faq.jsx'),
+      BarGraph = require('30-components/graphs/bar/bar.jsx'),
+      LineGraph = require('30-components/graphs/line/line.jsx'),
+      PreviewImage = require('30-components/basic/previewImage/previewImage.jsx');;
 
 // react-lazyload doesn't support require().
 import LazyLoad from 'react-lazyload';
 // to use a placeholder - <LazyLoad placeholder={}>
 
-const util = require('../../helpers/util.jsx');
+const util = require('util.jsx');
 
 let faq = [
   {
@@ -46,7 +46,7 @@ let specifications = {
             transitionAppearTimeout={750}
             transitionEnter={false}
             transitionLeave={false}>
-            <BarGraph title="one" data={[4, 8, 15, 16, 23, 42]} />
+            <BarGraph title="one" file={require('./sample.json')} />
           </ReactCSSTransitionGroup>
         </LazyLoad>
         <LazyLoad height={200} throttle={500} offset={-100}>
@@ -56,7 +56,7 @@ let specifications = {
             transitionAppearTimeout={750}
             transitionEnter={false}
             transitionLeave={false}>
-            <BarGraph title="two" data={[4, 8, 15, 16, 23, 42]} />
+            <BarGraph title="two" file={require('./sample.json')} />
           </ReactCSSTransitionGroup>
         </LazyLoad>
         <LazyLoad height={200} throttle={500} offset={-100}>
@@ -66,7 +66,7 @@ let specifications = {
             transitionAppearTimeout={750}
             transitionEnter={false}
             transitionLeave={false}>
-            <BarGraph title="three" data={[4, 8, 15, 16, 23, 42]} />
+            <BarGraph title="three" file={require('./sample.json')} />
           </ReactCSSTransitionGroup>
         </LazyLoad>
         <LazyLoad height={200} throttle={500} offset={-100}>
@@ -76,7 +76,7 @@ let specifications = {
             transitionAppearTimeout={750}
             transitionEnter={false}
             transitionLeave={false}>
-            <LineGraph title="four" data={[4, 8, 15, 16, 23, 42]} />
+            <LineGraph title="four" file={require('./sample.json')} />
           </ReactCSSTransitionGroup>
         </LazyLoad>
         <LazyLoad height={200} throttle={500} offset={-100}>
@@ -86,7 +86,7 @@ let specifications = {
             transitionAppearTimeout={750}
             transitionEnter={false}
             transitionLeave={false}>
-            <BarGraph title="five" data={[4, 8, 15, 16, 23, 42]} />
+            <BarGraph title="five" file={require('./sample.json')} />
           </ReactCSSTransitionGroup>
         </LazyLoad>
         <LazyLoad height={200} throttle={500} offset={-100}>
@@ -96,7 +96,7 @@ let specifications = {
             transitionAppearTimeout={750}
             transitionEnter={false}
             transitionLeave={false}>
-            <BarGraph title="six" data={[4, 8, 15, 16, 23, 42]} />
+            <BarGraph title="six" file={require('./sample.json')} />
           </ReactCSSTransitionGroup>
         </LazyLoad>
         <LazyLoad height={200} throttle={500} offset={-100}>
@@ -106,7 +106,7 @@ let specifications = {
             transitionAppearTimeout={750}
             transitionEnter={false}
             transitionLeave={false}>
-            <BarGraph title="seven" data={[4, 8, 15, 16, 23, 42]} />
+            <BarGraph title="seven" file={require('./sample.json')} />
           </ReactCSSTransitionGroup>
         </LazyLoad>
         <LazyLoad height={200} throttle={500} offset={-100}>
@@ -116,7 +116,7 @@ let specifications = {
             transitionAppearTimeout={750}
             transitionEnter={false}
             transitionLeave={false}>
-            <BarGraph title="eight" data={[4, 8, 15, 16, 23, 42]} />
+            <BarGraph title="eight" file={require('./sample.json')} />
           </ReactCSSTransitionGroup>
         </LazyLoad>
         <LazyLoad height={200} throttle={100} offset={-100}>
@@ -129,6 +129,10 @@ let specifications = {
             <FAQ title="Frequently Asked Questions" set={faq} />
           </ReactCSSTransitionGroup>
         </LazyLoad>
+        <img src='/img/PSVFcxr.jpg' />
+        <BarGraph title="My Bar Chart" file={require('./sample.json')} />
+        <LineGraph title="My Line Chart" file={require('./sample.json')} />
+        <FAQ title="Frequently Asked Questions" set={faq} />
         <i className="fa fa-camera-retro"></i> asdf
         <div className='asdf'><strong>Custom HTML</strong></div>
         <div className="grid">
@@ -150,8 +154,7 @@ const About = React.createClass({
   }
 });
 
-// Don't include wihtout DOM available - it will be treated as jsx.
-if (ExecutionEnvironment.canUseDOM) {
+if (util.canUseDOM()) {
   require('./' + specifications.name.toLowerCase() + '.scss');
 }
 util.printToPage('about', About);

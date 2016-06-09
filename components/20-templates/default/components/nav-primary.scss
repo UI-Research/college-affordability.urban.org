@@ -1,4 +1,4 @@
-@import '../../../00-global/_global.scss';
+@import '_global.scss';
 
 .nav-primary {
   position: relative;
@@ -12,21 +12,23 @@
   li {
     display: inline-block;
     list-style-type: none;
-    margin: 0 2rem 0 0;
+    margin: 0 1rem 0 0;
 
+    @include breakpoint($bp--mid) {
+      margin: 0 0.85rem 0 0;
+    }
     @include breakpoint($bp--large) {
-      margin: 0 3rem 0 0;
+      margin: 0 1.25rem 0 0;
+    }
+    @include breakpoint($bp--xlarge) {
+      margin: 0 2rem 0 0;
     }
 
-    @include breakpoint($bp--xlarge) {
-      margin: 0 4rem 0 0;
-    }
-    
     ul {
       display: none;
       position: absolute;
     }
-    
+
     &:hover {
       ul {
         display: block;
@@ -44,13 +46,22 @@
     display: inline-block;
     color: white;
     font-size: 15px;
-    font-weight: 300;
-    text-transform: uppercase;
+    font-weight: normal;
     font-family: lato, Arial, sans-serif;
     line-height: 26px;
 
+    @include breakpoint($bp--mid) {
+      font-size: 14px;
+      line-height: 30px;
+    }
+
     @include breakpoint($bp--large) {
-      line-height: 84px;
+      line-height: 44px;
+      font-size: 17px;
+      padding-bottom: 2px;
+    }
+    @include breakpoint($bp--xlarge) {
+      line-height: 56px;
       font-size: 19px;
     }
   }
