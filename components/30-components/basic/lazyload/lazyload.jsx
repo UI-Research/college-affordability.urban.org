@@ -14,20 +14,16 @@ if (util.canUseDOM()) {
 
 const LazyLoad = React.createClass({
   propTypes: {
-    src: React.PropTypes.string,
     height: React.PropTypes.number,
     offset: React.PropTypes.number
   },
   getDefaultProps: function() {
     return {
-      src: '',
       height: 350,
       offset: -75,
     };
   },
-  render: function() {
-    let preview_image = this.props.src.replace('img', 'img/preview')
-    
+  render: function() {    
     return (
     <ReactLazyLoad height={this.props.height} throttle={100} offset={this.props.offset}>
       <ReactCSSTransitionGroup key="1"
