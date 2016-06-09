@@ -1,14 +1,13 @@
 'use strict';
 
 const React = require('react'),
-      ExecutionEnvironment = require('exenv'),
-      ReactCSSTransitionGroup  = require('react-addons-css-transition-group');
+      ReactCSSTransitionGroup = require('react-addons-css-transition-group');
 const Template = require('20-templates/default/default.jsx');
 const Text = require('30-components/basic/text/text.jsx'),
       FAQ = require('30-components/basic/faq/faq.jsx'),
       BarGraph = require('30-components/graphs/bar/bar.jsx'),
       LineGraph = require('30-components/graphs/line/line.jsx'),
-      PreviewImage = require('30-components/basic/previewImage/previewImage.jsx');;
+      PreviewImage = require('30-components/basic/previewImage/previewImage.jsx');
 
 // react-lazyload doesn't support require().
 import LazyLoad from 'react-lazyload';
@@ -39,86 +38,24 @@ let specifications = {
           <p>Example of a text box?</p>
           <a href="http://www.google.com">This is a link</a>
         </Text>
-        <LazyLoad height={200} throttle={500} offset={-100}>
+        <BarGraph title="one" file={require('./sample.json')} />
+        <LazyLoad height={1000} throttle={100} offset={-100} placeholder={<PreviewImage src="/img/preview/PSVFcxr.jpg" />}>
           <ReactCSSTransitionGroup key="1"
             transitionName="fade"
             transitionAppear={true}
             transitionAppearTimeout={750}
             transitionEnter={false}
             transitionLeave={false}>
-            <BarGraph title="one" file={require('./sample.json')} />
+            <img src='/img/PSVFcxr.jpg' />
           </ReactCSSTransitionGroup>
         </LazyLoad>
-        <LazyLoad height={200} throttle={500} offset={-100}>
-          <ReactCSSTransitionGroup key="1"
-            transitionName="fade"
-            transitionAppear={true}
-            transitionAppearTimeout={750}
-            transitionEnter={false}
-            transitionLeave={false}>
-            <BarGraph title="two" file={require('./sample.json')} />
-          </ReactCSSTransitionGroup>
-        </LazyLoad>
-        <LazyLoad height={200} throttle={500} offset={-100}>
-          <ReactCSSTransitionGroup key="1"
-            transitionName="fade"
-            transitionAppear={true}
-            transitionAppearTimeout={750}
-            transitionEnter={false}
-            transitionLeave={false}>
-            <BarGraph title="three" file={require('./sample.json')} />
-          </ReactCSSTransitionGroup>
-        </LazyLoad>
-        <LazyLoad height={200} throttle={500} offset={-100}>
-          <ReactCSSTransitionGroup key="1"
-            transitionName="fade"
-            transitionAppear={true}
-            transitionAppearTimeout={750}
-            transitionEnter={false}
-            transitionLeave={false}>
-            <LineGraph title="four" file={require('./sample.json')} />
-          </ReactCSSTransitionGroup>
-        </LazyLoad>
-        <LazyLoad height={200} throttle={500} offset={-100}>
-          <ReactCSSTransitionGroup key="1"
-            transitionName="fade"
-            transitionAppear={true}
-            transitionAppearTimeout={750}
-            transitionEnter={false}
-            transitionLeave={false}>
-            <BarGraph title="five" file={require('./sample.json')} />
-          </ReactCSSTransitionGroup>
-        </LazyLoad>
-        <LazyLoad height={200} throttle={500} offset={-100}>
-          <ReactCSSTransitionGroup key="1"
-            transitionName="fade"
-            transitionAppear={true}
-            transitionAppearTimeout={750}
-            transitionEnter={false}
-            transitionLeave={false}>
-            <BarGraph title="six" file={require('./sample.json')} />
-          </ReactCSSTransitionGroup>
-        </LazyLoad>
-        <LazyLoad height={200} throttle={500} offset={-100}>
-          <ReactCSSTransitionGroup key="1"
-            transitionName="fade"
-            transitionAppear={true}
-            transitionAppearTimeout={750}
-            transitionEnter={false}
-            transitionLeave={false}>
-            <BarGraph title="seven" file={require('./sample.json')} />
-          </ReactCSSTransitionGroup>
-        </LazyLoad>
-        <LazyLoad height={200} throttle={500} offset={-100}>
-          <ReactCSSTransitionGroup key="1"
-            transitionName="fade"
-            transitionAppear={true}
-            transitionAppearTimeout={750}
-            transitionEnter={false}
-            transitionLeave={false}>
-            <BarGraph title="eight" file={require('./sample.json')} />
-          </ReactCSSTransitionGroup>
-        </LazyLoad>
+        <BarGraph title="two" file={require('./sample.json')} />
+        <BarGraph title="three" file={require('./sample.json')} />
+        <LineGraph title="four" file={require('./sample.json')} />
+        <BarGraph title="five" file={require('./sample.json')} />
+        <BarGraph title="six" file={require('./sample.json')} />
+        <BarGraph title="seven" file={require('./sample.json')} />
+        <BarGraph title="eight" file={require('./sample.json')} />
         <LazyLoad height={200} throttle={100} offset={-100}>
           <ReactCSSTransitionGroup key="1"
             transitionName="fade"
@@ -129,7 +66,6 @@ let specifications = {
             <FAQ title="Frequently Asked Questions" set={faq} />
           </ReactCSSTransitionGroup>
         </LazyLoad>
-        <img src='/img/PSVFcxr.jpg' />
         <BarGraph title="My Bar Chart" file={require('./sample.json')} />
         <LineGraph title="My Line Chart" file={require('./sample.json')} />
         <FAQ title="Frequently Asked Questions" set={faq} />

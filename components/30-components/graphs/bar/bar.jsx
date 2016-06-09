@@ -1,6 +1,11 @@
 'use strict';
 
-const React = require('react');
+const React = require('react'),
+      BaseGraph = require('30-components/graphs/base/base.jsx'),
+      ReactCSSTransitionGroup = require('react-addons-css-transition-group');
+
+//react-lazyload doesn't support require().
+import LazyLoad from 'react-lazyload';
 
 const util = require('util.jsx');
 
@@ -17,32 +22,18 @@ const BarGraph = React.createClass({
       title: ''
     };
   },
-  componentWillMount() {
-    // Create unique ID for element.
-    this.id = 'barGraph' + util.uniqueID();
-  },
-  componentDidMount: function() {
-    if (util.canUseDOM) {
-      const c3 = require('c3');
-
-      // Acquire graph data.
-      let data = this.props.file;
-
-      // Identify DOM element we want to apply the graph to.
-      data.bindto = '#' + this.id;
-
-      // Force specify type of graph.
-      data.data.type =  'bar';
-
-      c3.generate(data);
-    }
-  },
   render: function() {
     return (
-      <div className="c-bar">
-        <h2>{this.props.title}</h2>
-        <div id={this.id} className="c-bar__container"></div>
-      </div>
+    <LazyLoad height={350} throttle={100} offset={-100}>
+      <ReactCSSTransitionGroup key="1"
+        transitionName="fade"
+        transitionAppear={true}
+        transitionAppearTimeout={750}
+        transitionEnter={false}
+        transitionLeave={false}>
+        <BaseGraph title={this.props.title} type="bar" file={this.props.file} />
+      </ReactCSSTransitionGroup>
+    </LazyLoad>
     );
   }
 });
