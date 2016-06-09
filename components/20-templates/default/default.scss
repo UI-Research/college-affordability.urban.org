@@ -158,3 +158,8 @@ li {
     width: 33.33%;
   }
 }
+
+img[data-src] {
+  min-width: 400px;
+  height: auto;
+}

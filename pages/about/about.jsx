@@ -1,17 +1,12 @@
 'use strict';
 
-const React = require('react'),
-      ReactCSSTransitionGroup = require('react-addons-css-transition-group');
+const React = require('react');
 const Template = require('20-templates/default/default.jsx');
 const Text = require('30-components/basic/text/text.jsx'),
       FAQ = require('30-components/basic/faq/faq.jsx'),
       BarGraph = require('30-components/graphs/bar/bar.jsx'),
       LineGraph = require('30-components/graphs/line/line.jsx'),
-      PreviewImage = require('30-components/basic/previewImage/previewImage.jsx');
-
-// react-lazyload doesn't support require().
-import LazyLoad from 'react-lazyload';
-// to use a placeholder - <LazyLoad placeholder={}>
+      LazyLoad = require('30-components/basic/lazyload/lazyload.jsx');
 
 const util = require('util.jsx');
 
@@ -39,33 +34,22 @@ let specifications = {
           <a href="http://www.google.com">This is a link</a>
         </Text>
         <BarGraph title="one" file={require('./sample.json')} />
-        <LazyLoad height={1000} throttle={100} offset={-100} placeholder={<PreviewImage src="/img/preview/PSVFcxr.jpg" />}>
-          <ReactCSSTransitionGroup key="1"
-            transitionName="fade"
-            transitionAppear={true}
-            transitionAppearTimeout={750}
-            transitionEnter={false}
-            transitionLeave={false}>
-            <img src='/img/PSVFcxr.jpg' />
-          </ReactCSSTransitionGroup>
-        </LazyLoad>
+        <img src='/img/PSVFcxr.jpg' />
         <BarGraph title="two" file={require('./sample.json')} />
+        <img src='/img/MPxXjTj.jpg' />
         <BarGraph title="three" file={require('./sample.json')} />
         <LineGraph title="four" file={require('./sample.json')} />
+        <img src='/img/4HLZjYB.jpg' />
         <BarGraph title="five" file={require('./sample.json')} />
         <BarGraph title="six" file={require('./sample.json')} />
+        <img src='/img/EYUcKub.jpg' />
         <BarGraph title="seven" file={require('./sample.json')} />
+        <img src='/img/PSVFcxr.jpg' />
         <BarGraph title="eight" file={require('./sample.json')} />
-        <LazyLoad height={200} throttle={100} offset={-100}>
-          <ReactCSSTransitionGroup key="1"
-            transitionName="fade"
-            transitionAppear={true}
-            transitionAppearTimeout={750}
-            transitionEnter={false}
-            transitionLeave={false}>
-            <FAQ title="Frequently Asked Questions" set={faq} />
-          </ReactCSSTransitionGroup>
+        <LazyLoad>
+          <FAQ title="Frequently Asked Questions" set={faq} />
         </LazyLoad>
+        <img src='/img/MPxXjTj.jpg' />
         <BarGraph title="My Bar Chart" file={require('./sample.json')} />
         <LineGraph title="My Line Chart" file={require('./sample.json')} />
         <FAQ title="Frequently Asked Questions" set={faq} />

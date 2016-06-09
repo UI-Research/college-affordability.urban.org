@@ -56,7 +56,6 @@ gulp.task('destroy', function() {
   fs.removeSync('dist/');
 });
 
-
 // Create static artifact
 // > gulp react
 gulp.task('react', function() {
@@ -72,9 +71,19 @@ gulp.task('react', function() {
       // Creates HTML fragment for static page generation.
       let fragment = React.createElement(require('./' + filepath), { includeHTML: true });
       fragment = ReactDOMServer.renderToStaticMarkup(fragment);
-
-      // Write fragment to artifacts directory.
-      fs.outputFileSync('dist/' + file, fragment);
+      
+      // Replace full images with their smaller previews.
+      let regex = /\<img .+?\/\>/ig;
+      let images = fragment.match(regex);
+      if (images) {
+        for (let x=0; x < images.length; x++) {
+          let new_img_tag = images[x].replace('img/', 'img/preview/');
+          fragment = fragment.replace(images[x], new_img_tag);
+        }
+  
+        // Write fragment to artifacts directory.
+        fs.outputFileSync('dist/' + file, fragment);
+      }
     })
   });
 
@@ -139,8 +148,8 @@ gulp.task('images', function () {
       // Generate low quality thumbnail image version to serve static pages faster.
       gulp.src(src_image_dir + '/**/*.{jpg,gif,png}')
         .pipe(parallel(
-          // Crop to exact size.
-          imageResize({ width: 50, height: 50, quality: 0.1, crop: true }),
+          // No cropping, allows to maintain aspect ratio.
+          imageResize({ width: 100, height: 100, quality: 0.1, crop: true }),
           os.cpus().length
         ))
         .pipe(rename({dirname: ''}))
