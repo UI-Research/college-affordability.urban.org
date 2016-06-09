@@ -6,6 +6,7 @@ if (ExecutionEnvironment.canUseDOM) {
   require('./header.scss');
   require('./nav-primary.scss');
   require('./nav-utility.scss');
+  require('./nav-anchor.scss');
 }
 
 const Header = React.createClass({

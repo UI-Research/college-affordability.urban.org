@@ -16,10 +16,8 @@
 .c-text__caption--bottom {
   margin-top: $space-single;
   margin-bottom: $space-single;
-}
 
-.c-text__figure-title {
-  font-weight: bold;
+  border-bottom: 1px solid $color--gray-4;
 }
 
 .c-text__emphasis {
@@ -42,6 +40,7 @@
     width: 60%;
     border-right: 1px solid $color--gray-4;
     padding-right: 1rem;
+    padding-bottom: 1rem;
   }
   @include breakpoint($bp--xlarge) {
     width: 70%;
@@ -51,8 +50,6 @@
 .c-text__viz-notes__title {
   display: table-cell;
   width: 65px;
-
-
 }
 
 .c-text__viz-notes__description {
@@ -81,4 +78,10 @@
       margin-right: 0;
     }
   }
+}
+
+.faq {
+  background-color: $color--gray-1;
+  padding: .5rem 3rem 1.5rem;
+  margin: 2rem 0;
 }

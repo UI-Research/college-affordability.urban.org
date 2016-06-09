@@ -56,12 +56,12 @@
     }
 
     @include breakpoint($bp--large) {
-      line-height: 44px;
+      line-height: 40px;
       font-size: 17px;
       padding-bottom: 2px;
     }
     @include breakpoint($bp--xlarge) {
-      line-height: 56px;
+      line-height: 52px;
       font-size: 19px;
     }
   }

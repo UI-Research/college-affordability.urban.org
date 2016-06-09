@@ -26,20 +26,28 @@ let specifications = {
       <Text title="Producing Education">
         <div className="grid">
           <div className="col col--1-4">
-            <ul>
-              <li><a href="#">Overview</a></li>
-              <li><a href="#">Subsidies</a></li>
-              <li><a href="#">Appropriations</a></li>
-              <li><a href="#">Endowments</a></li>
-            </ul>
+
+            <div className="nav-anchor">
+              <ul className="nav-anchor__top-level">
+                <li><a href="#" className="active">Overview</a></li>
+                <li><a href="#">Subsidies</a></li>
+                <li><a href="#">Appropriations</a>
+                <ul className="nav-anchor__second-level">
+                  <li><a href="#">State and Local Appropriations</a></li>
+                  <li><a href="#">Changes over time</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Endowments</a></li>
+              </ul>
+            </div>
+
           </div>
           <div className="col col--3-4">
-
 
             <h2>Overview</h2>
 
             <div className="media media--right-align">
-              <BarGraph title="My Bar Chart" file={require('./sample.json')} />
+
               <div className="caption caption--below">Caption for image for data visualization</div>
             </div>
 
@@ -58,14 +66,16 @@ let specifications = {
             <p className="c-text__emphasis">After remaining stable between 2005-06 and 2009-10, per student expenditures at public institutions
               increased (in inflation-adjusted dollars) between 2009-10 and 2013-14.</p>
 
-            <h5 className="c-text__figure-title">Figure 1a:</h5>
+            <h5>Figure 1a:</h5>
 
             <p className="c-text__caption c-text__caption--top">Institutional subsidies are the share of the total cost that is covered by the institution rather than by the
               student’s tuition. In the public sector, these subsidies come primarily from state and local tax revenues. In
               the private sector, they come from endowment income, annual giving, and other private sources.
             </p>
 
-            <div className="placeholder-viz"></div>
+            <div className="c-text__viz">
+              <BarGraph title="My Bar Chart" file={require('./sample.json')} />
+            </div>
 
             <div className="c-text__caption c-text__caption--bottom">
 
@@ -105,16 +115,39 @@ let specifications = {
             <h5>Related</h5>
             <p><a href="#">Chart: Degree-granting institutions by sector and degree-type in fall 2014</a></p>
 
-
             <hr />
-            <h3>Spending Per Student</h3>
-            <h5>Figure 1a</h5>
 
-            <div className="c-text__caption c-text__caption--top">
-              Education and related spending per student at public institutions, divided into net tuition revenue and subsidy, by
-              Carnegie classification, from 2005-06 to 2013-14
+            <h2>Appropriations</h2>
+
+            <h3>State and Local Appropriations</h3>
+
+            <p>Students at public colleges and universities pay prices that do not cover the full cost of education, because state and local governments appropriate some of their tax revenues to institutions, providing the subsidies described in the previous section. Over time, the portion of the cost of education at public colleges and universities covered by state funds has declined. As state taxpayers foot less of the bill, students and families see tuition and fees rising.</p>
+            <p>State tax revenues are the primary source of state and local funding for higher education institutions, but local taxes support community colleges and provided just over 10 percent of the total in 2013-14. State and local appropriations are dedicated primarily to public colleges and universities, but some of the funds go to student aid, some benefit students in private colleges, and some are restricted funds for special purposes like research, agriculture, and medical education.</p>
+
+
+            <div className="faq">
+              <h4>How do states determine appropriation levels?</h4>
+
+              <p>
+                Figures on state funding of public higher education come from a survey conducted jointly by the State Higher Education Executive Officers (SHEEO) and Illinois State University’s Center for the Study of Education Policy. The reported figures include funding from tax revenues and from other state sources such as lotteries. They exclude funding for capital expenditures. Most of the funds go directly to public institutions, but some go to higher education coordinating boards or to other state agencies that allocate them to institutions, in some states including private colleges and universities. The appropriation figures also include state funding for student financial aid.
+              </p>
+              <p>
+                Many states have explicit formulas for allocating all or part of their funding for instructional expenditures, the operation and maintenance of physical plant, and other expenditures across institutions. Funding is usually tied to the number of credit hours enrolled in or completed. Some states make annual adjustments to the previous year’s funding received by each institution, and some have less defined approaches determined by legislative priorities.
+              </p>
+              <p>
+                Some formulas for allocating funds to institutions are based only on enrollments, but an increasing number of states use some variety of “performance-based funding” (PBF), incorporating measures of outcomes into their formulas. This approach has come and gone since the 1970s as states have faced changing economic circumstances, enrollment growth, and evolving priorities. There is little evidence that PBF has had a significant impact on the efficiency and outcomes of postsecondary institutions in the past, but there is widespread optimism that new models with more carefully defined outcomes measures and consideration of the characteristic of incoming students, which are developing rapidly, will be more successful in improving student success rates.
+              </p>
             </div>
-            <div className="placeholder-viz"></div>
+
+
+            <h3>Changes over time</h3>
+
+            <p>
+              Over the period from FY2000 to FY2014, enrollment in public colleges and universities grew by more
+              than 30 percent; overall state and local appropriations to public higher education peaked in FY2008 and
+              in FY2014, were below their fell below the FY2001 level. These two trends resulted in the decline of
+              appropriations per public-sector student by more than 40 percent from FY2000 to FY2014.
+            </p>
 
             <ul>
               <li><a href="#">Institutional subsidies</a></li>
@@ -139,7 +172,7 @@ const DataVizExample = React.createClass({
 });
 
 if (util.canUseDOM()) {
-  require('./' + specifications.name.toLowerCase() + '.scss');
+  //require('./' + specifications.name.toLowerCase() + '.scss');
 }
 util.printToPage('Data Viz Example', DataVizExample);
 

@@ -1,0 +1,50 @@
+@import '_global.scss';
+
+.nav-anchor {
+  margin-top: 2rem;
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    list-style-type: none;
+    margin: 0;
+    border-bottom: 1px solid $color--gray-4;
+    
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  a {
+    padding: .75rem 0 .75rem .75rem;
+    display: block;
+    color: $color--blue;
+    font-size: 18px;
+    font-weight: normal;
+
+    &:hover,
+    &.active {
+      color: $color--gray-7;
+      text-decoration: none;
+      background-color: $color--gray-1;
+    }
+  }
+}
+
+.nav-anchor__second-level {
+  margin-bottom: 0;
+
+  li {
+    border: none;
+    margin-left: 1rem;
+    border-top: 1px solid $color--gray-4;
+  }
+
+  a {
+    padding: .75rem 0 .75rem 1rem;
+    font-size: 14px;
+    line-height: 1.25;
+  }
+}
