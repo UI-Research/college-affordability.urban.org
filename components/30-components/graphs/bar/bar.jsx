@@ -37,11 +37,15 @@ const BarGraph = React.createClass({
       c3.generate(data);
     }
   },
+  raw: function() {
+    return { __html: this.props.file.notes };
+  },
   render: function() {
     return (
       <div className="c-bar">
         <h1>{this.props.title}</h1>
         <div id={this.id} className="c-bar__container"></div>
+        <div dangerouslySetInnerHTML={this.raw()} />
       </div>
     );
   }
