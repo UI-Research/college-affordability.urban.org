@@ -1,17 +1,17 @@
 'use strict';
 
-const React = require('react'),
-      ExecutionEnvironment = require('exenv');
+const React = require('react');
 
 const HTML = require('10-html/html.jsx');
 
-if (ExecutionEnvironment.canUseDOM) {
+const util = require('util.jsx');
+
+
+if (util.canUseDOM()) {
   require('./default.scss');
 }
 
 const Header = require('./components/header.jsx');
-
-
 
 const TemplateDefault = React.createClass({
   propTypes: {

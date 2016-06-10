@@ -2,6 +2,12 @@
 
 const React = require('react');
 
+const util = require('util.jsx');
+
+if (util.canUseDOM()) {
+  require('./html.scss');
+}
+
 const HTML = React.createClass({
   propTypes: {
     includeHTML: React.PropTypes.bool,
