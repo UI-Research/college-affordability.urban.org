@@ -33,6 +33,11 @@ const LineGraph = React.createClass({
       // Force specify type of graph.
       data.data.type =  'line';
 
+      // Hide tooltip.
+      data.tooltip = {
+        show: false
+      };
+
       c3.generate(data);
     }
   },
