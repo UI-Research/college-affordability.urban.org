@@ -4,7 +4,8 @@
  * Include ONLY once in 20-templates.
  */
 
-@import '../../node_modules/node-reset-scss/scss/_reset.scss';
+@import '../../../node_modules/node-reset-scss/scss/_reset.scss';
+@import '../../../node_modules/c3/c3.min.css';
 
 // Set up webpack integration for font-awesome.
 $fa-font-path: "~font-awesome/fonts";
