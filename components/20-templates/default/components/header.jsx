@@ -22,7 +22,7 @@ const Header = React.createClass({
           <div className="header-site__nav-primary-wrapper">
             <div className="nav-primary">
               <ul className="nav-primary__first-level">
-                <li>
+                <li className="has-submenu">
                   <a href="#">Defining Higher Education</a>
                   <ul className="nav-primary__second-level">
                     <li>

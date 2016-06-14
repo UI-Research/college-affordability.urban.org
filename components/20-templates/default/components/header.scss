@@ -70,14 +70,15 @@
     height: 37px;
     padding-left: 1rem;
     border-top: 1px solid white;
+    border-bottom: 1px solid $color--gray-4;
   }
 
   @include breakpoint($bp--large) {
-    border: none;
+    border-top: none;
     height: auto;
     clear: none;
     background-color: transparent;
-    padding: 0.15rem 0 1rem 2rem;
+    padding: 0.15rem 0 0 2rem;
   }
 }
 
