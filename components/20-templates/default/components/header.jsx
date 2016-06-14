@@ -28,6 +28,15 @@ const Header = React.createClass({
                     <li>
                       <a href="#">Sub Item</a>
                     </li>
+                    <li>
+                      <a href="#">Sub Item 2</a>
+                    </li>
+                    <li>
+                      <a href="#">Sub Item Name Longer</a>
+                    </li>
+                    <li>
+                      <a href="#">Sub Item 4</a>
+                    </li>
                   </ul>
                 </li>
                 <li>
