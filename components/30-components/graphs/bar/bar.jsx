@@ -34,7 +34,29 @@ const BarGraph = React.createClass({
       // Force specify type of graph.
       data.data.type =  'bar';
 
+      // Set default colors.
+      data.color = {
+        pattern: [
+          '#1696d2',
+          '#ec008b',
+          '#d2d2d2'
+        ]
+      };
+
+      // Hide tooltip.
+      data.tooltip = {
+        show: false
+      };
+
       c3.generate(data);
+    }
+  },
+  raw: function() {
+    if (this.props.file) {
+      return { __html: this.props.file.notes };
+    }
+    else {
+      return { __html: '' };
     }
   },
   render: function() {
@@ -42,6 +64,7 @@ const BarGraph = React.createClass({
       <div className="c-bar">
         <h1>{this.props.title}</h1>
         <div id={this.id} className="c-bar__container"></div>
+        <div dangerouslySetInnerHTML={this.raw()} />
       </div>
     );
   }
