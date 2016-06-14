@@ -6,10 +6,10 @@
 
   @include breakpoint($bp--mid) {
     height: 110px;
-    background-color: $color--blue;
   }
   @include breakpoint($bp--large) {
     height: 130px;
+    background-color: $color--blue;
   }
 }
 
@@ -19,10 +19,7 @@
   width: 90px;
   height: 70px;
   margin: 0 auto;
-
-  @include breakpoint($bp--mid) {
-    height: 110px;
-  }
+  
   @include breakpoint($bp--large) {
     width: 120px;
     height: 130px;
@@ -36,12 +33,13 @@
   text-align: center;
 
   @include breakpoint($bp--mid) {
-    width: 120px;
-    height: 110px;
-    float: left;
-    margin-right: 1.25rem;
+//    width: 120px;
+//    height: 110px;
+//    float: left;
+//    margin-right: 1.25rem;
   }
   @include breakpoint($bp--large) {
+    float: left;
     width: 150px;
     margin-right: 1.25rem;
     height: 130px;
@@ -65,15 +63,17 @@
   background-color: $color--blue;
 
   @include breakpoint($bp--mid) {
-    clear: both;
-    display: block;
-    height: 37px;
-    padding-left: 1rem;
-    border-top: 1px solid white;
-    border-bottom: 1px solid $color--gray-4;
+    //clear: both;
+    //display: block;
+    //height: 37px;
+   //padding-left: 1rem;
+    //border-top: 1px solid white;
+
   }
 
   @include breakpoint($bp--large) {
+    display: block;
+    border-bottom: 1px solid $color--gray-4;
     border-top: none;
     height: auto;
     clear: none;
@@ -85,13 +85,10 @@
 .header-site__nav-utility-wrapper {
   display: none;
 
-  @include breakpoint($bp--mid) {
+  @include breakpoint($bp--large) {
     display: block;
     position: absolute;
     top: 0;
-    right: 0.15rem;
-  }
-  @include breakpoint($bp--large) {
     right: 1rem;
   }
   @include breakpoint($bp--xlarge) {
@@ -112,12 +109,12 @@
   @include breakpoint($bp--mid) {
     font-size: 19px;
     letter-spacing: 2px;
-    background: transparent;
-    padding: 2.7rem 0 1rem 0;
-    text-align: left;
+    //padding: 2.7rem 0 1rem 0;
   }
 
   @include breakpoint($bp--large) {
+    background: transparent;
+    text-align: left;
     padding: 2.5rem 0 0 2rem;
     font-size: 24px;
   }
@@ -133,7 +130,7 @@
   top: 23px;
   font-size: 20px;
 
-  @include breakpoint($bp--mid) {
+  @include breakpoint($bp--large) {
     display: none;
   }
 

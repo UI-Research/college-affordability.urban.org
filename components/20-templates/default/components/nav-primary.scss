@@ -17,13 +17,13 @@
     padding: 0 1rem 0 0;
 
     @include breakpoint($bp--mid) {
-      margin: 0 0.85rem 0 0;
+      padding: 0 0.85rem 0 0;
     }
     @include breakpoint($bp--large) {
-      margin: 0 1.25rem 0 0;
+      padding: 0 1.25rem 0 0;
     }
     @include breakpoint($bp--xlarge) {
-      margin: 0 2rem 0 0;
+      padding: 0 2rem 0 0;
     }
 
     ul {
@@ -33,7 +33,7 @@
 
     &:hover {
       ul {
-        display: block;
+        display: table-cell;
       }
     }
 
@@ -92,25 +92,26 @@
 
     ul {
       position: absolute;
-      left: 0;
+      left: -22px;
     }
 
-    &:nth-child(2) {
-      ul { left: 43px; }
-    }
-    &:nth-child(3) {
-      ul { left: 173px; }
-    }
     &:nth-child(4) {
-      ul { left: 97px; }
+      ul {
+        left: auto;
+        right: 0;
+      }
     }
     &:nth-child(5) {
-      ul { left: 255px; }
+      ul {
+        left: auto;
+        right: 0;
+      }
     }
   }
 }
 
 ul.nav-primary__second-level {
+
   //background: $color--gray-2;
   //border-bottom: 1px solid $color--gray-4;
   line-height: 35px;
@@ -119,10 +120,22 @@ ul.nav-primary__second-level {
 
   li {
     margin: 0;
+    padding: 0;
+    display: table-cell;
   }
 
   a {
-    padding: .5rem 1.5rem;
+
+    @include breakpoint($bp--mid) {
+      padding: .5rem .5rem;
+    }
+    @include breakpoint($bp--large) {
+      padding: .5rem 1rem;
+    }
+    @include breakpoint($bp--xlarge) {
+      padding: .5rem 1.5rem;
+    }
+
     font-size: 15px;
     font-weight: normal;
     color: $color--gray-8;
