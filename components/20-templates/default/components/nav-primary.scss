@@ -39,6 +39,10 @@
       margin-right: 0;
     }
   }
+
+  @include breakpoint($bp--xlarge) {
+    margin-left: 200px;
+  }
 }
 
 .nav-primary__first-level {
@@ -80,6 +84,27 @@
     color: black;
     border-bottom: 6px solid black;
     text-decoration: none;
+  }
+
+  & > li {
+
+    ul {
+      position: absolute;
+      left: 0;
+    }
+
+    &:nth-child(2) {
+      ul { left: 43px; }
+    }
+    &:nth-child(3) {
+      ul { left: 173px; }
+    }
+    &:nth-child(4) {
+      ul { left: 97px; }
+    }
+    &:nth-child(5) {
+      ul { left: 255px; }
+    }
   }
 }
 

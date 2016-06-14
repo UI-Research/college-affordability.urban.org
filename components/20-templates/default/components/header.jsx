@@ -22,34 +22,70 @@ const Header = React.createClass({
           <div className="header-site__nav-primary-wrapper">
             <div className="nav-primary">
               <ul className="nav-primary__first-level">
+                <li>
+                  <a href="#">What is College?</a>
+                </li>
                 <li className="has-submenu">
-                  <a href="#">Defining Higher Education</a>
+                  <a href="#">Prices and Expenses</a>
                   <ul className="nav-primary__second-level">
                     <li>
-                      <a href="#">Sub Item</a>
+                      <a href="#">Sticker Prices</a>
                     </li>
                     <li>
-                      <a href="#">Sub Item 2</a>
+                      <a href="#">Student Budgets</a>
                     </li>
                     <li>
-                      <a href="#">Sub Item Name Longer</a>
-                    </li>
-                    <li>
-                      <a href="#">Sub Item 4</a>
+                      <a href="#">Forgone Earnings</a>
                     </li>
                   </ul>
                 </li>
-                <li>
-                  <a href="#">Costs, Aid &amp; Prices</a>
+                <li className="has-submenu">
+                  <a href="#">Student Aid</a>
+                  <ul className="nav-primary__second-level">
+                    <li>
+                      <a href="#">Net Price</a>
+                    </li>
+                    <li>
+                      <a href="#">Financial Need</a>
+                    </li>
+                    <li>
+                      <a href="#">Grant Aid</a>
+                    </li>
+                    <li>
+                      <a href="#">Tax Benefits</a>
+                    </li>
+                  </ul>
                 </li>
-                <li>
-                  <a href="#">Paying For College</a>
+                <li className="has-submenu">
+                  <a href="#">Covering Expenses</a>
+                  <ul className="nav-primary__second-level">
+                    <li>
+                      <a href="#">Pre-college Income and Savings</a>
+                    </li>
+                    <li>
+                      <a href="#">Working During College</a>
+                    </li>
+                    <li>
+                      <a href="#">Borrowing</a>
+                    </li>
+                    <li>
+                      <a href="#">Time to Degree</a>
+                    </li>
+                  </ul>
                 </li>
-                <li>
+                <li className="has-submenu">
                   <a href="#">After College</a>
-                </li>
-                <li>
-                  <a href="#">Student Profiles</a>
+                  <ul className="nav-primary__second-level">
+                    <li>
+                      <a href="#">Income After College</a>
+                    </li>
+                    <li>
+                      <a href="#">Student Debt and Repayment</a>
+                    </li>
+                    <li>
+                      <a href="#">Breaking Even</a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </div>
