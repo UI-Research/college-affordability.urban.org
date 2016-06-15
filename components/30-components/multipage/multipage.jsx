@@ -1,9 +1,14 @@
 'use strict';
 import React, { Component } from 'react';
 import { Router, Route, IndexRoute, Link } from 'react-router';
-import { hashHistory } from 'react-router';
 
 const util = require('util.jsx');
+
+// Instantiate proper routing library.
+import { useRouterHistory } from 'react-router';
+import { createHashHistory } from 'history';
+const appHistory = useRouterHistory(createHashHistory)({ queryKey: false });
+
 
 if (util.canUseDOM()) {
   require('./multipage.scss');
@@ -19,6 +24,7 @@ class App extends Component {
         <ul>
           <li><Link to="/" activeStyle={ACTIVE}>Top</Link></li>
           <li><Link to="/derp" activeStyle={ACTIVE}>Secondary</Link></li>
+          <li><Link to="/derk" activeStyle={ACTIVE}>Trimary</Link></li>
         </ul>
 
         {this.props.children}
@@ -66,10 +72,11 @@ let MultiPage = React.createClass({
     }
     else {
       content = (
-        <Router history={hashHistory}>
+        <Router history={appHistory}>
           <Route path="/" component={App}>
             <IndexRoute component={Index}/>
             <Route path="/derp" component={About}/>
+            <Route path="/derk" component={Users}/>
           </Route>
         </Router>
       );
