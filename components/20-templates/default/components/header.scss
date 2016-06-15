@@ -2,49 +2,47 @@
 
 .header-site {
   width: 100%;
+  border-top: 6px solid black;
   @include clearfix();
 
   @include breakpoint($bp--mid) {
     height: 110px;
-    background-color: $color--blue;
   }
   @include breakpoint($bp--large) {
     height: 130px;
+    background-color: $color--blue;
   }
 }
 
 .header-site__logo {
-  background: url('./img/logo-reverse.svg') no-repeat center center;
+  background: url('./img/logo.svg') no-repeat center center;
   display: block;
-  width: 90px;
-  height: 70px;
+  width: 110px;
+  height: 77px;
   margin: 0 auto;
 
-  @include breakpoint($bp--mid) {
-    height: 110px;
-  }
   @include breakpoint($bp--large) {
-    width: 120px;
-    height: 130px;
+    width: 114px;
+    height: 124px;
+  }
+  @include breakpoint($bp--xlarge) {
+    width: 140px;
+    height: 127px;
   }
 }
 
 .header-site__logo-wrapper {
-  background: $color--black;
+  background: white;
   width: 120px;
-  height: 70px;
+  height: 80px;
   text-align: center;
 
-  @include breakpoint($bp--mid) {
-    width: 120px;
-    height: 110px;
-    float: left;
-    margin-right: 1.25rem;
-  }
   @include breakpoint($bp--large) {
+    float: left;
     width: 150px;
     margin-right: 1.25rem;
-    height: 130px;
+    height: 125px;
+    border-bottom: 1px solid $color--gray-4;
   }
   @include breakpoint($bp--xlarge) {
     width: 200px;
@@ -64,33 +62,24 @@
   display: none;
   background-color: $color--blue;
 
-  @include breakpoint($bp--mid) {
-    clear: both;
-    display: block;
-    height: 37px;
-    padding-left: 1rem;
-    border-top: 1px solid white;
-  }
-
   @include breakpoint($bp--large) {
-    border: none;
+    display: block;
+    border-bottom: 1px solid $color--gray-4;
+    border-top: none;
     height: auto;
     clear: none;
     background-color: transparent;
-    padding: 0.15rem 0 1rem 2rem;
+    padding: 0.15rem 0 0 2rem;
   }
 }
 
 .header-site__nav-utility-wrapper {
   display: none;
 
-  @include breakpoint($bp--mid) {
+  @include breakpoint($bp--large) {
     display: block;
     position: absolute;
     top: 0;
-    right: 0.15rem;
-  }
-  @include breakpoint($bp--large) {
     right: 1rem;
   }
   @include breakpoint($bp--xlarge) {
@@ -100,7 +89,7 @@
 
 .header-site__title {
   background-color: $color--blue;
-  padding: 1rem 0;
+  padding: .2rem 0 0;
   text-align: center;
   font-size: 15px;
   font-weight: bold;
@@ -111,28 +100,27 @@
   @include breakpoint($bp--mid) {
     font-size: 19px;
     letter-spacing: 2px;
-    background: transparent;
-    padding: 2.7rem 0 1rem 0;
-    text-align: left;
   }
 
   @include breakpoint($bp--large) {
-    padding: 2.5rem 0 0 2rem;
+    background: transparent;
+    text-align: left;
+    padding: 2.1rem 0 0 2rem;
     font-size: 24px;
   }
 
   @include breakpoint($bp--xlarge) {
-    padding: 1.7rem 0 0 2rem;
+    padding: 1.3rem 0 0 2rem;
   }
 }
 
 .header-site__nav-mobile {
   position: absolute;
   right: 13px;
-  top: 23px;
+  top: 27px;
   font-size: 20px;
 
-  @include breakpoint($bp--mid) {
+  @include breakpoint($bp--large) {
     display: none;
   }
 
