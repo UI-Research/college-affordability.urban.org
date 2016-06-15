@@ -38,6 +38,11 @@ const BaseGraph = React.createClass({
       // Force specify type of graph.
       data.data.type = this.props.type;
 
+      // Hide tooltip.
+      data.tooltip = {
+        show: false
+      };
+
       c3.generate(data);
     }
   },

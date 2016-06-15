@@ -38,7 +38,29 @@ const BaseGraph = React.createClass({
       // Force specify type of graph.
       data.data.type = this.props.type;
 
+      // Set default colors.
+      data.color = {
+        pattern: [
+          '#1696d2',
+          '#ec008b',
+          '#d2d2d2'
+        ]
+      };
+
+      // Hide tooltip.
+      data.tooltip = {
+        show: false
+      };
+
       c3.generate(data);
+    }
+  },
+  raw: function() {
+    if (this.props.file) {
+      return { __html: this.props.file.notes };
+    }
+    else {
+      return { __html: '' };
     }
   },
   render: function() {
@@ -46,10 +68,11 @@ const BaseGraph = React.createClass({
         container_class = base_class + '__container';
     
     return (
-    <div className={base_class}>
-      <h2>{this.props.title}</h2>
-      <div id={this.id} className={container_class}></div>
-    </div>
+      <div className="c-bar">
+        <h1>{this.props.title}</h1>
+        <div id={this.id} className="c-bar__container"></div>
+        <div dangerouslySetInnerHTML={this.raw()} />
+      </div>
     );
   }
 });
