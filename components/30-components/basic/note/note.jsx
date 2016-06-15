@@ -3,10 +3,10 @@ const React = require('react');
 const util = require('util.jsx');
 
 if (util.canUseDOM()) {
-  require('./text.scss');
+  require('./note.scss');
 }
 
-const Text = React.createClass({
+const Note = React.createClass({
   propTypes: {
     title: React.PropTypes.string
   },
@@ -15,14 +15,14 @@ const Text = React.createClass({
       title: ''
     };
   },
-  render: function() {
+  render: function() {    
     return (
-      <div className="c-text">
-        <h1 className="c-text__title">{this.props.title}</h1>
-        <div className="c-text__content">{this.props.children}</div>
+      <div className="c-text__viz-notes__note">
+        <strong>{this.props.title}:</strong>
+        {this.props.children}
       </div>
     );
   }
 });
 
-module.exports = Text;
+module.exports = Note;

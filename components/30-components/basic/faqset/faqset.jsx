@@ -1,9 +1,9 @@
 'use strict';
-const React = require('react'),
-      ExecutionEnvironment = require('exenv');
+const React = require('react');
+const util = require('util.jsx');
 
-if (ExecutionEnvironment.canUseDOM) {
-  require('./faq.scss');
+if (util.canUseDOM()) {
+  require('./faqset.scss');
 }
 
 const Question = React.createClass({
@@ -38,7 +38,7 @@ const Answer = React.createClass({
   }
 });
 
-const FAQ = React.createClass({
+const FAQSet = React.createClass({
   propTypes: {
     title: React.PropTypes.string,
 
@@ -70,4 +70,4 @@ const FAQ = React.createClass({
   }
 });
 
-module.exports = FAQ;
+module.exports = FAQSet;
