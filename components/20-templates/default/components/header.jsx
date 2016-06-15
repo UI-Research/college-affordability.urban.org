@@ -87,6 +87,9 @@ const Header = React.createClass({
                     </li>
                   </ul>
                 </li>
+                <li>
+                  <a href="#">Student Profiles</a>
+                </li>
               </ul>
             </div>
           </div>
