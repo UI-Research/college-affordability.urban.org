@@ -1,31 +1,34 @@
 'use strict';
 import React, { Component } from 'react';
 import { Router, Route, IndexRoute, Link } from 'react-router';
+import { hashHistory } from 'react-router';
 
 const util = require('util.jsx');
-
-// Instantiate proper routing library.
-import { useRouterHistory } from 'react-router';
-import { createHashHistory } from 'history';
-const appHistory = useRouterHistory(createHashHistory)({ queryKey: false });
-
 
 if (util.canUseDOM()) {
   require('./multipage.scss');
 }
 
-const ACTIVE = { color: 'red' };
+const ACTIVE = { color: '#0F0' };
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
+    console.log(this.props.route.content);
+    let content = (
+      <ul>
+        <li><Link to="/" activeStyle={ACTIVE}>Top</Link></li>
+        <li><Link to="/derp" activeStyle={ACTIVE}>Secondary</Link></li>
+        <li><Link to="/derk" activeStyle={ACTIVE}>Trimary</Link></li>
+      </ul>
+    );
+
     return (
       <div>
         <h1>APP!</h1>
-        <ul>
-          <li><Link to="/" activeStyle={ACTIVE}>Top</Link></li>
-          <li><Link to="/derp" activeStyle={ACTIVE}>Secondary</Link></li>
-          <li><Link to="/derk" activeStyle={ACTIVE}>Trimary</Link></li>
-        </ul>
+        {content}
 
         {this.props.children}
       </div>
@@ -65,25 +68,35 @@ class About extends React.Component {
 }
 
 let MultiPage = React.createClass({
+  propTypes: {
+    content: React.PropTypes.object
+  },
+  getDefaultProps: function() {
+    return {
+      content: {}
+    };
+  },
   render() {
     let content;
-    if (!util.canUseDOM()) {
-      content = (<div></div>);
-    }
-    else {
+    console.log(this.props.content);
+    if (util.canUseDOM()) {
       content = (
-        <Router history={appHistory}>
-          <Route path="/" component={App}>
+        <Router history={hashHistory}>
+          <Route path="/" component={App} content={this.props.content}>
             <IndexRoute component={Index}/>
-            <Route path="/derp" component={About}/>
-            <Route path="/derk" component={Users}/>
+            <Route path="derp" component={About}/>
+            <Route path="derk" component={Users}/>
           </Route>
         </Router>
       );
     }
+    else {
+      content = (<div></div>);
+
+    }
     return (
       <div>
-      {content}
+        {content}
       </div>
     );
   }

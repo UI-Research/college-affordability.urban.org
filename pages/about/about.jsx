@@ -10,12 +10,30 @@ const MultiPage = require('30-components/multipage/multipage.jsx');
 
 const util = require('util.jsx');
 
+let multipage = {
+  links: {
+    'one': 'uno',
+    'two': 'dos',
+    'three': 'tres'
+  },
+  content: {
+    'one': (
+      <div>First</div>
+    ),
+    'two': (
+      <div>Second</div>
+    ),
+    'three': (
+      <div>Third</div>
+    )
+  }
+}
 
 let specifications = {
   'name': 'about',
   'content':
-      <div className='test'>qwer
-        <MultiPage />
+      <div className='test'>
+        <MultiPage content={multipage} />
         <Text title="General Text Box">
           <p>Example of a text box?</p>
           <a href="http://www.google.com">This is a link</a>
