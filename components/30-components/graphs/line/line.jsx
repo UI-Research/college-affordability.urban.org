@@ -56,16 +56,18 @@ const BaseGraph = React.createClass({
 
 const LineGraph = React.createClass({
   propTypes: {
+    anchor_name: React.PropTypes.string,
     title: React.PropTypes.string
   },
   getDefaultProps: function() {
     return {
+      anchor_name: '',
       title: ''
     };
   },
   render: function() {
     return (
-    <LazyLoad>
+    <LazyLoad anchor_name={this.props.anchor_name}>
       <BaseGraph title={this.props.title} type="line" file={this.props.file} />
     </LazyLoad>
     );

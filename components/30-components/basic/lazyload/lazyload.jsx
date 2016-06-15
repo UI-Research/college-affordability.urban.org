@@ -14,26 +14,36 @@ if (util.canUseDOM()) {
 
 const LazyLoad = React.createClass({
   propTypes: {
+    anchor_name: React.PropTypes.string,
     height: React.PropTypes.number,
     offset: React.PropTypes.number
   },
   getDefaultProps: function() {
     return {
-      height: 350,
-      offset: -75,
+      anchor_name: '',
+      height: 367,
+      offset: 25,
     };
   },
-  render: function() {    
+  render: function() {
+    let placeholder_element = '';
+    if (this.props.anchor_name) {
+      placeholder_element = <a name={this.props.anchor_name}></a>;
+    }
+    
     return (
-    <ReactLazyLoad height={this.props.height} throttle={100} offset={this.props.offset}>
-      <ReactCSSTransitionGroup key="1"
-        transitionName="fade"
-        transitionAppear={true}
-        transitionAppearTimeout={750}
-        transitionEnter={false}
-        transitionLeave={false}>
-        {this.props.children}
-      </ReactCSSTransitionGroup>
+    <ReactLazyLoad height={this.props.height} throttle={true} offset={this.props.offset} placeholder={placeholder_element}>
+      <div className="lazy-loaded">
+        <ReactCSSTransitionGroup key="1"
+          transitionName="fade"
+          transitionAppear={true}
+          transitionAppearTimeout={750}
+          transitionEnter={false}
+          transitionLeave={false}>
+          {placeholder_element}
+          {this.props.children}
+        </ReactCSSTransitionGroup>
+      </div>
     </ReactLazyLoad>
     );
   }

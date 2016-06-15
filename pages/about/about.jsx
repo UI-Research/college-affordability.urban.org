@@ -38,10 +38,10 @@ let specifications = {
         <BarGraph title="two" file={require('./sample.json')} />
         <img src='/img/MPxXjTj.jpg' />
         <BarGraph title="three" file={require('./sample.json')} />
-        <LineGraph title="four" file={require('./sample.json')} />
+        <LineGraph title="four" anchor_name="four_four" file={require('./sample.json')} />
         <img src='/img/4HLZjYB.jpg' />
-        <BarGraph title="five" file={require('./sample.json')} />
-        <BarGraph title="six" file={require('./sample.json')} />
+        <BarGraph title="five" anchor_name="five" file={require('./sample.json')} />
+        <BarGraph title="six" anchor_name="six" file={require('./sample.json')} />
         <img src='/img/EYUcKub.jpg' />
         <BarGraph title="seven" file={require('./sample.json')} />
         <img src='/img/PSVFcxr.jpg' />
