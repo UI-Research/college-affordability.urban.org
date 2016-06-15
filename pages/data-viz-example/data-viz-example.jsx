@@ -124,7 +124,7 @@ let specifications = {
           <p>State tax revenues are the primary source of state and local funding for higher education institutions, but local taxes support community colleges and provided just over 10 percent of the total in 2013-14. State and local appropriations are dedicated primarily to public colleges and universities, but some of the funds go to student aid, some benefit students in private colleges, and some are restricted funds for special purposes like research, agriculture, and medical education.</p>
 
 
-          <div className="faq">
+          <div className="c-text__faq">
             <h4>How do states determine appropriation levels?</h4>
 
             <p>
@@ -153,6 +153,10 @@ let specifications = {
             <li><a href="#">Endowments</a></li>
             <li><a href="#">State and local appropriations (public institutions only)</a></li>
           </ul>
+
+          <div className="c-text__featured">
+
+          </div>
 
         </div>
       </div>
