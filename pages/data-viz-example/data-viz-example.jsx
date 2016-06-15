@@ -22,6 +22,9 @@ let specifications = {
   ,
   'content':
     <div className='data-viz'>
+      <div className="breadcrumb">
+        <a href="#">HOME</a> / <a href="#">Breadcrumb Link</a> / Producing Education
+      </div>
       <h1 className="heading-accent">Producing Education</h1>
       <div className="grid">
         <div className="col col--1-4">
@@ -46,8 +49,10 @@ let specifications = {
           <h2>Overview</h2>
 
           <div className="media media--right-align">
-
-            <div className="caption caption--below">Caption for image for data visualization</div>
+            <div className="icon">
+              <div className="icon__teaching">
+              </div>
+            </div>
           </div>
 
           <p>Students see the prices colleges charge, but the amounts that colleges spend to provide education are less visible. To educate a student, a college must pay for instructors, student services, administrative support, and maintenance, among other things. An institution’s reported education and related expenditure per student is a good indication of the expenses it incurs in educating students, though it does not account for the full cost. There is a general consensus that it costs significantly more to educate graduate students, but because we don’t have a precise way of separating out these costs, the average subsidies at universities are higher than those at bachelor’s colleges. Average education and related spending per student varies considerably across sectors, partially because of differences in institutions’ activities. For example, public two-year colleges almost exclusively educate lower-level undergraduates, while public research universities educate these students, upper-level undergraduates, and graduate students, in addition to engaging in a significant amount of research activity. To cover costs, all colleges and universities use revenues from tuition and fees; public and private nonprofit institutions also contribute from their own resources. Institutional subsidies are the share of the total cost that is covered by the institution rather than by the students’ tuition. In the public sector, these subsidies come primarily from state and local tax revenues. In the private sector, they come from endowment income, annual giving, and other private sources.
@@ -73,35 +78,16 @@ let specifications = {
           </p>
 
           <div className="c-text__viz">
-            <BarGraph title="My Bar Chart" file={require('./sample.json')} />
+            <BarGraph title="" file={require('./sample.json')} />
           </div>
 
           <div className="c-text__caption c-text__caption--bottom">
 
             <div className="c-text__viz-notes">
-
-              <div>
-                <strong className="c-text__viz-notes__title">Sources:</strong>
-                <p className="c-text__viz-notes__description">
-                  Leverage agile frameworks to provide a robust synopsis for high level overviews.
-                </p>
-              </div>
-
-              <div>
-                <strong className="c-text__viz-notes__title">Notes:</strong>
-                <p className="c-text__viz-notes__description">
-                  Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the
-                  holistic world view of disruptive innovation via workplace diversity and empowerment.
-                </p>
-              </div>
-
-              <div>
-                <strong className="c-text__viz-notes__title">Data:</strong>
-                <p className="c-text__viz-notes__description">
-                  <a href="#">Source Link Goes Here</a>
-                </p>
-              </div>
-
+              <p><strong>Sources:</strong> Leverage agile frameworks to provide a robust synopsis for high level overviews.</p>
+              <p><strong>Notes:</strong> Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the
+            holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+              <p><strong>Data: </strong><a href="#">Source Link Goes Here</a></p>
             </div>
 
             <div className="c-text__viz-actions">
@@ -155,7 +141,10 @@ let specifications = {
           </ul>
 
           <div className="c-text__featured">
-
+            <h4>Featured Text Block</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ante elit, imperdiet sed leo in, mattis placerat tellus. Aenean vulputate purus id molestie ultricies. Vestibulum quis nisl ultricies justo vehicula mollis. Nunc porttitor ornare lacus et pulvinar. Phasellus euismod dignissim dui vel ullamcorper. Vivamus quam velit, tincidunt vel efficitur rutrum, malesuada quis nulla. Pellentesque dapibus vitae sem vel posuere. Integer tincidunt sem vitae ipsum consequat, sed aliquet urna dignissim. Nam tristique dignissim ante quis finibus. Aenean molestie ligula ligula, laoreet ornare velit consectetur nec. Aenean non semper dui. Vivamus vulputate odio vitae lacus porta mollis. Cras sed nunc in tortor dapibus semper eget vitae purus. Pellentesque congue mauris id arcu consectetur cursus ut tempus est.
+              </p>
+              <p>Nullam laoreet, enim rutrum consequat aliquet, urna nunc cursus augue, non porttitor nulla felis fringilla dui. Aliquam consequat diam et mattis sollicitudin. Suspendisse eu metus id dui commodo dictum quis in est. Sed dictum blandit dolor. Duis at tempus mauris, ac rhoncus dui. Phasellus a arcu sodales, malesuada ipsum ut, sodales sapien. Nulla facilisi.</p>
           </div>
 
         </div>
