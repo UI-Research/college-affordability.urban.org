@@ -11,21 +11,90 @@ const MultiPage = require('30-components/multipage/multipage.jsx');
 const util = require('util.jsx');
 
 let multipage = {
-  links: {
-    'one': 'uno',
-    'two': 'dos',
-    'three': 'tres'
-  },
+  links: [
+    'one',
+    [
+      'uno',
+      'quatro',
+      'cinco'
+    ],
+    'two',
+    [
+      'dos',
+      'tres',
+      'seis',
+      'siete',
+      'ocho'
+    ],
+    'three'
+  ],
   content: {
-    'one': (
-      <div>First</div>
-    ),
-    'two': (
-      <div>Second</div>
-    ),
-    'three': (
-      <div>Third</div>
-    )
+    'one': {
+      title: 'ONE',
+      content: (
+        <div>First</div>
+      ),
+    },
+    'two': {
+      title: 'TWO',
+      content: (
+        <div>Second</div>
+      ),
+    },
+    'three': {
+      title: 'THREE',
+      content: (
+        <div>Third</div>
+      ),
+    },
+    'uno': {
+      title: 'UNO',
+      content: (
+        <div>Uno</div>
+      ),
+    },
+    'dos': {
+      title: 'DOS',
+      content: (
+        <div>Dos</div>
+      ),
+    },
+    'tres': {
+      title: 'TRES',
+      content: (
+        <div>Tres</div>
+      ),
+    },
+    'quatro': {
+      title: 'QUATRO',
+      content: (
+        <div>Quatro</div>
+      ),
+    },
+    'cinco': {
+      title: 'CINCO',
+      content: (
+        <div>Cinco</div>
+      ),
+    },
+    'seis': {
+      title: 'SEIS',
+      content: (
+        <div>Seis</div>
+      ),
+    },
+    'siete': {
+      title: 'SIETE',
+      content: (
+        <div>Siete</div>
+      ),
+    },
+    'ocho': {
+      title: 'OCHO',
+      content: (
+        <div>Ocho</div>
+      ),
+    },
   }
 }
 
