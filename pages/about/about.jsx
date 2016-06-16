@@ -120,9 +120,6 @@ let specifications = {
         <BarGraph title="seven" file={require('./sample.json')} />
         <img src='/img/PSVFcxr.jpg' />
         <BarGraph title="eight" file={require('./sample.json')} />
-        <LazyLoad>
-          <FAQ title="Frequently Asked Questions" set={faq} />
-        </LazyLoad>
         <img src='/img/MPxXjTj.jpg' />
         <BarGraph title="My Bar Chart" file={require('./sample.json')} />
         <LineGraph title="My Line Chart" file={require('./sample.json')} />
