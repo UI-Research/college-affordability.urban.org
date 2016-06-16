@@ -28,7 +28,7 @@ class Menu extends Component {
           secondaryMenu = (
             <ul className="nav-anchor__second-level">
               {
-                _.map(links[index + 1], (target) => {
+                _.map(links[index + 1], (target, index) => {
                   return (
                     <li><Link to={target} activeClassName="active" key={target}>{this.props.route.content.content[target].title}</Link></li>
                   );
@@ -37,9 +37,10 @@ class Menu extends Component {
             </ul>
           );
         }
+        let link = (index == 0) ? '/' : target;
         content = (
           <li>
-            <Link to={target} activeClassName="active" key={target}>{this.props.route.content.content[target].title}</Link>
+            <Link to={link} activeClassName="active" key={target}>{this.props.route.content.content[target].title}</Link>
             {secondaryMenu}
           </li>
         );
@@ -92,7 +93,7 @@ let MultiPage = React.createClass({
       content = (
         <Router history={hashHistory}>
           <Route path="/" component={Menu} content={this.props.content}>
-            <IndexRoute component={Content}/>
+            <IndexRoute component={Content} jsx={this.props.content.content[this.props.content.links[0]].content} />
             {
               _.map(links, (target) => {
                 return (<Route path={target} component={Content} key={target} jsx={this.props.content.content[target].content} />);
