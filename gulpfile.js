@@ -28,7 +28,8 @@ const fs = require('fs-extra'),
       log = require('winston'),
       parallel = require('concurrent-transform'),
       os = require('os'),
-      named = require('vinyl-named');
+      named = require('vinyl-named'),
+      _ = require('lodash');
 
 require('node-jsx').install();
 
@@ -56,7 +57,6 @@ gulp.task('destroy', function() {
   fs.removeSync('dist/');
 });
 
-
 // Create static artifact
 // > gulp react
 gulp.task('react', function() {
@@ -75,8 +75,18 @@ gulp.task('react', function() {
       let fragment = React.createElement(require('./' + filepath), { includeHTML: true });
       fragment = ReactDOMServer.renderToStaticMarkup(fragment);
 
-      // Write fragment to artifacts directory.
-      fs.outputFileSync('dist/' + file, fragment);
+      // Replace full images with their smaller previews.
+      let regex = /\<img .+?\/\>/ig;
+      let images = fragment.match(regex);
+      if (images) {
+        _.forEach(images, function (image) {
+          let new_img_tag = image.replace('img/', 'img/preview/');
+          fragment = fragment.replace(image, new_img_tag);
+        });
+  
+        // Write fragment to artifacts directory.
+        fs.outputFileSync('dist/' + file, fragment);
+      }
     })
   });
 
@@ -138,21 +148,32 @@ gulp.task('images', function () {
       throw err;
     }
     if (stats.isDirectory()) {
-      // Generate low quality thumbnail image version to serve static pages faster.
-      gulp.src(src_image_dir + '/**/*.{jpg,gif,png}')
+      // Generate low quality version - same size as high quality.
+      // Only use low quality for jpg, it can increase size of other types.
+      gulp.src(src_image_dir + '/**/*.jpg')
         .pipe(parallel(
-          // Crop to exact size.
-          imageResize({ width: 50, height: 50, quality: 0.1, crop: true }),
+          // No cropping, allows to maintain aspect ratio.
+          imageResize({ width: 1200, height: 1000, quality: 0.05, imageMagick: true }),
           os.cpus().length
         ))
         .pipe(rename({dirname: ''}))
         .pipe(gulp.dest(dist_image_dir + '/preview'));
-
+      
+      // Generate low quality version - same size as high quality.
+      gulp.src(src_image_dir + '/**/*.{gif,png}')
+        .pipe(parallel(
+          // No cropping, allows to maintain aspect ratio.
+          imageResize({ width: 1200, height: 1000, imageMagick: true }),
+          os.cpus().length
+        ))
+        .pipe(rename({dirname: ''}))
+        .pipe(gulp.dest(dist_image_dir + '/preview'));
+      
       // Generate high quality, image version that is still not too large.
       gulp.src(src_image_dir + '/**/*.{jpg,gif,png}')
         .pipe(parallel(
           // No cropping, allows to maintain aspect ratio.
-          imageResize({ width: 1200, height: 1000, quality: 1 }),
+          imageResize({ width: 1200, height: 1000, quality: 1, imageMagick: true }),
           os.cpus().length
         ))
         .pipe(rename({dirname: ''}))

@@ -5,7 +5,8 @@ const Template = require('20-templates/default/default.jsx');
 const Text = require('30-components/basic/text/text.jsx'),
       BarGraph = require('30-components/graphs/bar/bar.jsx'),
       LineGraph = require('30-components/graphs/line/line.jsx'),
-      MultiPage = require('30-components/multipage/multipage.jsx');
+      MultiPage = require('30-components/multipage/multipage.jsx'),
+      LazyLoad = require('30-components/basic/lazyload/lazyload.jsx');
 
 const util = require('util.jsx');
 
@@ -106,7 +107,23 @@ let specifications = {
           <p>Example of a text box?</p>
           <a href="http://www.google.com">This is a link</a>
         </Text>
+        <BarGraph title="one" file={require('./sample.json')} />
         <img src='/img/PSVFcxr.jpg' />
+        <BarGraph title="two" file={require('./sample.json')} />
+        <img src='/img/MPxXjTj.jpg' />
+        <BarGraph title="three" file={require('./sample.json')} />
+        <LineGraph title="four" anchor_name="four_four" file={require('./sample.json')} />
+        <img src='/img/4HLZjYB.jpg' />
+        <BarGraph title="five" anchor_name="five" file={require('./sample.json')} />
+        <BarGraph title="six" anchor_name="six" file={require('./sample.json')} />
+        <img src='/img/EYUcKub.jpg' />
+        <BarGraph title="seven" file={require('./sample.json')} />
+        <img src='/img/PSVFcxr.jpg' />
+        <BarGraph title="eight" file={require('./sample.json')} />
+        <LazyLoad>
+          <FAQ title="Frequently Asked Questions" set={faq} />
+        </LazyLoad>
+        <img src='/img/MPxXjTj.jpg' />
         <BarGraph title="My Bar Chart" file={require('./sample.json')} />
         <LineGraph title="My Line Chart" file={require('./sample.json')} />
         <i className="fa fa-camera-retro"></i> asdf
