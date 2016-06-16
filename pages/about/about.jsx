@@ -5,8 +5,7 @@ const Template = require('20-templates/default/default.jsx');
 const Text = require('30-components/basic/text/text.jsx'),
       BarGraph = require('30-components/graphs/bar/bar.jsx'),
       LineGraph = require('30-components/graphs/line/line.jsx'),
-      MultiPage = require('30-components/multipage/multipage.jsx'),
-      LazyLoad = require('30-components/basic/lazyload/lazyload.jsx');
+      MultiPage = require('30-components/multipage/multipage.jsx');
 
 const util = require('util.jsx');
 
@@ -33,70 +32,70 @@ let multipage = {
       title: 'ONE',
       content: (
         <div>First</div>
-      ),
+      )
     },
     'two': {
       title: 'TWO',
       content: (
         <div>Second</div>
-      ),
+      )
     },
     'three': {
       title: 'THREE',
       content: (
         <div>Third</div>
-      ),
+      )
     },
     'uno': {
       title: 'UNO',
       content: (
         <div>Uno</div>
-      ),
+      )
     },
     'dos': {
       title: 'DOS',
       content: (
         <div>Dos</div>
-      ),
+      )
     },
     'tres': {
       title: 'TRES',
       content: (
         <div>Tres</div>
-      ),
+      )
     },
     'quatro': {
       title: 'QUATRO',
       content: (
         <div>Quatro</div>
-      ),
+      )
     },
     'cinco': {
       title: 'CINCO',
       content: (
         <div>Cinco</div>
-      ),
+      )
     },
     'seis': {
       title: 'SEIS',
       content: (
         <div>Seis</div>
-      ),
+      )
     },
     'siete': {
       title: 'SIETE',
       content: (
         <div>Siete</div>
-      ),
+      )
     },
     'ocho': {
       title: 'OCHO',
       content: (
         <div>Ocho</div>
-      ),
-    },
+      )
+    }
   }
-}
+};
 
 let specifications = {
   'name': 'about',

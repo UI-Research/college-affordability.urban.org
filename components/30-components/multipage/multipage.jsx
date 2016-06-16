@@ -31,7 +31,7 @@ class Menu extends Component {
                 _.map(links[index + 1], (target) => {
                   return (
                     <li><Link to={target} activeClassName="active" key={target}>{this.props.route.content.content[target].title}</Link></li>
-                  )
+                  );
                 })
               }
             </ul>

@@ -22,7 +22,7 @@ const LazyLoad = React.createClass({
     return {
       anchor_name: '',
       height: 367,
-      offset: 25,
+      offset: 25
     };
   },
   render: function() {
@@ -30,7 +30,7 @@ const LazyLoad = React.createClass({
     if (this.props.anchor_name) {
       placeholder_element = <a name={this.props.anchor_name}></a>;
     }
-    
+
     return (
     <ReactLazyLoad height={this.props.height} throttle={true} offset={this.props.offset} placeholder={placeholder_element}>
       <div className="lazy-loaded">
