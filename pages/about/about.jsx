@@ -4,9 +4,8 @@ const React = require('react');
 const Template = require('20-templates/default/default.jsx');
 const Text = require('30-components/basic/text/text.jsx'),
       BarGraph = require('30-components/graphs/bar/bar.jsx'),
-      LineGraph = require('30-components/graphs/line/line.jsx');
-
-const MultiPage = require('30-components/multipage/multipage.jsx');
+      LineGraph = require('30-components/graphs/line/line.jsx'),
+      MultiPage = require('30-components/multipage/multipage.jsx');
 
 const util = require('util.jsx');
 

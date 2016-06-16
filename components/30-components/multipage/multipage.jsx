@@ -10,52 +10,54 @@ if (util.canUseDOM()) {
   require('./multipage.scss');
 }
 
-const ACTIVE = { color: '#0F0' };
 
+// Create a menu in our multi page section.
+// This supports two levels (on purpose to avoid ovely-complicated menu setups).
 class Menu extends Component {
   constructor(props) {
     super(props);
   }
   render() {
     let links = this.props.route.content.links;
-    let lastLink;
-    let content = _.map(links, (target) => {
+    let content = _.map(links, (target, index) => {
       let content;
-      switch (typeof target) {
-        case 'string':
-          content = (
-            <li><Link to={target} activeStyle={ACTIVE} key={target}>{target}</Link></li>
-          );
-          break;
-        case 'object':
-          content = (
-            <ul>
+      let secondaryMenu;
+
+      if (typeof target == 'string') {
+        if (typeof links[index + 1] == 'object') {
+          secondaryMenu = (
+            <ul className="nav-anchor__second-level">
               {
-                _.map(target, (target) => {
+                _.map(links[index + 1], (target) => {
                   return (
-                    <li><Link to={target} activeStyle={ACTIVE} key={target}>{target}</Link></li>
+                    <li><Link to={target} activeClassName="active" key={target}>{this.props.route.content.content[target].title}</Link></li>
                   )
                 })
               }
             </ul>
           );
-          break;
-        default:
-          break;
+        }
+        content = (
+          <li>
+            <Link to={target} activeClassName="active" key={target}>{this.props.route.content.content[target].title}</Link>
+            {secondaryMenu}
+          </li>
+        );
       }
-      lastLink = 'target';
-
       return content;
     });
 
     return (
-      <div>
-        <h1>APP!</h1>
-        <ul>
-          {content}
-        </ul>
+      <div className="grid">
+        <div className="col col--1-4">
+          <div className="nav-anchor">
+            <ul className="nav-anchor__top-level">
+              {content}
+            </ul>
+          </div>
+        </div>
 
-        <div className="content_regions">
+        <div className="col col--3-4">
           {this.props.children}
         </div>
       </div>
@@ -65,7 +67,6 @@ class Menu extends Component {
 
 class Content extends React.Component {
   render() {
-    console.log(this.props.route.jsx);
     return (
       <div>
         {this.props.route.jsx}
@@ -88,15 +89,15 @@ let MultiPage = React.createClass({
 
     if (util.canUseDOM()) {
       let links = _.flattenDeep(this.props.content.links);
-      console.log(links);
-
       content = (
         <Router history={hashHistory}>
           <Route path="/" component={Menu} content={this.props.content}>
-            <IndexRoute component={Index}/>
-            {_.map(links, (target) => {
-              return (<Route path={target} component={Content} key={target} jsx={this.props.content.content[target].content} />);
-            })}
+            <IndexRoute component={Content}/>
+            {
+              _.map(links, (target) => {
+                return (<Route path={target} component={Content} key={target} jsx={this.props.content.content[target].content} />);
+              })
+            }
           </Route>
         </Router>
       );
