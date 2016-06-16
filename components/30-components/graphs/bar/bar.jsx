@@ -1,24 +1,28 @@
 'use strict';
 
-const React = require('react');
+const React = require('react'),
+      LazyLoad = require('30-components/basic/lazyload/lazyload.jsx');
 const util = require('util.jsx');
 
 if (util.canUseDOM()) {
   require('./bar.scss');
 }
 
-const BarGraph = React.createClass({
+// Keep graphing piece separate - need its own DOM interaction events.
+const BaseGraph = React.createClass({
   propTypes: {
-    title: React.PropTypes.string
+    title: React.PropTypes.string,
+    type: React.PropTypes.string
   },
   getDefaultProps: function() {
     return {
-      title: ''
+      title: '',
+      type: 'bar'
     };
   },
   componentWillMount() {
     // Create unique ID for element.
-    this.id = 'barGraph' + util.uniqueID();
+    this.id = this.props.type + 'Graph' + util.uniqueID();
   },
   componentDidMount: function() {
     if (util.canUseDOM) {
@@ -31,7 +35,7 @@ const BarGraph = React.createClass({
       data.bindto = '#' + this.id;
 
       // Force specify type of graph.
-      data.data.type =  'bar';
+      data.data.type = this.props.type;
 
       // Set default colors.
       data.color = {
@@ -59,12 +63,35 @@ const BarGraph = React.createClass({
     }
   },
   render: function() {
+    let base_class = 'c-' + this.props.type,
+        container_class = base_class + '__container';
+    
     return (
       <div className="c-bar">
         <h1>{this.props.title}</h1>
         <div id={this.id} className="c-bar__container"></div>
         <div dangerouslySetInnerHTML={this.raw()} />
       </div>
+    );
+  }
+});
+
+const BarGraph = React.createClass({
+  propTypes: {
+    anchor_name: React.PropTypes.string,
+    title: React.PropTypes.string
+  },
+  getDefaultProps: function() {
+    return {
+      anchor_name: '',
+      title: ''
+    };
+  },
+  render: function() {
+    return (
+    <LazyLoad anchor_name={this.props.anchor_name}>
+      <BaseGraph title={this.props.title} type="bar" file={this.props.file} />
+    </LazyLoad>
     );
   }
 });
