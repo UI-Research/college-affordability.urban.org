@@ -3,7 +3,7 @@
 const React = require('react');
 const Template = require('20-templates/default/default.jsx');
 const Text = require('30-components/basic/text/text.jsx'),
-      FAQSet = require('30-components/basic/faqset/faqset.jsx'),
+      FAQ = require('30-components/basic/faq/faq.jsx'),
       BarGraph = require('30-components/graphs/bar/bar.jsx'),
       LineGraph = require('30-components/graphs/line/line.jsx'),
       LazyLoad = require('30-components/basic/lazyload/lazyload.jsx');
@@ -33,7 +33,7 @@ let specifications = {
           <p>Example of a text box?</p>
           <a href="http://www.google.com">This is a link</a>
         </Text>
-        <BarGraph title="one" file={require('./sample.json')} />
+        <BarGraph title="one" anchor_name="bar_one" file={require('./sample.json')} />
         <img src='/img/PSVFcxr.jpg' />
         <BarGraph title="two" file={require('./sample.json')} />
         <img src='/img/MPxXjTj.jpg' />
@@ -52,7 +52,7 @@ let specifications = {
         <img src='/img/MPxXjTj.jpg' />
         <BarGraph title="My Bar Chart" file={require('./sample.json')} />
         <LineGraph title="My Line Chart" file={require('./sample.json')} />
-        <FAQSet title="Frequently Asked Questions" set={faq} />
+        <FAQ title="Frequently Asked Questions" set={faq} />
         <i className="fa fa-camera-retro"></i> asdf
         <div className='asdf'><strong>Custom HTML</strong></div>
         <div className="grid">

@@ -21,8 +21,8 @@ const Notes = React.createClass({
     let anchor = '';
     if (this.props.anchor_name) {
       // Replace any spaces with _.
-      let anchor_name = this.props.anchor_name.replace(/ /g,"_");
-      anchor = <a name={anchor_name}></a>
+      let anchor_name = util.cleanString(this.props.anchor_name);
+      anchor = <a name={anchor_name}></a>;
     }
 
     return (

@@ -3,10 +3,10 @@ const React = require('react');
 const util = require('util.jsx');
 
 if (util.canUseDOM()) {
-  require('./faq.scss');
+  require('./faq_box.scss');
 }
 
-const FAQ = React.createClass({
+const FAQBox = React.createClass({
   propTypes: {
     anchor_name: React.PropTypes.string
   },
@@ -19,8 +19,8 @@ const FAQ = React.createClass({
     let anchor = '';
     if (this.props.anchor_name) {
       // Replace any spaces with _.
-      let anchor_name = this.props.anchor_name.replace(/ /g,"_");
-      anchor = <a name={anchor_name}></a>
+      let anchor_name = util.cleanString(this.props.anchor_name);
+      anchor = <a name={anchor_name}></a>;
     }
     
     return (
@@ -32,4 +32,4 @@ const FAQ = React.createClass({
   }
 });
 
-module.exports = FAQ;
+module.exports = FAQBox;

@@ -22,25 +22,27 @@ const LazyLoad = React.createClass({
     return {
       anchor_name: '',
       height: 367,
-      offset: 25,
+      offset: 25
     };
   },
   render: function() {
-    let placeholder_element = '';
+    let anchor = '';
     if (this.props.anchor_name) {
-      placeholder_element = <a name={this.props.anchor_name}></a>;
+      // Replace any spaces with _.
+      let anchor_name = util.cleanString(this.props.anchor_name);
+      anchor = <a name={anchor_name}></a>;
     }
     
     return (
-    <ReactLazyLoad height={this.props.height} throttle={true} offset={this.props.offset} placeholder={placeholder_element}>
+    <ReactLazyLoad height={this.props.height} throttle={true} offset={this.props.offset}>
       <div className="lazy-loaded">
+        {anchor}
         <ReactCSSTransitionGroup key="1"
           transitionName="fade"
           transitionAppear={true}
           transitionAppearTimeout={750}
           transitionEnter={false}
           transitionLeave={false}>
-          {placeholder_element}
           {this.props.children}
         </ReactCSSTransitionGroup>
       </div>

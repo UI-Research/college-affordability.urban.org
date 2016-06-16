@@ -11,18 +11,16 @@ if (util.canUseDOM()) {
 // Keep graphing piece separate - need its own DOM interaction events.
 const BaseGraph = React.createClass({
   propTypes: {
-    title: React.PropTypes.string,
-    type: React.PropTypes.string
+    title: React.PropTypes.string
   },
   getDefaultProps: function() {
     return {
-      title: '',
-      type: 'bar'
+      title: ''
     };
   },
   componentWillMount() {
     // Create unique ID for element.
-    this.id = this.props.type + 'Graph' + util.uniqueID();
+    this.id = 'barGraph' + util.uniqueID();
   },
   componentDidMount: function() {
     if (util.canUseDOM) {
@@ -35,7 +33,7 @@ const BaseGraph = React.createClass({
       data.bindto = '#' + this.id;
 
       // Force specify type of graph.
-      data.data.type = this.props.type;
+      data.data.type = 'bar';
 
       // Set default colors.
       data.color = {
@@ -62,10 +60,7 @@ const BaseGraph = React.createClass({
       return { __html: '' };
     }
   },
-  render: function() {
-    let base_class = 'c-' + this.props.type,
-        container_class = base_class + '__container';
-    
+  render: function() {    
     return (
       <div className="c-bar">
         <h1>{this.props.title}</h1>
@@ -90,7 +85,7 @@ const BarGraph = React.createClass({
   render: function() {
     return (
     <LazyLoad anchor_name={this.props.anchor_name}>
-      <BaseGraph title={this.props.title} type="bar" file={this.props.file} />
+      <BaseGraph title={this.props.title} file={this.props.file} />
     </LazyLoad>
     );
   }

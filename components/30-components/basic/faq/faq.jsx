@@ -3,7 +3,7 @@ const React = require('react');
 const util = require('util.jsx');
 
 if (util.canUseDOM()) {
-  require('./faqset.scss');
+  require('./faq.scss');
 }
 
 const Question = React.createClass({
@@ -38,7 +38,7 @@ const Answer = React.createClass({
   }
 });
 
-const FAQSet = React.createClass({
+const FAQ = React.createClass({
   propTypes: {
     title: React.PropTypes.string,
 
@@ -70,4 +70,4 @@ const FAQSet = React.createClass({
   }
 });
 
-module.exports = FAQSet;
+module.exports = FAQ;
