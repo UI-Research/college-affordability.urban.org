@@ -24,17 +24,19 @@ class Menu extends Component {
       switch (typeof target) {
         case 'string':
           content = (
-            <li><Link to={target} activeStyle={ACTIVE}>{target}</Link></li>
+            <li><Link to={target} activeStyle={ACTIVE} key={target}>{target}</Link></li>
           );
           break;
         case 'object':
           content = (
             <ul>
-              {_.map(target, (target) => {
-                return (
-                  <li><Link to={target} activeStyle={ACTIVE}>{target}</Link></li>
-                )
-              })}
+              {
+                _.map(target, (target) => {
+                  return (
+                    <li><Link to={target} activeStyle={ACTIVE} key={target}>{target}</Link></li>
+                  )
+                })
+              }
             </ul>
           );
           break;
@@ -45,47 +47,21 @@ class Menu extends Component {
 
       return content;
     });
-    // let content = (
-    //   <ul>
-    //     <li><Link to="/" activeStyle={ACTIVE}>Top</Link></li>
-    //     <li><Link to="/derp" activeStyle={ACTIVE}>Secondary</Link></li>
-    //     <li><Link to="/derk" activeStyle={ACTIVE}>Trimary</Link></li>
-    //   </ul>
-    // );
-    // let content = (
-    //   <div>asdf</div>
-    // )
 
     return (
       <div>
         <h1>APP!</h1>
-        {content}
+        <ul>
+          {content}
+        </ul>
 
-        {this.props.children}
+        <div className="content_regions">
+          {this.props.children}
+        </div>
       </div>
     );
   }
 }
-
-class Index extends React.Component {
-  render() {
-    return (
-      <div>
-        <h2>Index!</h2>
-      </div>
-    );
-  }
-}
-class About extends React.Component {
-  render() {
-    return (
-      <div>
-        <h2>Secondary</h2>
-      </div>
-    );
-  }
-}
-
 
 class Content extends React.Component {
   render() {
@@ -118,10 +94,8 @@ let MultiPage = React.createClass({
         <Router history={hashHistory}>
           <Route path="/" component={Menu} content={this.props.content}>
             <IndexRoute component={Index}/>
-            <Route path="derp" component={About} />
             {_.map(links, (target) => {
-              //console.log(this.props.content.content[target].content);
-              return (<Route path={target} component={Content} jsx={this.props.content.content[target].content} />);
+              return (<Route path={target} component={Content} key={target} jsx={this.props.content.content[target].content} />);
             })}
           </Route>
         </Router>
