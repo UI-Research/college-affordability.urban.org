@@ -39,17 +39,19 @@ const BaseGraph = React.createClass({
       data.data.type = this.props.type;
 
       // Set default colors.
-      data.color = {
-        pattern: [
-          '#1696d2',
-          '#ec008b',
-          '#d2d2d2'
-        ]
-      };
+      if (!data.color) {
+        data.color = {
+          pattern: [
+            '#1696d2',
+            '#ec008b',
+            '#d2d2d2'
+          ]
+        };
+      }
 
-      // Hide tooltip.
+      // Show tooltip.
       data.tooltip = {
-        show: false
+        show: true
       };
 
       c3.generate(data);
@@ -66,7 +68,7 @@ const BaseGraph = React.createClass({
   render: function() {
     let base_class = 'c-' + this.props.type,
         container_class = base_class + '__container';
-    
+
     return (
       <div className="c-bar">
         <h1>{this.props.title}</h1>

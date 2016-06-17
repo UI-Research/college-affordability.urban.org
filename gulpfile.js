@@ -81,7 +81,7 @@ gulp.task('react', function() {
           let new_img_tag = image.replace('img/', 'img/preview/');
           fragment = fragment.replace(image, new_img_tag);
         });
-  
+
         // Write fragment to artifacts directory.
         fs.outputFileSync('dist/' + file, fragment);
       }
@@ -125,7 +125,7 @@ gulp.task('webpack-watch', (cb) => {
 // Watch Files For Changes
 // > gulp watch
 gulp.task('track', function() {
-  gulp.watch(['components/**/*.jsx', 'pages/**/*.jsx'], ['react', 'webpack-watch']);
+  gulp.watch(['components/**/*.jsx', 'pages/**/*.{js,jsx}'], ['react', 'webpack-watch']);
   gulp.watch(['components/**/*.scss', 'pages/**/*.scss'], ['webpack-watch']);
   gulp.watch(['pages/**/*.{jpg,gif,png}'], ['images']);
 });
@@ -156,7 +156,7 @@ gulp.task('images', function () {
         ))
         .pipe(rename({dirname: ''}))
         .pipe(gulp.dest(dist_image_dir + '/preview'));
-      
+
       // Generate low quality version - same size as high quality.
       gulp.src(src_image_dir + '/**/*.{gif,png}')
         .pipe(parallel(
@@ -166,7 +166,7 @@ gulp.task('images', function () {
         ))
         .pipe(rename({dirname: ''}))
         .pipe(gulp.dest(dist_image_dir + '/preview'));
-      
+
       // Generate high quality, image version that is still not too large.
       gulp.src(src_image_dir + '/**/*.{jpg,gif,png}')
         .pipe(parallel(
