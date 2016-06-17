@@ -58,8 +58,8 @@ const BaseGraph = React.createClass({
     }
   },
   raw: function(string) {
-    if (string) {
-      return { __html: string };
+    if (this.props.file.metadata[string]) {
+      return { __html: this.props.file.metadata[string] };
     }
     else {
       return { __html: '' };
@@ -74,15 +74,15 @@ const BaseGraph = React.createClass({
           <div className="c-text__viz-notes">
             <div>
               <strong className="c-text__viz-notes__title">Source:</strong>
-              <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw(this.props.file.metadata.source)} />
+              <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw("source")} />
             </div>
             <div>
               <strong className="c-text__viz-notes__title">Notes:</strong>
-              <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw(this.props.file.metadata.notes)} />
+              <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw("notes")} />
             </div>
             <div>
               <strong className="c-text__viz-notes__title">Data:</strong>
-              <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw(this.props.file.metadata.data)} />
+              <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw("data")} />
             </div>
           </div>
         </div>
