@@ -4,9 +4,9 @@ module.exports = {
   "title": "Sample Graphs",
   "data": {
     "columns": [
-      ["1990", 130, 200, 100, 400, 150, 250],
-      ["2000", 150, 20, 10, 40, 15, 25],
-      ["2010", 90, 120, 50, 140, 60, 10]
+      ["First", 130, 200, 100, 400, 150, 250],
+      ["Second", 150, 20, 10, 40, 15, 25],
+      ["Third", 90, 120, 50, 140, 60, 10]
     ],
     "labels": {
       "format": {
@@ -18,9 +18,14 @@ module.exports = {
   },
   "axis": {
     "rotated": false,
-    y : {
-      tick: {
-        format: d3.format("$")
+    "x": {
+      "label": "X Label",
+      "type": "category",
+      "categories": ["2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016"]
+    },
+    "y" : {
+      "tick": {
+        "format": d3.format("$")
       }
     },
   },
