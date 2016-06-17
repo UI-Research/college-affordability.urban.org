@@ -67,7 +67,9 @@ gulp.task('react', function() {
       // Convert filename to .html .
       let file = filepath.split('/');
       file.shift();
-      file = file.join('/').replace('jsx', 'html');
+      file.splice(-1,1);
+      file.push('index.html');
+      file = file.join('/');
 
       // Creates HTML fragment for static page generation.
       let fragment = React.createElement(require('./' + filepath), { includeHTML: true });
@@ -81,10 +83,10 @@ gulp.task('react', function() {
           let new_img_tag = image.replace('img/', 'img/preview/');
           fragment = fragment.replace(image, new_img_tag);
         });
-  
-        // Write fragment to artifacts directory.
-        fs.outputFileSync('dist/' + file, fragment);
       }
+
+      // Write fragment to artifacts directory.
+      fs.outputFileSync('dist/' + file, fragment);
     })
   });
 
@@ -156,7 +158,7 @@ gulp.task('images', function () {
         ))
         .pipe(rename({dirname: ''}))
         .pipe(gulp.dest(dist_image_dir + '/preview'));
-      
+
       // Generate low quality version - same size as high quality.
       gulp.src(src_image_dir + '/**/*.{gif,png}')
         .pipe(parallel(
@@ -166,7 +168,7 @@ gulp.task('images', function () {
         ))
         .pipe(rename({dirname: ''}))
         .pipe(gulp.dest(dist_image_dir + '/preview'));
-      
+
       // Generate high quality, image version that is still not too large.
       gulp.src(src_image_dir + '/**/*.{jpg,gif,png}')
         .pipe(parallel(
