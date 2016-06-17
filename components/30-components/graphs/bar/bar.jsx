@@ -2,7 +2,6 @@
 
 const React = require('react'),
       LazyLoad = require('30-components/basic/lazyload/lazyload.jsx');
-
 const util = require('util.jsx');
 
 if (util.canUseDOM()) {
@@ -23,7 +22,7 @@ const BaseGraph = React.createClass({
   },
   componentWillMount() {
     // Create unique ID for element.
-    this.id = this.props.type + 'Graph' + util.uniqueID();
+    this.id = 'barGraph' + util.uniqueID();
   },
   componentDidMount: function() {
     if (util.canUseDOM) {
@@ -64,10 +63,13 @@ const BaseGraph = React.createClass({
     }
   },
   render: function() {
+    let base_class = 'c-' + this.props.type,
+        container_class = base_class + '__container';
+    
     return (
-      <div className="c-bar">
-        <h1>{this.props.title}</h1>
-        <div id={this.id} className="c-bar__container"></div>
+      <div className={base_class}>
+        <h2>{this.props.title}</h2>
+        <div id={this.id} className={container_class}></div>
         <div dangerouslySetInnerHTML={this.raw()} />
       </div>
     );
@@ -88,7 +90,7 @@ const BarGraph = React.createClass({
   render: function() {
     return (
     <LazyLoad anchor_name={this.props.anchor_name}>
-      <BaseGraph title={this.props.title} type="bar" file={this.props.file} />
+      <BaseGraph title={this.props.title} file={this.props.file} />
     </LazyLoad>
     );
   }

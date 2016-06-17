@@ -1,0 +1,16 @@
+@import '_global.scss';
+
+.c-text__viz-notes {
+  display: table;
+
+  @include breakpoint($bp--large) {
+    float: left;
+    width: 60%;
+    border-right: 1px solid $color--gray-4;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+  @include breakpoint($bp--xlarge) {
+    width: 70%;
+  }
+}

@@ -1,0 +1,13 @@
+@import '_global.scss';
+
+.c-text__viz-actions {
+  .btn {
+    width: auto;
+    margin-right: 1rem;
+
+    @include breakpoint($bp--large) {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+}
