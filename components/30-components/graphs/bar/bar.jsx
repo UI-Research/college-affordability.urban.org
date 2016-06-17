@@ -66,9 +66,6 @@ const BaseGraph = React.createClass({
     }
   },
   render: function() {
-    let base_class = 'c-' + this.props.type,
-        container_class = base_class + '__container';
-
     return (
       <div className="c-bar">
         <h1>{this.props.title}</h1>

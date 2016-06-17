@@ -1,8 +1,9 @@
 'use strict';
-const React = require('react'),
-      ExecutionEnvironment = require('exenv');
+const React = require('react');
 
-if (ExecutionEnvironment.canUseDOM) {
+const util = require('util.jsx');
+
+if (util.canUseDOM()) {
   require('./header.scss');
   require('./nav-primary.scss');
   require('./nav-utility.scss');

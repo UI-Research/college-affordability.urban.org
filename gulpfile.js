@@ -67,7 +67,9 @@ gulp.task('react', function() {
       // Convert filename to .html .
       let file = filepath.split('/');
       file.shift();
-      file = file.join('/').replace('jsx', 'html');
+      file.splice(-1,1);
+      file.push('index.html');
+      file = file.join('/');
 
       // Creates HTML fragment for static page generation.
       let fragment = React.createElement(require('./' + filepath), { includeHTML: true });
@@ -81,10 +83,10 @@ gulp.task('react', function() {
           let new_img_tag = image.replace('img/', 'img/preview/');
           fragment = fragment.replace(image, new_img_tag);
         });
-
-        // Write fragment to artifacts directory.
-        fs.outputFileSync('dist/' + file, fragment);
       }
+
+      // Write fragment to artifacts directory.
+      fs.outputFileSync('dist/' + file, fragment);
     })
   });
 
