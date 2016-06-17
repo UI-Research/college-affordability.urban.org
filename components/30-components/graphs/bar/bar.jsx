@@ -58,7 +58,7 @@ const BaseGraph = React.createClass({
     }
   },
   raw: function(string) {
-    if (this.props.file.metadata[string]) {
+    if (this.props.file.metadata && this.props.file.metadata[string]) {
       return { __html: this.props.file.metadata[string] };
     }
     else {
