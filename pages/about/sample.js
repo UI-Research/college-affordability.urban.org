@@ -29,6 +29,9 @@ module.exports = {
       }
     },
   },
-
-  "notes": "<strong>Lorem Ipsum</strong>"
+  "metadata": {
+    "source": "Urban Institute",
+    "notes": "Lorem Ipsum",
+    "data": "Source Link Goes Here"
+  }
 }
