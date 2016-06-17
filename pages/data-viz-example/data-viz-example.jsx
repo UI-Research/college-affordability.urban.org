@@ -2,7 +2,6 @@
 
 const React = require('react');
 const Template = require('20-templates/default/default.jsx');
-const Text = require('30-components/basic/text/text.jsx');
 const BarGraph = require('30-components/graphs/bar/bar.jsx');
 
 const util = require('util.jsx');
