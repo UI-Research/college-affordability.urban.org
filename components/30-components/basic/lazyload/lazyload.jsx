@@ -32,7 +32,7 @@ const LazyLoad = React.createClass({
       let anchor_name = util.cleanString(this.props.anchor_name);
       anchor = <a name={anchor_name}></a>;
     }
-    
+
     return (
     <ReactLazyLoad height={this.props.height} throttle={true} offset={this.props.offset}>
       <div className="lazy-loaded">

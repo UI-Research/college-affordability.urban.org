@@ -11,11 +11,13 @@ if (util.canUseDOM()) {
 // Keep graphing piece separate - need its own DOM interaction events.
 const BaseGraph = React.createClass({
   propTypes: {
-    title: React.PropTypes.string
+    title: React.PropTypes.string,
+    type: React.PropTypes.string
   },
   getDefaultProps: function() {
     return {
-      title: ''
+      title: '',
+      type: 'bar'
     };
   },
   componentWillMount() {
@@ -33,7 +35,7 @@ const BaseGraph = React.createClass({
       data.bindto = '#' + this.id;
 
       // Force specify type of graph.
-      data.data.type = 'bar';
+      data.data.type = this.props.type;
 
       // Set default colors.
       data.color = {
@@ -60,11 +62,14 @@ const BaseGraph = React.createClass({
       return { __html: '' };
     }
   },
-  render: function() {    
+  render: function() {
+    let base_class = 'c-' + this.props.type,
+        container_class = base_class + '__container';
+    
     return (
-      <div className="c-bar">
-        <h1>{this.props.title}</h1>
-        <div id={this.id} className="c-bar__container"></div>
+      <div className={base_class}>
+        <h2>{this.props.title}</h2>
+        <div id={this.id} className={container_class}></div>
         <div dangerouslySetInnerHTML={this.raw()} />
       </div>
     );

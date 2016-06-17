@@ -1,13 +1,15 @@
 'use strict';
 
 const React = require('react'),
-      _ = require('lodash'),
-      ExecutionEnvironment = require('exenv');
+      _ = require('lodash');
 
 const HTML = require('10-html/html.jsx');
 const Header = require('./components/header.jsx');
 
-if (ExecutionEnvironment.canUseDOM) {
+const util = require('util.jsx');
+
+
+if (util.canUseDOM()) {
   require('./default.scss');
 }
 
@@ -35,7 +37,7 @@ const TemplateDefault = React.createClass({
     }, 150, this);
   },
   componentDidUpdate: function() {
-    // Set back to the original src. 
+    // Set back to the original src.
     let images = document.querySelectorAll('img[data-src]');
     _.forEach(images, function (image) {
       image.setAttribute('src', image.getAttribute('data-src'));
