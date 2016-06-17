@@ -5,7 +5,6 @@
 }
 
 .c-text__caption {
-  font-size: 14px;
   overflow: hidden;
   line-height: 1.2;
   color: black;
@@ -13,6 +12,7 @@
 
 .c-text__caption--top {
   margin-bottom: $space-single;
+  font-size: 14px;
 }
 
 .c-text__caption--bottom {
@@ -30,9 +30,10 @@
 }
 
 .c-text__viz-notes {
-  background: url('/img/urban-line.svg') no-repeat bottom right;
+  background: url('./img/urban-line.svg') no-repeat bottom right;
   margin-bottom: 1rem;
   padding-bottom: 1.5rem;
+  font-size: 12px;
 
   @include breakpoint($bp--large) {
     padding-right: 160px;
