@@ -17,10 +17,10 @@ const Note = React.createClass({
   },
   render: function() {    
     return (
-      <div className="c-text__viz-notes__note">
-        <strong>{this.props.title}:</strong>
+      <p>
+        <strong>{this.props.title}: </strong>
         {this.props.children}
-      </div>
+      </p>
     );
   }
 });
