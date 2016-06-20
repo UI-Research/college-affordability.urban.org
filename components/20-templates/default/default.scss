@@ -228,16 +228,10 @@ strong {
   @include breakpoint($bp--mid) {
     width: 70%;
   }
-  @include breakpoint($bp--large) {
-    //width: 80%;
-  }
 }
 
 .col--1-4 {
   @include breakpoint($bp--mid) {
     width: 30%;
-  }
-  @include breakpoint($bp--large) {
-    //width: 20%;
   }
 }
