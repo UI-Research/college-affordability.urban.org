@@ -1,7 +1,7 @@
 'use strict';
 
 const React = require('react'),
-      _ = require('lodash');
+          _ = require('lodash');
 
 const HTML = require('10-html/html.jsx');
 const Header = require('./components/header.jsx');

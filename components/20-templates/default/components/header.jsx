@@ -8,6 +8,7 @@ if (util.canUseDOM()) {
   require('./nav-primary.scss');
   require('./nav-utility.scss');
   require('./nav-anchor.scss');
+  require('./nav-breadcrumb.scss');
 }
 
 const Header = React.createClass({

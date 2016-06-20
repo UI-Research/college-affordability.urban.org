@@ -31,6 +31,9 @@ let specifications = {
   ,
   'content':
     <div className='data-viz'>
+      <div className="breadcrumb">
+        <a href="#">HOME</a> / <a href="#">Breadcrumb Link</a> / Producing Education
+      </div>
       <h1 className="heading-accent">Producing Education</h1>
       <div className="grid">
         <div className="col col--1-4">
@@ -40,10 +43,10 @@ let specifications = {
               <li><a href="#" className="active">Overview</a></li>
               <li><a href="#">Subsidies</a></li>
               <li><a href="#">Appropriations</a><i className="fa fa-chevron-down"></i>
-              <ul className="nav-anchor__second-level">
-                <li><a href="#">State and Local Appropriations</a></li>
-                <li><a href="#">Changes over time</a></li>
-              </ul>
+                <ul className="nav-anchor__second-level">
+                  <li><a href="#">State and Local Appropriations</a></li>
+                  <li><a href="#">Changes over time</a></li>
+                </ul>
               </li>
               <li><a href="#">Endowments</a></li>
             </ul>
@@ -55,60 +58,56 @@ let specifications = {
           <h2>Overview</h2>
 
           <div className="media media--right-align">
-
-            <div className="caption caption--below">Caption for image for data visualization</div>
+            <div className="icon">
+              <div className="icon__teaching">
+              </div>
+            </div>
           </div>
 
-          <p>Students see the prices colleges charge, but the amounts that colleges spend to provide education are less visible. To educate a student, a college must pay for instructors, student services, administrative support, and maintenance, among other things. An institution’s reported education and related expenditure per student is a good indication of the expenses it incurs in educating students, though it does not account for the full cost. There is a general consensus that it costs significantly more to educate graduate students, but because we don’t have a precise way of separating out these costs, the average subsidies at universities are higher than those at bachelor’s colleges. Average education and related spending per student varies considerably across sectors, partially because of differences in institutions’ activities. For example, public two-year colleges almost exclusively educate lower-level undergraduates, while public research universities educate these students, upper-level undergraduates, and graduate students, in addition to engaging in a significant amount of research activity. To cover costs, all colleges and universities use revenues from tuition and fees; public and private nonprofit institutions also contribute from their own resources. Institutional subsidies are the share of the total cost that is covered by the institution rather than by the students’ tuition. In the public sector, these subsidies come primarily from state and local tax revenues. In the private sector, they come from endowment income, annual giving, and other private sources.
+          <p>Students see the prices colleges charge, but the amounts that colleges spend to provide education are less visible. To educate a student, a college must pay for instructors, student services, administrative support, and maintenance, among other things. An institution's reported education and related expenditure per student is a good indication of the expenses it incurs in educating students, though it does not account for the full cost. There is a general consensus that it costs significantly more to educate graduate students, but because we don't have a precise way of separating out these costs, the average subsidies at universities are higher than those at bachelor's colleges. Average education and related spending per student varies considerably across sectors, partially because of differences in institutions' activities. For example, public two-year colleges almost exclusively educate lower-level undergraduates, while public research universities educate these students, upper-level undergraduates, and graduate students, in addition to engaging in a significant amount of research activity. To cover costs, all colleges and universities use revenues from tuition and fees; public and private nonprofit institutions also contribute from their own resources. Institutional subsidies are the share of the total cost that is covered by the institution rather than by the students' tuition. In the public sector, these subsidies come primarily from state and local tax revenues. In the private sector, they come from endowment income, annual giving, and other private sources.
           </p>
 
           <hr />
 
           <h2>Subsidies</h2>
 
-          <p>Public research universities spend almost 50% more per student than public master’s universities, and
+          <p>Public research universities spend almost 50% more per student than public master's universities, and
             more than twice as much as public two-year colleges. These gaps across sectors have grown over time.
           </p>
           <p>Because the funds states provide to public institutions have not kept up with growing enrollments,
             students received smaller subsidies in 2013-14 than in 2005-06</p>
           <Factoid>
             <p>After remaining stable between 2005-06 and 2009-10, per student expenditures at public institutions
-            increased (in inflation-adjusted dollars) between 2009-10 and 2013-14.</p>
+              increased (in inflation-adjusted dollars) between 2009-10 and 2013-14.</p>
           </Factoid>
 
           <h5>Figure 1a:</h5>
 
           <CaptionTop>
             <p>Institutional subsidies are the share of the total cost that is covered by the institution rather than by the
-              student’s tuition. In the public sector, these subsidies come primarily from state and local tax revenues. In
+              student's tuition. In the public sector, these subsidies come primarily from state and local tax revenues. In
               the private sector, they come from endowment income, annual giving, and other private sources.
             </p>
           </CaptionTop>
 
           <div className="c-text__viz">
-            <BarGraph title="My Bar Chart" file={require('./sample.json')} />
+            <BarGraph title="" file={require('./sample.json')} />
           </div>
 
           <CaptionBottom>
             <Notes>
 
               <Note title='Sources'>
-                <p>
                   Leverage agile frameworks to provide a robust synopsis for high level overviews.
-                </p>
               </Note>
 
               <Note title='Notes'>
-                <p>
                   Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the
                   holistic world view of disruptive innovation via workplace diversity and empowerment.
-                </p>
               </Note>
 
               <Note title='Data'>
-                <p>
                   <a href="#">Source Link Goes Here</a>
-                </p>
               </Note>
 
             </Notes>
@@ -136,13 +135,13 @@ let specifications = {
             <h4>How do states determine appropriation levels?</h4>
 
             <p>
-              Figures on state funding of public higher education come from a survey conducted jointly by the State Higher Education Executive Officers (SHEEO) and Illinois State University’s Center for the Study of Education Policy. The reported figures include funding from tax revenues and from other state sources such as lotteries. They exclude funding for capital expenditures. Most of the funds go directly to public institutions, but some go to higher education coordinating boards or to other state agencies that allocate them to institutions, in some states including private colleges and universities. The appropriation figures also include state funding for student financial aid.
+              Figures on state funding of public higher education come from a survey conducted jointly by the State Higher Education Executive Officers (SHEEO) and Illinois State University's Center for the Study of Education Policy. The reported figures include funding from tax revenues and from other state sources such as lotteries. They exclude funding for capital expenditures. Most of the funds go directly to public institutions, but some go to higher education coordinating boards or to other state agencies that allocate them to institutions, in some states including private colleges and universities. The appropriation figures also include state funding for student financial aid.
             </p>
             <p>
-              Many states have explicit formulas for allocating all or part of their funding for instructional expenditures, the operation and maintenance of physical plant, and other expenditures across institutions. Funding is usually tied to the number of credit hours enrolled in or completed. Some states make annual adjustments to the previous year’s funding received by each institution, and some have less defined approaches determined by legislative priorities.
+              Many states have explicit formulas for allocating all or part of their funding for instructional expenditures, the operation and maintenance of physical plant, and other expenditures across institutions. Funding is usually tied to the number of credit hours enrolled in or completed. Some states make annual adjustments to the previous year's funding received by each institution, and some have less defined approaches determined by legislative priorities.
             </p>
             <p>
-              Some formulas for allocating funds to institutions are based only on enrollments, but an increasing number of states use some variety of “performance-based funding” (PBF), incorporating measures of outcomes into their formulas. This approach has come and gone since the 1970s as states have faced changing economic circumstances, enrollment growth, and evolving priorities. There is little evidence that PBF has had a significant impact on the efficiency and outcomes of postsecondary institutions in the past, but there is widespread optimism that new models with more carefully defined outcomes measures and consideration of the characteristic of incoming students, which are developing rapidly, will be more successful in improving student success rates.
+              Some formulas for allocating funds to institutions are based only on enrollments, but an increasing number of states use some variety of â€œperformance-based fundingâ€ (PBF), incorporating measures of outcomes into their formulas. This approach has come and gone since the 1970s as states have faced changing economic circumstances, enrollment growth, and evolving priorities. There is little evidence that PBF has had a significant impact on the efficiency and outcomes of postsecondary institutions in the past, but there is widespread optimism that new models with more carefully defined outcomes measures and consideration of the characteristic of incoming students, which are developing rapidly, will be more successful in improving student success rates.
             </p>
           </FAQBox>
 
