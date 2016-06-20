@@ -1,0 +1,15 @@
+@import '_global.scss';
+
+.c-text__viz-actions {
+  margin-top: 1rem;
+
+  @include breakpoint($bp--large) {
+    margin-top: 0;
+    float: left;
+    padding-left: 1rem;
+    width: 40%;
+  }
+  @include breakpoint($bp--xlarge) {
+    width: 30%;
+  }
+}

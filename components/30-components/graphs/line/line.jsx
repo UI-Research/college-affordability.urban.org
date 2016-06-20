@@ -2,7 +2,6 @@
 
 const React = require('react'),
       LazyLoad = require('30-components/basic/lazyload/lazyload.jsx');
-
 const util = require('util.jsx');
 
 if (util.canUseDOM()) {
@@ -12,18 +11,16 @@ if (util.canUseDOM()) {
 //Keep graphing piece separate - need its own DOM interaction events.
 const BaseGraph = React.createClass({
   propTypes: {
-    title: React.PropTypes.string,
-    type: React.PropTypes.string
+    title: React.PropTypes.string
   },
   getDefaultProps: function() {
     return {
-      title: '',
-      type: 'bar'
+      title: ''
     };
   },
   componentWillMount() {
     // Create unique ID for element.
-    this.id = this.props.type + 'Graph' + util.uniqueID();
+    this.id = 'lineGraph' + util.uniqueID();
   },
   componentDidMount: function() {
     if (util.canUseDOM) {
@@ -36,7 +33,7 @@ const BaseGraph = React.createClass({
       data.bindto = '#' + this.id;
 
       // Force specify type of graph.
-      data.data.type = this.props.type;
+      data.data.type = 'line';
 
       // Hide tooltip.
       data.tooltip = {
@@ -46,14 +43,12 @@ const BaseGraph = React.createClass({
       c3.generate(data);
     }
   },
-  render: function() {
-    let base_class = 'c-' + this.props.type,
-        container_class = base_class + '__container';
-    
+  render: function() {    
     return (
-    <div className={base_class}>
+    <div className='c-line'>
       <h2>{this.props.title}</h2>
-      <div id={this.id} className={container_class}></div>
+      <div id={this.id} className="c-line__container"></div>
+      <div dangerouslySetInnerHTML={this.raw()} />
     </div>
     );
   }
@@ -73,7 +68,7 @@ const LineGraph = React.createClass({
   render: function() {
     return (
     <LazyLoad anchor_name={this.props.anchor_name}>
-      <BaseGraph title={this.props.title} type="line" file={this.props.file} />
+      <BaseGraph title={this.props.title} file={this.props.file} />
     </LazyLoad>
     );
   }

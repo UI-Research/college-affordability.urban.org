@@ -21,5 +21,9 @@ module.exports = {
   // Generate unique value for use with components ID.
   uniqueID: () => {
     return _.uniqueId();
+  },
+  // Trim a string and remove spaces.
+  cleanString: (string) => {
+    return _.trim(string.replace(/ /g,"_"));
   }
 }

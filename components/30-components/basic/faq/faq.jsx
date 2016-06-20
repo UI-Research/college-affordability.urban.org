@@ -1,8 +1,8 @@
 'use strict';
-const React = require('react'),
-      ExecutionEnvironment = require('exenv');
+const React = require('react');
+const util = require('util.jsx');
 
-if (ExecutionEnvironment.canUseDOM) {
+if (util.canUseDOM()) {
   require('./faq.scss');
 }
 
