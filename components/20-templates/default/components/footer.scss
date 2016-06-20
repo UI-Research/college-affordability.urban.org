@@ -6,14 +6,22 @@ footer {
 .footer-site__content-wrapper {
   background: $color--gray-2;
   overflow: hidden;
-  padding: 3rem 0;
+  padding: 1rem 0;
+
+  @include breakpoint($bp--large) {
+    padding: 3rem 0;
+  }
 }
 
 .footer-site__content,
 .footer-site__logo-wrapper-inner {
-  max-width: 1050px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  padding-left: 1rem;
+
+  @include breakpoint($bp--mid) {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
 }
 
 .footer-site__logo-wrapper {
@@ -31,13 +39,18 @@ footer {
   display: inline-block;
   border: none;
   margin: 0;
-  padding: 0 3rem 0 4.5rem;
-  line-height: 75px;
+  padding: .75rem 3rem .75rem 4.5rem;
+  line-height: 1.2;
   background: #000 url(./img/logo-mini.png) left center no-repeat;
   font-weight: 700;
   color: white;
   font-size: 20px;
   text-transform: uppercase;
+
+  @include breakpoint($bp--mid) {
+    line-height: 75px;
+    padding: 0 3rem 0 4.5rem;
+  }
 
   &:hover {
     text-decoration: none;
@@ -45,8 +58,8 @@ footer {
   }
 }
 
-.footer-site__nav-primary-wrapper,
-.footer-site__nav-footer-utility-wrapper {
+.footer-site__nav-primary,
+.footer-site__nav-utility {
   line-height: 2.8;
 
   ul {
@@ -75,27 +88,51 @@ footer {
   }
 }
 
-.footer-site__nav-primary-wrapper {
-
-  @include breakpoint($bp--mid) {
-    width: 25%;
+.footer-site__nav-wrapper {
+  @include breakpoint($bp--large) {
+    width: 66.5%;
     float: left;
-    border-right: 1px solid $color--gray-5;
   }
 }
 
-.footer-site__nav-footer-utility-wrapper {
+.footer-site__nav-primary {
   @include breakpoint($bp--mid) {
-    width: 41.3%;
+    width: 50%;
+    float: left;
+    border-right: 1px solid $color--gray-5;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+  @include breakpoint($bp--large) {
+    padding-left: 0;
+    width: 40%;
+  }
+}
+
+.footer-site__nav-utility {
+  @include breakpoint($bp--mid) {
+    width: 50%;
     float: left;
     padding-left: 3rem;
+  }
+  @include breakpoint($bp--large) {
+    width: 60%;
   }
 }
 
 .footer-site__credits {
   font-size: 14px;
+  border-top: 1px solid $color--gray-5;
+  padding: 1rem 1rem 0 0;
+  clear: both;
 
   @include breakpoint($bp--mid) {
+    padding: 2rem 1rem;
+  }
+  @include breakpoint($bp--large) {
+    padding: 1rem 0 0 0;
+    border: none;
+    clear: none;
     width: 33.3%;
     float: left;
   }

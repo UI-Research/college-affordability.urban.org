@@ -18,8 +18,10 @@ const Footer = React.createClass({
         </div>
         <div className="footer-site__content-wrapper">
           <div className="footer-site__content">
-            <div className="footer-site__nav-primary-wrapper">
-              <div className="nav-primary-footer">
+
+
+            <div className="footer-site__nav-wrapper">
+              <div className="footer-site__nav-primary">
                 <ul>
                   <li>
                     <a href="#">What is College?</a>
@@ -41,9 +43,8 @@ const Footer = React.createClass({
                   </li>
                 </ul>
               </div>
-            </div>
-            <div className="footer-site__nav-footer-utility-wrapper">
-              <div className="nav-footer-utility">
+
+              <div className="footer-site__nav-utility">
                 <ul>
                   <li>
                     <a href="#">About the Project</a>
