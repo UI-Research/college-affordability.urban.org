@@ -106,7 +106,7 @@ let specifications = {
           <p>Example of a text box?</p>
           <a href="http://www.google.com">This is a link</a>
         </Text>
-        <BarGraph title="one" file={require('./sample.json')} />
+        <BarGraph title="one" anchor_name="bar_one" file={require('./sample.json')} />
         <img src='/img/PSVFcxr.jpg' />
         <BarGraph title="two" file={require('./sample.json')} />
         <img src='/img/MPxXjTj.jpg' />

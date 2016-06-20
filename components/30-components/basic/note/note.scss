@@ -1,0 +1,16 @@
+@import '_global.scss';
+
+.c-text__viz-notes {
+  .c-text__viz-notes__note {
+    margin-bottom: .5rem;
+  
+    strong {
+      display: table-cell;
+      width: 65px;
+    }
+  
+    p {
+      display: table-cell;
+    }
+  }
+}
