@@ -5,6 +5,7 @@ const React = require('react'),
 
 const HTML = require('10-html/html.jsx');
 const Header = require('./components/header.jsx');
+const Footer = require('./components/footer.jsx');
 
 const util = require('util.jsx');
 
@@ -51,6 +52,7 @@ const TemplateDefault = React.createClass({
         <div className="main">
           {this.props.children}
         </div>
+        <Footer />
       </HTML>
     );
   }

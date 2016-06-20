@@ -1,0 +1,127 @@
+@import '_global.scss';
+
+footer {
+}
+
+.footer-site__content-wrapper {
+  background: $color--gray-2;
+  overflow: hidden;
+  padding: 3rem 0;
+}
+
+.footer-site__content,
+.footer-site__logo-wrapper-inner {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.footer-site__logo-wrapper {
+  background: rgba(0,0,0,1);
+  background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 29%, rgba(255,255,255,1) 29%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,1)), color-stop(29%, rgba(0,0,0,1)), color-stop(29%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 29%, rgba(255,255,255,1) 29%, rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 29%, rgba(255,255,255,1) 29%, rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 29%, rgba(255,255,255,1) 29%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 29%, rgba(255,255,255,1) 29%, rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff', GradientType=1 );
+}
+
+.footer-site__logo {
+  display: inline-block;
+  border: none;
+  margin: 0;
+  padding: 0 3rem 0 4.5rem;
+  line-height: 75px;
+  background: #000 url(./img/logo-mini.png) left center no-repeat;
+  font-weight: 700;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+
+  &:hover {
+    text-decoration: none;
+    color: $color--yellow;
+  }
+}
+
+.footer-site__nav-primary-wrapper,
+.footer-site__nav-footer-utility-wrapper {
+  line-height: 2.8;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    list-style-type: none;
+    padding: 0;
+    color: black;
+    text-transform: uppercase;
+    font-weight: normal;
+
+    &:hover {
+      text-decoration: none;
+      color: $color--blue;
+    }
+  }
+}
+
+.footer-site__nav-primary-wrapper {
+
+  @include breakpoint($bp--mid) {
+    width: 25%;
+    float: left;
+    border-right: 1px solid $color--gray-5;
+  }
+}
+
+.footer-site__nav-footer-utility-wrapper {
+  @include breakpoint($bp--mid) {
+    width: 41.3%;
+    float: left;
+    padding-left: 3rem;
+  }
+}
+
+.footer-site__credits {
+  font-size: 14px;
+
+  @include breakpoint($bp--mid) {
+    width: 33.3%;
+    float: left;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .urbanstatement {
+    font-style: italic;
+    color: #666666;
+    font-size: 13px;
+    margin-bottom: 1em;
+    line-height: 1.5;
+  }
+
+  .job {
+    font-size: 16px;
+    margin-bottom: 4px;
+    margin-top: 12px;
+    line-height: 1;
+  }
+
+  a {
+    font-weight: normal;
+  }
+}
