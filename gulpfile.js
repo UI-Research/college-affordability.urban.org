@@ -126,7 +126,7 @@ gulp.task('webpack-watch', (cb) => {
 // Watch Files For Changes
 // > gulp watch
 gulp.task('track', function() {
-  gulp.watch(['components/**/*.jsx', 'pages/**/*.jsx'], ['react', 'webpack-watch']);
+  gulp.watch(['components/**/*.jsx', 'pages/**/*.{js,jsx}'], ['react', 'webpack-watch']);
   gulp.watch(['components/**/*.scss', 'pages/**/*.scss'], ['webpack-watch']);
   gulp.watch(['pages/**/*.{jpg,gif,png}'], ['images']);
 });
