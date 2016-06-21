@@ -18,4 +18,4 @@ ADD . /code
 
 RUN gulp
 
-ENTRYPOINT ["aws", "s3", "sync", "/code/dist/", "s3://p2-urban-colaf-dev"]
+ENTRYPOINT ["aws", "s3", "sync", "/code/dist/", "s3://urban-ca.dev.phase2tech.com"]
