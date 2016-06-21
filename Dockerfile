@@ -2,6 +2,7 @@ FROM phase2/node:4.4.4
 
 RUN yum -y install GraphicsMagick \
                    httpd \
+                   ImageMagick \
                    mod_ssl \
                    python-pip && \
     npm install -g gulp && \
