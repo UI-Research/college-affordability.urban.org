@@ -45,8 +45,7 @@ appPath.addPath(__dirname + '/helpers');
 gulp.task('lint', function() {
   return gulp.src(['components/**/*.jsx', 'pages/**/*.jsx'])
     .pipe(eslint())
-    .pipe(eslint.format())
-    .pipe(eslint.failAfterError());
+    .pipe(eslint.format());
 });
 
 
