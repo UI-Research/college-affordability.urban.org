@@ -3,6 +3,7 @@
 .header-site {
   width: 100%;
   border-top: 6px solid black;
+  z-index: 9999;
   @include clearfix();
 
   @include breakpoint($bp--mid) {

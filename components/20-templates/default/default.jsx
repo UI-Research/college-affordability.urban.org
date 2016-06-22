@@ -5,6 +5,7 @@ const React = require('react'),
 
 const HTML = require('10-html/html.jsx');
 const Header = require('./components/header.jsx');
+import { StickyContainer, Sticky } from 'react-sticky';
 
 const util = require('util.jsx');
 
@@ -47,10 +48,14 @@ const TemplateDefault = React.createClass({
   render: function() {
     return (
       <HTML title={this.props.title} machineName={this.props.machineName} includeHTML={this.props.includeHTML}>
-        <Header />
-        <div className="main">
-          {this.props.children}
-        </div>
+        <StickyContainer>
+          <Sticky>
+            <Header />
+          </Sticky>
+          <div className="main">
+            {this.props.children}
+          </div>
+        </StickyContainer>
       </HTML>
     );
   }
