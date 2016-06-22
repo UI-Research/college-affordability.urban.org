@@ -1,9 +1,17 @@
 @import '_global.scss';
 
+/*
+ * This is exclusively for use with react-sticky.
+ * Essentially, we need to make sure the sticky element stays on top of everything.
+ */
+.sticky {
+  z-index: 2;
+  width: inherit;
+}
+
 .header-site {
   width: 100%;
   border-top: 6px solid black;
-  z-index: 9999;
   @include clearfix();
 
   @include breakpoint($bp--mid) {

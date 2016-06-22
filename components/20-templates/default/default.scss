@@ -224,7 +224,7 @@ strong {
   }
 }
 
-.col--3-4 {
+.col--3-4 {z-index:999;
   @include breakpoint($bp--mid) {
     width: 70%;
   }

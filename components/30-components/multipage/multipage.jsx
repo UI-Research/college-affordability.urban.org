@@ -51,7 +51,7 @@ class Menu extends Component {
 
     return (
       <div className="grid">
-        <Sticky bottomOffset={500}>
+        <Sticky topOffset={-200}>
           <div className="col col--1-4">
             <div className="nav-anchor">
               <ul className="nav-anchor__top-level">
