@@ -46,7 +46,7 @@ let multipage = {
       content: (
         <div>
           <img src='/img/PSVFcxr.jpg' />
-          <BarGraph title="two" file={require('./sample.json')} />
+          <BarGraph title="two" file={require('./sample.js')} />
         </div>
       )
     },
@@ -55,7 +55,7 @@ let multipage = {
       content: (
         <div>
           <img src='/img/MPxXjTj.jpg' />
-          <BarGraph title="three" file={require('./sample.json')} />
+          <BarGraph title="three" file={require('./sample.js')} />
         </div>
       )
     },
@@ -64,7 +64,7 @@ let multipage = {
       content: (
         <div>
           <img src='/img/EYUcKub.jpg' />
-          <BarGraph title="seven" file={require('./sample.json')} />
+          <BarGraph title="seven" file={require('./sample.js')} />
         </div>
       )
     },
@@ -73,7 +73,7 @@ let multipage = {
       content: (
         <div>
           <img src='/img/PSVFcxr.jpg' />
-          <BarGraph title="eight" file={require('./sample.json')} />
+          <BarGraph title="eight" file={require('./sample.js')} />
         </div>
       )
     },
@@ -81,7 +81,7 @@ let multipage = {
       title: 'TRES',
       content: (
         <div>
-          <LineGraph title="My Line Chart" file={require('./sample.json')} />
+          <LineGraph title="My Line Chart" file={require('./sample.js')} />
           <i className="fa fa-camera-retro"></i>
         </div>
       )
@@ -94,7 +94,7 @@ let multipage = {
             <p>Example of a text box?</p>
             <a href="http://www.google.com">This is a link</a>
           </Text>
-          <BarGraph title="one" anchor_name="bar_one" file={require('./sample.json')} />
+          <BarGraph title="one" anchor_name="bar_one" file={require('./sample.js')} />
         </div>
       )
     },
@@ -103,7 +103,7 @@ let multipage = {
       content: (
         <div>
           <img src='/img/MPxXjTj.jpg' />
-          <BarGraph title="My Bar Chart" file={require('./sample.json')} />
+          <BarGraph title="My Bar Chart" file={require('./sample.js')} />
         </div>
       )
     },
@@ -112,7 +112,7 @@ let multipage = {
       content: (
         <div>
           <img src='/img/4HLZjYB.jpg' />
-          <BarGraph title="five" anchor_name="five" file={require('./sample.json')} />
+          <BarGraph title="five" anchor_name="five" file={require('./sample.js')} />
         </div>
       )
     },
@@ -120,8 +120,8 @@ let multipage = {
       title: 'SIETE',
       content: (
         <div>
-          <LineGraph title="four" anchor_name="four_four" file={require('./sample.json')} />
-          <BarGraph title="six" anchor_name="six" file={require('./sample.json')} />
+          <LineGraph title="four" anchor_name="four_four" file={require('./sample.js')} />
+          <BarGraph title="six" anchor_name="six" file={require('./sample.js')} />
         </div>
       )
     },
