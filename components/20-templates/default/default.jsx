@@ -1,11 +1,12 @@
 'use strict';
 
 const React = require('react'),
-          _ = require('lodash');
+  _ = require('lodash');
 
 const HTML = require('10-html/html.jsx');
 const Header = require('./components/header.jsx');
 const Footer = require('./components/footer.jsx');
+import { StickyContainer, Sticky } from 'react-sticky';
 
 const util = require('util.jsx');
 
@@ -48,11 +49,17 @@ const TemplateDefault = React.createClass({
   render: function() {
     return (
       <HTML title={this.props.title} machineName={this.props.machineName} includeHTML={this.props.includeHTML}>
-        <Header />
-        <div className="main">
-          {this.props.children}
-        </div>
-        <Footer />
+        <StickyContainer>
+          <div className="header-container">
+            <Sticky>
+              <Header />
+            </Sticky>
+          </div>
+          <div className="main">
+            {this.props.children}
+          </div>
+          <Footer />
+        </StickyContainer>
       </HTML>
     );
   }
