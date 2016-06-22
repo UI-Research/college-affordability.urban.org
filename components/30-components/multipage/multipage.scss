@@ -1,6 +1,15 @@
 
-.grid .sticky {
+/**
+ * Hack the sticky menu so it doesn't cover the page content
+ * while maintaining its position on the page.
+ */
+.grid .sticky[style] {
   margin-top: 165px;
+  width: 300px !important;
+
+  .col--1-4 {
+    width: 100%;
+  }
 }
 
 .grid .col--3-4 {
