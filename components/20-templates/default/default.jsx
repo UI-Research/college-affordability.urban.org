@@ -49,9 +49,11 @@ const TemplateDefault = React.createClass({
     return (
       <HTML title={this.props.title} machineName={this.props.machineName} includeHTML={this.props.includeHTML}>
         <StickyContainer>
-          <Sticky>
-            <Header />
-          </Sticky>
+          <div className="header-container">
+            <Sticky>
+              <Header />
+            </Sticky>
+          </div>
           <div className="main">
             {this.props.children}
           </div>
