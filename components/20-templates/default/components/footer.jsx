@@ -78,7 +78,7 @@ const Footer = React.createClass({
               <h3 className="job">Editorial</h3>
               <a href="http://www.urban.org/author/elizabeth-forney">Elizabeth Forney</a>
 
-              <div className="credits">Copyright © <a href="http://www.urban.org/">Urban Institute</a> 2016. <a href="https://github.com/UrbanInstitute/naep" target="_blank">View this project on Github.</a></div>
+              <div className="credits">Copyright &copy; <a href="http://www.urban.org/">Urban Institute</a> 2016. <a href="https://github.com/UrbanInstitute/naep" target="_blank">View this project on Github.</a></div>
             </div>
           </div>
         </div>
