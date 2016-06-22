@@ -3,10 +3,10 @@ const React = require('react');
 const util = require('util.jsx');
 
 if (util.canUseDOM()) {
-  require('./faq_box.scss');
+  require('./faq.scss');
 }
 
-const FAQBox = React.createClass({
+const FAQ = React.createClass({
   propTypes: {
     anchor_name: React.PropTypes.string
   },
@@ -22,7 +22,7 @@ const FAQBox = React.createClass({
       let anchor_name = util.cleanString(this.props.anchor_name);
       anchor = <a name={anchor_name}></a>;
     }
-    
+
     return (
       <div className="c-text__faq">
         {anchor}
@@ -32,4 +32,4 @@ const FAQBox = React.createClass({
   }
 });
 
-module.exports = FAQBox;
+module.exports = FAQ;

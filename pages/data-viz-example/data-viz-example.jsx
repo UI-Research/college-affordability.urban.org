@@ -4,7 +4,7 @@ const React = require('react');
 const Template = require('20-templates/default/default.jsx');
 const Text = require('30-components/basic/text/text.jsx'),
       BarGraph = require('30-components/graphs/bar/bar.jsx'),
-      FAQBox = require('30-components/box/faq_box/faq_box.jsx'),
+      FAQ = require('30-components/box/faq/faq.jsx'),
       Factoid = require('30-components/box/factoid/factoid.jsx'),
       Featured = require('30-components/box/featured/featured.jsx'),
       Notes = require('30-components/basic/notes/notes.jsx'),
@@ -131,7 +131,7 @@ let specifications = {
           <p>Students at public colleges and universities pay prices that do not cover the full cost of education, because state and local governments appropriate some of their tax revenues to institutions, providing the subsidies described in the previous section. Over time, the portion of the cost of education at public colleges and universities covered by state funds has declined. As state taxpayers foot less of the bill, students and families see tuition and fees rising.</p>
           <p>State tax revenues are the primary source of state and local funding for higher education institutions, but local taxes support community colleges and provided just over 10 percent of the total in 2013-14. State and local appropriations are dedicated primarily to public colleges and universities, but some of the funds go to student aid, some benefit students in private colleges, and some are restricted funds for special purposes like research, agriculture, and medical education.</p>
 
-          <FAQBox>
+          <FAQ>
             <h4>How do states determine appropriation levels?</h4>
 
             <p>
@@ -143,7 +143,7 @@ let specifications = {
             <p>
               Some formulas for allocating funds to institutions are based only on enrollments, but an increasing number of states use some variety of â€œperformance-based fundingâ€ (PBF), incorporating measures of outcomes into their formulas. This approach has come and gone since the 1970s as states have faced changing economic circumstances, enrollment growth, and evolving priorities. There is little evidence that PBF has had a significant impact on the efficiency and outcomes of postsecondary institutions in the past, but there is widespread optimism that new models with more carefully defined outcomes measures and consideration of the characteristic of incoming students, which are developing rapidly, will be more successful in improving student success rates.
             </p>
-          </FAQBox>
+          </FAQ>
 
           <h3>Changes over time</h3>
 
