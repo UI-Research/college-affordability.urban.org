@@ -10,7 +10,6 @@ import { StickyContainer, Sticky } from 'react-sticky';
 
 const util = require('util.jsx');
 
-
 if (util.canUseDOM()) {
   require('./default.scss');
 }

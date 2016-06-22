@@ -3,6 +3,7 @@ const _ = require('lodash');
 import React, { Component } from 'react';
 import { Router, Route, IndexRoute, Link } from 'react-router';
 import { hashHistory } from 'react-router';
+import { StickyContainer, Sticky } from 'react-sticky';
 
 const util = require('util.jsx');
 
@@ -50,13 +51,15 @@ class Menu extends Component {
 
     return (
       <div className="grid">
-        <div className="col col--1-4">
-          <div className="nav-anchor">
-            <ul className="nav-anchor__top-level">
-              {content}
-            </ul>
+        <Sticky topOffset={-200}>
+          <div className="col col--1-4">
+            <div className="nav-anchor">
+              <ul className="nav-anchor__top-level">
+                {content}
+              </ul>
+            </div>
           </div>
-        </div>
+        </Sticky>
 
         <div className="col col--3-4">
           {this.props.children}
