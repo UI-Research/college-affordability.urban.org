@@ -38,25 +38,27 @@ const BaseGraph = React.createClass({
       data.data.type = this.props.type;
 
       // Set default colors.
-      data.color = {
-        pattern: [
-          '#1696d2',
-          '#ec008b',
-          '#d2d2d2'
-        ]
-      };
+      if (!data.color) {
+        data.color = {
+          pattern: [
+            '#1696d2',
+            '#ec008b',
+            '#d2d2d2'
+          ]
+        };
+      }
 
-      // Hide tooltip.
+      // Show tooltip.
       data.tooltip = {
-        show: false
+        show: true
       };
 
       c3.generate(data);
     }
   },
-  raw: function() {
-    if (this.props.file) {
-      return { __html: this.props.file.notes };
+  raw: function(string) {
+    if (this.props.file.metadata && this.props.file.metadata[string]) {
+      return { __html: this.props.file.metadata[string] };
     }
     else {
       return { __html: '' };
@@ -65,12 +67,28 @@ const BaseGraph = React.createClass({
   render: function() {
     let base_class = 'c-' + this.props.type,
         container_class = base_class + '__container';
-    
+
     return (
-      <div className={base_class}>
+      <div className="c-bar">
         <h2>{this.props.title}</h2>
-        <div id={this.id} className={container_class}></div>
-        <div dangerouslySetInnerHTML={this.raw()} />
+        <div id={this.id} className="c-bar__container"></div>
+        <div className="c-text__caption c-text__caption--bottom">
+          <div className="c-text__viz-notes">
+            <div>
+              <strong className="c-text__viz-notes__title">Source:</strong>
+              <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw("source")} />
+            </div>
+            <div>
+              <strong className="c-text__viz-notes__title">Notes:</strong>
+              <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw("notes")} />
+            </div>
+            <div>
+              <strong className="c-text__viz-notes__title">Data:</strong>
+              <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw("data")} />
+            </div>
+          </div>
+        </div>
+
       </div>
     );
   }

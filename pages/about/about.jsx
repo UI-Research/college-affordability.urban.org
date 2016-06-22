@@ -136,10 +136,7 @@ let multipage = {
 
 let specifications = {
   'name': 'about',
-  'content':
-      <div className='test'>
-        <MultiPage content={multipage} />
-      </div>
+  'content': <MultiPage content={multipage} />
 };
 
 const About = React.createClass({
