@@ -5,7 +5,6 @@ const Template = require('20-templates/default/default.jsx');
 const Text = require('30-components/basic/text/text.jsx'),
       BarGraph = require('30-components/graphs/bar/bar.jsx'),
       LineGraph = require('30-components/graphs/line/line.jsx'),
-      Factoid = require('30-components/box/factoid/factoid.jsx'),
       FAQ = require('30-components/box/faq/faq.jsx'),
       MultiPage = require('30-components/multipage/multipage.jsx');
 
@@ -35,10 +34,10 @@ let multipage = {
           <p>To educate a student, a college must pay for instructors, student services, administrative support, and maintenance, among other things. Average education and related spending1 per student varies considerably across sectors, partially because of differences in institutions’ activities. For example, public two-year colleges almost exclusively educate lower-level undergraduates, while public research universities educate these students, upper-level undergraduates, and graduate students, in addition to engaging in a significant amount of research activity.</p>
           <p>To cover costs, all colleges and universities use revenues from tuition and fees, but nonprofit colleges also supplement that revenue with their own resources, which include state and local tax revenues in the public sector and endowment income and annual giving in the private sector.</p>
 
-          <Factoid>
-            <p><strong>Education and related spending</strong></p>
+          <FAQ>
+            <h4>Education and related spending</h4>
             <p>"Education and related expenditures" include spending by colleges and universities on instruction, student services, and a portion of academic and administrative support and operations and maintenance. This measure excludes the cost of college buildings and spending on research and public service. It also excludes scholarships and fellowships, which are discounts to student. Institutions never get this revenue and cannot spend it.   Instruction, the largest single cost category at public and private nonprofit institutions, includes faculty salaries and benefits. Student services include expenses such as admissions, registrars, health services, and student affairs. Academic support includes advising, libraries, technology, academic administration, and related expenditures.</p>
-          </Factoid>
+          </FAQ>
         </div>
       )
     },
@@ -130,14 +129,14 @@ let multipage = {
       title: 'Endowments',
       content: (
         <div>
-          <Factoid>
-            <p><strong>More about endowment income</strong></p>
+          <FAQ>
+            <h4>More about endowment income</h4>
             <p>Income from endowments fluctuates considerably from year to year, along with financial markets. For example, average endowment assets per student at private nonprofit institutions fell by 29 percent between 2007-08 and 2008-09 and were 12 percent lower in 2012-13 than they had been five years earlier. Investment income provided more than the income from all other sources combined at private doctoral universities in 2006-07, but in 2008-09 generated losses slightly greater than the total revenues</p>
-          </Factoid>
-          <Factoid>
-            <p><strong>The myth of massive endowments</strong></p>
+          </FAQ>
+          <FAQ>
+            <h4>The myth of massive endowments</h4>
             <p>While only a few institutions have endowments large enough to cover a significant portion of their annual budgets, policymakers tend to focus on this small segment of the industry. For example, in 2016 Rep. Tom Reed (R-NY) proposed legislation that would require colleges with endowments exceeding $1 billion to spend 25 percent of the annual income from the endowment on financial aid or lose their tax-exempt status. In 2012-13, fewer than 60 US institutions—most of them private research universities—had endowments this high. There are 1,700 private institutions and 4,700 degree-granting postsecondary in the United States.</p>
-          </Factoid>
+          </FAQ>
         </div>
       )
     },
