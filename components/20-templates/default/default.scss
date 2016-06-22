@@ -113,6 +113,10 @@ strong {
   font-weight: bold;
 }
 
+img {
+  max-width: 100%;
+}
+
 .btn {
   padding: .5rem 1rem;
   color: white;
@@ -234,4 +238,14 @@ strong {
   @include breakpoint($bp--mid) {
     width: 30%;
   }
+}
+
+
+/*
+ * This is exclusively for use with react-sticky.
+ * Essentially, we need to make sure the sticky element stays on top of everything.
+ */
+.header-container .sticky {
+  z-index: 2;
+  width: inherit;
 }
