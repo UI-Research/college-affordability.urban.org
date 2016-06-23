@@ -56,7 +56,7 @@ let multipage = {
 
             <p>The pattern is quite different at <strong>private</strong> nonprofit colleges and universities, which are not dependent on state funding. Average per-student spending was two and a half times as high at private research universities as at public research universities, although the gap between private and public master’s universities was much smaller. Additionally, at private institutions, <strong>the share of spending covered by tuition revenues has remained constant</strong>.</p>
 
-            <Graph title="Education and related spending per student at private nonprofit institution" file={require('./sample.js')} />
+            <Graph title="Education and related spending per student at private nonprofit institution" file={require('./sample2.js')} />
 
             <p>Average subsidies in each sector <strong>conceal wide variation across institutions, with a small number of colleges and universities in each sector providing a high percentage of total subsidies.</strong></p>
             <p>To examine within-sector variation, we broke students in the different sectors into deciles by the size of the subsidies their institutions gave them. This reveals that the institutions with the biggest subsidies skew the averages. <strong>The differences in per-student subsidy across types of institutions are less extreme when considering the middle 60 percent of undergraduate students.</strong></p>
@@ -106,7 +106,7 @@ let multipage = {
 
           <p><strong>In the nation as a whole, state and local appropriations per student have been on a downward trend since FY2000.</strong></p>
 
-          <Graph title="Appropriations per student over time from FY2000 to FY2014" file={require('./sample.js')} />
+          <Graph title="Appropriations per student over time from FY2000 to FY2014" file={require('./sample2.js')} />
 
           <p>Because state and local governments fund public higher education using tax revenue, changes in appropriations tend to follow trends in tax revenues, which follow trends in the economy. The Great Recession dealt a blow to state budgets, leading states to reduce public funding for higher education. This funding would likely have declined more, had the federal government not supplemented state revenues with funds from the American Recovery and Reinvestment Act of 2009 (ARRA).</p>
           <p><strong>Yet now, even as tax revenues are increasing, appropriations continue to decline.</strong> Higher education appropriations declined from 5.9 percent of state and local tax revenues in FY2000 and 6.4 percent in FY2002 to 5.4 percent in FY2007 and 4.7 percent in FY2013.</p>
@@ -122,7 +122,7 @@ let multipage = {
           <p>National averages provide a meaningful overview of the circumstances facing college students, but state funding patterns and the prices students pay for college vary dramatically across states. <strong>Indeed, college affordability depends heavily on where students live.</strong></p>
           <p>In the 2014-15 school year, most states provided between $4,000 and $8,000 per student enrolled in a public college or university. However, New Hampshire provided just $2,632 per student, while Alaska provided $17,216. Some of the variation in per-student appropriations across states is attributable to differences in state wealth and costs of living, but some of the variation is the result of policy choices.</p>
 
-          <Graph title="State and Local Appropriations for Public Higher Education per Public FTE Student, FY 2014" file={require('./sample.js')} />
+          <Graph title="State and Local Appropriations for Public Higher Education per Public FTE Student, FY 2014" file={require('./sample2.js')} />
         </div>
       )
     },
@@ -150,7 +150,7 @@ let multipage = {
             <p>A: Many of the institutions with the largest endowments are doctoral universities, where graduate students make up a significant share of total enrollment. At these universities, simply dividing endowment income by student enrollment overstates the resources available for undergraduates, because it costs more to educate graduate students than undergraduates, who require more faculty attention and resources.</p>
             <p>Across all sectors, institutions with higher endowment income per student tend to have more graduate students as a share of total enrollment. At institutions with $500 to $1,500 of endowment income per student, graduate students make up about 20 percent of enrollment. But at institutions with endowment income per student of more than $9,000, graduate students make up 35 to 45 percent of enrollment.</p>
 
-            <Graph title="Undergraduate and Graduate Share of Enrollment at Institutions, by levels of Endowment Income per Student in 2014" file={require('./sample.js')} />
+            <Graph title="Undergraduate and Graduate Share of Enrollment at Institutions, by levels of Endowment Income per Student in 2014" file={require('./sample2.js')} />
 
             <p>Existing data do not allow separation of institutional spending on graduate versus undergraduate students. But assuming that graduate students receive two or three times the support from endowment income that undergraduates do reduces the estimated endowment spending per undergraduate student at public and private research universities. Assuming that they receive three times the support almost closes the gap between private nonprofit research and bachelor’s institutions. It may be more accurate to estimate that both types of institutions spend an average of close to $1,500 of endowment on undergraduates, rather than that private nonprofit research universities spend twice that.</p>
 
@@ -165,7 +165,7 @@ let multipage = {
           <p>Income from endowments fluctuates considerably from year to year, along with financial markets. Since institutions can only spend a limited percentage of their assets each year, their spending is constrained when stocks and other financial assets lose value.</p>
           <p>Private nonprofit research and private nonprofit bachelor’s institutions have much greater endowment income per student than other institutions on average, because these sectors include most of the institutions with large endowments.</p>
 
-          <Graph title="Endowment income per student over time" file={require('./sample.js')} />
+          <Graph title="Endowment income per student over time" file={require('./sample2.js')} />
 
           <h3>Variations within sectors</h3>
           <p>The vast majority of undergraduates attend institutions with much more modest endowment income per student than averages across institutions would suggest. The majority of undergraduates in all sectors except private nonprofit research institutions attend school with less than $1,500 per student in endowment income.</p>
@@ -178,7 +178,7 @@ let multipage = {
           <p>At both private nonprofit and public four-year institutions, those with open admissions policies have less than $400 in endowment income per student. In contrast, private nonprofit four-year institutions that admit fewer than 25 percent of their applicants have an average of more than $22,000 in endowment income per student.</p>
           <p>Public four-year institutions that admit between 25 percent and 50 percent of applicants actually have higher endowment incomes per student than those in the more selective category, likely because the small number of public research universities with large endowments fall into the latter category.</p>
 
-          <Graph title="Average endowment income per student by levels of selectivity" file={require('./sample.js')} />
+          <Graph title="Average endowment income per student by levels of selectivity" file={require('./sample2.js')} />
         </div>
       )
     },
