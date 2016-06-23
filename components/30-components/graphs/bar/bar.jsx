@@ -88,7 +88,6 @@ const BaseGraph = React.createClass({
             </div>
           </div>
         </div>
-
       </div>
     );
   }
