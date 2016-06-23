@@ -53,7 +53,7 @@ class Menu extends Component {
     let breadcrumbTitle = (routeSpec) ? routeSpec.title : 'Overview';
     return (
       <div className="grid">
-        <Sticky topOffset={-50}>
+        <Sticky topOffset={-10}>
           <Breadcrumb title={breadcrumbTitle} />
           <div className="col col--1-4">
             <div className="nav-anchor">
