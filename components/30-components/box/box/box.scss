@@ -1,0 +1,51 @@
+@import '_global.scss';
+
+.c-text__box {
+  border: 1px solid $color--gray-4;
+  font-size: 14px;
+  margin: 2rem 0;
+  position: relative;
+
+  .inner {
+    margin: 2rem 2rem 1rem;
+    overflow: hidden;
+    padding-bottom: 1rem;
+    transition: height 750ms ease;
+    > *:first-child {
+      margin-top: 0;
+    }
+  }
+  .read-more {
+    background-image: transparent;
+    bottom: 1rem;
+    padding-top: 75px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    .toggle {
+      background: #fff;
+      border: 1px solid $color--gray-4;
+      border-radius: 21px;
+      bottom: -2.5rem;
+      display: block;
+      font-size: 35px;
+      height: 42px;
+      left: 48%;
+      line-height: 37px;
+      position: absolute;
+      text-decoration: none;
+      width: 42px;
+    }
+  }
+
+  &.expanded {
+  }
+  &.collapsed {
+    .inner{
+      height: 200px;
+    }
+    .read-more {
+      background-image: linear-gradient(to bottom, transparent, white);
+    }
+  }
+}

@@ -76,15 +76,15 @@ const BaseGraph = React.createClass({
           <div className="c-text__viz-notes">
             <div>
               <strong className="c-text__viz-notes__title">Source:</strong>
-              <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw("source")} />
+              <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw('source')} />
             </div>
             <div>
               <strong className="c-text__viz-notes__title">Notes:</strong>
-              <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw("notes")} />
+              <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw('notes')} />
             </div>
             <div>
               <strong className="c-text__viz-notes__title">Data:</strong>
-              <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw("data")} />
+              <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw('data')} />
             </div>
           </div>
         </div>
