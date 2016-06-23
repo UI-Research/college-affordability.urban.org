@@ -41,52 +41,52 @@ const BaseGraph = React.createClass({
       //
       // Custom options
       //
-      data.custom_options = {
-        prefix:  '',
-        suffix:  '',
-        negatives: false,
-        max_values: 0,
-        fit_x_values: false,
-        formatted_numbers: false
-      };
+      // data.custom_options = {
+      //   prefix:  '',
+      //   suffix:  '',
+      //   negatives: false,
+      //   max_values: 0,
+      //   fit_x_values: false,
+      //   formatted_numbers: false
+      // };
 
       // Anaylze the graph to set some options.
       // data = util.analyzeGraphData(data);
 
       // Show all x ticks.
-      data.axis = {
-        x: {
-          tick: {
-            fit: data.custom_options.fit_x_values
-          }
-        }
-      };
+      // data.axis = {
+      //   x: {
+      //     tick: {
+      //       fit: data.custom_options.fit_x_values
+      //     }
+      //   }
+      // };
 
       // Do we need to custom format the y axis values.
-      if (data.custom_options.formatted_numbers || data.custom_options.prefix || data.custom_options.prefix) {
-        data.axis.y = {
-          tick: {
-            format: function (d) {
-              if (data.custom_options.formatted_numbers) {
-                let re = '\\d(?=(\\d{3})+$)';
-                d = d.toString().replace(new RegExp(re, 'g'), '$&,');
-              }
-              return data.custom_options.prefix + d + data.custom_options.suffix;
-            }
-          }
-        };
-      }
+      // if (data.custom_options.formatted_numbers || data.custom_options.prefix || data.custom_options.prefix) {
+      //   data.axis.y = {
+      //     tick: {
+      //       format: function (d) {
+      //         if (data.custom_options.formatted_numbers) {
+      //           let re = '\\d(?=(\\d{3})+$)';
+      //           d = d.toString().replace(new RegExp(re, 'g'), '$&,');
+      //         }
+      //         return data.custom_options.prefix + d + data.custom_options.suffix;
+      //       }
+      //     }
+      //   };
+      // }
 
       // Show a line at 0 if we have negative values.
-      if (data.custom_options.negatives) {
-        data.grid = {
-          y: {
-            lines: [
-              {value: 0}
-            ]
-          }
-        };
-      }
+      // if (data.custom_options.negatives) {
+      //   data.grid = {
+      //     y: {
+      //       lines: [
+      //         {value: 0}
+      //       ]
+      //     }
+      //   };
+      // }
       //
       // END Custom options
       //
@@ -131,11 +131,11 @@ const BaseGraph = React.createClass({
         container_class = base_class + '__container';
 
     return (
-    <div className={base_class}>
-      <h2>{this.props.title}</h2>
-      <div id={this.id} className={container_class}></div>
-      <div dangerouslySetInnerHTML={this.raw()} />
-    </div>
+      <div className={base_class}>
+        <h2>{this.props.title}</h2>
+        <div id={this.id} className={container_class}></div>
+        <div dangerouslySetInnerHTML={this.raw()} />
+      </div>
     );
   }
 });
