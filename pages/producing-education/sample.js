@@ -1,9 +1,12 @@
+'use strict';
 const d3 = require('d3');
 
 // TEMP: Generates random data.
-const randomArray = (length, max) => [...new Array(length)]
-    .map((_, i) => Math.round(Math.random() * max));
-
+function randomArray(length, max) {
+    return Array.apply(null, Array(length)).map(function(_, i) {
+        return Math.round(Math.random() * max);
+    });
+}
 let constructed = (key) => { let value = randomArray(6, 200); value.unshift(key); return value; }
 
 module.exports = {
@@ -23,7 +26,10 @@ module.exports = {
     "rotated": false,
     "x": {
       "label": "X Label",
-      "type": "category",
+      "type": "indexed",
+      "tick": {
+        "fit": true
+      },
       "categories": ["2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016"]
     },
     "y" : {

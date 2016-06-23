@@ -94,7 +94,11 @@ const BaseGraph = React.createClass({
       // Relocate legend to top of the graph.
       if (!data.legend) {
         data.legend = {
-          position: top
+          position:'inset',
+          inset: {
+            anchor: 'top-left',
+            x: 0
+          }
         }
       }
 
@@ -115,7 +119,14 @@ const BaseGraph = React.createClass({
         ]
       };
 
-      c3.generate(data);
+      let asdf = c3.generate(data);
+
+      console.log('#' + this.id);
+      console.log(asdf);
+
+      let legend = d3.select(`#${this.id} .c3-legend-background`)[0][0].parentNode;
+      let pos = ((d3.select('svg').attr('width') - d3.select(".c3-legend-background rect").attr("width")) / 2);
+      d3.select(legend).attr('transform' , `translate(${pos}, 0)`);
     }
   },
   raw: function(string) {

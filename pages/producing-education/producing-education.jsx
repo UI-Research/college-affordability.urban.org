@@ -30,7 +30,7 @@ let multipage = {
       title: 'Overview',
       content: (
         <div>
-          <h2>What schools pay (section 2)</h2>
+          <h2>What schools pay</h2>
           <p>Students see the prices colleges charge, but what they might not realize is that the tuition amount they see is only a fraction of what their education really costs.</p>
           <p>To educate a student, a college must pay for instructors, student services, administrative support, and maintenance, among other things. Average education and related spending1 per student varies considerably across sectors, partially because of differences in institutions’ activities. For example, public two-year colleges almost exclusively educate lower-level undergraduates, while public research universities educate these students, upper-level undergraduates, and graduate students, in addition to engaging in a significant amount of research activity.</p>
           <p>To cover costs, all colleges and universities use revenues from tuition and fees, but nonprofit colleges also supplement that revenue with their own resources, which include state and local tax revenues in the public sector and endowment income and annual giving in the private sector.</p>
@@ -74,6 +74,7 @@ let multipage = {
       title: 'Variations Within Sectors',
       content: (
         <div>
+          <h2>Variations Within Sectors</h2>
           <FAQ>
             <h4>Q: Why do students in the top subsidy decile at research universities receive so much more?</h4>
             <p>A: Estimated subsidies are many times higher among students attending research institutions in the top decile than among those at less well-resourced institutions, regardless of sector. But the per-student subsidies in research universities do not necessarily represent the resources devoted to undergraduate education. These institutions educate many graduate students and have active research agendas. Precise measurements are not available, but research universities with the highest estimated subsidies spend considerably less per undergraduate student than these figures would suggest.</p>
@@ -85,6 +86,7 @@ let multipage = {
       title: 'Appropriations',
       content: (
         <div>
+          <h2>Appropriations</h2>
           <FAQ>
             <h4>Q: How do states determine appropriation levels</h4>
             <p>A: State financing of higher education varies across the country. Though funding is usually tied the number of credit hours students enrolled in or completed, states have adopted different methods for determining appropriations. For example:</p>
@@ -130,6 +132,7 @@ let multipage = {
       title: 'Endowments',
       content: (
         <div>
+          <h2>Endowments</h2>
           <FAQ>
             <h4>More about endowment income</h4>
             <p>Income from endowments fluctuates considerably from year to year, along with financial markets. For example, average endowment assets per student at private nonprofit institutions fell by 29 percent between 2007-08 and 2008-09 and were 12 percent lower in 2012-13 than they had been five years earlier. Investment income provided more than the income from all other sources combined at private doctoral universities in 2006-07, but in 2008-09 generated losses slightly greater than the total revenues</p>
@@ -145,6 +148,7 @@ let multipage = {
       title: 'Variations Within Sectors',
       content: (
         <div>
+          <h2>Variations Within Sectors</h2>
           <FAQ>
             <h4>Q: Do schools spend money from their endowments on graduate students, too</h4>
             <p>A: Many of the institutions with the largest endowments are doctoral universities, where graduate students make up a significant share of total enrollment. At these universities, simply dividing endowment income by student enrollment overstates the resources available for undergraduates, because it costs more to educate graduate students than undergraduates, who require more faculty attention and resources.</p>

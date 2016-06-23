@@ -1,8 +1,13 @@
+'use strict';
+
 const d3 = require('d3');
 
 // TEMP: Generates random data.
-const randomArray = (length, max) => [...new Array(length)]
-    .map((_, i) => Math.round(Math.random() * max));
+function randomArray(length, max) {
+    return Array.apply(null, Array(length)).map(function(_, i) {
+        return Math.round(Math.random() * max);
+    });
+}
 let constructed = (key) => { let value = randomArray(6, 200); value.unshift(key); return value; }
 
 
