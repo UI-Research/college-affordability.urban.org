@@ -1,14 +1,14 @@
 'use strict';
 
 const React = require('react'),
-          _ = require('lodash');
+  _ = require('lodash');
 
 const HTML = require('10-html/html.jsx');
 const Header = require('./components/header.jsx');
+const Footer = require('./components/footer.jsx');
 import { StickyContainer, Sticky } from 'react-sticky';
 
 const util = require('util.jsx');
-
 
 if (util.canUseDOM()) {
   require('./default.scss');
@@ -55,6 +55,7 @@ const TemplateDefault = React.createClass({
           <div className="main">
             {this.props.children}
           </div>
+          <Footer />
         </StickyContainer>
       </HTML>
     );
