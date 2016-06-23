@@ -2,6 +2,7 @@
 
 .c-text__box {
   border: 1px solid $color--gray-4;
+  font-size: 14px;
   margin: 2rem 0;
   position: relative;
 
@@ -10,10 +11,13 @@
     overflow: hidden;
     padding-bottom: 1rem;
     transition: height 750ms ease;
+    > *:first-child {
+      margin-top: 0;
+    }
   }
   .read-more {
     background-image: transparent;
-    bottom: 1.1rem;
+    bottom: 1rem;
     padding-top: 75px;
     position: absolute;
     text-align: center;
