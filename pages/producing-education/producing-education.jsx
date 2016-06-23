@@ -6,7 +6,7 @@ const Text = require('30-components/basic/text/text.jsx'),
       BarGraph = require('30-components/graphs/bar/bar.jsx'),
       LineGraph = require('30-components/graphs/line/line.jsx'),
       Graph = require('30-components/graphs/graph/graph.jsx'),
-      FAQ = require('30-components/box/faq/faq.jsx'),
+      Box = require('30-components/box/box/box.jsx'),
       MultiPage = require('30-components/multipage/multipage.jsx');
 
 const util = require('util.jsx');
@@ -35,10 +35,10 @@ let multipage = {
           <p>To educate a student, a college must pay for instructors, student services, administrative support, and maintenance, among other things. Average education and related spending1 per student varies considerably across sectors, partially because of differences in institutions’ activities. For example, public two-year colleges almost exclusively educate lower-level undergraduates, while public research universities educate these students, upper-level undergraduates, and graduate students, in addition to engaging in a significant amount of research activity.</p>
           <p>To cover costs, all colleges and universities use revenues from tuition and fees, but nonprofit colleges also supplement that revenue with their own resources, which include state and local tax revenues in the public sector and endowment income and annual giving in the private sector.</p>
 
-          <FAQ>
+          <Box>
             <h4>Education and related spending</h4>
             <p>"Education and related expenditures" include spending by colleges and universities on instruction, student services, and a portion of academic and administrative support and operations and maintenance. This measure excludes the cost of college buildings and spending on research and public service. It also excludes scholarships and fellowships, which are discounts to student. Institutions never get this revenue and cannot spend it.   Instruction, the largest single cost category at public and private nonprofit institutions, includes faculty salaries and benefits. Student services include expenses such as admissions, registrars, health services, and student affairs. Academic support includes advising, libraries, technology, academic administration, and related expenditures.</p>
-          </FAQ>
+          </Box>
         </div>
       )
     },
@@ -63,10 +63,10 @@ let multipage = {
 
             <Graph title="Average subsidy per student within student decile" file={require('./sample.js')} />
 
-            <FAQ>
+            <Box>
               <h4>Q: Why do students in the top subsidy decile at research universities receive so much more?</h4>
               <p>A: Among the third through eighth deciles, subsidy per student ranges from $4,000 to $10,000 across all public institutions and private nonprofit bachelor’s colleges. Even in this decile range, however, average subsidies in private nonprofit research universities far exceed those in master’s universities.</p>
-            </FAQ>
+            </Box>
         </div>
       )
     },
@@ -75,10 +75,10 @@ let multipage = {
       content: (
         <div>
           <h2>Variations Within Sectors</h2>
-          <FAQ>
+          <Box>
             <h4>Q: Why do students in the top subsidy decile at research universities receive so much more?</h4>
             <p>A: Estimated subsidies are many times higher among students attending research institutions in the top decile than among those at less well-resourced institutions, regardless of sector. But the per-student subsidies in research universities do not necessarily represent the resources devoted to undergraduate education. These institutions educate many graduate students and have active research agendas. Precise measurements are not available, but research universities with the highest estimated subsidies spend considerably less per undergraduate student than these figures would suggest.</p>
-          </FAQ>
+          </Box>
         </div>
       )
     },
@@ -87,7 +87,7 @@ let multipage = {
       content: (
         <div>
           <h2>Appropriations</h2>
-          <FAQ>
+          <Box>
             <h4>Q: How do states determine appropriation levels</h4>
             <p>A: State financing of higher education varies across the country. Though funding is usually tied the number of credit hours students enrolled in or completed, states have adopted different methods for determining appropriations. For example:</p>
             <ul>
@@ -96,7 +96,7 @@ let multipage = {
               <li>Many states have explicit formulas for allocating all or part of their funding to instructional expenditures, the operation and maintenance of physical plants, or other expenditures across institutions.</li>
               <li>Most state funding goes directly to public institutions, but some goes to higher education coordinating boards or to other state agencies that allocate funds to institutions, including, in some states, private colleges and universities.</li>
             </ul>
-          </FAQ>
+          </Box>
           <h2>State and local appropriations</h2>
           <p>At public colleges and universities, subsidies come in the form of state and local government appropriations. Over time, state funds have covered a smaller and smaller the portion of the cost of education at public colleges and universities. As state taxpayers foot less of the bill, students and families see tuition and fees rising.</p>
           <p>State tax revenues are the primary source of state and local funding for higher education institutions, but community colleges are also supported by local taxes. State and local appropriations are dedicated primarily to public colleges and universities, but some of the funds go to student aid, some benefit students in private colleges, and some are restricted funds for special purposes like research, agriculture, or medical education.</p>
@@ -133,14 +133,14 @@ let multipage = {
       content: (
         <div>
           <h2>Endowments</h2>
-          <FAQ>
+          <Box>
             <h4>More about endowment income</h4>
             <p>Income from endowments fluctuates considerably from year to year, along with financial markets. For example, average endowment assets per student at private nonprofit institutions fell by 29 percent between 2007-08 and 2008-09 and were 12 percent lower in 2012-13 than they had been five years earlier. Investment income provided more than the income from all other sources combined at private doctoral universities in 2006-07, but in 2008-09 generated losses slightly greater than the total revenues</p>
-          </FAQ>
-          <FAQ>
+          </Box>
+          <Box>
             <h4>The myth of massive endowments</h4>
             <p>While only a few institutions have endowments large enough to cover a significant portion of their annual budgets, policymakers tend to focus on this small segment of the industry. For example, in 2016 Rep. Tom Reed (R-NY) proposed legislation that would require colleges with endowments exceeding $1 billion to spend 25 percent of the annual income from the endowment on financial aid or lose their tax-exempt status. In 2012-13, fewer than 60 US institutions—most of them private research universities—had endowments this high. There are 1,700 private institutions and 4,700 degree-granting postsecondary in the United States.</p>
-          </FAQ>
+          </Box>
         </div>
       )
     },
@@ -149,7 +149,7 @@ let multipage = {
       content: (
         <div>
           <h2>Variations Within Sectors</h2>
-          <FAQ>
+          <Box>
             <h4>Q: Do schools spend money from their endowments on graduate students, too</h4>
             <p>A: Many of the institutions with the largest endowments are doctoral universities, where graduate students make up a significant share of total enrollment. At these universities, simply dividing endowment income by student enrollment overstates the resources available for undergraduates, because it costs more to educate graduate students than undergraduates, who require more faculty attention and resources.</p>
             <p>Across all sectors, institutions with higher endowment income per student tend to have more graduate students as a share of total enrollment. At institutions with $500 to $1,500 of endowment income per student, graduate students make up about 20 percent of enrollment. But at institutions with endowment income per student of more than $9,000, graduate students make up 35 to 45 percent of enrollment.</p>
@@ -159,7 +159,7 @@ let multipage = {
             <p>Existing data do not allow separation of institutional spending on graduate versus undergraduate students. But assuming that graduate students receive two or three times the support from endowment income that undergraduates do reduces the estimated endowment spending per undergraduate student at public and private research universities. Assuming that they receive three times the support almost closes the gap between private nonprofit research and bachelor’s institutions. It may be more accurate to estimate that both types of institutions spend an average of close to $1,500 of endowment on undergraduates, rather than that private nonprofit research universities spend twice that.</p>
 
             <Graph title="Endowment income per undergraduate student after doubling and tripling the cost of graduate students relative to undergraduate students, 2014" file={require('./sample.js')} />
-          </FAQ>
+          </Box>
           <h2>Endowments</h2>
           <p>Many universities, primarily those in the private sector, use endowment funds as a means of subsidizing the cost of an education. Endowments come from donations to colleges and universities that are designated for investment, rather than immediate expenditure.</p>
           <p>Maintaining the principal of the endowment over time—as required by law for true endowments funds—means ensuring that the value of the funds keeps up with inflation. Additional income can be used either for expenditures or for reinvestment. Most institutions spend four to five percent of the endowment value each year. (The analyses below rely on the approximation that institutions receive 4.5% of their endowment as income each year.) Because of donor specifications, however, a substantial share of endowment funds are restricted-use, meaning they can only be spent for specifically prescribed purposes.</p>
