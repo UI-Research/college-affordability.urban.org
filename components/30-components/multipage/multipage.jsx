@@ -49,11 +49,12 @@ class Menu extends Component {
       }
       return content;
     });
-
+    let routeSpec = this.props.route.content.content[this.props.routes[1].path];
+    let breadcrumbTitle = (routeSpec) ? routeSpec.title : 'Overview';
     return (
       <div className="grid">
         <Sticky topOffset={-50}>
-          <Breadcrumb title="Section Title Section TitleSection TitleSection TitleSection TitleSection TitleSection Title" />
+          <Breadcrumb title={breadcrumbTitle} />
           <div className="col col--1-4">
             <div className="nav-anchor">
               <ul className="nav-anchor__top-level">
