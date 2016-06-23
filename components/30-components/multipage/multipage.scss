@@ -1,17 +1,25 @@
 
+@import '_global.scss';
+
 /**
  * Hack the sticky menu so it doesn't cover the page content
  * while maintaining its position on the page.
  */
 .grid .sticky[style] {
-  margin-top: 165px;
   width: 300px !important;
+  z-index: 9;
+
+  .breadcrumb {
+    position: fixed;
+    padding: 20px 0;
+  }
 
   .col--1-4 {
+    margin-top: 40px;
     width: 100%;
   }
 }
 
 .grid .col--3-4 {
-  margin-left: 30%;
+  float: right;
 }

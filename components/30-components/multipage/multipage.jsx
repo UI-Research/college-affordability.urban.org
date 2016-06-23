@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import { Router, Route, IndexRoute, Link } from 'react-router';
 import { hashHistory } from 'react-router';
 import { StickyContainer, Sticky } from 'react-sticky';
+import { Breadcrumb } from '30-components/basic/breadcrumb/breadcrumb.jsx';
 
 const util = require('util.jsx');
 
@@ -51,7 +52,8 @@ class Menu extends Component {
 
     return (
       <div className="grid">
-        <Sticky topOffset={-200}>
+        <Sticky topOffset={-50}>
+          <Breadcrumb title="Section Title Section TitleSection TitleSection TitleSection TitleSection TitleSection Title" />
           <div className="col col--1-4">
             <div className="nav-anchor">
               <ul className="nav-anchor__top-level">
