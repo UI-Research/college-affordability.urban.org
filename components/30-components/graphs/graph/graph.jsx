@@ -118,9 +118,9 @@ const BaseGraph = React.createClass({
       c3.generate(data);
     }
   },
-  raw: function() {
-    if (this.props.file) {
-      return { __html: this.props.file.notes };
+  raw: function(string) {
+    if (this.props.file.metadata && this.props.file.metadata[string]) {
+      return { __html: this.props.file.metadata[string] };
     }
     else {
       return { __html: '' };
@@ -134,7 +134,22 @@ const BaseGraph = React.createClass({
       <div className={base_class}>
         <h2>{this.props.title}</h2>
         <div id={this.id} className={container_class}></div>
-        <div dangerouslySetInnerHTML={this.raw()} />
+        <div className="c-text__caption c-text__caption--bottom">
+          <div className="c-text__viz-notes">
+            <div>
+              <strong className="c-text__viz-notes__title">Source: </strong>
+              <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw("source")} />
+            </div>
+            <div>
+              <strong className="c-text__viz-notes__title">Notes: </strong>
+              <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw("notes")} />
+            </div>
+            <div>
+              <strong className="c-text__viz-notes__title">Data: </strong>
+              <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw("data")} />
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
