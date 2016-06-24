@@ -26,7 +26,7 @@ module.exports = {
   cleanString: (string) => {
     return _.trim(string.replace(/ /g,"_"));
   },
-  // Expose _.matches.
+  // Expose _.isEqual.
   isEqual: (object1, object2) => {
     return _.isEqual(object1, object2);
   }
