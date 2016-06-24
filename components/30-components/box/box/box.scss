@@ -39,13 +39,18 @@
   }
 
   &.expanded {
+    .inner {
+      max-height: 10000px;
+      transition: max-height 1.25s ease-in;
+    }
   }
   &.collapsed {
     .inner{
-      height: 200px;
+      max-height: 200px;
+      transition: max-height 0.01s ease-in;
     }
     .read-more {
-      background-image: linear-gradient(to bottom, transparent, white);
+      background-image: linear-gradient(to bottom, rgba(255,255,255,0), #FFF);
     }
   }
 }

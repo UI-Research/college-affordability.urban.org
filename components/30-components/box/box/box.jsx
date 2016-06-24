@@ -1,8 +1,8 @@
 'use strict';
-const React = require('react'),
-      ReactDom = require('react-dom');
+const React = require('react');
 const util = require('util.jsx');
 
+const _ = require('lodash');
 if (util.canUseDOM()) {
   require('./box.scss');
 }
@@ -17,83 +17,43 @@ const Box = React.createClass({
     };
   },
   componentWillMount() {
+    // Create unique ID for element.
+    this.id = 'box-' + util.uniqueID();
     this.setState({
       expanded: true,
-      showToggle: true,
-      reload: false
+      showToggle: true
     });
   },
   componentDidMount: function() {
-    this._initializeBox();
-  },
-  componentWillReceiveProps: function (nextProps) {
-    // If we got new props, reset states and force reload.
-    if (!util.isEqual(this.props, nextProps)) {
-      this.setState({
-        reload: true,
-        expanded: true,
-        showToggle: true,
-      });
-    }
-  },
-  componentDidUpdate: function (prevProps, prevState) {
-    // If we're set to reload, intialize for the new content.
-    if (this.state.reload) {
-      this._initializeBox();
-    }
-  },
-  _handleClick: function (e) {
-    e.preventDefault();
-    this._toggleBox();
-  },
-  // Initialize our states and start collapsed if needed.
-  _initializeBox() {
-    let box = this.refs.box;
+    // Keep track of the actual rendered height.
+    let box = document.getElementById(this.id);
     let children = box.getElementsByClassName('inner');
     if (children.length) {
-      let showToggle = children[0].offsetHeight > 250;
+      let showToggle = children[0].offsetHeight > 300;
       this.setState({
-        expanded: true,
-        height: children[0].offsetHeight,
-        showToggle: showToggle,
-        reload: false
+        showToggle: showToggle
       });
       // Toggle the state to be collapsed.
       this._toggleBox();
     }
   },
-  // This is its own function so we can invoke with a dom event.
-  _toggleBox() {
-    let box = this.refs.box;
-    let children = box.getElementsByClassName('inner');
-    // Set to the real height when toggling to expanded.
-    if (!this.state.expanded && children.length) {
-      children[0].style.height = 'auto';
-    }
-    else if (children.length) {
-      children[0].style.height = null;
-    }
-    this.setState({
-      expanded: !this.state.expanded
-    });
-  },
   render: function() {
-    let anchor = '',
-        toggleClass = 'c-text__box',
-        readMore = null;
+    let anchor = '';
     if (this.props.anchor_name) {
       // Replace any spaces with _.
       let anchor_name = util.cleanString(this.props.anchor_name);
       anchor = <a name={anchor_name}></a>;
     }
+    let toggleClass = 'c-text__box';
+    let readMore = null;
     if (this.state.showToggle) {
       toggleClass += this.state.expanded ? ' expanded' : ' collapsed';
       let toggleText = this.state.expanded ? '-' : '+';
       readMore = <div className="read-more"><a href="#" onClick={this._handleClick} className="toggle">{toggleText}</a></div>;
     }
-    
+
     return (
-      <div ref="box" className={toggleClass}>
+      <div id={this.id} className={toggleClass}>
         {anchor}
         <div className="inner">
           {this.props.children}
@@ -101,6 +61,17 @@ const Box = React.createClass({
         {readMore}
       </div>
     );
+  },
+  _handleClick: function (e) {
+    e.preventDefault();
+    this._toggleBox();
+  },
+  // This is its own function so we can invoke with a dom event.
+  _toggleBox() {
+    let box = document.getElementById(this.id);
+    this.setState({
+      expanded: !this.state.expanded
+    });
   }
 });
 

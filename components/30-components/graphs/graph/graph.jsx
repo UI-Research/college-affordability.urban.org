@@ -121,9 +121,6 @@ const BaseGraph = React.createClass({
 
       let asdf = c3.generate(data);
 
-      console.log('#' + this.id);
-      console.log(asdf);
-
       let legend = d3.select(`#${this.id} .c3-legend-background`)[0][0].parentNode;
       let pos = ((d3.select('svg').attr('width') - d3.select(".c3-legend-background rect").attr("width")) / 2);
       d3.select(legend).attr('transform' , `translate(${pos}, 0)`);

@@ -79,7 +79,6 @@ class Content extends React.Component {
     return (
       <div>
         {this.props.route.jsx}
-        <BackToTop />
       </div>
     );
   }
