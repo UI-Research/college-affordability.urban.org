@@ -47,6 +47,7 @@
     "concurrent-transform": "^1.0.0",
     "d3": "^3.5.17",
     "del": "^2.2.0",
+    "elevator.js": "git+ssh://git@github.com/freestylebit/elevator.js.git",
     "eslint": "^2.10.2",
     "eslint-plugin-react": "^5.1.1",
     "exenv": "^1.2.1",
