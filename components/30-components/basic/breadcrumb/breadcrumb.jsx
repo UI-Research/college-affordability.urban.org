@@ -14,7 +14,7 @@ export const Breadcrumb = React.createClass({
   getDefaultProps: function() {
     return {
       section: 'Producing Education',
-      title: '???',
+      title: '???'
     };
   },
   render: function() {

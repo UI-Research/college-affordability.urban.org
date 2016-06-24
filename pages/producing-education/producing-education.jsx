@@ -2,10 +2,7 @@
 
 const React = require('react');
 const Template = require('20-templates/default/default.jsx');
-const Text = require('30-components/basic/text/text.jsx'),
-      BarGraph = require('30-components/graphs/bar/bar.jsx'),
-      LineGraph = require('30-components/graphs/line/line.jsx'),
-      Graph = require('30-components/graphs/graph/graph.jsx'),
+const Graph = require('30-components/graphs/graph/graph.jsx'),
       Box = require('30-components/box/box/box.jsx'),
       MultiPage = require('30-components/multipage/multipage.jsx');
 
@@ -185,7 +182,7 @@ let multipage = {
           <Graph title="Average endowment income per student by levels of selectivity" file={require('./sample2.js')} />
         </div>
       )
-    },
+    }
   }
 };
 

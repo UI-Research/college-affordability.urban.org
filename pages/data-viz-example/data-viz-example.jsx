@@ -2,15 +2,8 @@
 
 const React = require('react');
 const Template = require('20-templates/default/default.jsx');
-const Text = require('30-components/basic/text/text.jsx'),
-      Graph = require('30-components/graphs/graph/graph.jsx'),
+const Graph = require('30-components/graphs/graph/graph.jsx'),
       Box = require('30-components/box/box/box.jsx'),
-      Factoid = require('30-components/box/factoid/factoid.jsx'),
-      Featured = require('30-components/box/featured/featured.jsx'),
-      Notes = require('30-components/basic/notes/notes.jsx'),
-      Note = require('30-components/basic/note/note.jsx'),
-      CaptionBottom = require('30-components/caption/bottom/bottom.jsx'),
-      CaptionTop = require('30-components/caption/top/top.jsx'),
       Actions = require('30-components/basic/actions/actions.jsx'),
       ActionButton = require('30-components/basic/action_button/action_button.jsx');
 
@@ -95,16 +88,7 @@ let specifications = {
             more than twice as much as public two-year colleges. These gaps across sectors have grown over time.
           </p>
 
-          <CaptionTop>
-            <p>Institutional subsidies are the share of the total cost that is covered by the institution rather than by the
-              student's tuition. In the public sector, these subsidies come primarily from state and local tax revenues. In
-              the private sector, they come from endowment income, annual giving, and other private sources.
-            </p>
-          </CaptionTop>
-
-          <div className="c-text__viz">
-            <Graph title="" file={require('./sample.js')} />
-          </div>
+          <Graph title="" file={require('./sample.js')} />
 
           <Actions>
             <ActionButton title='Save Image' href='#'/>

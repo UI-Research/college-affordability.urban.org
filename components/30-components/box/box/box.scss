@@ -46,8 +46,8 @@
   }
   &.collapsed {
     .inner{
-      max-height: 200px;
-      transition: max-height 0.01s ease-in;
+      max-height: 125px;
+      transition: max-height 0.05s ease-in;
     }
     .read-more {
       background-image: linear-gradient(to bottom, rgba(255,255,255,0), #FFF);
