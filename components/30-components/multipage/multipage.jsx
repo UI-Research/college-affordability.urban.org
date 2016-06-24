@@ -104,8 +104,8 @@ let MultiPage = React.createClass({
       let links = _.flattenDeep(this.props.content.links);
       content = (
         <Router onUpdate={ () => elevator.elevate() } history={hashHistory}>
-          <Route path="/" component={Menu} content={this.props.content}>
-            <IndexRoute component={Content} jsx={this.props.content.content[this.props.content.links[0]].content} />
+          <Route component={Menu} content={this.props.content}>
+            <Route path="/" component={Content} jsx={this.props.content.content[this.props.content.links[0]].content} />
             {
               _.map(links, (target) => {
                 return (<Route path={target} component={Content} key={target} jsx={this.props.content.content[target].content} />);

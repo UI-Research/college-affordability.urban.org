@@ -29,7 +29,7 @@ const Box = React.createClass({
     let box = document.getElementById(this.id);
     let children = box.getElementsByClassName('inner');
     if (children.length) {
-      let showToggle = children[0].offsetHeight > 300;
+      let showToggle = children[0].offsetHeight > 100;
       this.setState({
         showToggle: showToggle
       });
