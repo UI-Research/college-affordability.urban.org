@@ -98,7 +98,7 @@ let MultiPage = React.createClass({
 
     if (util.canUseDOM()) {
       let elevator = new Elevator({
-        duration: 500
+        duration: 1500
       });
 
       let links = _.flattenDeep(this.props.content.links);
