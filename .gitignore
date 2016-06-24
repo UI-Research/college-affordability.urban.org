@@ -6,3 +6,4 @@ external_data
 /.settings
 /.buildpath
 /.project
+*.log

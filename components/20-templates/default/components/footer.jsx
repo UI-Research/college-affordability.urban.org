@@ -24,7 +24,13 @@ const Footer = React.createClass({
               <div className="footer-site__nav-primary">
                 <ul>
                   <li>
-                    <a href="#">What is College?</a>
+                    <a href="#">Introduction</a>
+                  </li>
+                  <li>
+                    <a href="#">What is College</a>
+                  </li>
+                  <li>
+                    <a href="/producing-education">Producing Education</a>
                   </li>
                   <li>
                     <a href="#">Prices and Expenses</a>
@@ -34,12 +40,6 @@ const Footer = React.createClass({
                   </li>
                   <li>
                     <a href="#">Covering Expenses</a>
-                  </li>
-                  <li>
-                    <a href="#">After College</a>
-                  </li>
-                  <li>
-                    <a href="#">Student Profiles</a>
                   </li>
                 </ul>
               </div>

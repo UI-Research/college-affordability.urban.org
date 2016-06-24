@@ -2,6 +2,7 @@
 const React = require('react');
 const util = require('util.jsx');
 
+const _ = require('lodash');
 if (util.canUseDOM()) {
   require('./box.scss');
 }
@@ -19,7 +20,9 @@ const Box = React.createClass({
     // Create unique ID for element.
     this.id = 'box-' + util.uniqueID();
     this.setState({
+      id: this.id,
       expanded: true,
+      trigger: false,
       showToggle: true
     });
   },
@@ -28,15 +31,33 @@ const Box = React.createClass({
     let box = document.getElementById(this.id);
     let children = box.getElementsByClassName('inner');
     if (children.length) {
-      let showToggle = children[0].offsetHeight > 250;
+      let showToggle = children[0].offsetHeight > 100;
       this.setState({
-        height: children[0].offsetHeight,
         showToggle: showToggle
       });
       // Toggle the state to be collapsed.
       this._toggleBox();
-      this.render();
     }
+  },
+  componentWillReceiveProps: function () {
+    if (this.state.trigger) {
+      this.state.expanded = false;
+      this.state.trigger = false;
+    }
+  },
+  _handleClick: function (e) {
+    e.preventDefault();
+    this._toggleBox();
+  },
+  // This is its own function so we can invoke with a dom event.
+  _toggleBox() {
+    let box = document.getElementById(this.id);
+
+    this.setState({
+      trigger: true,
+      expanded: !this.state.expanded
+    });
+    this.state.trigger = true;
   },
   render: function() {
     let anchor = '';
@@ -52,7 +73,7 @@ const Box = React.createClass({
       let toggleText = this.state.expanded ? '-' : '+';
       readMore = <div className="read-more"><a href="#" onClick={this._handleClick} className="toggle">{toggleText}</a></div>;
     }
-    
+
     return (
       <div id={this.id} className={toggleClass}>
         {anchor}
@@ -62,25 +83,6 @@ const Box = React.createClass({
         {readMore}
       </div>
     );
-  },
-  _handleClick: function (e) {
-    e.preventDefault();
-    this._toggleBox();
-  },
-  // This is its own function so we can invoke with a dom event.
-  _toggleBox() {
-    let box = document.getElementById(this.id);
-    let children = box.getElementsByClassName('inner');
-    // Set to the real height when toggling to expanded.
-    if (!this.state.expanded && children.length) {
-      children[0].style.height = this.state.height;
-    }
-    else if (children.length) {
-      children[0].style.height = null;
-    }
-    this.setState({
-      expanded: !this.state.expanded
-    });
   }
 });
 

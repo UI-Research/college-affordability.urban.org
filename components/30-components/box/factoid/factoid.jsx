@@ -6,7 +6,7 @@ if (util.canUseDOM()) {
   require('./factoid.scss');
 }
 
-const FAQ = React.createClass({
+const Factoid = React.createClass({
   propTypes: {
     anchor_name: React.PropTypes.string
   },
@@ -22,7 +22,7 @@ const FAQ = React.createClass({
       let anchor_name = util.cleanString(this.props.anchor_name);
       anchor = <a name={anchor_name}></a>;
     }
-    
+
     return (
       <div className="c-text__factoid">
         {anchor}
@@ -32,4 +32,4 @@ const FAQ = React.createClass({
   }
 });
 
-module.exports = FAQ;
+module.exports = Factoid;

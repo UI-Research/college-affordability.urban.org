@@ -3,9 +3,8 @@
 const React = require('react');
 const Template = require('20-templates/default/default.jsx');
 const Text = require('30-components/basic/text/text.jsx'),
-      BarGraph = require('30-components/graphs/bar/bar.jsx'),
+      Graph = require('30-components/graphs/graph/graph.jsx'),
       Box = require('30-components/box/box/box.jsx'),
-      FAQBox = require('30-components/box/faq_box/faq_box.jsx'),
       Factoid = require('30-components/box/factoid/factoid.jsx'),
       Featured = require('30-components/box/featured/featured.jsx'),
       Notes = require('30-components/basic/notes/notes.jsx'),
@@ -104,33 +103,13 @@ let specifications = {
           </CaptionTop>
 
           <div className="c-text__viz">
-            <BarGraph title="" file={require('./sample.json')} />
+            <Graph title="" file={require('./sample.js')} />
           </div>
 
-          <CaptionBottom>
-            <Notes>
-
-              <Note title='Sources'>
-                  Leverage agile frameworks to provide a robust synopsis for high level overviews.
-              </Note>
-
-              <Note title='Notes'>
-                  Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the
-                  holistic world view of disruptive innovation via workplace diversity and empowerment.
-              </Note>
-
-              <Note title='Data'>
-                  <a href="#">Source Link Goes Here</a>
-              </Note>
-
-            </Notes>
-
-            <Actions>
-              <ActionButton title='Save Image' href='#'/>
-              <ActionButton title='Download data (csv)' href='#'/>
-            </Actions>
-
-          </CaptionBottom>
+          <Actions>
+            <ActionButton title='Save Image' href='#'/>
+            <ActionButton title='Download data (csv)' href='#'/>
+          </Actions>
 
           <h5>Related</h5>
           <p><a href="#">Chart: Degree-granting institutions by sector and degree-type in fall 2014</a></p>
@@ -143,6 +122,7 @@ let specifications = {
 
           <p>Students at public colleges and universities pay prices that do not cover the full cost of education, because state and local governments appropriate some of their tax revenues to institutions, providing the subsidies described in the previous section. Over time, the portion of the cost of education at public colleges and universities covered by state funds has declined. As state taxpayers foot less of the bill, students and families see tuition and fees rising.</p>
           <p>State tax revenues are the primary source of state and local funding for higher education institutions, but local taxes support community colleges and provided just over 10 percent of the total in 2013-14. State and local appropriations are dedicated primarily to public colleges and universities, but some of the funds go to student aid, some benefit students in private colleges, and some are restricted funds for special purposes like research, agriculture, and medical education.</p>
+
 
           <Box>
             <h4>How do states determine appropriation levels?</h4>

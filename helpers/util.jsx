@@ -25,5 +25,9 @@ module.exports = {
   // Trim a string and remove spaces.
   cleanString: (string) => {
     return _.trim(string.replace(/ /g,"_"));
+  },
+  // Expose _.isEqual.
+  isEqual: (object1, object2) => {
+    return _.isEqual(object1, object2);
   }
 }

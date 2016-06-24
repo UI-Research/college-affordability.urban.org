@@ -4,6 +4,9 @@ import React, { Component } from 'react';
 import { Router, Route, IndexRoute, Link } from 'react-router';
 import { hashHistory } from 'react-router';
 import { StickyContainer, Sticky } from 'react-sticky';
+import { Breadcrumb } from '30-components/basic/breadcrumb/breadcrumb.jsx';
+import { BackToTop } from '30-components/basic/back-to-top/back-to-top.jsx';
+const Elevator = require('elevator.js');
 
 const util = require('util.jsx');
 
@@ -48,10 +51,12 @@ class Menu extends Component {
       }
       return content;
     });
-
+    let routeSpec = this.props.route.content.content[this.props.routes[1].path];
+    let breadcrumbTitle = (routeSpec) ? routeSpec.title : 'Overview';
     return (
       <div className="grid">
-        <Sticky topOffset={-200}>
+        <Sticky topOffset={-10} bottomOffset={1000}>
+          <Breadcrumb title={breadcrumbTitle} />
           <div className="col col--1-4">
             <div className="nav-anchor">
               <ul className="nav-anchor__top-level">
@@ -92,11 +97,15 @@ let MultiPage = React.createClass({
     let content;
 
     if (util.canUseDOM()) {
+      let elevator = new Elevator({
+        duration: 1500
+      });
+
       let links = _.flattenDeep(this.props.content.links);
       content = (
-        <Router history={hashHistory}>
-          <Route path="/" component={Menu} content={this.props.content}>
-            <IndexRoute component={Content} jsx={this.props.content.content[this.props.content.links[0]].content} />
+        <Router onUpdate={ () => elevator.elevate() } history={hashHistory}>
+          <Route component={Menu} content={this.props.content}>
+            <Route path="/" component={Content} jsx={this.props.content.content[this.props.content.links[0]].content} />
             {
               _.map(links, (target) => {
                 return (<Route path={target} component={Content} key={target} jsx={this.props.content.content[target].content} />);
