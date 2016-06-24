@@ -6,6 +6,7 @@ import { hashHistory } from 'react-router';
 import { StickyContainer, Sticky } from 'react-sticky';
 import { Breadcrumb } from '30-components/basic/breadcrumb/breadcrumb.jsx';
 import { BackToTop } from '30-components/basic/back-to-top/back-to-top.jsx';
+const Elevator = require('elevator.js');
 
 const util = require('util.jsx');
 
@@ -97,9 +98,13 @@ let MultiPage = React.createClass({
     let content;
 
     if (util.canUseDOM()) {
+      let elevator = new Elevator({
+        duration: 500
+      });
+
       let links = _.flattenDeep(this.props.content.links);
       content = (
-        <Router history={hashHistory}>
+        <Router onUpdate={ () => elevator.elevate() } history={hashHistory}>
           <Route path="/" component={Menu} content={this.props.content}>
             <IndexRoute component={Content} jsx={this.props.content.content[this.props.content.links[0]].content} />
             {
