@@ -45,6 +45,6 @@ module.exports = {
   "metadata": {
     "source": "Urban Institute",
     "notes": "Lorem Ipsum",
-    "data": "Source Link Goes Here"
+    "data": "<a href='http://www.google.com'>Source Link Goes Here</a>"
   }
 }
