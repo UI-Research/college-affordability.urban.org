@@ -20,7 +20,7 @@ export const Breadcrumb = React.createClass({
   render: function() {
     return (
       <div className="breadcrumb">
-        <a href="/">HOME</a> / <a href="#">{this.props.section}</a> / {this.props.title}
+        <a href="/">Home</a> / <a href="#">{this.props.section}</a> / {this.props.title}
       </div>
     );
   }

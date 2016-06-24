@@ -20,7 +20,9 @@ const Box = React.createClass({
     // Create unique ID for element.
     this.id = 'box-' + util.uniqueID();
     this.setState({
+      id: this.id,
       expanded: true,
+      trigger: false,
       showToggle: true
     });
   },
@@ -36,6 +38,26 @@ const Box = React.createClass({
       // Toggle the state to be collapsed.
       this._toggleBox();
     }
+  },
+  componentWillReceiveProps: function () {
+    if (this.state.trigger) {
+      this.state.expanded = false;
+      this.state.trigger = false;
+    }
+  },
+  _handleClick: function (e) {
+    e.preventDefault();
+    this._toggleBox();
+  },
+  // This is its own function so we can invoke with a dom event.
+  _toggleBox() {
+    let box = document.getElementById(this.id);
+
+    this.setState({
+      trigger: true,
+      expanded: !this.state.expanded
+    });
+    this.state.trigger = true;
   },
   render: function() {
     let anchor = '';
@@ -61,17 +83,6 @@ const Box = React.createClass({
         {readMore}
       </div>
     );
-  },
-  _handleClick: function (e) {
-    e.preventDefault();
-    this._toggleBox();
-  },
-  // This is its own function so we can invoke with a dom event.
-  _toggleBox() {
-    let box = document.getElementById(this.id);
-    this.setState({
-      expanded: !this.state.expanded
-    });
   }
 });
 

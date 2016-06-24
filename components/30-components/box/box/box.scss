@@ -41,7 +41,7 @@
   &.expanded {
     .inner {
       max-height: 10000px;
-      transition: max-height 1.25s ease-in;
+      transition: max-height 5s ease-in;
     }
   }
   &.collapsed {
