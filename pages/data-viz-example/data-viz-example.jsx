@@ -3,7 +3,7 @@
 const React = require('react');
 const Template = require('20-templates/default/default.jsx');
 const Text = require('30-components/basic/text/text.jsx'),
-      BarGraph = require('30-components/graphs/bar/bar.jsx'),
+      Graph = require('30-components/graphs/graph/graph.jsx'),
       Box = require('30-components/box/box/box.jsx'),
       Factoid = require('30-components/box/factoid/factoid.jsx'),
       Featured = require('30-components/box/featured/featured.jsx'),
@@ -103,33 +103,13 @@ let specifications = {
           </CaptionTop>
 
           <div className="c-text__viz">
-            <BarGraph title="" file={require('./sample.json')} />
+            <Graph title="" file={require('./sample.js')} />
           </div>
 
-          <CaptionBottom>
-            <Notes>
-
-              <Note title='Sources'>
-                  Leverage agile frameworks to provide a robust synopsis for high level overviews.
-              </Note>
-
-              <Note title='Notes'>
-                  Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the
-                  holistic world view of disruptive innovation via workplace diversity and empowerment.
-              </Note>
-
-              <Note title='Data'>
-                  <a href="#">Source Link Goes Here</a>
-              </Note>
-
-            </Notes>
-
-            <Actions>
-              <ActionButton title='Save Image' href='#'/>
-              <ActionButton title='Download data (csv)' href='#'/>
-            </Actions>
-
-          </CaptionBottom>
+          <Actions>
+            <ActionButton title='Save Image' href='#'/>
+            <ActionButton title='Download data (csv)' href='#'/>
+          </Actions>
 
           <h5>Related</h5>
           <p><a href="#">Chart: Degree-granting institutions by sector and degree-type in fall 2014</a></p>
