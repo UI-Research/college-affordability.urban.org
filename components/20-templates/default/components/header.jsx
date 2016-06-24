@@ -31,16 +31,16 @@ const Header = React.createClass({
                   <a href="#">What is College</a>
                 </li>
                 <li className="has-submenu">
-                  <a href="#">Producing Education</a>
+                  <a href="/producing-education">Producing Education</a>
                   <ul className="nav-primary__second-level">
                     <li>
-                      <a href="#">Subsidies</a>
+                      <a href="/producing-education/#/subsidies">Subsidies</a>
                     </li>
                     <li>
-                      <a href="#">Appropriations</a>
+                      <a href="/producing-education/#/appropriations">Appropriations</a>
                     </li>
                     <li>
-                      <a href="#">Endowments</a>
+                      <a href="/producing-education/#/endowments">Endowments</a>
                     </li>
                   </ul>
                 </li>

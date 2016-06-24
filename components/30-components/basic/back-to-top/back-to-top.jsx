@@ -8,7 +8,7 @@ if (util.canUseDOM()) {
   window.onload = function() {
     let elevator = new Elevator({
       element: document.querySelector('.elevator'),
-      duration: 500 // milliseconds
+      duration: 2000 // milliseconds
     });
   }
 }
