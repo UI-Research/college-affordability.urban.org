@@ -5,6 +5,7 @@ import { Router, Route, IndexRoute, Link } from 'react-router';
 import { hashHistory } from 'react-router';
 import { StickyContainer, Sticky } from 'react-sticky';
 import { Breadcrumb } from '30-components/basic/breadcrumb/breadcrumb.jsx';
+import { BackToTop } from '30-components/basic/back-to-top/back-to-top.jsx';
 
 const util = require('util.jsx');
 
@@ -77,6 +78,7 @@ class Content extends React.Component {
     return (
       <div>
         {this.props.route.jsx}
+        <BackToTop />
       </div>
     );
   }
