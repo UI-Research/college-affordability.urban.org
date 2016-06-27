@@ -2,9 +2,7 @@
 
 const React = require('react');
 const Template = require('20-templates/default/default.jsx');
-const Text = require('30-components/basic/text/text.jsx'),
-      BarGraph = require('30-components/graphs/bar/bar.jsx'),
-      LineGraph = require('30-components/graphs/line/line.jsx'),
+const Graph = require('30-components/graphs/graph/graph.jsx'),
       MultiPage = require('30-components/multipage/multipage.jsx');
 
 const util = require('util.jsx');
@@ -46,7 +44,7 @@ let multipage = {
       content: (
         <div>
           <img src='/img/PSVFcxr.jpg' />
-          <BarGraph title="two" file={require('./sample.js')} />
+          <Graph title="two" file={require('./sample.js')} />
         </div>
       )
     },
@@ -55,7 +53,7 @@ let multipage = {
       content: (
         <div>
           <img src='/img/MPxXjTj.jpg' />
-          <BarGraph title="three" file={require('./sample.js')} />
+          <Graph title="three" file={require('./sample.js')} />
         </div>
       )
     },
@@ -64,7 +62,7 @@ let multipage = {
       content: (
         <div>
           <img src='/img/EYUcKub.jpg' />
-          <BarGraph title="seven" file={require('./sample.js')} />
+          <Graph title="seven" file={require('./sample.js')} />
         </div>
       )
     },
@@ -73,7 +71,7 @@ let multipage = {
       content: (
         <div>
           <img src='/img/PSVFcxr.jpg' />
-          <BarGraph title="eight" file={require('./sample.js')} />
+          <Graph title="eight" file={require('./sample.js')} />
         </div>
       )
     },
@@ -81,7 +79,7 @@ let multipage = {
       title: 'TRES',
       content: (
         <div>
-          <LineGraph title="My Line Chart" file={require('./sample.js')} />
+          <Graph title="My Line Chart" file={require('./sample.js')} />
           <i className="fa fa-camera-retro"></i>
         </div>
       )
@@ -90,11 +88,7 @@ let multipage = {
       title: 'QUATRO',
       content: (
         <div>
-          <Text title="General Text Box">
-            <p>Example of a text box?</p>
-            <a href="http://www.google.com">This is a link</a>
-          </Text>
-          <BarGraph title="one" anchor_name="bar_one" file={require('./sample.js')} />
+          <Graph title="one" anchor_name="bar_one" file={require('./sample.js')} />
         </div>
       )
     },
@@ -103,7 +97,7 @@ let multipage = {
       content: (
         <div>
           <img src='/img/MPxXjTj.jpg' />
-          <BarGraph title="My Bar Chart" file={require('./sample.js')} />
+          <Graph title="My Bar Chart" file={require('./sample.js')} />
         </div>
       )
     },
@@ -112,7 +106,7 @@ let multipage = {
       content: (
         <div>
           <img src='/img/4HLZjYB.jpg' />
-          <BarGraph title="five" anchor_name="five" file={require('./sample.js')} />
+          <Graph title="five" anchor_name="five" file={require('./sample.js')} />
         </div>
       )
     },
@@ -120,8 +114,8 @@ let multipage = {
       title: 'SIETE',
       content: (
         <div>
-          <LineGraph title="four" anchor_name="four_four" file={require('./sample.js')} />
-          <BarGraph title="six" anchor_name="six" file={require('./sample.js')} />
+          <Graph title="four" anchor_name="four_four" file={require('./sample.js')} />
+          <Graph title="six" anchor_name="six" file={require('./sample.js')} />
         </div>
       )
     },

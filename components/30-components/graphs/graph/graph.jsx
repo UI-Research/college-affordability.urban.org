@@ -99,7 +99,7 @@ const BaseGraph = React.createClass({
             anchor: 'top-left',
             x: 0
           }
-        }
+        };
       }
 
       // Hide tooltip.
@@ -119,10 +119,10 @@ const BaseGraph = React.createClass({
         ]
       };
 
-      let asdf = c3.generate(data);
+      c3.generate(data);
 
       let legend = d3.select(`#${this.id} .c3-legend-background`)[0][0].parentNode;
-      let pos = ((d3.select('svg').attr('width') - d3.select(".c3-legend-background rect").attr("width")) / 2);
+      let pos = ((d3.select('svg').attr('width') - d3.select('.c3-legend-background rect').attr('width')) / 2);
       d3.select(legend).attr('transform' , `translate(${pos}, 0)`);
     }
   },

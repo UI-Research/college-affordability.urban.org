@@ -1,12 +1,12 @@
 'use strict';
 
 const React = require('react'),
-  _ = require('lodash');
+      _ = require('lodash');
 
 const HTML = require('10-html/html.jsx');
 const Header = require('./components/header.jsx');
 const Footer = require('./components/footer.jsx');
-import { StickyContainer, Sticky } from 'react-sticky';
+import { StickyContainer } from 'react-sticky';
 
 const util = require('util.jsx');
 

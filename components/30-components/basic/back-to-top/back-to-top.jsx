@@ -5,11 +5,19 @@ const util = require('util.jsx');
 
 if (util.canUseDOM()) {
   require('./back-to-top.scss');
-  window.onload = function() {
+  
+  let backToTop = function () {
     let elevator = new Elevator({
       element: document.querySelector('.elevator'),
       duration: 2000 // milliseconds
     });
+  };
+  
+  if (window.addEventListener) {
+    window.addEventListener('load', backToTop);
+  }
+  else {
+    window.attachEvent('onload', backToTop);
   }
 }
 

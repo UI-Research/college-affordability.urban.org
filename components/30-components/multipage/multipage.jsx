@@ -1,11 +1,11 @@
 'use strict';
 const _ = require('lodash');
 import React, { Component } from 'react';
-import { Router, Route, IndexRoute, Link } from 'react-router';
+import { Router, Route, Link } from 'react-router';
 import { hashHistory } from 'react-router';
-import { StickyContainer, Sticky } from 'react-sticky';
+import { Sticky } from 'react-sticky';
 import { Breadcrumb } from '30-components/basic/breadcrumb/breadcrumb.jsx';
-import { BackToTop } from '30-components/basic/back-to-top/back-to-top.jsx';
+
 const Elevator = require('elevator.js');
 
 const util = require('util.jsx');
@@ -32,7 +32,7 @@ class Menu extends Component {
           secondaryMenu = (
             <ul className="nav-anchor__second-level">
               {
-                _.map(links[index + 1], (target, index) => {
+                _.map(links[index + 1], (target) => {
                   return (
                     <li><Link to={target} activeClassName="active" key={target}>{this.props.route.content.content[target].title}</Link></li>
                   );

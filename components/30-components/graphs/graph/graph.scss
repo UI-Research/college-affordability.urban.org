@@ -1,6 +1,52 @@
 @import '_global.scss';
 
-.c-text__viz-notes div p {
-  color: #777;
-  display: inline;
+.c-text__caption {
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.c-text__caption--top {
+  margin-bottom: $space-single;
+  line-height: 1.2;
+  color: black;
+}
+
+.c-text__caption--bottom {
+  margin-top: $space-single;
+  margin-bottom: $space-single;
+
+  border-bottom: 1px solid $color--gray-4;
+}
+
+.c-text__viz-notes {
+  font-size: 12px;
+  color: black;
+  line-height: 1.2;
+  background: url('./img/urban-line.svg') no-repeat bottom right;
+  padding-bottom: 1rem;
+
+  @include breakpoint($bp--large) {
+    padding-bottom: 0;
+    padding-right: 100px;
+  }
+
+
+  div p {
+    color: #777;
+    display: inline;
+    margin-bottom: 0.1rem;
+  }
+}
+
+.c-bar {
+  margin-bottom: $space-half;
+}
+
+.c-bar__line {
+  font-size: 10px;
+  background-color: $color--blue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
 }

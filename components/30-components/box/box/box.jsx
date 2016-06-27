@@ -2,7 +2,6 @@
 const React = require('react');
 const util = require('util.jsx');
 
-const _ = require('lodash');
 if (util.canUseDOM()) {
   require('./box.scss');
 }
@@ -31,7 +30,7 @@ const Box = React.createClass({
     let box = document.getElementById(this.id);
     let children = box.getElementsByClassName('inner');
     if (children.length) {
-      let showToggle = children[0].offsetHeight > 100;
+      let showToggle = children[0].offsetHeight > 150;
       this.setState({
         showToggle: showToggle
       });
@@ -51,8 +50,6 @@ const Box = React.createClass({
   },
   // This is its own function so we can invoke with a dom event.
   _toggleBox() {
-    let box = document.getElementById(this.id);
-
     this.setState({
       trigger: true,
       expanded: !this.state.expanded
