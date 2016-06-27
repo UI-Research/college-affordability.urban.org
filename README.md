@@ -28,6 +28,19 @@ Pro-tips
 
 Refer to the EDITING.md in this repository for guidelines.
 
+## Deploying to AWS ##
+*Note: We currently have a staging environment.  This will get updated again once we get the other environments up and running.*
+
+Deploying is easy, however you do need to install the aws-cli tool to perform operations on the server including uploading and clearing out buckets.  If this is your first time deploying, install aws-cli via the instructions here: https://aws.amazon.com/cli/
+
+Once you have that all set, you need active credentials to hook up to a working S3 bucket.  If that's set up (if not, contact your system administrator), simply instantiate the credentials within your system accounts' configuration (on a Mac, it's located in ~/.aws).
+
+If all is good, you should be able to do deploys using the following command:
+
+```
+gulp deploy
+```
+
 ## Who do I talk to? ##
 
 * Peter Cho (pcho@phase2technology.com)
