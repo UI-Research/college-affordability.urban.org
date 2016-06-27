@@ -14,12 +14,10 @@ This repository encompasses the Urban College Affordability Static Site Generati
 
 This is a static site generator.  Webpack handles the compilation and bundling of static assets for use in production.  You can reference gulpfile.js for the list of commands you can use locally, but to compile all your assets (and your new changes) run the following:
 ```
-#!gulp
 gulp
 ```
 or if you'd like to incorporate a watch into your development workflow...
 ```
-#!gulp
 gulp watch
 ```
 
