@@ -91,6 +91,11 @@ const BaseGraph = React.createClass({
       // END Custom options
       //
 
+      // Detect any possible instances of the key 'format' and convert it into a proper
+      if (data.data.labels.format) {
+        console.log(data.data.labels.format);
+      }
+
       // Relocate legend to top of the graph.
       if (!data.legend) {
         data.legend = {
