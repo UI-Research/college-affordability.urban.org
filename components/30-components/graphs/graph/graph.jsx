@@ -1,6 +1,8 @@
 'use strict';
 
 const React = require('react'),
+         d3 = require('d3'),
+          _ = require('lodash'),
       LazyLoad = require('30-components/basic/lazyload/lazyload.jsx');
 const util = require('util.jsx');
 
@@ -92,20 +94,23 @@ const BaseGraph = React.createClass({
       //
 
       // Detect any possible instances of the key 'format' and convert it into the specified format.
-      if (data.data.labels.format) {
+      if (data.data && data.data.labels && data.data.labels.format) {
         _.map(data.data.labels.format, (entry, index) => {
-          data.data.labels.format[index] = d3.format(entry);
+          data.data.labels.format = d3.format(entry);
         });
       }
-      if (data.axis.x.tick.format) {
-        data.axis.x.tick.format = d3.format(data.axis.x.tick.format);
+      if (data.axis) {
+        if (data.axis.x && data.axis.x.tick && data.axis.x.tick.format) {
+          data.axis.x.tick.format = d3.format(data.axis.x.tick.format);
+        }
+        if (data.axis.y && data.axis.y.tick && data.axis.y.tick.format) {
+          data.axis.y.tick.format = d3.format(data.axis.y.tick.format);
+        }
+        if (data.axis.y2 && data.axis.y2.tick && data.axis.y2.tick.format) {
+          data.axis.y2.tick.format = d3.format(data.axis.y2.tick.format);
+        }
       }
-      if (data.axis.y.tick.format) {
-        data.axis.y.tick.format = d3.format(data.axis.y.tick.format);
-      }
-      if (data.axis.y2.tick.format) {
-        data.axis.y2.tick.format = d3.format(data.axis.y2.tick.format);
-      }
+
 
       // Relocate legend to top of the graph.
       if (!data.legend) {

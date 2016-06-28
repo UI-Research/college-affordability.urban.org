@@ -61,16 +61,16 @@ let multipage = {
           <p><strong>Public</strong> research universities spend almost 50 percent more per student per year than public master’s universities and more than twice as much as public two-year colleges. These gaps have grown over time.</p>
           <p>Because the funds states provide to public institutions have not kept up with growing enrollments, students received smaller subsidies in 2013-14 than in 2005-06. This means <strong>that tuition and fees cover an increasing portion of educational expenses</strong>, as these prices have risen much more rapidly than total institutional expenditures.</p>
 
-          <Graph title="Education and related spending per student at public institution" file={require('./graph.json')} />
+          <Graph title="Education and related spending per student at public institution" file={require('./json/single_bar.json')} />
 
           <p>The pattern is quite different at <strong>private</strong> nonprofit colleges and universities, which are not dependent on state funding. Average per-student spending was two and a half times as high at private research universities as at public research universities, although the gap between private and public master’s universities was much smaller. Additionally, at private institutions, <strong>the share of spending covered by tuition revenues has remained constant</strong>.</p>
 
-          <Graph title="Education and related spending per student at private nonprofit institution" file={require('./sample2.js')} />
+          <Graph title="Education and related spending per student at private nonprofit institution" file={require('./json/grouped_bar.json')} />
 
           <p>Average subsidies in each sector <strong>conceal wide variation across institutions, with a small number of colleges and universities in each sector providing a high percentage of total subsidies.</strong></p>
           <p>To examine within-sector variation, we broke students in the different sectors into deciles by the size of the subsidies their institutions gave them. This reveals that the institutions with the biggest subsidies skew the averages. <strong>The differences in per-student subsidy across types of institutions are less extreme when considering the middle 60 percent of undergraduate students.</strong></p>
 
-          <Graph title="Average subsidy per student within student decile" file={require('./sample.js')} />
+          <Graph title="Average subsidy per student within student decile" file={require('./json/stacked_bar.json')} />
 
           <Box>
             <h4>Q: Why do students in the top subsidy decile at research universities receive so much more?</h4>
