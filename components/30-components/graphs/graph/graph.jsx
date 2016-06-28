@@ -23,11 +23,6 @@ const BaseGraph = React.createClass({
   componentWillMount() {
     // Create unique ID for element.
     this.id = 'graph' + util.uniqueID();
-    
-    // Force specify type of graph.
-    if (!this.props.file.data.type) {
-      this.props.file.data.type = this.props.type;
-    }
   },
   componentDidMount: function() {
     if (util.canUseDOM) {
