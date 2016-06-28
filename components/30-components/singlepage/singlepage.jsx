@@ -52,7 +52,6 @@ let SinglePage = React.createClass({
           verticalPadding: 60, // pixels
           duration: 500 // milliseconds
         }).elevate();
-        console.log('done');
       }
       // TODO: This is kind of cheesy...I know...
       setTimeout(elevate, 500);
