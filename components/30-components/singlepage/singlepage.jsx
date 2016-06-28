@@ -94,7 +94,20 @@ let SinglePage = React.createClass({
               breadcrumbTitle : element.props.children
             });
           }
-          return (<li key={elementID}><a href={`#/${elementID}`} onClick={elevateToSection}>{element.props.children}</a></li>);
+          if (element.type === 'h1') {
+            return (<li key={elementID}><a href={`#/${elementID}`} onClick={elevateToSection}>{element.props.children}</a></li>);
+          }
+          else if (element.type === 'h2') {
+            return (
+              <ul className="nav-anchor__second-level">
+                <li key={elementID}><a href={`#/${elementID}`} onClick={elevateToSection}>{element.props.children}</a></li>
+              </ul>
+            );
+          }
+          else {
+            return false;
+          }
+
         }
         return false;
       });
