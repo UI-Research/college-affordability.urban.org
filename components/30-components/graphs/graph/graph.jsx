@@ -147,12 +147,17 @@ const BaseGraph = React.createClass({
       d3.select(legend).attr('transform' , `translate(${pos}, 0)`);
     }
   },
-  raw: function(string) {
+  attribution: function(string) {
     if (this.props.file.metadata && this.props.file.metadata[string]) {
-      return { __html: this.props.file.metadata[string] };
+      return (
+        <div>
+          <strong className="c-text__viz-notes__title">{_.capitalize(string)}: </strong>
+          <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={{ __html: this.props.file.metadata[string] }} />
+        </div>
+      );
     }
     else {
-      return { __html: '' };
+      return false;
     }
   },
   render: function() {
@@ -165,18 +170,9 @@ const BaseGraph = React.createClass({
         <div id={this.id} className={container_class}></div>
         <div className="c-text__caption c-text__caption--bottom">
           <div className="c-text__viz-notes">
-            <div>
-              <strong className="c-text__viz-notes__title">Source: </strong>
-              <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw('source')} />
-            </div>
-            <div>
-              <strong className="c-text__viz-notes__title">Notes: </strong>
-              <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw('notes')} />
-            </div>
-            <div>
-              <strong className="c-text__viz-notes__title">Data: </strong>
-              <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw('data')} />
-            </div>
+            {this.attribution('source')}
+            {this.attribution('notes')}
+            {this.attribution('data')}
           </div>
         </div>
       </div>
