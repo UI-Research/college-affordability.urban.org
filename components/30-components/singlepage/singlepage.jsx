@@ -31,7 +31,7 @@ let SinglePage = React.createClass({
     };
   },
   componentDidMount: function() {
-    if (util.canUseDOM()) {
+    if (util.canUseDOM() && window.location.hash) {
       let initialID = _.replace(window.location.hash, '/', '');
 
       // Scroll to the specific point on the page based on URL hash parameters.
