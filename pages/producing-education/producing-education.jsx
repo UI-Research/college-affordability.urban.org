@@ -19,6 +19,8 @@ let multipage = {
     ],
     'appropriations',
     [
+      'appropriations_changes',
+      'appropriations_local_support',
       'appropriations_variations'
     ],
     'endowments',
@@ -48,7 +50,7 @@ let multipage = {
       title: 'Subsidies',
       content: (
         <div>
-          <h2>Institutional Subsidies</h2>
+          <h2>Subsidies</h2>
           <p>An institutional subsidy is the share of the total cost that is covered by the institution rather than by the students’ tuition. This share varies significantly both across sectors and within sectors. Though a student likely doesn’t know the size of the subsidy he’s receiving, it can be an important factor in determining the cost of his education.</p>
        </div>
       )
@@ -97,14 +99,6 @@ let multipage = {
       content: (
         <div>
           <h2>Appropriations</h2>
-        </div>
-      )
-    },
-    'appropriations_state_and_local': {
-      title: 'State and local appropriations',
-      content: (
-        <div>
-          <h2>State and local appropriations</h2>
           <p>At public colleges and universities, subsidies come in the form of state and local government appropriations. Over time, state funds have covered a smaller and smaller the portion of the cost of education at public colleges and universities. As state taxpayers foot less of the bill, students and families see tuition and fees rising.</p>
           <p>State tax revenues are the primary source of state and local funding for higher education institutions, but community colleges are also supported by local taxes. State and local appropriations are dedicated primarily to public colleges and universities, but some of the funds go to student aid, some benefit students in private colleges, and some are restricted funds for special purposes like research, agriculture, or medical education.</p>
           <Box>
