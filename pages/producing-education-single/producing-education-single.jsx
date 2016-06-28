@@ -68,7 +68,7 @@ let singlepage = (
         <li>Most state funding goes directly to public institutions, but some goes to higher education coordinating boards or to other state agencies that allocate funds to institutions, including, in some states, private colleges and universities.</li>
       </ul>
     </Box>
-    <h2>State and local appropriations</h2>
+    <h2 menu="false">State and local appropriations</h2>
     <p>At public colleges and universities, subsidies come in the form of state and local government appropriations. Over time, state funds have covered a smaller and smaller the portion of the cost of education at public colleges and universities. As state taxpayers foot less of the bill, students and families see tuition and fees rising.</p>
     <p>State tax revenues are the primary source of state and local funding for higher education institutions, but community colleges are also supported by local taxes. State and local appropriations are dedicated primarily to public colleges and universities, but some of the funds go to student aid, some benefit students in private colleges, and some are restricted funds for special purposes like research, agriculture, or medical education.</p>
 
@@ -123,7 +123,7 @@ let singlepage = (
 
       <Graph title="Endowment income per undergraduate student after doubling and tripling the cost of graduate students relative to undergraduate students, 2014" file={require('./sample.js')} />
     </Box>
-    <h2>Endowments</h2>
+    <h2 menu="false">Endowments</h2>
     <p>Many universities, primarily those in the private sector, use endowment funds as a means of subsidizing the cost of an education. Endowments come from donations to colleges and universities that are designated for investment, rather than immediate expenditure.</p>
     <p>Maintaining the principal of the endowment over time—as required by law for true endowments funds—means ensuring that the value of the funds keeps up with inflation. Additional income can be used either for expenditures or for reinvestment. Most institutions spend four to five percent of the endowment value each year. (The analyses below rely on the approximation that institutions receive 4.5% of their endowment as income each year.) Because of donor specifications, however, a substantial share of endowment funds are restricted-use, meaning they can only be spent for specifically prescribed purposes.</p>
     <p>Both public and private institutions hold endowments, but the vast majority of these funds are in the private sector. In both sectors, endowment assets are highly concentrated among a small number of institutions. Eleven percent of institutions held 74 percent of endowment assets in 2014.</p>

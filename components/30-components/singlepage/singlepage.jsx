@@ -31,16 +31,17 @@ let SinglePage = React.createClass({
     };
   },
   componentDidMount: function() {
-    // Determine what the state of the breadcrumb should be.
     if (util.canUseDOM()) {
       let initialID = _.replace(window.location.hash, '/', '');
 
+      // Scroll to the specific point on the page based on URL hash parameters.
       new Elevator({
         targetElement: document.querySelector(`${initialID}`),
         verticalPadding: 60, // pixels
         duration: 1000 // milliseconds
       }).elevate();
 
+      // Determine what the state of the breadcrumb should be.
       let breadcrumbTitle;
       _.map(this.state.menu, function(menuItem) {
         if (menuItem.props.children.props.href === window.location.hash) {
@@ -50,7 +51,12 @@ let SinglePage = React.createClass({
       this.setState({
         breadcrumbTitle: breadcrumbTitle
       });
+
+      window.addEventListener('scroll', this.detectPointOnPage);
     }
+  },
+  detectPointOnPage: function() {
+    console.log('asdf');
   },
   render() {
     let content;
@@ -61,7 +67,7 @@ let SinglePage = React.createClass({
         // If the DOM elements are either h1 or h2 without the menu=false flag.
         // This is with the assumption the elements are at the base level of the
         // react component.
-        if (_.indexOf(['h1', 'h2'], element.type) >= 0 && element.menu !== false) {
+        if (_.indexOf(['h1', 'h2'], element.type) >= 0 && element.props.menu !== "false") {
           // For record-keeping purposes.
           if (element.type === 'h1') {
             h1.push(util.machineName(element.props.children));
