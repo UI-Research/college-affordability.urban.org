@@ -43,7 +43,6 @@ let SinglePage = React.createClass({
 
       let breadcrumbTitle;
       _.map(this.state.menu, function(menuItem) {
-        console.log(menuItem.props.children.props);
         if (menuItem.props.children.props.href === window.location.hash) {
           breadcrumbTitle = menuItem.props.children.props.children;
         }
@@ -89,7 +88,7 @@ let SinglePage = React.createClass({
               breadcrumbTitle : element.props.children
             });
           }
-          return (<li><a href={`#/${elementID}`} onClick={elevateToSection}>{element.props.children}</a></li>);
+          return (<li key={elementID}><a href={`#/${elementID}`} onClick={elevateToSection}>{element.props.children}</a></li>);
         }
         return false;
       });
