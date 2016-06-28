@@ -7,7 +7,7 @@
     "type": "bar",
     "labels": {
       "format": {
-        "First": "$"
+        "First": "$,.2f"
       }
     }
   },
@@ -19,7 +19,7 @@
     },
     "y" : {
       "tick": {
-        "format": "$"
+        "format": "$,.2f"
       }
     }
   },

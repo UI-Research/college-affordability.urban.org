@@ -93,8 +93,17 @@ const BaseGraph = React.createClass({
 
       // Detect any possible instances of the key 'format' and convert it into a proper
       if (data.data.labels.format) {
-        console.log(data.data.labels.format);
+        _.map(data.data.labels.format, (entry, index) => {
+          data.data.labels.format[index] = d3.format(entry);
+        });
       }
+      if (data.axis.x.tick.format) {
+        data.axis.x.tick.format = d3.format(data.axis.x.tick.format);
+      }
+      if (data.axis.y.tick.format) {
+        data.axis.y.tick.format = d3.format(data.axis.y.tick.format);
+      }
+      console.log(data);
 
       // Relocate legend to top of the graph.
       if (!data.legend) {
