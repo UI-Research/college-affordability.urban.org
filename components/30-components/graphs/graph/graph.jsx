@@ -91,7 +91,7 @@ const BaseGraph = React.createClass({
       // END Custom options
       //
 
-      // Detect any possible instances of the key 'format' and convert it into a proper
+      // Detect any possible instances of the key 'format' and convert it into the specified format.
       if (data.data.labels.format) {
         _.map(data.data.labels.format, (entry, index) => {
           data.data.labels.format[index] = d3.format(entry);
