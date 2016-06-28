@@ -7,7 +7,7 @@ if (util.canUseDOM()) {
   require('./back-to-top.scss');
   
   let backToTop = function () {
-    let elevator = new Elevator({
+    new Elevator({
       element: document.querySelector('.elevator'),
       duration: 2000 // milliseconds
     });
