@@ -91,7 +91,7 @@ let SinglePage = React.createClass({
           let elevateToSection = () => {
             new Elevator({
               targetElement: document.querySelector(`#${elementID}`),
-              verticalPadding: 60, // pixels
+              verticalPadding: 55, // pixels
               duration: 1000 // milliseconds
             }).elevate();
 
