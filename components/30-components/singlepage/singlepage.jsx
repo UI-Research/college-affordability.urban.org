@@ -36,7 +36,8 @@ let SinglePage = React.createClass({
           if (element.type === 'h1') {
             h1.push(util.machineName(element.props.children));
           }
-          let elementID = (element.type === 'h1') ? _.last(h1) : _.last(h1) + '-' + util.machineName(element.props.children);
+          let lastH1 = _.last(h1);
+          let elementID = (element.type === 'h1') ? lastH1 : lastH1 + '-' + util.machineName(element.props.children);
           // Modify the react component with additional metadata
           // for presentation on the page.
           let mocked = React.cloneElement(element, {
