@@ -56,7 +56,7 @@ let SinglePage = React.createClass({
     }
   },
   detectPointOnPage: function() {
-    console.log('asdf');
+    //console.log('asdf');
   },
   render() {
     let content;
