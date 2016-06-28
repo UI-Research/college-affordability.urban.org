@@ -24,13 +24,20 @@ let SinglePage = React.createClass({
       content: {}
     };
   },
+  getInitialState : function() {
+    return {
+      breadcrumbTitle : ''
+    };
+  },
   render() {
     let content;
     if (util.canUseDOM()) {
-      let breadcrumbTitle = 'Overview';
       let h1 = [];
 
       let menu = _.map(this.props.content.props.children, (element, index) => {
+        // If the DOM elements are either h1 or h2 without the menu=false flag.
+        // This is with the assumption the elements are at the base level of the
+        // react component.
         if (_.indexOf(['h1', 'h2'], element.type) >= 0 && element.menu !== false) {
           // For record-keeping purposes.
           if (element.type === 'h1') {
@@ -53,16 +60,19 @@ let SinglePage = React.createClass({
               verticalPadding: 60, // pixels
               duration: 1000 // milliseconds
             }).elevate();
+
+            this.setState({
+              breadcrumbTitle : element.props.children
+            });
           }
           return (<li><a href={`#/${elementID}`} onClick={elevateToSection}>{element.props.children}</a></li>);
-
         }
       });
 
       return (
         <div className="grid">
           <Sticky topOffset={-10} bottomOffset={1000}>
-            <Breadcrumb title={breadcrumbTitle} />
+            <Breadcrumb title={this.state.breadcrumbTitle} />
             <div className="col col--1-4">
               <div className="nav-anchor">
                 <ul className="nav-anchor__top-level">
