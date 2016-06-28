@@ -99,8 +99,8 @@ let SinglePage = React.createClass({
           }
           else if (element.type === 'h2') {
             return (
-              <ul className="nav-anchor__second-level">
-                <li key={elementID}><a href={`#/${elementID}`} onClick={elevateToSection}>{element.props.children}</a></li>
+              <ul key={elementID} className="nav-anchor__second-level">
+                <li><a href={`#/${elementID}`} onClick={elevateToSection}>{element.props.children}</a></li>
               </ul>
             );
           }
