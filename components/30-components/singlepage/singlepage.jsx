@@ -72,13 +72,13 @@ let SinglePage = React.createClass({
         // If the DOM elements are either h1 or h2 without the menu=false flag.
         // This is with the assumption the elements are at the base level of the
         // react component.
-        if (_.indexOf(['h1', 'h2'], element.type) >= 0 && element.props.menu !== "false") {
+        if (_.indexOf(['h2', 'h3'], element.type) >= 0 && element.props.menu !== "false") {
           // For record-keeping purposes.
-          if (element.type === 'h1') {
+          if (element.type === 'h2') {
             h1.push(util.machineName(element.props.children));
           }
           let lastH1 = _.last(h1);
-          let elementID = (element.type === 'h1') ? lastH1 : lastH1 + '-' + util.machineName(element.props.children);
+          let elementID = (element.type === 'h2') ? lastH1 : lastH1 + '-' + util.machineName(element.props.children);
           // Modify the react component with additional metadata
           // for presentation on the page.
           let mocked = React.cloneElement(element, {
@@ -99,10 +99,10 @@ let SinglePage = React.createClass({
               breadcrumbTitle : element.props.children
             });
           }
-          if (element.type === 'h1') {
+          if (element.type === 'h2') {
             return (<li key={elementID}><a href={`#/${elementID}`} onClick={elevateToSection}>{element.props.children}</a></li>);
           }
-          else if (element.type === 'h2') {
+          else if (element.type === 'h3') {
             return (
               <ul key={elementID} className="nav-anchor__second-level">
                 <li><a href={`#/${elementID}`} onClick={elevateToSection}>{element.props.children}</a></li>
