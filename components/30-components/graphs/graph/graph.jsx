@@ -11,11 +11,10 @@ if (util.canUseDOM()) {
 // Keep graphing piece separate - need its own DOM interaction events.
 const BaseGraph = React.createClass({
   propTypes: {
-    title: React.PropTypes.string
+    type: React.PropTypes.string
   },
   getDefaultProps: function() {
     return {
-      title: '',
       type: 'line'
     };
   },
@@ -32,11 +31,6 @@ const BaseGraph = React.createClass({
 
       // Identify DOM element we want to apply the graph to.
       data.bindto = '#' + this.id;
-
-      // Force specify type of graph.
-      if (!data.data.type) {
-        data.data.type = 'line';
-      }
 
       //
       // Custom options
@@ -126,6 +120,32 @@ const BaseGraph = React.createClass({
       d3.select(legend).attr('transform' , `translate(${pos}, 0)`);
     }
   },
+  render: function() {
+    // Force specify type of graph.
+    if (!this.props.file.data.type) {
+      this.props.file.data.type = this.props.type;
+    }
+    let container_class = 'c-graph__container c-' + this.props.file.data.type + '__container';
+
+    return (
+      <div id={this.id} className={container_class}></div>
+    );
+  }
+});
+
+const Graph = React.createClass({
+  propTypes: {
+    anchor_name: React.PropTypes.string,
+    title: React.PropTypes.string,
+    type: React.PropTypes.string
+  },
+  getDefaultProps: function() {
+    return {
+      anchor_name: '',
+      title: '',
+      type: 'line'
+    };
+  },
   raw: function(string) {
     if (this.props.file.metadata && this.props.file.metadata[string]) {
       return { __html: this.props.file.metadata[string] };
@@ -135,50 +155,43 @@ const BaseGraph = React.createClass({
     }
   },
   render: function() {
-    let base_class = 'c-' + this.props.type,
-        container_class = base_class + '__container';
-
+    let base_class = 'c-graph c-' + this.props.file.data.type,
+        anchor = null;
+    
+    // Force specify type of graph.
+    if (!this.props.file.data.type) {
+      this.props.file.data.type = this.props.type;
+    }
+    if (this.props.anchor_name) {
+      // Replace any spaces with _.
+      let anchor_name = util.cleanString(this.props.anchor_name);
+      anchor = <a name={anchor_name}></a>;
+    }
+    
     return (
-      <div className={base_class}>
-        <h2>{this.props.title}</h2>
-        <div id={this.id} className={container_class}></div>
-        <div className="c-text__caption c-text__caption--bottom">
-          <div className="c-text__viz-notes">
-            <div>
-              <strong className="c-text__viz-notes__title">Source: </strong>
-              <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw('source')} />
-            </div>
-            <div>
-              <strong className="c-text__viz-notes__title">Notes: </strong>
-              <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw('notes')} />
-            </div>
-            <div>
-              <strong className="c-text__viz-notes__title">Data: </strong>
-              <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw('data')} />
-            </div>
+    <div className={base_class}>
+      <h2>{this.props.title}</h2>
+      {anchor}
+      <LazyLoad height={320}>
+        <BaseGraph file={this.props.file} />
+      </LazyLoad>
+      <div className="c-text__caption c-text__caption--bottom">
+        <div className="c-text__viz-notes">
+          <div>
+            <strong className="c-text__viz-notes__title">Source: </strong>
+            <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw('source')} />
+          </div>
+          <div>
+            <strong className="c-text__viz-notes__title">Notes: </strong>
+            <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw('notes')} />
+          </div>
+          <div>
+            <strong className="c-text__viz-notes__title">Data: </strong>
+            <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw('data')} />
           </div>
         </div>
       </div>
-    );
-  }
-});
-
-const Graph = React.createClass({
-  propTypes: {
-    anchor_name: React.PropTypes.string,
-    title: React.PropTypes.string
-  },
-  getDefaultProps: function() {
-    return {
-      anchor_name: '',
-      title: ''
-    };
-  },
-  render: function() {
-    return (
-    <LazyLoad anchor_name={this.props.anchor_name}>
-      <BaseGraph title={this.props.title} file={this.props.file} />
-    </LazyLoad>
+    </div>
     );
   }
 });
