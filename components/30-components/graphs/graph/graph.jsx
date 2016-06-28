@@ -103,7 +103,9 @@ const BaseGraph = React.createClass({
       if (data.axis.y.tick.format) {
         data.axis.y.tick.format = d3.format(data.axis.y.tick.format);
       }
-      console.log(data);
+      if (data.axis.y2.tick.format) {
+        data.axis.y2.tick.format = d3.format(data.axis.y2.tick.format);
+      }
 
       // Relocate legend to top of the graph.
       if (!data.legend) {
