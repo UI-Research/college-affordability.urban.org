@@ -1,6 +1,8 @@
 'use strict';
 
 const React = require('react'),
+         d3 = require('d3'),
+          _ = require('lodash'),
       LazyLoad = require('30-components/basic/lazyload/lazyload.jsx');
 const util = require('util.jsx');
 
@@ -91,6 +93,25 @@ const BaseGraph = React.createClass({
       // END Custom options
       //
 
+      // Detect any possible instances of the key 'format' and convert it into the specified format.
+      if (data.data && data.data.labels && data.data.labels.format) {
+        _.map(data.data.labels.format, (entry, index) => {
+          data.data.labels.format = d3.format(entry);
+        });
+      }
+      if (data.axis) {
+        if (data.axis.x && data.axis.x.tick && data.axis.x.tick.format) {
+          data.axis.x.tick.format = d3.format(data.axis.x.tick.format);
+        }
+        if (data.axis.y && data.axis.y.tick && data.axis.y.tick.format) {
+          data.axis.y.tick.format = d3.format(data.axis.y.tick.format);
+        }
+        if (data.axis.y2 && data.axis.y2.tick && data.axis.y2.tick.format) {
+          data.axis.y2.tick.format = d3.format(data.axis.y2.tick.format);
+        }
+      }
+
+
       // Relocate legend to top of the graph.
       if (!data.legend) {
         data.legend = {
@@ -126,12 +147,17 @@ const BaseGraph = React.createClass({
       d3.select(legend).attr('transform' , `translate(${pos}, 0)`);
     }
   },
-  raw: function(string) {
+  attribution: function(string) {
     if (this.props.file.metadata && this.props.file.metadata[string]) {
-      return { __html: this.props.file.metadata[string] };
+      return (
+        <div>
+          <strong className="c-text__viz-notes__title">{_.capitalize(string)}: </strong>
+          <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={{ __html: this.props.file.metadata[string] }} />
+        </div>
+      );
     }
     else {
-      return { __html: '' };
+      return false;
     }
   },
   render: function() {
@@ -144,18 +170,9 @@ const BaseGraph = React.createClass({
         <div id={this.id} className={container_class}></div>
         <div className="c-text__caption c-text__caption--bottom">
           <div className="c-text__viz-notes">
-            <div>
-              <strong className="c-text__viz-notes__title">Source: </strong>
-              <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw('source')} />
-            </div>
-            <div>
-              <strong className="c-text__viz-notes__title">Notes: </strong>
-              <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw('notes')} />
-            </div>
-            <div>
-              <strong className="c-text__viz-notes__title">Data: </strong>
-              <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={this.raw('data')} />
-            </div>
+            {this.attribution('source')}
+            {this.attribution('notes')}
+            {this.attribution('data')}
           </div>
         </div>
       </div>
