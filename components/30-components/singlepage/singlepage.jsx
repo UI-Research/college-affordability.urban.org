@@ -28,14 +28,19 @@ let SinglePage = React.createClass({
     let content;
     if (util.canUseDOM()) {
       let breadcrumbTitle = 'Overview';
+      let h1 = [];
 
       let menu = _.map(this.props.content.props.children, (element, index) => {
-        if (element.type === 'h1' && element.menu !== false) {
-          let elementID = util.machineName(element.props.children);
+        if (_.indexOf(['h1', 'h2'], element.type) >= 0 && element.menu !== false) {
+          // For record-keeping purposes.
+          if (element.type === 'h1') {
+            h1.push(util.machineName(element.props.children));
+          }
+          let elementID = (element.type === 'h1') ? _.last(h1) : _.last(h1) + '-' + util.machineName(element.props.children);
           // Modify the react component with additional metadata
           // for presentation on the page.
           let mocked = React.cloneElement(element, {
-            id: elementID
+            id: `${elementID}`
           });
           this.props.content.props.children[index] = mocked;
 
@@ -49,6 +54,7 @@ let SinglePage = React.createClass({
             }).elevate();
           }
           return (<li><a href={`#/${elementID}`} onClick={elevateToSection}>{element.props.children}</a></li>);
+
         }
       });
 
