@@ -26,15 +26,39 @@ let SinglePage = React.createClass({
   },
   getInitialState : function() {
     return {
-      breadcrumbTitle : ''
+      breadcrumbTitle : '',
+      menu: ''
     };
+  },
+  componentDidMount: function() {
+    // Determine what the state of the breadcrumb should be.
+    if (util.canUseDOM()) {
+      let initialID = _.replace(window.location.hash, '/', '');
+
+      new Elevator({
+        targetElement: document.querySelector(`${initialID}`),
+        verticalPadding: 60, // pixels
+        duration: 1000 // milliseconds
+      }).elevate();
+
+      let breadcrumbTitle;
+      _.map(this.state.menu, function(menuItem) {
+        console.log(menuItem.props.children.props);
+        if (menuItem.props.children.props.href === window.location.hash) {
+          breadcrumbTitle = menuItem.props.children.props.children;
+        }
+      });
+      this.setState({
+        breadcrumbTitle: breadcrumbTitle
+      });
+    }
   },
   render() {
     let content;
     if (util.canUseDOM()) {
       let h1 = [];
 
-      let menu = _.map(this.props.content.props.children, (element, index) => {
+      this.state.menu = _.map(this.props.content.props.children, (element, index) => {
         // If the DOM elements are either h1 or h2 without the menu=false flag.
         // This is with the assumption the elements are at the base level of the
         // react component.
@@ -67,7 +91,10 @@ let SinglePage = React.createClass({
           }
           return (<li><a href={`#/${elementID}`} onClick={elevateToSection}>{element.props.children}</a></li>);
         }
+        return false;
       });
+
+      this.state.menu = _.compact(this.state.menu);
 
       return (
         <div className="grid">
@@ -76,7 +103,7 @@ let SinglePage = React.createClass({
             <div className="col col--1-4">
               <div className="nav-anchor">
                 <ul className="nav-anchor__top-level">
-                  {menu}
+                  {this.state.menu}
                 </ul>
               </div>
             </div>
