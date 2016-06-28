@@ -34,13 +34,6 @@ let SinglePage = React.createClass({
     if (util.canUseDOM() && window.location.hash) {
       let initialID = _.replace(window.location.hash, '/', '');
 
-      // Scroll to the specific point on the page based on URL hash parameters.
-      new Elevator({
-        targetElement: document.querySelector(`${initialID}`),
-        verticalPadding: 60, // pixels
-        duration: 1000 // milliseconds
-      }).elevate();
-
       // Determine what the state of the breadcrumb should be.
       let breadcrumbTitle;
       _.map(this.state.menu, function(menuItem) {
@@ -51,6 +44,19 @@ let SinglePage = React.createClass({
       this.setState({
         breadcrumbTitle: breadcrumbTitle
       });
+
+      // Scroll to the specific point on the page based on URL hash parameters.
+      let elevate = () => {
+        new Elevator({
+          targetElement: document.querySelector(`${initialID}`),
+          verticalPadding: 60, // pixels
+          duration: 500 // milliseconds
+        }).elevate();
+        console.log('done');
+      }
+      // TODO: This is kind of cheesy...I know...
+      setTimeout(elevate, 500);
+      setTimeout(elevate, 2001);
 
       window.addEventListener('scroll', this.detectPointOnPage);
     }
