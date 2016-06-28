@@ -195,9 +195,21 @@ gulp.task('clone-data', function () {
   });
 })
 
+// Deploys static assets to staging environment.
+// > gulp deploy-assets
+gulp.task('deploy-assets', function(cb) {
+  exec('aws s3 rm s3://urban-ca.dev.phase2tech.com/ --recursive; aws s3 sync dist/ s3://urban-ca.dev.phase2tech.com', function (err, stdout, stderr) {
+    console.log(stdout);
+    console.log(stderr);
+    cb(err);
+  });
+});
+
 
 // Default Tasks
 // > gulp
 gulp.task('default', ['destroy', 'lint', 'images', 'react', 'webpack']);
 // > gulp watch
 gulp.task('watch', ['destroy', 'lint', 'images', 'react', 'webpack', 'track']);
+// > gulp deploy
+gulp.task('deploy', ['default', 'deploy-assets']);
