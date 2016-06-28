@@ -29,5 +29,9 @@ module.exports = {
   // Expose _.isEqual.
   isEqual: (object1, object2) => {
     return _.isEqual(object1, object2);
+  },
+  // Converts text into computer-friendly labels.
+  machineName: (text) => {
+    return text.replace(/[^a-zA-Z0-9]/g, '_').toLowerCase();
   }
 }
