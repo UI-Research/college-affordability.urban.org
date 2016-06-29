@@ -78,7 +78,6 @@ const BaseGraph = React.createClass({
 
       c3.generate(data);
 
-      console.log(this.id);
       let legend = legend = d3.selectAll(`#${this.id} .c3-legend-item`);
       let svg = d3.select(`#${this.id}_legend`)
         .append('svg')
@@ -92,7 +91,6 @@ const BaseGraph = React.createClass({
   render: function() {
     const container_class = 'c-graph__container c-' + this.props.file.data.type + '__container';
     const legend = `${this.id}_legend`;
-
 
     return (
       <div>
