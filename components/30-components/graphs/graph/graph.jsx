@@ -94,7 +94,7 @@ const BaseGraph = React.createClass({
       // Toggle data
       setTimeout(function () {
         // Clear out legend landing site.
-        d3.selectAll(`#graph8_legend svg`).remove();
+        d3.selectAll(`${data.bindto}_legend svg`).remove();
 
         // Load new data.
         chart.load({
@@ -107,15 +107,12 @@ const BaseGraph = React.createClass({
             setLegend();
           }
         });
-
       }, 5000);
     }
   },
   setLegend: function() {
-    // Set up the legend above the graoh
-    console.log(`#${this.id} .c3-legend-item`);
+    // Set up the legend above the graph
     let legend = d3.selectAll(`#${this.id} .c3-legend-item`);
-    console.log(legend);
     let svg = d3.select(`#${this.id}_legend`)
       .append('svg')
       .attr('width', '100%')
