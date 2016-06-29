@@ -82,7 +82,7 @@ const BaseGraph = React.createClass({
       let legend = legend = d3.selectAll(`#${this.id} .c3-legend-item`);
       let svg = d3.select(`#${this.id}_legend`)
         .append('svg')
-        .attr('width', 300)
+        .attr('width', '100%')
         .attr('height', 50);
       legend.each(function(){
         svg.node().appendChild(this);
