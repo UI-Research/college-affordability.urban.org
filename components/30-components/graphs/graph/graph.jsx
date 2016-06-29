@@ -64,6 +64,16 @@ const BaseGraph = React.createClass({
         show: false
       };
 
+      // If sets are available, reveal them as options
+      if (data.data.sets) {
+        console.log(data);
+        _.map(data.data.sets, (set) => {
+          console.log(set[0]);
+
+
+        });
+      }
+
       // Set default colors.
       data.color = {
         pattern: [
@@ -76,26 +86,54 @@ const BaseGraph = React.createClass({
         ]
       };
 
-      c3.generate(data);
+      let chart = c3.generate(data);
 
-      let legend = legend = d3.selectAll(`#${this.id} .c3-legend-item`);
-      let svg = d3.select(`#${this.id}_legend`)
-        .append('svg')
-        .attr('width', '100%')
-        .attr('height', 25);
-      legend.each(function(){
-        svg.node().appendChild(this);
-      });
+      const setLegend = this.setLegend;
+      setLegend();
+
+      // Toggle data
+      setTimeout(function () {
+        // Clear out legend landing site.
+        d3.selectAll(`#graph8_legend svg`).remove();
+
+        // Load new data.
+        chart.load({
+          columns: [
+            ['data1', 130, 120, 150, 140, 160, 150],
+            ['data4', 30, 20, 50, 40, 60, 50],
+          ],
+          unload: ['First'],
+          done: function() {
+            setLegend();
+          }
+        });
+
+      }, 5000);
     }
+  },
+  setLegend: function() {
+    // Set up the legend above the graoh
+    console.log(`#${this.id} .c3-legend-item`);
+    let legend = d3.selectAll(`#${this.id} .c3-legend-item`);
+    console.log(legend);
+    let svg = d3.select(`#${this.id}_legend`)
+      .append('svg')
+      .attr('width', '100%')
+      .attr('height', 25);
+    legend.each(function(){
+      svg.node().appendChild(this);
+    });
   },
   render: function() {
     const container_class = 'c-graph__container c-' + this.props.file.data.type + '__container';
     const legend = `${this.id}_legend`;
+    const options = `${this.id}_options`;
 
     return (
       <div>
         <div id={legend}></div>
         <div id={this.id} className={container_class}></div>
+        <div id={options}></div>
       </div>
     );
   }
