@@ -55,11 +55,7 @@ const BaseGraph = React.createClass({
       // Relocate legend to top of the graph.
       if (!data.legend) {
         data.legend = {
-          position:'inset',
-          inset: {
-            anchor: 'top-left',
-            x: 0
-          }
+          position:'bottom',
         };
       }
 
@@ -82,16 +78,27 @@ const BaseGraph = React.createClass({
 
       c3.generate(data);
 
-      let legend = d3.select(`#${this.id} .c3-legend-background`)[0][0].parentNode;
-      let pos = ((d3.select('svg').attr('width') - d3.select('.c3-legend-background rect').attr('width')) / 2);
-      d3.select(legend).attr('transform' , `translate(${pos}, 0)`);
+      console.log(this.id);
+      let legend = legend = d3.selectAll(`#${this.id} .c3-legend-item`);
+      let svg = d3.select(`#${this.id}_legend`)
+        .append('svg')
+        .attr('width', 300)
+        .attr('height', 50);
+      legend.each(function(){
+        svg.node().appendChild(this);
+      });
     }
   },
   render: function() {
-    let container_class = 'c-graph__container c-' + this.props.file.data.type + '__container';
+    const container_class = 'c-graph__container c-' + this.props.file.data.type + '__container';
+    const legend = `${this.id}_legend`;
+
 
     return (
-      <div id={this.id} className={container_class}></div>
+      <div>
+        <div id={legend}></div>
+        <div id={this.id} className={container_class}></div>
+      </div>
     );
   }
 });
@@ -109,7 +116,7 @@ const Graph = React.createClass({
       type: 'line'
     };
   },
-  componentWillMount() {    
+  componentWillMount() {
     // Force specify type of graph.
     if (!this.props.file.data.type) {
       this.props.file.data.type = this.props.type;
@@ -136,7 +143,7 @@ const Graph = React.createClass({
       let anchor_name = util.cleanString(this.props.anchor_name);
       anchor = <a name={anchor_name}></a>;
     }
-    
+
     return (
     <div className={base_class}>
       <h2>{this.props.title}</h2>
