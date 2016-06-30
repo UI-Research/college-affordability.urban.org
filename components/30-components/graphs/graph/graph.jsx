@@ -61,18 +61,8 @@ const BaseGraph = React.createClass({
 
       // Hide tooltip.
       data.tooltip = {
-        show: false
+        show: true
       };
-
-      // If sets are available, reveal them as options
-      if (data.data.sets) {
-        console.log(data);
-        _.map(data.data.sets, (set) => {
-          console.log(set[0]);
-
-
-        });
-      }
 
       // Set default colors.
       data.color = {
@@ -86,28 +76,49 @@ const BaseGraph = React.createClass({
         ]
       };
 
+      // If sets are available but columns aren't, attempt to
+      // set the graph's initial data with the first set.
+      if (data.data.sets) {
+        if (!data.data.columns) {
+          let first = _.keys(data.data.sets)[0];
+          data.data.columns = [];
+          data.data.columns.push(data.data.sets[first]);
+        }
+      }
+
       let chart = c3.generate(data);
 
-      const setLegend = this.setLegend;
-      setLegend();
 
-      // Toggle data
-      setTimeout(function () {
-        // Clear out legend landing site.
-        d3.selectAll(`${data.bindto}_legend svg`).remove();
 
-        // Load new data.
-        chart.load({
-          columns: [
-            ['data1', 130, 120, 150, 140, 160, 150],
-            ['data4', 30, 20, 50, 40, 60, 50],
-          ],
-          unload: ['First'],
-          done: function() {
-            setLegend();
-          }
+      // If sets are available, reveal them as options
+      if (data.data.sets) {
+        let links = _.map(data.data.sets, (set) => {
+          let options = d3.select(`${data.bindto}_options`);
+          let option = options.append('a')
+            .attr('name', set[0])
+            .text(set[0])
+            .on('click', (test) => {
+              // Clear out legend landing site.
+              d3.selectAll(`${data.bindto}_legend svg`).remove();
+
+              // Load new data.
+              //chart.unload();
+              chart.load({
+                columns: [
+                  set
+                ],
+                unload: chart.columns,
+                done: function() {
+                  setLegend();
+                }
+              });
+            });
         });
-      }, 5000);
+
+        // Make it available to other scopes.
+        const setLegend = this.setLegend;
+        setLegend();
+      }
     }
   },
   setLegend: function() {
