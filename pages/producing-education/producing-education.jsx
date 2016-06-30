@@ -27,7 +27,7 @@ let singlepage = (
     <h2>Subsidies</h2>
     <p>An institutional subsidy is the share of the total cost that is covered by the institution rather than by the students’ tuition. This share varies significantly both across sectors and within sectors. Though a student likely doesn’t know the size of the subsidy he’s receiving, it can be an important factor in determining the cost of his education.</p>
 
-    <h3>By Sector</h3>
+    <h3 menu="false">By Sector</h3>
     <p><strong>Public</strong> research universities spend almost 50 percent more per student per year than public master’s universities and more than twice as much as public two-year colleges. These gaps have grown over time.</p>
     <p>Because the funds states provide to public institutions have not kept up with growing enrollments, students received smaller subsidies in 2013-14 than in 2005-06. This means <strong>that tuition and fees cover an increasing portion of educational expenses</strong>, as these prices have risen much more rapidly than total institutional expenditures.</p>
 
@@ -70,7 +70,7 @@ let singlepage = (
       </ul>
     </Box>
 
-    <h3>Changes over time</h3>
+    <h3 menu="false">Changes over time</h3>
     <p>Over the period from FY2000 to FY2014, enrollment in public colleges and universities grew by more than 30 percent. Meanwhile, in FY2014 overall state and local appropriations to public higher education fell below the FY2001 level. <strong>These two trends resulted in a 40 percent decline in appropriations per public-sector student between FY2000 and FY2014.</strong></p>
 
     <Graph title="Change in appropriations, enrollment, and appropriations per student over time" file={require('./sample.js')} />
@@ -84,12 +84,12 @@ let singlepage = (
 
     <Graph title="Tax appropriations and tax revenue" file={require('./sample.js')} />
 
-    <h3>Local Support</h3>
+    <h3 menu="false">Local Support</h3>
     <p><strong>While state support has been falling, local higher education support has been increasing.</strong> Still, in FY 2014, local support made up just 11 percent of state and local support for higher education</p>
 
     <Graph title="Changes from FY 2000 in state and local support for higher education" file={require('./sample.js')} />
 
-    <h3>Variation Across States</h3>
+    <h3 menu="false">Variation Across States</h3>
     <p>National averages provide a meaningful overview of the circumstances facing college students, but state funding patterns and the prices students pay for college vary dramatically across states. <strong>Indeed, college affordability depends heavily on where students live.</strong></p>
     <p>In the 2014-15 school year, most states provided between $4,000 and $8,000 per student enrolled in a public college or university. However, New Hampshire provided just $2,632 per student, while Alaska provided $17,216. Some of the variation in per-student appropriations across states is attributable to differences in state wealth and costs of living, but some of the variation is the result of policy choices.</p>
 
@@ -104,7 +104,7 @@ let singlepage = (
       <p>While only a few institutions have endowments large enough to cover a significant portion of their annual budgets, policymakers tend to focus on this small segment of the industry. For example, in 2016 Rep. Tom Reed (R-NY) proposed legislation that would require colleges with endowments exceeding $1 billion to spend 25 percent of the annual income from the endowment on financial aid or lose their tax-exempt status. In 2012-13, fewer than 60 US institutions—most of them private research universities—had endowments this high. There are 1,700 private institutions and 4,700 degree-granting postsecondary in the United States.</p>
     </Box>
 
-    <h3>Income from Endowments</h3>
+    <h3 menu="false">Income from Endowments</h3>
     <p>Income from endowments fluctuates considerably from year to year, along with financial markets.</p>
     <Box>
       <h4>More about endowment income</h4>
