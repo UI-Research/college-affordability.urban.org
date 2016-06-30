@@ -132,15 +132,14 @@ const BaseGraph = React.createClass({
     });
   },
   render: function() {
-    const container_class = 'c-graph__container c-' + this.props.file.data.type + '__container';
     const legend = `${this.id}_legend`;
     const options = `${this.id}_options`;
 
     return (
       <div>
-        <div id={legend}></div>
-        <div id={this.id} className={container_class}></div>
-        <div id={options}></div>
+        <div id={legend} className="c-graph__legend"></div>
+        <div id={this.id} className={`c-graph__container c-${this.props.file.data.type}__container`}></div>
+        <div id={options} className="c-graph__options"></div>
       </div>
     );
   }
