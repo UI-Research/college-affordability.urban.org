@@ -61,7 +61,7 @@ const BaseGraph = React.createClass({
 
       // Hide tooltip.
       data.tooltip = {
-        show: true
+        show: false
       };
 
       // Set default colors.
