@@ -102,7 +102,6 @@ const BaseGraph = React.createClass({
               d3.selectAll(`${data.bindto}_legend svg`).remove();
 
               // Load new data.
-              //chart.unload();
               chart.load({
                 columns: [
                   set
