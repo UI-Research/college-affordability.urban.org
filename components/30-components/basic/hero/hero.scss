@@ -6,7 +6,14 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 550px;
+  padding: 5rem 2rem;
+  @include breakpoint($bp--large) {
+    min-height: 550px;
+    padding-top: 14rem;
+  }
+  @include breakpoint($bp--xlarge) {
+    padding: 14rem 8% 0;
+  }
   
   &:before {
     background-color: rgba(0, 0, 0, 0.4);
@@ -18,32 +25,42 @@
     width: 100%;
     z-index: 1;
   }
-
-  h1 {
-    border-right: 1px solid #fff;
-    color: #fff;
-    float: left;
-    line-height: 1;
-    font-family: $font-montserrat;
-    font-size: 65px;
-    font-weight: 700;
-    margin: 14rem 0 0;
-    padding: 0 50px 0 3%;
-    position: relative;
-    text-align: right;
-    text-transform: uppercase;
-    width: 61%;
-    z-index: 50;
-  }
+  
+  h1,
   h2 {
     color: #fff;
-    float: left;
-    font-size: 40px;
+    position: relative;
+    z-index: 50;
+    @include breakpoint($bp--large) {
+      float: left;
+      margin: 0;
+    }
+  }
+
+  h1 {
+    line-height: 1;
+    font-family: $font-montserrat;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    @include breakpoint($bp--large) {
+      border-right: 1px solid #fff;
+      text-align: right;
+      padding-right: 40px;
+      width: 65%;
+    }
+  }
+  h2 {
+    font-size: 34px;
     font-weight: 400;
     line-height: 1.2;
-    margin: 14rem 0 0 50px;
-    position: relative;
-    width: 30%;
-    z-index: 50;
+    @include breakpoint($bp--large) {
+      margin-left: 40px;
+      width: 30%;
+    }
+    @include breakpoint($bp--xlarge) {
+      font-size: 36px;
+      width: 31%;
+    }
   }
 }

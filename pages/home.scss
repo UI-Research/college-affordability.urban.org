@@ -5,39 +5,44 @@
   padding-top: 0;
 }
 
-.c-hero + p {
+.c-hero + .c-narrative {
+  position: relative;
+  top: -3rem;
+  z-index: 10;
+}
+
+.c-narrative {
   background: #fff;
   font-size: 21px;
   line-height: 1.3;
-  padding: 2rem 2.5rem 1rem;
-  position: relative;
+  padding: 2rem 2.5rem 0;
   text-align: center;
-  top: -3rem;
-  z-index: 10;
-  strong {
-    color: #666;
+  p {
+    strong {
+      color: #666;
+    }
   }
-}
 
-.c-home__button {
-  border: 1px solid $color--blue;
-  display: inline-block;
-  font-size: 21px;
-  line-height: 1;
-  margin-top: 2rem;
-  padding: .5rem 1rem .75rem 1.5rem;
-
-  &:after {
-    content: '>';
+  .c-home__button {
+    border: 1px solid $color--blue;
     display: inline-block;
-    font-size: 26px;
-    font-weight: 700;
-    margin-left: 1.25rem;
+    font-size: 21px;
+    line-height: 1;
+    margin-top: 2rem;
+    padding: .5rem 1rem .75rem 1.5rem;
+  
+    &:after {
+      content: '>';
+      display: inline-block;
+      font-size: 26px;
+      font-weight: 700;
+      margin-left: 1.25rem;
+    }
   }
 }
 
 .cta__container {
-  margin: 1.5rem 0 3rem;
+  margin-bottom: 3rem;
 }
 
 .footer-site__logo-wrapper {

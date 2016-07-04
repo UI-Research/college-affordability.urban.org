@@ -13,11 +13,13 @@ let specifications = {
   'content': (
     <div>
       <Hero src="img/stock-photo-87294393-female-student-using-laptop-for-taking-notes-to-study.jpg">
-        <h1>Understanding<br/>College Affordability</h1>
+        <h1>Understanding College Affordability</h1>
         <h2>How Students, Institutions, and the Public Pay for Higher Education</h2>
       </Hero>
-      <p>Rising concerns over college tuition and student debt combined with the widespread conviction that a degree is essential for a middle-class lifestyle have led to a sense that college in the United States has become "unaffordable." <strong>But what does affordability actually mean?</strong>
-        <br/><a href="#" className="c-home__button">Learn About the Project</a></p>
+      <div className="c-narrative">
+        <p>Rising concerns over college tuition and student debt combined with the widespread conviction that a degree is essential for a middle-class lifestyle have led to a sense that college in the United States has become "unaffordable." <strong>But what does affordability actually mean?</strong></p>
+        <a href="#" className="c-home__button">Learn About the Project</a>
+      </div>
       <div className="cta__container">
         <HomePageCTA src="img/defining-higher-education.svg">
           <h2>Defining Higher Education</h2>
