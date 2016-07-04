@@ -4,6 +4,7 @@ import React from 'react';
 import Template from '20-templates/default/default.jsx';
 import HomePageCTA from '30-components/basic/home-page-cta/home-page-cta.jsx';
 import Hero from '30-components/basic/hero/hero.jsx';
+import StudentProfiles from '30-components/basic/student-profiles/student-profiles.jsx'; 
 
 const util = require('util.jsx');
 
@@ -15,8 +16,8 @@ let specifications = {
         <h1>Understanding<br/>College Affordability</h1>
         <h2>How Students, Institutions, and the Public Pay for Higher Education</h2>
       </Hero>
-      <p>Rising concerns over college tuition and student debt combined with the widespread conviction that a degree is essential for a middle-class lifestyle have led to a sense that college in the United States has become "unaffordable." <strong>But what does affordability actually mean?</strong><br/><a className="c-home__button">Learn About the Project</a></p>
-      <div>Alerts go here</div>
+      <p>Rising concerns over college tuition and student debt combined with the widespread conviction that a degree is essential for a middle-class lifestyle have led to a sense that college in the United States has become "unaffordable." <strong>But what does affordability actually mean?</strong>
+        <br/><a href="#" className="c-home__button">Learn About the Project</a></p>
       <div className="cta__container">
         <HomePageCTA src="img/defining-higher-education.svg">
           <h2>Defining Higher Education</h2>
@@ -52,6 +53,29 @@ let specifications = {
           </ul>
         </HomePageCTA>
       </div>
+      <StudentProfiles>
+        <h2>Explore Student Profiles</h2>
+        <hr />
+        <p>Suspendisse sodales tempus vehicula. Nullam in mauris et justo mattis sollicitudin eu non sem. Etiam semper dictum purus sit amet maximus. Phasellus ullamcorper tempor ante, sit.</p>
+        <ul>
+          <li>
+            <a href="#"><img src="img/4HLZjYB.jpg" /></a>
+            <p>Duis nibh dolor, feugiat non massa quis, varius iaculis felis. Duis accumsan pellentesque massa, eget suscipit lacus porttitor consectetur. Curabitur in porttitor orci. Etiam quis maximus.</p>
+          </li>
+          <li>
+            <a href="#"><img src="img/MPxXjTj.jpg" /></a>
+            <p>Quisque vel nisl et urna vehicula interdum a at ante. Sed sit amet erat scelerisque, ullamcorper est sit amet, feugiat dolor. Sed velit justo, fringilla ac.</p>
+          </li>
+          <li>
+            <a href="#"><img src="img/4HLZjYB.jpg" /></a>
+            <p>Aliquam eu tortor enim. Maecenas non elit a augue auctor pulvinar non ultrices augue. Nullam convallis enim vitae justo lacinia feugiat. Sed auctor diam eget pellentesque.</p>
+          </li>
+          <li>
+            <a href="#"><img src="img/MPxXjTj.jpg" /></a>
+            <p>Vestibulum tempus elit sit amet nibh blandit, eleifend tristique dolor ornare. Nulla pellentesque cursus turpis, eget gravida arcu euismod id. Etiam mattis eros vitae aliquam dapibus.</p>
+          </li>
+        </ul>
+      </StudentProfiles>
     </div>
   )
 };
