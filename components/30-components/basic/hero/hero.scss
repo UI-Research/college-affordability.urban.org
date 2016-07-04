@@ -1,0 +1,53 @@
+@import '_global.scss';
+
+.c-hero {
+  @include clearfix();
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+  left: 50%;
+  margin-left: -50vw;
+  position: relative;
+  width: 100vw;
+  z-index: 1;
+  
+  &:before {
+    background-color: rgba(0, 0, 0, 0.4);
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  h1 {
+    border-right: 1px solid #fff;
+    color: #fff;
+    float: left;
+    line-height: 1;
+    font-family: $font-montserrat;
+    font-size: 65px;
+    font-weight: 700;
+    margin: 14rem 0 0;
+    padding: 0 50px 0 3%;
+    position: relative;
+    text-align: right;
+    text-transform: uppercase;
+    width: 61%;
+    z-index: 50;
+  }
+  h2 {
+    color: #fff;
+    float: left;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 14rem 0 0 50px;
+    position: relative;
+    width: 30%;
+    z-index: 50;
+  }
+}

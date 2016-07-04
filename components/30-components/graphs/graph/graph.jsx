@@ -55,7 +55,7 @@ const BaseGraph = React.createClass({
       // Relocate legend to top of the graph.
       if (!data.legend) {
         data.legend = {
-          position:'bottom',
+          position: 'bottom'
         };
       }
 
@@ -88,16 +88,14 @@ const BaseGraph = React.createClass({
 
       let chart = c3.generate(data);
 
-
-
       // If sets are available, reveal them as options
       if (data.data.sets) {
-        let links = _.map(data.data.sets, (set) => {
+        _.map(data.data.sets, (set) => {
           let options = d3.select(`${data.bindto}_options`);
-          let option = options.append('a')
+          options.append('a')
             .attr('name', set[0])
             .text(set[0])
-            .on('click', (test) => {
+            .on('click', () => {
               // Clear out legend landing site.
               d3.selectAll(`${data.bindto}_legend svg`).remove();
 

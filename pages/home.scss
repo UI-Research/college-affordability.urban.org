@@ -1,0 +1,40 @@
+@import '_global.scss';
+
+.main {
+  padding-top: 0;
+}
+
+.c-hero + p {
+  background: #fff;
+  font-size: 21px;
+  line-height: 1.3;
+  padding: 2rem 2.5rem 1rem;
+  position: relative;
+  text-align: center;
+  top: -3rem;
+  z-index: 10;
+  strong {
+    color: #666;
+  }
+}
+
+.c-home__button {
+  border: 1px solid $color--blue;
+  display: inline-block;
+  font-size: 21px;
+  line-height: 1;
+  margin-top: 2rem;
+  padding: .5rem 1rem .75rem 1.5rem;
+  text-decoration: none;
+  &:after {
+    content: '>';
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 700;
+    margin-left: 1.5rem;
+  }
+}
+
+.cta__container {
+  padding-top: 1.5rem;
+}
