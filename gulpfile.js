@@ -172,7 +172,7 @@ gulp.task('images', function () {
       gulp.src(src_image_dir + '/**/*.{jpg,gif,png}')
         .pipe(parallel(
           // No cropping, allows to maintain aspect ratio.
-          imageResize({ width: 1200, height: 1000, quality: 1, imageMagick: true }),
+          imageResize({ width: 2560, height: 1600, quality: 1, imageMagick: true }),
           os.cpus().length
         ))
         .pipe(rename({dirname: ''}))

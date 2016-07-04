@@ -1,8 +1,9 @@
 'use strict';
 
-import React, { Component } from 'react';
+import React from 'react';
 import Template from '20-templates/default/default.jsx';
 import HomePageCTA from '30-components/basic/home-page-cta/home-page-cta.jsx';
+import Hero from '30-components/basic/hero/hero.jsx';
 
 const util = require('util.jsx');
 
@@ -10,8 +11,11 @@ let specifications = {
   'name': 'home',
   'content': (
     <div>
-      <div>Hero goes here</div>
-      <p>Rising concerns over college tuition and student debt combined with the widespread conviction that a degree is essential for a middle-class lifestyle have led to a sense that college in the United States has become "unaffordable." <strong>But what does affordability actually mean?</strong></p>
+      <Hero src="img/stock-photo-87294393-female-student-using-laptop-for-taking-notes-to-study.jpg">
+        <h1>Understanding<br/>College Affordability</h1>
+        <h2>How Students, Institutions, and the Public Pay for Higher Education</h2>
+      </Hero>
+      <p>Rising concerns over college tuition and student debt combined with the widespread conviction that a degree is essential for a middle-class lifestyle have led to a sense that college in the United States has become "unaffordable." <strong>But what does affordability actually mean?</strong><br/><a className="c-home__button">Learn About the Project</a></p>
       <div>Alerts go here</div>
       <div className="cta__container">
         <HomePageCTA src="img/defining-higher-education.svg">
@@ -63,7 +67,7 @@ const Home = React.createClass({
   },
   render: function() {
     return (
-      <Template title="Home Page" machineName={specifications.name} includeHTML={this.props.includeHTML}>
+      <Template title="Understanding College Affordability" machineName={specifications.name} includeHTML={this.props.includeHTML}>
         {specifications.content}
       </Template>
     );
