@@ -20,7 +20,7 @@ const HomePageCTA = React.createClass({
     let badge = null;
     if (this.props.src) {
       const inlineStyle = {
-        backgroundImage: 'url(' + this.props.src + ')'
+        backgroundImage: `url(${this.props.src})`
       };
       badge = <div className="homepage__cta__badge" style={inlineStyle}></div>;
     }

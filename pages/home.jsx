@@ -1,9 +1,8 @@
 'use strict';
 
-const React = require('react');
-const Template = require('20-templates/default/default.jsx');
-const CTAContainer = require('30-components/basic/cta-container/cta-container.jsx');
-const HomePageCTA = require('30-components/basic/home-page-cta/home-page-cta.jsx');
+import React, { Component } from 'react';
+import Template from '20-templates/default/default.jsx';
+import HomePageCTA from '30-components/basic/home-page-cta/home-page-cta.jsx';
 
 const util = require('util.jsx');
 
@@ -14,7 +13,7 @@ let specifications = {
       <div>Hero goes here</div>
       <p>Rising concerns over college tuition and student debt combined with the widespread conviction that a degree is essential for a middle-class lifestyle have led to a sense that college in the United States has become "unaffordable." <strong>But what does affordability actually mean?</strong></p>
       <div>Alerts go here</div>
-      <CTAContainer>
+      <div className="cta__container">
         <HomePageCTA src="img/defining-higher-education.svg">
           <h2>Defining Higher Education</h2>
           <p>Morbi ac fringilla magna, quis lobortis urna. Sed id eros sed nibh aliquam fringilla non varius mauris. Pellentesque a volutpat odio. Donec eu nisi sit amet lectus malesuada pellentesque sed eget dolor. Vestibulum sollicitudin tristique nibh, non efficitur velit rutrum nec. Integer condimentum sapien ac erat venenatis luctus.</p>
@@ -48,7 +47,7 @@ let specifications = {
             <li><a href="#">Third Call to Action Link</a></li>
           </ul>
         </HomePageCTA>
-      </CTAContainer>
+      </div>
     </div>
   )
 };
