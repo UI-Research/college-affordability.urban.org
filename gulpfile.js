@@ -177,6 +177,11 @@ gulp.task('images', function () {
         ))
         .pipe(rename({dirname: ''}))
         .pipe(gulp.dest(dist_image_dir));
+
+      // Move svgs
+      gulp.src(src_image_dir + '/**/*.svg')
+        .pipe(rename({dirname: ''}))
+        .pipe(gulp.dest(dist_image_dir));
     }
   });
 });

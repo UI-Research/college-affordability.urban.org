@@ -55,7 +55,7 @@ const BaseGraph = React.createClass({
       // Relocate legend to top of the graph.
       if (!data.legend) {
         data.legend = {
-          position:'bottom',
+          position: 'bottom'
         };
       }
 

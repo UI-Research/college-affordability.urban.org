@@ -1,0 +1,13 @@
+.main {
+  > div {
+    > p {
+      font-size: 25px;
+      line-height: 1.3;
+      padding: 3em .5em 1em;
+      text-align: center;
+      strong {
+        color: #666;
+      }
+    }
+  }
+}
