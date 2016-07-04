@@ -42,6 +42,14 @@
   .c-graph__container {
     height: 320px;
   }
+
+  &__options {
+    a {
+      padding: 5px;
+      text-decoration: none;
+      cursor: hand;
+    }
+  }
 }
 
 .c-bar {
