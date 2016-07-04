@@ -2,15 +2,11 @@
 
 .c-hero {
   @include clearfix();
+  @include inner-fullwidth();
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 550px;
-  left: 50%;
-  margin-left: -50vw;
-  position: relative;
-  width: 100vw;
-  z-index: 1;
   
   &:before {
     background-color: rgba(0, 0, 0, 0.4);

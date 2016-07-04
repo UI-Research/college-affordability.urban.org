@@ -1,0 +1,51 @@
+@import '_global.scss';
+
+.c-student__profiles {
+  @include inner-fullwidth();
+  background-color: $color--blue;
+  padding: 3.5rem 15px 6rem;
+  
+  .c-student__profiles__inner {
+    color: #fff;
+    margin: 0 auto;
+    max-width: 1100px;
+    text-align: center;
+    
+    h2 {
+      color: #fff;
+      font-family: $font-montserrat;
+      font-size: 32px;
+      margin-bottom: 2rem;
+    }
+    
+    hr {
+      background-color: #fdbf11;
+      height: 6px;
+      margin-bottom: 1.5rem;
+      width: 200px;
+    }
+    
+    > p {
+      font-size: 18px;
+      line-height: 1.3;
+      padding: 0 12rem 0;
+    }
+    
+    ul {
+      @include clearfix();
+      margin: 2rem 0 0;
+      li {
+        list-style: none;
+        display: block;
+        float: left;
+        margin: 0 2% 0 0;
+        text-align: left;
+        width: 23.5%;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  } 
+}
+

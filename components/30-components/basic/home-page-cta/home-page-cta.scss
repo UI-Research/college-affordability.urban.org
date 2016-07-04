@@ -94,6 +94,7 @@
         font-weight: 500;
         &:after {
           content: '>';
+          display: inline-block;
           padding-left: .5rem;
         }
       }

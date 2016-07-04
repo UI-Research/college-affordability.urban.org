@@ -35,3 +35,11 @@
     height: 0;
   }
 }
+
+@mixin inner-fullwidth() {
+  left: 50%;
+  margin-left: -50vw;
+  position: relative;
+  width: 100vw;
+  z-index: 1;
+}
