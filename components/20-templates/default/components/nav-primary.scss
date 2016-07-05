@@ -91,8 +91,13 @@
   & > li {
 
     ul {
-      position: absolute;
-      left: -22px;
+      position: fixed;
+      left: 0px;
+      width: 100%;
+      text-align: center;
+      li {
+        display: inline-block;
+      }
     }
 
     &:nth-child(4) {
@@ -111,7 +116,10 @@
 }
 
 ul.nav-primary__second-level {
+  background-color: #FFF;
+  z-index: 10;
   line-height: 35px;
+  width: auto;
 
   li {
     margin: 0;
