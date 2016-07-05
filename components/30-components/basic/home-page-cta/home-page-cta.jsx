@@ -24,11 +24,11 @@ const HomePageCTA = React.createClass({
       };
       badge = <div className="homepage__cta__badge" style={inlineStyle}></div>;
     }
-    
+
     return (
       <div className="homepage__cta">
-        {this.props.children}
         {badge}
+        {this.props.children}
       </div>
     );
   }
