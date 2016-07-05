@@ -1,0 +1,80 @@
+@import '_global.scss';
+
+.c-student__profiles {
+  @include inner-fullwidth();
+  background-color: $color--blue;
+  padding: 3.5rem 0 6rem;
+  
+  .c-student__profiles__inner {
+    color: #fff;
+    margin: 0 5%;
+    max-width: 1100px;
+    text-align: center;
+    @include breakpoint($bp--large) {
+      margin: 0 auto;
+    }
+    
+    h2 {
+      color: #fff;
+      font-family: $font-montserrat;
+      font-size: 32px;
+      margin-bottom: 2rem;
+    }
+    
+    hr {
+      background-color: #fdbf11;
+      height: 6px;
+      margin-bottom: 1.5rem;
+      width: 200px;
+    }
+    
+    > p {
+      font-size: 18px;
+      line-height: 1.3;
+      padding: 0 2rem 0;
+      @include breakpoint($bp--mid) {
+        padding: 0 4rem 0;
+      }
+      @include breakpoint($bp--large) {
+        padding: 0 12rem 0;
+      }
+    }
+    
+    ul {
+      @include clearfix();
+      margin: 2rem 0 0;
+      li {
+        list-style: none;
+        display: block;
+        margin: 0 0 1.5rem;
+        text-align: left;
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        @include breakpoint($bp--mid) {
+          float: left;
+          margin-right: 4%;
+          width: 48%;
+          &:nth-child(odd) {
+            clear: both;
+          }
+          &:nth-child(even) {
+            margin-right: 0;
+          }
+        }
+        @include breakpoint($bp--large) {
+          margin-bottom: 0;
+          width: 23.5%;
+          &:nth-child(2) {
+            margin-right: 2%;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  } 
+}
+

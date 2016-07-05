@@ -7,7 +7,20 @@
   min-height: 265px;
   padding: 3.5rem 10rem 2rem;
   position: relative;
+  &:nth-child(odd) {
+    padding-right: 0;
+    @include breakpoint($bp--mid) {
+      padding-right: 10rem;
+    }
+  }
+  &:nth-child(even) {
+    padding-left: 0;
+    @include breakpoint($bp--mid) {
+      padding-left: 10rem;
+    }
+  }
   
+  /** Hide top/bottom of borders **/
   &:first-child {
     border-top-width: 0;
     &:after {
@@ -94,6 +107,7 @@
         font-weight: 500;
         &:after {
           content: '>';
+          display: inline-block;
           padding-left: .5rem;
         }
       }
