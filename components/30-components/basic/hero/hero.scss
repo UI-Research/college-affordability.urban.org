@@ -14,7 +14,7 @@
   @include breakpoint($bp--xlarge) {
     padding: 14rem 8% 0;
   }
-  
+
   &:before {
     background-color: rgba(0, 0, 0, 0.4);
     content: '';
@@ -25,7 +25,7 @@
     width: 100%;
     z-index: 1;
   }
-  
+
   h1,
   h2 {
     color: #fff;
@@ -40,20 +40,27 @@
   h1 {
     line-height: 1;
     font-family: $font-montserrat;
-    font-size: 60px;
+    font-size: 35px;
     font-weight: 700;
     text-transform: uppercase;
+    @include breakpoint($bp--mid) {
+      font-size: 50px;
+    }
     @include breakpoint($bp--large) {
       border-right: 1px solid #fff;
       text-align: right;
+      font-size: 60px;
       padding-right: 40px;
       width: 65%;
     }
   }
   h2 {
-    font-size: 34px;
+    font-size: 24px;
     font-weight: 400;
     line-height: 1.2;
+    @include breakpoint($bp--mid) {
+      font-size: 34px;
+    }
     @include breakpoint($bp--large) {
       margin-left: 40px;
       width: 30%;
