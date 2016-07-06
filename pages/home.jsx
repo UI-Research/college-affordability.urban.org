@@ -4,7 +4,7 @@ import React from 'react';
 import Template from '20-templates/default/default.jsx';
 import HomePageCTA from '30-components/basic/home-page-cta/home-page-cta.jsx';
 import Hero from '30-components/basic/hero/hero.jsx';
-import StudentProfiles from '30-components/basic/student-profiles/student-profiles.jsx';
+import StudentProfiles, { StudentProfile } from '30-components/basic/student-profiles/student-profiles.jsx';
 
 const util = require('util.jsx');
 
@@ -76,10 +76,9 @@ let specifications = {
             <a href="#"><img src="img/MPxXjTj.jpg" /></a>
             <p>Vestibulum tempus elit sit amet nibh blandit, eleifend tristique dolor ornare. Nulla pellentesque cursus turpis, eget gravida arcu euismod id. Etiam mattis eros vitae aliquam dapibus.</p>
           </li>
-          <li>
-            <a href="#"><img src="img/MPxXjTj.jpg" /></a>
+          <StudentProfile imgSrc="img/MPxXjTj.jpg">
             <p>Vestibulum tempus elit sit amet nibh blandit, eleifend tristique dolor ornare. Nulla pellentesque cursus turpis, eget gravida arcu euismod id. Etiam mattis eros vitae aliquam dapibus.</p>
-          </li>
+          </StudentProfile>
         </ul>
       </StudentProfiles>
     </div>
