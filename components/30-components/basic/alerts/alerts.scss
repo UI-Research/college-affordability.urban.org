@@ -1,0 +1,46 @@
+@import '_global.scss';
+
+.c-recent__alerts {
+  border-bottom: 1px solid #d0d0d0;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  
+  h2 {
+    background: #fff;
+    color: #666;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 1.25rem;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 50;
+
+    &:before,
+    &:after {
+      background: #d0d0d0;
+      content: '';
+      display: inline-block;
+      height: 1px;
+      position: relative;
+      vertical-align: middle;
+      width: 50%;
+    }
+    &:before {
+      right: 1rem;
+      margin-left: -50%;
+    }
+    &:after {
+      left: 1rem;
+      margin-right: -50%;
+    }
+  }
+  
+  .c-recent__alerts__alert {
+    padding: .25rem 0;
+    p {
+      margin: 0;
+    }
+  }
+}
