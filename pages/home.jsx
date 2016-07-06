@@ -4,7 +4,7 @@ import React from 'react';
 import Template from '20-templates/default/default.jsx';
 import HomePageCTA from '30-components/basic/home-page-cta/home-page-cta.jsx';
 import Hero from '30-components/basic/hero/hero.jsx';
-import StudentProfiles from '30-components/basic/student-profiles/student-profiles.jsx'; 
+import StudentProfiles, { StudentProfile } from '30-components/basic/student-profiles/student-profiles.jsx';
 
 const util = require('util.jsx');
 
@@ -60,22 +60,23 @@ let specifications = {
         <hr />
         <p>Suspendisse sodales tempus vehicula. Nullam in mauris et justo mattis sollicitudin eu non sem. Etiam semper dictum purus sit amet maximus. Phasellus ullamcorper tempor ante, sit.</p>
         <ul>
-          <li>
-            <a href="#"><img src="img/4HLZjYB.jpg" /></a>
-            <p>Duis nibh dolor, feugiat non massa quis, varius iaculis felis. Duis accumsan pellentesque massa, eget suscipit lacus porttitor consectetur. Curabitur in porttitor orci. Etiam quis maximus.</p>
-          </li>
-          <li>
-            <a href="#"><img src="img/MPxXjTj.jpg" /></a>
-            <p>Quisque vel nisl et urna vehicula interdum a at ante. Sed sit amet erat scelerisque, ullamcorper est sit amet, feugiat dolor. Sed velit justo, fringilla ac.</p>
-          </li>
-          <li>
-            <a href="#"><img src="img/4HLZjYB.jpg" /></a>
-            <p>Aliquam eu tortor enim. Maecenas non elit a augue auctor pulvinar non ultrices augue. Nullam convallis enim vitae justo lacinia feugiat. Sed auctor diam eget pellentesque.</p>
-          </li>
-          <li>
-            <a href="#"><img src="img/MPxXjTj.jpg" /></a>
+          <StudentProfile href="http://www.google.com" imgSrc="img/MPxXjTj.jpg">
             <p>Vestibulum tempus elit sit amet nibh blandit, eleifend tristique dolor ornare. Nulla pellentesque cursus turpis, eget gravida arcu euismod id. Etiam mattis eros vitae aliquam dapibus.</p>
-          </li>
+            <p><a href="#">Call to Action Link</a></p>
+            <p><a href="#">Another Call to Action Link</a></p>
+          </StudentProfile>
+          <StudentProfile imgSrc="img/4HLZjYB.jpg">
+            <p>Vestibulum tempus elit sit amet nibh blandit, eleifend tristique dolor ornare. Nulla pellentesque cursus turpis, eget gravida arcu euismod id. Etiam mattis eros vitae aliquam dapibus.</p>
+          </StudentProfile>
+          <StudentProfile imgSrc="img/MPxXjTj.jpg">
+            <p>Vestibulum tempus elit sit amet nibh blandit, eleifend tristique dolor ornare. Nulla pellentesque cursus turpis, eget gravida arcu euismod id. Etiam mattis eros vitae aliquam dapibus.</p>
+          </StudentProfile>
+          <StudentProfile imgSrc="img/4HLZjYB.jpg">
+            <p>Vestibulum tempus elit sit amet nibh blandit, eleifend tristique dolor ornare. Nulla pellentesque cursus turpis, eget gravida arcu euismod id. Etiam mattis eros vitae aliquam dapibus.</p>
+          </StudentProfile>
+          <StudentProfile imgSrc="img/MPxXjTj.jpg">
+            <p>Vestibulum tempus elit sit amet nibh blandit, eleifend tristique dolor ornare. Nulla pellentesque cursus turpis, eget gravida arcu euismod id. Etiam mattis eros vitae aliquam dapibus.</p>
+          </StudentProfile>
         </ul>
       </StudentProfiles>
     </div>
