@@ -1,163 +1,103 @@
 @import '_global.scss';
 
 footer {
-}
-
-.footer-site__content-wrapper {
-  background: $color--gray-2;
-  overflow: hidden;
-  padding: 1rem 0;
-
-  @include breakpoint($bp--large) {
-    padding: 3rem 0;
-  }
-}
-
-.footer-site__content,
-.footer-site__logo-wrapper-inner {
-  padding-left: 1rem;
-
-  @include breakpoint($bp--mid) {
-    max-width: 1050px;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
+  background: black;
 }
 
 .footer-site__logo-wrapper {
-  background: rgba(0,0,0,1);
-  background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 29%, rgba(255,255,255,1) 29%, rgba(255,255,255,1) 100%);
+  @include clearfix();
+
+  @include breakpoint($bp--large) {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: .5rem 1rem;
+  }
+}
+
+.footer-site__logo-wrapper-inner {
+  padding: .5rem 1rem;
+  @include breakpoint($bp--large) {
+    float: left;
+    margin-left: 10px;
+    padding: 0;
+  }
 }
 
 .footer-site__logo {
-  display: inline-block;
-  border: none;
-  margin: 0;
-  padding: .75rem 3rem .75rem 4.5rem;
-  line-height: 1.2;
   background: #000 url(./img/logo-mini.png) left center no-repeat;
-  font-weight: 700;
+  border: none;
   color: white;
-  font-size: 20px;
+  display: inline-block;
+  font-size: 13px;
+  height: 50px;
+  line-height: 1.8;
+  margin: 0;
+  padding: 5px 0 0 70px;
   text-transform: uppercase;
-
   @include breakpoint($bp--mid) {
-    line-height: 75px;
-    padding: 0 3rem 0 4.5rem;
+    font-size: 20px;
+    line-height: 40px;
   }
-
-  &:hover {
-    text-decoration: none;
-    color: $color--yellow;
+  @include breakpoint($bp--large) {
+    display: block;
+    padding: 0;
+    text-indent: -999px;
+    width: 50px;
+    &:after {
+      content: '';
+    }
+  }
+  &:after {
+    content: 'Understanding College Affordability';
   }
 }
 
-.footer-site__nav-primary,
 .footer-site__nav-utility {
-  line-height: 2.8;
+  line-height: 3;
+  background: white;
+  @include breakpoint($bp--large) {
+    background: black;
+    float: left;
+    margin-left: 50px;
+  }
 
   ul {
     list-style-type: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
 
   li {
+    border-bottom: 1px solid #f5f5f5;
+    @include breakpoint($bp--large) {
+      border-width: 0;
+      display: inline-block;
+    }
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0 1rem;
   }
 
   a {
+    color: $color--gray-6;
+    font-size: 13px;
+    font-weight: normal;
     list-style-type: none;
     padding: 0;
-    color: black;
     text-transform: uppercase;
-    font-weight: normal;
-
     &:hover {
-      text-decoration: none;
       color: $color--blue;
+      text-decoration: none;
     }
-  }
-}
-
-.footer-site__nav-wrapper {
-  @include breakpoint($bp--large) {
-    width: 66.5%;
-    float: left;
-  }
-}
-
-.footer-site__nav-primary {
-  @include breakpoint($bp--mid) {
-    width: 50%;
-    float: left;
-    border-right: 1px solid $color--gray-5;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-  }
-  @include breakpoint($bp--large) {
-    padding-left: 0;
-    width: 40%;
-  }
-}
-
-.footer-site__nav-utility {
-  @include breakpoint($bp--mid) {
-    width: 50%;
-    float: left;
-    padding-left: 3rem;
-  }
-  @include breakpoint($bp--large) {
-    width: 60%;
-  }
-}
-
-.footer-site__credits {
-  font-size: 14px;
-  border-top: 1px solid $color--gray-5;
-  padding: 1rem 1rem 0 0;
-  clear: both;
-
-  @include breakpoint($bp--mid) {
-    padding: 2rem 1rem;
-  }
-  @include breakpoint($bp--large) {
-    padding: 1rem 0 0 0;
-    border: none;
-    clear: none;
-    width: 33.3%;
-    float: left;
-  }
-
-  h2 {
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-size: 24px;
-
     @include breakpoint($bp--mid) {
-      font-size: 30px;
+      font-size: 16px;
     }
-  }
-
-  .urbanstatement {
-    font-style: italic;
-    color: #666666;
-    font-size: 13px;
-    margin-bottom: 1em;
-    line-height: 1.5;
-  }
-
-  .job {
-    font-size: 16px;
-    margin-bottom: 4px;
-    margin-top: 12px;
-    line-height: 1;
-  }
-
-  a {
-    font-weight: normal;
+    @include breakpoint($bp--large) {
+      color: white;
+      &:hover {
+        color: white;
+        text-decoration: underline;
+      }
+    }
   }
 }
