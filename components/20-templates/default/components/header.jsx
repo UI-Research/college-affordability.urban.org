@@ -25,33 +25,72 @@ const Header = React.createClass({
             <div className="nav-primary">
               <ul className="nav-primary__first-level">
                 <li>
-                  <a href="#">Introduction</a>
+                  <a href="#">What is College?</a>
                 </li>
                 <li>
-                  <a href="#">What is College</a>
+                  <a href="/producing-education">Producing Education</a>
                 </li>
                 <li className="has-submenu">
-                  <a href="/producing-education">Producing Education</a>
+                  <a href="#">Prices and Expenses</a>
                   <ul className="nav-primary__second-level">
                     <li>
-                      <a href="/producing-education/#/subsidies">Subsidies</a>
+                      <a href="#">Sticker Prices</a>
                     </li>
                     <li>
-                      <a href="/producing-education/#/appropriations">Appropriations</a>
+                      <a href="#">Student Budgets</a>
                     </li>
                     <li>
-                      <a href="/producing-education/#/endowments">Endowments</a>
+                      <a href="#">Forgone Earnings</a>
+                    </li>
+                  </ul>
+                </li>
+                <li className="has-submenu">
+                  <a href="#">Student Aid</a>
+                  <ul className="nav-primary__second-level">
+                    <li>
+                      <a href="#">Net Price</a>
+                    </li>
+                    <li>
+                      <a href="#">Financial Need</a>
+                    </li>
+                    <li>
+                      <a href="#">Grant Aid</a>
+                    </li>
+                    <li>
+                      <a href="#">Tax Benefits</a>
+                    </li>
+                  </ul>
+                </li>
+                <li className="has-submenu">
+                  <a href="#">Covering Expenses</a>
+                  <ul className="nav-primary__second-level">
+                    <li>
+                      <a href="#">Pre-College Income and Savings</a>
+                    </li>
+                    <li>
+                      <a href="#">Working During College</a>
+                    </li>
+                    <li>
+                      <a href="#">Borrowing</a>
+                    </li>
+                    <li>
+                      <a href="#">Time to Degree</a>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="#">Prices and Expenses</a>
-                </li>
-                <li>
-                  <a href="#">Student Aid</a>
-                </li>
-                <li>
-                  <a href="#">Covering Expenses</a>
+                  <a href="#">After College</a>
+                  <ul className="nav-primary__second-level">
+                    <li>
+                      <a href="#">Income After College</a>
+                    </li>
+                    <li>
+                      <a href="#">Student Debt and Repayment</a>
+                    </li>
+                    <li>
+                      <a href="#">Breaking Even</a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </div>
@@ -60,7 +99,7 @@ const Header = React.createClass({
             <div className="nav-utility">
               <ul className="nav-utility__first-level">
                 <li>
-                  <a href="#">About the Project</a>
+                  <a href="/about">About the Project</a>
                 </li>
                 <li>
                   <a href="#">Research &amp; Resources</a>
