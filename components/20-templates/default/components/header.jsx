@@ -30,7 +30,7 @@ export default class Header extends Component {
   determineOffset() {
     const w = {
       distanceY: window.pageYOffset || document.documentElement.scrollTop,
-      shrinkThreshold: 300
+      shrinkThreshold: 100
     }
     return w;
   }
