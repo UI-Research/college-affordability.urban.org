@@ -104,7 +104,7 @@ export default class SinglePage extends Component {
       let topSection = null;
       if (this.props.topSection) {
         let elementID = util.machineName(this.props.topSection);
-        let topSection = (<a name={elementID}></a>);
+        topSection = (<a name={elementID}></a>);
         // Yield menu item for this variable, then include special link to elevate.
         let elevateToSection = () => {
           new Elevator({
@@ -117,7 +117,7 @@ export default class SinglePage extends Component {
             breadcrumbTitle : this.props.topSection
           });
         };
-        let topMenu = [(<li key={elementID}><a href={`#/${elementID}`} onClick={elevateToSection}>{this.props.topSection}</a></li>)]
+        let topMenu = [(<li key={elementID}><a href={`#/${elementID}`} onClick={elevateToSection}>{this.props.topSection}</a></li>)];
         this.state.menu = _.concat(topMenu, this.state.menu);
       }
 
