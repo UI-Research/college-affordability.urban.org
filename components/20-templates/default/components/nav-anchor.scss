@@ -17,10 +17,6 @@
     margin: 0;
     border-bottom: 1px solid $color--gray-4;
     position: relative;
-    
-    &:last-child {
-      border-bottom: none;
-    }
 
     .fa {
       position: absolute;
@@ -61,7 +57,7 @@
   li {
     border: none;
     margin-left: 1rem;
-    border-top: 1px solid $color--gray-4;
+    border-bottom: 1px solid $color--gray-4;
   }
 
   a {
