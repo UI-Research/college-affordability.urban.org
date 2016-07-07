@@ -41,10 +41,6 @@
       margin-right: 0;
     }
   }
-
-  @include breakpoint($bp--xlarge) {
-    margin-left: 200px;
-  }
 }
 
 .nav-primary__first-level {
@@ -145,6 +141,30 @@ ul.nav-primary__second-level {
     &:hover {
       text-decoration: none;
       background-color: $color--gray-2;
+    }
+  }
+}
+
+
+/** Mini header mode (after scrolling down...) **/
+@keyframes nav-mini {
+  0% {}
+  100% { line-height: 38px; }
+}
+@keyframes nav-hide {
+  0% {}
+  100% { height: 0; opacity: 0; display: none; }
+}
+
+.header-site.header-sticky {
+  @include breakpoint($bp--large) {
+    .nav-primary__first-level li a {
+      animation: nav-mini $header-transition-duration ease;
+      animation-fill-mode: forwards;
+    }
+    .header-site__nav-utility-wrapper {
+      animation: nav-hide $header-transition-duration ease;
+      animation-fill-mode: forwards;
     }
   }
 }
