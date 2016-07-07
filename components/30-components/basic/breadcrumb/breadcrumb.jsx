@@ -19,8 +19,8 @@ export default class Breadcrumb extends Component {
 Breadcrumb.propTypes = {
   section: React.PropTypes.string,
   title: React.PropTypes.string
-}
+};
 Breadcrumb.defaultProps = {
   section: 'Producing Education',
   title: '???'
-}
+};

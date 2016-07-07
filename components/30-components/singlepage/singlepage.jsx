@@ -41,7 +41,7 @@ export default class SinglePage extends Component {
           verticalPadding: 60, // pixels
           duration: 500 // milliseconds
         }).elevate();
-      }
+      };
       // TODO: This is kind of cheesy...I know...
       setTimeout(elevate, 500);
       setTimeout(elevate, 2001);
@@ -56,7 +56,7 @@ export default class SinglePage extends Component {
         // If the DOM elements are either h1 or h2 without the menu=false flag.
         // This is with the assumption the elements are at the base level of the
         // react component.
-        if (_.indexOf(['h2', 'h3'], element.type) >= 0 && element.props.menu !== "false") {
+        if (_.indexOf(['h2', 'h3'], element.type) >= 0 && element.props.menu !== 'false') {
           // For record-keeping purposes.
           if (element.type === 'h2') {
             h1.push(util.machineName(element.props.children));
@@ -82,7 +82,7 @@ export default class SinglePage extends Component {
             this.setState({
               breadcrumbTitle : element.props.children
             });
-          }
+          };
           if (element.type === 'h2') {
             return (<li key={elementID}><a href={`#/${elementID}`} onClick={elevateToSection}>{element.props.children}</a></li>);
           }
@@ -135,7 +135,7 @@ export default class SinglePage extends Component {
 
 SinglePage.propTypes = {
   content: React.PropTypes.object
-}
+};
 SinglePage.defaultProps = {
   content: {}
-}
+};
