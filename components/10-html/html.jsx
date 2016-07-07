@@ -29,7 +29,7 @@ export default class HTML extends Component {
 
     return fragment;
   }
-};
+}
 
 
 HTML.propTypes = {
@@ -37,10 +37,10 @@ HTML.propTypes = {
 
   title: React.PropTypes.string,
   machineName: React.PropTypes.string
-}
+};
 HTML.defaultProps = {
   includeHTML: false,
 
   title: 'Page',
   machineName: ''
-}
+};
