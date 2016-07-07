@@ -17,7 +17,8 @@ export default class SinglePage extends Component {
     super(props);
     this.state = {
       breadcrumbTitle : '',
-      menu: ''
+      menu: '',
+      topSection: ''
     };
 
     if (util.canUseDOM() && window.location.hash) {
@@ -70,7 +71,6 @@ export default class SinglePage extends Component {
           });
           this.props.content.props.children[index] = mocked;
 
-
           // Yield menu item for this variable, then include special link to elevate.
           let elevateToSection = () => {
             new Elevator({
@@ -100,6 +100,22 @@ export default class SinglePage extends Component {
         }
         return false;
       });
+
+      if (this.props.topSection) {
+        // Yield menu item for this variable, then include special link to elevate.
+        let elevateToSection = () => {
+          new Elevator({
+            verticalPadding: 55, // pixels
+            duration: 1000 // milliseconds
+          }).elevate();
+
+          this.setState({
+            breadcrumbTitle : this.props.topSection
+          });
+        };
+        let topMenu = [(<li><a href="#" onClick={elevateToSection}>{this.props.topSection}</a></li>)];
+        this.state.menu = _.concat(topMenu, this.state.menu);
+      }
 
       this.state.menu = _.compact(this.state.menu);
 

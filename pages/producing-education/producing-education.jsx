@@ -12,7 +12,7 @@ import util from 'util.jsx';
 let singlepage = (
   <div>
     <h1>Producing Education</h1>
-    <h2>What schools pay</h2>
+    <h2 menu="false">What schools pay</h2>
     <p>Students see the prices colleges charge, but what they might not realize is that the tuition amount they see is only a fraction of what their education really costs.</p>
     <p>To educate a student, a college must pay for instructors, student services, administrative support, and maintenance, among other things. Average education and related spending1 per student varies considerably across sectors, partially because of differences in institutions’ activities. For example, public two-year colleges almost exclusively educate lower-level undergraduates, while public research universities educate these students, upper-level undergraduates, and graduate students, in addition to engaging in a significant amount of research activity.</p>
     <p>To cover costs, all colleges and universities use revenues from tuition and fees, but nonprofit colleges also supplement that revenue with their own resources, which include state and local tax revenues in the public sector and endowment income and annual giving in the private sector.</p>
@@ -21,8 +21,6 @@ let singlepage = (
       <h4>Education and related spending</h4>
       <p>"Education and related expenditures" include spending by colleges and universities on instruction, student services, and a portion of academic and administrative support and operations and maintenance. This measure excludes the cost of college buildings and spending on research and public service. It also excludes scholarships and fellowships, which are discounts to student. Institutions never get this revenue and cannot spend it.   Instruction, the largest single cost category at public and private nonprofit institutions, includes faculty salaries and benefits. Student services include expenses such as admissions, registrars, health services, and student affairs. Academic support includes advising, libraries, technology, academic administration, and related expenditures.</p>
     </Box>
-
-
 
     <h2>Subsidies</h2>
     <p>An institutional subsidy is the share of the total cost that is covered by the institution rather than by the students’ tuition. This share varies significantly both across sectors and within sectors. Though a student likely doesn’t know the size of the subsidy he’s receiving, it can be an important factor in determining the cost of his education.</p>
@@ -144,7 +142,7 @@ let singlepage = (
 
 let specifications = {
   'name': 'producing-education',
-  'content': <SinglePage content={singlepage} />
+  'content': <SinglePage topSection="Overview" content={singlepage} />
 };
 
 const ProducingEducation = React.createClass({
