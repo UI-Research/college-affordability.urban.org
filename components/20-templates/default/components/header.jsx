@@ -1,7 +1,6 @@
 'use strict';
-const React = require('react');
-
-const util = require('util.jsx');
+import React, { Component } from 'react';
+import util from 'util.jsx';
 
 if (util.canUseDOM()) {
   require('./header.scss');
@@ -11,8 +10,8 @@ if (util.canUseDOM()) {
   require('./nav-breadcrumb.scss');
 }
 
-const Header = React.createClass({
-  render: function() {
+export default class Header extends Component {
+  render() {
     return (
       <header className="header-site">
         <div className="header-site__nav-mobile"><i className="fa fa-bars"></i><span>Menu</span></div>
@@ -114,6 +113,4 @@ const Header = React.createClass({
       </header>
     );
   }
-});
-
-module.exports = Header;
+}

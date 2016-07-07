@@ -1,29 +1,13 @@
 'use strict';
-
-const React = require('react');
-
-const util = require('util.jsx');
+import React, { Component } from 'react';
+import util from 'util.jsx';
 
 if (util.canUseDOM()) {
   require('./html.scss');
 }
 
-const HTML = React.createClass({
-  propTypes: {
-    includeHTML: React.PropTypes.bool,
-
-    title: React.PropTypes.string,
-    machineName: React.PropTypes.string
-  },
-  getDefaultProps: function() {
-    return {
-      includeHTML: false,
-
-      title: 'Page',
-      machineName: ''
-    };
-  },
-  render: function() {
+export default class HTML extends Component {
+  render() {
     let pageBundle = `../bundle--${this.props.machineName}.js`;
     let html = (
       <html>
@@ -43,8 +27,20 @@ const HTML = React.createClass({
     );
     let fragment = this.props.includeHTML ? html : (<div>{this.props.children}</div>);
 
-    return (fragment);
+    return fragment;
   }
-});
+}
 
-module.exports = HTML;
+
+HTML.propTypes = {
+  includeHTML: React.PropTypes.bool,
+
+  title: React.PropTypes.string,
+  machineName: React.PropTypes.string
+};
+HTML.defaultProps = {
+  includeHTML: false,
+
+  title: 'Page',
+  machineName: ''
+};

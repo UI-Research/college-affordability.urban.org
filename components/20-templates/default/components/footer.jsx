@@ -1,14 +1,13 @@
 'use strict';
-const React = require('react');
-
-const util = require('util.jsx');
+import React, { Component } from 'react';
+import util from 'util.jsx';
 
 if (util.canUseDOM()) {
   require('./footer.scss');
 }
 
-const Footer = React.createClass({
-  render: function() {
+export default class Footer extends Component {
+  render() {
     return (
       <footer className="footer-site">
         <div className="footer-site__logo-wrapper">
@@ -18,7 +17,6 @@ const Footer = React.createClass({
         </div>
         <div className="footer-site__content-wrapper">
           <div className="footer-site__content">
-
 
             <div className="footer-site__nav-wrapper">
               <div className="footer-site__nav-primary">
@@ -85,6 +83,4 @@ const Footer = React.createClass({
       </footer>
     );
   }
-});
-
-module.exports = Footer;
+}

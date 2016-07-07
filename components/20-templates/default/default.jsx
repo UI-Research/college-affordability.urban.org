@@ -1,14 +1,14 @@
 'use strict';
 
-const React = require('react'),
-      _ = require('lodash');
+import React from 'react';
+import _ from 'lodash';
 
-const HTML = require('10-html/html.jsx');
-const Header = require('./components/header.jsx');
-const Footer = require('./components/footer.jsx');
+import HTML from '10-html/html.jsx';
+import Header from './components/header.jsx';
+import Footer from './components/footer.jsx';
 import { StickyContainer } from 'react-sticky';
 
-const util = require('util.jsx');
+import util from 'util.jsx';
 
 if (util.canUseDOM()) {
   require('./default.scss');

@@ -1,36 +1,25 @@
 'use strict';
-const _ = require('lodash');
+import _ from 'lodash';
 import React, { Component } from 'react';
-import { Router, Route, Link } from 'react-router';
-import { hashHistory } from 'react-router';
 import { Sticky } from 'react-sticky';
-import { Breadcrumb } from '30-components/basic/breadcrumb/breadcrumb.jsx';
+import Breadcrumb from '30-components/basic/breadcrumb/breadcrumb.jsx';
 
 const Elevator = require('elevator.js');
 
-const util = require('util.jsx');
+import util from 'util.jsx';
 
 if (util.canUseDOM()) {
   require('./singlepage.scss');
 }
 
-
-let SinglePage = React.createClass({
-  propTypes: {
-    content: React.PropTypes.object
-  },
-  getDefaultProps: function() {
-    return {
-      content: {}
-    };
-  },
-  getInitialState : function() {
-    return {
+export default class SinglePage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
       breadcrumbTitle : '',
       menu: ''
     };
-  },
-  componentDidMount: function() {
+
     if (util.canUseDOM() && window.location.hash) {
       let initialID = _.replace(window.location.hash, '/', '');
 
@@ -52,17 +41,12 @@ let SinglePage = React.createClass({
           verticalPadding: 60, // pixels
           duration: 500 // milliseconds
         }).elevate();
-      }
+      };
       // TODO: This is kind of cheesy...I know...
       setTimeout(elevate, 500);
       setTimeout(elevate, 2001);
-
-      window.addEventListener('scroll', this.detectPointOnPage);
     }
-  },
-  detectPointOnPage: function() {
-    //console.log('asdf');
-  },
+  }
   render() {
     let content;
     if (util.canUseDOM()) {
@@ -72,7 +56,7 @@ let SinglePage = React.createClass({
         // If the DOM elements are either h1 or h2 without the menu=false flag.
         // This is with the assumption the elements are at the base level of the
         // react component.
-        if (_.indexOf(['h2', 'h3'], element.type) >= 0 && element.props.menu !== "false") {
+        if (_.indexOf(['h2', 'h3'], element.type) >= 0 && element.props.menu !== 'false') {
           // For record-keeping purposes.
           if (element.type === 'h2') {
             h1.push(util.machineName(element.props.children));
@@ -98,7 +82,7 @@ let SinglePage = React.createClass({
             this.setState({
               breadcrumbTitle : element.props.children
             });
-          }
+          };
           if (element.type === 'h2') {
             return (<li key={elementID}><a href={`#/${elementID}`} onClick={elevateToSection}>{element.props.children}</a></li>);
           }
@@ -147,6 +131,11 @@ let SinglePage = React.createClass({
       </div>
     );
   }
-});
+}
 
-module.exports = SinglePage;
+SinglePage.propTypes = {
+  content: React.PropTypes.object
+};
+SinglePage.defaultProps = {
+  content: {}
+};
