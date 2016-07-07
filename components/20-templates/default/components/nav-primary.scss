@@ -46,7 +46,7 @@
 .nav-primary__first-level {
   & > li > a {
     display: inline-block;
-    color: white;
+    color: #FFF;
     font-size: 15px;
     font-weight: normal;
     font-family: $font-lato;
@@ -120,27 +120,27 @@ ul.nav-primary__second-level {
   li {
     margin: 0;
     padding: 0;
-    display: table-cell;
-  }
 
-  a {
-    @include breakpoint($bp--mid) {
-      padding: .5rem .5rem;
-    }
-    @include breakpoint($bp--large) {
-      padding: .5rem 1rem;
-    }
-    @include breakpoint($bp--xlarge) {
-      padding: .5rem 1.5rem;
-    }
+    a {
+      line-height: 40px;
+      @include breakpoint($bp--mid) {
+        padding: 11px .5rem;
+      }
+      @include breakpoint($bp--large) {
+        padding: 11px 1rem;
+      }
+      @include breakpoint($bp--xlarge) {
+        padding: 11px 1.5rem;
+      }
 
-    font-size: 15px;
-    font-weight: normal;
-    color: $color--gray-8;
+      font-size: 15px;
+      font-weight: normal;
+      color: $color--gray-8;
 
-    &:hover {
-      text-decoration: none;
-      background-color: $color--gray-2;
+      &:hover {
+        text-decoration: none;
+        background-color: $color--gray-2;
+      }
     }
   }
 }
@@ -149,7 +149,7 @@ ul.nav-primary__second-level {
 /** Mini header mode (after scrolling down...) **/
 @keyframes nav-mini {
   0% {}
-  100% { line-height: 38px; }
+  100% { line-height: 40px; }
 }
 @keyframes nav-hide {
   0% {}
@@ -158,9 +158,18 @@ ul.nav-primary__second-level {
 
 .header-site.header-sticky {
   @include breakpoint($bp--large) {
-    .nav-primary__first-level li a {
-      animation: nav-mini $header-transition-duration ease;
-      animation-fill-mode: forwards;
+    .nav-primary__first-level {
+      > li > a {
+        animation: nav-mini $header-transition-duration ease;
+        animation-fill-mode: forwards;
+      }
+
+      .nav-primary__second-level {
+        > li > a {
+          line-height: 40px;
+        }
+        height: 40px;
+      }
     }
     .header-site__nav-utility-wrapper {
       animation: nav-hide $header-transition-duration ease;

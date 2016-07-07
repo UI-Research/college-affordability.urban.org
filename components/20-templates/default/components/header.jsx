@@ -19,7 +19,7 @@ export default class Header extends Component {
   }
   componentDidMount() {
     // Initiates transformation of header to mini on scroll.
-    window.addEventListener('scroll', (e) => {
+    window.addEventListener('scroll', () => {
       const w = this.determineOffset();
       let headerClass = (w.distanceY > w.shrinkThreshold) ? 'header-sticky' : '';
       this.setState({
@@ -31,7 +31,7 @@ export default class Header extends Component {
     const w = {
       distanceY: window.pageYOffset || document.documentElement.scrollTop,
       shrinkThreshold: 100
-    }
+    };
     return w;
   }
   render() {
