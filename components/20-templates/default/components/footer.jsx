@@ -9,7 +9,6 @@ if (util.canUseDOM()) {
 
 const Footer = React.createClass({
   render: function() {
-    const today = new Date();
     return (
       <footer className="footer-site">
         <div className="footer-site__logo-wrapper">

@@ -1,7 +1,7 @@
 @import '_global.scss';
 
 footer {
-  background: black;
+  background: #000;
 }
 
 .footer-site__logo-wrapper {
@@ -26,7 +26,7 @@ footer {
 .footer-site__logo {
   background: #000 url(./img/logo-mini.png) left center no-repeat;
   border: none;
-  color: white;
+  color: #fff;
   display: inline-block;
   font-size: 13px;
   height: 50px;
@@ -54,9 +54,9 @@ footer {
 
 .footer-site__nav-utility {
   line-height: 3;
-  background: white;
+  background: #fff;
   @include breakpoint($bp--large) {
-    background: black;
+    background: #000;
     float: left;
     margin-left: 50px;
   }
@@ -93,9 +93,9 @@ footer {
       font-size: 16px;
     }
     @include breakpoint($bp--large) {
-      color: white;
+      color: #fff;
       &:hover {
-        color: white;
+        color: #fff;
         text-decoration: underline;
       }
     }
