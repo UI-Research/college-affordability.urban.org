@@ -18,7 +18,6 @@ export default class Footer extends Component {
         <div className="footer-site__content-wrapper">
           <div className="footer-site__content">
 
-
             <div className="footer-site__nav-wrapper">
               <div className="footer-site__nav-primary">
                 <ul>
@@ -84,4 +83,4 @@ export default class Footer extends Component {
       </footer>
     );
   }
-};
+}

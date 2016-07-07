@@ -17,16 +17,16 @@ export class StudentProfile extends Component {
         <a href={this.props.href}><img src={this.props.imgSrc} /></a>
         {this.props.children}
       </li>
-    )
+    );
   }
 }
 StudentProfile.propTypes = {
   href: PropTypes.string,
   imgSrc: PropTypes.string.isRequired
-}
+};
 StudentProfile.defaultProps = {
   href: '#'
-}
+};
 
 
 export default class StudentProfiles extends Component {
@@ -37,6 +37,6 @@ export default class StudentProfiles extends Component {
           {this.props.children}
         </div>
       </div>
-    )
+    );
   }
-};
+}
