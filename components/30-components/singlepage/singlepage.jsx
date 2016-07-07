@@ -39,7 +39,7 @@ export default class SinglePage extends Component {
       let elevate = () => {
         new Elevator({
           targetElement: document.querySelector(`${initialID}`),
-          verticalPadding: 60, // pixels
+          verticalPadding: 95, // pixels
           duration: 500 // milliseconds
         }).elevate();
       };
@@ -75,7 +75,7 @@ export default class SinglePage extends Component {
           let elevateToSection = () => {
             new Elevator({
               targetElement: document.querySelector(`#${elementID}`),
-              verticalPadding: 55, // pixels
+              verticalPadding: 95, // pixels
               duration: 1000 // milliseconds
             }).elevate();
 
