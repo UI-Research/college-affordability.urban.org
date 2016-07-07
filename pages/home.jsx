@@ -22,7 +22,6 @@ let specifications = {
         <a href="/about" className="c-home__button">Learn About the Project</a>
       </div>
       <Alerts>
-        <h2>Recent Updates</h2>
         <Alert>
           <p>07/05/2016 :: Example text can be a combination of <a href="#">site links</a> and a description of changes.</p>
         </Alert>
