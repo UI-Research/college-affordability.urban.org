@@ -5,6 +5,7 @@ import Template from '20-templates/default/default.jsx';
 import HomePageCTA from '30-components/basic/home-page-cta/home-page-cta.jsx';
 import Hero from '30-components/basic/hero/hero.jsx';
 import StudentProfiles, { StudentProfile } from '30-components/basic/student-profiles/student-profiles.jsx';
+import Alerts, { Alert } from '30-components/basic/alerts/alerts.jsx';
 
 const util = require('util.jsx');
 
@@ -18,8 +19,19 @@ let specifications = {
       </Hero>
       <div className="c-narrative">
         <p>Rising concerns over college tuition and student debt combined with the widespread conviction that a degree is essential for a middle-class lifestyle have led to a sense that college in the United States has become "unaffordable." <strong>But what does affordability actually mean?</strong></p>
-        <a href="#" className="c-home__button">Learn About the Project</a>
+        <a href="/about" className="c-home__button">Learn About the Project</a>
       </div>
+      <Alerts>
+        <Alert>
+          <p>07/05/2016 :: Example text can be a combination of <a href="#">site links</a> and a description of changes.</p>
+        </Alert>
+        <Alert>
+          <p>06/30/2016 :: Suspendisse iaculis, tortor id convallis eleifend, magna magna interdum augue, ac pulvinar elit purus.</p>
+        </Alert>
+        <Alert>
+          <p>06/18/2016 :: Donec a hendrerit dolor. In hac habitasse platea dictumst. Pellentesque ut pretium ante, fringilla cursus nulla.</p>
+        </Alert>
+      </Alerts>
       <div className="cta__container">
         <HomePageCTA src="img/defining-higher-education.svg">
           <h2>Defining Higher Education</h2>
