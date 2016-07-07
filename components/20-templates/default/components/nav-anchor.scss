@@ -19,7 +19,7 @@
     position: relative;
     
     &:last-child {
-      border-bottom: none;
+      //border-bottom: none;
     }
 
     .fa {
@@ -61,7 +61,7 @@
   li {
     border: none;
     margin-left: 1rem;
-    border-top: 1px solid $color--gray-4;
+    border-bottom: 1px solid $color--gray-4;
   }
 
   a {
