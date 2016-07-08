@@ -40,8 +40,8 @@
 
   @include breakpoint($bp--large) {
     float: left;
-    width: 150px;
-    margin-right: 1.25rem;
+    width: 128px;
+    margin-right: 1rem;
   }
   @include breakpoint($bp--xlarge) {
     width: 200px;
