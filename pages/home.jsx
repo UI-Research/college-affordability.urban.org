@@ -72,11 +72,11 @@ let specifications = {
         <hr />
         <p>Suspendisse sodales tempus vehicula. Nullam in mauris et justo mattis sollicitudin eu non sem. Etiam semper dictum purus sit amet maximus. Phasellus ullamcorper tempor ante, sit.</p>
         <ul>
-          <StudentProfile href="http://www.google.com" title="Call to Action Link" />
-          <StudentProfile href="http://www.google.com" title="Call to Action Link" />
-          <StudentProfile href="http://www.google.com" title="Call to Action Link" />
-          <StudentProfile href="http://www.google.com" title="Call to Action Link" />
-          <StudentProfile href="http://www.google.com" title="Call to Action Link" />
+          <StudentProfile href="#" title="Call to Action Link" />
+          <StudentProfile href="#" title="Call to Action Link" />
+          <StudentProfile href="#" title="Call to Action Link" />
+          <StudentProfile href="#" title="Call to Action Link" />
+          <StudentProfile href="#" title="Call to Action Link" />
         </ul>
       </StudentProfiles>
     </div>
