@@ -259,7 +259,7 @@ img {
  * Essentially, we need to make sure the sticky element stays on top of everything.
  */
 .header-container .sticky {
-  z-index: 2;
+  z-index: 999;
   width: inherit;
 }
 

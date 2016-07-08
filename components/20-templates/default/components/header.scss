@@ -1,11 +1,15 @@
 @import '_global.scss';
 
 .header-site {
+  background: #fff;
   border-bottom: 1px solid $color--gray-4;
   width: 100%;
   border-top: 6px solid black;
   @include clearfix();
 
+  @include breakpoint($bp--mid) {
+    height: 110px;
+  }
   @include breakpoint($bp--large) {
     height: 130px;
     background-color: $color--blue;
