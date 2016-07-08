@@ -186,7 +186,7 @@ const Graph = React.createClass({
 
     return (
     <div className={base_class}>
-      <h2>{this.props.title}</h2>
+      <h2>{this.props.file.title}</h2>
       {anchor}
       <LazyLoad height={320}>
         <BaseGraph file={this.props.file} />

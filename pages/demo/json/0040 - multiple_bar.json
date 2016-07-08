@@ -1,14 +1,19 @@
 {
-  "title": "Single Line Chart Example",
+  "title": "Multiple Line Chart Example",
   "data": {
     "columns": [
-      ["First", 1,2,3,4,5,6,7,8]
+      ["First", 1,2,3,4,5,6,7,8],
+      ["Second", 2,3,4,5,6,7,8,9],
+      ["Third", 3,4,5,6,7,8,9,10]
     ],
     "labels": {
       "format": {
-        "First": "$,.2f"
+        "First": "$,.2f",
+        "Second": "$,.2f",
+        "Third": "$,.2f"
       }
-    }
+    },
+    "type": "bar"
   },
   "axis": {
     "rotated": false,

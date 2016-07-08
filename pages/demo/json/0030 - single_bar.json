@@ -8,7 +8,8 @@
       "format": {
         "First": "$,.2f"
       }
-    }
+    },
+    "type": "bar"
   },
   "axis": {
     "rotated": false,

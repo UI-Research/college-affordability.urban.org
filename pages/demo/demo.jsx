@@ -13,8 +13,10 @@ let singlepage = (
   <div>
     <h1>Demo Page</h1>
     <h2>Graphs</h2>
-    <h3>Single Line</h3>
-    <Graph title="Single Line Chart Example" file={require('./json/0010 - single_line.json')} />
+    <Graph file={require('./json/0010 - single_line.json')} />
+    <Graph file={require('./json/0020 - multiple_line.json')} />
+    <Graph file={require('./json/0030 - single_bar.json')} />
+    <Graph file={require('./json/0040 - multiple_bar.json')} />
   </div>
 );
 
