@@ -5,9 +5,6 @@
   border-top: 6px solid black;
   @include clearfix();
 
-  @include breakpoint($bp--mid) {
-    height: 110px;
-  }
   @include breakpoint($bp--large) {
     height: 130px;
     background-color: $color--blue;
