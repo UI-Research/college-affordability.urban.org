@@ -4,3 +4,7 @@ $space-single: 1rem;
 $space-double: 1.6875rem;
 $font-lato: Lato, Arial, sans-serif;
 $font-montserrat: Montserrat, Arial, sans-serif;
+
+
+/** Dictates how long a transition in the header should take. */
+$header-transition-duration: 0.2s;
