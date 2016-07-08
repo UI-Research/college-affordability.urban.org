@@ -1,10 +1,10 @@
 'use strict';
 
-const React = require('react'),
-      d3 = require('d3'),
-      _ = require('lodash'),
-      LazyLoad = require('30-components/basic/lazyload/lazyload.jsx');
-const util = require('util.jsx');
+import React from 'react';
+import d3 from 'd3';
+import _ from 'lodash';
+const LazyLoad = require('30-components/basic/lazyload/lazyload.jsx');
+import util from 'util.jsx';
 
 if (util.canUseDOM()) {
   require('./graph.scss');
@@ -55,7 +55,10 @@ const BaseGraph = React.createClass({
       // Relocate legend to top of the graph.
       if (!data.legend) {
         data.legend = {
-          position: 'bottom'
+          position: 'bottom',
+          item: {
+            onclick: function (id) { return false }
+          }
         };
       }
 
@@ -88,6 +91,10 @@ const BaseGraph = React.createClass({
 
       let chart = c3.generate(data);
 
+      // Make it available to other scopes.
+      const setLegend = this.setLegend;
+      setLegend();
+
       // If sets are available, reveal them as options
       if (data.data.sets) {
         _.map(data.data.sets, (set) => {
@@ -111,10 +118,6 @@ const BaseGraph = React.createClass({
               });
             });
         });
-
-        // Make it available to other scopes.
-        const setLegend = this.setLegend;
-        setLegend();
       }
     }
   },
@@ -186,7 +189,7 @@ const Graph = React.createClass({
 
     return (
     <div className={base_class}>
-      <h2>{this.props.title}</h2>
+      <h2>{this.props.file.title}</h2>
       {anchor}
       <LazyLoad height={320}>
         <BaseGraph file={this.props.file} />

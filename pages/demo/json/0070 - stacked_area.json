@@ -1,0 +1,37 @@
+{
+  "title": "Stacked Area Chart Example",
+  "data": {
+    "columns": [
+      ["First", 1,2,3,4,5,6,7,8],
+      ["Second", 2,5,4,1,6,3,8,2],
+      ["Third", 3,7,5,9,7,2,9,3]
+    ],
+    "labels": {
+      "format": {
+        "First": "$,.2f",
+        "Second": "$,.2f",
+        "Third": "$,.2f"
+      }
+    },
+    "type": "area-spline",
+    "groups": [
+      ["First", "Second", "Third"]
+    ]
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "type": "category",
+      "categories": ["First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth"]
+    },
+    "y" : {
+      "tick": {
+        "format": "$,.2f"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Source",
+    "notes": "Lorem Ipsum."
+  }
+}
