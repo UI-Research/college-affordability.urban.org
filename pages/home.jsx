@@ -19,7 +19,7 @@ let specifications = {
       </Hero>
       <div className="c-narrative">
         <p>Rising concerns over college tuition and student debt combined with the widespread conviction that a degree is essential for a middle-class lifestyle have led to a sense that college in the United States has become "unaffordable." <strong>But what does affordability actually mean?</strong></p>
-        <a href="/about" className="c-home__button">Learn About the Project</a>
+        <a href="/about" className="c-home__button">Learn About the Project <i className="fa fa-chevron-right"></i></a>
       </div>
       <Alerts>
         <Alert>
@@ -37,33 +37,33 @@ let specifications = {
           <h2>Defining Higher Education</h2>
           <p>Morbi ac fringilla magna, quis lobortis urna. Sed id eros sed nibh aliquam fringilla non varius mauris. Pellentesque a volutpat odio. Donec eu nisi sit amet lectus malesuada pellentesque sed eget dolor. Vestibulum sollicitudin tristique nibh, non efficitur velit rutrum nec. Integer condimentum sapien ac erat venenatis luctus.</p>
           <ul>
-            <li><a href="#">Call to Action Link</a></li>
+            <li><a href="#">Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
           </ul>
         </HomePageCTA>
         <HomePageCTA src="img/cost-aid-prices.svg">
           <h2>Costs, Aids, and Prices</h2>
           <p>Nunc non diam quis magna volutpat laoreet in nec tortor. Sed at ex tellus. Donec egestas arcu non neque volutpat, quis lacinia nibh fringilla.</p>
           <ul>
-            <li><a href="#">Call to Action Link</a></li>
-            <li><a href="#">Another Call to Action Link</a></li>
-            <li><a href="#">Third Call to Action Link</a></li>
+            <li><a href="#">Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="#">Another Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="#">Third Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
           </ul>
         </HomePageCTA>
         <HomePageCTA src="img/paying-for-college.svg">
           <h2>Paying for College</h2>
           <p>Pellentesque egestas varius tortor eget efficitur. Nunc dignissim pharetra libero a consectetur. Morbi accumsan ex non rhoncus molestie. In commodo venenatis tortor id interdum. Integer condimentum sapien ac erat venenatis luctus.</p>
           <ul>
-            <li><a href="#">Call to Action Link</a></li>
-            <li><a href="#">Another Call to Action Link</a></li>
+            <li><a href="#">Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="#">Another Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
           </ul>
         </HomePageCTA>
         <HomePageCTA src="img/after-college.svg">
           <h2>After College</h2>
           <p>Mauris sapien orci, sagittis vel feugiat varius, scelerisque non urna. In eu massa sapien. Nulla aliquet purus eu nisl vulputate, nec tempus elit pulvinar. Etiam nec egestas leo, id rhoncus augue. In nec sollicitudin turpis. Integer bibendum arcu ut viverra ullamcorper. Duis eleifend congue rhoncus.</p>
           <ul>
-            <li><a href="#">Call to Action Link</a></li>
-            <li><a href="#">Another Call to Action Link</a></li>
-            <li><a href="#">Third Call to Action Link</a></li>
+            <li><a href="#">Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="#">Another Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="#">Third Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
           </ul>
         </HomePageCTA>
       </div>
@@ -74,20 +74,27 @@ let specifications = {
         <ul>
           <StudentProfile href="http://www.google.com" imgSrc="img/MPxXjTj.jpg">
             <p>Vestibulum tempus elit sit amet nibh blandit, eleifend tristique dolor ornare. Nulla pellentesque cursus turpis, eget gravida arcu euismod id. Etiam mattis eros vitae aliquam dapibus.</p>
-            <p><a href="#">Call to Action Link</a></p>
-            <p><a href="#">Another Call to Action Link</a></p>
+            <p className="cta"><a href="#">Call to Action Link <i className="fa fa-chevron-right"></i></a></p>
+          </StudentProfile>
+          <StudentProfile imgSrc="img/4HLZjYB.jpg">
+            <p>Vestibulum tempus elit sit amet nibh blandit, eleifend tristique dolor ornare.</p>
+            <p className="cta"><a href="#">Call to Action Link <i className="fa fa-chevron-right"></i></a></p>
+          </StudentProfile>
+          <StudentProfile imgSrc="img/MPxXjTj.jpg">
+            <p>Vestibulum tempus elit sit amet nibh blandit, eleifend tristique dolor ornare. Nulla pellentesque cursus turpis, eget gravida.</p>
+            <p className="cta"><a href="#">Call to Action Link <i className="fa fa-chevron-right"></i></a></p>
           </StudentProfile>
           <StudentProfile imgSrc="img/4HLZjYB.jpg">
             <p>Vestibulum tempus elit sit amet nibh blandit, eleifend tristique dolor ornare. Nulla pellentesque cursus turpis, eget gravida arcu euismod id. Etiam mattis eros vitae aliquam dapibus.</p>
+            <p className="cta"><a href="#">Call to Action Link <i className="fa fa-chevron-right"></i></a></p>
           </StudentProfile>
           <StudentProfile imgSrc="img/MPxXjTj.jpg">
-            <p>Vestibulum tempus elit sit amet nibh blandit, eleifend tristique dolor ornare. Nulla pellentesque cursus turpis, eget gravida arcu euismod id. Etiam mattis eros vitae aliquam dapibus.</p>
-          </StudentProfile>
-          <StudentProfile imgSrc="img/4HLZjYB.jpg">
-            <p>Vestibulum tempus elit sit amet nibh blandit, eleifend tristique dolor ornare. Nulla pellentesque cursus turpis, eget gravida arcu euismod id. Etiam mattis eros vitae aliquam dapibus.</p>
+            <p>Vestibulum tempus elit sit amet nibh blandit, eleifend tristique dolor ornare. Nulla pellentesque cursus turpis, eget gravida arcu euismod id.</p>
+            <p className="cta"><a href="#">Call to Action Link <i className="fa fa-chevron-right"></i></a></p>
           </StudentProfile>
           <StudentProfile imgSrc="img/MPxXjTj.jpg">
-            <p>Vestibulum tempus elit sit amet nibh blandit, eleifend tristique dolor ornare. Nulla pellentesque cursus turpis, eget gravida arcu euismod id. Etiam mattis eros vitae aliquam dapibus.</p>
+            <p>Vestibulum tempus elit sit amet nibh blandit, eleifend tristique dolor ornare.</p>
+            <p className="cta"><a href="#">Call to Action Link <i className="fa fa-chevron-right"></i></a></p>
           </StudentProfile>
         </ul>
       </StudentProfiles>
