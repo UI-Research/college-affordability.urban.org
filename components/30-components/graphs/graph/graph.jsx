@@ -1,10 +1,10 @@
 'use strict';
 
-const React = require('react'),
-      d3 = require('d3'),
-      _ = require('lodash'),
-      LazyLoad = require('30-components/basic/lazyload/lazyload.jsx');
-const util = require('util.jsx');
+import React from 'react';
+import d3 from 'd3';
+import _ from 'lodash';
+const LazyLoad = require('30-components/basic/lazyload/lazyload.jsx');
+import util from 'util.jsx';
 
 if (util.canUseDOM()) {
   require('./graph.scss');
@@ -111,11 +111,11 @@ const BaseGraph = React.createClass({
               });
             });
         });
-
-        // Make it available to other scopes.
-        const setLegend = this.setLegend;
-        setLegend();
       }
+
+      // Make it available to other scopes.
+      const setLegend = this.setLegend;
+      setLegend();
     }
   },
   setLegend: function() {
