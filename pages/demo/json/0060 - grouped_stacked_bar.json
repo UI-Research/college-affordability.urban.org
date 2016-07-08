@@ -1,21 +1,29 @@
 {
-  "title": "Stacked Bar Chart Example",
+  "title": "Stacked Grouped Bar Chart Example",
   "data": {
     "columns": [
-      ["First", 1,2,3,4,5,6,7,8],
-      ["Second", 2,3,4,5,6,7,8,9],
-      ["Third", 3,4,5,6,7,8,9,10]
+      ["First", 1,2,3],
+      ["Second", 2,3,4],
+      ["Third", 3,4,5],
+      ["Fourth", 1,2,3],
+      ["Fifth", 2,3,4],
+      ["Sixth", 3,4,5]
     ],
     "labels": {
       "format": {
         "First": "$,.2f",
         "Second": "$,.2f",
-        "Third": "$,.2f"
+        "Third": "$,.2f",
+        "Fourth": "$,.2f",
+        "Fifth": "$,.2f",
+        "Sixth": "$,.2f"
       }
     },
     "type": "bar",
     "groups": [
-      ["First", "Second", "Third"]
+      ["First", "Second", "Third"],
+      ["Fourth"],
+      ["Fifth", "Sixth"]
     ]
   },
   "axis": {

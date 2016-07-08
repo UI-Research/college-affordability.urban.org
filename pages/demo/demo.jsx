@@ -18,6 +18,7 @@ let singlepage = (
     <Graph file={require('./json/0030 - single_bar.json')} />
     <Graph file={require('./json/0040 - grouped_bar.json')} />
     <Graph file={require('./json/0050 - stacked_bar.json')} />
+    <Graph file={require('./json/0060 - grouped_stacked_bar.json')} />
   </div>
 );
 

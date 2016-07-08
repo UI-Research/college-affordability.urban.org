@@ -1,5 +1,5 @@
 {
-  "title": "Single Line Chart Example",
+  "title": "Single Bar Chart Example",
   "data": {
     "columns": [
       ["First", 1,2,3,4,5,6,7,8]
