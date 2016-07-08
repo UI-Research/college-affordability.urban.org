@@ -7,17 +7,34 @@
 
 .c-hero + .c-narrative {
   position: relative;
-  top: -3rem;
-  z-index: 1;
+  @include breakpoint($bp--mid) {
+    top: -3rem;
+    z-index: 1;
+  }
 }
 
 .c-narrative {
   background: #fff;
-  font-size: 21px;
-  line-height: 1.7;
-  padding: 2rem 2.5rem 0;
-  text-align: center;
+  font-size: 18px;
+  line-height: 1.4;
+  padding: 2rem 0 0;
+  margin-bottom: 2rem;
+  @include breakpoint($bp--mid) {
+    line-height: 1.7;
+    font-size: 21px;
+    margin-bottom: 0;
+    padding: 1.5rem 1.5rem 0;
+    text-align: center;
+  }
+  @include breakpoint($bp--large) {
+    padding: 2rem 2.5rem 0;
+  }
+
   p {
+    padding: 0 1em;
+    @include breakpoint($bp--mid) {
+      padding: 0;
+    }
     strong {
       color: #666;
     }
@@ -25,11 +42,12 @@
 
   .c-home__button {
     border: 1px solid $color--blue;
-    display: inline-block;
-    font-size: 21px;
+    display: block;
+    font-size: 18px;
     line-height: 1;
     margin-top: 2rem;
     padding: .5rem 1rem .75rem 1.5rem;
+    text-align: center;
 
     .fa {
       font-size: 18px;
@@ -40,6 +58,11 @@
       background-color: $color--blue;
       color: white;
       text-decoration: none;
+    }
+
+    @include breakpoint($bp--mid) {
+      display: inline-block;
+      font-size: 21px;
     }
   }
 }

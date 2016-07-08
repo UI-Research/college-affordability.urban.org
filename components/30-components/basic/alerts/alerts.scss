@@ -3,19 +3,26 @@
 .c-recent__alerts {
   border-bottom: 1px solid #d0d0d0;
   margin-bottom: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
+  @include breakpoint($bp--mid) {
+    padding-bottom: 1.75rem;
+  }
   
   h2 {
     background: #fff;
     color: #666;
     font-size: 20px;
     font-weight: 700;
-    margin: 0 0 1.25rem;
+    margin: 0 0 .75rem;
     overflow: hidden;
     position: relative;
     text-align: center;
     text-transform: uppercase;
     z-index: 50;
+    @include breakpoint($bp--mid) {
+      font-size: 26px;
+      margin-bottom: 1.25rem;
+    }
 
     &:before,
     &:after {
@@ -24,21 +31,30 @@
       display: inline-block;
       height: 1px;
       position: relative;
-      vertical-align: middle;
+      vertical-align: super;
       width: 50%;
     }
     &:before {
-      right: 1rem;
+      right: 1.5rem;
       margin-left: -50%;
+      @include breakpoint($bp--mid) {
+        right: 1rem;
+      }
     }
     &:after {
-      left: 1rem;
+      left: 1.5rem;
       margin-right: -50%;
+      @include breakpoint($bp--mid) {
+        left: 1rem;
+      }
     }
   }
   
   .c-recent__alerts__alert {
-    padding: .25rem 0;
+    padding: .5rem 0;
+    @include breakpoint($bp--mid) {
+      padding: .25rem 0;
+    }
     p {
       margin: 0;
     }

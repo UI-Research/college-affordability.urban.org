@@ -13,7 +13,7 @@ let specifications = {
   'name': 'home',
   'content': (
     <div>
-      <Hero src="img/stock-photo-87294393-female-student-using-laptop-for-taking-notes-to-study.jpg">
+      <Hero src="img/female-student-using-laptop-for-taking-notes-to-study.jpg">
         <h1>Understanding College Affordability</h1>
         <h2>How Students, Institutions, and the Public Pay for Higher Education</h2>
       </Hero>
@@ -23,13 +23,13 @@ let specifications = {
       </div>
       <Alerts>
         <Alert>
-          <p>07/05/2016 :: Example text can be a combination of <a href="#">site links</a> and a description of changes.</p>
+          <p><strong>07/05/2016</strong> :: Example text can be a combination of <a href="#">site links</a> and a description of changes.</p>
         </Alert>
         <Alert>
-          <p>06/30/2016 :: Suspendisse iaculis, tortor id convallis eleifend, magna magna interdum augue, ac pulvinar elit purus.</p>
+          <p><strong>06/30/2016</strong> :: Suspendisse iaculis, tortor id convallis eleifend, magna magna interdum augue, ac pulvinar elit purus.</p>
         </Alert>
         <Alert>
-          <p>06/18/2016 :: Donec a hendrerit dolor. In hac habitasse platea dictumst. Pellentesque ut pretium ante, fringilla cursus nulla.</p>
+          <p><strong>06/18/2016</strong> :: Donec a hendrerit dolor. In hac habitasse platea dictumst. Pellentesque ut pretium ante, fringilla cursus nulla.</p>
         </Alert>
       </Alerts>
       <div className="cta__container">
