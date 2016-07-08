@@ -9,7 +9,7 @@
   position: relative;
   @include breakpoint($bp--mid) {
     top: -3rem;
-    z-index: 10;
+    z-index: 1;
   }
 }
 
