@@ -75,6 +75,7 @@
     @include breakpoint($bp--large) {
       margin-left: 40px;
       width: 30%;
+      margin-top: 0;
     }
     @include breakpoint($bp--xlarge) {
       font-size: 36px;

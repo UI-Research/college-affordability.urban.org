@@ -177,12 +177,13 @@
     li {
       display: inline-block;
       margin: 0 2rem 0 0;
+
       a {
         font-weight: 500;
-        &:after {
-          content: '>';
-          display: inline-block;
-          padding-left: .5rem;
+
+        .fa {
+          margin-left: .15rem;
+          font-size: 12px;
         }
       }
     }
