@@ -55,7 +55,10 @@ const BaseGraph = React.createClass({
       // Relocate legend to top of the graph.
       if (!data.legend) {
         data.legend = {
-          position: 'bottom'
+          position: 'bottom',
+          item: {
+            onclick: function (id) { return false }
+          }
         };
       }
 
@@ -88,6 +91,10 @@ const BaseGraph = React.createClass({
 
       let chart = c3.generate(data);
 
+      // Make it available to other scopes.
+      const setLegend = this.setLegend;
+      setLegend();
+
       // If sets are available, reveal them as options
       if (data.data.sets) {
         _.map(data.data.sets, (set) => {
@@ -112,10 +119,6 @@ const BaseGraph = React.createClass({
             });
         });
       }
-
-      // Make it available to other scopes.
-      const setLegend = this.setLegend;
-      setLegend();
     }
   },
   setLegend: function() {
