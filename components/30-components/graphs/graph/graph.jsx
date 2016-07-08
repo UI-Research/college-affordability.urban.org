@@ -57,7 +57,7 @@ const BaseGraph = React.createClass({
         data.legend = {
           position: 'bottom',
           item: {
-            onclick: function (id) { return false }
+            onclick: function () { return false; }
           }
         };
       }

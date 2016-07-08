@@ -50,7 +50,7 @@ const TemplateDefault = React.createClass({
       <HTML title={this.props.title} machineName={this.props.machineName} includeHTML={this.props.includeHTML}>
         <StickyContainer>
           <div className="header-container">
-            <Header />
+            <Header machineName={this.props.machineName} />
           </div>
           <div className="main">
             {this.props.children}

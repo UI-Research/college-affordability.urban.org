@@ -28,10 +28,14 @@
       position: absolute;
     }
 
-    &:hover {
+    &:hover,
+    &.active-trail {
       ul {
         display: table-cell;
       }
+    }
+    &.active-trail ul {
+      z-index: 10;
     }
 
     &:last-child {
@@ -41,53 +45,31 @@
 }
 
 .nav-primary__first-level {
-  & > li > a {
-    display: inline-block;
-    color: #FFF;
-    font-size: 15px;
-    font-weight: normal;
-    font-family: $font-lato;
-    line-height: 26px;
-    border-bottom: 6px solid transparent;
-
-    @include breakpoint($bp--mid) {
-      font-size: 14px;
-      line-height: 30px;
-    }
-
-    @include breakpoint($bp--large) {
-      line-height: 40px;
-      font-size: 14px;
-      padding-bottom: 2px;
-    }
-    @include breakpoint($bp--xlarge) {
-      line-height: 52px;
-      font-size: 16px;
-    }
-  }
-
-  & > li.has-submenu:hover {
-    @include breakpoint($bp--large) {
-      height: 82px;
-    }
-    @include breakpoint($bp--xlarge) {
-      height: 94px;
-    }
-  }
-
-  & > li:hover > a {
-    color: black;
-    border-bottom: 6px solid black;
-    text-decoration: none;
-  }
-
   & > li {
+    &.has-submenu:hover,
+    &.active-trail {
+      @include breakpoint($bp--large) {
+        height: 82px;
+      }
+      @include breakpoint($bp--xlarge) {
+        height: 94px;
+      }
+    }
+  
+    &:hover > a,
+    &.active > a,
+    &.active-trail > a {
+      color: black;
+      border-bottom: 6px solid black;
+      text-decoration: none;
+    }
 
     ul {
       position: fixed;
       left: 0px;
       width: 100%;
       text-align: center;
+      
       li {
         display: inline-block;
       }
@@ -105,38 +87,66 @@
         right: 0;
       }
     }
+
+    a {
+      display: inline-block;
+      color: #fff;
+      font-size: 15px;
+      font-weight: normal;
+      font-family: $font-lato;
+      line-height: 26px;
+      border-bottom: 6px solid transparent;
+  
+      @include breakpoint($bp--mid) {
+        font-size: 14px;
+        line-height: 30px;
+      }
+  
+      @include breakpoint($bp--large) {
+        line-height: 40px;
+        font-size: 14px;
+        padding-bottom: 2px;
+      }
+      @include breakpoint($bp--xlarge) {
+        line-height: 52px;
+        font-size: 16px;
+      }
+    }
   }
 }
 
 ul.nav-primary__second-level {
-  background-color: #FFF;
-  z-index: 10;
+  background-color: #fff;
   line-height: 35px;
   width: auto;
+  z-index: 15;
 
   li {
     margin: 0;
     padding: 0;
 
     a {
-      line-height: 40px;
+      background-color: #fff;
+      color: $color--gray-8;
       font-size: 15px;
       font-weight: normal;
-      color: $color--gray-8;
+      line-height: 40px;
       
       @include breakpoint($bp--mid) {
         padding: 11px .5rem;
       }
       @include breakpoint($bp--large) {
         font-size: 13px;
-        padding: 11px .8rem;
+        line-height: 34px;
+        padding: 9px .8rem;
       }
       @include breakpoint($bp--xlarge) {
         font-size: 14px;
-        padding: 11px 1.2rem;
+        padding: 10px 1.2rem;
       }
 
-      &:hover {
+      &:hover,
+      &.active {
         text-decoration: none;
         background-color: $color--gray-2;
       }
@@ -164,10 +174,23 @@ ul.nav-primary__second-level {
       }
 
       .nav-primary__second-level {
-        > li > a {
-          line-height: 40px;
+        > li {
+          @include breakpoint($bp--large) {
+            line-height: 16px;
+          }
+          > a {
+            line-height: 40px;
+            @include breakpoint($bp--large) {
+              line-height: 16px;
+              padding-bottom: 6px;
+              padding-top: 6px;
+            }
+          }
         }
         height: 40px;
+        @include breakpoint($bp--large) {
+          height: 20px;
+        }
       }
     }
     .header-site__nav-utility-wrapper {
