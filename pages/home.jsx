@@ -72,30 +72,11 @@ let specifications = {
         <hr />
         <p>Suspendisse sodales tempus vehicula. Nullam in mauris et justo mattis sollicitudin eu non sem. Etiam semper dictum purus sit amet maximus. Phasellus ullamcorper tempor ante, sit.</p>
         <ul>
-          <StudentProfile href="http://www.google.com" imgSrc="img/MPxXjTj.jpg">
-            <p>Vestibulum tempus elit sit amet nibh blandit, eleifend tristique dolor ornare. Nulla pellentesque cursus turpis, eget gravida arcu euismod id. Etiam mattis eros vitae aliquam dapibus.</p>
-            <p className="cta"><a href="#">Call to Action Link <i className="fa fa-chevron-right"></i></a></p>
-          </StudentProfile>
-          <StudentProfile imgSrc="img/4HLZjYB.jpg">
-            <p>Vestibulum tempus elit sit amet nibh blandit, eleifend tristique dolor ornare.</p>
-            <p className="cta"><a href="#">Call to Action Link <i className="fa fa-chevron-right"></i></a></p>
-          </StudentProfile>
-          <StudentProfile imgSrc="img/MPxXjTj.jpg">
-            <p>Vestibulum tempus elit sit amet nibh blandit, eleifend tristique dolor ornare. Nulla pellentesque cursus turpis, eget gravida.</p>
-            <p className="cta"><a href="#">Call to Action Link <i className="fa fa-chevron-right"></i></a></p>
-          </StudentProfile>
-          <StudentProfile imgSrc="img/4HLZjYB.jpg">
-            <p>Vestibulum tempus elit sit amet nibh blandit, eleifend tristique dolor ornare. Nulla pellentesque cursus turpis, eget gravida arcu euismod id. Etiam mattis eros vitae aliquam dapibus.</p>
-            <p className="cta"><a href="#">Call to Action Link <i className="fa fa-chevron-right"></i></a></p>
-          </StudentProfile>
-          <StudentProfile imgSrc="img/MPxXjTj.jpg">
-            <p>Vestibulum tempus elit sit amet nibh blandit, eleifend tristique dolor ornare. Nulla pellentesque cursus turpis, eget gravida arcu euismod id.</p>
-            <p className="cta"><a href="#">Call to Action Link <i className="fa fa-chevron-right"></i></a></p>
-          </StudentProfile>
-          <StudentProfile imgSrc="img/MPxXjTj.jpg">
-            <p>Vestibulum tempus elit sit amet nibh blandit, eleifend tristique dolor ornare.</p>
-            <p className="cta"><a href="#">Call to Action Link <i className="fa fa-chevron-right"></i></a></p>
-          </StudentProfile>
+          <StudentProfile href="#" title="Call to Action Link" />
+          <StudentProfile href="#" title="Call to Action Link" />
+          <StudentProfile href="#" title="Call to Action Link" />
+          <StudentProfile href="#" title="Call to Action Link" />
+          <StudentProfile href="#" title="Call to Action Link" />
         </ul>
       </StudentProfiles>
     </div>

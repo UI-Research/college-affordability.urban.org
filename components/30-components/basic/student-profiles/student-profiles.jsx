@@ -14,8 +14,10 @@ export class StudentProfile extends Component {
   render() {
     return (
       <li>
-        <a href={this.props.href}><img src={this.props.imgSrc} /></a>
-        {this.props.children}
+        <a href={this.props.href} className="c-student__profiles__link">
+        <div className="c-student__profiles__icon"></div>
+        <div className="c-student__profiles__title">{this.props.title} <i className="fa fa-chevron-right"></i></div>
+        </a>
       </li>
     );
   }

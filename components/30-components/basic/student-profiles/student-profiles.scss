@@ -4,103 +4,103 @@
   @include inner-fullwidth();
   background-color: $color--blue;
   padding: 3.5rem 0 6rem;
+}
 
-  .c-student__profiles__inner {
+.c-student__profiles__inner {
+  color: #fff;
+  margin: 0 5%;
+  max-width: 1100px;
+  text-align: center;
+  @include breakpoint($bp--large) {
+    margin: 0 auto;
+  }
+
+  h2 {
     color: #fff;
-    margin: 0 5%;
-    max-width: 1100px;
-    text-align: center;
+    font-family: $font-montserrat;
+    font-size: 32px;
+    margin-bottom: 2rem;
+  }
+
+  > hr {
+    background-color: #fdbf11;
+    height: 6px;
+    margin-bottom: 1.5rem;
+    width: 200px;
+    border-bottom: none;
+  }
+
+  > p {
+    font-size: 18px;
+    line-height: 1.3em;
+    padding: 0 2rem 0;
+    @include breakpoint($bp--mid) {
+      padding: 0 4rem 0;
+    }
     @include breakpoint($bp--large) {
-      margin: 0 auto;
+      padding: 0 12rem 0;
     }
+  }
 
-    h2 {
-      color: #fff;
-      font-family: $font-montserrat;
-      font-size: 32px;
-      margin-bottom: 2rem;
-    }
+  ul {
+    @include clearfix();
+    margin: 2rem 0 0;
+    text-align: center;
 
-    > hr {
-      background-color: #fdbf11;
-      height: 6px;
-      margin-bottom: 1.5rem;
-      width: 200px;
-      border-bottom: none;
-    }
+    li {
+      list-style: none;
+      margin: 1rem 0;
 
-    > p {
-      font-size: 18px;
-      line-height: 1.3em;
-      padding: 0 2rem 0;
+      a {
+        color: $color--yellow;
+
+        &:hover {
+          color: white;
+          text-decoration: none;
+        }
+
+        .fa {
+          margin-left: .2rem;
+          font-size: 12px;
+        }
+      }
+
       @include breakpoint($bp--mid) {
-        padding: 0 4rem 0;
       }
+
       @include breakpoint($bp--large) {
-        padding: 0 12rem 0;
-      }
-    }
-
-    ul {
-      @include clearfix();
-      margin: 2rem 0 0;
-      text-align: center;
-
-      li {
-        background-color: darken($color--blue, 4);
-        list-style: none;
-        display: block;
-        text-align: left;
-        vertical-align: top;
-        margin-bottom: 2rem;
-        position: relative;
-
-        a {
-          color: $color--yellow;
-
-          &:hover {
-            color: white;
-            text-decoration: none;
-          }
-
-          .fa {
-            margin-left: .2rem;
-            font-size: 12px;
-          }
-        }
-
-        @include breakpoint($bp--mid) {
-          margin: 1% 2% 2rem;
-          width: 46%;
-          height: 513px;
-          float: left;
-        }
-        @include breakpoint($bp--large) {
-          width: 29%;
-          height: 470px;
-        }
-      }
-      p {
-        margin: 1rem 1.5rem 1.2rem 1.5rem;
-        line-height: 1.6;
-
-        &.cta {
-          @include breakpoint($bp--mid) {
-            position: absolute;
-            bottom: 0;
-            padding: 0 1rem;
-            margin: 0;
-            width: 100%;
-          }
-
-          a {
-            border-top: 1px solid lighten($color--blue,5);
-            display: block;
-            padding: 1rem 0;
-          }
-        }
+        margin: 0;
+        width: 20%;
+        display: inline-block;
+        text-align: center;
       }
     }
   }
 }
 
+.c-student__profiles__link {
+  &:hover {
+    .c-student__profiles__icon {
+      border-color: $color--yellow;
+    }
+  }
+}
+
+.c-student__profiles__icon {
+  background-image: url('./img/student.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  height: 80px;
+  width: 80px;
+  z-index: 50;
+
+  @include breakpoint($bp--large) {
+    margin-bottom: .5rem;
+  }
+}
