@@ -102,6 +102,11 @@ hr {
 
 ul {
   margin-bottom: $space-single;
+
+  &.no-bullets li {
+    list-style-type: none;
+    margin-left: 0;
+  }
 }
 
 li {
@@ -110,7 +115,7 @@ li {
 }
 
 strong {
-  font-weight: bold;
+  font-weight: 800;
   color: #333333;
 }
 
@@ -200,6 +205,21 @@ img {
     width: 100%;
   }
 }
+
+.icon__student {
+  height: 110px;
+  width: 110px;
+  margin: 0 auto;
+  background-color: $color--gray-8;
+  -webkit-mask:  url('./components/img/icon-student.svg') no-repeat 50% 50%;
+  mask: url('./components/img/icon-student.svg') no-repeat 50% 50%;
+
+  @include breakpoint($bp--mid) {
+    height: 100%;
+    width: 100%;
+  }
+}
+
 
 
 /* Columns */
