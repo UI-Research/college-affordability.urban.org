@@ -17,13 +17,10 @@
     padding: 0 1rem 0 0;
 
     @include breakpoint($bp--mid) {
-      padding: 0 0.85rem 0 0;
-    }
-    @include breakpoint($bp--large) {
-      padding: 0 1rem 0 0;
+      padding: 0 0.7rem 0 0;
     }
     @include breakpoint($bp--xlarge) {
-      padding: 0 1.6rem 0 0;
+      padding: 0 1.1rem 0 0;
     }
 
     ul {
@@ -60,12 +57,12 @@
 
     @include breakpoint($bp--large) {
       line-height: 40px;
-      font-size: 16px;
+      font-size: 14px;
       padding-bottom: 2px;
     }
     @include breakpoint($bp--xlarge) {
       line-height: 52px;
-      font-size: 19px;
+      font-size: 16px;
     }
   }
 
@@ -123,19 +120,21 @@ ul.nav-primary__second-level {
 
     a {
       line-height: 40px;
+      font-size: 15px;
+      font-weight: normal;
+      color: $color--gray-8;
+      
       @include breakpoint($bp--mid) {
         padding: 11px .5rem;
       }
       @include breakpoint($bp--large) {
-        padding: 11px 1rem;
+        font-size: 13px;
+        padding: 11px .8rem;
       }
       @include breakpoint($bp--xlarge) {
-        padding: 11px 1.5rem;
+        font-size: 14px;
+        padding: 11px 1.2rem;
       }
-
-      font-size: 15px;
-      font-weight: normal;
-      color: $color--gray-8;
 
       &:hover {
         text-decoration: none;

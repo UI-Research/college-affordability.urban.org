@@ -116,6 +116,26 @@ export default class Header extends Component {
                       </li>
                     </ul>
                   </li>
+                  <li>
+                    <a href="#">Student Profiles</a>
+                    <ul className="nav-primary__second-level">
+                      <li>
+                        <a href="#">Independent</a>
+                      </li>
+                      <li>
+                        <a href="#">Low-Income Dependent</a>
+                      </li>
+                      <li>
+                        <a href="#">Lower-Middle-Income Dependent</a>
+                      </li>
+                      <li>
+                        <a href="#">Upper-Middle-Income Dependent</a>
+                      </li>
+                      <li>
+                        <a href="#">Top-Income Dependent</a>
+                      </li>
+                    </ul>
+                  </li>
                 </ul>
               </div>
             </div>
