@@ -6,7 +6,10 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 5rem 2rem;
+  padding: 2rem 2rem;
+  @include breakpoint($bp--mid) {
+    padding: 5rem 2rem;
+  }
   @include breakpoint($bp--large) {
     min-height: 550px;
     padding-top: 14rem;
@@ -31,6 +34,9 @@
     color: #fff;
     position: relative;
     z-index: 50;
+    @include breakpoint($bp--mid) {
+      margin-top: 0;
+    }
     @include breakpoint($bp--large) {
       float: left;
       margin: 0;
@@ -38,12 +44,14 @@
   }
 
   h1 {
+    display: none;
     line-height: 1;
     font-family: $font-montserrat;
     font-size: 35px;
     font-weight: 700;
     text-transform: uppercase;
     @include breakpoint($bp--mid) {
+      display: block;
       font-size: 50px;
     }
     @include breakpoint($bp--large) {
@@ -55,11 +63,14 @@
     }
   }
   h2 {
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 30px;
+    font-weight: 700;
     line-height: 1.2;
+    margin: 1.5rem 0;
+    text-align: center;
     @include breakpoint($bp--mid) {
-      font-size: 34px;
+      font-weight: 400;
+      text-align: left;
     }
     @include breakpoint($bp--large) {
       margin-left: 40px;
