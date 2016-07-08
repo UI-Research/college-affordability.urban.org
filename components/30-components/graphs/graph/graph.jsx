@@ -195,7 +195,6 @@ const Graph = React.createClass({
         <div className="c-text__viz-notes">
           {this.attribution('source')}
           {this.attribution('notes')}
-          {this.attribution('data')}
         </div>
       </div>
     </div>
