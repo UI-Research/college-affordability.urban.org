@@ -26,13 +26,11 @@
   padding-bottom: 1rem;
 
   @include breakpoint($bp--large) {
-    padding-bottom: 0;
+    padding-bottom: .5rem;
     padding-right: 100px;
   }
 
-
   div p {
-    color: #777;
     display: inline;
     margin-bottom: 0.1rem;
   }
