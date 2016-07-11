@@ -121,7 +121,7 @@ export default class SinglePage extends Component {
 
       return (
         <div className="grid">
-          <Sticky topOffset={-10} bottomOffset={1000}>
+          <Sticky topOffset={-10} bottomOffset={30}>
             <Breadcrumb title={this.state.breadcrumbTitle} />
             <div className="col col--1-4">
               <div className="nav-anchor">
