@@ -67,6 +67,7 @@
     "gulp-react": "^3.1.0",
     "img-loader": "^1.2.2",
     "json-loader": "^0.5.4",
+    "json-markup": "^0.1.7",
     "jsonfile": "^2.3.1",
     "lodash": "^4.13.1",
     "map-stream": "0.0.6",

@@ -17,10 +17,12 @@
   "axis": {
     "rotated": false,
     "x": {
+      "label": "X Label",
       "type": "category",
       "categories": ["First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth"]
     },
     "y" : {
+      "label": "Y Label",
       "tick": {
         "format": "dollar"
       }

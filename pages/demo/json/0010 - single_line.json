@@ -14,9 +14,11 @@
     "rotated": false,
     "x": {
       "type": "category",
+      "label": "X Label",
       "categories": ["First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth"]
     },
     "y" : {
+      "label": "Y Label",
       "tick": {
         "format": "dollar"
       }
