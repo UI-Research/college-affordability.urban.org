@@ -15,6 +15,9 @@ module.exports = {
       case 'percent':
         pattern = '%';
         break;
+      case 'number':
+        pattern = ',.0f';
+        break;
     }
     return d3.format(pattern);
   }
