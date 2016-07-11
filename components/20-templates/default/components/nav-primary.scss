@@ -170,6 +170,7 @@ ul.nav-primary__second-level {
   @include breakpoint($bp--large) {
     .header-site__nav-primary-wrapper {
       padding-top: 26px;
+      margin-left: 38px;
     }
     .header-site__nav-utility-wrapper {
       li,
