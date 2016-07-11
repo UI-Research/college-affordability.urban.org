@@ -4,4 +4,7 @@
   background-color: #FFF;
   background: linear-gradient(#FFF 55%, rgba(255,255,255,0));
   width: 100%;
+  @include breakpoint($bp--large) {
+    margin-left: 28px;
+  }
 }
