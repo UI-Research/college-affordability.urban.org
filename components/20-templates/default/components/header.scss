@@ -142,7 +142,7 @@
 }
 @keyframes header-logo {
   0% { background: url('./img/logo.svg') no-repeat center center; }
-  100% { background: url('./img/logo-mini.png') no-repeat center center; width: 55px; height: 55px;}
+  100% { background: url('./img/logo.svg') no-repeat -25px -17px; background-size: 400%; width: 55px; height: 55px;}
 }
 
 .header-site.header-sticky {
