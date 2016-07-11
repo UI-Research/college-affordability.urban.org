@@ -21,7 +21,7 @@
   @include breakpoint($bp--xlarge) {
     margin: 0;
     min-height: 250px;
-    padding-left: 10rem;
+    padding-left: 10.3rem;
     padding-right: 10rem;
   }
   
@@ -40,7 +40,7 @@
       border-right: 4px solid #f5f5f5;
     }
     @include breakpoint($bp--xlarge) {
-      padding-left: 10rem;
+      padding-left: 10.65rem;
     }
   }
 
@@ -157,6 +157,22 @@
       background-color: #00aeef;
     }
   }
+  &:nth-child(5) {
+    .homepage__cta__badge {
+      background-color: #fdbf11;
+    }
+  }
+  &:nth-child(6) {
+    .homepage__cta__badge {
+      background-color: #9d9fa2;
+    }
+  }
+  &:nth-child(7) {
+    .homepage__cta__badge {
+      background-color: #00aeef;
+    }
+  }
+
 
   h2 {
     color: $color--gray;

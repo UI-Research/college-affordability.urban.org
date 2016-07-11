@@ -34,14 +34,14 @@ let specifications = {
       </Alerts>
       <div className="cta__container">
         <HomePageCTA src="img/defining-higher-education.svg">
-          <h2>Defining Higher Education</h2>
+          <h2>What is College?</h2>
           <p>Morbi ac fringilla magna, quis lobortis urna. Sed id eros sed nibh aliquam fringilla non varius mauris. Pellentesque a volutpat odio. Donec eu nisi sit amet lectus malesuada pellentesque sed eget dolor. Vestibulum sollicitudin tristique nibh, non efficitur velit rutrum nec. Integer condimentum sapien ac erat venenatis luctus.</p>
           <ul>
             <li><a href="#">Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
           </ul>
         </HomePageCTA>
         <HomePageCTA src="img/cost-aid-prices.svg">
-          <h2>Costs, Aids, and Prices</h2>
+          <h2>Producing Education</h2>
           <p>Nunc non diam quis magna volutpat laoreet in nec tortor. Sed at ex tellus. Donec egestas arcu non neque volutpat, quis lacinia nibh fringilla.</p>
           <ul>
             <li><a href="#">Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
@@ -50,7 +50,24 @@ let specifications = {
           </ul>
         </HomePageCTA>
         <HomePageCTA src="img/paying-for-college.svg">
-          <h2>Paying for College</h2>
+          <h2>Prices and Expenses</h2>
+          <p>Pellentesque egestas varius tortor eget efficitur. Nunc dignissim pharetra libero a consectetur. Morbi accumsan ex non rhoncus molestie. In commodo venenatis tortor id interdum. Integer condimentum sapien ac erat venenatis luctus.</p>
+          <ul>
+            <li><a href="#">Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="#">Another Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
+          </ul>
+        </HomePageCTA>
+        <HomePageCTA src="img/student-aid.svg">
+          <h2>Student Aid</h2>
+          <p>Mauris sapien orci, sagittis vel feugiat varius, scelerisque non urna. In eu massa sapien. Nulla aliquet purus eu nisl vulputate, nec tempus elit pulvinar. Etiam nec egestas leo, id rhoncus augue. In nec sollicitudin turpis. Integer bibendum arcu ut viverra ullamcorper. Duis eleifend congue rhoncus.</p>
+          <ul>
+            <li><a href="#">Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="#">Another Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="#">Third Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
+          </ul>
+        </HomePageCTA>
+        <HomePageCTA src="img/covering-expenses.svg">
+          <h2>Covering Expenses</h2>
           <p>Pellentesque egestas varius tortor eget efficitur. Nunc dignissim pharetra libero a consectetur. Morbi accumsan ex non rhoncus molestie. In commodo venenatis tortor id interdum. Integer condimentum sapien ac erat venenatis luctus.</p>
           <ul>
             <li><a href="#">Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
@@ -66,6 +83,7 @@ let specifications = {
             <li><a href="#">Third Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
           </ul>
         </HomePageCTA>
+
       </div>
       <StudentProfiles>
         <h2>Explore Student Profiles</h2>
@@ -79,6 +97,7 @@ let specifications = {
           <StudentProfile href="#" title="Top-Income Dependent" />
         </ul>
       </StudentProfiles>
+
     </div>
   )
 };
