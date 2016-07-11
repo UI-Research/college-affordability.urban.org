@@ -158,7 +158,7 @@ ul.nav-primary__second-level {
 /** Mini header mode (after scrolling down...) **/
 @keyframes nav-mini {
   0% {}
-  100% { line-height: 40px; }
+  100% { line-height: 20px; }
 }
 @keyframes nav-hide {
   0% {}
@@ -167,6 +167,15 @@ ul.nav-primary__second-level {
 
 .header-site.header-sticky {
   @include breakpoint($bp--large) {
+    .header-site__nav-primary-wrapper {
+      padding-top: 23px;
+    }
+    .header-site__nav-utility-wrapper {
+      li,
+      a {
+        line-height: 22px;
+      }
+    }
     .nav-primary__first-level {
       > li > a {
         animation: nav-mini $header-transition-duration ease;
@@ -175,27 +184,15 @@ ul.nav-primary__second-level {
 
       .nav-primary__second-level {
         > li {
-          @include breakpoint($bp--large) {
-            line-height: 16px;
-          }
+          line-height: 16px;
           > a {
-            line-height: 40px;
-            @include breakpoint($bp--large) {
-              line-height: 16px;
-              padding-bottom: 6px;
-              padding-top: 6px;
-            }
+            line-height: 16px;
+            padding-bottom: 2px;
+            padding-top: 7px;
           }
         }
-        height: 40px;
-        @include breakpoint($bp--large) {
-          height: 20px;
-        }
+        height: 20px;
       }
-    }
-    .header-site__nav-utility-wrapper {
-      animation: nav-hide $header-transition-duration ease;
-      animation-fill-mode: forwards;
     }
   }
 }

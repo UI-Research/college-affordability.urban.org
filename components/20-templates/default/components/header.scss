@@ -130,7 +130,7 @@
 /** Mini header mode (after scrolling down...) **/
 @keyframes header-mini {
   0% {}
-  100% { height: 50px; border-top: 0; }
+  100% { height: 55px; border-top: 0; }
 }
 @keyframes header-hide {
   0% { font-size: inherit; }
@@ -138,11 +138,11 @@
 }
 @keyframes header-logo-wrapper {
   0% {}
-  100% { width: 70px; height: 50px;}
+  100% { width: 70px; height: 55px;}
 }
 @keyframes header-logo {
   0% { background: url('./img/logo.svg') no-repeat center center; }
-  100% { background: url('./img/logo-mini.png') no-repeat center center; width: 50px; height: 50px;}
+  100% { background: url('./img/logo-mini.png') no-repeat center center; width: 55px; height: 55px;}
 }
 
 .header-site.header-sticky {
