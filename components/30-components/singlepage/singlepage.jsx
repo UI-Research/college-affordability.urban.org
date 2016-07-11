@@ -75,7 +75,7 @@ export default class SinglePage extends Component {
           let elevateToSection = () => {
             new Elevator({
               targetElement: document.querySelector(`#${elementID}`),
-              verticalPadding: 95, // pixels
+              verticalPadding: 105, // pixels
               duration: 1000 // milliseconds
             }).elevate();
 
