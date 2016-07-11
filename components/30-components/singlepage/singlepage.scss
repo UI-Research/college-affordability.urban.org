@@ -5,12 +5,15 @@
   margin-top: 50px;
 
   .breadcrumb {
-    padding: 20px 0;
+    padding: 35px 0 20px;
     display: block;
   }
 }
 .col--1-4 {
   margin-top: 60px;
+  @include breakpoint($bp--large) {
+    margin-top: 10px;
+  }
 }
 .grid .col--3-4 {
   min-height: 800px;
@@ -31,6 +34,7 @@
 
   .col--1-4 {
     width: 100%;
+    margin-top: 60px;
   }
 }
 

@@ -8,7 +8,7 @@ if (util.canUseDOM()) {
 
 export default class HTML extends Component {
   render() {
-    let pageBundle = `../bundle--${this.props.machineName}.js`;
+    let pageBundle = `/bundle--${this.props.machineName}.js`;
     let html = (
       <html>
         <head>
@@ -19,8 +19,8 @@ export default class HTML extends Component {
         <body>
           <div id="container">{this.props.children}</div>
 
-          <script src="../bundle--vendor.js"></script>
-          <script src="../bundle--components.js"></script>
+          <script src="/bundle--vendor.js"></script>
+          <script src="/bundle--components.js"></script>
           <script src={pageBundle}></script>
         </body>
       </html>

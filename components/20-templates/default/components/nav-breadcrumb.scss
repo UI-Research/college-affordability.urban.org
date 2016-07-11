@@ -1,5 +1,10 @@
+@import '_global.scss';
+
 .breadcrumb {
   font-size: 12px;
+  @include breakpoint($bp--large) {
+    padding-top: 15px;
+  }
 
   a {
     font-weight: normal;

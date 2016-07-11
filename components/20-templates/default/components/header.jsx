@@ -26,6 +26,38 @@ export default class Header extends Component {
         headerClass: headerClass
       });
     });
+    
+    // Find the current page set as active.
+    if (this.props.machineName) {
+      const headerRight = document.getElementsByClassName('header-site__right');
+      if (headerRight.length) {
+        const anchors = headerRight[0].getElementsByTagName('a');
+        for (let x=0; x<anchors.length; x++) {
+          let anchor = anchors.item(x);
+          let href = anchor.getAttribute('href');
+          // Check the link matches the page.
+          const pos = href.indexOf(this.props.machineName);
+          if (pos > 0) {
+            // Match the exact page.
+            // /student-aid but not /student-aid/net-price.
+            // account for /student-aid/index.html.
+            if ((href.length - (pos + this.props.machineName.length) <= 1)
+              || href.substr(pos + this.props.machineName.length) == '/index.html') {
+              let parent = anchor.parentElement;
+              anchor.classList.add('active');
+              parent.classList.add('active');
+              // Set active trail for sub menus.
+              if (!parent.classList.contains('has-submenu')) {
+                while (parent.tagName != 'UL') {
+                  parent = parent.parentElement;
+                }
+                parent.parentElement.classList.add('active-trail');
+              }
+            }
+          }
+        }
+      }
+    }
   }
   determineOffset() {
     const w = {
@@ -55,10 +87,10 @@ export default class Header extends Component {
                     <a href="/producing-education">Producing Education</a>
                   </li>
                   <li className="has-submenu">
-                    <a href="#">Prices and Expenses</a>
+                    <a href="/prices-expenses/index.html">Prices and Expenses</a>
                     <ul className="nav-primary__second-level">
                       <li>
-                        <a href="#">Sticker Prices</a>
+                        <a href="/prices-expenses/sticker-prices">Sticker Prices</a>
                       </li>
                       <li>
                         <a href="#">Student Budgets</a>
@@ -103,7 +135,7 @@ export default class Header extends Component {
                     </ul>
                   </li>
                   <li>
-                    <a href="#">After College</a>
+                    <a href="/after-college">After College</a>
                     <ul className="nav-primary__second-level">
                       <li>
                         <a href="#">Income After College</a>
@@ -112,7 +144,7 @@ export default class Header extends Component {
                         <a href="#">Student Debt and Repayment</a>
                       </li>
                       <li>
-                        <a href="#">Breaking Even</a>
+                        <a href="/after-college/breaking-even">Breaking Even</a>
                       </li>
                     </ul>
                   </li>
