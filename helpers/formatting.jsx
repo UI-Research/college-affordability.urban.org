@@ -1,0 +1,21 @@
+'use strict';
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import _ from 'lodash';
+import d3 from 'd3';
+import ExecutionEnvironment from 'exenv';
+
+module.exports = {
+  f: (pattern) => {
+    switch(pattern) {
+      case 'dollar':
+        pattern = '$,.2f';
+        break;
+      case 'percent':
+        pattern = '%';
+        break;
+    }
+    return d3.format(pattern);
+  }
+}

@@ -8,9 +8,9 @@
     ],
     "labels": {
       "format": {
-        "First": "$,.2f",
-        "Second": "$,.2f",
-        "Third": "$,.2f"
+        "First": "dollar",
+        "Second": "dollar",
+        "Third": "dollar"
       }
     },
     "type": "bar",
@@ -26,7 +26,7 @@
     },
     "y" : {
       "tick": {
-        "format": "$,.2f"
+        "format": "dollar"
       }
     }
   },
