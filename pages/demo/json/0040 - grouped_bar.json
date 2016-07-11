@@ -8,9 +8,9 @@
     ],
     "labels": {
       "format": {
-        "First": "$,.2f",
-        "Second": "$,.2f",
-        "Third": "$,.2f"
+        "First": "dollar",
+        "Second": "dollar",
+        "Third": "dollar"
       }
     },
     "type": "bar"
@@ -18,12 +18,14 @@
   "axis": {
     "rotated": false,
     "x": {
+      "label": "X Label",
       "type": "category",
       "categories": ["First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth"]
     },
     "y" : {
+      "label": "Y Label",
       "tick": {
-        "format": "$,.2f"
+        "format": "dollar"
       }
     }
   },

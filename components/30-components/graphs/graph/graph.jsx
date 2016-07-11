@@ -5,6 +5,7 @@ import d3 from 'd3';
 import _ from 'lodash';
 const LazyLoad = require('30-components/basic/lazyload/lazyload.jsx');
 import util from 'util.jsx';
+import formatting from 'formatting.jsx';
 
 if (util.canUseDOM()) {
   require('./graph.scss');
@@ -37,18 +38,18 @@ const BaseGraph = React.createClass({
       // Detect any possible instances of the key 'format' and convert it into the specified format.
       if (data.data && data.data.labels && data.data.labels.format) {
         _.map(data.data.labels.format, (entry) => {
-          data.data.labels.format = d3.format(entry);
+          data.data.labels.format = formatting.f(entry);
         });
       }
       if (data.axis) {
         if (data.axis.x && data.axis.x.tick && data.axis.x.tick.format) {
-          data.axis.x.tick.format = d3.format(data.axis.x.tick.format);
+          data.axis.x.tick.format = formatting.f(data.axis.x.tick.format);
         }
         if (data.axis.y && data.axis.y.tick && data.axis.y.tick.format) {
-          data.axis.y.tick.format = d3.format(data.axis.y.tick.format);
+          data.axis.y.tick.format = formatting.f(data.axis.y.tick.format);
         }
         if (data.axis.y2 && data.axis.y2.tick && data.axis.y2.tick.format) {
-          data.axis.y2.tick.format = d3.format(data.axis.y2.tick.format);
+          data.axis.y2.tick.format = formatting.f(data.axis.y2.tick.format);
         }
       }
 

@@ -6,7 +6,7 @@
     ],
     "labels": {
       "format": {
-        "First": "$,.2f"
+        "First": "dollar"
       }
     }
   },
@@ -14,11 +14,13 @@
     "rotated": false,
     "x": {
       "type": "category",
+      "label": "X Label",
       "categories": ["First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth"]
     },
     "y" : {
+      "label": "Y Label",
       "tick": {
-        "format": "$,.2f"
+        "format": "dollar"
       }
     }
   },

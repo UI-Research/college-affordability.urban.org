@@ -11,12 +11,12 @@
     ],
     "labels": {
       "format": {
-        "First": "$,.2f",
-        "Second": "$,.2f",
-        "Third": "$,.2f",
-        "Fourth": "$,.2f",
-        "Fifth": "$,.2f",
-        "Sixth": "$,.2f"
+        "First": "dollar",
+        "Second": "dollar",
+        "Third": "dollar",
+        "Fourth": "dollar",
+        "Fifth": "dollar",
+        "Sixth": "dollar"
       }
     },
     "type": "bar",
@@ -29,12 +29,14 @@
   "axis": {
     "rotated": false,
     "x": {
+      "label": "X Label",
       "type": "category",
       "categories": ["First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth"]
     },
     "y" : {
+      "label": "Y Label",
       "tick": {
-        "format": "$,.2f"
+        "format": "dollar"
       }
     }
   },
