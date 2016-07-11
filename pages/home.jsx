@@ -72,11 +72,11 @@ let specifications = {
         <hr />
         <p>Suspendisse sodales tempus vehicula. Nullam in mauris et justo mattis sollicitudin eu non sem. Etiam semper dictum purus sit amet maximus. Phasellus ullamcorper tempor ante, sit.</p>
         <ul>
-          <StudentProfile href="#" title="Call to Action Link" />
-          <StudentProfile href="#" title="Call to Action Link" />
-          <StudentProfile href="#" title="Call to Action Link" />
-          <StudentProfile href="#" title="Call to Action Link" />
-          <StudentProfile href="#" title="Call to Action Link" />
+          <StudentProfile href="#" title="Independent" />
+          <StudentProfile href="#" title="Low-Income Dependent" />
+          <StudentProfile href="#" title="Lower-Middle Income Dependent" />
+          <StudentProfile href="#" title="Upper-Middle Income Dependent" />
+          <StudentProfile href="#" title="Top-Income Dependent" />
         </ul>
       </StudentProfiles>
     </div>
