@@ -63,6 +63,17 @@ const BaseGraph = React.createClass({
         };
       }
 
+      // Show grid lines by default
+      if (!data.grid) {
+        data.grid = {};
+        // This we enable by default for most graphs.
+        if (!data.grid.y) {
+          data.grid.y = {
+            show: 'true'
+          }
+        }
+      }
+
       // Hide tooltip.
       data.tooltip = {
         show: false
