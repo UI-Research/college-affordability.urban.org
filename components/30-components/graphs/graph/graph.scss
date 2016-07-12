@@ -48,6 +48,11 @@
       cursor: hand;
     }
   }
+
+  h2 {
+    font-size: 18px;
+    line-height: 1.2;
+  }
 }
 
 .c-bar {
@@ -61,4 +66,47 @@
   padding: 3px;
   margin: 1px;
   color: white;
+}
+
+.c3-axis-y {
+  .tick {
+    font-size: 12px;
+
+    line {
+      stroke: transparent;
+    }
+  }
+
+  path.domain {
+    stroke: transparent;
+  }
+}
+
+.c3-xgrid, .c3-ygrid {
+  stroke-dasharray: 0;
+}
+
+.c3-grid line {
+  stroke: $color--gray-3;
+}
+
+.c3-axis-y-label {
+  transform: rotate(0deg);
+}
+
+.c3-legend-item-tile {
+}
+
+.c-graph__legend {
+  transform: translate(0, 5px);
+}
+
+.c3-axis-x {
+  .domain {
+    stroke: $color--gray-3;
+  }
+}
+
+.c3 line {
+  stroke: $color--gray-3;
 }
