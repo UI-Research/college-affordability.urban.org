@@ -136,9 +136,11 @@ const BaseGraph = React.createClass({
   render: function() {
     const legend = `${this.id}_legend`;
     const options = `${this.id}_options`;
+    const axisLabel = `${this.id}_axis-label`;
 
     return (
       <div>
+        <div id={axisLabel} className="c-graph__y-label">Put Y label here (and x in parentheses)</div>
         <div id={legend} className="c-graph__legend"></div>
         <div id={this.id} className={`c-graph__container c-${this.props.file.data.type}__container`}></div>
         <div id={options} className="c-graph__options"></div>

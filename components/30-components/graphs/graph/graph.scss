@@ -12,7 +12,7 @@
 }
 
 .c-text__caption--bottom {
-  margin-top: $space-single;
+  margin-top: 0.15rem;
   margin-bottom: $space-single;
 
   border-bottom: 1px solid $color--gray-4;
@@ -98,15 +98,27 @@
 }
 
 .c-graph__legend {
-  transform: translate(0, 5px);
+  transform: translate(0, 15px);
 }
 
 .c3-axis-x {
   .domain {
     stroke: $color--gray-3;
+    transform: translate(0, -2px);
+  }
+  .tick line {
+    transform: translate(0, -2px);
   }
 }
 
 .c3 line {
   stroke: $color--gray-3;
+}
+
+.c-graph__y-label {
+  margin-bottom: -14px;
+  font-size: 12px;
+  color: black;
+  padding-left: 1px;
+  font-style: italic;
 }
