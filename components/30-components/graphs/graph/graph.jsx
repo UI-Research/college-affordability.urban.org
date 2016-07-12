@@ -152,14 +152,15 @@ export class BaseGraph extends Component {
 
     if (data.axis) {
       if (data.axis.y && data.axis.y.label) {
-        //d3.selectAll(`#${object.id} .c3-axis-y g`).last().remove();
         // Create container for y axis
         const container = d3.select(`#${object.id}`).insert('svg', ":first-child")
           .attr('width', '100%')
           .attr('height', 25);
+        // Fix and encapsulate y axis label
         const y_axis_label = d3.selectAll(`#${object.id} .c3-axis-y .c3-axis-y-label`)
           .attr('transform', 'rotate(0)')
           .attr('dx', '5em');
+        // Move it over to new container
         y_axis_label.each(function() {
           container.node().appendChild(this);
         });
