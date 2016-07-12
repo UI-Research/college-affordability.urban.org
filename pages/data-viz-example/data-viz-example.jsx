@@ -1,7 +1,7 @@
 'use strict';
 
-const React = require('react');
-const Template = require('20-templates/default/default.jsx');
+import React from 'react';
+import Template from '20-templates/default/default.jsx';
 import Graph from '30-components/graphs/graph/graph.jsx';
 const Box = require('30-components/box/box/box.jsx'),
       Actions = require('30-components/basic/actions/actions.jsx'),

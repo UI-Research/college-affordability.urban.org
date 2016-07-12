@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-const Template = require('20-templates/default/default.jsx');
+import Template from '20-templates/default/default.jsx';
 import Graph from '30-components/graphs/graph/graph.jsx';
 import SinglePage from '30-components/singlepage/singlepage.jsx';
 

@@ -1,7 +1,7 @@
 'use strict';
 
-import React, { Component } from 'react';
-const Template = require('20-templates/default/default.jsx');
+import React from 'react';
+import Template from '20-templates/default/default.jsx';
 import util from 'util.jsx';
 
 let specifications = {
