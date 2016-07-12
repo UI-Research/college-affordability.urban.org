@@ -133,3 +133,23 @@
 .c3-axis-y-label {
   display: none;
 }
+
+.c3-bar._expanded_ {
+  fill-opacity: 100;
+}
+
+.c3-line {
+  stroke-width: 2px;
+}
+
+.c3-circle {
+  fill: white !important;
+  opacity: 1;
+  stroke-width: 2px;
+  stroke: $color--blue;
+
+  &._expanded_ {
+    stroke-width: 2px;
+    stroke: $color--blue;
+  }
+}
