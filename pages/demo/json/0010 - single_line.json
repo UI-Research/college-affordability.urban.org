@@ -13,20 +13,18 @@
   "axis": {
     "rotated": false,
     "x": {
-      "label": "",
+      "label": {
+        "text": "X label",
+        "position": "outer-center"
+      },
       "type": "category",
       "categories": ["First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth"]
     },
     "y" : {
-      "label": "",
+      "label": "Y Label",
       "tick": {
-        "format": "$,"
+        "format": "dollar"
       }
-    }
-  },
-  "grid": {
-    "y": {
-      "show": true
     }
   },
   "metadata": {
