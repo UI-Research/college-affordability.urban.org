@@ -101,6 +101,7 @@ export class BaseGraph extends Component {
       // Make it available to other scopes.
       const setLegend = this.setLegend;
       setLegend(this);
+      this.setTick(this);
 
       // If sets are available, reveal them as options
       if (data.data.sets) {
@@ -138,6 +139,20 @@ export class BaseGraph extends Component {
     legend.each(function() {
       svg.node().appendChild(this);
     });
+  }
+  setTick(object) {
+    // When in category mode, align the ticks to be directly on top
+    // of the labels.
+    if (!_.isEmpty(object.props.file.axis.x.type) && object.props.file.axis.x.type == 'category') {
+      d3.selectAll(`#${object.id} g.c3-axis-x g.tick line`).remove();
+      let ticks = d3.selectAll(`#${object.id} g.c3-axis-x g.tick`);
+      _.map(ticks[0],function (tick) {
+        d3.select(tick).insert('line', ":first-child")
+          .attr('y2', 6)
+          .attr('x1', 0)
+          .attr('x2', 0);
+      });
+    }
   }
   render() {
     const legend = `${this.id}_legend`;
