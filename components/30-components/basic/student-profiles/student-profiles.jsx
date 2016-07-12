@@ -23,8 +23,7 @@ export class StudentProfile extends Component {
   }
 }
 StudentProfile.propTypes = {
-  href: PropTypes.string,
-  imgSrc: PropTypes.string.isRequired
+  href: PropTypes.string
 };
 StudentProfile.defaultProps = {
   href: '#'

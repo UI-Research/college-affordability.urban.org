@@ -108,7 +108,7 @@
         padding-bottom: 2px;
       }
       @include breakpoint($bp--xlarge) {
-        line-height: 32px;
+        line-height: 33px;
         font-size: 16px;
         padding-top: 20px;
       }
@@ -121,6 +121,7 @@ ul.nav-primary__second-level {
   line-height: 10px;
   width: auto;
   z-index: 15;
+  border-bottom: 1px solid $color--gray-3;
 
   li {
     margin: 0;
@@ -132,13 +133,14 @@ ul.nav-primary__second-level {
       font-size: 15px;
       font-weight: normal;
       line-height: 40px;
+      border-bottom: 0;
 
       @include breakpoint($bp--mid) {
         padding: 11px .5rem;
       }
       @include breakpoint($bp--large) {
         font-size: 13px;
-        line-height: 10px;
+        line-height: 20px;
         padding: 9px .8rem;
       }
       @include breakpoint($bp--xlarge) {
@@ -187,11 +189,10 @@ ul.nav-primary__second-level {
 
       .nav-primary__second-level {
         > li {
-          line-height: 16px;
           > a {
-            line-height: 16px;
-            padding-bottom: 2px;
-            padding-top: 7px;
+            line-height: 31px;
+            padding-bottom: 0;
+            padding-top: 0;
           }
         }
         height: 32px;

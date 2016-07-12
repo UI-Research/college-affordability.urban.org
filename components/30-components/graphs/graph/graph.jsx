@@ -1,9 +1,10 @@
 'use strict';
 
-import React from 'react';
+import React, { Component } from 'react';
 import d3 from 'd3';
 import _ from 'lodash';
 const LazyLoad = require('30-components/basic/lazyload/lazyload.jsx');
+
 import util from 'util.jsx';
 import formatting from 'formatting.jsx';
 
@@ -12,20 +13,14 @@ if (util.canUseDOM()) {
 }
 
 // Keep graphing piece separate - need its own DOM interaction events.
-const BaseGraph = React.createClass({
-  propTypes: {
-    type: React.PropTypes.string
-  },
-  getDefaultProps: function() {
-    return {
-      type: 'line'
-    };
-  },
-  componentWillMount() {
+export class BaseGraph extends Component {
+  constructor(props) {
+    super(props);
+
     // Create unique ID for element.
     this.id = 'graph' + util.uniqueID();
-  },
-  componentDidMount: function() {
+  }
+  componentDidMount() {
     if (util.canUseDOM) {
       const c3 = require('c3');
 
@@ -63,6 +58,17 @@ const BaseGraph = React.createClass({
         };
       }
 
+      // Show grid lines by default
+      if (!data.grid) {
+        data.grid = {};
+        // This we enable by default for most graphs.
+        if (!data.grid.y) {
+          data.grid.y = {
+            show: 'true'
+          };
+        }
+      }
+
       // Hide tooltip.
       data.tooltip = {
         show: false
@@ -94,7 +100,7 @@ const BaseGraph = React.createClass({
 
       // Make it available to other scopes.
       const setLegend = this.setLegend;
-      setLegend();
+      setLegend(this);
 
       // If sets are available, reveal them as options
       if (data.data.sets) {
@@ -114,26 +120,26 @@ const BaseGraph = React.createClass({
                 ],
                 unload: chart.columns,
                 done: function() {
-                  setLegend();
+                  setLegend(this);
                 }
               });
             });
         });
       }
     }
-  },
-  setLegend: function() {
+  }
+  setLegend(object) {
     // Set up the legend above the graph
-    let legend = d3.selectAll(`#${this.id} .c3-legend-item`);
-    let svg = d3.select(`#${this.id}_legend`)
+    let legend = d3.selectAll(`#${object.id} .c3-legend-item`);
+    let svg = d3.select(`#${object.id}_legend`)
       .append('svg')
       .attr('width', '100%')
       .attr('height', 25);
-    legend.each(function(){
+    legend.each(function() {
       svg.node().appendChild(this);
     });
-  },
-  render: function() {
+  }
+  render() {
     const legend = `${this.id}_legend`;
     const options = `${this.id}_options`;
     const axisLabel = `${this.id}_axis-label`;
@@ -147,28 +153,26 @@ const BaseGraph = React.createClass({
       </div>
     );
   }
-});
+}
 
-const Graph = React.createClass({
-  propTypes: {
-    anchor_name: React.PropTypes.string,
-    title: React.PropTypes.string,
-    type: React.PropTypes.string
-  },
-  getDefaultProps: function() {
-    return {
-      anchor_name: '',
-      title: '',
-      type: 'line'
-    };
-  },
-  componentWillMount() {
+BaseGraph.propTypes = {
+  content: React.PropTypes.string
+};
+BaseGraph.defaultProps = {
+  type: 'line'
+};
+
+
+export default class Graph extends Component {
+  constructor(props) {
+    super(props);
+
     // Force specify type of graph.
     if (!this.props.file.data.type) {
       this.props.file.data.type = this.props.type;
     }
-  },
-  attribution: function(string) {
+  }
+  attribution(string) {
     if (this.props.file.metadata && this.props.file.metadata[string]) {
       return (
         <div>
@@ -180,8 +184,8 @@ const Graph = React.createClass({
     else {
       return false;
     }
-  },
-  render: function() {
+  }
+  render() {
     let base_class = 'c-graph c-' + this.props.file.data.type,
         anchor = null;
     if (this.props.anchor_name) {
@@ -206,6 +210,15 @@ const Graph = React.createClass({
     </div>
     );
   }
-});
+}
 
-module.exports = Graph;
+Graph.propTypes = {
+  anchor_name: React.PropTypes.string,
+  title: React.PropTypes.string,
+  type: React.PropTypes.string
+};
+Graph.defaultProps = {
+  anchor_name: '',
+  title: '',
+  type: 'line'
+};
