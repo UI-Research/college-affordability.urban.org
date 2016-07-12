@@ -143,7 +143,7 @@ export class BaseGraph extends Component {
   setTick(object) {
     // When in category mode, align the ticks to be directly on top
     // of the labels.
-    if (!_.isEmpty(object.props.file.axis.x.type)) {
+    if (!_.isEmpty(object.props.file.axis.x.type) && object.props.file.axis.x.type == 'category') {
       d3.selectAll(`#${object.id} g.c3-axis-x g.tick line`).remove();
       let ticks = d3.selectAll(`#${object.id} g.c3-axis-x g.tick`);
       _.map(ticks[0],function (tick) {
