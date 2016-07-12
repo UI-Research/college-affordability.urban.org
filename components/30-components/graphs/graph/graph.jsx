@@ -144,12 +144,13 @@ export class BaseGraph extends Component {
     // When in category mode, align the ticks to be directly on top
     // of the labels.
     if (!_.isEmpty(object.props.file.axis.x.type)) {
-      let ticks = d3.selectAll(`#${object.id} g.c3-axis-x g.tick line`);
-      _.map(ticks[0], (tick) => {
-        d3.select(tick)
+      d3.selectAll(`#${object.id} g.c3-axis-x g.tick line`).remove();
+      let ticks = d3.selectAll(`#${object.id} g.c3-axis-x g.tick`);
+      _.map(ticks[0],function (tick) {
+        d3.select(tick).insert('line', ":first-child")
+          .attr('y2', 6)
           .attr('x1', 0)
-          .attr('x2', 0)
-          .attr('y1', 0);
+          .attr('x2', 0);
       });
     }
   }
