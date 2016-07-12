@@ -2,8 +2,8 @@
 
 import React from 'react';
 const Template = require('20-templates/default/default.jsx');
-const Graph = require('30-components/graphs/graph/graph.jsx'),
-        Box = require('30-components/box/box/box.jsx');
+import Graph from '30-components/graphs/graph/graph.jsx';
+const Box = require('30-components/box/box/box.jsx');
 import SinglePage from '30-components/singlepage/singlepage.jsx';
 import jsonMarkup from 'json-markup';
 

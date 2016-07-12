@@ -1,11 +1,11 @@
 'use strict';
 
-const React = require('react');
+import React, { Component } from 'react';
 const Template = require('20-templates/default/default.jsx');
-const Graph = require('30-components/graphs/graph/graph.jsx'),
-      MultiPage = require('30-components/multipage/multipage.jsx');
+import Graph from '30-components/graphs/graph/graph.jsx';
+const MultiPage = require('30-components/multipage/multipage.jsx');
 
-const util = require('util.jsx');
+import util from 'util.jsx';
 
 let multipage = {
   links: [
