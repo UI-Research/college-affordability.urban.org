@@ -20,7 +20,7 @@
     "y" : {
       "label": "",
       "tick": {
-        "format": "dollar"
+        "format": "$,"
       }
     }
   },

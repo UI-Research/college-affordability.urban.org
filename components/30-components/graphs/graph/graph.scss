@@ -98,21 +98,23 @@
 }
 
 .c-graph__legend {
-  transform: translate(0, 15px);
+  transform: translate(0, 18px);
 }
 
 .c3-axis-x {
   .domain {
-    stroke: $color--gray-3;
-    transform: translate(0, -2px);
+    stroke: black;
+  }
+  .tick {
+    font-size: 11px;
   }
   .tick line {
-    transform: translate(0, -2px);
+    color: black;
   }
 }
 
-.c3 line {
-  stroke: $color--gray-3;
+.c3-ygrids line {
+  stroke: #DEDEDE;
 }
 
 .c-graph__y-label {
@@ -121,4 +123,8 @@
   color: black;
   padding-left: 1px;
   font-style: italic;
+}
+
+.c3-axis-y-label {
+  display: none;
 }
