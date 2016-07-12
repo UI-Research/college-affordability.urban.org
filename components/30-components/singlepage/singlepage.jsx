@@ -19,15 +19,15 @@ export default class SinglePage extends Component {
       breadcrumbTitle : '',
       menu: '',
       topSection: '',
-      pageTitle: '',
     };
 
     if (util.canUseDOM()) {
       let h1 = [];
 
+      // Do this now so we can check the window hash against an actual menu.
       this.state.menu = _.map(props.content.props.children, (element, index) => {
-        if (element.type === 'h1') {
-          this.state.pageTitle = element.props.children;
+        if (!props.sectionTitle && element.type === 'h1') {
+          props.sectionTitle = element.props.children;
         }
         // If the DOM elements are either h1 or h2 without the menu=false flag.
         // This is with the assumption the elements are at the base level of the
@@ -128,7 +128,7 @@ export default class SinglePage extends Component {
       return (
         <div className="grid">
           <Sticky topOffset={-10} bottomOffset={30}>
-            <Breadcrumb section={this.state.pageTitle} title={this.state.breadcrumbTitle} />
+            <Breadcrumb section={this.props.sectionTitle} title={this.state.breadcrumbTitle} />
             <div className="col col--1-4">
               <div className="nav-anchor">
                 <ul className="nav-anchor__top-level">
@@ -151,8 +151,10 @@ export default class SinglePage extends Component {
 }
 
 SinglePage.propTypes = {
-  content: React.PropTypes.object
+  content: React.PropTypes.object,
+  sectionTitle: React.PropTypes.string
 };
 SinglePage.defaultProps = {
-  content: {}
+  content: {},
+  sectionTitle: ''
 };

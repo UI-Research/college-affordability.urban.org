@@ -11,7 +11,7 @@ import util from 'util.jsx';
 
 let singlepage = (
   <div>
-    <h1>Demo Page</h1>
+    <h1>Demo JSONs Page</h1>
     <h2>Graphs</h2>
     <Graph file={require('./json/0010 - single_line.json')} />
     <Box>
@@ -53,13 +53,13 @@ let singlepage = (
 
 let specifications = {
   'name': 'demo',
-  'content': <SinglePage topSection="Overview" content={singlepage} />
+  'content': <SinglePage sectionTitle="Demo JSONs" content={singlepage} />
 };
 
 const Demo = React.createClass({
   render: function() {
     return (
-      <Template title="Producing Education" machineName={specifications.name} includeHTML={this.props.includeHTML}>
+      <Template title="Demo JSONs" machineName={specifications.name} includeHTML={this.props.includeHTML}>
         {specifications.content}
       </Template>
     );
