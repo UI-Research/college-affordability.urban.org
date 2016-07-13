@@ -17,10 +17,7 @@
   "axis": {
     "rotated": false,
     "x": {
-      "label": {
-        "text": "X label",
-        "position": "outer-center"
-      },
+      "label": "X label",
       "type": "category",
       "categories": ["First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth"]
     },
