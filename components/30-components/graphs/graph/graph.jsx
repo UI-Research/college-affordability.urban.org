@@ -148,15 +148,22 @@ export class BaseGraph extends Component {
     }
   }
   setLegend(object) {
-    // Set up the legend above the graph
     let legend = d3.selectAll(`#${object.id} .c3-legend-item`);
-    let svg = d3.select(`#${object.id}_legend`)
-      .append('svg')
-      .attr('width', '100%')
-      .attr('height', 25);
-    legend.each(function() {
-      svg.node().appendChild(this);
-    });
+    // If there's only one data set, don't bother listing the legend.
+    if (legend[0].length <= 1) {
+      legend.remove();
+    }
+    else {
+      // Set up the legend above the graph
+      let svg = d3.select(`#${object.id}_legend`)
+        .append('svg')
+        .attr('width', '100%')
+        .attr('height', 25);
+      legend.each(function() {
+        svg.node().appendChild(this);
+      });
+    }
+
   }
   moveYAxisLabel(object) {
     // Transform Y axis to not be so vertical...
@@ -170,7 +177,7 @@ export class BaseGraph extends Component {
     if (data.axis) {
       if (data.axis.y && data.axis.y.label) {
         // Create container for y axis
-        const container = d3.select(`#${object.id}`).insert('svg', ":first-child")
+        const container = d3.select(`#${object.id}`).insert('svg', ':first-child')
           .attr('width', '100%')
           .attr('height', 25);
         // Fix and encapsulate y axis label
@@ -191,7 +198,7 @@ export class BaseGraph extends Component {
       d3.selectAll(`#${object.id} g.c3-axis-x g.tick line`).remove();
       let ticks = d3.selectAll(`#${object.id} g.c3-axis-x g.tick`);
       _.map(ticks[0],function (tick) {
-        d3.select(tick).insert('line', ":first-child")
+        d3.select(tick).insert('line', ':first-child')
           .attr('y2', 6)
           .attr('x1', 0)
           .attr('x2', 0);

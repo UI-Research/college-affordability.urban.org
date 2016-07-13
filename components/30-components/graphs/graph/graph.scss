@@ -153,3 +153,14 @@
     stroke: $color--blue;
   }
 }
+
+.c3-circle {
+  stroke-width: 4px;
+  stroke: $color--blue;
+
+  &._expanded_ {
+    stroke-width: 0px;
+    stroke: $color--blue;
+    fill: $color--blue !important;
+  }
+}
