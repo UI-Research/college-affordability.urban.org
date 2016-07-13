@@ -2,7 +2,6 @@
 
 .header-site {
   background: #fff;
-  border-bottom: 1px solid $color--gray-4;
   width: 100%;
   border-top: 6px solid black;
   @include clearfix();
@@ -50,8 +49,6 @@
 }
 
 .header-site__right {
-  @include breakpoint($bp--mid) {
-  }
   @include breakpoint($bp--large) {
     margin-left: 0;
   }

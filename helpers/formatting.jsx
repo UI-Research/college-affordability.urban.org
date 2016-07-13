@@ -10,7 +10,7 @@ module.exports = {
   f: (pattern) => {
     switch(pattern) {
       case 'dollar':
-        pattern = '$,.2f';
+        pattern = '$,.0f';
         break;
       case 'percent':
         pattern = '%';

@@ -1,10 +1,9 @@
 'use strict';
 
-const React = require('react'),
-      ExecutionEnvironment = require('exenv'),
-      util = require('../../helpers/util.jsx');
-const Template = require('../../components/20-templates/default/default.jsx');
-const ContainerQueryTest = require('../../components/30-components/container-query/container-query.jsx');
+import React from 'react';
+import util from 'util.jsx';
+import Template from '20-templates/default/default.jsx';
+const ContainerQueryTest = require('../../../components/30-components/container-query/container-query.jsx');
 
 let specifications = {
   'name': 'container-query',
@@ -24,7 +23,7 @@ const ContainerPage = React.createClass({
   }
 });
 
-if (ExecutionEnvironment.canUseDOM) {
+if (util.canUseDOM()) {
   require('./' + specifications.name.toLowerCase() + '.scss');
 }
 util.printToPage('container-query', ContainerPage);
