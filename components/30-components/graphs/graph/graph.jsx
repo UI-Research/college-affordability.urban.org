@@ -131,10 +131,8 @@ export class BaseGraph extends Component {
       let chart = c3.generate(data);
 
       // Make it available to other scopes.
-      const setLegend = this.setLegend;
-      setLegend(this);
-      this.setTick(this);
-      this.moveYAxisLabel(this);
+      const polishChart = this.polishChart;
+      polishChart(this);
 
       // If sets are available, reveal them as options
       if (data.data.sets) {
@@ -154,13 +152,21 @@ export class BaseGraph extends Component {
                 ],
                 unload: chart.columns,
                 done: function() {
-                  setLegend(this);
+                  polishChart(this);
                 }
               });
             });
         });
       }
     }
+  }
+  polishChart(object) {
+    const setLegend = object.setLegend;
+    setLegend(object);
+    const setTick = object.setTick;
+    setTick(object);
+    const moveYAxisLabel = object.moveYAxisLabel;
+    moveYAxisLabel(object);
   }
   setLegend(object) {
     let legend = d3.selectAll(`#${object.id} .c3-legend-item`);
