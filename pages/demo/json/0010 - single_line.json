@@ -13,7 +13,7 @@
   "axis": {
     "rotated": false,
     "x": {
-      "label": "X label",
+      "label": "X Label",
       "type": "category",
       "categories": ["First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth"]
     },
