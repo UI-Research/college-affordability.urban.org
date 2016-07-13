@@ -65,6 +65,15 @@ export class BaseGraph extends Component {
         }
       }
 
+      // Always have the y axis start at 0
+      if (data.axis && data.axis.y) {
+        data.axis.y.padding = {
+          top: 50,
+          bottom: 0
+        };
+        data.axis.y.min = 0;
+      }
+
       // Relocate legend to top of the graph.
       if (!data.legend) {
         data.legend = {
@@ -73,6 +82,12 @@ export class BaseGraph extends Component {
             onclick: function () { return false; }
           }
         };
+      }
+
+      if (data.data.type && data.data.type === 'area-spline') {
+        data.point = {
+          show: false
+        }
       }
 
       // Show grid lines by default
