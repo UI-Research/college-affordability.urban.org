@@ -10,7 +10,7 @@ import util from 'util.jsx';
 
 let singlepage = (
   <div>
-    <h1>Independent</h1>
+    <h1>Low-Income Dependent</h1>
 
     <div className="media media--right-align">
       <div className="icon">
@@ -22,10 +22,8 @@ let singlepage = (
     <h2>Biographical Information</h2>
 
     <ul className="no-bullets">
-      <li><strong>Type of Student:</strong> Independent</li>
+      <li><strong>Type of Student:</strong> Low-Income Dependent</li>
       <li><strong>Enrolled:</strong> Part-time</li>
-      <li><strong>Age:</strong> 25</li>
-      <li><strong>Location:</strong> New York</li>
       <li><strong>Annual Income:</strong> $30,000</li>
     </ul>
 
