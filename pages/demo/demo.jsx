@@ -13,36 +13,49 @@ let singlepage = (
   <div>
     <h1>Demo JSONs Page</h1>
     <h2>Graphs</h2>
+
     <Graph file={require('./json/0010 - single_line.json')} />
     <Box>
       <h3>Code Sample</h3>
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0010 - single_line.json'))}} />
     </Box>
+
     <Graph file={require('./json/0020 - multiple_line.json')} />
     <Box>
       <h3>Code Sample</h3>
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0020 - multiple_line.json'))}} />
     </Box>
+
     <Graph file={require('./json/0030 - single_bar.json')} />
     <Box>
       <h3>Code Sample</h3>
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0030 - single_bar.json'))}} />
     </Box>
+
     <Graph file={require('./json/0040 - grouped_bar.json')} />
     <Box>
       <h3>Code Sample</h3>
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0040 - grouped_bar.json'))}} />
     </Box>
+
     <Graph file={require('./json/0050 - stacked_bar.json')} />
     <Box>
       <h3>Code Sample</h3>
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0050 - stacked_bar.json'))}} />
     </Box>
+
+    <Graph file={require('./json/0051 - stacked_bar_normalized.json')} />
+    <Box>
+      <h3>Code Sample</h3>
+      <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0051 - stacked_bar_normalized.json'))}} />
+    </Box>
+
     <Graph file={require('./json/0060 - grouped_stacked_bar.json')} />
     <Box>
       <h3>Code Sample</h3>
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0060 - grouped_stacked_bar.json'))}} />
     </Box>
+
     <Graph file={require('./json/0070 - stacked_area.json')} />
     <Box>
       <h3>Code Sample</h3>
