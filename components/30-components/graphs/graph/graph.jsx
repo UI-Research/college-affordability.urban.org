@@ -48,6 +48,23 @@ export class BaseGraph extends Component {
         }
       }
 
+      // Relocate the x axis to the bottom outer center of the graph.
+      // We expect implementers to assign a string to data.axis.x.label.
+      // e.g.
+      // ...
+      // axis {
+      //   x {
+      //     label: "My x axis label"
+      //   }
+      // }
+      // }
+      if (data.axis && data.axis.x && data.axis.x.label && typeof data.axis.x.label === 'string') {
+        data.axis.x.label = {
+          text: data.axis.x.label,
+          position: 'outer-center'
+        }
+      }
+
       // Relocate legend to top of the graph.
       if (!data.legend) {
         data.legend = {
