@@ -75,6 +75,12 @@ export class BaseGraph extends Component {
         };
       }
 
+      if (data.data.type && data.data.type === 'area-spline') {
+        data.point = {
+          show: false
+        }
+      }
+
       // Show grid lines by default
       if (!data.grid) {
         data.grid = {};
