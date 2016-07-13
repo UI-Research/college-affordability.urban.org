@@ -101,6 +101,8 @@ export class BaseGraph extends Component {
       // Make it available to other scopes.
       const setLegend = this.setLegend;
       setLegend(this);
+      this.setTick(this);
+      this.moveYAxisLabel(this);
 
       // If sets are available, reveal them as options
       if (data.data.sets) {
@@ -138,6 +140,46 @@ export class BaseGraph extends Component {
     legend.each(function() {
       svg.node().appendChild(this);
     });
+  }
+  moveYAxisLabel(object) {
+    // Transform Y axis to not be so vertical...
+    let data = object.props.file;
+
+    d3.selection.prototype.last = function() {
+      var last = this.size() - 1;
+      return d3.select(this[0][last]);
+    };
+
+    if (data.axis) {
+      if (data.axis.y && data.axis.y.label) {
+        // Create container for y axis
+        const container = d3.select(`#${object.id}`).insert('svg', ":first-child")
+          .attr('width', '100%')
+          .attr('height', 25);
+        // Fix and encapsulate y axis label
+        const y_axis_label = d3.selectAll(`#${object.id} .c3-axis-y .c3-axis-y-label`)
+          .attr('transform', 'rotate(0)')
+          .attr('dx', '5em');
+        // Move it over to new container
+        y_axis_label.each(function() {
+          container.node().appendChild(this);
+        });
+      }
+    }
+  }
+  setTick(object) {
+    // When in category mode, align the ticks to be directly on top
+    // of the labels.
+    if (!_.isEmpty(object.props.file.axis.x.type) && object.props.file.axis.x.type == 'category') {
+      d3.selectAll(`#${object.id} g.c3-axis-x g.tick line`).remove();
+      let ticks = d3.selectAll(`#${object.id} g.c3-axis-x g.tick`);
+      _.map(ticks[0],function (tick) {
+        d3.select(tick).insert('line', ":first-child")
+          .attr('y2', 6)
+          .attr('x1', 0)
+          .attr('x2', 0);
+      });
+    }
   }
   render() {
     const legend = `${this.id}_legend`;
