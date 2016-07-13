@@ -153,7 +153,7 @@ export class BaseGraph extends Component {
     if (data.axis) {
       if (data.axis.y && data.axis.y.label) {
         // Create container for y axis
-        const container = d3.select(`#${object.id}`).insert('svg', ":first-child")
+        const container = d3.select(`#${object.id}`).insert('svg', ':first-child')
           .attr('width', '100%')
           .attr('height', 25);
         // Fix and encapsulate y axis label
@@ -174,7 +174,7 @@ export class BaseGraph extends Component {
       d3.selectAll(`#${object.id} g.c3-axis-x g.tick line`).remove();
       let ticks = d3.selectAll(`#${object.id} g.c3-axis-x g.tick`);
       _.map(ticks[0],function (tick) {
-        d3.select(tick).insert('line', ":first-child")
+        d3.select(tick).insert('line', ':first-child')
           .attr('y2', 6)
           .attr('x1', 0)
           .attr('x2', 0);
