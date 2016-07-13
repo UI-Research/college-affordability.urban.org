@@ -87,10 +87,11 @@ export default class SinglePage extends Component {
         this.state.menu = _.concat(topMenu, this.state.menu);
       }
 
+      // If a hash exists on payload, automatically animate to that point on the page.
       if (window.location.hash) {
         let initialID = _.replace(window.location.hash, '/', '');
         let breadcrumbTitle = '';
-  
+
         // Determine what the state of the breadcrumb should be.
         _.map(this.state.menu, function(menuItem) {
           if (!_.isUndefined(menuItem) && menuItem.type === 'li' && menuItem.props.children.props.href === window.location.hash) {
@@ -101,7 +102,7 @@ export default class SinglePage extends Component {
         if (breadcrumbTitle) {
           this.state.breadcrumbTitle = breadcrumbTitle;
         }
-  
+
         // Scroll to the specific point on the page based on URL hash parameters.
         let elevate = () => {
           new Elevator({
