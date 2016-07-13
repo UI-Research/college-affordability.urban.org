@@ -131,15 +131,22 @@ export class BaseGraph extends Component {
     }
   }
   setLegend(object) {
-    // Set up the legend above the graph
     let legend = d3.selectAll(`#${object.id} .c3-legend-item`);
-    let svg = d3.select(`#${object.id}_legend`)
-      .append('svg')
-      .attr('width', '100%')
-      .attr('height', 25);
-    legend.each(function() {
-      svg.node().appendChild(this);
-    });
+    // If there's only one data set, don't bother listing the legend.
+    if (legend[0].length <= 1) {
+      legend.remove();
+    }
+    else {
+      // Set up the legend above the graph
+      let svg = d3.select(`#${object.id}_legend`)
+        .append('svg')
+        .attr('width', '100%')
+        .attr('height', 25);
+      legend.each(function() {
+        svg.node().appendChild(this);
+      });
+    }
+
   }
   moveYAxisLabel(object) {
     // Transform Y axis to not be so vertical...
