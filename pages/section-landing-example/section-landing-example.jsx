@@ -31,17 +31,17 @@ let specifications = {
 
           <h2><a href="/producing-education">Sticker Prices</a></h2>
           <p>In eu ullamcorper augue, ac placerat mauris. Aliquam dapibus risus tortor, eu facilisis eros vulputate ut. Phasellus accumsan eros sapien, quis bibendum libero tristique eget.</p>
-
+          <a href="/about" className="btn">Explore Sticker Prices <i className="fa fa-chevron-right"></i></a>
           <hr />
 
           <h2><a href="/producing-education">Student Budgets</a></h2>
           <p>Nullam lobortis interdum enim. Etiam in dapibus neque, eu laoreet ex. Duis iaculis massa vulputate massa dignissim, id tristique leo suscipit. Vivamus ut purus vel nibh sollicitudin consectetur.</p>
-
+          <a href="/about" className="btn">Explore Student Budgets <i className="fa fa-chevron-right"></i></a>
           <hr />
 
           <h2><a href="/producing-education">Forgone Earnings</a></h2>
           <p>Morbi hendrerit lorem at mi tempus faucibus. Vestibulum ut fermentum neque. Nunc laoreet nisi non ligula dictum, non gravida massa blandit.</p>
-
+          <a href="/about" className="btn">Explore Forgone Earnings <i className="fa fa-chevron-right"></i></a>
         </div>
       </div>
     </div>
