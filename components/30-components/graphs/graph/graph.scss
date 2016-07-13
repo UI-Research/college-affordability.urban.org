@@ -130,12 +130,13 @@
   font-size: 12px;
 }
 
-.c3-axis-y-label {
-  display: none;
-}
-
 .c3-bar._expanded_ {
   fill-opacity: 100;
+}
+
+.c3-axis-y-label {
+  font-size: 12px;
+  font-style: italic;
 }
 
 .c3-line {
@@ -143,7 +144,7 @@
 }
 
 .c3-circle {
-  fill: white !important;
+  fill: $color--blue !important;
   opacity: 1;
   stroke-width: 2px;
   stroke: $color--blue;
