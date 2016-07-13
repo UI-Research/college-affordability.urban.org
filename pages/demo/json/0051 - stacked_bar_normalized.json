@@ -21,12 +21,12 @@
     "x": {
       "label": "X Label",
       "type": "category",
-      "categories": ["First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth"]
+      "categories": ["First", "Second", "Third", "Fourth"]
     },
     "y" : {
       "label": "Y Label",
       "tick": {
-        "format": "dollar"
+        "format": "percent"
       }
     }
   },
