@@ -67,7 +67,10 @@ export class BaseGraph extends Component {
 
       // Always have the y axis start at 0
       if (data.axis && data.axis.y) {
-        data.axis.y.padding = 0;
+        data.axis.y.padding = {
+          top: 50,
+          bottom: 0
+        };
         data.axis.y.min = 0;
       }
 
