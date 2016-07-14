@@ -128,13 +128,21 @@ export class BaseGraph extends Component {
         }
       }
 
+      // We're doing a lot of hacks post-chart generation.
+      // So we need to just slash the chart and force it to
+      // regenerate.
+      data.onresized = () => {
+        chart.destroy();
+        chart = c3.generate(data);
+        this.polishChart(this);
+      }
+
+
       let chart = c3.generate(data);
 
       // Make it available to other scopes.
-      const setLegend = this.setLegend;
-      setLegend(this);
-      this.setTick(this);
-      this.moveYAxisLabel(this);
+      const polishChart = this.polishChart;
+      polishChart(this);
 
       // If sets are available, reveal them as options
       if (data.data.sets) {
@@ -154,7 +162,7 @@ export class BaseGraph extends Component {
                 ],
                 unload: chart.columns,
                 done: function() {
-                  setLegend(this);
+                  polishChart(this);
                 }
               });
             });
@@ -162,7 +170,18 @@ export class BaseGraph extends Component {
       }
     }
   }
+  polishChart(object) {
+    const setLegend = object.setLegend;
+    setLegend(object);
+    const setTick = object.setTick;
+    setTick(object);
+    const moveYAxisLabel = object.moveYAxisLabel;
+    moveYAxisLabel(object);
+  }
   setLegend(object) {
+    // Clean up (just in case);
+    d3.select(`#${object.id}_legend`).selectAll("*").remove();
+
     let legend = d3.selectAll(`#${object.id} .c3-legend-item`);
     // If there's only one data set, don't bother listing the legend.
     if (legend[0].length <= 1) {
