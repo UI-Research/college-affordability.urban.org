@@ -128,6 +128,16 @@ export class BaseGraph extends Component {
         }
       }
 
+      // We're doing a lot of hacks post-chart generation.
+      // So we need to just slash the chart and force it to
+      // regenerate.
+      data.onresized = () => {
+        chart.destroy();
+        chart = c3.generate(data);
+        this.polishChart(this);
+      }
+
+
       let chart = c3.generate(data);
 
       // Make it available to other scopes.
@@ -169,6 +179,9 @@ export class BaseGraph extends Component {
     moveYAxisLabel(object);
   }
   setLegend(object) {
+    // Clean up (just in case);
+    d3.select(`#${object.id}_legend`).selectAll("*").remove();
+
     let legend = d3.selectAll(`#${object.id} .c3-legend-item`);
     // If there's only one data set, don't bother listing the legend.
     if (legend[0].length <= 1) {
