@@ -323,9 +323,11 @@ export default class Graph extends Component {
     <div className={base_class}>
       <h2>{this.props.file.title}</h2>
       {anchor}
-      <LazyLoad height={320}>
-        <BaseGraph file={this.props.file} />
-      </LazyLoad>
+      <div className="c-graph__wrapper">
+        <LazyLoad height={347}>
+          <BaseGraph file={this.props.file} />
+        </LazyLoad>
+      </div>
       <div className="c-text__caption c-text__caption--bottom">
         <div className="c-text__viz-notes">
           {this.attribution('source')}
