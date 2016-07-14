@@ -30,6 +30,12 @@ export class BaseGraph extends Component {
       // Identify DOM element we want to apply the graph to.
       data.bindto = '#' + this.id;
 
+      // Set max number of axis ticks on y axis
+      if (data.axis && data.axis.y && data.axis.y.tick) {
+        data.axis.y.tick.count = 10;
+      }
+
+
       // Detect any possible instances of the key 'format' and convert it into the specified format.
       if (data.data && data.data.labels && data.data.labels.format) {
         _.map(data.data.labels.format, (entry) => {
