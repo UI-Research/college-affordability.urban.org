@@ -17,8 +17,7 @@ export default class SinglePage extends Component {
     super(props);
     this.state = {
       breadcrumbTitle : '',
-      menu: '',
-      menuTopSectionName: ''
+      menu: ''
     };
 
     if (util.canUseDOM()) {
@@ -114,12 +113,12 @@ export default class SinglePage extends Component {
           }).elevate();
         };
         
-        if (window.addEventListener) {
-          window.addEventListener('load', function () {
-            setTimeout(elevate, 500);
-          });
-        }
+        window.addEventListener('load', function () {
+          setTimeout(elevate, 500);
+        });
       }
+
+      window.addEventListener('scroll', this.handleScroll.bind(this));
 
       if (breadcrumbTitle) {
         this.state.breadcrumbTitle = breadcrumbTitle;
@@ -133,27 +132,98 @@ export default class SinglePage extends Component {
     }
   }
   elevateToSection(event) {
-    let anchor = event.target;
-    let href = anchor.getAttribute('href');
-    href = _.replace(href, '/', '');
+    const anchor = event.target;
+
+    // Toggle/close the sidenav.
+    let topChevron = document.querySelector('.nav-anchor > .fa');
+    topChevron.click();
+
+    const href = _.replace(anchor.getAttribute('href'), '/', '');
     const targetElement = document.querySelector(href);
-    
     new Elevator({
       targetElement: targetElement,
-      verticalPadding: 70, // pixels
+      verticalPadding: 60, // pixels
       duration: 1000 // milliseconds
     }).elevate();
 
     this.setState({
       breadcrumbTitle: anchor.textContent
     });
-    // Toggle/close the sidenav.
-    let topChevron = document.querySelector('.nav-anchor > .fa');
-    topChevron.click();
   }
-  setActiveSection() {
-    let activeSection = document.querySelector('h2.active__section');
-    console.log(activeSection.textContent);
+  handleScroll() {
+    // If we're at the bottom, make the last menu item active.
+    if ((window.innerHeight + document.body.scrollTop) >= document.body.offsetHeight) {
+      const anchor = document.querySelector('.nav-anchor__top-level a:last-child');
+      const href = _.replace(anchor.getAttribute('href'), '/', '');
+      let targetElement = document.querySelector(href);
+      this.setActiveSection(targetElement);
+    }
+    // Determine the current section based on position.
+    else {    
+      // Since the header is sticky, get the 'top' below the header.
+      const offsetTop = document.querySelector('.header-site').offsetHeight + 30;
+      let headers = document.querySelectorAll('.col--3-4 h2[id], .col--3-4 h3[id]');
+      let previousElement = null;
+
+      _.each(headers, (element) => {
+        let top = element.getBoundingClientRect().top;
+        // Header is at/above the content top.
+        if (top <= offsetTop) {
+          this.setActiveSection(element);
+        }
+        // Active header is below the top, previous section should now be active.
+        else if (element.classList.contains('active') && previousElement) {
+          this.setActiveSection(previousElement);
+        }
+        previousElement = element;
+      });
+    }
+  }
+  setActiveSection(element) {
+    let anchor = null;
+    let activeHeader = document.querySelector('.col--3-4 h2.active, .col--3-4 h3.active');
+    let sectionTitle = '';
+    if (activeHeader) {
+      activeHeader.classList.remove('active');
+    }
+    if (element) {
+      let activeSection = document.querySelector('h2.active__section');
+      activeSection.textContent = sectionTitle = element.textContent;
+      element.classList.add('active');
+      const target = '#/' + element.getAttribute('id');
+      anchor = document.querySelector(`.nav-anchor__top-level a[href="${target}"]`);
+    }
+    this.setActiveMenu(anchor);
+    this.setState({
+      breadcrumbTitle: sectionTitle
+    });
+  }
+  setActiveMenu(anchor) {
+    let activeAnchor = document.querySelector('.nav-anchor__top-level a.active');
+    if (activeAnchor) {
+      activeAnchor.classList.remove('active');
+    }
+    
+    // Close all second level uls.
+    let uls = document.querySelectorAll('.nav-anchor__top-level ul.nav-anchor__second-level');
+    _.each(uls, (ul) => {
+      ul.classList.remove('open');
+      let chevron = ul.previousElementSibling;
+      chevron.classList.remove('fa-chevron-left');
+      chevron.classList.add('fa-chevron-down');
+    });
+    
+    if (anchor) {
+      anchor.classList.add('active');
+      // Leave the parent second-level ul open.
+      let ul = anchor.parentElement.parentElement;
+      if (ul.classList.contains('nav-anchor__second-level')) {
+        ul.classList.add('open');
+        let chevron = ul.previousElementSibling;
+        chevron.classList.remove('fa-chevron-down');
+        chevron.classList.add('fa-chevron-left');
+      }
+    }
   }
   toggleSection(event) {
     let target = event.target;
@@ -169,26 +239,42 @@ export default class SinglePage extends Component {
     }
     menu.classList.toggle('open');
   }
-  componentDidMount() {
-    if (util.canUseDOM()) {
-      // Position the sidenav over the first h2 in the main content.
-      let h2 = document.querySelector('.col--3-4 h2');
-      if (h2) {
+  handleStickyStateChange(isSticky) {
+    // Set the top of the side nav if not sticky.
+    if (!isSticky) {
+      // Re-position the sidenav over the first h2 in the main content.
+      let unstick = () => {
         let sideNav = document.querySelector('.sticky__wrapper');
-        if (sideNav) {
-          let top = h2.offsetTop + 'px';
-          sideNav.style.top = h2.offsetTop;
-          sideNav.setAttribute('data-top', h2.offsetTop);
+        let h2 = document.querySelector('.col--3-4 h2');
+        if (h2 && sideNav && !sideNav.classList.contains('sticky')) {
+          sideNav.style.top = h2.offsetTop + 'px';
+          sideNav.style.marginTop = '';
+        }
+      };
+      // Set a timeout,
+      // as the Sticky component overrides our style.
+      setTimeout(unstick, 5);
+    }
+    else {
+      const headerHeight = document.querySelector('.header-site').offsetHeight;
+      let sideNav = document.querySelector('.sticky__wrapper');
+      let breadcrumb = document.querySelector('.breadcrumb');
+      
+      // Set our own margin offset only when the breadcrumb is hidden (mobile).
+      if (sideNav && breadcrumb) {
+        let styles = window.getComputedStyle(breadcrumb);
+        if (styles.display == 'none') {
+          sideNav.style.marginTop = headerHeight + 'px';
         }
       }
     }
   }
-  handleStickyStateChange(isSticky) {
-    // Set the top of the side nav if not sticky.
-    if (!isSticky) {
-      let sideNav = document.querySelector('.sticky__wrapper');
-      if (sideNav && sideNav.hasAttribute('data-top')) {
-        sideNav.style.top = sideNav.getAttribute('data-top');
+  componentDidMount() {
+    if (util.canUseDOM()) {
+      let activeAnchor = document.querySelector('.nav-anchor__top-level a.active');
+      if (!activeAnchor) {
+        let firstAnchor = document.querySelector('.nav-anchor__top-level a');
+        firstAnchor.classList.add('active');
       }
     }
   }
@@ -223,9 +309,11 @@ export default class SinglePage extends Component {
 
 SinglePage.propTypes = {
   content: React.PropTypes.object,
-  sectionTitle: React.PropTypes.string
+  sectionTitle: React.PropTypes.string,
+  menuTopSectionName: React.PropTypes.string
 };
 SinglePage.defaultProps = {
   content: {},
-  sectionTitle: ''
+  sectionTitle: '',
+  menuTopSectionName: ''
 };

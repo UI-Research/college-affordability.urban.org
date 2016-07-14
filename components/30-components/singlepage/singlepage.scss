@@ -3,7 +3,6 @@
 
 .grid {
   .sticky {
-    margin-top: 120px;
     @include breakpoint($bp--large) {
       margin-top: 55px;
       width: 300px !important;
@@ -43,6 +42,7 @@
   width: 100% !important;
   z-index: 9;
   @include breakpoint($bp--large) {
+    left: initial !important;
     height: auto;
     position: initial;
     width: auto;
@@ -75,6 +75,9 @@
       top: 1px;
       width: 57px;
       z-index: 1;
+      @include breakpoint($bp--large) {
+        display: none;
+      }
     }
   }
   @include breakpoint($bp--large) {
@@ -93,6 +96,12 @@
     @include breakpoint($bp--large) {
       display: block;
     }
+    
+    &.nav-anchor__top-level {
+      > li:first-child {
+        border-top: none;
+      }
+    }
       
     &.nav-anchor__second-level {
       border: none;
@@ -103,11 +112,15 @@
       }
     
       a {
-        padding: .75rem 0 .75rem 1rem;
+        padding: .75rem 0 .75rem 15px;
         font-size: 13px;
         line-height: 1.25;
+        @include breakpoint($bp--mid) {
+          padding-left: 20px;
+        }
         @include breakpoint($bp--large) {
           font-size: 14px;
+          padding-left: 1rem;
         }
       }
     }
@@ -141,13 +154,17 @@
   }
 
   a {
-    padding: .75rem 0 .75rem .75rem;
+    padding: .75rem 0 .75rem 15px;
     display: block;
     color: $color--blue;
     font-size: 15px;
     font-weight: normal;
+    @include breakpoint($bp--mid) {
+      padding-left: 20px;
+    }
     @include breakpoint($bp--large) {
       font-size: 18px;
+      padding-left: .75rem;
     }
 
     &:hover,
