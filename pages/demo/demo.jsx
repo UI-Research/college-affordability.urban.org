@@ -56,6 +56,12 @@ let singlepage = (
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0060 - grouped_stacked_bar.json'))}} />
     </Box>
 
+    <Graph file={require('./json/0061 - dual_chart.json')} />
+    <Box>
+      <h3>Code Sample</h3>
+      <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0061 - dual_chart.json'))}} />
+    </Box>
+
     <Graph file={require('./json/0070 - stacked_area.json')} />
     <Box>
       <h3>Code Sample</h3>
