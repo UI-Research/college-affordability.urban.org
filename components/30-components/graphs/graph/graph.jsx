@@ -96,6 +96,11 @@ export class BaseGraph extends Component {
         }
       }
 
+      // Line and area graphs should not show data points.
+      if (['line', 'area-spline'].includes(data.data.type)) {
+        console.log('win');
+      }
+
       // Show grid lines by default
       if (!data.grid) {
         data.grid = {};
