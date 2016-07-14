@@ -1,0 +1,37 @@
+{
+  "title": "Normalized Grouped Bar Chart Example",
+  "data": {
+    "columns": [
+      ["First", 0.23,0.43,0.92,0.37],
+      ["Second", 0.77,0.57,0.08,0.63]
+    ],
+    "type": "bar",
+    "labels": {
+      "format": {
+        "First": "percent",
+        "Second": "percent"
+      }
+    },
+    "groups": [
+      ["First", "Second"]
+    ]
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "label": "X Label",
+      "type": "category",
+      "categories": ["First", "Second", "Third", "Fourth"]
+    },
+    "y" : {
+      "label": "Y Label",
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Source",
+    "notes": "Lorem Ipsum."
+  }
+}

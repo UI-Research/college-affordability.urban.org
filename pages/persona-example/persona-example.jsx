@@ -1,9 +1,8 @@
 'use strict';
 
-const React = require('react');
-const Template = require('20-templates/default/default.jsx');
-const Graph = require('30-components/graphs/graph/graph.jsx'),
-      Box = require('30-components/box/box/box.jsx');
+import React from 'react';
+import Template from '20-templates/default/default.jsx';
+import Graph from '30-components/graphs/graph/graph.jsx';
 import SinglePage from '30-components/singlepage/singlepage.jsx';
 
 import util from 'util.jsx';
@@ -11,7 +10,7 @@ import util from 'util.jsx';
 
 let singlepage = (
   <div>
-    <h1>Independent</h1>
+    <h1>Low-Income Dependent</h1>
 
     <div className="media media--right-align">
       <div className="icon">
@@ -23,10 +22,8 @@ let singlepage = (
     <h2>Biographical Information</h2>
 
     <ul className="no-bullets">
-      <li><strong>Type of Student:</strong> Independent</li>
+      <li><strong>Type of Student:</strong> Low-Income Dependent</li>
       <li><strong>Enrolled:</strong> Part-time</li>
-      <li><strong>Age:</strong> 25</li>
-      <li><strong>Location:</strong> New York</li>
       <li><strong>Annual Income:</strong> $30,000</li>
     </ul>
 

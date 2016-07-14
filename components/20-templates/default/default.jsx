@@ -1,6 +1,6 @@
 'use strict';
 
-import React from 'react';
+import React, { Component } from 'react';
 import _ from 'lodash';
 
 import HTML from '10-html/html.jsx';
@@ -14,18 +14,8 @@ if (util.canUseDOM()) {
   require('./default.scss');
 }
 
-const TemplateDefault = React.createClass({
-  propTypes: {
-    includeHTML: React.PropTypes.bool,
-    title: React.PropTypes.string
-  },
-  getDefaultProps: function() {
-    return {
-      includeHTML: false,
-      title: ''
-    };
-  },
-  componentDidMount: function() {
+export default class TemplateDefault extends Component {
+  componentDidMount() {
     // Set the src to the preview image, keep track of the original src.
     let images = document.getElementsByTagName('img');
     _.forEach(images, function (image) {
@@ -36,16 +26,16 @@ const TemplateDefault = React.createClass({
     setTimeout(function (component) {
       component.forceUpdate();
     }, 150, this);
-  },
-  componentDidUpdate: function() {
+  }
+  componentDidUpdate() {
     // Set back to the original src.
     let images = document.querySelectorAll('img[data-src]');
     _.forEach(images, function (image) {
       image.setAttribute('src', image.getAttribute('data-src'));
       image.removeAttribute('data-src');
     });
-  },
-  render: function() {
+  }
+  render() {
     return (
       <HTML title={this.props.title} machineName={this.props.machineName} includeHTML={this.props.includeHTML}>
         <StickyContainer>
@@ -60,6 +50,13 @@ const TemplateDefault = React.createClass({
       </HTML>
     );
   }
-});
+}
 
-module.exports = TemplateDefault;
+TemplateDefault.propTypes = {
+  includeHTML: React.PropTypes.bool,
+  title: React.PropTypes.string
+};
+TemplateDefault.defaultProps = {
+  includeHTML: false,
+  title: ''
+};

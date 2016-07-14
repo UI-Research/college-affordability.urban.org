@@ -1,8 +1,8 @@
 'use strict';
 
-const React = require('react');
-const Template = require('20-templates/default/default.jsx');
-const util = require('util.jsx');
+import React from 'react';
+import Template from '20-templates/default/default.jsx';
+import util from 'util.jsx';
 
 let specifications = {
   'name': 'section-landing-example',
@@ -19,7 +19,7 @@ let specifications = {
   ,
   'content':
     <div className='section-landing'>
-      <h1 className="heading-accent">Costs, Aid, &amp; Prices</h1>
+      <h1 className="heading-accent">Prices &amp; Expenses</h1>
       <div className="grid grid--auto-height">
         <div className="col col--1-4">
           <div className="">
@@ -28,27 +28,20 @@ let specifications = {
           </div>
         </div>
         <div className="col col--3-4">
-          
-          <h2><a href="/producing-education">Producing Education</a></h2>
-          <p>Students see the prices colleges charge, but the amounts that colleges spend to provide education are less visible.
-            To educate a student, a college must pay for instructors, student services, administrative support, and
-            maintenance, among other things. An institution’s reported education and related expenditure per student is a
-            good indication of the expenses it incurs in educating students, though it does not account for the full cost.
-            There is a general consensus that it costs significantly more to educate graduate students, but because we don’t
-            have a precise way of separating out these costs, the average subsidies at universities are higher than those at
-            bachelor’s colleges.</p>
 
+          <h2><a href="/producing-education">Sticker Prices</a></h2>
+          <p>In eu ullamcorper augue, ac placerat mauris. Aliquam dapibus risus tortor, eu facilisis eros vulputate ut. Phasellus accumsan eros sapien, quis bibendum libero tristique eget.</p>
+          <a href="/about" className="btn">Explore Sticker Prices <i className="fa fa-chevron-right"></i></a>
           <hr />
 
-          <h2><a href="/producing-education">Data Viz Page</a></h2>
-          <p>Students see the prices colleges charge, but the amounts that colleges spend to provide education are less visible.
-            To educate a student, a college must pay for instructors, student services, administrative support, and
-            maintenance, among other things. An institution’s reported education and related expenditure per student is a
-            good indication of the expenses it incurs in educating students, though it does not account for the full cost.
-            There is a general consensus that it costs significantly more to educate graduate students, but because we don’t
-            have a precise way of separating out these costs, the average subsidies at universities are higher than those at
-            bachelor’s colleges.</p>
+          <h2><a href="/producing-education">Student Budgets</a></h2>
+          <p>Nullam lobortis interdum enim. Etiam in dapibus neque, eu laoreet ex. Duis iaculis massa vulputate massa dignissim, id tristique leo suscipit. Vivamus ut purus vel nibh sollicitudin consectetur.</p>
+          <a href="/about" className="btn">Explore Student Budgets <i className="fa fa-chevron-right"></i></a>
+          <hr />
 
+          <h2><a href="/producing-education">Forgone Earnings</a></h2>
+          <p>Morbi hendrerit lorem at mi tempus faucibus. Vestibulum ut fermentum neque. Nunc laoreet nisi non ligula dictum, non gravida massa blandit.</p>
+          <a href="/about" className="btn">Explore Forgone Earnings <i className="fa fa-chevron-right"></i></a>
         </div>
       </div>
     </div>
