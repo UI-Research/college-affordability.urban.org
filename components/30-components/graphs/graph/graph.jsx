@@ -71,6 +71,12 @@ export class BaseGraph extends Component {
         }
       }
 
+      // Increase padding at top of the graph
+      // (To prevent the graph from getting cut off)
+      data.padding = {
+        top: 5
+      }
+
       // Always have the y axis start at 0
       if (data.axis && data.axis.y) {
         data.axis.y.padding = {
@@ -219,7 +225,7 @@ export class BaseGraph extends Component {
       let svg = d3.select(`#${object.id}_legend`)
         .append('svg')
         .attr('width', '100%')
-        .attr('height', 25);
+        .attr('height', 20);
       legend.each(function() {
         svg.node().appendChild(this);
       });
