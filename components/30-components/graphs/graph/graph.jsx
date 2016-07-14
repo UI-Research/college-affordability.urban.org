@@ -71,6 +71,12 @@ export class BaseGraph extends Component {
         }
       }
 
+      // Increase padding at top of the graph
+      // (To prevent the graph from getting cut off)
+      data.padding = {
+        top: 5
+      }
+
       // Always have the y axis start at 0
       if (data.axis && data.axis.y) {
         data.axis.y.padding = {
@@ -219,7 +225,7 @@ export class BaseGraph extends Component {
       let svg = d3.select(`#${object.id}_legend`)
         .append('svg')
         .attr('width', '100%')
-        .attr('height', 25);
+        .attr('height', 20);
       legend.each(function() {
         svg.node().appendChild(this);
       });
@@ -311,8 +317,14 @@ export default class Graph extends Component {
     }
   }
   render() {
-    let base_class = 'c-graph c-' + this.props.file.data.type,
+    let base_class = `c-graph c-${this.props.file.data.type}`,
         anchor = null;
+
+    // If it's a grouped bar chart, flag it as such (so we can move the labels)
+    if (this.props.file.data.groups) {
+      base_class += ` c-${this.props.file.data.type}-grouped`;
+    }
+
     if (this.props.anchor_name) {
       // Replace any spaces with _.
       let anchor_name = util.cleanString(this.props.anchor_name);
