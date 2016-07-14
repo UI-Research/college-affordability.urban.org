@@ -30,6 +30,12 @@ export class BaseGraph extends Component {
       // Identify DOM element we want to apply the graph to.
       data.bindto = '#' + this.id;
 
+      // Set max number of axis ticks on y axis
+      if (data.axis && data.axis.y && data.axis.y.tick) {
+        data.axis.y.tick.count = 10;
+      }
+
+
       // Detect any possible instances of the key 'format' and convert it into the specified format.
       if (data.data && data.data.labels && data.data.labels.format) {
         _.map(data.data.labels.format, (entry) => {
@@ -84,9 +90,30 @@ export class BaseGraph extends Component {
         };
       }
 
+      // Hide data points on spline graphs
       if (data.data.type && data.data.type === 'area-spline') {
         data.point = {
           show: false
+        }
+      }
+
+
+      if (['line', 'area-spline'].includes(data.data.type)) {
+        // Line and area graphs should not show data points.
+        data.data.labels = false;
+
+        // Line and area graphs must flush to left and right.
+        if (data.axis && data.axis.x) {
+          data.axis.x.padding = {
+            left: -0.5,
+            right: -0.5
+          }
+        }
+        data.padding = {
+          top: 20,
+          bottom: 20,
+          left: 50,
+          right: 50
         }
       }
 
