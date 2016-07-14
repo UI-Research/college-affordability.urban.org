@@ -155,6 +155,7 @@
   }
 }
 
+/* Manages size of points on line graphs */
 .c3-circle {
   stroke-width: 4px;
   stroke: $color--blue;
@@ -164,4 +165,9 @@
     stroke: $color--blue;
     fill: $color--blue !important;
   }
+}
+
+/* Overrides C3's transparent areas.  Must be filled. */
+.c3-area {
+  opacity: 1;
 }
