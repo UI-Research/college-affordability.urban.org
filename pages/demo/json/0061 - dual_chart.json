@@ -1,0 +1,35 @@
+{
+  "title": "Dual Chart Example",
+  "data": {
+    "columns": [
+      ["First", 7,0],
+      ["Second", 4,0],
+      ["Third", 0,5],
+      ["Fourth", 6,0],
+      ["Fifth", 1,5],
+      ["Sixth", 0,4]
+    ],
+    "type": "bar",
+    "groups": [
+      ["First", "Second", "Third","Fourth","Fifth", "Sixth"]
+    ]
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "label": "X Label",
+      "type": "category",
+      "categories": ["First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth"]
+    },
+    "y" : {
+      "label": "Y Label",
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Source",
+    "notes": "Lorem Ipsum."
+  }
+}
