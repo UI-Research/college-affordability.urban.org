@@ -311,8 +311,14 @@ export default class Graph extends Component {
     }
   }
   render() {
-    let base_class = 'c-graph c-' + this.props.file.data.type,
+    let base_class = `c-graph c-${this.props.file.data.type}`,
         anchor = null;
+
+    // If it's a grouped bar chart, flag it as such (so we can move the labels)
+    if (this.props.file.data.groups) {
+      base_class += ` c-${this.props.file.data.type}-grouped`;
+    }
+
     if (this.props.anchor_name) {
       // Replace any spaces with _.
       let anchor_name = util.cleanString(this.props.anchor_name);
