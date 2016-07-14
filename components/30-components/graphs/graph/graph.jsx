@@ -90,15 +90,31 @@ export class BaseGraph extends Component {
         };
       }
 
+      // Hide data points on spline graphs
       if (data.data.type && data.data.type === 'area-spline') {
         data.point = {
           show: false
         }
       }
 
-      // Line and area graphs should not show data points.
+
       if (['line', 'area-spline'].includes(data.data.type)) {
+        // Line and area graphs should not show data points.
         data.data.labels = false;
+
+        // Line and area graphs must flush to left and right.
+        if (data.axis && data.axis.x) {
+          data.axis.x.padding = {
+            left: -0.5,
+            right: -0.5
+          }
+        }
+        data.padding = {
+          top: 20,
+          bottom: 20,
+          left: 50,
+          right: 50
+        }
       }
 
       // Show grid lines by default
