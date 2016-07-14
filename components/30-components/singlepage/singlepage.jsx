@@ -121,10 +121,11 @@ export default class SinglePage extends Component {
 
       return (
         <div className="grid">
-          <Sticky topOffset={-10} bottomOffset={30}>
+          <Sticky className="sticky__wrapper" topOffset={-10} bottomOffset={30}>
             <Breadcrumb title={this.state.breadcrumbTitle} />
             <div className="col col--1-4">
               <div className="nav-anchor">
+                <h2 className="active__section">{this.state.breadcrumbTitle}<span className="fa fa-chevron-down"></span></h2>
                 <ul className="nav-anchor__top-level">
                   {this.state.menu}
                 </ul>

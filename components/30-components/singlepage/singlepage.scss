@@ -1,23 +1,37 @@
 
 @import '_global.scss';
 
-.grid .sticky {
-  margin-top: 50px;
+.grid {
+  .sticky {
+    @include breakpoint($bp--large) {
+      margin-top: 55px;
+  
+      .breadcrumb {
+        padding-top: 30px;
+        display: block;
+      }
+    }
+  }
+  .col--1-4 {
+    @include breakpoint($bp--large) {
+      position: initial;
+    }
+  }
+  
+  .col--3-4 {
+    @include breakpoint($bp--large) {
+      float: right;
+      min-height: 800px;
+    }
+  }
+}
 
-  .breadcrumb {
-    padding: 35px 0 20px;
-    display: block;
-  }
-}
-.col--1-4 {
-  margin-top: 60px;
+.sticky__wrapper {
+  position: absolute;
   @include breakpoint($bp--large) {
-    margin-top: 10px;
+    position: initial;
+    height: auto;
   }
-}
-.grid .col--3-4 {
-  min-height: 800px;
-  float: right;
 }
 
 /**
@@ -25,17 +39,103 @@
  * while maintaining its position on the page.
  */
 .grid .sticky[style] {
-  width: 300px !important;
-  z-index: 9;
+  @include breakpoint($bp--large) {
+    width: 300px !important;
+    z-index: 9;
 
-  .breadcrumb {
-    position: fixed;
-  }
-
-  .col--1-4 {
-    width: 100%;
-    margin-top: 60px;
+    .col--1-4 {
+      width: 100%;
+    }
   }
 }
 
+.nav-anchor {
+  h2.active__section {
+    color: #000;
+    background: $color--gray-5;
+    border: 1px solid $color--gray-7;
+    margin: 0;
+    @include breakpoint($bp--large) {
+      display: none;
+    }
+    .fa {
+      color: #000;
+      border-left: 1px solid $color--gray-7;
+      line-height: 53px;
+      right: 0;
+      padding-left: 10px;
+      position: absolute;
+      width: 38px;
+      top: 0;
+      z-index: 1;
+    }
+  }
+  @include breakpoint($bp--large) {
+    margin: 1rem 0 0 0;
+    position: initial;
+  }
 
+  ul {
+    list-style-type: none;
+    &.nav-anchor__top-level {
+      display: none;
+      @include breakpoint($bp--large) {
+        display: block;
+      }
+    }
+  }
+
+  li {
+    list-style-type: none;
+    margin: 0;
+    border-bottom: 1px solid $color--gray-4;
+    position: relative;
+
+    .fa {
+      position: absolute;
+      top: 0;
+      right: 0;
+      line-height: 53px;
+      width: 38px;
+      z-index: 1;
+      border-left: 1px solid $color--gray-4;
+      padding-left: 10px;
+      background: white;
+
+      @include breakpoint($bp--large) {
+        display: none;
+      }
+    }
+  }
+
+  a {
+    padding: .75rem 0 .75rem .75rem;
+    display: block;
+    color: $color--blue;
+    font-size: 18px;
+    font-weight: normal;
+
+    &:hover,
+    &.active {
+      color: $color--gray-7;
+      text-decoration: none;
+      background-color: $color--gray-1;
+    }
+  }
+}
+
+.nav-anchor__second-level {
+  margin-bottom: 0;
+
+  li {
+    border: none;
+    margin-left: 1rem;
+    border-bottom: 1px solid $color--gray-4;
+  }
+
+  a {
+    padding: .75rem 0 .75rem 1rem;
+    font-size: 14px;
+    line-height: 1.25;
+  }
+}

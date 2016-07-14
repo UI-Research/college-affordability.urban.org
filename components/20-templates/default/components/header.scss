@@ -8,7 +8,7 @@
   @include clearfix();
 
   @include breakpoint($bp--mid) {
-    height: 110px;
+    height: 120px;
   }
   @include breakpoint($bp--large) {
     height: 130px;

@@ -59,7 +59,7 @@ let specifications = {
 const Demo = React.createClass({
   render: function() {
     return (
-      <Template title="Producing Education" machineName={specifications.name} includeHTML={this.props.includeHTML}>
+      <Template title="Demo Page" machineName={specifications.name} includeHTML={this.props.includeHTML}>
         {specifications.content}
       </Template>
     );

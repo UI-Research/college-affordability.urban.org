@@ -1,10 +1,18 @@
 @import '_global.scss';
 
 .breadcrumb {
-  background-color: #FFF;
+  background-color: #fff;
   background: linear-gradient(#FFF 55%, rgba(255,255,255,0));
+  display: none;
+  font-size: 12px;
   width: 100%;
   @include breakpoint($bp--large) {
-    margin-left: 28px;
+    display: block;
+    padding-left: 28px;
+    padding-top: 15px;
+  }
+
+  a {
+    font-weight: normal;
   }
 }
