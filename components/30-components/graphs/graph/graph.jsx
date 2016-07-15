@@ -325,6 +325,11 @@ export default class Graph extends Component {
       base_class += ` c-${this.props.file.data.type}-grouped`;
     }
 
+
+    // If it's horizontal, drop that in as the classname.
+    base_class += (this.props.file.axis && this.props.file.axis.rotated) ? ` c-${this.props.file.data.type}-horizontal` : ` c-${this.props.file.data.type}-vertical`;
+
+
     if (this.props.anchor_name) {
       // Replace any spaces with _.
       let anchor_name = util.cleanString(this.props.anchor_name);
