@@ -38,11 +38,17 @@
 
 .c-graph {
   .c-graph__wrapper {
-    height: 347px;
+    height: 387px;
+    @include breakpoint($bp--large) {
+      height: 347px;
+    }
   }
 
   .c-graph__container {
-    height: 320px;
+    height: 360px;
+    @include breakpoint($bp--large) {
+      height: 320px;
+    }
   }
 
   &__options {

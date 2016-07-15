@@ -35,7 +35,6 @@ export class BaseGraph extends Component {
         data.axis.y.tick.count = 10;
       }
 
-
       // Detect any possible instances of the key 'format' and convert it into the specified format.
       if (data.data && data.data.labels && data.data.labels.format) {
         _.map(data.data.labels.format, (entry) => {
@@ -172,11 +171,12 @@ export class BaseGraph extends Component {
       // regenerate.
       data.onresized = () => {
         chart.destroy();
+        this.checkVerticalLabels();
         chart = c3.generate(data);
         this.polishChart(this);
       }
 
-
+      this.checkVerticalLabels();
       let chart = c3.generate(data);
 
       // Make it available to other scopes.
@@ -216,6 +216,41 @@ export class BaseGraph extends Component {
     setTick(object);
     const moveAxisLabel = object.moveAxisLabel;
     moveAxisLabel(object);
+  }
+  checkVerticalLabels() {
+    // Make bottom axis labels vertical for non desktop.
+    const width = window.innerWidth;
+    let data = this.props.file;
+    if (!data.axis.rotated) {
+      if (data.axis.x) {
+        if (!data.axis.x.tick) {
+          data.axis.x.tick = {};
+        }
+        if (width <= 960) {
+          data.axis.x.tick.rotate = 90;
+          data.axis.x.tick.multiline = false;
+        }
+        else {
+          data.axis.x.tick.rotate = 0;
+          data.axis.x.tick.multiline = true;
+        }
+      }
+    }
+    else {
+      if (data.axis.y) {
+        if (!data.axis.y.tick) {
+          data.axis.y.tick = {};
+        }
+        if (width <= 960) {
+          data.axis.y.tick.rotate = 90;
+          data.axis.y.tick.multiline = false;
+        }
+        else {
+          data.axis.y.tick.rotate = 0;
+          data.axis.y.tick.multiline = true;
+        }
+      }
+    }
   }
   setLegend(object) {
     // Clean up (just in case);
