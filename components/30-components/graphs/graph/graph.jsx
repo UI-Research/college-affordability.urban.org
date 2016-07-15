@@ -30,6 +30,12 @@ export class BaseGraph extends Component {
       // Identify DOM element we want to apply the graph to.
       data.bindto = '#' + this.id;
 
+      // Set max number of axis ticks on y axis
+      if (data.axis && data.axis.y && data.axis.y.tick) {
+        data.axis.y.tick.count = 10;
+      }
+
+
       // Detect any possible instances of the key 'format' and convert it into the specified format.
       if (data.data && data.data.labels && data.data.labels.format) {
         _.map(data.data.labels.format, (entry) => {
@@ -65,6 +71,12 @@ export class BaseGraph extends Component {
         }
       }
 
+      // Increase padding at top of the graph
+      // (To prevent the graph from getting cut off)
+      data.padding = {
+        top: 5
+      }
+
       // Always have the y axis start at 0
       if (data.axis && data.axis.y) {
         data.axis.y.padding = {
@@ -84,9 +96,30 @@ export class BaseGraph extends Component {
         };
       }
 
+      // Hide data points on spline graphs
       if (data.data.type && data.data.type === 'area-spline') {
         data.point = {
           show: false
+        }
+      }
+
+
+      if (['line', 'area-spline'].includes(data.data.type)) {
+        // Line and area graphs should not show data points.
+        data.data.labels = false;
+
+        // Line and area graphs must flush to left and right.
+        if (data.axis && data.axis.x) {
+          data.axis.x.padding = {
+            left: -0.5,
+            right: -0.5
+          }
+        }
+        data.padding = {
+          top: 20,
+          bottom: 20,
+          left: 50,
+          right: 50
         }
       }
 
@@ -128,13 +161,21 @@ export class BaseGraph extends Component {
         }
       }
 
+      // We're doing a lot of hacks post-chart generation.
+      // So we need to just slash the chart and force it to
+      // regenerate.
+      data.onresized = () => {
+        chart.destroy();
+        chart = c3.generate(data);
+        this.polishChart(this);
+      }
+
+
       let chart = c3.generate(data);
 
       // Make it available to other scopes.
-      const setLegend = this.setLegend;
-      setLegend(this);
-      this.setTick(this);
-      this.moveYAxisLabel(this);
+      const polishChart = this.polishChart;
+      polishChart(this);
 
       // If sets are available, reveal them as options
       if (data.data.sets) {
@@ -154,7 +195,7 @@ export class BaseGraph extends Component {
                 ],
                 unload: chart.columns,
                 done: function() {
-                  setLegend(this);
+                  polishChart(this);
                 }
               });
             });
@@ -162,7 +203,18 @@ export class BaseGraph extends Component {
       }
     }
   }
+  polishChart(object) {
+    const setLegend = object.setLegend;
+    setLegend(object);
+    const setTick = object.setTick;
+    setTick(object);
+    const moveYAxisLabel = object.moveYAxisLabel;
+    moveYAxisLabel(object);
+  }
   setLegend(object) {
+    // Clean up (just in case);
+    d3.select(`#${object.id}_legend`).selectAll("*").remove();
+
     let legend = d3.selectAll(`#${object.id} .c3-legend-item`);
     // If there's only one data set, don't bother listing the legend.
     if (legend[0].length <= 1) {
@@ -173,7 +225,7 @@ export class BaseGraph extends Component {
       let svg = d3.select(`#${object.id}_legend`)
         .append('svg')
         .attr('width', '100%')
-        .attr('height', 25);
+        .attr('height', 20);
       legend.each(function() {
         svg.node().appendChild(this);
       });
@@ -265,8 +317,14 @@ export default class Graph extends Component {
     }
   }
   render() {
-    let base_class = 'c-graph c-' + this.props.file.data.type,
+    let base_class = `c-graph c-${this.props.file.data.type}`,
         anchor = null;
+
+    // If it's a grouped bar chart, flag it as such (so we can move the labels)
+    if (this.props.file.data.groups) {
+      base_class += ` c-${this.props.file.data.type}-grouped`;
+    }
+
     if (this.props.anchor_name) {
       // Replace any spaces with _.
       let anchor_name = util.cleanString(this.props.anchor_name);

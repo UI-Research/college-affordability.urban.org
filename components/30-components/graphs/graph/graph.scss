@@ -155,6 +155,7 @@
   }
 }
 
+/* Manages size of points on line graphs */
 .c3-circle {
   stroke-width: 4px;
   stroke: $color--blue;
@@ -163,5 +164,18 @@
     stroke-width: 0px;
     stroke: $color--blue;
     fill: $color--blue !important;
+  }
+}
+
+/* Overrides C3's transparent areas.  Must be filled. */
+.c3-area {
+  opacity: 1;
+}
+
+/* Move label in stacked area chart under bar, change colors */
+.c-bar {
+  .c3-text {
+    transform: translate(0, 15px);
+    fill: #000 !important;
   }
 }
