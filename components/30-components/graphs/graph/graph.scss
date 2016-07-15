@@ -176,3 +176,10 @@
   opacity: 1;
 }
 
+/* Move label in stacked area chart under bar, change colors */
+.c-bar {
+  .c3-text {
+    transform: translate(0, 15px);
+    fill: #000 !important;
+  }
+}

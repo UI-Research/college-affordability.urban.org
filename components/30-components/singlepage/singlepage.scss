@@ -1,41 +1,178 @@
 
 @import '_global.scss';
 
-.grid .sticky {
-  margin-top: 50px;
+.grid {
+  .sticky {
+    @include breakpoint($bp--large) {
+      margin-top: 55px;
+      width: 300px !important;
+  
+      .breadcrumb {
+        padding-top: 30px;
+        display: block;
+      }
+    }
 
-  .breadcrumb {
-    padding: 35px 0 20px;
-    display: block;
-  }
-}
-.col--1-4 {
-  margin-top: 60px;
-  @include breakpoint($bp--large) {
-    margin-top: 10px;
-  }
-}
-.grid .col--3-4 {
-  min-height: 800px;
-  float: right;
-}
-
-/**
- * Hack the sticky menu so it doesn't cover the page content
- * while maintaining its position on the page.
- */
-.grid .sticky[style] {
-  width: 300px !important;
-  z-index: 9;
-
-  .breadcrumb {
-    position: fixed;
+    .col--1-4 {
+      padding-bottom: 0;
+      @include breakpoint($bp--large) {
+        width: 100%;
+      }
+    }
   }
 
   .col--1-4 {
-    width: 100%;
-    margin-top: 60px;
+    padding-bottom: 0;
+    @include breakpoint($bp--large) {
+      position: initial;
+    }
+  }
+  
+  .col--3-4 {
+    @include breakpoint($bp--large) {
+      float: right;
+      min-height: 800px;
+    }
   }
 }
 
+.sticky__wrapper {
+  left: 0 !important;
+  position: absolute;
+  width: 100% !important;
+  z-index: 9;
+  @include breakpoint($bp--large) {
+    left: initial !important;
+    height: auto;
+    position: initial;
+    width: auto;
+  }
+}
+
+.nav-anchor {
+  h2.active__section {
+    color: #000;
+    background-color: $color--gray-1;
+    border: 1px solid $color--gray-4;
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0;
+    padding: 8px 15px 10px;
+    @include breakpoint($bp--mid) {
+      padding: 8px 20px 10px;
+    }
+    @include breakpoint($bp--large) {
+      display: none;
+    }
+    + .fa {
+      border-left: 1px solid $color--gray-4;
+      color: #000;
+      cursor: pointer;
+      line-height: 42px;
+      right: 0;
+      padding: 0 20px;
+      position: absolute;
+      top: 1px;
+      width: 57px;
+      z-index: 1;
+      @include breakpoint($bp--large) {
+        display: none;
+      }
+    }
+  }
+  @include breakpoint($bp--large) {
+    margin: 1rem 0 0 0;
+    position: initial;
+  }
+
+  ul {
+    background-color: #fff;
+    border-bottom: 1px solid $color--gray-4;
+    list-style-type: none;
+    display: none;
+    &.open {
+      display: block;
+    }
+    @include breakpoint($bp--large) {
+      display: block;
+    }
+    
+    &.nav-anchor__top-level {
+      > li:first-child {
+        border-top: none;
+      }
+    }
+      
+    &.nav-anchor__second-level {
+      border: none;
+      margin-bottom: 0;
+    
+      li {
+        margin-left: 1rem;
+      }
+    
+      a {
+        padding: .75rem 0 .75rem 15px;
+        font-size: 13px;
+        line-height: 1.25;
+        @include breakpoint($bp--mid) {
+          padding-left: 20px;
+        }
+        @include breakpoint($bp--large) {
+          font-size: 14px;
+          padding-left: 1rem;
+        }
+      }
+    }
+  }
+
+  li {
+    list-style-type: none;
+    margin: 0;
+    border-top: 1px solid $color--gray-4;
+    position: relative;
+
+    .fa {
+      border-left: 1px solid $color--gray-4;
+      color: $color--gray-7;
+      cursor: pointer;
+      line-height: 49px;
+      padding: 0 12px;
+      position: absolute;
+      right: 0;
+      top: 1px;
+      width: 41px;
+      z-index: 1;
+      &:hover {
+        background-color: $color--gray-1;
+      }
+
+      @include breakpoint($bp--large) {
+        display: none;
+      }
+    }
+  }
+
+  a {
+    padding: .75rem 0 .75rem 15px;
+    display: block;
+    color: $color--blue;
+    font-size: 15px;
+    font-weight: normal;
+    @include breakpoint($bp--mid) {
+      padding-left: 20px;
+    }
+    @include breakpoint($bp--large) {
+      font-size: 18px;
+      padding-left: .75rem;
+    }
+
+    &:hover,
+    &.active {
+      background-color: $color--gray-1;
+      color: $color--gray-7;
+      text-decoration: none;
+    }
+  }
+}
 
