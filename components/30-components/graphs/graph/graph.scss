@@ -173,9 +173,16 @@
 }
 
 /* Move label in stacked area chart under bar, change colors */
-.c-bar {
+.c-bar.c-bar-vertical {
   .c3-text {
     transform: translate(0, 15px);
+    fill: #000 !important;
+  }
+}
+.c-bar.c-bar-horizontal {
+  .c3-text {
+    transform: translate(-10px, 0);
+    text-anchor: end;
     fill: #000 !important;
   }
 }
