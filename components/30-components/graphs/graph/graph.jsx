@@ -64,6 +64,12 @@ export class BaseGraph extends Component {
       //   }
       // }
       // }
+      if (data.axis && data.axis.rotated && data.axis.y && data.axis.y.label && typeof data.axis.y.label === 'string') {
+        data.axis.y.label = {
+          text: data.axis.y.label,
+          position: 'outer-center'
+        }
+      }
       if (data.axis && data.axis.x && data.axis.x.label && typeof data.axis.x.label === 'string') {
         data.axis.x.label = {
           text: data.axis.x.label,
@@ -208,8 +214,8 @@ export class BaseGraph extends Component {
     setLegend(object);
     const setTick = object.setTick;
     setTick(object);
-    const moveYAxisLabel = object.moveYAxisLabel;
-    moveYAxisLabel(object);
+    const moveAxisLabel = object.moveAxisLabel;
+    moveAxisLabel(object);
   }
   setLegend(object) {
     // Clean up (just in case);
@@ -232,17 +238,19 @@ export class BaseGraph extends Component {
     }
 
   }
-  moveYAxisLabel(object) {
+  moveAxisLabel(object) {
     // Transform Y axis to not be so vertical...
     let data = object.props.file;
 
+    // TODO: This should probably be a util/helper method.
+    // For now, it's only used for this purpose.
     d3.selection.prototype.last = function() {
       var last = this.size() - 1;
       return d3.select(this[0][last]);
     };
 
     if (data.axis) {
-      if (data.axis.y && data.axis.y.label) {
+      if (!data.axis.rotated && data.axis.y && data.axis.y.label) {
         // Create container for y axis
         const container = d3.select(`#${object.id}`).insert('svg', ':first-child')
           .attr('width', '100%')
@@ -253,6 +261,22 @@ export class BaseGraph extends Component {
           .attr('dx', '5em');
         // Move it over to new container
         y_axis_label.each(function() {
+          container.node().appendChild(this);
+        });
+      }
+
+      if (data.axis.rotated && data.axis.x && data.axis.x.label) {
+        // Create container for x axis
+        const container = d3.select(`#${object.id}`).insert('svg', ':first-child')
+          .attr('width', '100%')
+          .attr('height', 25);
+        // Fix and encapsulate x axis label
+        const x_axis_label = d3.selectAll(`#${object.id} .c3-axis-x .c3-axis-x-label`)
+          .attr('transform', 'rotate(0)')
+          .attr('dy', '1em')
+          .attr('dx', '5em');
+        // Move it over to new container
+        x_axis_label.each(function() {
           container.node().appendChild(this);
         });
       }
