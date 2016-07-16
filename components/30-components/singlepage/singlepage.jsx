@@ -17,7 +17,8 @@ export default class SinglePage extends Component {
     super(props);
     this.state = {
       breadcrumbTitle : '',
-      menu: ''
+      menu: '',
+      headerHeight: 0
     };
 
     if (util.canUseDOM()) {
@@ -118,6 +119,7 @@ export default class SinglePage extends Component {
         });
       }
 
+      window.addEventListener('resize', this.handleResize.bind(this));
       window.addEventListener('scroll', this.handleScroll.bind(this));
 
       if (breadcrumbTitle) {
@@ -150,16 +152,40 @@ export default class SinglePage extends Component {
       breadcrumbTitle: anchor.textContent
     });
   }
+  handleResize() {
+    // Re-position the sidenav over the first h2 in the main content.
+    let checkHeader = () => {
+      let header = document.querySelector('.header-site');
+      const headerHeight = header.offsetHeight;
+      // Check if the header changed height - recalc offsets.
+      if (this.state.headerHeight != headerHeight) {
+        let stickyNav = document.querySelector('.sticky-nav');
+        // Adjust the sticky padding, as the Sticky component doesn't,
+        // but only when it's not sticky.
+        if (!header.classList.contains('header-sticky')) {
+          let stickyHeader = document.querySelector('.sticky-header');
+          stickyHeader.previousElementSibling.style.paddingBottom = headerHeight + 'px';
+        }
+        this.handleStickyStateChange(stickyNav.classList.contains('sticky'));
+        this.setState({
+          headerHeight: headerHeight
+        });
+      }
+    };
+    // Allow re-render time.
+    setTimeout(checkHeader, 1);
+  }
   handleScroll() {
     // If we're at the bottom, make the last menu item active.
     if ((window.innerHeight + document.body.scrollTop) >= document.body.offsetHeight) {
-      const anchor = document.querySelector('.nav-anchor__top-level a:last-child');
+      const anchors = document.querySelectorAll('.nav-anchor__top-level a');
+      const anchor = _.findLast(anchors);
       const href = _.replace(anchor.getAttribute('href'), '/', '');
       let targetElement = document.querySelector(href);
       this.setActiveSection(targetElement);
     }
     // Determine the current section based on position.
-    else {    
+    else {
       // Since the header is sticky, get the 'top' below the header.
       const offsetTop = document.querySelector('.header-site').offsetHeight + 30;
       let headers = document.querySelectorAll('.col--3-4 h2[id], .col--3-4 h3[id]');
@@ -217,7 +243,11 @@ export default class SinglePage extends Component {
       anchor.classList.add('active');
       // Leave the parent second-level ul open.
       let ul = anchor.parentElement.parentElement;
-      if (ul.classList.contains('nav-anchor__second-level')) {
+      // Open the second level menu, if a top level is active.
+      if (ul.classList.contains('nav-anchor__top-level')) {
+        ul = anchor.parentElement.querySelector('ul');
+      }
+      if (ul && ul.classList.contains('nav-anchor__second-level')) {
         ul.classList.add('open');
         let chevron = ul.previousElementSibling;
         chevron.classList.remove('fa-chevron-down');
@@ -240,11 +270,13 @@ export default class SinglePage extends Component {
     menu.classList.toggle('open');
   }
   handleStickyStateChange(isSticky) {
+    const headerHeight = document.querySelector('.header-site').offsetHeight;
+    let sideNav = document.querySelector('.sticky-nav');
+    
     // Set the top of the side nav if not sticky.
     if (!isSticky) {
       // Re-position the sidenav over the first h2 in the main content.
       let unstick = () => {
-        let sideNav = document.querySelector('.sticky__wrapper');
         let h2 = document.querySelector('.col--3-4 h2');
         if (h2 && sideNav && !sideNav.classList.contains('sticky')) {
           sideNav.style.top = h2.offsetTop + 'px';
@@ -256,21 +288,24 @@ export default class SinglePage extends Component {
       setTimeout(unstick, 5);
     }
     else {
-      const headerHeight = document.querySelector('.header-site').offsetHeight;
-      let sideNav = document.querySelector('.sticky__wrapper');
       let breadcrumb = document.querySelector('.breadcrumb');
-      
       // Set our own margin offset only when the breadcrumb is hidden (mobile).
       if (sideNav && breadcrumb) {
         let styles = window.getComputedStyle(breadcrumb);
         if (styles.display == 'none') {
           sideNav.style.marginTop = headerHeight + 'px';
         }
+        else {
+          sideNav.style.marginTop = '';
+        }
       }
     }
   }
   componentDidMount() {
     if (util.canUseDOM()) {
+      this.setState({
+        headerHeight: document.querySelector('.header-site').offsetHeight
+      });
       let activeAnchor = document.querySelector('.nav-anchor__top-level a.active');
       if (!activeAnchor) {
         let firstAnchor = document.querySelector('.nav-anchor__top-level a');
@@ -282,7 +317,7 @@ export default class SinglePage extends Component {
     if (util.canUseDOM()) {
       return (
         <div className="grid">
-          <Sticky className="sticky__wrapper" topOffset={-5} bottomOffset={30} onStickyStateChange={this.handleStickyStateChange.bind(this)}>
+          <Sticky className="sticky-nav" topOffset={-5} bottomOffset={30} onStickyStateChange={this.handleStickyStateChange.bind(this)}>
             <Breadcrumb section={this.props.sectionTitle} title={this.state.breadcrumbTitle} />
             <div className="col col--1-4">
               <div className="nav-anchor">

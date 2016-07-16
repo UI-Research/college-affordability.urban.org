@@ -7,7 +7,7 @@
   @include clearfix();
 
   @include breakpoint($bp--mid) {
-    height: 121px;
+    height: 117px;
   }
   @include breakpoint($bp--large) {
     height: 130px;
@@ -88,20 +88,23 @@
   text-align: center;
   font-size: 15px;
   font-weight: bold;
+  line-height: 24px;
   text-transform: uppercase;
   color: white;
   font-family: Futura, Arial, sans-serif;
 
   @include breakpoint($bp--mid) {
     font-size: 19px;
+    line-height: 28px;
     letter-spacing: 2px;
   }
 
   @include breakpoint($bp--large) {
     background: transparent;
-    text-align: left;
-    padding: 2.1rem 0 0 2rem;
     font-size: 24px;
+    line-height: 1.5;
+    padding: 2.1rem 0 0 2rem;
+    text-align: left;
   }
 
   @include breakpoint($bp--xlarge) {
