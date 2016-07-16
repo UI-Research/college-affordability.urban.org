@@ -5,6 +5,11 @@ const React = require('react'),
       _ = require('lodash'),
       ExecutionEnvironment = require('exenv');
 
+const bpSmall = 400,
+      bpMid = 640,
+      bpLarge = 960,
+      bpXLarge = 1200;
+
 module.exports = {
   // Print React markup to page.  Only when the DOM is available.
   printToPage: (name, markup) => {
@@ -33,5 +38,19 @@ module.exports = {
   // Converts text into computer-friendly labels.
   machineName: (text) => {
     return text.replace(/[^a-zA-Z0-9]/g, '_').toLowerCase();
+  },
+  // Gets the width of a breakpoint by size.
+  breakpointWidth: (size) => {
+    switch (size) {
+      case 'small':
+        return bpSmall;
+      case 'mid':
+        return bpMid;
+      case 'large':
+        return bpLarge;
+      case 'xlarge':
+        return bpXLarge;
+    }
+    return 0;
   }
 }

@@ -14,6 +14,46 @@ export default class Header extends Component {
     super(props);
 
     this.state = { headerClass: '' };
+    if (util.canUseDOM()) {
+      window.addEventListener('resize', this.handleResize.bind(this));
+    }
+  }
+  handleResize () {
+    // Make sure all sub menus are closed when resize to desktop.
+    if (window.innerWidth > util.breakpointWidth('large')) {
+      let subMenus = document.querySelectorAll('.header-site__nav-primary-wrapper ul.open');
+      _.each(subMenus, (menu) => {
+        menu.classList.remove('open');
+      });
+    }
+  }
+  toggleMobileNav() {
+    if (util.canUseDOM()) {
+      let primaryNav = document.querySelector('.header-site__nav-primary-wrapper');
+      primaryNav.classList.toggle('open');
+    }
+  }
+  toggleMenu(event) {
+    let target = event.target;
+    let menu = target.parentElement.querySelector('ul');
+    if (target.classList.contains('fa-chevron-down')) {
+      target.classList.remove('fa-chevron-down');
+      target.classList.add('fa-chevron-left');
+    }
+    else {
+      target.classList.remove('fa-chevron-left');
+      target.classList.add('fa-chevron-down');
+    }
+    if (window.innerWidth <= util.breakpointWidth('large')) {
+      menu.classList.toggle('open');
+    }
+  }
+  determineOffset() {
+    const w = {
+      distanceY: window.pageYOffset || document.documentElement.scrollTop,
+      shrinkThreshold: 100
+    };
+    return w;
   }
   componentDidMount() {
     // Initiates transformation of header to mini on scroll.
@@ -57,19 +97,12 @@ export default class Header extends Component {
       }
     }
   }
-  determineOffset() {
-    const w = {
-      distanceY: window.pageYOffset || document.documentElement.scrollTop,
-      shrinkThreshold: 100
-    };
-    return w;
-  }
   render() {
     let headerSite = `header-site ${this.state.headerClass}`;
     return (
       <Sticky className="sticky-header">
         <header className={headerSite}>
-          <div className="header-site__nav-mobile"><i className="fa fa-bars"></i><span>Menu</span></div>
+          <div className="header-site__nav-mobile" onClick={this.toggleMobileNav}><i className="fa fa-bars"></i><span>Menu</span></div>
           <div className="header-site__logo-wrapper">
             <a href="/" className="header-site__logo" alt="Urban Institute"></a>
           </div>
@@ -86,6 +119,7 @@ export default class Header extends Component {
                   </li>
                   <li className="has-submenu">
                     <a href="/prices-expenses/index.html">Prices and Expenses</a>
+                    <span onClick={this.toggleMenu} className="fa fa-chevron-down"></span>
                     <ul className="nav-primary__second-level">
                       <li>
                         <a href="/prices-expenses/sticker-prices">Sticker Prices</a>
@@ -100,6 +134,7 @@ export default class Header extends Component {
                   </li>
                   <li className="has-submenu">
                     <a href="#">Student Aid</a>
+                    <span onClick={this.toggleMenu} className="fa fa-chevron-down"></span>
                     <ul className="nav-primary__second-level">
                       <li>
                         <a href="#">Net Price</a>
@@ -117,6 +152,7 @@ export default class Header extends Component {
                   </li>
                   <li className="has-submenu">
                     <a href="#">Covering Expenses</a>
+                    <span onClick={this.toggleMenu} className="fa fa-chevron-down"></span>
                     <ul className="nav-primary__second-level">
                       <li>
                         <a href="#">Pre-College Income and Savings</a>
@@ -134,6 +170,7 @@ export default class Header extends Component {
                   </li>
                   <li>
                     <a href="/after-college">After College</a>
+                    <span onClick={this.toggleMenu} className="fa fa-chevron-down"></span>
                     <ul className="nav-primary__second-level">
                       <li>
                         <a href="#">Income After College</a>
@@ -148,6 +185,7 @@ export default class Header extends Component {
                   </li>
                   <li>
                     <a href="#">Student Profiles</a>
+                    <span onClick={this.toggleMenu} className="fa fa-chevron-down"></span>
                     <ul className="nav-primary__second-level">
                       <li>
                         <a href="#">Independent</a>
