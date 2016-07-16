@@ -218,7 +218,7 @@ export class BaseGraph extends Component {
     moveAxisLabel(object);
   }
   checkVerticalLabels() {
-    // Make bottom axis labels vertical for non desktop.
+    // Make bottom axis labels vertical for tablet/mobile.
     const width = window.innerWidth;
     let data = this.props.file;
     if (!data.axis.rotated) {
@@ -226,7 +226,7 @@ export class BaseGraph extends Component {
         if (!data.axis.x.tick) {
           data.axis.x.tick = {};
         }
-        if (width <= 960) {
+        if (width <= util.breakpointWidth('large')) {
           data.axis.x.tick.rotate = 90;
           data.axis.x.tick.multiline = false;
         }
@@ -241,7 +241,7 @@ export class BaseGraph extends Component {
         if (!data.axis.y.tick) {
           data.axis.y.tick = {};
         }
-        if (width <= 960) {
+        if (width <= util.breakpointWidth('large')) {
           data.axis.y.tick.rotate = 90;
           data.axis.y.tick.multiline = false;
         }
