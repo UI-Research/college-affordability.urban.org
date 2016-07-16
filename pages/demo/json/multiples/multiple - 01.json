@@ -1,5 +1,9 @@
 {
   "title": "Sample Graph",
+  "size": {
+    "height": 210,
+    "width": 210
+  },
   "data": {
     "columns": [
       ["data1", 30, 200, 100, 400, 150, 250]
