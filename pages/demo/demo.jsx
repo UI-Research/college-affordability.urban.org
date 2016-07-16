@@ -15,7 +15,7 @@ let singlepage = (
     <h1>Demo JSONs Page</h1>
     <h2>Graphs</h2>
 
-    <Multiples>
+    <Multiples title="Small Multiples Example" source="Sample Source" notes="Sample Note">
       <Graph file={require('./json/multiples/multiple - 01.json')} />
       <Graph file={require('./json/multiples/multiple - 02.json')} />
       <Graph file={require('./json/multiples/multiple - 03.json')} />

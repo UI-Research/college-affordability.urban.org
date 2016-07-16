@@ -324,6 +324,30 @@ BaseGraph.defaultProps = {
 };
 
 
+export class GraphAttribution extends Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div>
+        <strong className="c-text__viz-notes__title">{_.capitalize(this.props.type)}: </strong>
+        <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={{ __html: this.props.text }} />
+      </div>
+    );
+  }
+}
+
+GraphAttribution.propTypes = {
+  type: React.PropTypes.string,
+  text: React.PropTypes.string
+};
+GraphAttribution.defaultProps = {
+  type: 'notes',
+  text: ''
+};
+
+
 export default class Graph extends Component {
   constructor(props) {
     super(props);
@@ -331,19 +355,6 @@ export default class Graph extends Component {
     // Force specify type of graph.
     if (!this.props.file.data.type) {
       this.props.file.data.type = this.props.type;
-    }
-  }
-  attribution(string) {
-    if (this.props.file.metadata && this.props.file.metadata[string]) {
-      return (
-        <div>
-          <strong className="c-text__viz-notes__title">{_.capitalize(string)}: </strong>
-          <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={{ __html: this.props.file.metadata[string] }} />
-        </div>
-      );
-    }
-    else {
-      return false;
     }
   }
   render() {
@@ -366,20 +377,30 @@ export default class Graph extends Component {
       anchor = <a name={anchor_name}></a>;
     }
 
+    // Set up notes and source if they exist
+    let notes = false;
+    if (this.props.file.metadata && this.props.file.metadata.notes) {
+      notes = <GraphAttribution type="notes" text={this.props.file.metadata.notes} />;
+    }
+    let source = false;
+    if (this.props.file.metadata && this.props.file.metadata.source) {
+      source = <GraphAttribution type="source" text={this.props.file.metadata.source} />;
+    }
+
     return (
-    <div className={base_class}>
-      <h2>{this.props.file.title}</h2>
-      {anchor}
-      <LazyLoad height={320}>
-        <BaseGraph file={this.props.file} />
-      </LazyLoad>
-      <div className="c-text__caption c-text__caption--bottom">
-        <div className="c-text__viz-notes">
-          {this.attribution('source')}
-          {this.attribution('notes')}
+      <div className={base_class}>
+        <h2>{this.props.file.title}</h2>
+        {anchor}
+        <LazyLoad height={320}>
+          <BaseGraph file={this.props.file} />
+        </LazyLoad>
+        <div className="c-text__caption c-text__caption--bottom">
+          <div className="c-text__viz-notes">
+            {source}
+            {notes}
+          </div>
         </div>
       </div>
-    </div>
     );
   }
 }
