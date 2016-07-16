@@ -1,0 +1,22 @@
+{
+  "title": "Sample Graph",
+  "data": {
+    "columns": [
+      ["data1", 130, 20, 500, 410, 350, 450]
+    ],
+    "type": "area-spline"
+  },
+  "axis": {
+    "x": {
+      "tick": {
+        "count": 2
+      }
+    },
+    "y": {
+      "tick": {
+        "count": 2,
+        "format": "number"
+      }
+    }
+  }
+}

@@ -1,6 +1,7 @@
 @import '_global.scss';
 
 .c-text__box {
+  @include clearfix();
   border: 1px solid $color--gray-4;
   font-size: 14px;
   margin: 2rem 0;

@@ -31,7 +31,7 @@ export class BaseGraph extends Component {
       data.bindto = '#' + this.id;
 
       // Set max number of axis ticks on y axis
-      if (data.axis && data.axis.y && data.axis.y.tick) {
+      if (data.axis && data.axis.y && data.axis.y.tick && !data.axis.y.tick.count) {
         data.axis.y.tick.count = 10;
       }
 
@@ -177,6 +177,8 @@ export class BaseGraph extends Component {
       }
 
 
+
+      // Generate the graph!
       let chart = c3.generate(data);
 
       // Make it available to other scopes.
@@ -285,7 +287,7 @@ export class BaseGraph extends Component {
   setTick(object) {
     // When in category mode, align the ticks to be directly on top
     // of the labels.
-    if (!_.isEmpty(object.props.file.axis.x.type) && object.props.file.axis.x.type == 'category') {
+    if (object.props.file.axis && object.props.file.axis.x && !_.isEmpty(object.props.file.axis.x.type) && object.props.file.axis.x.type == 'category') {
       d3.selectAll(`#${object.id} g.c3-axis-x g.tick line`).remove();
       let ticks = d3.selectAll(`#${object.id} g.c3-axis-x g.tick`);
       _.map(ticks[0],function (tick) {

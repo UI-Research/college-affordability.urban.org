@@ -1,0 +1,12 @@
+@import '_global.scss';
+
+
+.c-graph-multiples {
+  @include clearfix();
+
+  .c-graph-multiple {
+    width: 200px;
+    float: left;
+  }
+}
+
