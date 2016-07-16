@@ -4,6 +4,12 @@
     "height": 210,
     "width": 210
   },
+  "padding": {
+    "top": 30,
+    "bottom": 30,
+    "left": 30,
+    "right": 30
+  },
   "data": {
     "columns": [
       ["data1", 420, 200, 10, 490, 510, 250]
