@@ -68,13 +68,13 @@ export class BaseGraph extends Component {
         data.axis.y.label = {
           text: data.axis.y.label,
           position: 'outer-center'
-        }
+        };
       }
       if (data.axis && data.axis.x && data.axis.x.label && typeof data.axis.x.label === 'string') {
         data.axis.x.label = {
           text: data.axis.x.label,
           position: 'outer-center'
-        }
+        };
       }
 
       // Increase padding at top of the graph
@@ -107,7 +107,7 @@ export class BaseGraph extends Component {
         data.point = {
           show: false
         }
-      }
+      };
 
 
       if (['line', 'area-spline'].includes(data.data.type)) {
@@ -119,7 +119,7 @@ export class BaseGraph extends Component {
           data.axis.x.padding = {
             left: -0.5,
             right: -0.5
-          }
+          };
         }
 
         // Add additional padding to display values.
@@ -129,7 +129,7 @@ export class BaseGraph extends Component {
             bottom: 20,
             left: 50,
             right: 50
-          }
+          };
         }
       }
 
@@ -178,7 +178,7 @@ export class BaseGraph extends Component {
         chart.destroy();
         chart = c3.generate(data);
         this.polishChart(this);
-      }
+      };
 
 
 
@@ -225,7 +225,7 @@ export class BaseGraph extends Component {
   }
   setLegend(object) {
     // Clean up (just in case);
-    d3.select(`#${object.id}_legend`).selectAll("*").remove();
+    d3.select(`#${object.id}_legend`).selectAll('*').remove();
 
     let legend = d3.selectAll(`#${object.id} .c3-legend-item`);
     // If there's only one data set, don't bother listing the legend.

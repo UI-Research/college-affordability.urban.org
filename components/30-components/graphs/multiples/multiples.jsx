@@ -1,6 +1,6 @@
 'use strict';
 import React, { Component } from 'react';
-import Graph, { GraphAttribution } from '30-components/graphs/graph/graph.jsx';
+import { GraphAttribution } from '30-components/graphs/graph/graph.jsx';
 import _ from 'lodash';
 import util from 'util.jsx';
 
@@ -39,7 +39,7 @@ export default class Multiples extends Component {
 Multiples.propTypes = {
   title: React.PropTypes.string,
   source: React.PropTypes.string,
-  notes: React.PropTypes.string,
+  notes: React.PropTypes.string
 };
 Multiples.defaultProps = {
   title: 'Sample Multiples',
