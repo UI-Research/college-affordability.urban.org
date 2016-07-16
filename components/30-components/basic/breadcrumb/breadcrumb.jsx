@@ -10,7 +10,7 @@ export default class Breadcrumb extends Component {
   render() {
     return (
       <div className="breadcrumb">
-        <a href="/">Home</a> / <a href="#">{this.props.section}</a> / {this.props.title}
+        <a href="/">Home</a> / <a href="">{this.props.section}</a> / {this.props.title}
       </div>
     );
   }

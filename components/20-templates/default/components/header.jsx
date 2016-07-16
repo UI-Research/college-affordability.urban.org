@@ -67,11 +67,11 @@ export default class Header extends Component {
   render() {
     let headerSite = `header-site ${this.state.headerClass}`;
     return (
-      <Sticky>
+      <Sticky className="sticky-header">
         <header className={headerSite}>
           <div className="header-site__nav-mobile"><i className="fa fa-bars"></i><span>Menu</span></div>
           <div className="header-site__logo-wrapper">
-          <a href="/" className="header-site__logo" alt="Urban Institute"></a>
+            <a href="/" className="header-site__logo" alt="Urban Institute"></a>
           </div>
           <div className="header-site__right">
             <div className="header-site__title">Understanding College Affordability</div>
