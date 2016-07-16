@@ -106,8 +106,8 @@ export class BaseGraph extends Component {
       if (data.data.type && data.data.type === 'area-spline') {
         data.point = {
           show: false
-        }
-      };
+        };
+      }
 
 
       if (['line', 'area-spline'].includes(data.data.type)) {
