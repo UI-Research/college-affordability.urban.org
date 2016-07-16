@@ -19,6 +19,15 @@ let singlepage = (
       <Graph file={require('./json/multiples/multiple - 01.json')} />
       <Graph file={require('./json/multiples/multiple - 02.json')} />
       <Graph file={require('./json/multiples/multiple - 03.json')} />
+      <Graph file={require('./json/multiples/multiple - 01.json')} />
+      <Graph file={require('./json/multiples/multiple - 02.json')} />
+      <Graph file={require('./json/multiples/multiple - 03.json')} />
+      <Graph file={require('./json/multiples/multiple - 01.json')} />
+      <Graph file={require('./json/multiples/multiple - 02.json')} />
+      <Graph file={require('./json/multiples/multiple - 03.json')} />
+      <Graph file={require('./json/multiples/multiple - 01.json')} />
+      <Graph file={require('./json/multiples/multiple - 02.json')} />
+      <Graph file={require('./json/multiples/multiple - 03.json')} />
     </Multiples>
     <Box>
       <h3>Code Sample</h3>
