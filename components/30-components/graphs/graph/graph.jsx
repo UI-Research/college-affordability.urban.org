@@ -194,27 +194,37 @@ export class BaseGraph extends Component {
       if (data.data.sets) {
         // For use with the done() method later...
         let object = this;
+        let sets = data.data.sets;
 
-        _.map(data.data.sets, (set) => {
-          let options = d3.select(`${data.bindto}_options`);
-          options.append('a')
-            .attr('name', set[0])
-            .text(set[0])
-            .on('click', () => {
-              // Clear out legend landing site.
-              d3.selectAll(`${data.bindto}_legend svg`).remove();
+        let swapSet = () => {
+          let target = d3.select('select').property('value');
 
-              // Load new data.
-              chart.load({
-                columns: [
-                  set
-                ],
-                unload: chart.columns,
-                done: function() {
-                  polishChart(object);
-                }
-              });
-            });
+          // Clear out legend landing site.
+          d3.selectAll(`${data.bindto}_legend svg`).remove();
+
+          // Load new data.
+          chart.load({
+            columns: [
+              sets[target]
+            ],
+            unload: chart.columns,
+            done: function() {
+              polishChart(object);
+            }
+          });
+        }
+
+        // Create select box for toggles
+        let options = d3.select(`${data.bindto}_options`);
+        let select = options.append('select')
+          .attr('class','select')
+          .on('change', swapSet);
+
+        _.map(data.data.sets, (set, index) => {
+          select.append('option')
+            .attr('class', util.machineName(index))
+            .attr('value', index)
+            .text(set[0]);
         });
       }
     }
