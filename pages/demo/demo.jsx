@@ -100,6 +100,12 @@ let singlepage = (
       <h3>Code Sample</h3>
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0080 - scatterplot.json'))}} />
     </Box>
+
+    <Graph file={require('./json/0090 - toggles.json')} />
+    <Box>
+      <h3>Code Sample</h3>
+      <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0090 - toggles.json'))}} />
+    </Box>
   </div>
 );
 
