@@ -192,6 +192,9 @@ export class BaseGraph extends Component {
 
       // If sets are available, reveal them as options
       if (data.data.sets) {
+        // For use with the done() method later...
+        let object = this;
+
         _.map(data.data.sets, (set) => {
           let options = d3.select(`${data.bindto}_options`);
           options.append('a')
@@ -208,7 +211,7 @@ export class BaseGraph extends Component {
                 ],
                 unload: chart.columns,
                 done: function() {
-                  polishChart(this);
+                  polishChart(object);
                 }
               });
             });
