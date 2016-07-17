@@ -19,6 +19,12 @@ const ActionButton = React.createClass({
   },
   render: function() {
     let className = `btn button-${util.machineName(this.props.title)}`;
+
+    // In case you want to disable a button.
+    if (this.props.disable == "true") {
+      className += ` disabled`;
+    }
+
     return (
       <a href={this.props.href} className={className} target="_blank">{this.props.title} <i className="fa fa-download"></i></a>
     );

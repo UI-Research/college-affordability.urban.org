@@ -243,10 +243,27 @@ export class BaseGraph extends Component {
   // Generate a downloadable svg file.
   // Reference: https://stackoverflow.com/questions/23218174/how-do-i-save-export-an-svg-file-after-creating-an-svg-with-d3-js-ie-safari-an
   createDownloadLink(object) {
+
+    // TODO: THIS IS A WORK IN PROGRESS.  FINISH THIS LATER, BUT DO NOT ENABLE NOW.
+    const walkTheDOM = (node, func) => {
+      func(node);
+      node = node.firstChild;
+      while (node) {
+        walkTheDOM(node, func);
+        node = node.nextSibling;
+      }
+    }
+
     // Get svg element.
     let container = document.getElementById(`${object.id}`).childNodes;
-
     let svg = container[1];
+
+    walkTheDOM(svg, (node) => {
+      if (typeof node == 'Element') {
+        //console.log(window.getComputedStyle(node, null).getPropertyValue('font-family'));
+      }
+      return node;
+    });
 
     // Get svg source.
     let serializer = new XMLSerializer();
@@ -488,8 +505,8 @@ export default class Graph extends Component {
           </div>
         </div>
         <Actions>
-          <ActionButton title='Save Image' href='#'/>
-          <ActionButton title='Download data (csv)' href='#'/>
+          <ActionButton title='Save Image' href='#' disable='true' />
+          <ActionButton title='Download data (csv)' href='#' />
         </Actions>
       </div>
     );
