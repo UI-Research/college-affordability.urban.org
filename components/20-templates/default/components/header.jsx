@@ -21,10 +21,7 @@ export default class Header extends Component {
   handleResize () {
     // Make sure all sub menus are closed when resize to desktop.
     if (window.innerWidth > util.breakpointWidth('large')) {
-      let subMenus = document.querySelectorAll('.header-site__nav-primary-wrapper ul.open');
-      _.each(subMenus, (menu) => {
-        menu.classList.remove('open');
-      });
+      this.closeSubMenus();
     }
   }
   toggleMobileNav() {
@@ -36,6 +33,10 @@ export default class Header extends Component {
   toggleMenu(event) {
     let target = event.target;
     let menu = target.parentElement.querySelector('ul');
+    // Close other open subs before opening a new one.
+    if (!menu.classList.contains('open')) {
+      this.closeSubMenus();
+    }
     if (target.classList.contains('fa-chevron-down')) {
       target.classList.remove('fa-chevron-down');
       target.classList.add('fa-chevron-left');
@@ -47,6 +48,16 @@ export default class Header extends Component {
     if (window.innerWidth <= util.breakpointWidth('large')) {
       menu.classList.toggle('open');
     }
+  }
+  closeSubMenus() {
+    // Close all second level uls.
+    let subMenus = document.querySelectorAll('.header-site__nav-primary-wrapper ul.open');
+    _.each(subMenus, (menu) => {
+      menu.classList.remove('open');
+      let chevron = menu.previousElementSibling;
+      chevron.classList.remove('fa-chevron-left');
+      chevron.classList.add('fa-chevron-down');
+    });
   }
   determineOffset() {
     const w = {
@@ -99,6 +110,7 @@ export default class Header extends Component {
   }
   render() {
     let headerSite = `header-site ${this.state.headerClass}`;
+    const toggle = this.toggleMenu.bind(this);
     return (
       <Sticky className="sticky-header">
         <header className={headerSite}>
@@ -119,7 +131,7 @@ export default class Header extends Component {
                   </li>
                   <li className="has-submenu">
                     <a href="/prices-expenses/index.html">Prices and Expenses</a>
-                    <span onClick={this.toggleMenu} className="fa fa-chevron-down"></span>
+                    <span onClick={toggle} className="fa fa-chevron-down"></span>
                     <ul className="nav-primary__second-level">
                       <li>
                         <a href="/prices-expenses/sticker-prices">Sticker Prices</a>
@@ -134,7 +146,7 @@ export default class Header extends Component {
                   </li>
                   <li className="has-submenu">
                     <a href="#">Student Aid</a>
-                    <span onClick={this.toggleMenu} className="fa fa-chevron-down"></span>
+                    <span onClick={toggle} className="fa fa-chevron-down"></span>
                     <ul className="nav-primary__second-level">
                       <li>
                         <a href="#">Net Price</a>
@@ -152,7 +164,7 @@ export default class Header extends Component {
                   </li>
                   <li className="has-submenu">
                     <a href="#">Covering Expenses</a>
-                    <span onClick={this.toggleMenu} className="fa fa-chevron-down"></span>
+                    <span onClick={toggle} className="fa fa-chevron-down"></span>
                     <ul className="nav-primary__second-level">
                       <li>
                         <a href="#">Pre-College Income and Savings</a>
@@ -170,7 +182,7 @@ export default class Header extends Component {
                   </li>
                   <li>
                     <a href="/after-college">After College</a>
-                    <span onClick={this.toggleMenu} className="fa fa-chevron-down"></span>
+                    <span onClick={toggle} className="fa fa-chevron-down"></span>
                     <ul className="nav-primary__second-level">
                       <li>
                         <a href="#">Income After College</a>
@@ -185,7 +197,7 @@ export default class Header extends Component {
                   </li>
                   <li>
                     <a href="#">Student Profiles</a>
-                    <span onClick={this.toggleMenu} className="fa fa-chevron-down"></span>
+                    <span onClick={toggle} className="fa fa-chevron-down"></span>
                     <ul className="nav-primary__second-level">
                       <li>
                         <a href="#">Independent</a>
