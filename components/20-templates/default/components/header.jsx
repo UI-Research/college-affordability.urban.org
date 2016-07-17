@@ -229,7 +229,7 @@ export default class Header extends Component {
                     <a href="#">Research &amp; Resources</a>
                   </li>
                   <li>
-                    <a href="#">Chart Indexes</a>
+                    <a href="#">Chart Index</a>
                   </li>
                 </ul>
               </div>
