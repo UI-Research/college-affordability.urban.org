@@ -199,7 +199,7 @@ export class BaseGraph extends Component {
         let swapSet = () => {
           let target = d3.select('select').property('value');
 
-          // Clear out legend landing site.
+          // Clear out legend landing site. #garbage_collection
           d3.selectAll(`${data.bindto}_legend svg`).remove();
 
           // Load new data.
@@ -215,7 +215,7 @@ export class BaseGraph extends Component {
         }
 
         // Create select box for toggles
-        let options = d3.select(`${data.bindto}_options`);
+        let options = d3.select(`${data.bindto}_dropdown`)
         let select = options.append('select')
           .attr('class','select')
           .on('change', swapSet);
@@ -353,13 +353,15 @@ export class BaseGraph extends Component {
   }
   render() {
     const legend = `${this.id}_legend`;
+    const dropdown = `${this.id}_dropdown`;
     const options = `${this.id}_options`;
 
     return (
       <div>
-        <div id={legend} className="c-graph__legend"></div>
-        <div id={this.id} className={`c-graph__container c-${this.props.file.data.type}__container`}></div>
-        <div id={options} className="c-graph__options"></div>
+        <div id={dropdown} className="c-graph_dropdown" />
+        <div id={legend} className="c-graph__legend" />
+        <div id={this.id} className={`c-graph__container c-${this.props.file.data.type}__container`} />
+        <div id={options} className="c-graph__options" />
       </div>
     );
   }

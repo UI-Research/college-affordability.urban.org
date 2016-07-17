@@ -202,3 +202,17 @@
     fill: #000 !important;
   }
 }
+
+.c-graph_dropdown {
+  select {
+    margin-bottom: 10px;
+    background: url(img/urban-select-2x.png) no-repeat right $color--space-gray-1;
+    background-size: contain;
+    padding: 0.6rem;
+    padding-right: 100px;
+    font-size: 16px;
+    border-radius: 0;
+    -webkit-appearance: none;
+    outline-width: 0;
+  }
+}
