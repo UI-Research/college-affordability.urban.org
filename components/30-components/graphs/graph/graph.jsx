@@ -3,6 +3,8 @@
 import React, { Component } from 'react';
 import d3 from 'd3';
 import _ from 'lodash';
+import Actions from '30-components/basic/actions/actions.jsx';
+import ActionButton from '30-components/basic/action_button/action_button.jsx';
 const LazyLoad = require('30-components/basic/lazyload/lazyload.jsx');
 
 import util from 'util.jsx';
@@ -17,8 +19,7 @@ export class BaseGraph extends Component {
   constructor(props) {
     super(props);
 
-    // Create unique ID for element.
-    this.id = 'graph' + util.uniqueID();
+    this.id = props.id;
   }
   componentDidMount() {
     if (util.canUseDOM) {
@@ -223,6 +224,38 @@ export class BaseGraph extends Component {
     setTick(object);
     const moveAxisLabel = object.moveAxisLabel;
     moveAxisLabel(object);
+    const createDownloadLink = object.createDownloadLink;
+    createDownloadLink(object);
+  }
+  // Generate a downloadable svg file.
+  // Reference: https://stackoverflow.com/questions/23218174/how-do-i-save-export-an-svg-file-after-creating-an-svg-with-d3-js-ie-safari-an
+  createDownloadLink(object) {
+    // Get svg element.
+    let container = document.getElementById(`${object.id}`).childNodes;
+
+    let svg = container[1];
+
+    // Get svg source.
+    let serializer = new XMLSerializer();
+    let source = serializer.serializeToString(svg);
+
+    // Add name spaces.
+    if (!source.match(/^<svg[^>]+xmlns="http\:\/\/www\.w3\.org\/2000\/svg"/)) {
+      source = source.replace(/^<svg/, '<svg xmlns="http://www.w3.org/2000/svg"');
+    }
+    if (!source.match(/^<svg[^>]+"http\:\/\/www\.w3\.org\/1999\/xlink"/)) {
+      source = source.replace(/^<svg/, '<svg xmlns:xlink="http://www.w3.org/1999/xlink"');
+    }
+
+    // Add xml declaration
+    source = '<?xml version="1.0" standalone="no"?>\r\n' + source;
+
+    // Convert svg source to URI data scheme.
+    var url = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(source)}`;
+
+    // Set url value to a element's href attribute.
+    d3.select(`.${object.id}-container .button-save_image`)
+      .attr('href', url);
   }
   checkVerticalLabels() {
     // Make bottom axis labels vertical for tablet/mobile.
@@ -392,9 +425,12 @@ export default class Graph extends Component {
     if (!this.props.file.data.type) {
       this.props.file.data.type = this.props.type;
     }
+
+    // Create unique ID for element.
+    this.id = 'graph' + util.uniqueID();
   }
   render() {
-    let base_class = `c-graph c-${this.props.file.data.type}`,
+    let base_class = `${this.id}-container c-graph c-${this.props.file.data.type}`,
         anchor = null;
 
     // If it's a grouped bar chart, flag it as such (so we can move the labels)
@@ -428,7 +464,7 @@ export default class Graph extends Component {
         <h2>{this.props.file.title}</h2>
         {anchor}
         <LazyLoad>
-          <BaseGraph file={this.props.file} />
+          <BaseGraph file={this.props.file} id={this.id} />
         </LazyLoad>
         <div className="c-text__caption c-text__caption--bottom">
           <div className="c-text__viz-notes">
@@ -436,6 +472,10 @@ export default class Graph extends Component {
             {notes}
           </div>
         </div>
+        <Actions>
+          <ActionButton title='Save Image' href='#'/>
+          <ActionButton title='Download data (csv)' href='#'/>
+        </Actions>
       </div>
     );
   }
