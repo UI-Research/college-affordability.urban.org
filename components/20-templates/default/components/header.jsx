@@ -14,6 +14,57 @@ export default class Header extends Component {
     super(props);
 
     this.state = { headerClass: '' };
+    if (util.canUseDOM()) {
+      window.addEventListener('resize', this.handleResize.bind(this));
+    }
+  }
+  handleResize () {
+    // Make sure all sub menus are closed when resize to desktop.
+    if (window.innerWidth > util.breakpointWidth('large')) {
+      this.closeSubMenus();
+    }
+  }
+  toggleMobileNav() {
+    if (util.canUseDOM()) {
+      let primaryNav = document.querySelector('.header-site__nav-primary-wrapper');
+      primaryNav.classList.toggle('open');
+    }
+  }
+  toggleMenu(event) {
+    let target = event.target;
+    let menu = target.parentElement.querySelector('ul');
+    // Close other open subs before opening a new one.
+    if (!menu.classList.contains('open')) {
+      this.closeSubMenus();
+    }
+    if (target.classList.contains('fa-chevron-down')) {
+      target.classList.remove('fa-chevron-down');
+      target.classList.add('fa-chevron-left');
+    }
+    else {
+      target.classList.remove('fa-chevron-left');
+      target.classList.add('fa-chevron-down');
+    }
+    if (window.innerWidth <= util.breakpointWidth('large')) {
+      menu.classList.toggle('open');
+    }
+  }
+  closeSubMenus() {
+    // Close all second level uls.
+    let subMenus = document.querySelectorAll('.header-site__nav-primary-wrapper ul.open');
+    _.each(subMenus, (menu) => {
+      menu.classList.remove('open');
+      let chevron = menu.previousElementSibling;
+      chevron.classList.remove('fa-chevron-left');
+      chevron.classList.add('fa-chevron-down');
+    });
+  }
+  determineOffset() {
+    const w = {
+      distanceY: window.pageYOffset || document.documentElement.scrollTop,
+      shrinkThreshold: 100
+    };
+    return w;
   }
   componentDidMount() {
     // Initiates transformation of header to mini on scroll.
@@ -57,19 +108,13 @@ export default class Header extends Component {
       }
     }
   }
-  determineOffset() {
-    const w = {
-      distanceY: window.pageYOffset || document.documentElement.scrollTop,
-      shrinkThreshold: 100
-    };
-    return w;
-  }
   render() {
     let headerSite = `header-site ${this.state.headerClass}`;
+    const toggle = this.toggleMenu.bind(this);
     return (
       <Sticky className="sticky-header">
         <header className={headerSite}>
-          <div className="header-site__nav-mobile"><i className="fa fa-bars"></i><span>Menu</span></div>
+          <div className="header-site__nav-mobile" onClick={this.toggleMobileNav}><i className="fa fa-bars"></i><span>Menu</span></div>
           <div className="header-site__logo-wrapper">
             <a href="/" className="header-site__logo" alt="Urban Institute"></a>
           </div>
@@ -86,6 +131,7 @@ export default class Header extends Component {
                   </li>
                   <li className="has-submenu">
                     <a href="/prices-expenses/index.html">Prices and Expenses</a>
+                    <span onClick={toggle} className="fa fa-chevron-down"></span>
                     <ul className="nav-primary__second-level">
                       <li>
                         <a href="/prices-expenses/sticker-prices">Sticker Prices</a>
@@ -100,6 +146,7 @@ export default class Header extends Component {
                   </li>
                   <li className="has-submenu">
                     <a href="#">Student Aid</a>
+                    <span onClick={toggle} className="fa fa-chevron-down"></span>
                     <ul className="nav-primary__second-level">
                       <li>
                         <a href="#">Net Price</a>
@@ -117,6 +164,7 @@ export default class Header extends Component {
                   </li>
                   <li className="has-submenu">
                     <a href="#">Covering Expenses</a>
+                    <span onClick={toggle} className="fa fa-chevron-down"></span>
                     <ul className="nav-primary__second-level">
                       <li>
                         <a href="#">Pre-College Income and Savings</a>
@@ -134,6 +182,7 @@ export default class Header extends Component {
                   </li>
                   <li>
                     <a href="/after-college">After College</a>
+                    <span onClick={toggle} className="fa fa-chevron-down"></span>
                     <ul className="nav-primary__second-level">
                       <li>
                         <a href="#">Income After College</a>
@@ -148,6 +197,7 @@ export default class Header extends Component {
                   </li>
                   <li>
                     <a href="#">Student Profiles</a>
+                    <span onClick={toggle} className="fa fa-chevron-down"></span>
                     <ul className="nav-primary__second-level">
                       <li>
                         <a href="#">Independent</a>
@@ -179,7 +229,7 @@ export default class Header extends Component {
                     <a href="#">Research &amp; Resources</a>
                   </li>
                   <li>
-                    <a href="#">Chart Indexes</a>
+                    <a href="#">Chart Index</a>
                   </li>
                 </ul>
               </div>

@@ -256,8 +256,7 @@ export default class SinglePage extends Component {
   }
   toggleSection(event) {
     let target = event.target;
-    let parent = event.target.parentElement;
-    let menu = parent.querySelector('ul');
+    let menu = target.parentElement.querySelector('ul');
     if (target.classList.contains('fa-chevron-down')) {
       target.classList.remove('fa-chevron-down');
       target.classList.add('fa-chevron-left');
