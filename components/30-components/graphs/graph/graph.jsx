@@ -109,7 +109,7 @@ export class BaseGraph extends Component {
       }
 
 
-      if (['line', 'area-spline'].includes(data.data.type)) {
+      if (_.includes(['line', 'area-spline'], data.data.type)) {
         // Line and area graphs should not show data points.
         data.data.labels = false;
 
