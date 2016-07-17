@@ -15,20 +15,6 @@ let singlepage = (
     <h1>Demo JSONs Page</h1>
     <h2>Graphs</h2>
 
-    <Multiples title="Small Multiples Example" source="Sample Source" notes="Sample Note">
-      <Graph file={require('./json/multiples/multiple - 01.json')} />
-      <Graph file={require('./json/multiples/multiple - 02.json')} />
-      <Graph file={require('./json/multiples/multiple - 03.json')} />
-      <Graph file={require('./json/multiples/multiple - 01.json')} />
-      <Graph file={require('./json/multiples/multiple - 02.json')} />
-      <Graph file={require('./json/multiples/multiple - 03.json')} />
-      <Graph file={require('./json/multiples/multiple - 01.json')} />
-      <Graph file={require('./json/multiples/multiple - 02.json')} />
-      <Graph file={require('./json/multiples/multiple - 03.json')} />
-      <Graph file={require('./json/multiples/multiple - 01.json')} />
-      <Graph file={require('./json/multiples/multiple - 02.json')} />
-      <Graph file={require('./json/multiples/multiple - 03.json')} />
-    </Multiples>
     <Box>
       <h3>Code Sample</h3>
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0080 - scatterplot.json'))}} />
@@ -93,6 +79,21 @@ let singlepage = (
       <h3>Code Sample</h3>
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0070 - stacked_area.json'))}} />
     </Box>
+
+    <Multiples title="Small Multiples Example" source="Sample Source" notes="Sample Note">
+      <Graph file={require('./json/multiples/multiple - 01.json')} />
+      <Graph file={require('./json/multiples/multiple - 02.json')} />
+      <Graph file={require('./json/multiples/multiple - 03.json')} />
+      <Graph file={require('./json/multiples/multiple - 01.json')} />
+      <Graph file={require('./json/multiples/multiple - 02.json')} />
+      <Graph file={require('./json/multiples/multiple - 03.json')} />
+      <Graph file={require('./json/multiples/multiple - 01.json')} />
+      <Graph file={require('./json/multiples/multiple - 02.json')} />
+      <Graph file={require('./json/multiples/multiple - 03.json')} />
+      <Graph file={require('./json/multiples/multiple - 01.json')} />
+      <Graph file={require('./json/multiples/multiple - 02.json')} />
+      <Graph file={require('./json/multiples/multiple - 03.json')} />
+    </Multiples>
 
     <Graph file={require('./json/0080 - scatterplot.json')} />
     <Box>
