@@ -192,26 +192,39 @@ export class BaseGraph extends Component {
 
       // If sets are available, reveal them as options
       if (data.data.sets) {
-        _.map(data.data.sets, (set) => {
-          let options = d3.select(`${data.bindto}_options`);
-          options.append('a')
-            .attr('name', set[0])
-            .text(set[0])
-            .on('click', () => {
-              // Clear out legend landing site.
-              d3.selectAll(`${data.bindto}_legend svg`).remove();
+        // For use with the done() method later...
+        let object = this;
+        let sets = data.data.sets;
 
-              // Load new data.
-              chart.load({
-                columns: [
-                  set
-                ],
-                unload: chart.columns,
-                done: function() {
-                  polishChart(this);
-                }
-              });
-            });
+        let swapSet = () => {
+          let target = d3.select('select').property('value');
+
+          // Clear out legend landing site. #garbage_collection
+          d3.selectAll(`${data.bindto}_legend svg`).remove();
+
+          // Load new data.
+          chart.load({
+            columns: [
+              sets[target]
+            ],
+            unload: chart.columns,
+            done: function() {
+              polishChart(object);
+            }
+          });
+        }
+
+        // Create select box for toggles
+        let options = d3.select(`${data.bindto}_dropdown`)
+        let select = options.append('select')
+          .attr('class','select')
+          .on('change', swapSet);
+
+        _.map(data.data.sets, (set, index) => {
+          select.append('option')
+            .attr('class', util.machineName(index))
+            .attr('value', index)
+            .text(set[0]);
         });
       }
     }
@@ -340,13 +353,15 @@ export class BaseGraph extends Component {
   }
   render() {
     const legend = `${this.id}_legend`;
+    const dropdown = `${this.id}_dropdown`;
     const options = `${this.id}_options`;
 
     return (
       <div>
-        <div id={legend} className="c-graph__legend"></div>
-        <div id={this.id} className={`c-graph__container c-${this.props.file.data.type}__container`}></div>
-        <div id={options} className="c-graph__options"></div>
+        <div id={dropdown} className="c-graph_dropdown" />
+        <div id={legend} className="c-graph__legend" />
+        <div id={this.id} className={`c-graph__container c-${this.props.file.data.type}__container`} />
+        <div id={options} className="c-graph__options" />
       </div>
     );
   }
