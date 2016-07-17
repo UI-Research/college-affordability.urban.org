@@ -1,0 +1,34 @@
+@import '_global.scss';
+
+
+.c-graph-multiples {
+  @include clearfix();
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .c-text__caption {
+    clear: both;
+  }
+
+  .c-graph-multiple {
+    width: 200px;
+    float: left;
+
+    h2 {
+      font-size: 13px;
+      margin-left: 20px;
+      font-style: italic;
+    }
+
+    .c-text__caption {
+      display: none;
+    }
+
+    .c-text__caption--bottom {
+      border: none;
+    }
+  }
+}
+

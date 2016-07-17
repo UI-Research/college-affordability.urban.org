@@ -31,7 +31,7 @@ export class BaseGraph extends Component {
       data.bindto = '#' + this.id;
 
       // Set max number of axis ticks on y axis
-      if (data.axis && data.axis.y && data.axis.y.tick) {
+      if (data.axis && data.axis.y && data.axis.y.tick && !data.axis.y.tick.count) {
         data.axis.y.tick.count = 10;
       }
 
@@ -67,20 +67,20 @@ export class BaseGraph extends Component {
         data.axis.y.label = {
           text: data.axis.y.label,
           position: 'outer-center'
-        }
+        };
       }
       if (data.axis && data.axis.x && data.axis.x.label && typeof data.axis.x.label === 'string') {
         data.axis.x.label = {
           text: data.axis.x.label,
           position: 'outer-center'
-        }
+        };
       }
 
       // Increase padding at top of the graph
       // (To prevent the graph from getting cut off)
-      data.padding = {
-        top: 5
-      }
+      // data.padding = {
+      //   top: 5
+      // }
 
       // Always have the y axis start at 0
       if (data.axis && data.axis.y) {
@@ -105,7 +105,7 @@ export class BaseGraph extends Component {
       if (data.data.type && data.data.type === 'area-spline') {
         data.point = {
           show: false
-        }
+        };
       }
 
 
@@ -118,13 +118,17 @@ export class BaseGraph extends Component {
           data.axis.x.padding = {
             left: -0.5,
             right: -0.5
-          }
+          };
         }
-        data.padding = {
-          top: 20,
-          bottom: 20,
-          left: 50,
-          right: 50
+
+        // Add additional padding to display values.
+        if (!data.padding) {
+          data.padding = {
+            top: 20,
+            bottom: 20,
+            left: 50,
+            right: 50
+          };
         }
       }
 
@@ -174,8 +178,11 @@ export class BaseGraph extends Component {
         this.checkVerticalLabels();
         chart = c3.generate(data);
         this.polishChart(this);
-      }
+      };
 
+
+
+      // Generate the graph!
       this.checkVerticalLabels();
       let chart = c3.generate(data);
 
@@ -254,7 +261,7 @@ export class BaseGraph extends Component {
   }
   setLegend(object) {
     // Clean up (just in case);
-    d3.select(`#${object.id}_legend`).selectAll("*").remove();
+    d3.select(`#${object.id}_legend`).selectAll('*').remove();
 
     let legend = d3.selectAll(`#${object.id} .c3-legend-item`);
     // If there's only one data set, don't bother listing the legend.
@@ -320,7 +327,7 @@ export class BaseGraph extends Component {
   setTick(object) {
     // When in category mode, align the ticks to be directly on top
     // of the labels.
-    if (!_.isEmpty(object.props.file.axis.x.type) && object.props.file.axis.x.type == 'category') {
+    if (object.props.file.axis && object.props.file.axis.x && !_.isEmpty(object.props.file.axis.x.type) && object.props.file.axis.x.type == 'category') {
       d3.selectAll(`#${object.id} g.c3-axis-x g.tick line`).remove();
       let ticks = d3.selectAll(`#${object.id} g.c3-axis-x g.tick`);
       _.map(ticks[0],function (tick) {
@@ -353,6 +360,30 @@ BaseGraph.defaultProps = {
 };
 
 
+export class GraphAttribution extends Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div>
+        <strong className="c-text__viz-notes__title">{_.capitalize(this.props.type)}: </strong>
+        <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={{ __html: this.props.text }} />
+      </div>
+    );
+  }
+}
+
+GraphAttribution.propTypes = {
+  type: React.PropTypes.string,
+  text: React.PropTypes.string
+};
+GraphAttribution.defaultProps = {
+  type: 'notes',
+  text: ''
+};
+
+
 export default class Graph extends Component {
   constructor(props) {
     super(props);
@@ -360,19 +391,6 @@ export default class Graph extends Component {
     // Force specify type of graph.
     if (!this.props.file.data.type) {
       this.props.file.data.type = this.props.type;
-    }
-  }
-  attribution(string) {
-    if (this.props.file.metadata && this.props.file.metadata[string]) {
-      return (
-        <div>
-          <strong className="c-text__viz-notes__title">{_.capitalize(string)}: </strong>
-          <p className="c-text__viz-notes__description" dangerouslySetInnerHTML={{ __html: this.props.file.metadata[string] }} />
-        </div>
-      );
-    }
-    else {
-      return false;
     }
   }
   render() {
@@ -395,22 +413,30 @@ export default class Graph extends Component {
       anchor = <a name={anchor_name}></a>;
     }
 
+    // Set up notes and source if they exist
+    let notes = false;
+    if (this.props.file.metadata && this.props.file.metadata.notes) {
+      notes = <GraphAttribution type="notes" text={this.props.file.metadata.notes} />;
+    }
+    let source = false;
+    if (this.props.file.metadata && this.props.file.metadata.source) {
+      source = <GraphAttribution type="source" text={this.props.file.metadata.source} />;
+    }
+
     return (
-    <div className={base_class}>
-      <h2>{this.props.file.title}</h2>
-      {anchor}
-      <div className="c-graph__wrapper">
-        <LazyLoad height={347}>
+      <div className={base_class}>
+        <h2>{this.props.file.title}</h2>
+        {anchor}
+        <LazyLoad>
           <BaseGraph file={this.props.file} />
         </LazyLoad>
-      </div>
-      <div className="c-text__caption c-text__caption--bottom">
-        <div className="c-text__viz-notes">
-          {this.attribution('source')}
-          {this.attribution('notes')}
+        <div className="c-text__caption c-text__caption--bottom">
+          <div className="c-text__viz-notes">
+            {source}
+            {notes}
+          </div>
         </div>
       </div>
-    </div>
     );
   }
 }

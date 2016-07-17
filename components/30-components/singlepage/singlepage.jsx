@@ -26,7 +26,7 @@ export default class SinglePage extends Component {
           menuElements = {},
           breadcrumbTitle = '',
           menuLinks = {};
-      
+
       _.each(props.content.props.children, (element, index) => {
         if (!props.sectionTitle && element.type === 'h1') {
           props.sectionTitle = element.props.children;
@@ -53,12 +53,12 @@ export default class SinglePage extends Component {
           props.content.props.children[index] = mocked;
         }
       });
-      
+
       this.state.menu = _.map(menuElements, (elements, parentIndex) => {
         let parentElement = null,
             subMenu = null;
 
-        subMenu = _.map(elements, (element, index) => {
+        subMenu = _.map(elements, (element) => {
           let elementID = (element.type === 'h2') ? parentIndex : parentIndex + '-' + util.machineName(element.props.children);
           menuLinks['#' + elementID] = element.props.children;
           // Capture the first menu item.
@@ -70,7 +70,6 @@ export default class SinglePage extends Component {
             return null;
           }
           else if (element.type === 'h3') {
-            let className = 'nav-anchor__second-level ' + parentIndex;
             return (
               <li className={parentIndex} key={elementID}><a href={`#/${elementID}`} onClick={this.elevateToSection.bind(this)}>{element.props.children}</a></li>
             );
@@ -113,7 +112,7 @@ export default class SinglePage extends Component {
             duration: 1500 // milliseconds
           }).elevate();
         };
-        
+
         window.addEventListener('load', function () {
           setTimeout(elevate, 500);
         });
@@ -229,7 +228,7 @@ export default class SinglePage extends Component {
     if (activeAnchor) {
       activeAnchor.classList.remove('active');
     }
-    
+
     // Close all second level uls.
     let uls = document.querySelectorAll('.nav-anchor__top-level ul.nav-anchor__second-level');
     _.each(uls, (ul) => {
@@ -238,7 +237,7 @@ export default class SinglePage extends Component {
       chevron.classList.remove('fa-chevron-left');
       chevron.classList.add('fa-chevron-down');
     });
-    
+
     if (anchor) {
       anchor.classList.add('active');
       // Leave the parent second-level ul open.
@@ -272,7 +271,7 @@ export default class SinglePage extends Component {
   handleStickyStateChange(isSticky) {
     const headerHeight = document.querySelector('.header-site').offsetHeight;
     let sideNav = document.querySelector('.sticky-nav');
-    
+
     // Set the top of the side nav if not sticky.
     if (!isSticky) {
       // Re-position the sidenav over the first h2 in the main content.
