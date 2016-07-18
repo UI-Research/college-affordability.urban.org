@@ -38,7 +38,7 @@ const LazyLoad = React.createClass({
     }
 
     return (
-    <ReactLazyLoad height={this.props.height} throttle={true} offset={this.props.offset} placeholder={placeholder}>
+    <ReactLazyLoad height={this.props.height} once throttle={true} offset={this.props.offset} placeholder={placeholder}>
       <div className="lazy-loaded">
         {anchor}
         <ReactCSSTransitionGroup key="1"
