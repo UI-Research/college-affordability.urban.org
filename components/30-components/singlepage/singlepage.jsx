@@ -171,7 +171,7 @@ export default class SinglePage extends Component {
         let stickyNav = document.querySelector('.sticky-nav');
         // Adjust the sticky padding, as the Sticky component doesn't,
         // but only when it's not sticky.
-        if (!header.classList.contains('header-sticky')) {
+        if (!_.includes(header.classList, 'header-sticky')) {
           let stickyHeader = document.querySelector('.sticky-header');
           stickyHeader.previousElementSibling.style.paddingBottom = headerHeight + 'px';
         }
