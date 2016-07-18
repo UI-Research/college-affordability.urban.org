@@ -15,11 +15,6 @@ let singlepage = (
     <h1>Demo JSONs Page</h1>
     <h2>Graphs</h2>
 
-    <Box>
-      <h3>Code Sample</h3>
-      <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0080 - scatterplot.json'))}} />
-    </Box>
-
     <Graph file={require('./json/0010 - single_line.json')} />
     <Box>
       <h3>Code Sample</h3>
@@ -94,6 +89,10 @@ let singlepage = (
       <Graph file={require('./json/multiples/multiple - 02.json')} />
       <Graph file={require('./json/multiples/multiple - 03.json')} />
     </Multiples>
+    <Box>
+      <h3>Code Sample</h3>
+      <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/multiples/multiple - 01.json'))}} />
+    </Box>
 
     <Graph file={require('./json/0080 - scatterplot.json')} />
     <Box>
