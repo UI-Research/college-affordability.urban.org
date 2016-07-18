@@ -76,18 +76,18 @@ let singlepage = (
     </Box>
 
     <Multiples title="Small Multiples Example" source="Sample Source" notes="Sample Note">
-      <Graph file={require('./json/multiples/multiple - 01.json')} />
-      <Graph file={require('./json/multiples/multiple - 02.json')} />
-      <Graph file={require('./json/multiples/multiple - 03.json')} />
-      <Graph file={require('./json/multiples/multiple - 01.json')} />
-      <Graph file={require('./json/multiples/multiple - 02.json')} />
-      <Graph file={require('./json/multiples/multiple - 03.json')} />
-      <Graph file={require('./json/multiples/multiple - 01.json')} />
-      <Graph file={require('./json/multiples/multiple - 02.json')} />
-      <Graph file={require('./json/multiples/multiple - 03.json')} />
-      <Graph file={require('./json/multiples/multiple - 01.json')} />
-      <Graph file={require('./json/multiples/multiple - 02.json')} />
-      <Graph file={require('./json/multiples/multiple - 03.json')} />
+      <Graph file={require('./json/multiples/multiple - 01.json')} small="true" />
+      <Graph file={require('./json/multiples/multiple - 02.json')} small="true"  />
+      <Graph file={require('./json/multiples/multiple - 03.json')} small="true"  />
+      <Graph file={require('./json/multiples/multiple - 01.json')} small="true"  />
+      <Graph file={require('./json/multiples/multiple - 02.json')} small="true"  />
+      <Graph file={require('./json/multiples/multiple - 03.json')} small="true"  />
+      <Graph file={require('./json/multiples/multiple - 01.json')} small="true"  />
+      <Graph file={require('./json/multiples/multiple - 02.json')} small="true"  />
+      <Graph file={require('./json/multiples/multiple - 03.json')} small="true"  />
+      <Graph file={require('./json/multiples/multiple - 01.json')} small="true"  />
+      <Graph file={require('./json/multiples/multiple - 02.json')} small="true"  />
+      <Graph file={require('./json/multiples/multiple - 03.json')} small="true"  />
     </Multiples>
     <Box>
       <h3>Code Sample</h3>

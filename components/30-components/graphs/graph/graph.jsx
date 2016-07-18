@@ -181,6 +181,16 @@ export class BaseGraph extends Component {
       };
 
 
+      if (this.props.small == 'true') {
+        if (!data.data.size) {
+          data.size = {
+            'height': 210,
+            'width': 210
+          }
+        }
+      }
+
+
 
       // Generate the graph!
       this.checkVerticalLabels();
@@ -373,10 +383,12 @@ export class BaseGraph extends Component {
 }
 
 BaseGraph.propTypes = {
-  content: React.PropTypes.string
+  content: React.PropTypes.string,
+  small: React.PropTypes.string
 };
 BaseGraph.defaultProps = {
-  type: 'line'
+  type: 'line',
+  small: 'false'
 };
 
 
@@ -448,7 +460,7 @@ export default class Graph extends Component {
         <h2>{this.props.file.title}</h2>
         {anchor}
         <LazyLoad>
-          <BaseGraph file={this.props.file} />
+          <BaseGraph file={this.props.file} small={this.props.small} />
         </LazyLoad>
         <div className="c-text__caption c-text__caption--bottom">
           <div className="c-text__viz-notes">
@@ -464,10 +476,12 @@ export default class Graph extends Component {
 Graph.propTypes = {
   anchor_name: React.PropTypes.string,
   title: React.PropTypes.string,
-  type: React.PropTypes.string
+  type: React.PropTypes.string,
+  small: React.PropTypes.string
 };
 Graph.defaultProps = {
   anchor_name: '',
   title: '',
-  type: 'line'
+  type: 'line',
+  small: 'false'
 };
