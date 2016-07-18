@@ -27,8 +27,10 @@ export default class SinglePage extends Component {
     const anchor = event.target;
 
     // Toggle/close the sidenav.
-    let topChevron = document.querySelector('.nav-anchor > .fa');
-    topChevron.click();
+    let topChevron = document.querySelector('.nav-anchor h2 .fa');
+    if (topChevron) {
+      topChevron.click();
+    }
 
     const href = _.replace(anchor.getAttribute('href'), '/', '');
     const targetElement = document.querySelector(href);
@@ -67,7 +69,10 @@ export default class SinglePage extends Component {
   }
   handleScroll() {
     // If we're at the bottom, make the last menu item active.
-    if ((window.innerHeight + document.body.scrollTop) >= document.body.offsetHeight) {
+    const doc = document.documentElement;
+    const scrollTop = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
+    if ((window.innerHeight + scrollTop) >= document.body.offsetHeight) {
+      console.log('at the bottom');
       const anchors = document.querySelectorAll('.nav-anchor__top-level a');
       const anchor = _.findLast(anchors);
       const href = _.replace(anchor.getAttribute('href'), '/', '');

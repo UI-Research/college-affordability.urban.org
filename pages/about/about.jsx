@@ -20,7 +20,6 @@ let singlepage = (
     <h3>Affordability is about more than what you can pay right now</h3>
     <p>Having a sense of the value of the educational experience is critical to thinking about college affordability. The benefits of college are certainly not just in the form of future earnings. Students should expect to develop personally and intellectually, to open up lots of different kinds of opportunities, and to enjoy the process. But the money matters. Even if you have all the money in your pocket for four years of tuition, the education is unaffordable if it doesn’t do enough to increase your earnings potential.</p>
     <p><strong><em>There is not a yes-or-no answer to the question of whether or not college is affordable.</em></strong>  But the information on this website can increase understanding of how much students in different circumstances pay for different kinds of education and of the resources they can draw on to cover their expenses. By presenting the big picture, trends over time, and the option to look more closely at the details, this website should support a more coherent and nuanced conversation about students’ financial access to a college education worth its cost.</p>
-    <p><em>Lumina Foundation provided funding for the development of this website. The views represented here are those of the authors and do not necessarily reflect the views of Lumina Foundatio</em></p>
     
     <h2>Credits</h2>
     <strong>Research</strong>
