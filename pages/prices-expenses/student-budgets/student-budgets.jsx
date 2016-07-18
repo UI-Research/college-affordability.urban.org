@@ -9,21 +9,21 @@ import util from 'util.jsx';
 
 let singlepage = (
   <div>
-    <h1>Prices and Expenses</h1>
+    <h1>Student Budgets</h1>
     <h2>Overview</h2>
     <p>In progress...</p>
   </div>
 );
 
 let specifications = {
-  'name': 'prices-expenses',
+  'name': 'student-budgets',
   'content': <SinglePage content={singlepage} />
 };
 
 export default class Page extends Component {
   render() {
     return (
-      <Template title="Prices and Expenses" machineName={specifications.name} includeHTML={this.props.includeHTML}>
+      <Template title="Student Budgets" machineName={specifications.name} includeHTML={this.props.includeHTML}>
         {specifications.content}
       </Template>
     );
