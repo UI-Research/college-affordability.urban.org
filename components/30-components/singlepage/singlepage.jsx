@@ -22,125 +22,6 @@ export default class SinglePage extends Component {
       headerHeight: 0,
       sectionTitle: ''
     };
-
-    if (props.sectionTitle) {
-      this.state = {
-        sectionTitle: props.sectionTitle
-      };
-    }
-
-    if (util.canUseDOM()) {
-      let parentIndex = '',
-          menuElements = {},
-          breadcrumbTitle = '',
-          menuLinks = {};
-
-      _.each(props.content.props.children, (element, index) => {
-        if (!this.state.sectionTitle && element.type === 'h1') {
-          this.state = {
-            sectionTitle: element.props.children
-          };
-        }
-        // If the DOM elements are either h1 or h2 without the menu=false flag.
-        // This is with the assumption the elements are at the base level of the
-        // react component.
-        if (_.indexOf(['h2', 'h3'], element.type) >= 0 && element.props.menu !== 'false') {
-          // For record-keeping purposes.
-          if (element.type === 'h2') {
-            parentIndex = util.machineName(element.props.children);
-            menuElements[parentIndex] = [];
-            menuElements[parentIndex].push(element);
-          }
-          else {
-            menuElements[parentIndex].push(element);
-          }
-          let elementID = (element.type === 'h2') ? parentIndex : parentIndex + '-' + util.machineName(element.props.children);
-          // Modify the react component with additional metadata
-          // for presentation on the page.
-          let mocked = React.cloneElement(element, {
-            id: `${elementID}`
-          });
-          props.content.props.children[index] = mocked;
-        }
-      });
-
-      this.state.menu = _.map(menuElements, (elements, parentIndex) => {
-        let parentElement = null,
-            subMenu = null;
-
-        subMenu = _.map(elements, (element) => {
-          let elementID = (element.type === 'h2') ? parentIndex : parentIndex + '-' + util.machineName(element.props.children);
-          menuLinks['#' + elementID] = element.props.children;
-          // Capture the first menu item.
-          if (!breadcrumbTitle) {
-            breadcrumbTitle = element.props.children;
-          }
-          if (element.type === 'h2') {
-            parentElement = element;
-            return null;
-          }
-          else if (element.type === 'h3') {
-            return (
-              <li className={parentIndex} key={elementID}><a href={`#/${elementID}`} onClick={this.elevateToSection.bind(this)}>{element.props.children}</a></li>
-            );
-          }
-        });
-
-        let arrow = null;
-        if (subMenu.length > 1) {
-          arrow = <span onClick={this.toggleSection} className="fa fa-chevron-down"></span>;
-          subMenu = <ul className="nav-anchor__second-level">{subMenu}</ul>;
-        }
-        return (
-          <li key={parentIndex}><a href={`#/${parentIndex}`} onClick={this.elevateToSection.bind(this)}>{parentElement.props.children}</a>{arrow}{subMenu}</li>
-        );
-      });
-
-      if (props.menuTopSectionName) {
-        breadcrumbTitle = props.menuTopSectionName;
-        menuLinks[''] = props.menuTopSectionName;
-        let topMenu = [(<li><a href="#" onClick={this.elevateToSection.bind(this)}>{props.menuTopSectionName}</a></li>)];
-        this.state.menu = _.concat(topMenu, this.state.menu);
-      }
-
-      // If a hash exists on payload, automatically animate to that point on the page.
-      if (window.location.hash) {
-        let initialID = _.replace(window.location.hash, '/', '');
-
-        // Determine what the state of the breadcrumb should be.
-        _.each(menuLinks, function(sectionName, index) {
-          if (initialID === index) {
-            breadcrumbTitle = sectionName;
-          }
-        });
-
-        // Scroll to the specific point on the page based on URL hash parameters.
-        let elevate = () => {
-          new Elevator({
-            targetElement: document.querySelector(`${initialID}`),
-            verticalPadding: 70, // pixels
-            duration: 1500 // milliseconds
-          }).elevate();
-        };
-
-        window.addEventListener('load', function () {
-          setTimeout(elevate, 500);
-        });
-      }
-
-      window.addEventListener('resize', this.handleResize.bind(this));
-      window.addEventListener('scroll', this.handleScroll.bind(this));
-
-      if (breadcrumbTitle) {
-        this.state.breadcrumbTitle = breadcrumbTitle;
-      }
-
-      this.state.menu = _.compact(this.state.menu);
-      this.setState({
-        menu: this.state.menu,
-        breadcrumbTitle: this.state.breadcrumbTitle
-      });
-    }
   }
   elevateToSection(event) {
     const anchor = event.target;
@@ -310,6 +191,125 @@ export default class SinglePage extends Component {
     }
   }
   componentDidMount() {
+    if (this.props.sectionTitle) {
+      this.setState({
+        sectionTitle: this.props.sectionTitle
+      });
+    }
+
+    if (util.canUseDOM()) {
+      let parentIndex = '',
+          menuElements = {},
+          breadcrumbTitle = '',
+          menuLinks = {};
+
+      _.each(this.props.content.props.children, (element, index) => {
+        if (!this.state.sectionTitle && element.type === 'h1') {
+          this.setState({
+            sectionTitle: element.props.children
+          });
+        }
+        // If the DOM elements are either h1 or h2 without the menu=false flag.
+        // This is with the assumption the elements are at the base level of the
+        // react component.
+        if (_.indexOf(['h2', 'h3'], element.type) >= 0 && element.props.menu !== 'false') {
+          // For record-keeping purposes.
+          if (element.type === 'h2') {
+            parentIndex = util.machineName(element.props.children);
+            menuElements[parentIndex] = [];
+            menuElements[parentIndex].push(element);
+          }
+          else {
+            menuElements[parentIndex].push(element);
+          }
+          let elementID = (element.type === 'h2') ? parentIndex : parentIndex + '-' + util.machineName(element.props.children);
+          // Modify the react component with additional metadata
+          // for presentation on the page.
+          let mocked = React.cloneElement(element, {
+            id: `${elementID}`
+          });
+          this.props.content.props.children[index] = mocked;
+        }
+      });
+
+      this.state.menu = _.map(menuElements, (elements, parentIndex) => {
+        let parentElement = null,
+            subMenu = null;
+
+        subMenu = _.map(elements, (element) => {
+          let elementID = (element.type === 'h2') ? parentIndex : parentIndex + '-' + util.machineName(element.props.children);
+          menuLinks['#' + elementID] = element.props.children;
+          // Capture the first menu item.
+          if (!breadcrumbTitle) {
+            breadcrumbTitle = element.props.children;
+          }
+          if (element.type === 'h2') {
+            parentElement = element;
+            return null;
+          }
+          else if (element.type === 'h3') {
+            return (
+              <li className={parentIndex} key={elementID}><a href={`#/${elementID}`} onClick={this.elevateToSection.bind(this)}>{element.props.children}</a></li>
+            );
+          }
+        });
+
+        let arrow = null;
+        if (subMenu.length > 1) {
+          arrow = <span onClick={this.toggleSection} className="fa fa-chevron-down"></span>;
+          subMenu = <ul className="nav-anchor__second-level">{subMenu}</ul>;
+        }
+        return (
+          <li key={parentIndex}><a href={`#/${parentIndex}`} onClick={this.elevateToSection.bind(this)}>{parentElement.props.children}</a>{arrow}{subMenu}</li>
+        );
+      });
+
+      if (this.props.menuTopSectionName) {
+        breadcrumbTitle = this.props.menuTopSectionName;
+        menuLinks[''] = this.props.menuTopSectionName;
+        let topMenu = [(<li><a href="#" onClick={this.elevateToSection.bind(this)}>{this.props.menuTopSectionName}</a></li>)];
+        this.state.menu = _.concat(topMenu, this.state.menu);
+      }
+
+      // If a hash exists on payload, automatically animate to that point on the page.
+      if (window.location.hash) {
+        let initialID = _.replace(window.location.hash, '/', '');
+
+        // Determine what the state of the breadcrumb should be.
+        _.each(menuLinks, function(sectionName, index) {
+          if (initialID === index) {
+            breadcrumbTitle = sectionName;
+          }
+        });
+
+        // Scroll to the specific point on the page based on URL hash parameters.
+        let elevate = () => {
+          new Elevator({
+            targetElement: document.querySelector(`${initialID}`),
+            verticalPadding: 70, // pixels
+            duration: 1500 // milliseconds
+          }).elevate();
+        };
+
+        window.addEventListener('load', function () {
+          setTimeout(elevate, 500);
+        });
+      }
+
+      window.addEventListener('resize', this.handleResize.bind(this));
+      window.addEventListener('scroll', this.handleScroll.bind(this));
+
+      if (breadcrumbTitle) {
+        this.state.breadcrumbTitle = breadcrumbTitle;
+      }
+
+      this.state.menu = _.compact(this.state.menu);
+      this.setState({
+        menu: this.state.menu,
+        breadcrumbTitle: this.state.breadcrumbTitle
+      });
+    }
+
     if (util.canUseDOM()) {
       this.setState({
         headerHeight: document.querySelector('.header-site').offsetHeight
@@ -317,7 +317,12 @@ export default class SinglePage extends Component {
       let activeAnchor = document.querySelector('.nav-anchor__top-level a.active');
       if (!activeAnchor) {
         let firstAnchor = document.querySelector('.nav-anchor__top-level a');
-        firstAnchor.classList.add('active');
+        if (firstAnchor) {
+          firstAnchor.classList.add('active');
+        }
+        else {
+          // TODO: What do we do here?
+        }
       }
     }
   }

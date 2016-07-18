@@ -1,6 +1,7 @@
 'use strict';
 import React, { Component } from 'react';
 import { Sticky } from 'react-sticky';
+import _ from 'lodash';
 import util from 'util.jsx';
 
 if (util.canUseDOM()) {
@@ -75,7 +76,7 @@ export default class Header extends Component {
         headerClass: headerClass
       });
     });
-    
+
     // Find the current page set as active.
     if (this.props.machineName) {
       const headerRight = document.getElementsByClassName('header-site__right');
