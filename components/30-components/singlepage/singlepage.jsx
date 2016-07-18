@@ -18,7 +18,8 @@ export default class SinglePage extends Component {
     this.state = {
       breadcrumbTitle : '',
       menu: '',
-      headerHeight: 0
+      headerHeight: 0,
+      sectionTitle: this.props.sectionTitle
     };
 
     if (util.canUseDOM()) {
@@ -29,7 +30,9 @@ export default class SinglePage extends Component {
 
       _.each(props.content.props.children, (element, index) => {
         if (!props.sectionTitle && element.type === 'h1') {
-          props.sectionTitle = element.props.children;
+          this.state = {
+            sectionTitle: element.props.children
+          };
         }
         // If the DOM elements are either h1 or h2 without the menu=false flag.
         // This is with the assumption the elements are at the base level of the
@@ -316,7 +319,7 @@ export default class SinglePage extends Component {
       return (
         <div className="grid">
           <Sticky className="sticky-nav" topOffset={-5} bottomOffset={30} onStickyStateChange={this.handleStickyStateChange.bind(this)}>
-            <Breadcrumb section={this.props.sectionTitle} title={this.state.breadcrumbTitle} />
+            <Breadcrumb section={this.state.sectionTitle} title={this.state.breadcrumbTitle} />
             <div className="col col--1-4">
               <div className="nav-anchor">
                 <h2 className="active__section">{this.state.breadcrumbTitle}</h2>
