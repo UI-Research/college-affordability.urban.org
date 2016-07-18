@@ -131,6 +131,18 @@ img {
   max-width: 100%;
 }
 
+table {
+  td, th {
+    border: 1px solid $color--gray-1;
+    font-size: 14px;
+    padding: 1rem;
+  }
+  th {
+    background-color: $color--gray-3;
+    font-weight: 800;
+  }
+}
+
 .btn {
   padding: .5rem 1rem;
   color: white;
