@@ -213,8 +213,6 @@ export class BaseGraph extends Component {
           d3.selectAll(`${data.bindto}_legend svg`).remove();
 
           let dataset = (typeof sets[target][1] == 'object') ? sets[target][1] : sets[target];
-          console.log(sets[target][0]);
-          console.log(dataset);
 
           // Load new data.
           chart.load({
