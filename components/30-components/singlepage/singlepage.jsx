@@ -104,7 +104,7 @@ export default class SinglePage extends Component {
     }
     if (element) {
       let activeSection = document.querySelector('h2.active__section');
-      activeSection.textContent = sectionTitle = element.textContent;
+      activeSection.firstChild.nodeValue = sectionTitle = element.textContent;
       element.classList.add('active');
       const target = '#/' + element.getAttribute('id');
       anchor = document.querySelector(`.nav-anchor__top-level a[href="${target}"]`);
@@ -147,7 +147,13 @@ export default class SinglePage extends Component {
   }
   toggleSection(event) {
     let target = event.target;
-    let menu = target.parentElement.querySelector('ul');
+    let menu = null;
+    if (target.parentElement.tagName.toLowerCase() === 'h2') {
+      menu = target.parentElement.parentElement.querySelector('ul');
+    }
+    else {
+      menu = target.parentElement.querySelector('ul');
+    }
     if (target.classList.contains('fa-chevron-down')) {
       target.classList.remove('fa-chevron-down');
       target.classList.add('fa-chevron-left');
@@ -334,8 +340,7 @@ export default class SinglePage extends Component {
             <Breadcrumb section={this.state.sectionTitle} title={this.state.breadcrumbTitle} />
             <div className="col col--1-4">
               <div className="nav-anchor">
-                <h2 className="active__section">{this.state.breadcrumbTitle}</h2>
-                <span className="fa fa-chevron-down" onClick={this.toggleSection}></span>
+                <h2 className="active__section">{this.state.breadcrumbTitle}<span className="fa fa-chevron-down" onClick={this.toggleSection}></span></h2>
                 <ul className="nav-anchor__top-level">
                   {this.state.menu}
                 </ul>
