@@ -78,9 +78,9 @@ export class BaseGraph extends Component {
 
       // Increase padding at top of the graph
       // (To prevent the graph from getting cut off)
-      // data.padding = {
-      //   top: 5
-      // }
+      data.padding = {
+        top: 5
+      }
 
       // Always have the y axis start at 0
       if (data.axis && data.axis.y) {
@@ -238,6 +238,9 @@ export class BaseGraph extends Component {
     moveAxisLabel(object);
   }
   checkVerticalLabels() {
+    // Remove following line to enable vertical labels.
+    return;
+
     // Make bottom axis labels vertical for tablet/mobile.
     const width = window.innerWidth;
     let data = this.props.file;
@@ -309,11 +312,12 @@ export class BaseGraph extends Component {
         // Create container for y axis
         const container = d3.select(`#${object.id}`).insert('svg', ':first-child')
           .attr('width', '100%')
-          .attr('height', 25);
+          .attr('height', 20);
         // Fix and encapsulate y axis label
         const y_axis_label = d3.selectAll(`#${object.id} .c3-axis-y .c3-axis-y-label`)
           .attr('transform', 'rotate(0)')
-          .attr('dx', '5em');
+          .attr('style', 'text-anchor: start')
+          .attr('dx', '0');
         // Move it over to new container
         y_axis_label.each(function() {
           container.node().appendChild(this);
@@ -324,12 +328,13 @@ export class BaseGraph extends Component {
         // Create container for x axis
         const container = d3.select(`#${object.id}`).insert('svg', ':first-child')
           .attr('width', '100%')
-          .attr('height', 25);
+          .attr('height', 20);
         // Fix and encapsulate x axis label
         const x_axis_label = d3.selectAll(`#${object.id} .c3-axis-x .c3-axis-x-label`)
           .attr('transform', 'rotate(0)')
           .attr('dy', '1em')
-          .attr('dx', '5em');
+          .attr('style', 'text-anchor: start')
+          .attr('dx', '0');
         // Move it over to new container
         x_axis_label.each(function() {
           container.node().appendChild(this);
