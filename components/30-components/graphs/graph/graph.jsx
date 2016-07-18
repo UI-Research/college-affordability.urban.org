@@ -145,7 +145,7 @@ export class BaseGraph extends Component {
 
       // Hide tooltip.
       data.tooltip = {
-        show: false
+        show: true
       };
 
       // Set default colors.
