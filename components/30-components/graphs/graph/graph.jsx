@@ -238,6 +238,9 @@ export class BaseGraph extends Component {
     moveAxisLabel(object);
   }
   checkVerticalLabels() {
+    // Remove following line to enable vertical labels.
+    return;
+
     // Make bottom axis labels vertical for tablet/mobile.
     const width = window.innerWidth;
     let data = this.props.file;
