@@ -116,8 +116,8 @@ export class BaseGraph extends Component {
         // Line and area graphs must flush to left and right.
         if (data.axis && data.axis.x) {
           data.axis.x.padding = {
-            left: -0.5,
-            right: -0.5
+            left: -0.4,
+            right: -0.4
           };
         }
 
