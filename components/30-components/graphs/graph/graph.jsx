@@ -165,7 +165,7 @@ export class BaseGraph extends Component {
       if (data.data.sets) {
         if (!data.data.columns) {
           let first = _.keys(data.data.sets)[0];
-          let dataset = (typeof data.data.sets[first] == 'object') ? data.data.sets[first][1] : data.data.sets[first];
+          let dataset = (typeof data.data.sets[first][1] == 'object') ? data.data.sets[first][1] : data.data.sets[first];
           data.data.columns = dataset;
         }
       }
