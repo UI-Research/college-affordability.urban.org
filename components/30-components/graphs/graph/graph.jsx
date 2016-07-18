@@ -165,9 +165,8 @@ export class BaseGraph extends Component {
       if (data.data.sets) {
         if (!data.data.columns) {
           let first = _.keys(data.data.sets)[0];
-          let dataset = (typeof data.data.sets[first] == 'object') ? data.data.sets[first][0] : data.data.sets[first];
-          data.data.columns = [];
-          data.data.columns.push(dataset);
+          let dataset = (typeof data.data.sets[first] == 'object') ? data.data.sets[first][1] : data.data.sets[first];
+          data.data.columns = dataset;
         }
       }
 
@@ -213,9 +212,13 @@ export class BaseGraph extends Component {
           // Clear out legend landing site. #garbage_collection
           d3.selectAll(`${data.bindto}_legend svg`).remove();
 
+          let dataset = (typeof sets[target][1] == 'object') ? sets[target][1] : sets[target];
+          console.log(sets[target][0]);
+          console.log(dataset);
+
           // Load new data.
           chart.load({
-            columns: sets[target],
+            columns: dataset,
             unload: chart.columns,
             done: function() {
               polishChart(object);
