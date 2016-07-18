@@ -9,7 +9,7 @@ import util from 'util.jsx';
 
 let singlepage = (
   <div>
-    <h1>Student Aid?</h1>
+    <h1>Student Aid</h1>
     <h2>Overview</h2>
     <p>In progress...</p>
   </div>

@@ -86,7 +86,7 @@
   @include breakpoint($bp--large) {
     display: block;
     position: absolute;
-    top: 0;
+    top: -5px;
     right: 1rem;
   }
   @include breakpoint($bp--xlarge) {
