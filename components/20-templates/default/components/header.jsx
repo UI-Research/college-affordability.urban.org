@@ -27,8 +27,8 @@ export default class Header extends Component {
   }
   toggleMobileNav() {
     if (util.canUseDOM()) {
-      let primaryNav = document.querySelector('.header-site__nav-primary-wrapper');
-      primaryNav.classList.toggle('open');
+      let navWrapper = document.querySelector('.header-site__nav-wrapper');
+      navWrapper.classList.toggle('open');
     }
   }
   toggleMenu(event) {
@@ -40,10 +40,10 @@ export default class Header extends Component {
     }
     if (target.classList.contains('fa-chevron-down')) {
       target.classList.remove('fa-chevron-down');
-      target.classList.add('fa-chevron-left');
+      target.classList.add('fa-chevron-up');
     }
     else {
-      target.classList.remove('fa-chevron-left');
+      target.classList.remove('fa-chevron-up');
       target.classList.add('fa-chevron-down');
     }
     if (window.innerWidth <= util.breakpointWidth('large')) {
@@ -56,7 +56,7 @@ export default class Header extends Component {
     _.each(subMenus, (menu) => {
       menu.classList.remove('open');
       let chevron = menu.previousElementSibling;
-      chevron.classList.remove('fa-chevron-left');
+      chevron.classList.remove('fa-chevron-up');
       chevron.classList.add('fa-chevron-down');
     });
   }
@@ -121,118 +121,120 @@ export default class Header extends Component {
           </div>
           <div className="header-site__right">
             <div className="header-site__title">Understanding College Affordability</div>
-            <div className="header-site__nav-primary-wrapper">
-              <div className="nav-primary">
-                <ul className="nav-primary__first-level">
-                  <li>
-                    <a href="#">What is College?</a>
-                  </li>
-                  <li>
-                    <a href="/producing-education">Producing Education</a>
-                  </li>
-                  <li className="has-submenu">
-                    <a href="/prices-expenses/index.html">Prices and Expenses</a>
-                    <span onClick={toggle} className="fa fa-chevron-down"></span>
-                    <ul className="nav-primary__second-level">
-                      <li>
-                        <a href="/prices-expenses/sticker-prices">Sticker Prices</a>
-                      </li>
-                      <li>
-                        <a href="#">Student Budgets</a>
-                      </li>
-                      <li>
-                        <a href="#">Forgone Earnings</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="has-submenu">
-                    <a href="#">Student Aid</a>
-                    <span onClick={toggle} className="fa fa-chevron-down"></span>
-                    <ul className="nav-primary__second-level">
-                      <li>
-                        <a href="#">Net Price</a>
-                      </li>
-                      <li>
-                        <a href="#">Financial Need</a>
-                      </li>
-                      <li>
-                        <a href="#">Grant Aid</a>
-                      </li>
-                      <li>
-                        <a href="#">Tax Benefits</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="has-submenu">
-                    <a href="#">Covering Expenses</a>
-                    <span onClick={toggle} className="fa fa-chevron-down"></span>
-                    <ul className="nav-primary__second-level">
-                      <li>
-                        <a href="#">Pre-College Income and Savings</a>
-                      </li>
-                      <li>
-                        <a href="#">Working During College</a>
-                      </li>
-                      <li>
-                        <a href="#">Borrowing</a>
-                      </li>
-                      <li>
-                        <a href="#">Time to Degree</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="/after-college">After College</a>
-                    <span onClick={toggle} className="fa fa-chevron-down"></span>
-                    <ul className="nav-primary__second-level">
-                      <li>
-                        <a href="#">Income After College</a>
-                      </li>
-                      <li>
-                        <a href="#">Student Debt and Repayment</a>
-                      </li>
-                      <li>
-                        <a href="/after-college/breaking-even">Breaking Even</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Student Profiles</a>
-                    <span onClick={toggle} className="fa fa-chevron-down"></span>
-                    <ul className="nav-primary__second-level">
-                      <li>
-                        <a href="#">Independent</a>
-                      </li>
-                      <li>
-                        <a href="#">Low-Income Dependent</a>
-                      </li>
-                      <li>
-                        <a href="#">Lower-Middle-Income Dependent</a>
-                      </li>
-                      <li>
-                        <a href="#">Upper-Middle-Income Dependent</a>
-                      </li>
-                      <li>
-                        <a href="#">Top-Income Dependent</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
+            <div className="header-site__nav-wrapper">
+              <div className="header-site__nav-primary-wrapper">
+                <div className="nav-primary">
+                  <ul className="nav-primary__first-level">
+                    <li>
+                      <a href="#">What is College?</a>
+                    </li>
+                    <li>
+                      <a href="/producing-education">Producing Education</a>
+                    </li>
+                    <li className="has-submenu">
+                      <a href="/prices-expenses/index.html">Prices and Expenses</a>
+                      <span onClick={toggle} className="fa fa-chevron-down"></span>
+                      <ul className="nav-primary__second-level">
+                        <li>
+                          <a href="/prices-expenses/sticker-prices">Sticker Prices</a>
+                        </li>
+                        <li>
+                          <a href="#">Student Budgets</a>
+                        </li>
+                        <li>
+                          <a href="#">Forgone Earnings</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="has-submenu">
+                      <a href="#">Student Aid</a>
+                      <span onClick={toggle} className="fa fa-chevron-down"></span>
+                      <ul className="nav-primary__second-level">
+                        <li>
+                          <a href="#">Net Price</a>
+                        </li>
+                        <li>
+                          <a href="#">Financial Need</a>
+                        </li>
+                        <li>
+                          <a href="#">Grant Aid</a>
+                        </li>
+                        <li>
+                          <a href="#">Tax Benefits</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="has-submenu">
+                      <a href="#">Covering Expenses</a>
+                      <span onClick={toggle} className="fa fa-chevron-down"></span>
+                      <ul className="nav-primary__second-level">
+                        <li>
+                          <a href="#">Pre-College Income and Savings</a>
+                        </li>
+                        <li>
+                          <a href="#">Working During College</a>
+                        </li>
+                        <li>
+                          <a href="#">Borrowing</a>
+                        </li>
+                        <li>
+                          <a href="#">Time to Degree</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="/after-college">After College</a>
+                      <span onClick={toggle} className="fa fa-chevron-down"></span>
+                      <ul className="nav-primary__second-level">
+                        <li>
+                          <a href="#">Income After College</a>
+                        </li>
+                        <li>
+                          <a href="#">Student Debt and Repayment</a>
+                        </li>
+                        <li>
+                          <a href="/after-college/breaking-even">Breaking Even</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Student Profiles</a>
+                      <span onClick={toggle} className="fa fa-chevron-down"></span>
+                      <ul className="nav-primary__second-level">
+                        <li>
+                          <a href="#">Independent</a>
+                        </li>
+                        <li>
+                          <a href="#">Low-Income Dependent</a>
+                        </li>
+                        <li>
+                          <a href="#">Lower-Middle-Income Dependent</a>
+                        </li>
+                        <li>
+                          <a href="#">Upper-Middle-Income Dependent</a>
+                        </li>
+                        <li>
+                          <a href="#">Top-Income Dependent</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div className="header-site__nav-utility-wrapper">
-              <div className="nav-utility">
-                <ul className="nav-utility__first-level">
-                  <li>
-                    <a href="/about">About the Project</a>
-                  </li>
-                  <li>
-                    <a href="#">Research &amp; Resources</a>
-                  </li>
-                  <li>
-                    <a href="#">Chart Index</a>
-                  </li>
-                </ul>
+              <div className="header-site__nav-utility-wrapper">
+                <div className="nav-utility">
+                  <ul className="nav-utility__first-level">
+                    <li>
+                      <a href="/about">About the Project</a>
+                    </li>
+                    <li>
+                      <a href="#">Research &amp; Resources</a>
+                    </li>
+                    <li>
+                      <a href="#">Chart Index</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
