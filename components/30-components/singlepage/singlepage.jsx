@@ -15,12 +15,19 @@ if (util.canUseDOM()) {
 export default class SinglePage extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
       breadcrumbTitle : '',
       menu: '',
       headerHeight: 0,
-      sectionTitle: this.props.sectionTitle
+      sectionTitle: ''
     };
+
+    if (props.sectionTitle) {
+      this.state = {
+        sectionTitle: props.sectionTitle
+      };
+    }
 
     if (util.canUseDOM()) {
       let parentIndex = '',
@@ -29,7 +36,7 @@ export default class SinglePage extends Component {
           menuLinks = {};
 
       _.each(props.content.props.children, (element, index) => {
-        if (!props.sectionTitle && element.type === 'h1') {
+        if (!this.state.sectionTitle && element.type === 'h1') {
           this.state = {
             sectionTitle: element.props.children
           };
