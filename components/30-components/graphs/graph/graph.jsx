@@ -165,8 +165,9 @@ export class BaseGraph extends Component {
       if (data.data.sets) {
         if (!data.data.columns) {
           let first = _.keys(data.data.sets)[0];
+          let dataset = (typeof data.data.sets[first] == 'object') ? data.data.sets[first][0] : data.data.sets[first];
           data.data.columns = [];
-          data.data.columns.push(data.data.sets[first]);
+          data.data.columns.push(dataset);
         }
       }
 
@@ -214,9 +215,7 @@ export class BaseGraph extends Component {
 
           // Load new data.
           chart.load({
-            columns: [
-              sets[target]
-            ],
+            columns: sets[target],
             unload: chart.columns,
             done: function() {
               polishChart(object);
@@ -231,10 +230,11 @@ export class BaseGraph extends Component {
           .on('change', swapSet);
 
         _.map(data.data.sets, (set, index) => {
+          let dropdown_label = (typeof set[0] == 'object') ? set[0][0] : set[0];
           select.append('option')
             .attr('class', util.machineName(index))
             .attr('value', index)
-            .text(set[0]);
+            .text(dropdown_label);
         });
       }
     }
