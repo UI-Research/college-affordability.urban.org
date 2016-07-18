@@ -125,7 +125,7 @@ export default class Header extends Component {
               <div className="nav-primary">
                 <ul className="nav-primary__first-level">
                   <li>
-                    <a href="#">What is College?</a>
+                    <a href="/what-is-college">What is College?</a>
                   </li>
                   <li>
                     <a href="/producing-education">Producing Education</a>
