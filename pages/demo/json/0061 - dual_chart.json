@@ -11,7 +11,7 @@
     ],
     "type": "bar",
     "groups": [
-      ["First", "Second", "Third","Fourth","Fifth", "Sixth"]
+      ["First", "Second", "Third", "Fourth", "Fifth", "Sixth"]
     ]
   },
   "axis": {
