@@ -1,6 +1,6 @@
 'use strict';
 
-import React from 'react';
+import React, { Component } from 'react';
 import Template from '20-templates/default/default.jsx';
 import SinglePage from '30-components/singlepage/singlepage.jsx';
 
@@ -20,20 +20,18 @@ let specifications = {
   'content': <SinglePage content={singlepage} />
 };
 
-const WhatIsCollege = React.createClass({
-  render: function() {
+export default class Page extends Component {
+  render() {
     return (
       <Template title="What is College?" machineName={specifications.name} includeHTML={this.props.includeHTML}>
         {specifications.content}
       </Template>
     );
   }
-});
+};
 
 
 if (util.canUseDOM()) {
   require('./' + specifications.name.toLowerCase() + '.scss');
 }
-util.printToPage(specifications.name, WhatIsCollege);
-
-module.exports = WhatIsCollege;
+util.printToPage(specifications.name, Page);
