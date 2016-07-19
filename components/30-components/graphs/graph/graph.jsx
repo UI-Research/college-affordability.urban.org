@@ -250,6 +250,8 @@ export class BaseGraph extends Component {
     firstLastTicks(object);
     const lineChartFormatting = object.lineChartFormatting;
     lineChartFormatting(object);
+    const barChartFormatting = object.barChartFormatting;
+    barChartFormatting(object);
   }
   checkVerticalLabels() {
     // Remove following line to enable vertical labels.
@@ -288,6 +290,19 @@ export class BaseGraph extends Component {
         }
       }
     }
+  }
+  static stylesToObject(style) {
+    // Break style attributes into an array;
+    var styles = style.split(';');
+    var style_array = {};
+    // Build array for styles.
+    for (var i = 0; i < styles.length; i++) {
+      var single_style = styles[i].split(':');
+      if (single_style[0].trim() && single_style[1].trim()) {
+        style_array[single_style[0].trim()] = single_style[1].trim();
+      }
+    }
+    return style_array;
   }
   setLegend(object) {
     // Clean up (just in case);
@@ -410,15 +425,7 @@ export class BaseGraph extends Component {
     let chart_dots = d3.selectAll(`#${object.id} .c3-circle`);
     chart_dots.each(function() {
       var style = d3.select(this).attr('style');
-      var styles = style.split(';');
-      var style_array = {};
-      // Build array for styles.
-      for (var i = 0; i < styles.length; i++) {
-        var single_style = styles[i].split(':');
-        if (single_style[0].trim() && single_style[1].trim()) {
-          style_array[single_style[0].trim()] = single_style[1].trim();
-        }
-      }
+      var style_array = BaseGraph.stylesToObject(style);
       // Set color of circle stroke.
       var color = style_array['fill'];
       d3.select(this)
@@ -432,6 +439,28 @@ export class BaseGraph extends Component {
       hover_states.on('mouseover', function() { return false; });
     });
   }
+  barChartFormatting(object) {
+    let bar_text = d3.select(`#${object.id}.c-bar__container .c3-chart-text .c3-text`);
+    bar_text.each(function() {
+      var style = d3.select(this).attr('style');
+      var style_array = BaseGraph.stylesToObject(style);
+
+      var digits = /(.*?)rgb\((\d+), (\d+), (\d+)\)/.exec(style_array['fill']);
+
+      var red = parseInt(digits[2]);
+      var green = parseInt(digits[3]);
+      var blue = parseInt(digits[4]);
+
+      var rgb = blue | (green << 8) | (red << 16);
+      var hex = digits[1] + '#' + rgb.toString(16);
+
+      var color = (parseInt(hex, 16) > 0xffffff/2) ? 'black':'white';
+
+      d3.select(this).attr('style', style + ' fill:' + color + ' !important');
+
+    });
+  }
+
   render() {
     const legend = `${this.id}_legend`;
     const dropdown = `${this.id}_dropdown`;
