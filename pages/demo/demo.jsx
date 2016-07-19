@@ -15,6 +15,13 @@ let singlepage = (
     <h1>Demo JSONs Page</h1>
     <h2>Graphs</h2>
 
+    <h3>General</h3>
+    <p>Charts are generally embedded into the content using a simple tag comprised of the following:</p>
+    <Box>
+      <pre dangerouslySetInnerHTML={{__html:
+        `&lt;Graph file={require('./my-json-file.json')} /&gt;`}} />
+    </Box>
+
     <h3>Line Charts</h3>
     <p>Line charts are the default graph types used by C3.  You generally don't have to specify the graph type in this case (though this example specifies it anyways for demonstration purposes).</p>
     <p>Data gets populated in the <strong>data</strong> array.  For this project, we expect the data points to be encapsulated in the <strong>columns</strong> array like in the code sample below.  For most single and multiple sets, the format will generally be the same despite the graph type we choose.  Note that the first entry in the array will always be a unique string that will be used as a reference for other parts of the JSON file (e.g. formatting, grouping).</p>
@@ -108,7 +115,7 @@ let singlepage = (
     <Box>
       <pre dangerouslySetInnerHTML={{__html:
         `&lt;Multiples title=&quot;Small Multiples Example&quot; source=&quot;Sample Source&quot; notes=&quot;Sample Note&quot;&gt;
-  &lt;Graph file='{'require('./json/multiples/multiple - 01.json')'}' small=&quot;true&quot; /&gt;
+  &lt;Graph file={require('./json/multiples/multiple - 01.json')} small=&quot;true&quot; /&gt;
   &lt;Graph file={require('./json/multiples/multiple - 02.json')} small=&quot;true&quot; /&gt;
   &lt;Graph file={require('./json/multiples/multiple - 03.json')} small=&quot;true&quot; /&gt;
 &lt;/Multiples&gt;`}}>

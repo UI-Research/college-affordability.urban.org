@@ -53,7 +53,6 @@ However, note the follow exceptions which may impact your code if you are portin
 * When referencing file assets using the *a* or *img* tag, get used to pointing them using the CommonJS syntax *require()*.  For example:
 
 ```
-#!js
 <a href="{require('./path/to/download.pdf')}>Download Link</a>
 <img src="{require('./path/to/image.jpg')" />
 ```
