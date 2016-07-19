@@ -440,24 +440,22 @@ export class BaseGraph extends Component {
     });
   }
   barChartFormatting(object) {
-    let bar_text = d3.select(`#${object.id}.c-bar__container .c3-chart-text .c3-text`);
+    let bar_text = d3.selectAll(`#${object.id}.c-bar__container--grouped .c3-chart-texts .c3-text`);
     bar_text.each(function() {
       var style = d3.select(this).attr('style');
       var style_array = BaseGraph.stylesToObject(style);
-
-      var digits = /(.*?)rgb\((\d+), (\d+), (\d+)\)/.exec(style_array['fill']);
-
-      var red = parseInt(digits[2]);
-      var green = parseInt(digits[3]);
-      var blue = parseInt(digits[4]);
-
-      var rgb = blue | (green << 8) | (red << 16);
-      var hex = digits[1] + '#' + rgb.toString(16);
-
-      var color = (parseInt(hex, 16) > 0xffffff/2) ? 'black':'white';
-
+      var white_colors = [
+        'rgb(22, 150, 210)',
+        'rgb(0, 0, 0)',
+        'rgb(236, 0, 139)',
+        'rgb(85, 183, 72)',
+        'rgb(92, 88, 89)',
+        'rgb(219, 43, 39)'
+      ];
+      // Assign fill color to chart text.
+      var is_white = white_colors.indexOf(style_array['fill']);
+      var color = (is_white > -1) ? 'white' : 'black';
       d3.select(this).attr('style', style + ' fill:' + color + ' !important');
-
     });
   }
 
@@ -466,11 +464,16 @@ export class BaseGraph extends Component {
     const dropdown = `${this.id}_dropdown`;
     const options = `${this.id}_options`;
 
+    var chart_classes = `c-graph__container c-${this.props.file.data.type}__container`;
+    if (this.props.file.data.groups) {
+      chart_classes += ` c-${this.props.file.data.type}__container--grouped`;
+    }
+
     return (
       <div>
         <div id={dropdown} className="c-graph_dropdown" />
         <div id={legend} className="c-graph__legend" />
-        <div id={this.id} className={`c-graph__container c-${this.props.file.data.type}__container`} />
+        <div id={this.id} className={`c-graph__container ` + chart_classes} />
         <div id={options} className="c-graph__options" />
       </div>
     );
