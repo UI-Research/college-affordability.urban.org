@@ -82,10 +82,6 @@
 }
 
 .nav-primary__first-level {
-  border-bottom: 1px solid #fff;
-  @include breakpoint($bp--large) {
-    border-width: 0;
-  }
   & > li {
     &.has-submenu:hover,
     &.active-trail {

@@ -8,7 +8,7 @@ import util from 'util.jsx';
 let singlepage = (
   <div>
     <h1>About</h1>
-    
+
     <h2>Overview</h2>
     <p>Rising concerns over college tuition and student debt combined with the widespread conviction that a degree is essential for a middle-class lifestyle have led to a sense that college in the United States has become "unaffordable." <strong>But what does affordability actually mean?</strong></p>
     <h3>Affordability depends on what you’re buying</h3>
@@ -20,7 +20,7 @@ let singlepage = (
     <h3>Affordability is about more than what you can pay right now</h3>
     <p>Having a sense of the value of the educational experience is critical to thinking about college affordability. The benefits of college are certainly not just in the form of future earnings. Students should expect to develop personally and intellectually, to open up lots of different kinds of opportunities, and to enjoy the process. But the money matters. Even if you have all the money in your pocket for four years of tuition, the education is unaffordable if it doesn’t do enough to increase your earnings potential.</p>
     <p><strong><em>There is not a yes-or-no answer to the question of whether or not college is affordable.</em></strong>  But the information on this website can increase understanding of how much students in different circumstances pay for different kinds of education and of the resources they can draw on to cover their expenses. By presenting the big picture, trends over time, and the option to look more closely at the details, this website should support a more coherent and nuanced conversation about students’ financial access to a college education worth its cost.</p>
-    
+
     <h2>Credits</h2>
     <strong>Research</strong>
     <p>Sandy Baum and Martha Johnson</p>
@@ -28,21 +28,22 @@ let singlepage = (
     <p>Alexandra Tisley</p>
     <strong>Editorial</strong>
     <p>Daniel Matos</p>
-    
+
     <h2>Funding</h2>
     <p>Lumina Foundation provided funding for the development of this website. The views represented here are those of the authors and do not necessarily reflect the views of Lumina Foundation.</p>
   </div>
 );
-    
+
 let specifications = {
   'name': 'about',
+  'title': 'About Us',
   'content': <SinglePage content={singlepage} />
 };
 
 const About = React.createClass({
   render: function() {
     return (
-      <Template title="About US" machineName={specifications.name} includeHTML={this.props.includeHTML}>
+      <Template title={specifications.title} machineName={specifications.name} includeHTML={this.props.includeHTML}>
         {specifications.content}
       </Template>
     );
