@@ -106,6 +106,15 @@ let singlepage = (
       <Graph file={require('./json/multiples/multiple - 03.json')} small="true" />
     </Multiples>
     <Box>
+      <pre dangerouslySetInnerHTML={{__html:
+        `&lt;Multiples title=&quot;Small Multiples Example&quot; source=&quot;Sample Source&quot; notes=&quot;Sample Note&quot;&gt;
+  &lt;Graph file='{'require('./json/multiples/multiple - 01.json')'}' small=&quot;true&quot; /&gt;
+  &lt;Graph file={require('./json/multiples/multiple - 02.json')} small=&quot;true&quot; /&gt;
+  &lt;Graph file={require('./json/multiples/multiple - 03.json')} small=&quot;true&quot; /&gt;
+&lt;/Multiples&gt;`}}>
+      </pre>
+    </Box>
+    <Box>
       <h3>Code Sample</h3>
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/multiples/multiple - 01.json'))}} />
     </Box>
