@@ -72,7 +72,6 @@ export default class SinglePage extends Component {
     const doc = document.documentElement;
     const scrollTop = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
     if ((window.innerHeight + scrollTop) >= document.body.offsetHeight) {
-      console.log('at the bottom');
       const anchors = document.querySelectorAll('.nav-anchor__top-level a');
       const anchor = _.findLast(anchors);
       const href = _.replace(anchor.getAttribute('href'), '/', '');
