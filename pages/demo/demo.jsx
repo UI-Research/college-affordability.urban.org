@@ -36,7 +36,7 @@ let singlepage = (
     <Graph file={require('./json/0032 - single_bar_horizontal.json')} />
     <Box>
       <h3>Code Sample</h3>
-      <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0030 - single_bar.json'))}} />
+      <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0032 - single_bar_horizontal.json'))}} />
     </Box>
 
     <Graph file={require('./json/0040 - grouped_bar.json')} />
@@ -76,18 +76,18 @@ let singlepage = (
     </Box>
 
     <Multiples title="Small Multiples Example" source="Sample Source" notes="Sample Note">
-      <Graph file={require('./json/multiples/multiple - 01.json')} />
-      <Graph file={require('./json/multiples/multiple - 02.json')} />
-      <Graph file={require('./json/multiples/multiple - 03.json')} />
-      <Graph file={require('./json/multiples/multiple - 01.json')} />
-      <Graph file={require('./json/multiples/multiple - 02.json')} />
-      <Graph file={require('./json/multiples/multiple - 03.json')} />
-      <Graph file={require('./json/multiples/multiple - 01.json')} />
-      <Graph file={require('./json/multiples/multiple - 02.json')} />
-      <Graph file={require('./json/multiples/multiple - 03.json')} />
-      <Graph file={require('./json/multiples/multiple - 01.json')} />
-      <Graph file={require('./json/multiples/multiple - 02.json')} />
-      <Graph file={require('./json/multiples/multiple - 03.json')} />
+      <Graph file={require('./json/multiples/multiple - 01.json')} small="true" />
+      <Graph file={require('./json/multiples/multiple - 02.json')} small="true"  />
+      <Graph file={require('./json/multiples/multiple - 03.json')} small="true"  />
+      <Graph file={require('./json/multiples/multiple - 01.json')} small="true"  />
+      <Graph file={require('./json/multiples/multiple - 02.json')} small="true"  />
+      <Graph file={require('./json/multiples/multiple - 03.json')} small="true"  />
+      <Graph file={require('./json/multiples/multiple - 01.json')} small="true"  />
+      <Graph file={require('./json/multiples/multiple - 02.json')} small="true"  />
+      <Graph file={require('./json/multiples/multiple - 03.json')} small="true"  />
+      <Graph file={require('./json/multiples/multiple - 01.json')} small="true"  />
+      <Graph file={require('./json/multiples/multiple - 02.json')} small="true"  />
+      <Graph file={require('./json/multiples/multiple - 03.json')} small="true"  />
     </Multiples>
     <Box>
       <h3>Code Sample</h3>
@@ -104,6 +104,12 @@ let singlepage = (
     <Box>
       <h3>Code Sample</h3>
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0090 - toggles.json'))}} />
+    </Box>
+
+    <Graph file={require('./json/0091 - toggles_dual.json')} />
+    <Box>
+      <h3>Code Sample</h3>
+      <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0091 - toggles_dual.json'))}} />
     </Box>
   </div>
 );
