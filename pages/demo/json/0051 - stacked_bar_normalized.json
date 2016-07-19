@@ -17,7 +17,6 @@
     ]
   },
   "axis": {
-    "rotated": false,
     "x": {
       "label": "X Label",
       "type": "category",
@@ -25,6 +24,12 @@
     },
     "y" : {
       "label": "Y Label",
+      "max": 1,
+      "min": 0,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      },
       "tick": {
         "format": "percent"
       }

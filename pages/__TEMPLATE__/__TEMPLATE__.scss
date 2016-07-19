@@ -1,0 +1,21 @@
+/*
+  This file contains any page-specific styles you would like to include in the page.
+  To enable them, make sure, in your jsx file, that the require statement near the bottom
+  of the script is uncommented (find section ">> Enabling CSS").
+
+  SASS syntaxes may be used here.  If this file is in good shape, feel free to remove the comments.
+*/
+
+
+/*
+  Enable the following line if you would like access to the mixins and variables included in thead
+  site's main template.
+*/
+/*
+@import '_global.scss';
+*/
+
+.sample_class {
+  opacity: 1;
+  /* Your styles here */
+}

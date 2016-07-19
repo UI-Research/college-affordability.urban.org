@@ -3,7 +3,7 @@
 import React from 'react';
 import Template from '20-templates/default/default.jsx';
 import Graph from '30-components/graphs/graph/graph.jsx';
-const Box = require('30-components/box/box/box.jsx');
+import Box from '30-components/box/box/box.jsx';
 import SinglePage from '30-components/singlepage/singlepage.jsx';
 
 import util from 'util.jsx';
@@ -142,13 +142,14 @@ let singlepage = (
 
 let specifications = {
   'name': 'producing-education',
+  'title': 'Producing Education',
   'content': <SinglePage content={singlepage} />
 };
 
 const ProducingEducation = React.createClass({
   render: function() {
     return (
-      <Template title="Producing Education" machineName={specifications.name} includeHTML={this.props.includeHTML}>
+      <Template title={specifications.title} machineName={specifications.name} includeHTML={this.props.includeHTML}>
         {specifications.content}
       </Template>
     );

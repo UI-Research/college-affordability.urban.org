@@ -17,13 +17,14 @@ let singlepage = (
 
 let specifications = {
   'name': 'student-aid',
+  'title': 'Student Aid?',
   'content': <SinglePage content={singlepage} />
 };
 
 export default class Page extends Component {
   render() {
     return (
-      <Template title="Student Aid?" machineName={specifications.name} includeHTML={this.props.includeHTML}>
+      <Template title={specifications.title} machineName={specifications.name} includeHTML={this.props.includeHTML}>
         {specifications.content}
       </Template>
     );

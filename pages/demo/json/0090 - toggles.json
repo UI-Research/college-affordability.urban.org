@@ -20,7 +20,6 @@
     }
   },
   "axis": {
-    "rotated": false,
     "x": {
       "type": "category",
       "categories": ["Private nonprofit", "Private nonprofit research", "Private nonprofit masters", "Private nonprofit bachelors", "Public four-year", "Public research", "Public masters", "Public bachelors"]
