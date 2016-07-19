@@ -89,7 +89,7 @@ let singlepage = (
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0061 - dual_chart.json'))}} />
     </Box>
 
-    <p>Stacked area charts are essentially multiple line graphs presented in a different fashion.  The key is to change the format of the chart via <strong>data.type</strong> to <strong>area-spline</strong>.</p>
+    <p>Stacked area charts are essentially multiple line graphs presented in a different fashion.  The key is to change the format of the chart via <strong>data.type</strong> to <strong>area</strong>.  Reference: <a href="http://c3js.org/samples/chart_area_stacked.html">Stacked Area Chart</a></p>
     <Graph file={require('./json/0070 - stacked_area.json')} />
     <Box>
       <h3>Code Sample</h3>
