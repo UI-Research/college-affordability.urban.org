@@ -166,26 +166,12 @@
 }
 
 .c3-circle {
-  fill: $color--blue !important;
+  fill: white !important;
   opacity: 1;
   stroke-width: 2px;
-  stroke: $color--blue;
 
   &._expanded_ {
     stroke-width: 2px;
-    stroke: $color--blue;
-  }
-}
-
-/* Manages size of points on line graphs */
-.c3-circle {
-  stroke-width: 4px;
-  stroke: $color--blue;
-
-  &._expanded_ {
-    stroke-width: 0px;
-    stroke: $color--blue;
-    fill: $color--blue !important;
   }
 }
 

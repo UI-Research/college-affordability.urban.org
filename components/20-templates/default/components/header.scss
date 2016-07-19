@@ -172,6 +172,7 @@
     .header-site__title {
       animation: header-hide $header-transition-duration ease;
       animation-fill-mode: forwards;
+      display: none;
     }
 
     .header-site__logo-wrapper {
