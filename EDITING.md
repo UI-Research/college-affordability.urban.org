@@ -11,7 +11,6 @@ The site is made up of pages and components.  As an editor, you will mostly edit
 Pages are organized by directories.  When developing, your site structure should look similar to the following:
 
 -- page1/
-
 --- page1/page1.jsx
 --- page1/page1.scss
 - page2/
