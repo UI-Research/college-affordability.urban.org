@@ -2,6 +2,10 @@
 @import '_global.scss';
 
 .grid {
+  // Sticky component tries to offset the sticky, but with our page layout, it pushes the main content down.
+  > div > div {
+    padding-bottom: 0 !important;
+  }
   .sticky {
     @include breakpoint($bp--large) {
       margin-top: 55px;
