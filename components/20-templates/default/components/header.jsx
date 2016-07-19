@@ -125,7 +125,7 @@ export default class Header extends Component {
               <div className="nav-primary">
                 <ul className="nav-primary__first-level">
                   <li>
-                    <a href="#">What is College?</a>
+                    <a href="/what-is-college">What is College?</a>
                   </li>
                   <li>
                     <a href="/producing-education">Producing Education</a>
@@ -138,15 +138,15 @@ export default class Header extends Component {
                         <a href="/prices-expenses/sticker-prices">Sticker Prices</a>
                       </li>
                       <li>
-                        <a href="#">Student Budgets</a>
+                        <a href="/prices-expenses/student-budgets">Student Budgets</a>
                       </li>
                       <li>
-                        <a href="#">Forgone Earnings</a>
+                        <a href="/prices-expenses/forgone-earnings">Forgone Earnings</a>
                       </li>
                     </ul>
                   </li>
                   <li className="has-submenu">
-                    <a href="#">Student Aid</a>
+                    <a href="/student-aid">Student Aid</a>
                     <span onClick={toggle} className="fa fa-chevron-down"></span>
                     <ul className="nav-primary__second-level">
                       <li>

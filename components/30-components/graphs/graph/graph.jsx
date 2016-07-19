@@ -115,8 +115,8 @@ export class BaseGraph extends Component {
         // Line and area graphs must flush to left and right.
         if (data.axis && data.axis.x) {
           data.axis.x.padding = {
-            left: -0.5,
-            right: -0.5
+            left: -0.4,
+            right: -0.4
           };
         }
 
@@ -144,7 +144,7 @@ export class BaseGraph extends Component {
 
       // Hide tooltip.
       data.tooltip = {
-        show: false
+        show: true
       };
 
       // Set default colors.
@@ -164,8 +164,8 @@ export class BaseGraph extends Component {
       if (data.data.sets) {
         if (!data.data.columns) {
           let first = _.keys(data.data.sets)[0];
-          data.data.columns = [];
-          data.data.columns.push(data.data.sets[first]);
+          let dataset = (typeof data.data.sets[first][1] == 'object') ? data.data.sets[first][1] : data.data.sets[first];
+          data.data.columns = dataset;
         }
       }
 
@@ -178,6 +178,16 @@ export class BaseGraph extends Component {
         chart = c3.generate(data);
         this.polishChart(this);
       };
+
+
+      if (this.props.small == 'true') {
+        if (!data.data.size) {
+          data.size = {
+            'height': 210,
+            'width': 210
+          }
+        }
+      }
 
 
 
@@ -201,11 +211,11 @@ export class BaseGraph extends Component {
           // Clear out legend landing site. #garbage_collection
           d3.selectAll(`${data.bindto}_legend svg`).remove();
 
+          let dataset = (typeof sets[target][1] == 'object') ? sets[target][1] : sets[target];
+
           // Load new data.
           chart.load({
-            columns: [
-              sets[target]
-            ],
+            columns: dataset,
             unload: chart.columns,
             done: function() {
               polishChart(object);
@@ -220,10 +230,11 @@ export class BaseGraph extends Component {
           .on('change', swapSet);
 
         _.map(data.data.sets, (set, index) => {
+          let dropdown_label = (typeof set[0] == 'object') ? set[0][0] : set[0];
           select.append('option')
             .attr('class', util.machineName(index))
             .attr('value', index)
-            .text(set[0]);
+            .text(dropdown_label);
         });
       }
     }
@@ -410,10 +421,12 @@ export class BaseGraph extends Component {
 }
 
 BaseGraph.propTypes = {
-  content: React.PropTypes.string
+  content: React.PropTypes.string,
+  small: React.PropTypes.string
 };
 BaseGraph.defaultProps = {
-  type: 'line'
+  type: 'line',
+  small: 'false'
 };
 
 
@@ -485,7 +498,7 @@ export default class Graph extends Component {
         <h2>{this.props.file.title}</h2>
         {anchor}
         <LazyLoad>
-          <BaseGraph file={this.props.file} />
+          <BaseGraph file={this.props.file} small={this.props.small} />
         </LazyLoad>
         <div className="c-text__caption c-text__caption--bottom">
           <div className="c-text__viz-notes">
@@ -501,10 +514,12 @@ export default class Graph extends Component {
 Graph.propTypes = {
   anchor_name: React.PropTypes.string,
   title: React.PropTypes.string,
-  type: React.PropTypes.string
+  type: React.PropTypes.string,
+  small: React.PropTypes.string
 };
 Graph.defaultProps = {
   anchor_name: '',
   title: '',
-  type: 'line'
+  type: 'line',
+  small: 'false'
 };
