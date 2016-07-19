@@ -33,9 +33,13 @@ This will allow us to have URLs like urban.com/page1 and urban.com/page2 (a bit 
 
 #### Adding new page ####
 
-Within /pages, there is a boilerplate directory called __TEMPLATE__ that you may use as a starting point for your pages.  Copy and rename the directory to allow gulp to track the new changes.  Refer to the guidelines commented within those files.
+There is a boilerplate directory within /pages/__TEMPLATE__/ you may use as a starting point for your pages.  Copy and rename the directory to allow gulp to track the new changes.  Refer to the guidelines commented within those files.
 
-### Adding components.
+### Adding components ###
+
+All components are included within /components.  Unless you intend on creating a reuseable component, you shouldn't have a need to modify any contents within this directory.
+
+To reference them for use with your page, you need to make sure you import them into your file.  Refer to the ">> Including components" for samples of how these import statements are constructed.  Once they are set, you may use them in your content (within 'singlepage' or the 'content' attribute in specifications).
 
 ## Edge cases ##
 

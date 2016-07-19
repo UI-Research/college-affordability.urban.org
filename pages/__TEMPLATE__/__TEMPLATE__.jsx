@@ -6,6 +6,8 @@
 // 2. Alter content within ">> Single Page Component"
 // 3. Update '__TEMPLATE__' to the name chosen in step 1
 
+
+
 // >> Including components
 // These are the main components needed to generate a page.  Keep these in by default.
 // If your page demands additional types of components, this is where you add the import
