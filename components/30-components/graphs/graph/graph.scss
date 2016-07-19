@@ -2,7 +2,7 @@
 
 .c-graph {
   .c-graph__container svg {
-    font-family: Lato, san-serif;
+    font-family: $font-lato;
   }
 }
 
@@ -217,6 +217,7 @@
 .c-graph_dropdown {
   select {
     margin-bottom: 10px;
+    font-family: $font-lato;
     background: url(img/urban-select-2x.png) no-repeat right $color--space-gray-1;
     background-size: contain;
     padding: 0.6rem;
