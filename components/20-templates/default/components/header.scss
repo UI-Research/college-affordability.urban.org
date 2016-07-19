@@ -11,7 +11,7 @@
     height: 117px;
   }
   @include breakpoint($bp--large) {
-    height: 130px;
+    height: auto;
     background-color: $color--blue;
   }
 }
