@@ -101,14 +101,14 @@ export class BaseGraph extends Component {
         };
       }
 
-      // Hide data points on spline graphs
-      if (data.data.type && data.data.type === 'area-spline') {
+      // Hide data points on area graphs
+      if (data.data.type && data.data.type === 'area') {
         data.point = {
           show: false
         };
       }
 
-      if (_.includes(['line', 'area-spline'], data.data.type)) {
+      if (_.includes(['line', 'area'], data.data.type)) {
         // Line and area graphs should not show data points.
         data.data.labels = false;
 
