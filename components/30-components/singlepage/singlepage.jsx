@@ -27,9 +27,9 @@ export default class SinglePage extends Component {
     const anchor = event.target;
 
     // Toggle/close the sidenav.
-    let topChevron = document.querySelector('.nav-anchor > .fa');
+    let topChevron = document.querySelector('.nav-anchor h2 .fa');
     if (topChevron) {
-      topChevron.click();
+      this.toggleSection(topChevron);
     }
 
 
@@ -70,7 +70,9 @@ export default class SinglePage extends Component {
   }
   handleScroll() {
     // If we're at the bottom, make the last menu item active.
-    if ((window.innerHeight + document.body.scrollTop) >= document.body.offsetHeight) {
+    const doc = document.documentElement;
+    const scrollTop = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
+    if ((window.innerHeight + scrollTop) >= document.body.offsetHeight) {
       const anchors = document.querySelectorAll('.nav-anchor__top-level a');
       const anchor = _.findLast(anchors);
       const href = _.replace(anchor.getAttribute('href'), '/', '');
@@ -80,7 +82,7 @@ export default class SinglePage extends Component {
     // Determine the current section based on position.
     else {
       // Since the header is sticky, get the 'top' below the header.
-      const offsetTop = document.querySelector('.header-site').offsetHeight + 30;
+      const offsetTop = document.querySelector('.header-site').offsetHeight + 40;
       let headers = document.querySelectorAll('.col--3-4 h2[id], .col--3-4 h3[id]');
       let previousElement = null;
 
@@ -148,8 +150,10 @@ export default class SinglePage extends Component {
       }
     }
   }
-  toggleSection(event) {
-    let target = event.target;
+  toggleSectionClick(event) {
+    this.toggleSection(event.target);
+  }
+  toggleSection(target) {
     let menu = null;
     if (target.parentElement.tagName.toLowerCase() === 'h2') {
       menu = target.parentElement.parentElement.querySelector('ul');
@@ -265,7 +269,7 @@ export default class SinglePage extends Component {
 
         let arrow = null;
         if (subMenu.length > 1) {
-          arrow = <span onClick={this.toggleSection} className="fa fa-chevron-down"></span>;
+          arrow = <span onClick={this.toggleSectionClick.bind(this)} className="fa fa-chevron-down"></span>;
           subMenu = <ul className="nav-anchor__second-level">{subMenu}</ul>;
         }
         return (
@@ -295,13 +299,13 @@ export default class SinglePage extends Component {
         let elevate = () => {
           new Elevator({
             targetElement: document.querySelector(`${initialID}`),
-            verticalPadding: 70, // pixels
+            verticalPadding: 60, // pixels
             duration: 1500 // milliseconds
           }).elevate();
         };
 
         window.addEventListener('load', function () {
-          setTimeout(elevate, 500);
+          setTimeout(elevate, 750);
         });
       }
 
@@ -343,7 +347,7 @@ export default class SinglePage extends Component {
             <Breadcrumb section={this.state.sectionTitle} title={this.state.breadcrumbTitle} />
             <div className="col col--1-4">
               <div className="nav-anchor">
-                <h2 className="active__section">{this.state.breadcrumbTitle}<span className="fa fa-chevron-down" onClick={this.toggleSection}></span></h2>
+                <h2 className="active__section">{this.state.breadcrumbTitle}<span className="fa fa-chevron-down" onClick={this.toggleSectionClick.bind(this)}></span></h2>
                 <ul className="nav-anchor__top-level">
                   {this.state.menu}
                 </ul>

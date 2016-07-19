@@ -11,7 +11,7 @@
     height: 117px;
   }
   @include breakpoint($bp--large) {
-    height: 130px;
+    height: auto;
     background-color: $color--blue;
   }
 }
@@ -172,6 +172,7 @@
     .header-site__title {
       animation: header-hide $header-transition-duration ease;
       animation-fill-mode: forwards;
+      display: none;
     }
 
     .header-site__logo-wrapper {
