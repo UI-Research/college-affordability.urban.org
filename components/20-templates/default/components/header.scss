@@ -60,8 +60,7 @@
   }
 }
 
-.header-site__nav-primary-wrapper {
-  background-color: $color--blue;
+.header-site__nav-wrapper {
   display: none;
   position: absolute;
   top: 0;
@@ -70,24 +69,28 @@
   &.open {
     display: block;
   }
-
   @include breakpoint($bp--large) {
     display: block;
+    position: initial;
+    z-index: 1;
+  }
+}
+
+.header-site__nav-primary-wrapper {
+  background-color: $color--blue;
+
+  @include breakpoint($bp--large) {
     border-top: none;
     height: auto;
     clear: none;
     background-color: transparent;
     padding: 0.15rem 0 0 2rem;
     position: initial;
-    z-index: 1;
   }
 }
 
 .header-site__nav-utility-wrapper {
-  display: none;
-
   @include breakpoint($bp--large) {
-    display: block;
     position: absolute;
     top: -5px;
     right: 1rem;
@@ -117,7 +120,7 @@
   @include breakpoint($bp--large) {
     background: transparent;
     font-size: 24px;
-    line-height: 1.7;
+    line-height: 40px;
     padding: 2.1rem 0 0 2rem;
     text-align: left;
   }
