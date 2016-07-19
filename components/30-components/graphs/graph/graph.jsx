@@ -151,11 +151,11 @@ export class BaseGraph extends Component {
       data.color = {
         pattern: [
           '#1696d2',
-          '#ec008b',
           '#d2d2d2',
+          '#000000',
           '#fdbf11',
-          '#332d2f',
-          '#0a4c6a'
+          '#ec008b',
+          '#55b748'
         ]
       };
 
@@ -248,6 +248,8 @@ export class BaseGraph extends Component {
     moveAxisLabel(object);
     const firstLastTicks = object.firstLastTicks;
     firstLastTicks(object);
+    const lineChartFormatting = object.lineChartFormatting;
+    lineChartFormatting(object);
   }
   checkVerticalLabels() {
     // Remove following line to enable vertical labels.
@@ -402,6 +404,32 @@ export class BaseGraph extends Component {
       var final_path_vals = first_val + ',' + new_path_vals;
       // Set new attribute on the line element.
       d3.select(this).attr('d', final_path_vals);
+    });
+  }
+  lineChartFormatting(object) {
+    let chart_dots = d3.selectAll(`#${object.id} .c3-circle`);
+    chart_dots.each(function() {
+      var style = d3.select(this).attr('style');
+      var styles = style.split(';');
+      var style_array = {};
+      // Build array for styles.
+      for (var i = 0; i < styles.length; i++) {
+        var single_style = styles[i].split(':');
+        if (single_style[0].trim() && single_style[1].trim()) {
+          style_array[single_style[0].trim()] = single_style[1].trim();
+        }
+      }
+      // Set color of circle stroke.
+      var color = style_array['fill'];
+      d3.select(this)
+        .attr('r', '5')
+        .attr('style', style + 'stroke: ' + color);
+    });
+    // Override radius change on hover.
+    let hover_states = d3.selectAll('.c3-event-rect');
+    hover_states.each(function() {
+      // Stop event from changing circle radius.
+      hover_states.on('mouseover', function() { return false; });
     });
   }
   render() {
