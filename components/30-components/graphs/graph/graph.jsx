@@ -444,7 +444,7 @@ export class BaseGraph extends Component {
     bar_text.each(function() {
       var style = d3.select(this).attr('style');
       var style_array = BaseGraph.stylesToObject(style);
-      var white_colors = [
+      var colors_light_text = [
         'rgb(22, 150, 210)',
         'rgb(0, 0, 0)',
         'rgb(236, 0, 139)',
@@ -453,7 +453,7 @@ export class BaseGraph extends Component {
         'rgb(219, 43, 39)'
       ];
       // Assign fill color to chart text.
-      var is_white = white_colors.indexOf(style_array['fill']);
+      var is_white = colors_light_text.indexOf(style_array['fill']);
       var color = (is_white > -1) ? 'white' : 'black';
       d3.select(this).attr('style', style + ' fill:' + color + ' !important');
     });
@@ -473,7 +473,7 @@ export class BaseGraph extends Component {
       <div>
         <div id={dropdown} className="c-graph_dropdown" />
         <div id={legend} className="c-graph__legend" />
-        <div id={this.id} className={`c-graph__container ` + chart_classes} />
+        <div id={this.id} className={`c-graph__container ${chart_classes}`} />
         <div id={options} className="c-graph__options" />
       </div>
     );
