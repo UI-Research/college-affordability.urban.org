@@ -11,6 +11,7 @@ const util = require('util.jsx');
 
 let specifications = {
   'name': 'home',
+  'title': 'Understanding College Affordability',
   'content': (
     <div>
       <Hero src="img/female-student-using-laptop-for-taking-notes-to-study.jpg">
@@ -113,7 +114,7 @@ const Home = React.createClass({
   },
   render: function() {
     return (
-      <Template title="Understanding College Affordability" machineName={specifications.name} includeHTML={this.props.includeHTML}>
+      <Template title={specifications.title} machineName={specifications.name} includeHTML={this.props.includeHTML}>
         {specifications.content}
       </Template>
     );

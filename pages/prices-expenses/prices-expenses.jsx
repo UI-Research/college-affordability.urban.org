@@ -17,13 +17,14 @@ let singlepage = (
 
 let specifications = {
   'name': 'prices-expenses',
+  'title': 'Prices and Expenses',
   'content': <SinglePage content={singlepage} />
 };
 
 export default class Page extends Component {
   render() {
     return (
-      <Template title="Prices and Expenses" machineName={specifications.name} includeHTML={this.props.includeHTML}>
+      <Template title={specifications.title} machineName={specifications.name} includeHTML={this.props.includeHTML}>
         {specifications.content}
       </Template>
     );

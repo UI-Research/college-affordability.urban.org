@@ -148,13 +148,14 @@ let singlepage = (
 
 let specifications = {
   'name': 'demo',
+  'title': 'Demo JSONS',
   'content': <SinglePage sectionTitle="Demo JSONs" content={singlepage} />
 };
 
 const Demo = React.createClass({
   render: function() {
     return (
-      <Template title="Demo JSONs" machineName={specifications.name} includeHTML={this.props.includeHTML}>
+      <Template title={specifications.title} machineName={specifications.name} includeHTML={this.props.includeHTML}>
         {specifications.content}
       </Template>
     );
