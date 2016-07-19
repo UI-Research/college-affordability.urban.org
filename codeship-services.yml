@@ -1,0 +1,4 @@
+project_name:
+  build:
+    image: phase2/node:4.4.4
+    dockerfile_path: Dockerfile
