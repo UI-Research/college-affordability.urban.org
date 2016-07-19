@@ -206,7 +206,7 @@ export class BaseGraph extends Component {
         let sets = data.data.sets;
 
         let swapSet = () => {
-          let target = d3.select('select').property('value');
+          let target = d3.select(`${data.bindto}_dropdown select`).property('value');
 
           // Clear out legend landing site. #garbage_collection
           d3.selectAll(`${data.bindto}_legend svg`).remove();
@@ -224,9 +224,9 @@ export class BaseGraph extends Component {
         }
 
         // Create select box for toggles
-        let options = d3.select(`${data.bindto}_dropdown`)
+        let options = d3.select(`${data.bindto}_dropdown`);
         let select = options.append('select')
-          .attr('class','select')
+          .attr('class', 'select')
           .on('change', swapSet);
 
         _.map(data.data.sets, (set, index) => {
