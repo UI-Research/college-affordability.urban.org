@@ -1,5 +1,12 @@
 @import '_global.scss';
 
+.c-graph {
+  .c-graph__container svg {
+    font-family: Lato, san-serif;
+  }
+}
+
+
 .c-text__caption {
   font-size: 14px;
   overflow: hidden;
