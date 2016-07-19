@@ -19,7 +19,6 @@
     ]
   },
   "axis": {
-    "rotated": false,
     "x": {
       "label": "X Label",
       "type": "category",

@@ -38,79 +38,89 @@ let singlepage = (
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0020 - multiple_line.json'))}} />
     </Box>
 
-    <h3>Bar Graphs</h3>
+    <h3>Bar Charts</h3>
+    <p>Bar graphs are a variant of line graphs with additional configuration considerations.  To simply enable them, you just need to specify that you want to present the data as <strong>bars</strong> within <strong>data.type</strong>.</p>
     <Graph file={require('./json/0030 - single_bar.json')} />
     <Box>
       <h3>Code Sample</h3>
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0030 - single_bar.json'))}} />
     </Box>
 
+    <p>Rotating the bar chart is easily achieveable by incorporating a new JSON attribute <strong>rotated</strong> in the <strong>axis</strong> array.</p>
     <Graph file={require('./json/0032 - single_bar_horizontal.json')} />
     <Box>
       <h3>Code Sample</h3>
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0032 - single_bar_horizontal.json'))}} />
     </Box>
 
+    <p>Grouping bar charts requires a structure similar to the <em>multiple line chart example</em> above.  Again, make sure the type is <strong>bar</strong>, and you should get multiple datasets presented together.</p>
     <Graph file={require('./json/0040 - grouped_bar.json')} />
     <Box>
       <h3>Code Sample</h3>
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0040 - grouped_bar.json'))}} />
     </Box>
 
+    <p>Stacking bar charts requires the same structure as grouped with another set of parameters needed.  In this case, we need to embed another array in <strong>data.grouped</strong>, which contains arrays of unique dataset labels you want grouped together.  Each array represents one group.</p>
     <Graph file={require('./json/0050 - stacked_bar.json')} />
     <Box>
       <h3>Code Sample</h3>
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0050 - stacked_bar.json'))}} />
     </Box>
 
+    <p>Normalized bar charts are essentially grouped bar charts except the data must be mocked in percentages (more specifically, values under 1).  All data must sum up to 1 (e.g. 0.23 & 0.77, 0.45 & 0.55) to maintain consistent heights for all bars.</p>
+    <p>Like in the previous example, the <strong>data.grouped</strong> attribute is needed to keep everything in line together.</p>
     <Graph file={require('./json/0051 - stacked_bar_normalized.json')} />
     <Box>
       <h3>Code Sample</h3>
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0051 - stacked_bar_normalized.json'))}} />
     </Box>
 
+    <p>The following example displays how bars can be grouped and stacked at the same time.  The concepts are simply merged together in this sample.</p>
     <Graph file={require('./json/0060 - grouped_stacked_bar.json')} />
     <Box>
       <h3>Code Sample</h3>
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0060 - grouped_stacked_bar.json'))}} />
     </Box>
 
+    <p>Dual charts are stacked bar charts but with data that could appear in one, the other, or both columns.  In essence, you can massage the data to make more pillars with non-distinct data in each bar set.  The important thing to note here is that if you do not want a specific data point to show up in one column, insert a 0 in that slot (that being said, every dataset must have the same number of values, hence the 0 value to pad them).</p>
     <Graph file={require('./json/0061 - dual_chart.json')} />
     <Box>
       <h3>Code Sample</h3>
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0061 - dual_chart.json'))}} />
     </Box>
 
+    <p>Stacked area charts are essentially multiple line graphs presented in a different fashion.  The key is to change the format of the chart via <strong>data.type</strong> to <strong>area-spline</strong>.</p>
     <Graph file={require('./json/0070 - stacked_area.json')} />
     <Box>
       <h3>Code Sample</h3>
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0070 - stacked_area.json'))}} />
     </Box>
 
+    <h3>Small Multiples</h3>
+    <p>Small Multiples are a collection of small bar graphs.  They essentially reuse the same widgets from the &lt;Graph /&gt; component within another component called &lt;Multiples /&gt;.</p>
+    <p>The first code sample shows you how you embed the code into your page.  The main differences are that all the &lt;Graph /&gt; have a new attribute called <strong>small</strong> that requires the value "true" to enable some styling meant for small graphs.  The &lt;Multiples /&gt; tag exhibits three values; <strong>title</strong>, which correlates with the title of the entire set, <strong>source</strong> which is your sources field, and <strong>notes</strong>, which is your notes field (the metadata array).  This was designed custom for this edge case.</p>
+
     <Multiples title="Small Multiples Example" source="Sample Source" notes="Sample Note">
       <Graph file={require('./json/multiples/multiple - 01.json')} small="true" />
-      <Graph file={require('./json/multiples/multiple - 02.json')} small="true"  />
-      <Graph file={require('./json/multiples/multiple - 03.json')} small="true"  />
-      <Graph file={require('./json/multiples/multiple - 01.json')} small="true"  />
-      <Graph file={require('./json/multiples/multiple - 02.json')} small="true"  />
-      <Graph file={require('./json/multiples/multiple - 03.json')} small="true"  />
-      <Graph file={require('./json/multiples/multiple - 01.json')} small="true"  />
-      <Graph file={require('./json/multiples/multiple - 02.json')} small="true"  />
-      <Graph file={require('./json/multiples/multiple - 03.json')} small="true"  />
-      <Graph file={require('./json/multiples/multiple - 01.json')} small="true"  />
-      <Graph file={require('./json/multiples/multiple - 02.json')} small="true"  />
-      <Graph file={require('./json/multiples/multiple - 03.json')} small="true"  />
+      <Graph file={require('./json/multiples/multiple - 02.json')} small="true" />
+      <Graph file={require('./json/multiples/multiple - 03.json')} small="true" />
     </Multiples>
     <Box>
       <h3>Code Sample</h3>
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/multiples/multiple - 01.json'))}} />
     </Box>
 
+    <h3>Scatterplots</h3>
+    <p>Scatterplots are essentially formed like any other single sets of data.  Just set <strong>data.type</strong> to <strong>scatterplot</strong>.</p>
     <Graph file={require('./json/0080 - scatterplot.json')} />
     <Box>
       <h3>Code Sample</h3>
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0080 - scatterplot.json'))}} />
     </Box>
+
+    <h3>Toggles</h3>
+    <p>Toggles are a special feature in this system that allows you to have multiple graph sets togglable within the same chart plane.  <em>The configuration surrounding the datasets are assumed to be the same</em>, so we want to avoid trying to incorporate too many variances between the different datasets (though some transformations can be done in a clever manner).</p>
+    <p>To support this, we introduce a new attribute within the <strong>data</strong> called <strong>sets</strong>.  They include entries with their own unique labels not used by C3 but by the dropdown labels in the widget.  Essentially, the component willl transfer the data array for the chosen set and put them within <strong>data.columns</strong> automatically.</p>
 
     <Graph file={require('./json/0090 - toggles.json')} />
     <Box>
@@ -118,6 +128,7 @@ let singlepage = (
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0090 - toggles.json'))}} />
     </Box>
 
+    <p>Another implementation of toggles that supports <em>multiple</em> data sets in the same plane.  You'll notice that the <strong>sets</strong> array includes an additional array dimension to support the extra data.  The <strong>categories</strong> axis type can be used to label the bars.</p>
     <Graph file={require('./json/0091 - toggles_dual.json')} />
     <Box>
       <h3>Code Sample</h3>
