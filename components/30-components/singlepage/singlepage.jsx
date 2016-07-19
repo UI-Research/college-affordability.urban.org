@@ -70,9 +70,12 @@ export default class SinglePage extends Component {
   }
   handleScroll() {
     // If we're at the bottom, make the last menu item active.
-    const doc = document.documentElement;
+    const doc = document.documentElement,
+          body = document.body;
     const scrollTop = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
-    if ((window.innerHeight + scrollTop) >= document.body.offsetHeight) {
+    // Give a margin of error - have seen bottom not reached after side nav is un-stickied.
+    const pageHeight = Math.max(body.scrollHeight, body.offsetHeight) - 20;
+    if ((window.innerHeight + scrollTop) >= pageHeight) {
       const anchors = document.querySelectorAll('.nav-anchor__top-level a');
       const anchor = _.findLast(anchors);
       const href = _.replace(anchor.getAttribute('href'), '/', '');
