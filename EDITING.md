@@ -12,7 +12,7 @@ Pages are organized by directories.  When developing, your site structure should
 
 * page1/
 ..* page1/page1.jsx
---- page1/page1.scss
+..* page1/page1.scss
 - page2/
 -- page2/page2.jsx
 -- page2/page2.scss
