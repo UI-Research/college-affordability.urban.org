@@ -28,7 +28,10 @@ export default class SinglePage extends Component {
 
     // Toggle/close the sidenav.
     let topChevron = document.querySelector('.nav-anchor > .fa');
-    topChevron.click();
+    if (topChevron) {
+      topChevron.click();
+    }
+
 
     const href = _.replace(anchor.getAttribute('href'), '/', '');
     const targetElement = document.querySelector(href);
