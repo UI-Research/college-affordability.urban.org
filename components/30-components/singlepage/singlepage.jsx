@@ -32,6 +32,7 @@ export default class SinglePage extends Component {
       this.toggleSection(topChevron);
     }
 
+
     const href = _.replace(anchor.getAttribute('href'), '/', '');
     const targetElement = document.querySelector(href);
     new Elevator({
