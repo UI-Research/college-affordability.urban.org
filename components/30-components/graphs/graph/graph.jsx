@@ -232,21 +232,16 @@ export class BaseGraph extends Component {
         let sets = data.data.sets;
 
         let swapSet = () => {
+          chart.destroy();
+          this.checkVerticalLabels();
+
+          // Toggles the dataset chosen from the dropdown.
           let target = d3.select(`${data.bindto}_dropdown select`).property('value');
-
-          // Clear out legend landing site. #garbage_collection
-          d3.selectAll(`${data.bindto}_legend svg`).remove();
-
           let dataset = (typeof sets[target][1] == 'object') ? sets[target][1] : sets[target];
+          data.data.columns = dataset;
 
-          // Load new data.
-          chart.load({
-            columns: dataset,
-            unload: chart.columns,
-            done: function() {
-              polishChart(object);
-            }
-          });
+          chart = c3.generate(data);
+          this.polishChart(this);
         }
 
         // Create select box for toggles
