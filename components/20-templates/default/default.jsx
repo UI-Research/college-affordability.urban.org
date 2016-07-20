@@ -67,6 +67,7 @@ TemplateDefault.defaultProps = {
 if (util.canUseDOM()) {
   if (document.documentMode && document.documentMode <= 9) {
     // Fix for no RequestAnimationFrame.
+    // http://stackoverflow.com/questions/24676874/error-requestanimationframe-in-ie9-any-alternate-solution
     (function() {
       var lastTime = 0;
       var vendors = ['webkit', 'moz'];
@@ -94,7 +95,8 @@ if (util.canUseDOM()) {
       }
     }());
   
-    //Fix for no classList.
+    // Fix for no classList.
+    // https://developer.mozilla.org/en-US/docs/Web/API/Element/classList - Shim by Eli Grey.
     if ('document' in self) {
       //Full polyfill for browsers with no classList support
       if (!('classList' in document.createElement('_'))) {
