@@ -126,7 +126,7 @@ export default class Header extends Component {
                 <div className="nav-primary">
                   <ul className="nav-primary__first-level">
                     <li>
-                      <a href="#">What is College?</a>
+                      <a href="/what-is-college">What is College?</a>
                     </li>
                     <li>
                       <a href="/producing-education">Producing Education</a>
@@ -147,7 +147,7 @@ export default class Header extends Component {
                       </ul>
                     </li>
                     <li className="has-submenu">
-                      <a href="#">Student Aid</a>
+                      <a href="/student-aid">Student Aid</a>
                       <span onClick={toggle} className="fa fa-chevron-down"></span>
                       <ul className="nav-primary__second-level">
                         <li>
@@ -165,7 +165,7 @@ export default class Header extends Component {
                       </ul>
                     </li>
                     <li className="has-submenu">
-                      <a href="#">Covering Expenses</a>
+                      <a href="/covering-expenses">Covering Expenses</a>
                       <span onClick={toggle} className="fa fa-chevron-down"></span>
                       <ul className="nav-primary__second-level">
                         <li>
@@ -198,7 +198,7 @@ export default class Header extends Component {
                       </ul>
                     </li>
                     <li>
-                      <a href="#">Student Profiles</a>
+                      <a href="/student-profiles">Student Profiles</a>
                       <span onClick={toggle} className="fa fa-chevron-down"></span>
                       <ul className="nav-primary__second-level">
                         <li>
