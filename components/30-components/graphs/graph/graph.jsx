@@ -31,9 +31,12 @@ export class BaseGraph extends Component {
       data.bindto = '#' + this.id;
 
       // Set max number of axis ticks on y axis
-      if (data.axis && data.axis.y && data.axis.y.tick && !data.axis.y.tick.count) {
-        data.axis.y.tick.count = 10;
-      }
+      // TODO: There is a bug that's not allowing C3 to align the values correctly.
+        // We can't tap into this feature until it gets fixed on their end.
+      // if (data.axis && data.axis.y && data.axis.y.tick && !data.axis.y.tick.count) {
+      //  data.axis.y.tick.count = 10;
+      //  data.axis.y.tick.fit = true;
+      // }
 
       // Detect any possible instances of the key 'format' and convert it into the specified format.
       if (data.data && data.data.labels && data.data.labels.format) {
