@@ -15,7 +15,7 @@ let specifications = {
   'content': (
     <div>
       <Hero src="img/female-student-using-laptop-for-taking-notes-to-study.jpg">
-        <h1>I'M A TESTER!</h1>
+        <h1>Understanding College Affordability</h1>
         <h2>How Students, Institutions, and the Public Pay for Higher Education</h2>
       </Hero>
       <div className="c-narrative">
