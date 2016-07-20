@@ -532,10 +532,8 @@ export default class Graph extends Component {
       base_class += ` c-${this.props.file.data.type}-grouped`;
     }
 
-
     // If it's horizontal, drop that in as the classname.
     base_class += (this.props.file.axis && this.props.file.axis.rotated) ? ` c-${this.props.file.data.type}-horizontal` : ` c-${this.props.file.data.type}-vertical`;
-
 
     if (this.props.anchor_name) {
       // Replace any spaces with _.
@@ -557,9 +555,11 @@ export default class Graph extends Component {
       <div className={base_class}>
         <h2>{this.props.file.title}</h2>
         {anchor}
-        <LazyLoad>
-          <BaseGraph file={this.props.file} small={this.props.small} />
-        </LazyLoad>
+        <div className="c-graph__wrapper">
+          <LazyLoad>
+            <BaseGraph file={this.props.file} small={this.props.small} />
+          </LazyLoad>
+        </div>
         <div className="c-text__caption c-text__caption--bottom">
           <div className="c-text__viz-notes">
             {source}

@@ -44,7 +44,7 @@
 
 .c-graph {
   .c-graph__wrapper {
-    height: 387px;
+    height: 402px;
     @include breakpoint($bp--mid) {
       height: 427px;
     }
@@ -54,7 +54,7 @@
   }
 
   .c-graph__container {
-    height: 360px;
+    height: 375px;
     @include breakpoint($bp--mid) {
       height: 400px;
     }
