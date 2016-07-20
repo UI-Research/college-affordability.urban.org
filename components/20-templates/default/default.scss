@@ -134,6 +134,15 @@ img {
 table {
   width: 100%;
 
+  thead {
+    td {
+      background: $color--black;
+      color: white;
+      font-weight: bold;
+      border: 1px solid $color--gray-8;
+    }
+  }
+
   td, th {
     border: 1px solid $color--gray-1;
     font-size: 14px;
@@ -142,6 +151,14 @@ table {
   th {
     background-color: $color--gray-3;
     font-weight: 800;
+  }
+  tbody {
+    tr {
+      background: $color--gray-1;
+      &:nth-child(odd) {
+        background: $color--gray-2;
+      }
+    }
   }
 }
 
