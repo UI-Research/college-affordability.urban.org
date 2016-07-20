@@ -19,6 +19,11 @@ module.exports = {
         pattern = ',.0f';
         break;
     }
-    return d3.format(pattern);
+    return (v, id, i, j) => {
+      if (v == 0) {
+        return '';
+      }
+      return d3.format(pattern)(v);
+    }
   }
 }
