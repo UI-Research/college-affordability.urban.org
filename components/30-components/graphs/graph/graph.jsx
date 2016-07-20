@@ -431,13 +431,20 @@ export class BaseGraph extends Component {
     bar_text.each(function() {
       var style = d3.select(this).attr('style');
       var style_array = BaseGraph.stylesToObject(style);
+      // Need to use rgb and hex for different browsers.
       var colors_light_text = [
         'rgb(22, 150, 210)',
         'rgb(0, 0, 0)',
         'rgb(236, 0, 139)',
         'rgb(85, 183, 72)',
         'rgb(92, 88, 89)',
-        'rgb(219, 43, 39)'
+        'rgb(219, 43, 39)',
+        '#1696d2',
+        '#000000',
+        '#ec008b',
+        '#55b748',
+        '#5c5859',
+        '#db2b27'
       ];
       // Assign fill color to chart text.
       var is_white = colors_light_text.indexOf(style_array['fill']);
