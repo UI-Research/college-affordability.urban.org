@@ -121,6 +121,10 @@
 
 .c-graph__legend {
   transform: translate(0, 18px);
+
+  > svg {
+    height: 20px;
+  }
 }
 
 .c3-axis-x {
@@ -188,9 +192,9 @@
 
   .c-graph__legend {
     > svg {
-      height: 40px !important;
+      height: 40px;
       @include breakpoint($bp--small) {
-        height: auto;
+        height: 20px;
       }
     }
   }

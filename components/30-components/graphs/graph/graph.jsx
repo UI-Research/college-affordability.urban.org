@@ -317,8 +317,7 @@ export class BaseGraph extends Component {
       // Set up the legend above the graph
       let svg = d3.select(`#${object.id}_legend`)
         .append('svg')
-        .attr('width', '100%')
-        .attr('height', 20);
+        .attr('width', '100%');
       legend.each(function() {
         svg.node().appendChild(this);
       });
