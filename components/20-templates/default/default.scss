@@ -231,9 +231,7 @@ table {
   height: 110px;
   width: 110px;
   margin: 0 auto;
-  background-color: $color--gray-8;
-  -webkit-mask:  url('./components/img/icon-teaching.svg') no-repeat 50% 50%;
-  mask: url('./components/img/icon-teaching.svg') no-repeat 50% 50%;
+  background: url('./components/img/icon-teaching.svg') no-repeat 50% 50%;
 
   @include breakpoint($bp--mid) {
     height: 100%;
@@ -245,9 +243,7 @@ table {
   height: 110px;
   width: 110px;
   margin: 0 auto;
-  background-color: $color--gray-8;
-  -webkit-mask:  url('./components/img/icon-student.svg') no-repeat 50% 50%;
-  mask: url('./components/img/icon-student.svg') no-repeat 50% 50%;
+  background: url('./components/img/icon-student.svg') no-repeat 50% 50%;
 
   @include breakpoint($bp--mid) {
     height: 100%;
