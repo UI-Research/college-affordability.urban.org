@@ -185,6 +185,16 @@
   .c3-text {
     transform: translate(0, 15px);
   }
+
+  .c-graph__legend {
+    transform: translate(0, 18px);
+    > svg {
+      height: 40px !important;
+      @include breakpoint($bp--small) {
+        height: auto;
+      }
+    }
+  }
 }
 .c-bar.c-bar-horizontal.c-bar-grouped {
   .c3-text {
