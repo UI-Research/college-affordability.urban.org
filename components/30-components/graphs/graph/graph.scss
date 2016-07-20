@@ -116,9 +116,6 @@
   transform: rotate(0deg);
 }
 
-.c3-legend-item-tile {
-}
-
 .c-graph__legend {
   transform: translate(0, 18px);
 }
@@ -193,6 +190,14 @@
   }
 }
 
+.c-bar.c-bar-horizontal {
+  .c3-axis-x {
+    .tick line {
+      display: none;
+    }
+  }
+}
+
 /* Ensure all data label colors are black */
 .c-bar {
   .c3-text {
@@ -215,3 +220,16 @@
     outline-width: 0;
   }
 }
+
+.c-graph__container svg {
+  /* Always make 0 on the y-axis more prominent */
+  .grid-base line {
+    stroke: #000;
+  }
+
+  /* Hide line on x-axis.  It introduces weird stylings and stuch */
+  path.domain {
+    display: none;
+  }
+}
+

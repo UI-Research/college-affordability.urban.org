@@ -153,7 +153,17 @@ export class BaseGraph extends Component {
         // This we enable by default for most graphs.
         if (!data.grid.y) {
           data.grid.y = {
-            show: 'true'
+            show: 'true',
+            // Make 0 on the y axis the base line.
+            // In most cases, this gridline will sit nicely
+            // on the axis itself...unless there are negative values
+            // in the dataset... in which case we intentionally want
+            // the black line to cut in the middle of the canvas
+            // to prove where the 0 value is.
+            lines: [{
+              value: 0,
+              class: 'grid-base'
+            }]
           };
         }
       }
@@ -262,8 +272,6 @@ export class BaseGraph extends Component {
     setTick(object);
     const moveAxisLabel = object.moveAxisLabel;
     moveAxisLabel(object);
-    const firstLastTicks = object.firstLastTicks;
-    firstLastTicks(object);
     const lineChartFormatting = object.lineChartFormatting;
     lineChartFormatting(object);
     const barChartFormatting = object.barChartFormatting;
@@ -400,48 +408,6 @@ export class BaseGraph extends Component {
           .attr('x2', 0);
       });
     }
-  }
-  firstLastTicks(object) {
-    // Remove first and last ticks from all charts.
-    let x_axis_path = d3.selectAll(`#${object.id} .c3-axis-x .domain`);
-    x_axis_path.each(function() {
-      // Split first part of attribute.
-      let path = d3.select(this).attr('d').split(',');
-      let path_vals = '',
-          first_val = '';
-      if (path.length > 1) {
-        // Extract path values.
-        path_vals = path[1].split(/(?=[VHV])/);
-        // Check both regular and axis flipped charts.
-        if (path[0]=='M-6') {
-          // If axis is flipped on chart.
-          if (path_vals[3] == 'H-6') {
-            path_vals[3] = 'H-0';
-          }
-          first_val = 'M-0';
-        }
-        else if (path_vals[0] == '6') {
-          // Standard chart with regular axis.
-          // Change tick height values to zero.
-          path_vals[0] = '0';
-          if (path_vals[3] == 'V6') {
-            path_vals[3] = 'V0';
-          }
-          first_val = path[0];
-        }
-        else {
-          return;
-        }
-      }
-      else {
-        return;
-      }
-      // Rewrite 'd' attribute with new path values and original ones.
-      let new_path_vals = path_vals.join('');
-      let final_path_vals = first_val + ',' + new_path_vals;
-      // Set new attribute on the line element.
-      d3.select(this).attr('d', final_path_vals);
-    });
   }
   lineChartFormatting(object) {
     let chart_dots = d3.selectAll(`#${object.id} .c3-circle`);
