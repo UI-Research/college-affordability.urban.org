@@ -187,7 +187,6 @@
   }
 
   .c-graph__legend {
-    transform: translate(0, 18px);
     > svg {
       height: 40px !important;
       @include breakpoint($bp--small) {
