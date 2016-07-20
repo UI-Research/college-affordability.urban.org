@@ -198,6 +198,10 @@
   .c3-text {
     fill: #000 !important;
   }
+  /* Hide ticks on bar charts */
+  .tick line {
+    display: none;
+  }
 }
 
 .c-graph_dropdown {
