@@ -130,10 +130,17 @@ export class BaseGraph extends Component {
 
         // Line and area graphs must flush to left and right.
         if (data.axis && data.axis.x) {
-          data.axis.x.padding = {
-            left: -0.4,
-            right: -0.4
-          };
+          if (data.axis.x.type == 'indexed') {
+            data.axis.x.padding = {
+              left: 0.1,
+              right: 0.1
+            };
+          } else {
+            data.axis.x.padding = {
+              left: -0.4,
+              right: -0.4
+            };
+          }
         }
 
         // Add additional padding to display values.
