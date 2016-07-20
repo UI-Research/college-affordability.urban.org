@@ -31,9 +31,12 @@ export class BaseGraph extends Component {
       data.bindto = '#' + this.id;
 
       // Set max number of axis ticks on y axis
-      if (data.axis && data.axis.y && data.axis.y.tick && !data.axis.y.tick.count) {
-        data.axis.y.tick.count = 10;
-      }
+      // TODO: There is a bug that's not allowing C3 to align the values correctly.
+        // We can't tap into this feature until it gets fixed on their end.
+      // if (data.axis && data.axis.y && data.axis.y.tick && !data.axis.y.tick.count) {
+      //  data.axis.y.tick.count = 10;
+      //  data.axis.y.tick.fit = true;
+      // }
 
       // Detect any possible instances of the key 'format' and convert it into the specified format.
       if (data.data && data.data.labels && data.data.labels.format) {
@@ -78,18 +81,31 @@ export class BaseGraph extends Component {
 
       // Increase padding at top of the graph
       // (To prevent the graph from getting cut off)
-      data.padding = {
-        top: 5
-      };
+      if (!data.padding) {
+        data.padding = {
+          top: 10,
+          bottom: 20,
+          left: 50,
+          right: 50
+        }
+      }
 
       // Always have the y axis start at 0
-      if (data.axis && data.axis.y) {
+      if (data.axis && data.axis.y && !data.axis.y.padding) {
         data.axis.y.padding = {
           top: 50,
-          bottom: 0
+          bottom: 1
         };
         data.axis.y.min = 0;
       }
+
+      if (data.axis && data.axis.x && !data.axis.x.padding) {
+        data.axis.x.padding = {
+          left: 0,
+          right: 0.3
+        };
+      }
+
 
       // Relocate legend to top of the graph.
       if (!data.legend) {
@@ -137,7 +153,17 @@ export class BaseGraph extends Component {
         // This we enable by default for most graphs.
         if (!data.grid.y) {
           data.grid.y = {
-            show: 'true'
+            show: 'true',
+            // Make 0 on the y axis the base line.
+            // In most cases, this gridline will sit nicely
+            // on the axis itself...unless there are negative values
+            // in the dataset... in which case we intentionally want
+            // the black line to cut in the middle of the canvas
+            // to prove where the 0 value is.
+            lines: [{
+              value: 0,
+              class: 'grid-base'
+            }]
           };
         }
       }
@@ -246,8 +272,6 @@ export class BaseGraph extends Component {
     setTick(object);
     const moveAxisLabel = object.moveAxisLabel;
     moveAxisLabel(object);
-    const firstLastTicks = object.firstLastTicks;
-    firstLastTicks(object);
     const lineChartFormatting = object.lineChartFormatting;
     lineChartFormatting(object);
     const barChartFormatting = object.barChartFormatting;
@@ -384,48 +408,6 @@ export class BaseGraph extends Component {
           .attr('x2', 0);
       });
     }
-  }
-  firstLastTicks(object) {
-    // Remove first and last ticks from all charts.
-    let x_axis_path = d3.selectAll(`#${object.id} .c3-axis-x .domain`);
-    x_axis_path.each(function() {
-      // Split first part of attribute.
-      let path = d3.select(this).attr('d').split(',');
-      let path_vals = '',
-          first_val = '';
-      if (path.length > 1) {
-        // Extract path values.
-        path_vals = path[1].split(/(?=[VHV])/);
-        // Check both regular and axis flipped charts.
-        if (path[0]=='M-6') {
-          // If axis is flipped on chart.
-          if (path_vals[3] == 'H-6') {
-            path_vals[3] = 'H-0';
-          }
-          first_val = 'M-0';
-        }
-        else if (path_vals[0] == '6') {
-          // Standard chart with regular axis.
-          // Change tick height values to zero.
-          path_vals[0] = '0';
-          if (path_vals[3] == 'V6') {
-            path_vals[3] = 'V0';
-          }
-          first_val = path[0];
-        }
-        else {
-          return;
-        }
-      }
-      else {
-        return;
-      }
-      // Rewrite 'd' attribute with new path values and original ones.
-      let new_path_vals = path_vals.join('');
-      let final_path_vals = first_val + ',' + new_path_vals;
-      // Set new attribute on the line element.
-      d3.select(this).attr('d', final_path_vals);
-    });
   }
   lineChartFormatting(object) {
     let chart_dots = d3.selectAll(`#${object.id} .c3-circle`);
