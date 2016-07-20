@@ -201,7 +201,7 @@ export class BaseGraph extends Component {
           data.size = {
             'height': 210,
             'width': 210
-          }
+          };
         }
       }
 
@@ -405,34 +405,40 @@ export class BaseGraph extends Component {
     // Remove first and last ticks from all charts.
     let x_axis_path = d3.selectAll(`#${object.id} .c3-axis-x .domain`);
     x_axis_path.each(function() {
-      var str = d3.select(this).attr('d');
       // Split first part of attribute.
-      var path = str.split(",");
-      // Extract path values.
-      var path_vals = path[1].split(/(?=[VHV])/);
-      // Check both regular and axis flipped charts.
-      if (path[0]=='M-6') {
-        // If axis is flipped on chart.
-        if (path_vals[3] == 'H-6') {
-          path_vals[3] = 'H-0';
+      let path = d3.select(this).attr('d').split(',');
+      let path_vals = '',
+          first_val = '';
+      if (path.length > 1) {
+        // Extract path values.
+        path_vals = path[1].split(/(?=[VHV])/);
+        // Check both regular and axis flipped charts.
+        if (path[0]=='M-6') {
+          // If axis is flipped on chart.
+          if (path_vals[3] == 'H-6') {
+            path_vals[3] = 'H-0';
+          }
+          first_val = 'M-0';
         }
-        var first_val = 'M-0';
-      } else if (path_vals[0]=='6') {
-        // Standard chart with regular axis.
-        // Change tick height values to zero.
-        if (path_vals[0] == '6') {
+        else if (path_vals[0] == '6') {
+          // Standard chart with regular axis.
+          // Change tick height values to zero.
           path_vals[0] = '0';
+          if (path_vals[3] == 'V6') {
+            path_vals[3] = 'V0';
+          }
+          first_val = path[0];
         }
-        if (path_vals[3] == 'V6') {
-          path_vals[3] = 'V0';
+        else {
+          return;
         }
-        var first_val = path[0];
-      } else {
+      }
+      else {
         return;
       }
       // Rewrite 'd' attribute with new path values and original ones.
-      var new_path_vals = path_vals.join('');
-      var final_path_vals = first_val + ',' + new_path_vals;
+      let new_path_vals = path_vals.join('');
+      let final_path_vals = first_val + ',' + new_path_vals;
       // Set new attribute on the line element.
       d3.select(this).attr('d', final_path_vals);
     });
@@ -535,8 +541,8 @@ export default class Graph extends Component {
     super(props);
 
     // Force specify type of graph.
-    if (!this.props.file.data.type) {
-      this.props.file.data.type = this.props.type;
+    if (props.file && props.file.data && !props.file.data.type) {
+      props.file.data.type = props.type;
     }
   }
   render() {
@@ -548,10 +554,8 @@ export default class Graph extends Component {
       base_class += ` c-${this.props.file.data.type}-grouped`;
     }
 
-
     // If it's horizontal, drop that in as the classname.
     base_class += (this.props.file.axis && this.props.file.axis.rotated) ? ` c-${this.props.file.data.type}-horizontal` : ` c-${this.props.file.data.type}-vertical`;
-
 
     if (this.props.anchor_name) {
       // Replace any spaces with _.
@@ -573,9 +577,11 @@ export default class Graph extends Component {
       <div className={base_class}>
         <h2>{this.props.file.title}</h2>
         {anchor}
-        <LazyLoad>
-          <BaseGraph file={this.props.file} small={this.props.small} />
-        </LazyLoad>
+        <div className="c-graph__wrapper">
+          <LazyLoad>
+            <BaseGraph file={this.props.file} small={this.props.small} />
+          </LazyLoad>
+        </div>
         <div className="c-text__caption c-text__caption--bottom">
           <div className="c-text__viz-notes">
             {source}
