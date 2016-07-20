@@ -118,6 +118,10 @@
 
 .c-graph__legend {
   transform: translate(0, 18px);
+
+  > svg {
+    height: 20px;
+  }
 }
 
 .c3-axis-x {
@@ -181,6 +185,15 @@
 .c-bar.c-bar-vertical.c-bar-grouped {
   .c3-text {
     transform: translate(0, 15px);
+  }
+
+  .c-graph__legend {
+    > svg {
+      height: 40px;
+      @include breakpoint($bp--small) {
+        height: 20px;
+      }
+    }
   }
 }
 .c-bar.c-bar-horizontal.c-bar-grouped {
