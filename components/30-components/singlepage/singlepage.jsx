@@ -23,6 +23,18 @@ export default class SinglePage extends Component {
       sectionTitle: ''
     };
   }
+  calculateElevatorPadding() {
+    // Use the header's current height for the padding. 
+    let headerHeight = document.querySelector('.header-site').offsetHeight + 5;
+    // Adjust padding if the header changes height.
+    if (window.innerWidth > util.breakpointWidth('large')) {
+      // If the header is not sticky, add more padding.
+      if (!document.querySelector('.header-site.header-sticky')) {
+        headerHeight += 35;
+      }
+    }
+    return headerHeight;
+  }
   elevateToSection(event) {
     const anchor = event.target;
 
@@ -32,12 +44,11 @@ export default class SinglePage extends Component {
       this.toggleSection(topChevron);
     }
 
-
     const href = _.replace(anchor.getAttribute('href'), '/', '');
     const targetElement = document.querySelector(href);
     new Elevator({
       targetElement: targetElement,
-      verticalPadding: 60, // pixels
+      verticalPadding: this.calculateElevatorPadding(), // pixels.
       duration: 1000 // milliseconds
     }).elevate();
 
@@ -302,7 +313,7 @@ export default class SinglePage extends Component {
         let elevate = () => {
           new Elevator({
             targetElement: document.querySelector(`${initialID}`),
-            verticalPadding: 60, // pixels
+            verticalPadding: this.calculateElevatorPadding(), // pixels.
             duration: 1500 // milliseconds
           }).elevate();
         };
@@ -346,7 +357,7 @@ export default class SinglePage extends Component {
     if (util.canUseDOM()) {
       return (
         <div className="grid">
-          <Sticky className="sticky-nav" topOffset={-5} bottomOffset={30} onStickyStateChange={this.handleStickyStateChange.bind(this)}>
+          <Sticky className="sticky-nav" topOffset={-10} bottomOffset={30} onStickyStateChange={this.handleStickyStateChange.bind(this)}>
             <Breadcrumb section={this.state.sectionTitle} title={this.state.breadcrumbTitle} />
             <div className="col col--1-4">
               <div className="nav-anchor">
