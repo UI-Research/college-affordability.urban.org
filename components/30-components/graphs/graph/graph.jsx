@@ -276,6 +276,8 @@ export class BaseGraph extends Component {
     lineChartFormatting(object);
     const barChartFormatting = object.barChartFormatting;
     barChartFormatting(object);
+    const formatDataLabel = object.formatDataLabel;
+    formatDataLabel(object);
   }
   checkVerticalLabels() {
     // Remove following line to enable vertical labels.
@@ -450,6 +452,14 @@ export class BaseGraph extends Component {
       var is_white = colors_light_text.indexOf(style_array['fill']);
       var color = (is_white > -1) ? 'white' : 'black';
       d3.select(this).attr('style', style + ' fill:' + color + ' !important');
+    });
+  }
+  formatDataLabel(object) {
+    let data_labels = d3.selectAll(`.c-bar-grouped.c-bar-vertical #${object.id} .c3-chart-texts .c3-text`);
+    data_labels.each(function() {
+      // Add 14 pixels to the labels to move them into the stacked bars.
+      var y = parseFloat(d3.select(this).attr('y')) + 14;
+      d3.select(this).attr('y', y);
     });
   }
 
