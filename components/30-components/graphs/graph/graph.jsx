@@ -78,18 +78,31 @@ export class BaseGraph extends Component {
 
       // Increase padding at top of the graph
       // (To prevent the graph from getting cut off)
-      data.padding = {
-        top: 5
+      if (!data.padding) {
+        data.padding = {
+          top: 10,
+          bottom: 20,
+          left: 50,
+          right: 50
+        }
       }
 
       // Always have the y axis start at 0
-      if (data.axis && data.axis.y) {
+      if (data.axis && data.axis.y && !data.axis.y.padding) {
         data.axis.y.padding = {
           top: 50,
-          bottom: 0
+          bottom: 1
         };
         data.axis.y.min = 0;
       }
+
+      if (data.axis && data.axis.x && !data.axis.x.padding) {
+        data.axis.x.padding = {
+          left: 0,
+          right: 0.3
+        };
+      }
+
 
       // Relocate legend to top of the graph.
       if (!data.legend) {
