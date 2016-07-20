@@ -250,6 +250,8 @@ export class BaseGraph extends Component {
     firstLastTicks(object);
     const lineChartFormatting = object.lineChartFormatting;
     lineChartFormatting(object);
+    const barChartFormatting = object.barChartFormatting;
+    barChartFormatting(object);
   }
   checkVerticalLabels() {
     // Remove following line to enable vertical labels.
@@ -288,6 +290,19 @@ export class BaseGraph extends Component {
         }
       }
     }
+  }
+  static stylesToObject(style) {
+    // Break style attributes into an array;
+    var styles = style.split(';');
+    var style_array = {};
+    // Build array for styles.
+    for (var i = 0; i < styles.length; i++) {
+      var single_style = styles[i].split(':');
+      if (single_style[0].trim() && single_style[1].trim()) {
+        style_array[single_style[0].trim()] = single_style[1].trim();
+      }
+    }
+    return style_array;
   }
   setLegend(object) {
     // Clean up (just in case);
@@ -416,15 +431,7 @@ export class BaseGraph extends Component {
     let chart_dots = d3.selectAll(`#${object.id} .c3-circle`);
     chart_dots.each(function() {
       var style = d3.select(this).attr('style');
-      var styles = style.split(';');
-      var style_array = {};
-      // Build array for styles.
-      for (var i = 0; i < styles.length; i++) {
-        var single_style = styles[i].split(':');
-        if (single_style[0].trim() && single_style[1].trim()) {
-          style_array[single_style[0].trim()] = single_style[1].trim();
-        }
-      }
+      var style_array = BaseGraph.stylesToObject(style);
       // Set color of circle stroke.
       var color = style_array['fill'];
       d3.select(this)
@@ -438,16 +445,41 @@ export class BaseGraph extends Component {
       hover_states.on('mouseover', function() { return false; });
     });
   }
+  barChartFormatting(object) {
+    let bar_text = d3.selectAll(`#${object.id}.c-bar__container--grouped .c3-chart-texts .c3-text`);
+    bar_text.each(function() {
+      var style = d3.select(this).attr('style');
+      var style_array = BaseGraph.stylesToObject(style);
+      var colors_light_text = [
+        'rgb(22, 150, 210)',
+        'rgb(0, 0, 0)',
+        'rgb(236, 0, 139)',
+        'rgb(85, 183, 72)',
+        'rgb(92, 88, 89)',
+        'rgb(219, 43, 39)'
+      ];
+      // Assign fill color to chart text.
+      var is_white = colors_light_text.indexOf(style_array['fill']);
+      var color = (is_white > -1) ? 'white' : 'black';
+      d3.select(this).attr('style', style + ' fill:' + color + ' !important');
+    });
+  }
+
   render() {
     const legend = `${this.id}_legend`;
     const dropdown = `${this.id}_dropdown`;
     const options = `${this.id}_options`;
 
+    var chart_classes = `c-graph__container c-${this.props.file.data.type}__container`;
+    if (this.props.file.data.groups) {
+      chart_classes += ` c-${this.props.file.data.type}__container--grouped`;
+    }
+
     return (
       <div>
         <div id={dropdown} className="c-graph_dropdown" />
         <div id={legend} className="c-graph__legend" />
-        <div id={this.id} className={`c-graph__container c-${this.props.file.data.type}__container`} />
+        <div id={this.id} className={`c-graph__container ${chart_classes}`} />
         <div id={options} className="c-graph__options" />
       </div>
     );
@@ -529,9 +561,11 @@ export default class Graph extends Component {
       <div className={base_class}>
         <h2>{this.props.file.title}</h2>
         {anchor}
-        <LazyLoad>
-          <BaseGraph file={this.props.file} small={this.props.small} />
-        </LazyLoad>
+        <div className="c-graph__wrapper">
+          <LazyLoad>
+            <BaseGraph file={this.props.file} small={this.props.small} />
+          </LazyLoad>
+        </div>
         <div className="c-text__caption c-text__caption--bottom">
           <div className="c-text__viz-notes">
             {source}

@@ -8,10 +8,8 @@
 
   @include breakpoint($bp--mid) {
     border-top: 4px solid black;
-    height: 117px;
   }
   @include breakpoint($bp--large) {
-    height: auto;
     background-color: $color--blue;
   }
 }
