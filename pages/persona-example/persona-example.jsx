@@ -39,127 +39,147 @@ let singlepage = (
 
     <h4>Public Four-Year In State</h4>
     <table>
-      <tr>
-        <th></th>
-        <th>1 year</th>
-        <th>4 years</th>
-        <th>5 years</th>
-        <th>6 years</th>
-      </tr>
-      <tr>
-        <th>Tuition and Fees</th>
-        <td>$7,819</td>
-        <td>$31,277</td>
-        <td>$39,097</td>
-        <td>$46,916</td>
-      </tr>
-      <tr>
-        <th>Debt</th>
-        <td>$4,871</td>
-        <td>$19,483</td>
-        <td>$24,354</td>
-        <td>$29,225</td>
-      </tr>
+      <thead>
+        <tr>
+          <th></th>
+          <th>1 year</th>
+          <th>4 years</th>
+          <th>5 years</th>
+          <th>6 years</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Tuition and Fees</th>
+          <td>$7,819</td>
+          <td>$31,277</td>
+          <td>$39,097</td>
+          <td>$46,916</td>
+        </tr>
+        <tr>
+          <th>Debt</th>
+          <td>$4,871</td>
+          <td>$19,483</td>
+          <td>$24,354</td>
+          <td>$29,225</td>
+        </tr>
+      </tbody>
     </table>
 
     <h4>Public Four-Year Out-of-State</h4>
     <table>
-      <tr>
-        <th></th>
-        <th>1 year</th>
-        <th>4 years</th>
-        <th>5 years</th>
-        <th>6 years</th>
-      </tr>
-      <tr>
-        <th>Tuition and Fees</th>
-        <td>$17,805</td>
-        <td>$71,222</td>
-        <td>$89,027</td>
-        <td>$106,833</td>
-      </tr>
-      <tr>
-        <th>Debt</th>
-        <td>$8,664</td>
-        <td>$34,657</td>
-        <td>$43,322</td>
-        <td>$51,986</td>
-      </tr>
+      <thead>
+        <tr>
+          <th></th>
+          <th>1 year</th>
+          <th>4 years</th>
+          <th>5 years</th>
+          <th>6 years</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Tuition and Fees</th>
+          <td>$17,805</td>
+          <td>$71,222</td>
+          <td>$89,027</td>
+          <td>$106,833</td>
+        </tr>
+        <tr>
+          <th>Debt</th>
+          <td>$8,664</td>
+          <td>$34,657</td>
+          <td>$43,322</td>
+          <td>$51,986</td>
+        </tr>
+      </tbody>
     </table>
 
     <h4>Private Nonprofit Four-Year</h4>
     <table>
-      <tr>
-        <th></th>
-        <th>1 year</th>
-        <th>4 years</th>
-        <th>5 years</th>
-        <th>6 years</th>
-      </tr>
-      <tr>
-        <th>Tuition and Fees</th>
-        <td>$28,085</td>
-        <td>$112,342</td>
-        <td>$140,427</td>
-        <td>$168,513</td>
-      </tr>
-      <tr>
-        <th>Debt</th>
-        <td>$8,071</td>
-        <td>$32,283</td>
-        <td>$40,353</td>
-        <td>$48,424</td>
-      </tr>
+      <thead>
+        <tr>
+          <th></th>
+          <th>1 year</th>
+          <th>4 years</th>
+          <th>5 years</th>
+          <th>6 years</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Tuition and Fees</th>
+          <td>$28,085</td>
+          <td>$112,342</td>
+          <td>$140,427</td>
+          <td>$168,513</td>
+        </tr>
+        <tr>
+          <th>Debt</th>
+          <td>$8,071</td>
+          <td>$32,283</td>
+          <td>$40,353</td>
+          <td>$48,424</td>
+        </tr>
+      </tbody>
     </table>
 
     <h4>For-profit</h4>
     <table>
-      <tr>
-        <th></th>
-        <th>1 year</th>
-        <th>4 years</th>
-        <th>5 years</th>
-        <th>6 years</th>
-      </tr>
-      <tr>
-        <th>Tuition and Fees</th>
-        <td>$17,061</td>
-        <td>$34,123</td>
-        <td>$68,246</td>
-        <td>$102,369</td>
-      </tr>
-      <tr>
-        <th>Debt</th>
-        <td>$10,370</td>
-        <td>$20,740</td>
-        <td>$41,480</td>
-        <td>$62,219</td>
-      </tr>
+      <thead>
+        <tr>
+          <th></th>
+          <th>1 year</th>
+          <th>4 years</th>
+          <th>5 years</th>
+          <th>6 years</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Tuition and Fees</th>
+          <td>$17,061</td>
+          <td>$34,123</td>
+          <td>$68,246</td>
+          <td>$102,369</td>
+        </tr>
+        <tr>
+          <th>Debt</th>
+          <td>$10,370</td>
+          <td>$20,740</td>
+          <td>$41,480</td>
+          <td>$62,219</td>
+        </tr>
+      </tbody>
     </table>
 
     <h4>	Public Two-Year</h4>
     <table>
-      <tr>
-        <th></th>
-        <th>1 year</th>
-        <th>4 years</th>
-        <th>5 years</th>
-        <th>6 years</th>
-      </tr>
-      <tr>
-        <th>Tuition and Fees</th>
-        <td>$2,705</td>
-        <td>$5,409</td>
-        <td>$8,114</td>
-        <td>$10,819</td>
-      </tr>
-      <tr>
-        <th>Debt</th>
-        <td>$809</td>
-        <td>$1,619</td>
-        <td>$2,428</td>
-        <td>$3,237</td>
-      </tr>
+      <thead>
+        <tr>
+          <th></th>
+          <th>1 year</th>
+          <th>4 years</th>
+          <th>5 years</th>
+          <th>6 years</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Tuition and Fees</th>
+          <td>$2,705</td>
+          <td>$5,409</td>
+          <td>$8,114</td>
+          <td>$10,819</td>
+        </tr>
+        <tr>
+          <th>Debt</th>
+          <td>$809</td>
+          <td>$1,619</td>
+          <td>$2,428</td>
+          <td>$3,237</td>
+        </tr>
+      </tbody>
     </table>
 
 

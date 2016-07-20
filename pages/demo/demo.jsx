@@ -156,11 +156,11 @@ let singlepage = (
       <table>
          <thead>
           <tr>
-            <td>Table Heading</td>
-            <td>Table Heading</td>
-            <td>Table Heading</td>
-            <td>Table Heading</td>
-            <td>Table Heading</td>
+            <th>Table Heading</th>
+            <th>Table Heading</th>
+            <th>Table Heading</th>
+            <th>Table Heading</th>
+            <th>Table Heading</th>
           </tr>
         </thead>
         <tbody>

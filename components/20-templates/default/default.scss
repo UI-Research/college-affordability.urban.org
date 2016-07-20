@@ -135,7 +135,7 @@ table {
   width: 100%;
 
   thead {
-    td {
+    th {
       background: $color--black;
       color: white;
       font-weight: bold;
@@ -158,6 +158,9 @@ table {
       &:nth-child(odd) {
         background: $color--gray-2;
       }
+    }
+    th {
+      background: $color--gray-4;
     }
   }
 }
