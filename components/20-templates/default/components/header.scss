@@ -166,6 +166,8 @@
   @include breakpoint($bp--large) {
     animation: header-mini $header-transition-duration ease;
     animation-fill-mode: forwards;
+    border-top: 0;
+    max-height: 55px;
 
     .header-site__title {
       animation: header-hide $header-transition-duration ease;
@@ -177,11 +179,15 @@
       @include breakpoint($bp--large) {
         animation: header-logo-wrapper $header-transition-duration ease;
         animation-fill-mode: forwards;
+        max-height: 70px;
+        max-width: 55px;
         .header-site__logo {
           animation: header-logo $header-transition-duration ease;
           animation-fill-mode: forwards;
           background: url('./img/logo-mini-dark.png') no-repeat 10%;
           background-size: 75%;
+          max-height: 55px;
+          max-width: 55px;
         }
       }
     }
