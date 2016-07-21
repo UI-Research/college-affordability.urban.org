@@ -10,7 +10,7 @@
     "columns": [
       ["data1", 130, 20, 500, 410, 350, 450]
     ],
-    "type": "area-spline"
+    "type": "area"
   },
   "axis": {
     "x": {

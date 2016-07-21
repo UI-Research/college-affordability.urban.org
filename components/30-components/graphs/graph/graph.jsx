@@ -243,12 +243,23 @@ export class BaseGraph extends Component {
         this.polishChart(this);
       };
 
+
+      // If small flag is set on <Graph />,
+      // apply special formatting for small graph sizes!
       if (this.props.small == 'true') {
         if (!data.data.size) {
           data.size = {
             'height': 210,
             'width': 210
           };
+        }
+
+        // Hide points, especially on area graphs.
+        if (!data.point) {
+          data.point = {};
+        }
+        if (!data.point.show) {
+          data.point.show = false;
         }
       }
 
