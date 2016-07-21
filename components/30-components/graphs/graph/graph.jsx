@@ -614,11 +614,13 @@ Graph.propTypes = {
   anchor_name: React.PropTypes.string,
   title: React.PropTypes.string,
   type: React.PropTypes.string,
+  image: React.PropTypes.string,
   small: React.PropTypes.string
 };
 Graph.defaultProps = {
   anchor_name: '',
   title: '',
   type: 'line',
+  image: '',
   small: 'false'
 };
