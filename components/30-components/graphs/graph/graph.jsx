@@ -286,7 +286,7 @@ export class BaseGraph extends Component {
   createCSV(object) {
     const toCSV = (arr) => {
       let s ='';
-      _.map(arr, (object) => {
+      _.forEach(arr, (object) => {
         s += object.join(',');
         s += "\r\n";
       });
