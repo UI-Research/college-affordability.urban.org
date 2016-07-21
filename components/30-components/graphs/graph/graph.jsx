@@ -243,12 +243,23 @@ export class BaseGraph extends Component {
         this.polishChart(this);
       };
 
+
+      // If small flag is set on <Graph />,
+      // apply special formatting for small graph sizes!
       if (this.props.small == 'true') {
         if (!data.data.size) {
           data.size = {
             'height': 210,
             'width': 210
           };
+        }
+
+        // Hide points, especially on area graphs.
+        if (!data.point) {
+          data.point = {};
+        }
+        if (!data.point.show) {
+          data.point.show = false;
         }
       }
 
@@ -623,6 +634,17 @@ export default class Graph extends Component {
       img_disable = 'false';
     }
 
+    // Only show buttons on all but small graphs (otherwise, it'd look ridiculous...).
+    let action_buttons;
+    if (this.props.small !== 'true') {
+      action_buttons = (
+        <Actions>
+          <ActionButton title='Save Image' href={img_href} disable={img_disable} />
+          <ActionButton title='Download data (csv)' href='#' />
+        </Actions>
+      );
+    }
+
     return (
       <div className={base_class}>
         <h2>{this.props.file.title}</h2>
@@ -638,10 +660,7 @@ export default class Graph extends Component {
             {notes}
           </div>
         </div>
-        <Actions>
-          <ActionButton title='Save Image' href={img_href} disable={img_disable} />
-          <ActionButton title='Download data (csv)' href='#' />
-        </Actions>
+        {action_buttons}
       </div>
     );
   }
