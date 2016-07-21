@@ -19,7 +19,7 @@ let singlepage = (
     <p>Charts are generally embedded into the content using a simple tag comprised of the following:</p>
     <Box>
       <pre dangerouslySetInnerHTML={{__html:
-        `&lt;Graph file={require('./my-json-file.json')} /&gt;`}} />
+        '&lt;Graph file={require(&#39;./my-json-file.json&#39;)} /&gt;'}} />
     </Box>
 
     <h3>Line Charts</h3>
