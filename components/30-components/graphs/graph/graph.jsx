@@ -18,8 +18,6 @@ if (util.canUseDOM()) {
 export class BaseGraph extends Component {
   constructor(props) {
     super(props);
-
-    this.id = props.id;
   }
   componentDidMount() {
     if (util.canUseDOM) {
@@ -29,7 +27,7 @@ export class BaseGraph extends Component {
       let data = this.props.file;
 
       // Identify DOM element we want to apply the graph to.
-      data.bindto = '#' + this.id;
+      data.bindto = '#' + this.props.id;
 
       // Set max number of axis ticks on y axis
       // TODO: There is a bug that's not allowing C3 to align the values correctly.
@@ -475,7 +473,7 @@ export class BaseGraph extends Component {
       <div>
         <div id={dropdown} className="c-graph_dropdown" />
         <div id={legend} className="c-graph__legend" />
-        <div id={this.id} className={`c-graph__container ${chart_classes}`} />
+        <div id={this.props.id} className={`c-graph__container ${chart_classes}`} />
         <div id={options} className="c-graph__options" />
       </div>
     );
@@ -526,7 +524,7 @@ export default class Graph extends Component {
     }
 
     // Create unique ID for element.
-    this.id = 'graph' + util.uniqueID();
+    props.id = 'graph' + util.uniqueID();
   }
   render() {
     let base_class = `${this.id}-container c-graph c-${this.props.file.data.type}`,
@@ -562,7 +560,7 @@ export default class Graph extends Component {
         {anchor}
         <div className="c-graph__wrapper">
           <LazyLoad>
-            <BaseGraph file={this.props.file} small={this.props.small} />
+            <BaseGraph file={this.props.file} id={this.props.id} small={this.props.small} />
           </LazyLoad>
         </div>
         <div className="c-text__caption c-text__caption--bottom">
