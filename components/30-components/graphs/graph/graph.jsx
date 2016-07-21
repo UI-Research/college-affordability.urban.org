@@ -282,13 +282,10 @@ export class BaseGraph extends Component {
     createCSV(object);
   }
   createCSV(object) {
-    console.log(object.props.file.data.columns);
     let encodedUri = 'data:attachment/csv,' + encodeURIComponent(object.props.file.data.columns);
-    console.log(encodedUri);
-    console.log(`.c-${object.props.id}-container a.button-download_data__csv_`);
     d3.select(`.c-${object.props.id}-container a.button-download_data__csv_`)
       .attr('href', encodedUri)
-      .attr('download', 'asdf.csv');
+      .attr('download', `${util.machineName(object.props.file.title)}.csv`);
   }
   checkVerticalLabels() {
     // Remove following line to enable vertical labels.
