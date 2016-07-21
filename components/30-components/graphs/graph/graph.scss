@@ -44,12 +44,46 @@
 
 .c-graph {
   .c-graph__wrapper {
-    height: 402px;
+    height: 382px;
     @include breakpoint($bp--mid) {
-      height: 427px;
+      height: 407px;
     }
     @include breakpoint($bp--large) {
       height: 347px;
+    }
+  }
+  
+  &.has-legend {
+    .c-graph__wrapper {
+      height: 402px;
+      @include breakpoint($bp--mid) {
+        height: 427px;
+      }
+      @include breakpoint($bp--large) {
+        height: 367px;
+      }
+    }
+  }
+  &.has-toggle {
+    .c-graph__wrapper {
+      height: 423px;
+      @include breakpoint($bp--mid) {
+        height: 448px;
+      }
+      @include breakpoint($bp--large) {
+        height: 388px;
+      }
+    }
+  }
+  &.has-toggle.has-legend {
+    .c-graph__wrapper {
+      height: 452px;
+      @include breakpoint($bp--mid) {
+        height: 477px;
+      }
+      @include breakpoint($bp--large) {
+        height: 417px;
+      }
     }
   }
 
@@ -59,7 +93,7 @@
       height: 400px;
     }
     @include breakpoint($bp--large) {
-      height: 320px;
+      height: 340px;
     }
   }
 
@@ -182,13 +216,38 @@
 }
 
 /* Move label in stacked area chart under bar, change colors */
-.c-bar.c-bar-vertical.c-bar-grouped {
-  
+.c-bar.c-bar-vertical.c-bar-grouped {  
   .c-graph__legend {
     > svg {
       height: 40px;
       @include breakpoint($bp--small) {
         height: 20px;
+      }
+    }
+  }
+  .c-graph__wrapper {
+    height: 422px;
+    @include breakpoint($bp--small) {
+      height: 402px;
+    }
+    @include breakpoint($bp--mid) {
+      height: 407px;
+    }
+    @include breakpoint($bp--large) {
+      height: 367px;
+    }
+  }
+  &.has-toggle.has-legend {
+    .c-graph__wrapper {
+      height: 472px;
+      @include breakpoint($bp--small) {
+        height: 452px;
+      }
+      @include breakpoint($bp--mid) {
+        height: 477px;
+      }
+      @include breakpoint($bp--large) {
+        height: 417px;
       }
     }
   }

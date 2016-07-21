@@ -97,17 +97,6 @@ export class BaseGraph extends Component {
         };
       }
 
-      // Increase padding at top of the graph
-      // (To prevent the graph from getting cut off)
-      if (!data.padding) {
-        data.padding = {
-          top: 10,
-          bottom: 20,
-          left: 50,
-          right: 50
-        }
-      }
-
       // Always have the y axis start at 0
       if (data.axis && data.axis.y && !data.axis.y.padding) {
         data.axis.y.padding = {
@@ -123,7 +112,6 @@ export class BaseGraph extends Component {
           right: 0.3
         };
       }
-
 
       // Relocate legend to top of the graph.
       if (!data.legend) {
@@ -151,25 +139,15 @@ export class BaseGraph extends Component {
           if (data.axis.x.type == 'indexed') {
             data.axis.x.padding = {
               left: 0.15,
-              right: 0.15
+              right: 0.2
             };
           }
           else {
             data.axis.x.padding = {
               left: -0.35,
-              right: -0.35
+              right: -0.3
             };
           }
-        }
-
-        // Add additional padding to display values.
-        if (!data.padding) {
-          data.padding = {
-            top: 20,
-            bottom: 20,
-            left: 50,
-            right: 50
-          };
         }
       }
       else if (data.data.type == 'bar' && data.axis && data.axis.x && data.axis.x.type == 'indexed') {
@@ -205,6 +183,8 @@ export class BaseGraph extends Component {
           };
         }
       }
+      
+      console.log(data.padding);
 
       // Hide tooltip.
       data.tooltip = {
@@ -572,6 +552,14 @@ export default class Graph extends Component {
     // If it's a grouped bar chart, flag it as such (so we can move the labels)
     if (this.props.file.data.groups) {
       base_class += ` c-${this.props.file.data.type}-grouped`;
+    }
+    
+    if ((this.props.file.data.columns && this.props.file.data.columns.length > 1) || this.props.file.data.groups) {
+      base_class += ' has-legend';
+    }
+    if ((this.props.file.data.sets)) {
+      let max_set_data = 0;
+      base_class += ' has-toggle';
     }
 
     // If it's horizontal, drop that in as the classname.
