@@ -312,7 +312,16 @@ export class BaseGraph extends Component {
     createCSV(object);
   }
   createCSV(object) {
-    let encodedUri = 'data:attachment/csv,' + encodeURIComponent(object.props.file.data.columns);
+    const toCSV = (arr) => {
+      let s ='';
+      _.each(arr, (object) => {
+        s += object.join(',');
+        s += "\r\n";
+      });
+
+      return encodeURIComponent(s);
+    }
+    let encodedUri = 'data:Application/octet-stream,' + toCSV(object.props.file.data.columns);
     d3.select(`.c-${object.props.id}-container a.button-download_data__csv_`)
       .attr('href', encodedUri)
       .attr('download', `${util.machineName(object.props.file.title)}.csv`);
