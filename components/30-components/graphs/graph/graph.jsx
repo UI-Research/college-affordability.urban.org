@@ -284,55 +284,6 @@ export class BaseGraph extends Component {
     lineChartFormatting(object);
     const barChartFormatting = object.barChartFormatting;
     barChartFormatting(object);
-    const createDownloadLink = object.createDownloadLink;
-    createDownloadLink(object);
-  }
-  // Generate a downloadable svg file.
-  // Reference: https://stackoverflow.com/questions/23218174/how-do-i-save-export-an-svg-file-after-creating-an-svg-with-d3-js-ie-safari-an
-  createDownloadLink(object) {
-
-    // TODO: THIS IS A WORK IN PROGRESS.  FINISH THIS LATER, BUT DO NOT ENABLE NOW.
-    const walkTheDOM = (node, func) => {
-      func(node);
-      node = node.firstChild;
-      while (node) {
-        walkTheDOM(node, func);
-        node = node.nextSibling;
-      }
-    }
-
-    // Get svg element.
-    let container = document.getElementById(`${object.id}`).childNodes;
-    let svg = container[1];
-
-    walkTheDOM(svg, (node) => {
-      if (typeof node == 'Element') {
-        //console.log(window.getComputedStyle(node, null).getPropertyValue('font-family'));
-      }
-      return node;
-    });
-
-    // Get svg source.
-    let serializer = new XMLSerializer();
-    let source = serializer.serializeToString(svg);
-
-    // Add name spaces.
-    if (!source.match(/^<svg[^>]+xmlns="http\:\/\/www\.w3\.org\/2000\/svg"/)) {
-      source = source.replace(/^<svg/, '<svg xmlns="http://www.w3.org/2000/svg"');
-    }
-    if (!source.match(/^<svg[^>]+"http\:\/\/www\.w3\.org\/1999\/xlink"/)) {
-      source = source.replace(/^<svg/, '<svg xmlns:xlink="http://www.w3.org/1999/xlink"');
-    }
-
-    // Add xml declaration
-    source = '<?xml version="1.0" standalone="no"?>\r\n' + source;
-
-    // Convert svg source to URI data scheme.
-    var url = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(source)}`;
-
-    // Set url value to a element's href attribute.
-    d3.select(`.${object.id}-container .button-save_image`)
-      .attr('href', url);
   }
   checkVerticalLabels() {
     // Remove following line to enable vertical labels.
