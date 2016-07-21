@@ -61,7 +61,7 @@ export default class Page extends Component {
       </Template>
     );
   }
-};
+}
 
 // >> Enabling CSS
 // If you have page-specific CSS you would like to add, uncomment the following three lines (remove the /* */).

@@ -22,7 +22,7 @@ let singlepage = (
 
 let specifications = {
   'name': 'what-is-college',
-  'title': "What is College?",
+  'title': 'What is College?',
   'content': <SinglePage content={singlepage} />
 };
 
@@ -34,7 +34,7 @@ export default class Page extends Component {
       </Template>
     );
   }
-};
+}
 
 
 if (util.canUseDOM()) {

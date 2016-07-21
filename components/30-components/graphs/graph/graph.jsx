@@ -3,6 +3,8 @@
 import React, { Component } from 'react';
 import d3 from 'd3';
 import _ from 'lodash';
+import Actions from '30-components/basic/actions/actions.jsx';
+import ActionButton from '30-components/basic/action_button/action_button.jsx';
 const LazyLoad = require('30-components/basic/lazyload/lazyload.jsx');
 
 import util from 'util.jsx';
@@ -17,8 +19,6 @@ export class BaseGraph extends Component {
   constructor(props) {
     super(props);
 
-    // Create unique ID for element.
-    this.id = 'graph' + util.uniqueID();
   }
   componentDidMount() {
     if (util.canUseDOM) {
@@ -28,7 +28,7 @@ export class BaseGraph extends Component {
       let data = this.props.file;
 
       // Identify DOM element we want to apply the graph to.
-      data.bindto = '#' + this.id;
+      data.bindto = '#' + this.props.id;
 
       // Set max number of axis ticks on y axis
       // TODO: There is a bug that's not allowing C3 to align the values correctly.
@@ -223,12 +223,23 @@ export class BaseGraph extends Component {
         this.polishChart(this);
       };
 
+
+      // If small flag is set on <Graph />,
+      // apply special formatting for small graph sizes!
       if (this.props.small == 'true') {
         if (!data.data.size) {
           data.size = {
             'height': 210,
             'width': 210
           };
+        }
+
+        // Hide points, especially on area graphs.
+        if (!data.point) {
+          data.point = {};
+        }
+        if (!data.point.show) {
+          data.point.show = false;
         }
       }
 
@@ -242,8 +253,6 @@ export class BaseGraph extends Component {
 
       // If sets are available, reveal them as options
       if (data.data.sets) {
-        // For use with the done() method later...
-        let object = this;
         let sets = data.data.sets;
 
         let swapSet = () => {
@@ -257,7 +266,7 @@ export class BaseGraph extends Component {
 
           chart = c3.generate(data);
           this.polishChart(this);
-        }
+        };
 
         // Create select box for toggles
         let options = d3.select(`${data.bindto}_dropdown`);
@@ -288,10 +297,30 @@ export class BaseGraph extends Component {
     barChartFormatting(object);
     const formatDataLabel = object.formatDataLabel;
     formatDataLabel(object);
+    const createCSV = object.createCSV;
+    createCSV(object);
+  }
+  createCSV(object) {
+    // Create CSV objects based off of arrays.
+    const toCSV = (arr) => {
+      let s ='';
+      _.each(arr, (object) => {
+        s += object.join(',');
+        s += '\r\n';
+      });
+
+      return encodeURIComponent(s);
+    };
+
+    // Generate link for CSV download.
+    let encodedUri = 'data:Application/octet-stream,' + toCSV(object.props.file.data.columns);
+    d3.select(`.c-${object.props.id}-container a.button-download_data__csv_`)
+      .attr('href', encodedUri)
+      .attr('download', `${util.machineName(object.props.file.title)}.csv`);
   }
   checkVerticalLabels() {
-    // Remove following line to enable vertical labels.
-    return;
+    // TODO: Remove following line to enable vertical labels.
+    if (1 === 1) return; // eslint-disable-line
 
     // Make bottom axis labels vertical for tablet/mobile.
     const width = window.innerWidth;
@@ -342,16 +371,16 @@ export class BaseGraph extends Component {
   }
   setLegend(object) {
     // Clean up (just in case);
-    d3.select(`#${object.id}_legend`).selectAll('*').remove();
+    d3.select(`#${object.props.id}_legend`).selectAll('*').remove();
 
-    let legend = d3.selectAll(`#${object.id} .c3-legend-item`);
+    let legend = d3.selectAll(`#${object.props.id} .c3-legend-item`);
     // If there's only one data set, don't bother listing the legend.
     if (legend[0].length <= 1) {
       legend.remove();
     }
     else {
       // Set up the legend above the graph
-      let svg = d3.select(`#${object.id}_legend`)
+      let svg = d3.select(`#${object.props.id}_legend`)
         .append('svg')
         .attr('width', '100%');
       legend.each(function() {
@@ -374,11 +403,11 @@ export class BaseGraph extends Component {
     if (data.axis) {
       if (!data.axis.rotated && data.axis.y && data.axis.y.label) {
         // Create container for y axis
-        const container = d3.select(`#${object.id}`).insert('svg', ':first-child')
+        const container = d3.select(`#${object.props.id}`).insert('svg', ':first-child')
           .attr('width', '100%')
           .attr('height', 20);
         // Fix and encapsulate y axis label
-        const y_axis_label = d3.selectAll(`#${object.id} .c3-axis-y .c3-axis-y-label`)
+        const y_axis_label = d3.selectAll(`#${object.props.id} .c3-axis-y .c3-axis-y-label`)
           .attr('transform', 'rotate(0)')
           .attr('style', 'text-anchor: start')
           .attr('dx', '0');
@@ -390,11 +419,11 @@ export class BaseGraph extends Component {
 
       if (data.axis.rotated && data.axis.x && data.axis.x.label) {
         // Create container for x axis
-        const container = d3.select(`#${object.id}`).insert('svg', ':first-child')
+        const container = d3.select(`#${object.props.id}`).insert('svg', ':first-child')
           .attr('width', '100%')
           .attr('height', 20);
         // Fix and encapsulate x axis label
-        const x_axis_label = d3.selectAll(`#${object.id} .c3-axis-x .c3-axis-x-label`)
+        const x_axis_label = d3.selectAll(`#${object.props.id} .c3-axis-x .c3-axis-x-label`)
           .attr('transform', 'rotate(0)')
           .attr('dy', '1em')
           .attr('style', 'text-anchor: start')
@@ -410,8 +439,8 @@ export class BaseGraph extends Component {
     // When in category mode, align the ticks to be directly on top
     // of the labels.
     if (object.props.file.axis && object.props.file.axis.x && !_.isEmpty(object.props.file.axis.x.type) && object.props.file.axis.x.type == 'category') {
-      d3.selectAll(`#${object.id} g.c3-axis-x g.tick line`).remove();
-      let ticks = d3.selectAll(`#${object.id} g.c3-axis-x g.tick`);
+      d3.selectAll(`#${object.props.id} g.c3-axis-x g.tick line`).remove();
+      let ticks = d3.selectAll(`#${object.props.id} g.c3-axis-x g.tick`);
       _.map(ticks[0],function (tick) {
         d3.select(tick).insert('line', ':first-child')
           .attr('y2', 6)
@@ -421,7 +450,7 @@ export class BaseGraph extends Component {
     }
   }
   lineChartFormatting(object) {
-    let chart_dots = d3.selectAll(`#${object.id} .c3-circle`);
+    let chart_dots = d3.selectAll(`#${object.props.id} .c3-circle`);
     chart_dots.each(function() {
       var style = d3.select(this).attr('style');
       var style_array = BaseGraph.stylesToObject(style);
@@ -439,7 +468,7 @@ export class BaseGraph extends Component {
     });
   }
   barChartFormatting(object) {
-    let bar_text = d3.selectAll(`#${object.id}.c-bar__container--grouped .c3-chart-texts .c3-text`);
+    let bar_text = d3.selectAll(`#${object.props.id}.c-bar__container--grouped .c3-chart-texts .c3-text`);
     bar_text.each(function() {
       var style = d3.select(this).attr('style');
       var style_array = BaseGraph.stylesToObject(style);
@@ -466,14 +495,14 @@ export class BaseGraph extends Component {
   }
   formatDataLabel(object) {
     // Data display labels for vertical bar charts.
-    let data_labels_v = d3.selectAll(`.c-bar-grouped.c-bar-vertical #${object.id} .c3-chart-texts .c3-text`);
+    let data_labels_v = d3.selectAll(`.c-bar-grouped.c-bar-vertical #${object.props.id} .c3-chart-texts .c3-text`);
     data_labels_v.each(function() {
       // Add 14 pixels to the labels to move them into the stacked bars.
       var y = parseFloat(d3.select(this).attr('y')) + 13;
       d3.select(this).attr('y', y);
     });
     // Data display labels for horizontal bar charts.
-    let data_labels_h = d3.selectAll(`.c-bar-grouped.c-bar-horizontal #${object.id} .c3-chart-texts .c3-text`);
+    let data_labels_h = d3.selectAll(`.c-bar-grouped.c-bar-horizontal #${object.props.id} .c3-chart-texts .c3-text`);
     data_labels_h.each(function() {
       // Subtract 10 pixels to the labels to move them into the stacked bars.
       var y = parseFloat(d3.select(this).attr('x')) - 6;
@@ -482,9 +511,9 @@ export class BaseGraph extends Component {
   }
 
   render() {
-    const legend = `${this.id}_legend`;
-    const dropdown = `${this.id}_dropdown`;
-    const options = `${this.id}_options`;
+    const legend = `${this.props.id}_legend`;
+    const dropdown = `${this.props.id}_dropdown`;
+    const options = `${this.props.id}_options`;
 
     var chart_classes = `c-graph__container c-${this.props.file.data.type}__container`;
     if (this.props.file.data.groups) {
@@ -495,7 +524,7 @@ export class BaseGraph extends Component {
       <div>
         <div id={dropdown} className="c-graph_dropdown" />
         <div id={legend} className="c-graph__legend" />
-        <div id={this.id} className={`c-graph__container ${chart_classes}`} />
+        <div id={this.props.id} className={`c-graph__container ${chart_classes}`} />
         <div id={options} className="c-graph__options" />
       </div>
     );
@@ -504,11 +533,13 @@ export class BaseGraph extends Component {
 
 BaseGraph.propTypes = {
   content: React.PropTypes.string,
-  small: React.PropTypes.string
+  small: React.PropTypes.string,
+  id: React.PropTypes.string
 };
 BaseGraph.defaultProps = {
   type: 'line',
-  small: 'false'
+  small: 'false',
+  id: ''
 };
 
 
@@ -540,13 +571,16 @@ export default class Graph extends Component {
   constructor(props) {
     super(props);
 
+    // Create unique ID for element.
+    this.id = 'graph' + util.uniqueID();
+
     // Force specify type of graph.
     if (props.file && props.file.data && !props.file.data.type) {
       props.file.data.type = props.type;
     }
   }
   render() {
-    let base_class = `c-graph c-${this.props.file.data.type}`,
+    let base_class = `c-graph c-${this.id}-container c-${this.props.file.data.type}`,
         anchor = null;
 
     // If it's a grouped bar chart, flag it as such (so we can move the labels)
@@ -581,13 +615,32 @@ export default class Graph extends Component {
       source = <GraphAttribution type="source" text={this.props.file.metadata.source} />;
     }
 
+    // Check if there is an associated image with graph.  If so, mock up the ActionButton appropriately.
+    let img_href = '#';
+    let img_disable = 'true';
+    if (this.props.image) {
+      img_href = this.props.image;
+      img_disable = 'false';
+    }
+
+    // Only show buttons on all but small graphs (otherwise, it'd look ridiculous...).
+    let action_buttons;
+    if (this.props.small !== 'true') {
+      action_buttons = (
+        <Actions>
+          <ActionButton title='Save Image' href={img_href} disable={img_disable} />
+          <ActionButton title='Download data (csv)' href='#' />
+        </Actions>
+      );
+    }
+
     return (
       <div className={base_class}>
         <h2>{this.props.file.title}</h2>
         {anchor}
         <div className="c-graph__wrapper">
           <LazyLoad>
-            <BaseGraph file={this.props.file} small={this.props.small} />
+            <BaseGraph file={this.props.file} id={this.id} small={this.props.small} />
           </LazyLoad>
         </div>
         <div className="c-text__caption c-text__caption--bottom">
@@ -596,6 +649,7 @@ export default class Graph extends Component {
             {notes}
           </div>
         </div>
+        {action_buttons}
       </div>
     );
   }
@@ -605,11 +659,13 @@ Graph.propTypes = {
   anchor_name: React.PropTypes.string,
   title: React.PropTypes.string,
   type: React.PropTypes.string,
+  image: React.PropTypes.string,
   small: React.PropTypes.string
 };
 Graph.defaultProps = {
   anchor_name: '',
   title: '',
   type: 'line',
+  image: '',
   small: 'false'
 };
