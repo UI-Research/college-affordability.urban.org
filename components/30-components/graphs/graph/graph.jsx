@@ -634,6 +634,17 @@ export default class Graph extends Component {
       img_disable = 'false';
     }
 
+    // Only show buttons on all but small graphs (otherwise, it'd look ridiculous...).
+    let action_buttons;
+    if (this.props.small !== 'true') {
+      action_buttons = (
+        <Actions>
+          <ActionButton title='Save Image' href={img_href} disable={img_disable} />
+          <ActionButton title='Download data (csv)' href='#' />
+        </Actions>
+      );
+    }
+
     return (
       <div className={base_class}>
         <h2>{this.props.file.title}</h2>
@@ -649,10 +660,7 @@ export default class Graph extends Component {
             {notes}
           </div>
         </div>
-        <Actions>
-          <ActionButton title='Save Image' href={img_href} disable={img_disable} />
-          <ActionButton title='Download data (csv)' href='#' />
-        </Actions>
+        {action_buttons}
       </div>
     );
   }
