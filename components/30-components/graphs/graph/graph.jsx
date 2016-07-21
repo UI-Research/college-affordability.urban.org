@@ -280,6 +280,19 @@ export class BaseGraph extends Component {
     lineChartFormatting(object);
     const barChartFormatting = object.barChartFormatting;
     barChartFormatting(object);
+    const formatDataLabel = object.formatDataLabel;
+    formatDataLabel(object);
+    const createCSV = object.createCSV;
+    createCSV(object);
+  }
+  createCSV(object) {
+    console.log(object);
+    return;
+    var encodedUri = encodeURI(csvContent);
+    d3.select(`.${object.id}-container .button-save_image`)
+      .attr('href', encodedUri);
+    link.setAttribute("download", "my_data.csv");
+    document.body.appendChild(link);
   }
   checkVerticalLabels() {
     // Remove following line to enable vertical labels.
