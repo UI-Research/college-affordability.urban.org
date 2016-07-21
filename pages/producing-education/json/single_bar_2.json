@@ -1,0 +1,31 @@
+{
+  "title": "Tax appropriations and tax revenue",
+  "data": {
+    "columns": [
+      ["First", 1,2,3,4,5,6,7,8]
+    ],
+    "type": "bar",
+    "labels": {
+      "format": {
+        "First": "dollar"
+      }
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "label": "X Label",
+      "type": "indexed"
+    },
+    "y" : {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Urban Institute",
+    "notes": "Lorem Ipsum",
+    "data": "<a href='http://www.google.com'>Source Link Goes Here</a>"
+  }
+}

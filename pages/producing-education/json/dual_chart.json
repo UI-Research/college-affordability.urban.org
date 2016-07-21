@@ -1,21 +1,17 @@
 {
-  "title": "Living Arrangements of Full-Time Undergraduates, 2011-12",
+  "title": "Average published on-campus room and board at private nonprofit and public four-year colleges and universities, by Carnegie classification, 2015-16",
   "data": {
     "columns": [
-      ["First", 1,2,3,4,5,6,7,8],
-      ["Second", 2,3,4,5,6,7,8,9],
-      ["Third", 3,4,5,6,7,8,9,10]
+      ["First", 7,0],
+      ["Second", 4,0],
+      ["Third", 0,5],
+      ["Fourth", 6,0],
+      ["Fifth", 1,5],
+      ["Sixth", 0,4]
     ],
-    "labels": {
-      "format": {
-        "First": "dollar",
-        "Second": "dollar",
-        "Third": "dollar"
-      }
-    },
     "type": "bar",
     "groups": [
-      ["First", "Second", "Third"]
+      ["First", "Second", "Third", "Fourth", "Fifth", "Sixth"]
     ]
   },
   "axis": {

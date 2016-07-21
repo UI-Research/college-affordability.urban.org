@@ -135,7 +135,8 @@ export class BaseGraph extends Component {
               left: 0.1,
               right: 0.1
             };
-          } else {
+          }
+          else {
             data.axis.x.padding = {
               left: -0.4,
               right: -0.4
@@ -152,6 +153,18 @@ export class BaseGraph extends Component {
             right: 50
           };
         }
+      }
+      else if (data.data.type == 'bar' && data.axis && data.axis.x && data.axis.x.type == 'indexed') {
+        data.axis.x.padding = {
+          left: 0.4,
+          right: 0.4
+        };
+      }
+      else if (data.data.type == 'area-spline') {
+        data.axis.x.padding = {
+          left: 0.2,
+          right: 0.2
+        };
       }
 
       // Show grid lines by default
@@ -212,7 +225,6 @@ export class BaseGraph extends Component {
         this.polishChart(this);
       };
 
-
       if (this.props.small == 'true') {
         if (!data.data.size) {
           data.size = {
@@ -222,11 +234,11 @@ export class BaseGraph extends Component {
         }
       }
 
-
-
       // Generate the graph!
       this.checkVerticalLabels();
       let chart = c3.generate(data);
+      
+      console.log(data);
 
       // Make it available to other scopes.
       const polishChart = this.polishChart;
