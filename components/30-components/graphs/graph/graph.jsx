@@ -150,16 +150,6 @@ export class BaseGraph extends Component {
             };
           }
         }
-
-        // Add additional padding to display values.
-        if (!data.padding) {
-          data.padding = {
-            top: 20,
-            bottom: 20,
-            left: 50,
-            right: 50
-          };
-        }
       }
       else if (data.data.type == 'bar' && data.axis && data.axis.x && data.axis.x.type == 'indexed') {
         data.axis.x.padding = {
