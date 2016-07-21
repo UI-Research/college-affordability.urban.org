@@ -21,9 +21,7 @@
     },
     "type": "bar",
     "labels": {
-      "format": {
-        "First": "dollar"
-      }
+      "format": "dollar"
     },
     "groups": [
       ["First", "Second", "Third", "Fourth", "Fifth", "Sixth"]

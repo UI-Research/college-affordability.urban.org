@@ -1,34 +1,46 @@
 {
-  "title": "Average published on-campus room and board at private nonprofit and public four-year colleges and universities, by Carnegie classification, 2015-16",
+  "title": "Average published oncampus room and board at private nonprofit and public fouryear colleges and universities, by Carnegie classification, 201516",
   "data": {
-    "columns": [
-      ["First", 7,0],
-      ["Second", 4,0],
-      ["Third", 0,5],
-      ["Fourth", 6,0],
-      ["Fifth", 1,5],
-      ["Sixth", 0,4]
-    ],
+    "sets": {
+      "Set 3": ["Dual Chart 1", [
+        ["First", 7,0],
+        ["Second", 4,0],
+        ["Third", 0,5],
+        ["Fourth", 6,0],
+        ["Fifth", 1,5],
+        ["Sixth", 0,4]
+      ]],
+      "Set 2": ["Dual Chart 2", [
+        ["First", 2,5],
+        ["Second", 3,7],
+        ["Third", 9,0],
+        ["Fourth", 1,4],
+        ["Fifth", 0,2],
+        ["Sixth", 0,6]
+      ]]
+    },
     "type": "bar",
+    "labels": {
+      "format": "dollar"
+    },
     "groups": [
       ["First", "Second", "Third", "Fourth", "Fifth", "Sixth"]
     ]
   },
   "axis": {
+    "rotated": false,
     "x": {
-      "label": "X Label",
       "type": "category",
-      "categories": ["First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth"]
+      "categories": ["Private nonprofit", "Private nonprofit research", "Private nonprofit masters", "Private nonprofit bachelors", "Public fouryear", "Public research", "Public masters", "Public bachelors"]
     },
     "y" : {
-      "label": "Y Label",
       "tick": {
         "format": "dollar"
       }
     }
   },
   "metadata": {
-    "source": "Source",
-    "notes": "Lorem Ipsum."
+    "source": "IPEDS, Ma et al.",
+    "notes": "Based on 201415 published room and board from IPEDS and percentage increase from 201415 to 201516 from Ma et al, Trends in College Pricing 2015, The College Board."
   }
 }

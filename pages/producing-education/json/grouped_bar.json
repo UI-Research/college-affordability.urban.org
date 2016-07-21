@@ -1,34 +1,36 @@
 {
   "title": "Average Institutional Grant Aid per Student and per Recipient, Full-Time First-Year Students, 2012-14",
+  "padding": {
+    "left": 70,
+    "bottom": 60
+  },
   "data": {
     "columns": [
-      ["First", 1,2,3,4,5,6,7,8],
-      ["Second", 2,3,4,5,6,7,8,9],
-      ["Third", 3,4,5,6,7,8,9,10]
+      ["Per full-time first-time undergraduate", 3600,2700,3300,1700,14600,16100,13400,14500,300,400],
+      ["Per recipient", 9400,5600,6400,4100,17600,22800,14800,17100,2000,2300]
     ],
+    "type": "bar",
     "labels": {
       "format": {
-        "First": "dollar",
-        "Second": "dollar",
-        "Third": "dollar"
+        "Per full-time first-time undergraduate": "dollar",
+        "Per recipient": "$,.2f"
       }
-    },
-    "type": "bar"
+    }
   },
   "axis": {
+    "rotated": false,
     "x": {
-      "label": "X Label",
       "type": "category",
-      "categories": ["First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth"]
+      "categories": ["Total", "All public four-year", "Public research", "Public masters", "All private nonprofit four-year", "Private nonprofit research", "Private nonprofit masters", "Private nonprofit bachelors", "Public two-year", "For-profit"]
     },
     "y" : {
-      "label": "Y Label",
+      "label": "Y label",
       "tick": {
-        "format": "dollar"
+        "format": "$,.2f"
       }
     }
   },
   "metadata": {
-    "source": "Source"
+    "source": "IPEDS"
   }
 }
