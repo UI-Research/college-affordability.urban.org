@@ -34,7 +34,7 @@ module.exports = {
 
       // If values exceed a certain point, let's use the special
       // thousands/millions/billions formatter instead.
-      if (v > 9999) {
+      if (_.isNumber(v) && v > 9999 && alt) {
         pattern = alt;
       }
       return d3.format(pattern)(v);

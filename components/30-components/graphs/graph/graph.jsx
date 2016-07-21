@@ -134,31 +134,41 @@ export class BaseGraph extends Component {
         // Line and area graphs should not show data points.
         data.data.labels = false;
 
-        // Line and area graphs must flush to left and right.
-        if (data.axis && data.axis.x) {
-          if (data.axis.x.type == 'indexed') {
-            data.axis.x.padding = {
-              left: 0.15,
-              right: 0.2
-            };
+        // Line and area graphs must flush to left and right,
+        // but show start/end points.
+        if (data.data.type == 'line') {
+          if (data.axis && data.axis.x) {
+            if (data.axis.x.type == 'indexed') {
+              data.axis.x.padding = {
+                left: 0.15,
+                right: 0.2
+              };
+            }
+            else {
+              data.axis.x.padding = {
+                left: -0.35,
+                right: -0.3
+              };
+            }
           }
-          else {
-            data.axis.x.padding = {
-              left: -0.35,
-              right: -0.3
-            };
-          }
+        }
+        // Don't need 'padding' for area, compensate for default.
+        else {
+          data.axis.x.padding = {
+            left: -0.4,
+            right: -0.3
+          };
         }
       }
       else if (data.data.type == 'bar' && data.axis && data.axis.x && data.axis.x.type == 'indexed') {
         data.axis.x.padding = {
-          left: 0.4,
+          left: 0.35,
           right: 0.4
         };
       }
       else if (data.data.type == 'area-spline') {
         data.axis.x.padding = {
-          left: 0.2,
+          left: 0.15,
           right: 0.2
         };
       }
@@ -183,8 +193,6 @@ export class BaseGraph extends Component {
           };
         }
       }
-      
-      console.log(data.padding);
 
       // Hide tooltip.
       data.tooltip = {
