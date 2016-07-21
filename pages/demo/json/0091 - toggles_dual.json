@@ -1,5 +1,5 @@
 {
-  "title": "Average published on-campus room and board at private nonprofit and public four-year colleges and universities, by Carnegie classification, 2015-16",
+  "title": "Dual Chart Toggle Example",
   "data": {
     "sets": {
       "Set 3": ["Dual Chart 1", [
@@ -33,7 +33,7 @@
     "rotated": false,
     "x": {
       "type": "category",
-      "categories": ["Private nonprofit", "Private nonprofit research", "Private nonprofit masters", "Private nonprofit bachelors", "Public four-year", "Public research", "Public masters", "Public bachelors"]
+      "categories": ["Private nonprofit", "Private nonprofit research"]
     },
     "y" : {
       "tick": {

@@ -2,6 +2,10 @@
 @import '_global.scss';
 
 .grid {
+  // Sticky component tries to offset the sticky, but with our page layout, it pushes the main content down.
+  > div > div {
+    padding-bottom: 0 !important;
+  }
   .sticky {
     @include breakpoint($bp--large) {
       margin-top: 55px;
@@ -55,26 +59,33 @@
     background-color: $color--gray-1;
     border: 1px solid $color--gray-4;
     font-size: 24px;
-    line-height: 24px;
+    line-height: 30px;
+    overflow: hidden;
     margin: 0;
-    padding: 8px 15px 10px;
+    padding: 5px 62px 7px 15px;
+    position: relative;
     @include breakpoint($bp--mid) {
-      padding: 8px 20px 10px;
+      padding: 5px 77px 7px 20px;
     }
     @include breakpoint($bp--large) {
       display: none;
     }
-    + .fa {
+    .fa {
       border-left: 1px solid $color--gray-4;
       color: #000;
       cursor: pointer;
       line-height: 42px;
+      height: 110px;
       right: 0;
-      padding: 0 20px;
+      padding: 0 15px;
       position: absolute;
-      top: 1px;
-      width: 57px;
+      top: 0;
+      width: 47px;
       z-index: 1;
+      @include breakpoint($bp--mid) {
+        width: 57px;
+        padding: 0 20px;
+      }
       @include breakpoint($bp--large) {
         display: none;
       }
@@ -118,7 +129,7 @@
       }
     
       a {
-        padding: .75rem 0 .75rem 15px;
+        padding: .75rem 45px .75rem 15px;
         font-size: 14px;
         line-height: 1.25;
         @include breakpoint($bp--mid) {
@@ -142,15 +153,18 @@
       border-left: 1px solid $color--gray-4;
       color: $color--gray-7;
       cursor: pointer;
-      line-height: 49px;
-      padding: 0 12px;
+      line-height: 53px;
+      padding: 0 14px;
       position: absolute;
       right: 0;
-      top: 1px;
-      width: 41px;
+      top: 0;
+      width: 45px;
       z-index: 1;
       &:hover {
         background-color: $color--gray-1;
+      }
+      @include breakpoint($bp--large) {
+        line-height: 49px;
       }
     }
   }

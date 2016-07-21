@@ -3,32 +3,33 @@
 .header-site {
   background: #fff;
   width: 100%;
-  border-top: 6px solid black;
+  border-top: 2px solid black;
   @include clearfix();
 
   @include breakpoint($bp--mid) {
-    height: 117px;
+    border-top: 4px solid black;
   }
   @include breakpoint($bp--large) {
-    height: 130px;
     background-color: $color--blue;
   }
 }
 
 .header-site__logo {
-  background: url('./img/logo.svg') no-repeat center center;
+  background: url('./img/logo-mini-dark.png') no-repeat 10%;
+  background-size: 75%;
   display: block;
-  width: 110px;
-  height: 77px;
+  height: 50px;
+  width: 50px;
   margin: 0 auto;
 
   @include breakpoint($bp--large) {
-    width: 114px;
+    background: url('./img/logo.svg') no-repeat center center;
     height: 124px;
+    width: 114px;
   }
   @include breakpoint($bp--xlarge) {
-    width: 140px;
     height: 124px;
+    width: 140px;
   }
 }
 
@@ -37,7 +38,7 @@
   position: relative;
   z-index: 2;
   text-align: center;
-  width: 120px;
+  width: 65px;
 
   @include breakpoint($bp--large) {
     float: left;
@@ -57,8 +58,7 @@
   }
 }
 
-.header-site__nav-primary-wrapper {
-  background-color: $color--blue;
+.header-site__nav-wrapper {
   display: none;
   position: absolute;
   top: 0;
@@ -67,26 +67,30 @@
   &.open {
     display: block;
   }
-
   @include breakpoint($bp--large) {
     display: block;
+    position: initial;
+    z-index: 1;
+  }
+}
+
+.header-site__nav-primary-wrapper {
+  background-color: $color--blue;
+
+  @include breakpoint($bp--large) {
     border-top: none;
     height: auto;
     clear: none;
     background-color: transparent;
     padding: 0.15rem 0 0 2rem;
     position: initial;
-    z-index: 1;
   }
 }
 
 .header-site__nav-utility-wrapper {
-  display: none;
-
   @include breakpoint($bp--large) {
-    display: block;
     position: absolute;
-    top: 0;
+    top: -5px;
     right: 1rem;
   }
   @include breakpoint($bp--xlarge) {
@@ -96,11 +100,11 @@
 
 .header-site__title {
   background-color: $color--blue;
-  padding: 4px 2px 2px;
+  padding: 2px 2px 0;
   text-align: center;
   font-size: 15px;
   font-weight: bold;
-  line-height: 24px;
+  line-height: 22px;
   text-transform: uppercase;
   color: white;
   font-family: Futura, Arial, sans-serif;
@@ -114,7 +118,7 @@
   @include breakpoint($bp--large) {
     background: transparent;
     font-size: 24px;
-    line-height: 1.7;
+    line-height: 40px;
     padding: 2.1rem 0 0 2rem;
     text-align: left;
   }
@@ -129,7 +133,7 @@
   font-size: 20px;
   position: absolute;
   right: 13px;
-  top: 27px;
+  top: 15px;
 
   @include breakpoint($bp--large) {
     display: none;
@@ -162,21 +166,28 @@
   @include breakpoint($bp--large) {
     animation: header-mini $header-transition-duration ease;
     animation-fill-mode: forwards;
+    border-top: 0;
+    max-height: 55px;
 
     .header-site__title {
       animation: header-hide $header-transition-duration ease;
       animation-fill-mode: forwards;
+      display: none;
     }
 
     .header-site__logo-wrapper {
       @include breakpoint($bp--large) {
         animation: header-logo-wrapper $header-transition-duration ease;
         animation-fill-mode: forwards;
+        max-height: 70px;
+        max-width: 55px;
         .header-site__logo {
           animation: header-logo $header-transition-duration ease;
           animation-fill-mode: forwards;
           background: url('./img/logo-mini-dark.png') no-repeat 10%;
           background-size: 75%;
+          max-height: 55px;
+          max-width: 55px;
         }
       }
     }

@@ -131,6 +131,40 @@ img {
   max-width: 100%;
 }
 
+table {
+  width: 100%;
+
+  thead {
+    th {
+      background: $color--black;
+      color: white;
+      font-weight: bold;
+      border: 1px solid $color--gray-8;
+    }
+  }
+
+  td, th {
+    border: 1px solid $color--gray-1;
+    font-size: 14px;
+    padding: 1rem;
+  }
+  th {
+    background-color: $color--gray-3;
+    font-weight: 800;
+  }
+  tbody {
+    tr {
+      background: $color--gray-1;
+      &:nth-child(odd) {
+        background: $color--gray-2;
+      }
+    }
+    th {
+      background: $color--gray-4;
+    }
+  }
+}
+
 .btn {
   padding: .5rem 1rem;
   color: white;
@@ -200,9 +234,7 @@ img {
   height: 110px;
   width: 110px;
   margin: 0 auto;
-  background-color: $color--gray-8;
-  -webkit-mask:  url('./components/img/icon-teaching.svg') no-repeat 50% 50%;
-  mask: url('./components/img/icon-teaching.svg') no-repeat 50% 50%;
+  background: url('./components/img/icon-teaching.svg') no-repeat 50% 50%;
 
   @include breakpoint($bp--mid) {
     height: 100%;
@@ -214,9 +246,7 @@ img {
   height: 110px;
   width: 110px;
   margin: 0 auto;
-  background-color: $color--gray-8;
-  -webkit-mask:  url('./components/img/icon-student.svg') no-repeat 50% 50%;
-  mask: url('./components/img/icon-student.svg') no-repeat 50% 50%;
+  background: url('./components/img/icon-student.svg') no-repeat 50% 50%;
 
   @include breakpoint($bp--mid) {
     height: 100%;

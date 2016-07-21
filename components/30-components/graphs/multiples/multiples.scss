@@ -12,8 +12,15 @@
     clear: both;
   }
 
+  .c-graph {
+    .c-graph__wrapper,
+    .c-graph__container {
+      height: 210px;
+    }
+  }
+
   .c-graph-multiple {
-    width: 200px;
+    width: 225px;
     float: left;
 
     h2 {

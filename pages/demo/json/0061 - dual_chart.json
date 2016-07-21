@@ -11,11 +11,10 @@
     ],
     "type": "bar",
     "groups": [
-      ["First", "Second", "Third","Fourth","Fifth", "Sixth"]
+      ["First", "Second", "Third", "Fourth", "Fifth", "Sixth"]
     ]
   },
   "axis": {
-    "rotated": false,
     "x": {
       "label": "X Label",
       "type": "category",

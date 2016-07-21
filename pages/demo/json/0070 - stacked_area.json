@@ -13,13 +13,12 @@
         "Third": "dollar"
       }
     },
-    "type": "area-spline",
+    "type": "area",
     "groups": [
       ["First", "Second", "Third"]
     ]
   },
   "axis": {
-    "rotated": false,
     "x": {
       "label": "X Label",
       "type": "category",

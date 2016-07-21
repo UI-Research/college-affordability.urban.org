@@ -11,11 +11,9 @@
     }
   },
   "axis": {
-    "rotated": false,
     "x": {
-      "type": "category",
-      "label": "X Label",
-      "categories": ["First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth"]
+      "type": "indexed",
+      "label": "X Label"
     },
     "y" : {
       "label": "Y Label",

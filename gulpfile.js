@@ -72,7 +72,7 @@ gulp.task('react', function() {
 
       // Creates HTML fragment for static page generation.
       let fragment = React.createElement(require('./' + filepath), { includeHTML: true });
-      fragment = ReactDOMServer.renderToStaticMarkup(fragment);
+      fragment = '<!DOCTYPE html>' + ReactDOMServer.renderToStaticMarkup(fragment);
 
       // Replace full images with their smaller previews.
       let regex = /\<img .+?\/\>/ig;

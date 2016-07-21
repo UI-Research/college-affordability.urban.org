@@ -32,9 +32,12 @@ export class BaseGraph extends Component {
       data.bindto = '#' + this.id;
 
       // Set max number of axis ticks on y axis
-      if (data.axis && data.axis.y && data.axis.y.tick && !data.axis.y.tick.count) {
-        data.axis.y.tick.count = 10;
-      }
+      // TODO: There is a bug that's not allowing C3 to align the values correctly.
+        // We can't tap into this feature until it gets fixed on their end.
+      // if (data.axis && data.axis.y && data.axis.y.tick && !data.axis.y.tick.count) {
+      //  data.axis.y.tick.count = 10;
+      //  data.axis.y.tick.fit = true;
+      // }
 
       // Detect any possible instances of the key 'format' and convert it into the specified format.
       if (data.data && data.data.labels && data.data.labels.format) {
@@ -79,18 +82,31 @@ export class BaseGraph extends Component {
 
       // Increase padding at top of the graph
       // (To prevent the graph from getting cut off)
-      // data.padding = {
-      //   top: 5
-      // }
+      if (!data.padding) {
+        data.padding = {
+          top: 10,
+          bottom: 20,
+          left: 50,
+          right: 50
+        }
+      }
 
       // Always have the y axis start at 0
-      if (data.axis && data.axis.y) {
+      if (data.axis && data.axis.y && !data.axis.y.padding) {
         data.axis.y.padding = {
           top: 50,
-          bottom: 0
+          bottom: 1
         };
         data.axis.y.min = 0;
       }
+
+      if (data.axis && data.axis.x && !data.axis.x.padding) {
+        data.axis.x.padding = {
+          left: 0,
+          right: 0.3
+        };
+      }
+
 
       // Relocate legend to top of the graph.
       if (!data.legend) {
@@ -102,24 +118,30 @@ export class BaseGraph extends Component {
         };
       }
 
-      // Hide data points on spline graphs
-      if (data.data.type && data.data.type === 'area-spline') {
+      // Hide data points on area graphs
+      if (data.data.type && data.data.type === 'area') {
         data.point = {
           show: false
         };
       }
 
-
-      if (_.includes(['line', 'area-spline'], data.data.type)) {
+      if (_.includes(['line', 'area'], data.data.type)) {
         // Line and area graphs should not show data points.
         data.data.labels = false;
 
         // Line and area graphs must flush to left and right.
         if (data.axis && data.axis.x) {
-          data.axis.x.padding = {
-            left: -0.5,
-            right: -0.5
-          };
+          if (data.axis.x.type == 'indexed') {
+            data.axis.x.padding = {
+              left: 0.1,
+              right: 0.1
+            };
+          } else {
+            data.axis.x.padding = {
+              left: -0.4,
+              right: -0.4
+            };
+          }
         }
 
         // Add additional padding to display values.
@@ -139,25 +161,35 @@ export class BaseGraph extends Component {
         // This we enable by default for most graphs.
         if (!data.grid.y) {
           data.grid.y = {
-            show: 'true'
+            show: 'true',
+            // Make 0 on the y axis the base line.
+            // In most cases, this gridline will sit nicely
+            // on the axis itself...unless there are negative values
+            // in the dataset... in which case we intentionally want
+            // the black line to cut in the middle of the canvas
+            // to prove where the 0 value is.
+            lines: [{
+              value: 0,
+              class: 'grid-base'
+            }]
           };
         }
       }
 
       // Hide tooltip.
       data.tooltip = {
-        show: false
+        show: true
       };
 
       // Set default colors.
       data.color = {
         pattern: [
           '#1696d2',
-          '#ec008b',
           '#d2d2d2',
+          '#000000',
           '#fdbf11',
-          '#332d2f',
-          '#0a4c6a'
+          '#ec008b',
+          '#55b748'
         ]
       };
 
@@ -166,8 +198,8 @@ export class BaseGraph extends Component {
       if (data.data.sets) {
         if (!data.data.columns) {
           let first = _.keys(data.data.sets)[0];
-          data.data.columns = [];
-          data.data.columns.push(data.data.sets[first]);
+          let dataset = (typeof data.data.sets[first][1] == 'object') ? data.data.sets[first][1] : data.data.sets[first];
+          data.data.columns = dataset;
         }
       }
 
@@ -180,6 +212,16 @@ export class BaseGraph extends Component {
         chart = c3.generate(data);
         this.polishChart(this);
       };
+
+
+      if (this.props.small == 'true') {
+        if (!data.data.size) {
+          data.size = {
+            'height': 210,
+            'width': 210
+          };
+        }
+      }
 
 
 
@@ -198,16 +240,16 @@ export class BaseGraph extends Component {
         let sets = data.data.sets;
 
         let swapSet = () => {
-          let target = d3.select('select').property('value');
+          let target = d3.select(`${data.bindto}_dropdown select`).property('value');
 
           // Clear out legend landing site. #garbage_collection
           d3.selectAll(`${data.bindto}_legend svg`).remove();
 
+          let dataset = (typeof sets[target][1] == 'object') ? sets[target][1] : sets[target];
+
           // Load new data.
           chart.load({
-            columns: [
-              sets[target]
-            ],
+            columns: dataset,
             unload: chart.columns,
             done: function() {
               polishChart(object);
@@ -216,16 +258,17 @@ export class BaseGraph extends Component {
         }
 
         // Create select box for toggles
-        let options = d3.select(`${data.bindto}_dropdown`)
+        let options = d3.select(`${data.bindto}_dropdown`);
         let select = options.append('select')
-          .attr('class','select')
+          .attr('class', 'select')
           .on('change', swapSet);
 
         _.map(data.data.sets, (set, index) => {
+          let dropdown_label = (typeof set[0] == 'object') ? set[0][0] : set[0];
           select.append('option')
             .attr('class', util.machineName(index))
             .attr('value', index)
-            .text(set[0]);
+            .text(dropdown_label);
         });
       }
     }
@@ -237,6 +280,10 @@ export class BaseGraph extends Component {
     setTick(object);
     const moveAxisLabel = object.moveAxisLabel;
     moveAxisLabel(object);
+    const lineChartFormatting = object.lineChartFormatting;
+    lineChartFormatting(object);
+    const barChartFormatting = object.barChartFormatting;
+    barChartFormatting(object);
     const createDownloadLink = object.createDownloadLink;
     createDownloadLink(object);
   }
@@ -288,6 +335,9 @@ export class BaseGraph extends Component {
       .attr('href', url);
   }
   checkVerticalLabels() {
+    // Remove following line to enable vertical labels.
+    return;
+
     // Make bottom axis labels vertical for tablet/mobile.
     const width = window.innerWidth;
     let data = this.props.file;
@@ -322,6 +372,19 @@ export class BaseGraph extends Component {
       }
     }
   }
+  static stylesToObject(style) {
+    // Break style attributes into an array;
+    var styles = style.split(';');
+    var style_array = {};
+    // Build array for styles.
+    for (var i = 0; i < styles.length; i++) {
+      var single_style = styles[i].split(':');
+      if (single_style[0].trim() && single_style[1].trim()) {
+        style_array[single_style[0].trim()] = single_style[1].trim();
+      }
+    }
+    return style_array;
+  }
   setLegend(object) {
     // Clean up (just in case);
     d3.select(`#${object.id}_legend`).selectAll('*').remove();
@@ -335,8 +398,7 @@ export class BaseGraph extends Component {
       // Set up the legend above the graph
       let svg = d3.select(`#${object.id}_legend`)
         .append('svg')
-        .attr('width', '100%')
-        .attr('height', 20);
+        .attr('width', '100%');
       legend.each(function() {
         svg.node().appendChild(this);
       });
@@ -359,11 +421,12 @@ export class BaseGraph extends Component {
         // Create container for y axis
         const container = d3.select(`#${object.id}`).insert('svg', ':first-child')
           .attr('width', '100%')
-          .attr('height', 25);
+          .attr('height', 20);
         // Fix and encapsulate y axis label
         const y_axis_label = d3.selectAll(`#${object.id} .c3-axis-y .c3-axis-y-label`)
           .attr('transform', 'rotate(0)')
-          .attr('dx', '5em');
+          .attr('style', 'text-anchor: start')
+          .attr('dx', '0');
         // Move it over to new container
         y_axis_label.each(function() {
           container.node().appendChild(this);
@@ -374,12 +437,13 @@ export class BaseGraph extends Component {
         // Create container for x axis
         const container = d3.select(`#${object.id}`).insert('svg', ':first-child')
           .attr('width', '100%')
-          .attr('height', 25);
+          .attr('height', 20);
         // Fix and encapsulate x axis label
         const x_axis_label = d3.selectAll(`#${object.id} .c3-axis-x .c3-axis-x-label`)
           .attr('transform', 'rotate(0)')
           .attr('dy', '1em')
-          .attr('dx', '5em');
+          .attr('style', 'text-anchor: start')
+          .attr('dx', '0');
         // Move it over to new container
         x_axis_label.each(function() {
           container.node().appendChild(this);
@@ -401,16 +465,66 @@ export class BaseGraph extends Component {
       });
     }
   }
+  lineChartFormatting(object) {
+    let chart_dots = d3.selectAll(`#${object.id} .c3-circle`);
+    chart_dots.each(function() {
+      var style = d3.select(this).attr('style');
+      var style_array = BaseGraph.stylesToObject(style);
+      // Set color of circle stroke.
+      var color = style_array['fill'];
+      d3.select(this)
+        .attr('r', '5')
+        .attr('style', style + 'stroke: ' + color);
+    });
+    // Override radius change on hover.
+    let hover_states = d3.selectAll('.c3-event-rect');
+    hover_states.each(function() {
+      // Stop event from changing circle radius.
+      hover_states.on('mouseover', function() { return false; });
+    });
+  }
+  barChartFormatting(object) {
+    let bar_text = d3.selectAll(`#${object.id}.c-bar__container--grouped .c3-chart-texts .c3-text`);
+    bar_text.each(function() {
+      var style = d3.select(this).attr('style');
+      var style_array = BaseGraph.stylesToObject(style);
+      // Need to use rgb and hex for different browsers.
+      var colors_light_text = [
+        'rgb(22, 150, 210)',
+        'rgb(0, 0, 0)',
+        'rgb(236, 0, 139)',
+        'rgb(85, 183, 72)',
+        'rgb(92, 88, 89)',
+        'rgb(219, 43, 39)',
+        '#1696d2',
+        '#000000',
+        '#ec008b',
+        '#55b748',
+        '#5c5859',
+        '#db2b27'
+      ];
+      // Assign fill color to chart text.
+      var is_white = colors_light_text.indexOf(style_array['fill']);
+      var color = (is_white > -1) ? 'white' : 'black';
+      d3.select(this).attr('style', style + ' fill:' + color + ' !important');
+    });
+  }
+
   render() {
     const legend = `${this.id}_legend`;
     const dropdown = `${this.id}_dropdown`;
     const options = `${this.id}_options`;
 
+    var chart_classes = `c-graph__container c-${this.props.file.data.type}__container`;
+    if (this.props.file.data.groups) {
+      chart_classes += ` c-${this.props.file.data.type}__container--grouped`;
+    }
+
     return (
       <div>
         <div id={dropdown} className="c-graph_dropdown" />
         <div id={legend} className="c-graph__legend" />
-        <div id={this.id} className={`c-graph__container c-${this.props.file.data.type}__container`} />
+        <div id={this.id} className={`c-graph__container ${chart_classes}`} />
         <div id={options} className="c-graph__options" />
       </div>
     );
@@ -418,10 +532,12 @@ export class BaseGraph extends Component {
 }
 
 BaseGraph.propTypes = {
-  content: React.PropTypes.string
+  content: React.PropTypes.string,
+  small: React.PropTypes.string
 };
 BaseGraph.defaultProps = {
-  type: 'line'
+  type: 'line',
+  small: 'false'
 };
 
 
@@ -454,8 +570,8 @@ export default class Graph extends Component {
     super(props);
 
     // Force specify type of graph.
-    if (!this.props.file.data.type) {
-      this.props.file.data.type = this.props.type;
+    if (props.file && props.file.data && !props.file.data.type) {
+      props.file.data.type = props.type;
     }
 
     // Create unique ID for element.
@@ -470,10 +586,8 @@ export default class Graph extends Component {
       base_class += ` c-${this.props.file.data.type}-grouped`;
     }
 
-
     // If it's horizontal, drop that in as the classname.
     base_class += (this.props.file.axis && this.props.file.axis.rotated) ? ` c-${this.props.file.data.type}-horizontal` : ` c-${this.props.file.data.type}-vertical`;
-
 
     if (this.props.anchor_name) {
       // Replace any spaces with _.
@@ -495,9 +609,11 @@ export default class Graph extends Component {
       <div className={base_class}>
         <h2>{this.props.file.title}</h2>
         {anchor}
-        <LazyLoad>
-          <BaseGraph file={this.props.file} id={this.id} />
-        </LazyLoad>
+        <div className="c-graph__wrapper">
+          <LazyLoad>
+            <BaseGraph file={this.props.file} small={this.props.small} />
+          </LazyLoad>
+        </div>
         <div className="c-text__caption c-text__caption--bottom">
           <div className="c-text__viz-notes">
             {source}
@@ -516,10 +632,12 @@ export default class Graph extends Component {
 Graph.propTypes = {
   anchor_name: React.PropTypes.string,
   title: React.PropTypes.string,
-  type: React.PropTypes.string
+  type: React.PropTypes.string,
+  small: React.PropTypes.string
 };
 Graph.defaultProps = {
   anchor_name: '',
   title: '',
-  type: 'line'
+  type: 'line',
+  small: 'false'
 };

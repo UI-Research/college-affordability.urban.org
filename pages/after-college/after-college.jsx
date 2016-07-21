@@ -77,13 +77,14 @@ let singlepage = (
 
 let specifications = {
   'name': 'after-college',
+  'title': 'After College',
   'content': <SinglePage content={singlepage} />
 };
 
 const ListingExample = React.createClass({
   render: function() {
     return (
-      <Template title="After College" machineName={specifications.name} includeHTML={this.props.includeHTML}>
+      <Template title={specifications.title} machineName={specifications.name} includeHTML={this.props.includeHTML}>
         {specifications.content}
       </Template>
     );

@@ -15,135 +15,40 @@ if (util.canUseDOM()) {
 export default class SinglePage extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
       breadcrumbTitle : '',
       menu: '',
-      headerHeight: 0
+      headerHeight: 0,
+      sectionTitle: ''
     };
-
-    if (util.canUseDOM()) {
-      let parentIndex = '',
-          menuElements = {},
-          breadcrumbTitle = '',
-          menuLinks = {};
-
-      _.each(props.content.props.children, (element, index) => {
-        if (!props.sectionTitle && element.type === 'h1') {
-          props.sectionTitle = element.props.children;
-        }
-        // If the DOM elements are either h1 or h2 without the menu=false flag.
-        // This is with the assumption the elements are at the base level of the
-        // react component.
-        if (_.indexOf(['h2', 'h3'], element.type) >= 0 && element.props.menu !== 'false') {
-          // For record-keeping purposes.
-          if (element.type === 'h2') {
-            parentIndex = util.machineName(element.props.children);
-            menuElements[parentIndex] = [];
-            menuElements[parentIndex].push(element);
-          }
-          else {
-            menuElements[parentIndex].push(element);
-          }
-          let elementID = (element.type === 'h2') ? parentIndex : parentIndex + '-' + util.machineName(element.props.children);
-          // Modify the react component with additional metadata
-          // for presentation on the page.
-          let mocked = React.cloneElement(element, {
-            id: `${elementID}`
-          });
-          props.content.props.children[index] = mocked;
-        }
-      });
-
-      this.state.menu = _.map(menuElements, (elements, parentIndex) => {
-        let parentElement = null,
-            subMenu = null;
-
-        subMenu = _.map(elements, (element) => {
-          let elementID = (element.type === 'h2') ? parentIndex : parentIndex + '-' + util.machineName(element.props.children);
-          menuLinks['#' + elementID] = element.props.children;
-          // Capture the first menu item.
-          if (!breadcrumbTitle) {
-            breadcrumbTitle = element.props.children;
-          }
-          if (element.type === 'h2') {
-            parentElement = element;
-            return null;
-          }
-          else if (element.type === 'h3') {
-            return (
-              <li className={parentIndex} key={elementID}><a href={`#/${elementID}`} onClick={this.elevateToSection.bind(this)}>{element.props.children}</a></li>
-            );
-          }
-        });
-
-        let arrow = null;
-        if (subMenu.length > 1) {
-          arrow = <span onClick={this.toggleSection} className="fa fa-chevron-down"></span>;
-          subMenu = <ul className="nav-anchor__second-level">{subMenu}</ul>;
-        }
-        return (
-          <li key={parentIndex}><a href={`#/${parentIndex}`} onClick={this.elevateToSection.bind(this)}>{parentElement.props.children}</a>{arrow}{subMenu}</li>
-        );
-      });
-
-      if (props.menuTopSectionName) {
-        breadcrumbTitle = props.menuTopSectionName;
-        menuLinks[''] = props.menuTopSectionName;
-        let topMenu = [(<li><a href="#" onClick={this.elevateToSection.bind(this)}>{props.menuTopSectionName}</a></li>)];
-        this.state.menu = _.concat(topMenu, this.state.menu);
+  }
+  calculateElevatorPadding() {
+    // Use the header's current height for the padding. 
+    let headerHeight = document.querySelector('.header-site').offsetHeight + 5;
+    // Adjust padding if the header changes height.
+    if (window.innerWidth > util.breakpointWidth('large')) {
+      // If the header is not sticky, add more padding.
+      if (!document.querySelector('.header-site.header-sticky')) {
+        headerHeight += 35;
       }
-
-      // If a hash exists on payload, automatically animate to that point on the page.
-      if (window.location.hash) {
-        let initialID = _.replace(window.location.hash, '/', '');
-
-        // Determine what the state of the breadcrumb should be.
-        _.each(menuLinks, function(sectionName, index) {
-          if (initialID === index) {
-            breadcrumbTitle = sectionName;
-          }
-        });
-
-        // Scroll to the specific point on the page based on URL hash parameters.
-        let elevate = () => {
-          new Elevator({
-            targetElement: document.querySelector(`${initialID}`),
-            verticalPadding: 70, // pixels
-            duration: 1500 // milliseconds
-          }).elevate();
-        };
-
-        window.addEventListener('load', function () {
-          setTimeout(elevate, 500);
-        });
-      }
-
-      window.addEventListener('resize', this.handleResize.bind(this));
-      window.addEventListener('scroll', this.handleScroll.bind(this));
-
-      if (breadcrumbTitle) {
-        this.state.breadcrumbTitle = breadcrumbTitle;
-      }
-
-      this.state.menu = _.compact(this.state.menu);
-      this.setState({
-        menu: this.state.menu,
-        breadcrumbTitle: this.state.breadcrumbTitle
-      });
     }
+    return headerHeight;
   }
   elevateToSection(event) {
     const anchor = event.target;
 
     // Toggle/close the sidenav.
-    let topChevron = document.querySelector('.nav-anchor > .fa');
-    topChevron.click();
+    let topChevron = document.querySelector('.nav-anchor h2 .fa');
+    if (topChevron) {
+      this.toggleSection(topChevron);
+    }
 
     const href = _.replace(anchor.getAttribute('href'), '/', '');
     const targetElement = document.querySelector(href);
     new Elevator({
       targetElement: targetElement,
-      verticalPadding: 60, // pixels
+      verticalPadding: this.calculateElevatorPadding(), // pixels.
       duration: 1000 // milliseconds
     }).elevate();
 
@@ -161,7 +66,7 @@ export default class SinglePage extends Component {
         let stickyNav = document.querySelector('.sticky-nav');
         // Adjust the sticky padding, as the Sticky component doesn't,
         // but only when it's not sticky.
-        if (!header.classList.contains('header-sticky')) {
+        if (!_.includes(header.classList, 'header-sticky')) {
           let stickyHeader = document.querySelector('.sticky-header');
           stickyHeader.previousElementSibling.style.paddingBottom = headerHeight + 'px';
         }
@@ -176,7 +81,12 @@ export default class SinglePage extends Component {
   }
   handleScroll() {
     // If we're at the bottom, make the last menu item active.
-    if ((window.innerHeight + document.body.scrollTop) >= document.body.offsetHeight) {
+    const doc = document.documentElement,
+          body = document.body;
+    const scrollTop = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
+    // Give a margin of error - have seen bottom not reached after side nav is un-stickied.
+    const pageHeight = Math.max(body.scrollHeight, body.offsetHeight) - 20;
+    if ((window.innerHeight + scrollTop) >= pageHeight) {
       const anchors = document.querySelectorAll('.nav-anchor__top-level a');
       const anchor = _.findLast(anchors);
       const href = _.replace(anchor.getAttribute('href'), '/', '');
@@ -186,7 +96,7 @@ export default class SinglePage extends Component {
     // Determine the current section based on position.
     else {
       // Since the header is sticky, get the 'top' below the header.
-      const offsetTop = document.querySelector('.header-site').offsetHeight + 30;
+      const offsetTop = document.querySelector('.header-site').offsetHeight + 40;
       let headers = document.querySelectorAll('.col--3-4 h2[id], .col--3-4 h3[id]');
       let previousElement = null;
 
@@ -213,7 +123,7 @@ export default class SinglePage extends Component {
     }
     if (element) {
       let activeSection = document.querySelector('h2.active__section');
-      activeSection.textContent = sectionTitle = element.textContent;
+      activeSection.firstChild.nodeValue = sectionTitle = element.textContent;
       element.classList.add('active');
       const target = '#/' + element.getAttribute('id');
       anchor = document.querySelector(`.nav-anchor__top-level a[href="${target}"]`);
@@ -254,9 +164,17 @@ export default class SinglePage extends Component {
       }
     }
   }
-  toggleSection(event) {
-    let target = event.target;
-    let menu = target.parentElement.querySelector('ul');
+  toggleSectionClick(event) {
+    this.toggleSection(event.target);
+  }
+  toggleSection(target) {
+    let menu = null;
+    if (target.parentElement.tagName.toLowerCase() === 'h2') {
+      menu = target.parentElement.parentElement.querySelector('ul');
+    }
+    else {
+      menu = target.parentElement.querySelector('ul');
+    }
     if (target.classList.contains('fa-chevron-down')) {
       target.classList.remove('fa-chevron-down');
       target.classList.add('fa-chevron-left');
@@ -300,6 +218,125 @@ export default class SinglePage extends Component {
     }
   }
   componentDidMount() {
+    if (this.props.sectionTitle) {
+      this.setState({
+        sectionTitle: this.props.sectionTitle
+      });
+    }
+
+    if (util.canUseDOM()) {
+      let parentIndex = '',
+          menuElements = {},
+          breadcrumbTitle = '',
+          menuLinks = {};
+
+      _.each(this.props.content.props.children, (element, index) => {
+        if (!this.state.sectionTitle && element.type === 'h1') {
+          this.setState({
+            sectionTitle: element.props.children
+          });
+        }
+        // If the DOM elements are either h1 or h2 without the menu=false flag.
+        // This is with the assumption the elements are at the base level of the
+        // react component.
+        if (_.indexOf(['h2', 'h3'], element.type) >= 0 && element.props.menu !== 'false') {
+          // For record-keeping purposes.
+          if (element.type === 'h2') {
+            parentIndex = util.machineName(element.props.children);
+            menuElements[parentIndex] = [];
+            menuElements[parentIndex].push(element);
+          }
+          else {
+            menuElements[parentIndex].push(element);
+          }
+          let elementID = (element.type === 'h2') ? parentIndex : parentIndex + '-' + util.machineName(element.props.children);
+          // Modify the react component with additional metadata
+          // for presentation on the page.
+          let mocked = React.cloneElement(element, {
+            id: `${elementID}`
+          });
+          this.props.content.props.children[index] = mocked;
+        }
+      });
+
+      this.state.menu = _.map(menuElements, (elements, parentIndex) => {
+        let parentElement = null,
+            subMenu = null;
+
+        subMenu = _.map(elements, (element) => {
+          let elementID = (element.type === 'h2') ? parentIndex : parentIndex + '-' + util.machineName(element.props.children);
+          menuLinks['#' + elementID] = element.props.children;
+          // Capture the first menu item.
+          if (!breadcrumbTitle) {
+            breadcrumbTitle = element.props.children;
+          }
+          if (element.type === 'h2') {
+            parentElement = element;
+            return null;
+          }
+          else if (element.type === 'h3') {
+            return (
+              <li className={parentIndex} key={elementID}><a href={`#/${elementID}`} onClick={this.elevateToSection.bind(this)}>{element.props.children}</a></li>
+            );
+          }
+        });
+
+        let arrow = null;
+        if (subMenu.length > 1) {
+          arrow = <span onClick={this.toggleSectionClick.bind(this)} className="fa fa-chevron-down"></span>;
+          subMenu = <ul className="nav-anchor__second-level">{subMenu}</ul>;
+        }
+        return (
+          <li key={parentIndex}><a href={`#/${parentIndex}`} onClick={this.elevateToSection.bind(this)}>{parentElement.props.children}</a>{arrow}{subMenu}</li>
+        );
+      });
+
+      if (this.props.menuTopSectionName) {
+        breadcrumbTitle = this.props.menuTopSectionName;
+        menuLinks[''] = this.props.menuTopSectionName;
+        let topMenu = [(<li><a href="#" onClick={this.elevateToSection.bind(this)}>{this.props.menuTopSectionName}</a></li>)];
+        this.state.menu = _.concat(topMenu, this.state.menu);
+      }
+
+      // If a hash exists on payload, automatically animate to that point on the page.
+      if (window.location.hash) {
+        let initialID = _.replace(window.location.hash, '/', '');
+
+        // Determine what the state of the breadcrumb should be.
+        _.each(menuLinks, function(sectionName, index) {
+          if (initialID === index) {
+            breadcrumbTitle = sectionName;
+          }
+        });
+
+        // Scroll to the specific point on the page based on URL hash parameters.
+        let elevate = () => {
+          new Elevator({
+            targetElement: document.querySelector(`${initialID}`),
+            verticalPadding: this.calculateElevatorPadding(), // pixels.
+            duration: 1500 // milliseconds
+          }).elevate();
+        };
+
+        window.addEventListener('load', function () {
+          setTimeout(elevate, 750);
+        });
+      }
+
+      window.addEventListener('resize', this.handleResize.bind(this));
+      window.addEventListener('scroll', this.handleScroll.bind(this));
+
+      if (breadcrumbTitle) {
+        this.state.breadcrumbTitle = breadcrumbTitle;
+      }
+
+      this.state.menu = _.compact(this.state.menu);
+      this.setState({
+        menu: this.state.menu,
+        breadcrumbTitle: this.state.breadcrumbTitle
+      });
+    }
+
     if (util.canUseDOM()) {
       this.setState({
         headerHeight: document.querySelector('.header-site').offsetHeight
@@ -307,7 +344,12 @@ export default class SinglePage extends Component {
       let activeAnchor = document.querySelector('.nav-anchor__top-level a.active');
       if (!activeAnchor) {
         let firstAnchor = document.querySelector('.nav-anchor__top-level a');
-        firstAnchor.classList.add('active');
+        if (firstAnchor) {
+          firstAnchor.classList.add('active');
+        }
+        else {
+          // TODO: What do we do here?
+        }
       }
     }
   }
@@ -315,12 +357,11 @@ export default class SinglePage extends Component {
     if (util.canUseDOM()) {
       return (
         <div className="grid">
-          <Sticky className="sticky-nav" topOffset={-5} bottomOffset={30} onStickyStateChange={this.handleStickyStateChange.bind(this)}>
-            <Breadcrumb section={this.props.sectionTitle} title={this.state.breadcrumbTitle} />
+          <Sticky className="sticky-nav" topOffset={-10} bottomOffset={30} onStickyStateChange={this.handleStickyStateChange.bind(this)}>
+            <Breadcrumb section={this.state.sectionTitle} title={this.state.breadcrumbTitle} />
             <div className="col col--1-4">
               <div className="nav-anchor">
-                <h2 className="active__section">{this.state.breadcrumbTitle}</h2>
-                <span className="fa fa-chevron-down" onClick={this.toggleSection}></span>
+                <h2 className="active__section">{this.state.breadcrumbTitle}<span className="fa fa-chevron-down" onClick={this.toggleSectionClick.bind(this)}></span></h2>
                 <ul className="nav-anchor__top-level">
                   {this.state.menu}
                 </ul>
