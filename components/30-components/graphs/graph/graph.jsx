@@ -97,17 +97,6 @@ export class BaseGraph extends Component {
         };
       }
 
-      // Increase padding at top of the graph
-      // (To prevent the graph from getting cut off)
-      if (!data.padding) {
-        data.padding = {
-          top: 10,
-          bottom: 20,
-          left: 50,
-          right: 50
-        }
-      }
-
       // Always have the y axis start at 0
       if (data.axis && data.axis.y && !data.axis.y.padding) {
         data.axis.y.padding = {
@@ -160,16 +149,6 @@ export class BaseGraph extends Component {
               right: -0.35
             };
           }
-        }
-
-        // Add additional padding to display values.
-        if (!data.padding) {
-          data.padding = {
-            top: 20,
-            bottom: 20,
-            left: 50,
-            right: 50
-          };
         }
       }
       else if (data.data.type == 'bar' && data.axis && data.axis.x && data.axis.x.type == 'indexed') {
