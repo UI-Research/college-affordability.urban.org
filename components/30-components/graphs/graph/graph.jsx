@@ -237,7 +237,7 @@ export class BaseGraph extends Component {
       // If sets are available, reveal them as options
       if (data.data.sets) {
         // For use with the done() method later...
-        let object = this.props;
+        let object = this;
         let sets = data.data.sets;
 
         let swapSet = () => {
@@ -463,9 +463,9 @@ export class BaseGraph extends Component {
   }
 
   render() {
-    const legend = `${this.props.id}_legend`;
-    const dropdown = `${this.props.id}_dropdown`;
-    const options = `${this.props.id}_options`;
+    const legend = `${this.id}_legend`;
+    const dropdown = `${this.id}_dropdown`;
+    const options = `${this.id}_options`;
 
     var chart_classes = `c-graph__container c-${this.props.file.data.type}__container`;
     if (this.props.file.data.groups) {
@@ -525,9 +525,6 @@ export default class Graph extends Component {
     if (props.file && props.file.data && !props.file.data.type) {
       props.file.data.type = props.type;
     }
-
-    // Create unique ID for element.
-    props.id = 'graph' + util.uniqueID();
   }
   render() {
     let base_class = `c-graph c-${this.props.file.data.type}`,
