@@ -578,6 +578,14 @@ export default class Graph extends Component {
       source = <GraphAttribution type="source" text={this.props.file.metadata.source} />;
     }
 
+    // Check if there is an associated image with graph.  If so, mock up the ActionButton appropriately.
+    let img_href = '#';
+    let img_disable = 'true';
+    if (this.props.image) {
+      img_href = this.props.image;
+      img_disable = 'false';
+    }
+
     return (
       <div className={base_class}>
         <h2>{this.props.file.title}</h2>
@@ -594,7 +602,7 @@ export default class Graph extends Component {
           </div>
         </div>
         <Actions>
-          <ActionButton title='Save Image' href='#' disable='true' />
+          <ActionButton title='Save Image' href={img_href} disable={img_disable} />
           <ActionButton title='Download data (csv)' href='#' />
         </Actions>
       </div>
