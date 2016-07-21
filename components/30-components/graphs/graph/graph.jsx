@@ -237,8 +237,6 @@ export class BaseGraph extends Component {
       // Generate the graph!
       this.checkVerticalLabels();
       let chart = c3.generate(data);
-      
-      console.log(data);
 
       // Make it available to other scopes.
       const polishChart = this.polishChart;
