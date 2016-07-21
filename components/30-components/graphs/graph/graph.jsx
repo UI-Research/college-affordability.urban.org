@@ -494,14 +494,14 @@ export class BaseGraph extends Component {
   }
   formatDataLabel(object) {
     // Data display labels for vertical bar charts.
-    let data_labels_v = d3.selectAll(`.c-bar-grouped.c-bar-vertical #${object.id} .c3-chart-texts .c3-text`);
+    let data_labels_v = d3.selectAll(`.c-bar-grouped.c-bar-vertical #${object.props.id} .c3-chart-texts .c3-text`);
     data_labels_v.each(function() {
       // Add 14 pixels to the labels to move them into the stacked bars.
       var y = parseFloat(d3.select(this).attr('y')) + 13;
       d3.select(this).attr('y', y);
     });
     // Data display labels for horizontal bar charts.
-    let data_labels_h = d3.selectAll(`.c-bar-grouped.c-bar-horizontal #${object.id} .c3-chart-texts .c3-text`);
+    let data_labels_h = d3.selectAll(`.c-bar-grouped.c-bar-horizontal #${object.props.id} .c3-chart-texts .c3-text`);
     data_labels_h.each(function() {
       // Subtract 10 pixels to the labels to move them into the stacked bars.
       var y = parseFloat(d3.select(this).attr('x')) - 6;
