@@ -283,10 +283,10 @@ export class BaseGraph extends Component {
   }
   createCSV(object) {
     console.log(object.props.file.data.columns);
-    let encodedUri = encodeURI(object.props.file.data.columns);
+    let encodedUri = 'data:attachment/csv,' + encodeURIComponent(object.props.file.data.columns);
     console.log(encodedUri);
-    console.log(`.${object.props.id}-container .button-download_data__csv_`);
-    d3.select(`.${object.props.id}-container .button-download_data__csv_`)
+    console.log(`.c-${object.props.id}-container a.button-download_data__csv_`);
+    d3.select(`.c-${object.props.id}-container a.button-download_data__csv_`)
       .attr('href', encodedUri)
       .attr('download', 'asdf.csv');
   }
@@ -536,7 +536,7 @@ export default class Graph extends Component {
     }
   }
   render() {
-    let base_class = `c-graph c-${this.id} c-${this.props.file.data.type}`,
+    let base_class = `c-graph c-${this.id}-container c-${this.props.file.data.type}`,
         anchor = null;
 
     // If it's a grouped bar chart, flag it as such (so we can move the labels)
