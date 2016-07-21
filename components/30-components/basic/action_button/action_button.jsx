@@ -21,8 +21,8 @@ const ActionButton = React.createClass({
     let className = `btn button-${util.machineName(this.props.title)}`;
 
     // In case you want to disable a button.
-    if (this.props.disable == "true") {
-      className += ` disabled`;
+    if (this.props.disable == 'true') {
+      className += ' disabled';
     }
 
     return (

@@ -29,7 +29,7 @@ export default class Page extends Component {
       </Template>
     );
   }
-};
+}
 
 
 if (util.canUseDOM()) {

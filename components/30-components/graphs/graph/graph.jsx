@@ -252,8 +252,6 @@ export class BaseGraph extends Component {
 
       // If sets are available, reveal them as options
       if (data.data.sets) {
-        // For use with the done() method later...
-        let object = this;
         let sets = data.data.sets;
 
         let swapSet = () => {
@@ -267,7 +265,7 @@ export class BaseGraph extends Component {
 
           chart = c3.generate(data);
           this.polishChart(this);
-        }
+        };
 
         // Create select box for toggles
         let options = d3.select(`${data.bindto}_dropdown`);
@@ -302,23 +300,26 @@ export class BaseGraph extends Component {
     createCSV(object);
   }
   createCSV(object) {
+    // Create CSV objects based off of arrays.
     const toCSV = (arr) => {
       let s ='';
       _.each(arr, (object) => {
         s += object.join(',');
-        s += "\r\n";
+        s += '\r\n';
       });
 
       return encodeURIComponent(s);
-    }
+    };
+
+    // Generate link for CSV download.
     let encodedUri = 'data:Application/octet-stream,' + toCSV(object.props.file.data.columns);
     d3.select(`.c-${object.props.id}-container a.button-download_data__csv_`)
       .attr('href', encodedUri)
       .attr('download', `${util.machineName(object.props.file.title)}.csv`);
   }
   checkVerticalLabels() {
-    // Remove following line to enable vertical labels.
-    return;
+    // TODO: Remove following line to enable vertical labels.
+    if (1 === 1) return; // eslint-disable-line
 
     // Make bottom axis labels vertical for tablet/mobile.
     const width = window.innerWidth;
