@@ -1,5 +1,8 @@
 {
   "title": "Living Arrangements of Full-Time Undergraduates, 2011-12",
+  "padding": {
+    "left": 95
+  },
   "data": {
     "columns": [
       ["On campus", 0.22, 0.56, 0.33, 0.03, 0.01],
@@ -19,7 +22,7 @@
     }
   },
   "axis": {
-    "rotated": true,
+    "rotated": false,
     "x": {
       "type": "category",
       "categories": ["All", "Private four-year", "Public four-year", "Public two-year", "For-profit"]

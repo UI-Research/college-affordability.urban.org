@@ -40,19 +40,37 @@ export class BaseGraph extends Component {
 
       // Detect any possible instances of the key 'format' and convert it into the specified format.
       if (data.data && data.data.labels && data.data.labels.format) {
-        _.map(data.data.labels.format, (entry) => {
-          data.data.labels.format = formatting.f(entry);
-        });
+        // Account for per set, or one global formatting.
+        if (_.isObject(data.data.labels.format)) {
+          _.each(data.data.labels.format, (entry, index) => {
+            // Check if we've already processed this.
+            if (!_.isFunction(entry)) {
+              data.data.labels.format[index] = formatting.f(entry);
+            }
+          });
+        }
+        else {
+          if (!_.isFunction(data.data.labels.format)) {
+            data.data.labels.format = formatting.f(data.data.labels.format);
+          }
+        }
       }
+
       if (data.axis) {
         if (data.axis.x && data.axis.x.tick && data.axis.x.tick.format) {
-          data.axis.x.tick.format = formatting.f(data.axis.x.tick.format);
+          if (!_.isFunction(data.axis.x.tick.format)) {
+            data.axis.x.tick.format = formatting.f(data.axis.x.tick.format);
+          }
         }
         if (data.axis.y && data.axis.y.tick && data.axis.y.tick.format) {
-          data.axis.y.tick.format = formatting.f(data.axis.y.tick.format);
+          if (!_.isFunction(data.axis.y.tick.format)) {
+            data.axis.y.tick.format = formatting.f(data.axis.y.tick.format);
+          }
         }
         if (data.axis.y2 && data.axis.y2.tick && data.axis.y2.tick.format) {
-          data.axis.y2.tick.format = formatting.f(data.axis.y2.tick.format);
+          if (!_.isFunction(data.axis.y2.tick.format)) {
+            data.axis.y2.tick.format = formatting.f(data.axis.y2.tick.format);
+          }
         }
       }
 
@@ -132,13 +150,14 @@ export class BaseGraph extends Component {
         if (data.axis && data.axis.x) {
           if (data.axis.x.type == 'indexed') {
             data.axis.x.padding = {
-              left: 0.1,
-              right: 0.1
+              left: 0.15,
+              right: 0.15
             };
-          } else {
+          }
+          else {
             data.axis.x.padding = {
-              left: -0.4,
-              right: -0.4
+              left: -0.35,
+              right: -0.35
             };
           }
         }
@@ -152,6 +171,18 @@ export class BaseGraph extends Component {
             right: 50
           };
         }
+      }
+      else if (data.data.type == 'bar' && data.axis && data.axis.x && data.axis.x.type == 'indexed') {
+        data.axis.x.padding = {
+          left: 0.4,
+          right: 0.4
+        };
+      }
+      else if (data.data.type == 'area-spline') {
+        data.axis.x.padding = {
+          left: 0.2,
+          right: 0.2
+        };
       }
 
       // Show grid lines by default
@@ -212,7 +243,6 @@ export class BaseGraph extends Component {
         this.polishChart(this);
       };
 
-
       if (this.props.small == 'true') {
         if (!data.data.size) {
           data.size = {
@@ -221,8 +251,6 @@ export class BaseGraph extends Component {
           };
         }
       }
-
-
 
       // Generate the graph!
       this.checkVerticalLabels();
@@ -469,14 +497,14 @@ export class BaseGraph extends Component {
     let data_labels_v = d3.selectAll(`.c-bar-grouped.c-bar-vertical #${object.id} .c3-chart-texts .c3-text`);
     data_labels_v.each(function() {
       // Add 14 pixels to the labels to move them into the stacked bars.
-      var y = parseFloat(d3.select(this).attr('y')) + 14;
+      var y = parseFloat(d3.select(this).attr('y')) + 13;
       d3.select(this).attr('y', y);
     });
     // Data display labels for horizontal bar charts.
     let data_labels_h = d3.selectAll(`.c-bar-grouped.c-bar-horizontal #${object.id} .c3-chart-texts .c3-text`);
     data_labels_h.each(function() {
       // Subtract 10 pixels to the labels to move them into the stacked bars.
-      var y = parseFloat(d3.select(this).attr('x')) - 10;
+      var y = parseFloat(d3.select(this).attr('x')) - 6;
       d3.select(this).attr('x', y);
     });
   }

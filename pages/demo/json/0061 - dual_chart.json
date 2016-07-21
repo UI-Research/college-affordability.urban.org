@@ -10,6 +10,9 @@
       ["Sixth", 0,4]
     ],
     "type": "bar",
+    "labels": {
+      "format": "dollar"
+    },
     "groups": [
       ["First", "Second", "Third", "Fourth", "Fifth", "Sixth"]
     ]

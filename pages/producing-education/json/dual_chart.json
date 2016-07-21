@@ -1,5 +1,5 @@
 {
-  "title": "Average published on-campus room and board at private nonprofit and public four-year colleges and universities, by Carnegie classification, 2015-16",
+  "title": "Average published oncampus room and board at private nonprofit and public fouryear colleges and universities, by Carnegie classification, 201516",
   "data": {
     "sets": {
       "Set 3": ["Dual Chart 1", [
@@ -21,9 +21,7 @@
     },
     "type": "bar",
     "labels": {
-      "format": {
-        "First": "dollar"
-      }
+      "format": "dollar"
     },
     "groups": [
       ["First", "Second", "Third", "Fourth", "Fifth", "Sixth"]
@@ -33,7 +31,7 @@
     "rotated": false,
     "x": {
       "type": "category",
-      "categories": ["Private nonprofit", "Private nonprofit research", "Private nonprofit masters", "Private nonprofit bachelors", "Public four-year", "Public research", "Public masters", "Public bachelors"]
+      "categories": ["Private nonprofit", "Private nonprofit research", "Private nonprofit masters", "Private nonprofit bachelors", "Public fouryear", "Public research", "Public masters", "Public bachelors"]
     },
     "y" : {
       "tick": {
@@ -43,6 +41,6 @@
   },
   "metadata": {
     "source": "IPEDS, Ma et al.",
-    "notes": "Based on 2014-15 published room and board from IPEDS and percentage increase from 2014-15 to 2015-16 from Ma et al, Trends in College Pricing 2015, The College Board."
+    "notes": "Based on 201415 published room and board from IPEDS and percentage increase from 201415 to 201516 from Ma et al, Trends in College Pricing 2015, The College Board."
   }
 }

@@ -150,37 +150,6 @@ let singlepage = (
       <h3>Code Sample</h3>
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0091 - toggles_dual.json'))}} />
     </Box>
-
-    <h3>Tables</h3>
-    <p>
-      <table>
-         <thead>
-          <tr>
-            <th>Table Heading</th>
-            <th>Table Heading</th>
-            <th>Table Heading</th>
-            <th>Table Heading</th>
-            <th>Table Heading</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Table cell data</td>
-            <td>Table cell data</td>
-            <td>Table cell data</td>
-            <td>Table cell data</td>
-            <td>Table cell data</td>
-          </tr>
-          <tr>
-            <td>Table cell data</td>
-            <td>Table cell data</td>
-            <td>Table cell data</td>
-            <td>Table cell data</td>
-            <td>Table cell data</td>
-          </tr>
-        </tbody>
-      </table>
-    </p>
   </div>
 );
 
