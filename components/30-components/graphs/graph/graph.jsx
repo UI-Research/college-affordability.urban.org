@@ -110,8 +110,12 @@ export class BaseGraph extends Component {
           _.each(c, (v) => {
             if (typeof v == 'number' && v < 0) {
               negative = true;
+              return false;
             }
-          })
+          });
+          if (negative) {
+            return false;
+          }
         });
 
         // If all values are positive, froce axis to start at 0 per requirement.
