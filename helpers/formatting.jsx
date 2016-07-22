@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 import _ from 'lodash';
 import d3 from 'd3';
 import ExecutionEnvironment from 'exenv';
+import util from 'util.jsx';
 
 module.exports = {
   f: (pattern, zero = false) => {
@@ -26,6 +27,11 @@ module.exports = {
 
     // Additional formatting logic.
     return (v, id, i, j) => {
+      // Hide data labels when window resizes to a smaller width.
+      if (window.innerWidth < util.breakpointWidth('mid') && !zero) {
+        return '';
+      }
+
       // If empty, don't bother showing the labels.
       // Prevents stacked charts from having values stack.
       if (v == 0 && !zero) {
