@@ -363,15 +363,14 @@ export class BaseGraph extends Component {
           data.axis.x.tick = {};
         }
         if (data.axis.x.type == 'category' && width <= util.breakpointWidth('mid')) {
-          data.axis.x.tick.rotate = 55;
-          data.axis.x.tick.multiline = false;
+          data.axis.x.tick.rotate = 20;
           if (data.axis.x.padding && data.axis.x.padding.right && data.axis.x.padding.right < 0) {
             data.axis.x.padding.right = 0;
           }
         }
         else {
           data.axis.x.tick.rotate = 0;
-          data.axis.x.tick.multiline = true;
+          data.axis.x.tick.multiline = false;
         }
       }
     }
@@ -381,15 +380,14 @@ export class BaseGraph extends Component {
           data.axis.y.tick = {};
         }
         if (width <= util.breakpointWidth('mid')) {
-          data.axis.y.tick.rotate = 55;
-          data.axis.y.tick.multiline = false;
+          data.axis.y.tick.rotate = 20;
           if (data.axis.y.padding && data.axis.y.padding.right && data.axis.y.padding.right < 0) {
             data.axis.y.padding.right = 0;
           }
         }
         else {
           data.axis.y.tick.rotate = 0;
-          data.axis.y.tick.multiline = true;
+          data.axis.y.tick.multiline = false;
         }
       }
     }
