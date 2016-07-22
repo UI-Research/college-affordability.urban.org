@@ -129,6 +129,20 @@ let singlepage = (
 &lt;/LazyLoad&gt;`}} />
     </Box>
 
+    <h3>Images</h3>
+    <p>Images are nothing different from what you're familiar with in HTML.  Feel free to add your images to your pages directories, and gulp will transfer them into the /img directory within your /dist artifacts directory.  In which case, you will need to refer to them using the base path: /img/my-image.png.</p>
+    <h4>Example</h4>
+    <img src="/img/female-student-using-laptop-for-taking-notes-to-study.jpg" />
+    <h4>Import</h4>
+    <Box>
+      <em>None needed</em>
+    </Box>
+    <h4>Markup</h4>
+    <Box>
+      <pre dangerouslySetInnerHTML={{__html:
+        `&lt;img src=&quot;/img/female-student-using-laptop-for-taking-notes-to-study.jpg&quot; /&gt;`}} />
+    </Box>
+
     <hr />
     <h2>Graphs</h2>
 
