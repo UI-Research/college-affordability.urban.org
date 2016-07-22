@@ -18,7 +18,6 @@ if (util.canUseDOM()) {
 export class BaseGraph extends Component {
   constructor(props) {
     super(props);
-
   }
   componentDidMount() {
     if (util.canUseDOM) {
@@ -123,7 +122,7 @@ export class BaseGraph extends Component {
           }
         });
 
-        // If all values are positive, froce axis to start at 0 per requirement.
+        // If all values are positive, force axis to start at 0 per requirement.
         if (!negative) {
           data.axis.y.min = 0;
           data.axis.y.padding.bottom = 0;
@@ -176,12 +175,19 @@ export class BaseGraph extends Component {
             }
           }
         }
-        // Don't need 'padding' for area, compensate for default.
+        // Adjust area graphs to have 'no' padding.
         else {
-          data.axis.x.padding = {
-            left: -0.4,
-            right: -0.3
-          };
+          // Small don't need adjustment.
+          if (this.props.small == 'true') {
+            data.axis.x.padding.right = 0;
+          }
+          // Normal size need a negative.
+          else {
+            data.axis.x.padding = {
+              left: -0.4,
+              right: -0.3
+            };
+          }
         }
       }
       else if (data.data.type == 'bar' && data.axis && data.axis.x && data.axis.x.type == 'indexed') {
@@ -356,9 +362,12 @@ export class BaseGraph extends Component {
         if (!data.axis.x.tick) {
           data.axis.x.tick = {};
         }
-        if (data.axis.x.type == 'category' && width <= util.breakpointWidth('large')) {
-          data.axis.x.tick.rotate = 45;
+        if (data.axis.x.type == 'category' && width <= util.breakpointWidth('mid')) {
+          data.axis.x.tick.rotate = 55;
           data.axis.x.tick.multiline = false;
+          if (data.axis.x.padding && data.axis.x.padding.right && data.axis.x.padding.right < 0) {
+            data.axis.x.padding.right = 0;
+          }
         }
         else {
           data.axis.x.tick.rotate = 0;
@@ -371,9 +380,12 @@ export class BaseGraph extends Component {
         if (!data.axis.y.tick) {
           data.axis.y.tick = {};
         }
-        if (width <= util.breakpointWidth('large')) {
-          data.axis.y.tick.rotate = 45;
+        if (width <= util.breakpointWidth('mid')) {
+          data.axis.y.tick.rotate = 55;
           data.axis.y.tick.multiline = false;
+          if (data.axis.y.padding && data.axis.y.padding.right && data.axis.y.padding.right < 0) {
+            data.axis.y.padding.right = 0;
+          }
         }
         else {
           data.axis.y.tick.rotate = 0;
