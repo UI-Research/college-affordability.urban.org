@@ -9,7 +9,7 @@
     "labels": {
       "format": {
         "Per full-time first-time undergraduate": "dollar",
-        "Per recipient": "$,.2f"
+        "Per recipient": "dollar"
       }
     }
   },
@@ -22,7 +22,7 @@
     "y" : {
       "label": "Y label",
       "tick": {
-        "format": "$,.2f"
+        "format": "dollar"
       }
     }
   },
