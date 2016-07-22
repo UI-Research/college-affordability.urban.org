@@ -4,7 +4,7 @@ import React from 'react';
 import Template from '20-templates/default/default.jsx';
 import Graph from '30-components/graphs/graph/graph.jsx';
 import Multiples from '30-components/graphs/multiples/multiples.jsx';
-const Box = require('30-components/box/box/box.jsx');
+import Box from '30-components/box/box/box.jsx';
 import SinglePage from '30-components/singlepage/singlepage.jsx';
 import jsonMarkup from 'json-markup';
 
@@ -13,6 +13,60 @@ import util from 'util.jsx';
 let singlepage = (
   <div>
     <h1>Demo JSONs Page</h1>
+
+    <h2>Components</h2>
+    <h3>General</h3>
+    <p><em>For more information, refer to EDITING.md within this site's repository.</em>  This system is comprised of a collection of react components that is meant to simplify your editing experience when creating new pages.  They are all contained within the <strong>components/</strong> directory in the project.</p>
+    <p>You may not have to tap into the components directory unless you intend on creating your own react component.  This can be achieved by referencing an existing component and referring to the existing react documentation for guidelines and best practices.  <a href="https://facebook.github.io/react/docs/getting-started.html">React - Getting Started</a></p>
+
+
+    <h3>Basics</h3>
+    <p>Including a component is easy!  It essentially requires a two step process (for performance reasons), but you should be able to reference this page for easy code snippets.  Essentially:</p>
+    <ol>
+      <li>Include the <strong>import</strong> statement at the top of the file (with the other import statements).</li>
+      <li>Include the tag within the JSX code below.</li>
+    </ol>
+    <p>In most cases, you'll mostly do two, but if a page fails to compile, always make sure it's declared at the top of the page first.  <em>THIS DOES NOT APPLY TO HTML5 DOM ELEMENTS.  THEY ARE ACCEPTED IN CORE AND NO IMPORT STATEMENT IS NEEDED (e.g. &lt;article /&gt;, &lt;footer /&gt;, &lt;div /&gt;).</em></p>
+    <p>The following examples will include both steps to including the snippet into your payload.  As long as you follow this pattern, reuseable components should integrate seemlessly into your pages.</p>
+
+    <h3>Box(es)</h3>
+    <p>Boxes are expandable blocks that contain miscellaneous information readers can expand if they have increased interested on a specific topic.  They show the first 4-5 lines for the purpose of divulging a synopsis of the content with a convenient collapse/expand toggle.</p>
+    <p>Boxes can potentially embed other components as well!  Try embedding a &lt;Graph /&gt; tag inside one!</p>
+    <h4>Import</h4>
+    <Box>
+      <pre dangerouslySetInnerHTML={{__html:
+        `import Box from '30-components/box/box/box.jsx';`}} />
+    </Box>
+
+    <h4>Markup</h4>
+    <Box>
+      <pre dangerouslySetInnerHTML={{__html:
+        `&lt;Box&gt;
+  Your content here...
+&lt;/Box&gt;`}} />
+    </Box>
+
+    <h3>Action Button(s)</h3>
+    <p>Action buttons exist to provide a large, haptic button for users to interact with when they want to access another page.  They are commonly used in &lt;Graph /&gt;, but you can use it on your own content, too.  These are simple &lt;a&gt; tags, so all attributes related to creating a link still applies.</p>
+    <h4>Attributes</h4>
+    <ul>
+      <li>title: Label used on button</li>
+      <li>href: URL where button will lead to</li>
+      <li>disable: Whether to show the button as disabled and unclickable.</li>
+    </ul>
+    <h4>Import</h4>
+    <Box>
+      <pre dangerouslySetInnerHTML={{__html:
+        `import ActionButton from '30-components/basic/action_button/action_button.jsx';`}} />
+    </Box>
+
+    <h4>Markup</h4>
+    <Box>
+      <pre dangerouslySetInnerHTML={{__html:
+        `&lt;ActionButton title=&apos;Save Image&apos; href="#" disable={img_disable} /&gt;`}} />
+    </Box>
+
+    <hr />
     <h2>Graphs</h2>
 
     <h3>General</h3>
