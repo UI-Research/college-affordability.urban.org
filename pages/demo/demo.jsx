@@ -184,6 +184,13 @@ let singlepage = (
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0020 - multiple_line.json'))}} />
     </Box>
 
+    <p>If your graph is using a consistent pattern, you can utilize C3's culling configuration, which allows you to kill certain intervals of labels.  By default, C3 does its due diligence to do this for you.  However, for more fine control over this, refer to this link <a href="http://c3js.org/samples/axes_x_tick_culling.html">Reference: X Axis Tick Culling</a></p>
+    <Graph file={require('./json/0015 - single_line_cull.json')} />
+    <Box>
+      <h3>Code Sample</h3>
+      <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0015 - single_line_cull.json'))}} />
+    </Box>
+
     <h3>Bar Charts</h3>
     <p>Bar graphs are a variant of line graphs with additional configuration considerations.  To simply enable them, you just need to specify that you want to present the data as <strong>bars</strong> within <strong>data.type</strong>.  <a href="http://c3js.org/samples/chart_bar.html">Reference: Bar Chart</a></p>
 
