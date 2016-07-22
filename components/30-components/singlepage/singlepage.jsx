@@ -24,7 +24,7 @@ export default class SinglePage extends Component {
     };
   }
   calculateElevatorPadding() {
-    // Use the header's current height for the padding. 
+    // Use the header's current height for the padding.
     let headerHeight = document.querySelector('.header-site').offsetHeight + 5;
     // Adjust padding if the header changes height.
     if (window.innerWidth > util.breakpointWidth('large')) {
@@ -112,6 +112,13 @@ export default class SinglePage extends Component {
         }
         previousElement = element;
       });
+
+      // Detect where active highlighter is...
+      let dom = document.querySelectorAll('a.active')[0];
+      // If it exists, use ID in eleemnt to populate URL.  Otherwise, leave it blank.
+      let path = (dom ? dom.getAttribute('href') : '');
+      path = (scrollTop > 50 ? path : '#/');
+      history.pushState(null, null, path);
     }
   }
   setActiveSection(element) {
