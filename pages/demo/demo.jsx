@@ -154,7 +154,7 @@ let singlepage = (
     </Box>
 
     <h3>Line Charts</h3>
-    <p>Line charts are the default graph types used by C3.  You generally don't have to specify the graph type in this case (though this example specifies it anyways for demonstration purposes).</p>
+    <p>Line charts are the default graph types used by C3.  You generally don't have to specify the graph type in this case (though this example specifies it anyways for demonstration purposes).  <a href="http://c3js.org/samples/simple_multiple.html">Reference: Line Chart</a></p>
     <p>Data gets populated in the <strong>data</strong> array.  For this project, we expect the data points to be encapsulated in the <strong>columns</strong> array like in the code sample below.  For most single and multiple sets, the format will generally be the same despite the graph type we choose.  Note that the first entry in the array will always be a unique string that will be used as a reference for other parts of the JSON file (e.g. formatting, grouping).</p>
     <p>The <strong>axis</strong> features some basic options you can utilize on the charts for both axes.  The x axis, in this example, features a "type" field which dictates the type of labels we want to use.  They are typically classified as "indexed", "category", and "timeseries".  You will mostly use "category" to define your own custom labels.  The other two options, "indexed" and "timeseries", are used if there are basic patterns with numbers or time respectively.  <a href="http://c3js.org/reference.html#axis-x-type">Reference: axis-x-type</a></p>
     <p>The JSON file format introduces a selection on fields that are non-native to C3 for the purposes of embedding them into this project.  They are the <strong>title</strong> field and <strong>metadata</strong> array.  The two pieces of data are set by the component separate from the C3 diagram for convenience and consistency.</p>
@@ -185,7 +185,7 @@ let singlepage = (
     </Box>
 
     <h3>Bar Charts</h3>
-    <p>Bar graphs are a variant of line graphs with additional configuration considerations.  To simply enable them, you just need to specify that you want to present the data as <strong>bars</strong> within <strong>data.type</strong>.</p>
+    <p>Bar graphs are a variant of line graphs with additional configuration considerations.  To simply enable them, you just need to specify that you want to present the data as <strong>bars</strong> within <strong>data.type</strong>.  <a href="http://c3js.org/samples/chart_bar.html">Reference: Bar Chart</a></p>
 
     <Graph file={require('./json/0030 - single_bar.json')} />
     <Box>
@@ -201,7 +201,7 @@ let singlepage = (
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0030 - single_bar.json'))}} />
     </Box>
 
-    <p>Rotating the bar chart is easily achieveable by incorporating a new JSON attribute <strong>rotated</strong> in the <strong>axis</strong> array.</p>
+    <p>Rotating the bar chart is easily achieveable by incorporating a new JSON attribute <strong>rotated</strong> in the <strong>axis</strong> array.  <a href="http://c3js.org/samples/axes_rotated.html">Reference: Rotated Axis</a></p>
     <Graph file={require('./json/0032 - single_bar_horizontal.json')} />
     <Box>
       <h3>Code Sample</h3>

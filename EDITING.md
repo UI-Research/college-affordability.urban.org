@@ -4,6 +4,8 @@
 
 The site is made up of pages and components.  As an editor, you will mostly edit files within the /pages directory and point to elements within components to simplify certain content entry.
 
+Note: After running *gulp*, check out /demo from the static directory for visual examples of components you can use!
+
 ### Creating a page ###
 
 #### Site structure ####
