@@ -65,7 +65,7 @@ export class BaseGraph extends Component {
         }
         if (data.axis.y && data.axis.y.tick && data.axis.y.tick.format) {
           if (!_.isFunction(data.axis.y.tick.format)) {
-            data.axis.y.tick.format = formatting.f(data.axis.y.tick.format, true,);
+            data.axis.y.tick.format = formatting.f(data.axis.y.tick.format, true);
           }
         }
         if (data.axis.y2 && data.axis.y2.tick && data.axis.y2.tick.format) {
