@@ -260,6 +260,9 @@ export class BaseGraph extends Component {
           };
         }
 
+        // Reset height of x-axis declared previously.
+        data.axis.x.height = 10;
+
         // Hide points, especially on area graphs.
         if (!data.point) {
           data.point = {};
@@ -345,9 +348,6 @@ export class BaseGraph extends Component {
       .attr('download', `${util.machineName(object.props.file.title)}.csv`);
   }
   checkVerticalLabels() {
-    // TODO: Remove following line to enable vertical labels.
-    if (1 === 1) return; // eslint-disable-line
-
     // Make bottom axis labels vertical for tablet/mobile.
     const width = window.innerWidth;
     let data = this.props.file;
@@ -356,8 +356,8 @@ export class BaseGraph extends Component {
         if (!data.axis.x.tick) {
           data.axis.x.tick = {};
         }
-        if (width <= util.breakpointWidth('large')) {
-          data.axis.x.tick.rotate = 90;
+        if (data.axis.x.type == 'category' && width <= util.breakpointWidth('large')) {
+          data.axis.x.tick.rotate = 45;
           data.axis.x.tick.multiline = false;
         }
         else {
@@ -372,7 +372,7 @@ export class BaseGraph extends Component {
           data.axis.y.tick = {};
         }
         if (width <= util.breakpointWidth('large')) {
-          data.axis.y.tick.rotate = 90;
+          data.axis.y.tick.rotate = 45;
           data.axis.y.tick.multiline = false;
         }
         else {

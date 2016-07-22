@@ -52,7 +52,7 @@
       height: 347px;
     }
   }
-  
+
   &.has-legend {
     .c-graph__wrapper {
       height: 402px;
@@ -216,7 +216,7 @@
 }
 
 /* Move label in stacked area chart under bar, change colors */
-.c-bar.c-bar-vertical.c-bar-grouped {  
+.c-bar.c-bar-vertical.c-bar-grouped {
   .c-graph__legend {
     > svg {
       height: 40px;
