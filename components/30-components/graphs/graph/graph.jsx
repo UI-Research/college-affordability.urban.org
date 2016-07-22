@@ -102,7 +102,7 @@ export class BaseGraph extends Component {
       if (data.axis && data.axis.y && !data.axis.y.padding) {
         data.axis.y.padding = {
           top: 50,
-          bottom: 10
+          bottom: 50
         };
 
         let negative = false;

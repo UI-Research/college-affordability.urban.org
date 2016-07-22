@@ -1,0 +1,31 @@
+{
+  "title": "Single Bar Chart with Negative Values Example",
+  "data": {
+    "columns": [
+      ["First", 1,2,-3,4,5,6,-7,8]
+    ],
+    "labels": {
+      "format": {
+        "First": "dollar"
+      }
+    },
+    "type": "bar"
+  },
+  "axis": {
+    "x": {
+      "label": "X Label",
+      "type": "category",
+      "categories": ["First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth"]
+    },
+    "y" : {
+      "label": "Y Label",
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Source",
+    "notes": "Lorem Ipsum."
+  }
+}
