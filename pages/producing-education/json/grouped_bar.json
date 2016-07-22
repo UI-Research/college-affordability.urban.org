@@ -1,9 +1,5 @@
 {
   "title": "Average Institutional Grant Aid per Student and per Recipient, Full-Time First-Year Students, 2012-14",
-  "padding": {
-    "left": 70,
-    "bottom": 60
-  },
   "data": {
     "columns": [
       ["Per full-time first-time undergraduate", 3600,2700,3300,1700,14600,16100,13400,14500,300,400],

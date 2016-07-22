@@ -113,7 +113,6 @@ export class BaseGraph extends Component {
         };
       }
 
-
       // Relocate legend to top of the graph.
       if (!data.legend) {
         data.legend = {
@@ -135,31 +134,41 @@ export class BaseGraph extends Component {
         // Line and area graphs should not show data points.
         data.data.labels = false;
 
-        // Line and area graphs must flush to left and right.
-        if (data.axis && data.axis.x) {
-          if (data.axis.x.type == 'indexed') {
-            data.axis.x.padding = {
-              left: 0.15,
-              right: 0.15
-            };
+        // Line and area graphs must flush to left and right,
+        // but show start/end points.
+        if (data.data.type == 'line') {
+          if (data.axis && data.axis.x) {
+            if (data.axis.x.type == 'indexed') {
+              data.axis.x.padding = {
+                left: 0.15,
+                right: 0.2
+              };
+            }
+            else {
+              data.axis.x.padding = {
+                left: -0.35,
+                right: -0.3
+              };
+            }
           }
-          else {
-            data.axis.x.padding = {
-              left: -0.35,
-              right: -0.35
-            };
-          }
+        }
+        // Don't need 'padding' for area, compensate for default.
+        else {
+          data.axis.x.padding = {
+            left: -0.4,
+            right: -0.3
+          };
         }
       }
       else if (data.data.type == 'bar' && data.axis && data.axis.x && data.axis.x.type == 'indexed') {
         data.axis.x.padding = {
-          left: 0.4,
+          left: 0.35,
           right: 0.4
         };
       }
       else if (data.data.type == 'area-spline') {
         data.axis.x.padding = {
-          left: 0.2,
+          left: 0.15,
           right: 0.2
         };
       }
@@ -585,6 +594,14 @@ export default class Graph extends Component {
     // If it's a grouped bar chart, flag it as such (so we can move the labels)
     if (this.props.file.data.groups) {
       base_class += ` c-${this.props.file.data.type}-grouped`;
+    }
+    
+    if ((this.props.file.data.columns && this.props.file.data.columns.length > 1) || this.props.file.data.groups) {
+      base_class += ' has-legend';
+    }
+    if ((this.props.file.data.sets)) {
+      let max_set_data = 0;
+      base_class += ' has-toggle';
     }
 
     // If it's horizontal, drop that in as the classname.

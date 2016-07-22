@@ -1,8 +1,5 @@
 {
   "title": "Single Data Set Toggle Example",
-  "padding": {
-    "left": 65
-  },
   "data": {
     "sets": {
       "Set 1": [
