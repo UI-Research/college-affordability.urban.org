@@ -23,7 +23,7 @@ let specifications = {
       <div className="grid grid--auto-height">
         <div className="col col--1-4">
           <div className="">
-            <div className="section-landing__badge section-landing__badge--yellow" style={{'backgroundImage':'url(/img/defining-higher-education.svg)'}}>
+            <div className="section-landing__badge section-landing__badge--gray" style={{'backgroundImage':'url(/img/paying-for-college.svg)'}}>
             </div>
           </div>
         </div>
