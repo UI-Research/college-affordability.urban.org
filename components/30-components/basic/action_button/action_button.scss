@@ -5,9 +5,9 @@
     width: auto;
     margin-right: 1rem;
   }
+}
 
-  .disabled {
-    opacity: 0.3;
-    pointer-events: none;
-  }
+a.btn.disabled {
+  opacity: 0.3;
+  pointer-events: none;
 }

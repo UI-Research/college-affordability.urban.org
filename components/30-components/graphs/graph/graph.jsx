@@ -5,7 +5,7 @@ import d3 from 'd3';
 import _ from 'lodash';
 import Actions from '30-components/basic/actions/actions.jsx';
 import ActionButton from '30-components/basic/action_button/action_button.jsx';
-const LazyLoad = require('30-components/basic/lazyload/lazyload.jsx');
+import LazyLoad from '30-components/basic/lazyload/lazyload.jsx';
 
 import util from 'util.jsx';
 import formatting from 'formatting.jsx';

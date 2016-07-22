@@ -5,6 +5,9 @@ import Template from '20-templates/default/default.jsx';
 import Graph from '30-components/graphs/graph/graph.jsx';
 import Multiples from '30-components/graphs/multiples/multiples.jsx';
 import Box from '30-components/box/box/box.jsx';
+import ActionButton from '30-components/basic/action_button/action_button.jsx';
+import Alerts, { Alert } from '30-components/basic/alerts/alerts.jsx';
+import LazyLoad from '30-components/basic/lazyload/lazyload.jsx';
 import SinglePage from '30-components/singlepage/singlepage.jsx';
 import jsonMarkup from 'json-markup';
 
@@ -37,7 +40,6 @@ let singlepage = (
       <pre dangerouslySetInnerHTML={{__html:
         `import Box from '30-components/box/box/box.jsx';`}} />
     </Box>
-
     <h4>Markup</h4>
     <Box>
       <pre dangerouslySetInnerHTML={{__html:
@@ -54,16 +56,77 @@ let singlepage = (
       <li>href: URL where button will lead to</li>
       <li>disable: Whether to show the button as disabled and unclickable.</li>
     </ul>
+    <h4>Example</h4>
+    <ActionButton title='Disabled Button' href="#" disable="true" />
+    <br/>
+    <ActionButton title='Working Button' href='#' />
     <h4>Import</h4>
     <Box>
       <pre dangerouslySetInnerHTML={{__html:
         `import ActionButton from '30-components/basic/action_button/action_button.jsx';`}} />
     </Box>
-
     <h4>Markup</h4>
     <Box>
       <pre dangerouslySetInnerHTML={{__html:
-        `&lt;ActionButton title=&apos;Save Image&apos; href="#" disable={img_disable} /&gt;`}} />
+        `&lt;ActionButton title=&apos;Disabled Button&apos; href=&quot;#&quot; disable=&quot;true&quot; /&gt;
+&lt;br/&gt;
+&lt;ActionButton title=&apos;Working Button&apos; href=&apos;#&apos; /&gt;`}} />
+    </Box>
+
+    <h3>Alerts</h3>
+    <p>Alerts are notification messages that intend to stand out to inform the user of time-sensitive information.  They are comprised of a collection of components you can use to create standardized-styled items for the users to consume.</p>
+    <p>This component requires two items to be imported using the following convenient statement.</p>
+    <h4>Example</h4>
+    <Alerts>
+      <Alert>
+        <p><strong>07/05/2016</strong> :: Example text can be a combination of <a href="#">site links</a> and a description of changes.</p>
+      </Alert>
+      <Alert>
+        <p><strong>06/30/2016</strong> :: Suspendisse iaculis, tortor id convallis eleifend, magna magna interdum augue, ac pulvinar elit purus.</p>
+      </Alert>
+      <Alert>
+        <p><strong>06/18/2016</strong> :: Donec a hendrerit dolor. In hac habitasse platea dictumst. Pellentesque ut pretium ante, fringilla cursus nulla.</p>
+      </Alert>
+    </Alerts>
+    <h4>Import</h4>
+    <Box>
+      <pre dangerouslySetInnerHTML={{__html:
+        `import Alerts, { Alert } from '30-components/basic/alerts/alerts.jsx';`}} />
+    </Box>
+    <h4>Markup</h4>
+    <Box>
+      <pre dangerouslySetInnerHTML={{__html:
+        `&lt;Alerts&gt;
+  &lt;Alert&gt;
+    &lt;p&gt;&lt;strong&gt;07/05/2016&lt;/strong&gt; :: Example text can be a combination of &lt;a href=&quot;#&quot;&gt;site links&lt;/a&gt; and a description of changes.&lt;/p&gt;
+  &lt;/Alert&gt;
+  &lt;Alert&gt;
+    &lt;p&gt;&lt;strong&gt;06/30/2016&lt;/strong&gt; :: Suspendisse iaculis, tortor id convallis eleifend, magna magna interdum augue, ac pulvinar elit purus.&lt;/p&gt;
+  &lt;/Alert&gt;
+  &lt;Alert&gt;
+    &lt;p&gt;&lt;strong&gt;06/18/2016&lt;/strong&gt; :: Donec a hendrerit dolor. In hac habitasse platea dictumst. Pellentesque ut pretium ante, fringilla cursus nulla.&lt;/p&gt;
+  &lt;/Alert&gt;
+&lt;/Alerts&gt;`}} />
+    </Box>
+
+    <h3>Lazy Loading</h3>
+    <p>This component serves no content-related purposes besides delaying loading of heavy content until the user scrolls to that part of the page.  At that point, anything inside the component will fade into view (while loading on the spot).</p>
+    <h4>Attributes</h4>
+    <h4>Example</h4>
+    <LazyLoad>
+      <img src="/img/female-student-using-laptop-for-taking-notes-to-study.jpg" />
+    </LazyLoad>
+    <h4>Import</h4>
+    <Box>
+      <pre dangerouslySetInnerHTML={{__html:
+        `import LazyLoad from '30-components/basic/lazyload/lazyload.jsx';`}} />
+    </Box>
+    <h4>Markup</h4>
+    <Box>
+      <pre dangerouslySetInnerHTML={{__html:
+        `&lt;LazyLoad&gt;
+  Your content here...
+&lt;/LazyLoad&gt;`}} />
     </Box>
 
     <hr />
