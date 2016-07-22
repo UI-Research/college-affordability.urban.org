@@ -62,6 +62,8 @@ let singlepage = (
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0030 - single_bar.json'))}} />
     </Box>
 
+    <p>Again, here's an example of a bar chart with <strong>negative values</strong>.</p>
+
     <Graph file={require('./json/0031 - single_bar_negative.json')} />
     <Box>
       <h3>Code Sample</h3>
