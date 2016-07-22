@@ -7,7 +7,7 @@ import d3 from 'd3';
 import ExecutionEnvironment from 'exenv';
 
 module.exports = {
-  f: (pattern) => {
+  f: (pattern, zero = false) => {
     let alt;
     switch(pattern) {
       case 'dollar':
@@ -28,7 +28,7 @@ module.exports = {
     return (v, id, i, j) => {
       // If empty, don't bother showing the labels.
       // Prevents stacked charts from having values stack.
-      if (v == 0) {
+      if (v == 0 && !zero) {
         return '';
       }
 
