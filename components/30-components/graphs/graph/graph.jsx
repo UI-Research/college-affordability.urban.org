@@ -102,9 +102,22 @@ export class BaseGraph extends Component {
       if (data.axis && data.axis.y && !data.axis.y.padding) {
         data.axis.y.padding = {
           top: 50,
-          bottom: 1
+          bottom: 10
         };
-        data.axis.y.min = 0;
+
+        let negative = false;
+        _.each(data.data.columns, (c) => {
+          _.each(c, (v) => {
+            if (typeof v == 'number' && v < 0) {
+              negative = true;
+            }
+          })
+        });
+
+        // If all values are positive, froce axis to start at 0 per requirement.
+        if (!negative) {
+          data.axis.y.min = 0;
+        }
       }
 
       if (data.axis && data.axis.x && !data.axis.x.padding) {
