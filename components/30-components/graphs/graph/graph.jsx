@@ -56,20 +56,21 @@ export class BaseGraph extends Component {
         }
       }
 
+      // Apply formatting functions to axis labels.
       if (data.axis) {
         if (data.axis.x && data.axis.x.tick && data.axis.x.tick.format) {
           if (!_.isFunction(data.axis.x.tick.format)) {
-            data.axis.x.tick.format = formatting.f(data.axis.x.tick.format);
+            data.axis.x.tick.format = formatting.f(data.axis.x.tick.format, true);
           }
         }
         if (data.axis.y && data.axis.y.tick && data.axis.y.tick.format) {
           if (!_.isFunction(data.axis.y.tick.format)) {
-            data.axis.y.tick.format = formatting.f(data.axis.y.tick.format);
+            data.axis.y.tick.format = formatting.f(data.axis.y.tick.format, true);
           }
         }
         if (data.axis.y2 && data.axis.y2.tick && data.axis.y2.tick.format) {
           if (!_.isFunction(data.axis.y2.tick.format)) {
-            data.axis.y2.tick.format = formatting.f(data.axis.y2.tick.format);
+            data.axis.y2.tick.format = formatting.f(data.axis.y2.tick.format, true);
           }
         }
       }
@@ -101,9 +102,27 @@ export class BaseGraph extends Component {
       if (data.axis && data.axis.y && !data.axis.y.padding) {
         data.axis.y.padding = {
           top: 50,
-          bottom: 1
+          bottom: 50
         };
-        data.axis.y.min = 0;
+
+        let negative = false;
+        _.each(data.data.columns, (c) => {
+          _.each(c, (v) => {
+            if (typeof v == 'number' && v < 0) {
+              negative = true;
+              return false;
+            }
+          });
+          if (negative) {
+            return false;
+          }
+        });
+
+        // If all values are positive, froce axis to start at 0 per requirement.
+        if (!negative) {
+          data.axis.y.min = 0;
+          data.axis.y.padding.bottom = 0;
+        }
       }
 
       if (data.axis && data.axis.x && !data.axis.x.padding) {
@@ -595,7 +614,7 @@ export default class Graph extends Component {
     if (this.props.file.data.groups) {
       base_class += ` c-${this.props.file.data.type}-grouped`;
     }
-    
+
     if ((this.props.file.data.columns && this.props.file.data.columns.length > 1) || this.props.file.data.groups) {
       base_class += ' has-legend';
     }

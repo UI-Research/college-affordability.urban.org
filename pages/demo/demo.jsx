@@ -34,6 +34,14 @@ let singlepage = (
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0010 - single_line.json'))}} />
     </Box>
 
+    <p><strong>Negative values</strong> are supported by default by the component.  It should attempt to automatically detect if they exist.  If so, the rule regarding the y axis minimum being set at 0 will be overridden, and the y axis minimum will be automatically determined by C3.  (In general, there's no need to do anything on your end).</p>
+
+    <Graph file={require('./json/0011 - single_line_negative.json')} />
+    <Box>
+      <h3>Code Sample</h3>
+      <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0010 - single_line.json'))}} />
+    </Box>
+
     <p>You can incorporate multiple data sets by adding additional arrays to the <strong>columns</strong> array.  Use the same format, and separate each dataset with a comma.</p>
     <p>The <strong>data</strong> array includes a <strong>labels</strong> array which dictates the formatting style we want to use on the values of the dataset.  Currently, we default to using the d3.format() function as it utilizes a stringf library to take care of all of our use cases (at the time).</p>
     <p>The <strong>labels</strong> array also supports convenient aliases from the component layer.  Essentially, typing in either <strong>dollar</strong>, <strong>percent</strong>, or <strong>number</strong> will rewrite the values to the correct format (thousandth separator, dollar signs, percents, more) based on the Urban guidelines.  <em>More can be supported simply by adding a new case within <strong>/helpers/formatting.jsx</strong> within the code repository.</em></p>
@@ -47,7 +55,16 @@ let singlepage = (
 
     <h3>Bar Charts</h3>
     <p>Bar graphs are a variant of line graphs with additional configuration considerations.  To simply enable them, you just need to specify that you want to present the data as <strong>bars</strong> within <strong>data.type</strong>.</p>
+
     <Graph file={require('./json/0030 - single_bar.json')} />
+    <Box>
+      <h3>Code Sample</h3>
+      <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0030 - single_bar.json'))}} />
+    </Box>
+
+    <p>Again, here's an example of a bar chart with <strong>negative values</strong>.</p>
+
+    <Graph file={require('./json/0031 - single_bar_negative.json')} />
     <Box>
       <h3>Code Sample</h3>
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0030 - single_bar.json'))}} />
