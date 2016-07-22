@@ -318,7 +318,7 @@ table {
 }
 
 .section-landing__badge {
-  background-color: $color--gray-6;
+  background-color: $color--gray-4;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100px;
@@ -344,3 +344,8 @@ table {
 .section-landing__badge--blue {
   background-color: $color--blue;
 }
+
+.section-landing__badge--gray {
+  background-color: $color--gray-4;
+}
+
