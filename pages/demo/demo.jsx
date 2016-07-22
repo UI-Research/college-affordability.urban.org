@@ -143,6 +143,16 @@ let singlepage = (
         `&lt;img src=&quot;/img/female-student-using-laptop-for-taking-notes-to-study.jpg&quot; /&gt;`}} />
     </Box>
 
+
+    <h3>Single Page</h3>
+    <p><em>This page is an example of a &lt;SinglePage /&gt; component.</em>  Essentially, start with <strong>__TEMPLATE__</strong> as your starting point within the <strong>/pages</strong> directory.  That scaffolds this element out right away.  There should be comments for you to follow to smoothly start a new page.</p>
+    <p>Some notes:</p>
+    <ul>
+      <li>&lt;SinglePage /&gt; requires a large JSX object.  It will do the work on populating the menu for you as long as you utilize &lt;h2&gt; and &lt;h3&gt; tags properly.  If you don't want the headers to show in the menu, utilize anything beyond &lt;h4&gt;.</li>
+      <li>This component will automatically track the user's progress on the page by updating the breadcrumb, the highlighting of the menu item and their sub categories, and the URL.</li>
+      <li>The menu and content will adapt responsively.  The menu will turn into a fixed widget on the screen after it gets to a smaller size</li>
+    </ul>
+
     <hr />
     <h2>Graphs</h2>
 
