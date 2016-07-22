@@ -24,7 +24,7 @@ export default class SinglePage extends Component {
     };
   }
   calculateElevatorPadding() {
-    // Use the header's current height for the padding. 
+    // Use the header's current height for the padding.
     let headerHeight = document.querySelector('.header-site').offsetHeight + 5;
     // Adjust padding if the header changes height.
     if (window.innerWidth > util.breakpointWidth('large')) {
@@ -112,6 +112,13 @@ export default class SinglePage extends Component {
         }
         previousElement = element;
       });
+
+      // Populates the hash in the URL with the ID of the element the user
+      // is currently on.
+      let dom = document.querySelector('.nav-anchor a.active');
+      let path = (dom ? dom.getAttribute('href') : '');
+      path = (scrollTop > 50 ? path : '#/');
+      history.pushState(null, null, path);
     }
   }
   setActiveSection(element) {
