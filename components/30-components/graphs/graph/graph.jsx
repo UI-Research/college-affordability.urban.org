@@ -92,7 +92,6 @@ export class BaseGraph extends Component {
         };
       }
       if (data.axis && data.axis.x && data.axis.x.label && typeof data.axis.x.label === 'string') {
-
         data.axis.x.label = {
           text: data.axis.x.label,
           position: 'outer-center'
