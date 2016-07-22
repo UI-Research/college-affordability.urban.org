@@ -99,7 +99,7 @@ export class BaseGraph extends Component {
       }
 
       // Increase height to prevent x label from overlapping labels
-      if (data.axis && data.axis.rotated && data.axis.x && !data.axis.x.height) {
+      if (data.axis && !data.axis.rotated && data.axis.x && !data.axis.x.height) {
         data.axis.x.height = 80;
       }
 
