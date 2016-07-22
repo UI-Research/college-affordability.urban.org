@@ -308,26 +308,27 @@ export default class SinglePage extends Component {
       // If a hash exists on payload, automatically animate to that point on the page.
       if (window.location.hash) {
         let initialID = _.replace(window.location.hash, '/', '');
-
-        // Determine what the state of the breadcrumb should be.
-        _.each(menuLinks, function(sectionName, index) {
-          if (initialID === index) {
-            breadcrumbTitle = sectionName;
-          }
-        });
-
-        // Scroll to the specific point on the page based on URL hash parameters.
-        let elevate = () => {
-          new Elevator({
-            targetElement: document.querySelector(`${initialID}`),
-            verticalPadding: this.calculateElevatorPadding(), // pixels.
-            duration: 1500 // milliseconds
-          }).elevate();
-        };
-
-        window.addEventListener('load', function () {
-          setTimeout(elevate, 750);
-        });
+        if (initialID.length > 1) {
+          // Determine what the state of the breadcrumb should be.
+          _.each(menuLinks, function(sectionName, index) {
+            if (initialID === index) {
+              breadcrumbTitle = sectionName;
+            }
+          });
+  
+          // Scroll to the specific point on the page based on URL hash parameters.
+          let elevate = () => {
+            new Elevator({
+              targetElement: document.querySelector(`${initialID}`),
+              verticalPadding: this.calculateElevatorPadding(), // pixels.
+              duration: 1500 // milliseconds
+            }).elevate();
+          };
+  
+          window.addEventListener('load', function () {
+            setTimeout(elevate, 750);
+          });
+        }
       }
 
       window.addEventListener('resize', this.handleResize.bind(this));
