@@ -92,10 +92,16 @@ export class BaseGraph extends Component {
         };
       }
       if (data.axis && data.axis.x && data.axis.x.label && typeof data.axis.x.label === 'string') {
+
         data.axis.x.label = {
           text: data.axis.x.label,
           position: 'outer-center'
         };
+      }
+
+      // Increase height to prevent x label from overlapping labels
+      if (data.axis && data.axis.rotated && data.axis.x && !data.axis.x.height) {
+        data.axis.x.height = 80;
       }
 
       // Always have the y axis start at 0
@@ -185,7 +191,7 @@ export class BaseGraph extends Component {
           right: 0.4
         };
       }
-      else if (data.data.type == 'area-spline') {
+      else if (data.data.type == 'area') {
         data.axis.x.padding = {
           left: 0.15,
           right: 0.2
