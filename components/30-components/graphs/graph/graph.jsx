@@ -190,12 +190,6 @@ export class BaseGraph extends Component {
           right: 0.4
         };
       }
-      else if (data.data.type == 'area') {
-        data.axis.x.padding = {
-          left: 0.15,
-          right: 0.2
-        };
-      }
 
       // Show grid lines by default
       if (!data.grid) {
