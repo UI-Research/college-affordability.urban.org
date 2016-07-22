@@ -320,8 +320,8 @@ let singlepage = (
 
 let specifications = {
   'name': 'demo',
-  'title': 'Demo JSONS',
-  'content': <SinglePage sectionTitle="Demo JSONs" content={singlepage} />
+  'title': 'Demo Page',
+  'content': <SinglePage sectionTitle="Demo Page" content={singlepage} />
 };
 
 const Demo = React.createClass({
