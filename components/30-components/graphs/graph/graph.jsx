@@ -117,6 +117,7 @@ export class BaseGraph extends Component {
         // If all values are positive, froce axis to start at 0 per requirement.
         if (!negative) {
           data.axis.y.min = 0;
+          data.axis.y.padding.bottom = 0;
         }
       }
 
