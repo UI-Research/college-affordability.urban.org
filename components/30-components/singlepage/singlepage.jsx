@@ -115,7 +115,7 @@ export default class SinglePage extends Component {
 
       // Populates the hash in the URL with the ID of the element the user
       // is currently on.
-      let dom = document.querySelectorAll('a.active')[0];
+      let dom = document.querySelectorAll('.nav-anchor a.active')[0];
       let path = (dom ? dom.getAttribute('href') : '');
       path = (scrollTop > 50 ? path : '#/');
       history.pushState(null, null, path);
