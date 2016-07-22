@@ -174,9 +174,9 @@ let singlepage = (
     </Box>
 
     <p>You can incorporate multiple data sets by adding additional arrays to the <strong>columns</strong> array.  Use the same format, and separate each dataset with a comma.</p>
-    <p>The <strong>data</strong> array includes a <strong>labels</strong> array which dictates the formatting style we want to use on the values of the dataset.  Currently, we default to using the d3.format() function as it utilizes a stringf library to take care of all of our use cases (at the time).</p>
+    <p>The <strong>data</strong> array includes a <strong>labels</strong> array which dictates the formatting style we want to use on the values of the dataset.  Currently, we default to using the d3.format() function as it utilizes a stringf library to take care of all of our use cases (at the time).  <a href="http://c3js.org/samples/axes_x_tick_format.html">Reference: X Axis Tick Format</a></p>
     <p>The <strong>labels</strong> array also supports convenient aliases from the component layer.  Essentially, typing in either <strong>dollar</strong>, <strong>percent</strong>, or <strong>number</strong> will rewrite the values to the correct format (thousandth separator, dollar signs, percents, more) based on the Urban guidelines.  <em>More can be supported simply by adding a new case within <strong>/helpers/formatting.jsx</strong> within the code repository.</em></p>
-    <p>The <strong>axes</strong> in the following example supports <strong>categories</strong>.  As previously mentioned, it allows the ability to incorporate custom labels into your dataset.  Each entry correlates directly with the spots in the data arrays in the <strong>data.columns</strong> array above it.</p>
+    <p>The <strong>axes</strong> in the following example supports <strong>categories</strong>.  As previously mentioned, it allows the ability to incorporate custom labels into your dataset.  Each entry correlates directly with the spots in the data arrays in the <strong>data.columns</strong> array above it.  <a href="http://c3js.org/samples/categorized.html">Reference: Category Axis</a></p>
 
     <Graph file={require('./json/0020 - multiple_line.json')} />
     <Box>
@@ -215,7 +215,7 @@ let singlepage = (
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0040 - grouped_bar.json'))}} />
     </Box>
 
-    <p>Stacking bar charts requires the same structure as grouped with another set of parameters needed.  In this case, we need to embed another array in <strong>data.grouped</strong>, which contains arrays of unique dataset labels you want grouped together.  Each array represents one group.</p>
+    <p>Stacking bar charts requires the same structure as grouped with another set of parameters needed.  In this case, we need to embed another array in <strong>data.grouped</strong>, which contains arrays of unique dataset labels you want grouped together.  Each array represents one group.  <a href="http://c3js.org/samples/chart_bar_stacked.html">Reference: Stacked Bar Chart</a></p>
     <Graph file={require('./json/0050 - stacked_bar.json')} />
     <Box>
       <h3>Code Sample</h3>
@@ -275,7 +275,7 @@ let singlepage = (
     </Box>
 
     <h3>Scatterplots</h3>
-    <p>Scatterplots are essentially formed like any other single sets of data.  Just set <strong>data.type</strong> to <strong>scatterplot</strong>.</p>
+    <p>Scatterplots are essentially formed like any other single sets of data.  Just set <strong>data.type</strong> to <strong>scatterplot</strong>.  <a href="http://c3js.org/samples/chart_scatter.html">Reference: Scatter Plot</a></p>
     <Graph file={require('./json/0080 - scatterplot.json')} />
     <Box>
       <h3>Code Sample</h3>

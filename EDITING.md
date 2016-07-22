@@ -12,24 +12,24 @@ Note: After running *gulp*, check out /demo from the static directory for visual
 
 Pages are organized by directories.  When developing, your site structure should look similar to the following:
 
-* page1/
-..* page1/page1.jsx
-..* page1/page1.scss
-* page2/
-..* page2/page2.jsx
-..* page2/page2.scss
-* page3/
--- page3/page3.jsx
--- page3/page3.scss
+> page1/
+>> page1/page1.jsx
+>> page1/page1.scss
+> page2/
+>> page2/page2.jsx
+>> page2/page2.scss
+> page3/
+>> page3/page3.jsx
+>> page3/page3.scss
 
 When gulp compiles all the assets, they will be transformed to a setup that is production-friendly, similar to the following:
 
-- page1/
--- page1/index.html
-- page2/
--- page2/index.html
-- page3/
--- page3/index.html
+> page1/
+>> page1/index.html
+> page2/
+>> page2/index.html
+> page3/
+>> page3/index.html
 
 This will allow us to have URLs like urban.com/page1 and urban.com/page2 (a bit cleaner than urban.com/page1.html).
 
