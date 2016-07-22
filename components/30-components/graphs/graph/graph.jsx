@@ -98,6 +98,11 @@ export class BaseGraph extends Component {
         };
       }
 
+      // Increase height to prevent x label from overlapping labels
+      if (data.axis && !data.axis.rotated && data.axis.x && !data.axis.x.height) {
+        data.axis.x.height = 80;
+      }
+
       // Always have the y axis start at 0
       if (data.axis && data.axis.y && !data.axis.y.padding) {
         data.axis.y.padding = {
@@ -183,12 +188,6 @@ export class BaseGraph extends Component {
         data.axis.x.padding = {
           left: 0.35,
           right: 0.4
-        };
-      }
-      else if (data.data.type == 'area-spline') {
-        data.axis.x.padding = {
-          left: 0.15,
-          right: 0.2
         };
       }
 
