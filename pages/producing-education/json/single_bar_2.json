@@ -2,7 +2,7 @@
   "title": "Tax appropriations and tax revenue",
   "data": {
     "columns": [
-      ["First", 1,2,3,4,5,6,7,8]
+      ["First", 1000,2000,3000]
     ],
     "type": "bar",
     "labels": {
@@ -19,7 +19,7 @@
     },
     "y" : {
       "tick": {
-        "format": "dollar"
+        "format": "dual_5000"
       }
     }
   },

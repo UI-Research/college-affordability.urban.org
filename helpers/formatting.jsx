@@ -10,19 +10,21 @@ import util from 'util.jsx';
 module.exports = {
   f: (pattern, zero = false) => {
     let alt;
-    switch(pattern) {
-      case 'dollar':
+    if(pattern == 'dolar'){
         pattern = '$,.0f';
         alt = '$,.2s';
-        break;
-      case 'percent':
+    }
+    else if(pattern == 'percent'){
         pattern = '%';
         alt = '%'
-        break;
-      case 'number':
+    }
+    else if(pattern == 'number'){
         pattern = ',.0f';
         alt = ',.2s';
-        break;
+    }
+    else if(pattern.search('dual') == 0){
+        pattern = pattern.split("_")[1];
+        alt = "dual";
     }
 
     // Additional formatting logic.
@@ -43,7 +45,11 @@ module.exports = {
       if (_.isNumber(v) && v > 9999 && alt) {
         pattern = alt;
       }
-      return d3.format(pattern)(v);
+      if(alt == "dual"){
+            return d3.format('$,.0f')(v) + " (" + d3.format("%")(v/parseFloat(pattern)) + ")"
+      }else{
+        return d3.format(pattern)(v);
+      }
     }
   }
 }
