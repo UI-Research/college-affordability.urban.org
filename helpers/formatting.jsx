@@ -8,9 +8,9 @@ import ExecutionEnvironment from 'exenv';
 import util from 'util.jsx';
 
 module.exports = {
-  f: (pattern, zero = false) => {
+  f: (pattern, zero = false, type = 'axis', data = null) => {
     let alt;
-    if(pattern == 'dolar'){
+    if(pattern == 'dollar'){
         pattern = '$,.0f';
         alt = '$,.2s';
     }
@@ -23,8 +23,16 @@ module.exports = {
         alt = ',.2s';
     }
     else if(pattern.search('dual') == 0){
-        pattern = pattern.split("_")[1];
-        alt = "dual";
+        if(type == 'axis'){
+          pattern = '$,.0f';
+          alt = '$,.2s';
+        }else if(pattern == "dual_stacked"){
+          pattern = 0;
+          alt = "dual_stacked"
+        }else{
+          pattern = pattern.split("_")[1];
+          alt = "dual";
+        }
     }
 
     // Additional formatting logic.
@@ -46,7 +54,20 @@ module.exports = {
         pattern = alt;
       }
       if(alt == "dual"){
-            return d3.format('$,.0f')(v) + " (" + d3.format("%")(v/parseFloat(pattern)) + ")"
+        return d3.format('$,.0f')(v) + " (" + d3.format("%")(v/parseFloat(pattern)) + ")"
+      }else if(alt == "dual_stacked"){
+        var counter = (type == 'tooltip') ? j : i;
+        var total = 0;
+        for(var n = 0; n < data["data"]["columns"].length; n++){
+          total += data["data"]["columns"][n][counter+1]
+        }
+        if (v == 0 && type != 'tooltip') {
+          return '';
+        }else{
+          return d3.format('$,.0f')(v) + " (" + d3.format("%")(v/parseFloat(total)) + ")"
+        }
+
+        
       }else{
         return d3.format(pattern)(v);
       }

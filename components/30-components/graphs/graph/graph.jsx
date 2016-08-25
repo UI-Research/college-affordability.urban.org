@@ -44,35 +44,52 @@ export class BaseGraph extends Component {
           _.each(data.data.labels.format, (entry, index) => {
             // Check if we've already processed this.
             if (!_.isFunction(entry)) {
-              data.data.labels.format[index] = formatting.f(entry);
+              data.data.labels.format[index] = formatting.f(entry, true, 'label', data);
             }
           });
         }
         else {
           if (!_.isFunction(data.data.labels.format)) {
-            data.data.labels.format = formatting.f(data.data.labels.format);
+            data.data.labels.format = formatting.f(data.data.labels.format, true, 'label', data);
           }
         }
       }
+
+      // Hide tooltip.
+      data.tooltip = {
+        show: true
+      };
+
 
       // Apply formatting functions to axis labels.
       if (data.axis) {
         if (data.axis.x && data.axis.x.tick && data.axis.x.tick.format) {
           if (!_.isFunction(data.axis.x.tick.format)) {
-            data.axis.x.tick.format = formatting.f(data.axis.x.tick.format, true);
+            data.axis.x.tick.format = formatting.f(data.axis.x.tick.format, true, 'axis');
           }
         }
         if (data.axis.y && data.axis.y.tick && data.axis.y.tick.format) {
           if (!_.isFunction(data.axis.y.tick.format)) {
-            data.axis.y.tick.format = formatting.f(data.axis.y.tick.format, true);
+            if(data.tooltip){
+              data.tooltip.format = {}
+              data.tooltip.format.value = formatting.f(data.axis.y.tick.format, true, 'tooltip', data)
+            }
+            data.axis.y.tick.format = formatting.f(data.axis.y.tick.format, true, 'axis');
           }
         }
         if (data.axis.y2 && data.axis.y2.tick && data.axis.y2.tick.format) {
           if (!_.isFunction(data.axis.y2.tick.format)) {
-            data.axis.y2.tick.format = formatting.f(data.axis.y2.tick.format, true);
+            data.axis.y2.tick.format = formatting.f(data.axis.y2.tick.format, true, 'axis');
           }
         }
       }
+
+
+
+
+
+
+
 
       // Relocate the x axis to the bottom outer center of the graph.
       // We expect implementers to assign a string to data.axis.x.label.
@@ -218,10 +235,7 @@ export class BaseGraph extends Component {
         }
       }
 
-      // Hide tooltip.
-      data.tooltip = {
-        show: true
-      };
+
 
       // Set default colors.
       data.color = {
