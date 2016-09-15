@@ -43,6 +43,66 @@ All components are included within /components.  Unless you intend on creating a
 
 To reference them for use with your page, you need to make sure you import them into your file.  Refer to the ">> Including components" for samples of how these import statements are constructed.  Once they are set, you may use them in your content (within 'singlepage' or the 'content' attribute in specifications).
 
+
+### Adding Charts ###
+
+#### Multiple formats in tooltips and labels ####
+
+#### Case 1: Number (Percentage) ####
+
+
+To add labels with a parenthetical percent, indicating the percentage of the given element to the whole series (e.g. all the stacks of stacked bar), like so:
+
+![Dual labels](./documentation/images/dual_labels.png)
+
+Use the following format in the chart JSON:
+
+```json
+  "data": {
+    "labels": {
+      "format": "dual_$_%"
+    }
+  }
+```
+
+The string `dual_$_%` indicates that the nonparenthetical number should be formatted with `d3.format('$')`, and the parenthetical with `d3.format('%')`. Use any valid d3 format string.
+
+To similarly format mouseover tooltips, like so:
+
+![Dual tooltip](./documentation/images/dual_tooltip.png)
+
+```
+"axis": {
+    "y" : {
+      "tick": {
+        "format": "dual_$_%"
+      }
+    }
+  }
+```
+
+Putting a dual format string in the axis object will not affect the axis tick marks, but it will affect the tooltips
+
+#### Case 2: Percentage (Number) ####
+
+For the reverse case (data in percentages, parenthetical a dollar/number/etc value), like so:
+
+![Dual labels scalar](./documentation/images/dual_labels_scalar.png)
+
+The json format strings are placed identically to those in the examples above, however the format of the string is, in this example:
+
+```
+dual_%_$_200
+```
+
+Where:
+
+- `dual` is the key word indicating dual formatted labels or tooltips
+- `%` is the string passed to `d3.format` to format the percentage
+- `$` is the string passed to `d3.format` to format the value inside the parenthethical
+- `200` is a scalar (can be any numeric value), which indicates the value to multiply the percentage by to get a numeric value (i.e. it is the value represented by `100%`)
+
+
 ## Edge cases ##
 
 ### HTML ###
