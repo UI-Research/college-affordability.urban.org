@@ -12,9 +12,9 @@
     ],
     "labels": {
       "format": {
-        "On campus": "%",
-        "Off campus": "%",
-        "Living with parents": "%"
+        "On campus": "dual_%_$_200",
+        "Off campus": "dual_%_$_200",
+        "Living with parents": "dual_%_$_200"
       }
     }
   },
@@ -23,6 +23,11 @@
     "x": {
       "type": "category",
       "categories": ["All", "Private four-year", "Public four-year", "Public two-year", "For-profit"]
+    },
+    "y":{
+      "tick":{
+        "format": "dual_%_$_200"
+      }
     }
   },
   "metadata": {

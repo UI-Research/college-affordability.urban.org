@@ -21,7 +21,7 @@
     },
     "type": "bar",
     "labels": {
-      "format": "dollar"
+      "format": "dual_$_%"
     },
     "groups": [
       ["First", "Second", "Third", "Fourth", "Fifth", "Sixth"]
@@ -35,7 +35,7 @@
     },
     "y" : {
       "tick": {
-        "format": "dollar"
+        "format": "dual_$_%"
       }
     }
   },
