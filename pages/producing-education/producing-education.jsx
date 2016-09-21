@@ -3,6 +3,7 @@
 import React from 'react';
 import Template from '20-templates/default/default.jsx';
 import Graph from '30-components/graphs/graph/graph.jsx';
+import Multiples from '30-components/graphs/multiples/multiples.jsx';
 import Box from '30-components/box/box/box.jsx';
 import SinglePage from '30-components/singlepage/singlepage.jsx';
 
@@ -125,7 +126,10 @@ let singlepage = (
     <p>In each sector, only a small number of institutions have the necessary endowment income to provide significant subsidies to students.</p>
     <p>In 2013-14, ten percent of students enrolled in private doctoral universities were at schools that spend about $60,400 per student from their endowments. Yet, the median endowment spending per student in this sector was $3,200. Among public doctoral universities, ten percent of students were enrolled in institutions that spent an average of $5,500 of their endowments per student, in contrast to $733 for the median student.</p>
 
-    <Graph file={require('./json/single_bar_2.json')} />
+    <Multiples title="Median endowment income per student by level of selectivity" source="Integrated Postsecondary Education Data System" notes="">
+      <Graph file={require('./json/02_0061.json')} small="true" />
+      <Graph file={require('./json/02_0062.json')} small="true" />
+  </Multiples>
 
     <p>More selective schools tend to have higher endowment income with which to subsidize their students.</p>
     <p>At both private nonprofit and public four-year institutions, those with open admissions policies have less than $400 in endowment income per student. In contrast, private nonprofit four-year institutions that admit fewer than 25 percent of their applicants have an average of more than $22,000 in endowment income per student.</p>
