@@ -107,7 +107,13 @@ let singlepage = (
 
     <p>Since institutions can only spend a limited percentage of their assets each year, their spending is constrained when stocks and other financial assets lose value.</p>
     <p>Private nonprofit research and private nonprofit bachelor’s institutions have much greater endowment income per student than other institutions on average, because these sectors include most of the institutions with large endowments.</p>
-    <Graph file={require('./json/single_bar.json')} />
+        <Multiples title="Average Endowment Income per Student within Deciles of Enrolled Students" source="Integrated Postsecondary Education Data System" notes="Average endowment income per student is calculated by dividing an institution’s total endowment income by its full-time equivalent student enrollment, including graduate students. Calculations represent the average endowment income per student within deciles of undergraduate students.">
+      <Graph file={require('./json/02_0051.json')} small="true" />
+      <Graph file={require('./json/02_0052.json')} small="true" />
+      <Graph file={require('./json/02_0053.json')} small="true" />
+      <Graph file={require('./json/02_0054.json')} small="true" />
+      <Graph file={require('./json/02_0055.json')} small="true" />
+  </Multiples>
 
     <h3>Variations Within Sectors</h3>
     <p>The vast majority of undergraduates attend institutions with much more modest endowment income per student than averages across institutions would suggest. The majority of undergraduates in all sectors except private nonprofit research institutions attend school with less than $1,500 per student in endowment income.</p>
