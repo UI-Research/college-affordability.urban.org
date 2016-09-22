@@ -9,11 +9,9 @@ import util from 'util.jsx';
 
 module.exports = {
   f: (pattern, zero = false, type = 'axis', data = null) => {
-    // console.log(pattern)
     let alt;
     let flag = "";
     let scalar = 0;
-    // console.log("baz", pattern)
 
     if(pattern == 'dollar'){
         pattern = '$,.0f';
@@ -49,14 +47,12 @@ module.exports = {
       }
       pattern = components[1]
       alt = components[2]
-      console.log("dual", pattern, alt, flag, scalar)
 
       // tmp = pattern
       // pattern = tmp[0]
       // alt = tmp[1]
       // flag = "dual"
-      // console.log("bar")
-      // console.log(pattern, alt)
+
     }
 
     // Additional formatting logic.
@@ -78,7 +74,6 @@ module.exports = {
         pattern = alt;
       }
       else if(flag == "dual_percent_second"){
-        console.log("hello", data, type)
         if(type == "axis"){
           return d3.format(pattern)(v)
         }
@@ -95,7 +90,6 @@ module.exports = {
         
       }
       else if(flag == "dual_percent_first"){
-        console.log("hello", data, type)
         if(type == "axis"){
           return d3.format(pattern)(v)
         }
