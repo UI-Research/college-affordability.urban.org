@@ -273,10 +273,12 @@ export class BaseGraph extends Component {
       // If small flag is set on <Graph />,
       // apply special formatting for small graph sizes!
       if (this.props.small == 'true') {
+        var width = (this.props.children == 2) ? 335 : 210;
+
         if (!data.data.size) {
           data.size = {
             'height': 210,
-            'width': 210
+            'width': width
           };
         }
 
@@ -376,6 +378,10 @@ export class BaseGraph extends Component {
         if (!data.axis.x.tick) {
           data.axis.x.tick = {};
         }
+        if(this.props.small == 'true'){
+          data.axis.y.tick.count = 4;
+          data.axis.y.tick.fit = true;
+        }
         if (data.axis.x.type == 'category' && width <= util.breakpointWidth('mid')) {
           data.axis.x.tick.rotate = 20;
           data.axis.x.tick.multiline = false;
@@ -393,6 +399,10 @@ export class BaseGraph extends Component {
       if (data.axis.y) {
         if (!data.axis.y.tick) {
           data.axis.y.tick = {};
+        }
+        if(this.props.small == 'true'){
+          data.axis.y.tick.count = 4;
+          data.axis.y.tick.fit = true;
         }
         if (width <= util.breakpointWidth('mid')) {
           data.axis.y.tick.rotate = 20;
@@ -586,12 +596,14 @@ export class BaseGraph extends Component {
 BaseGraph.propTypes = {
   content: React.PropTypes.string,
   small: React.PropTypes.string,
-  id: React.PropTypes.string
+  id: React.PropTypes.string,
+  children: React.PropTypes.number
 };
 BaseGraph.defaultProps = {
   type: 'line',
   small: 'false',
-  id: ''
+  id: '',
+  children: 0
 };
 
 
@@ -692,7 +704,7 @@ export default class Graph extends Component {
         {anchor}
         <div className="c-graph__wrapper">
           <LazyLoad>
-            <BaseGraph file={this.props.file} id={this.id} small={this.props.small} />
+            <BaseGraph file={this.props.file} id={this.id} small={this.props.small} children={this.props.children}/>
           </LazyLoad>
         </div>
         <div className="c-text__caption c-text__caption--bottom">
@@ -712,12 +724,14 @@ Graph.propTypes = {
   title: React.PropTypes.string,
   type: React.PropTypes.string,
   image: React.PropTypes.string,
-  small: React.PropTypes.string
+  small: React.PropTypes.string,
+  children: React.PropTypes.number
 };
 Graph.defaultProps = {
   anchor_name: '',
   title: '',
   type: 'line',
   image: '',
-  small: 'false'
+  small: 'false',
+  children: 0
 };

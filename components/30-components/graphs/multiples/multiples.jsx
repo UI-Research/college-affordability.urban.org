@@ -13,10 +13,18 @@ export default class Multiples extends Component {
     super(props);
   }
   render() {
+    // log this
+    var children = this.props.children.length
     const graphSet = _.map(this.props.children, (component) => {
+      // log this
+      // component.props.children = children
+      var x = component
+      x.props["children"] = children
+
+      var foo = "c-graph-multiple children_"+String(children)
       return (
-        <div className="c-graph-multiple" key={util.uniqueID()}>
-          {component}
+        <div className={foo} key={util.uniqueID()}>
+          {x}
         </div>
       );
     });
