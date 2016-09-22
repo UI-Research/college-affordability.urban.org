@@ -218,3 +218,6 @@ gulp.task('default', ['destroy', 'lint', 'images', 'react', 'webpack']);
 gulp.task('watch', ['destroy', 'lint', 'images', 'react', 'webpack', 'track']);
 // > gulp deploy
 gulp.task('deploy', ['default', 'deploy-assets']);
+
+gulp.task('charts', ['destroy', 'react','webpack']);
+
