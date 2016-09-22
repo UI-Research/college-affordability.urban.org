@@ -369,6 +369,17 @@ export class BaseGraph extends Component {
       .attr('href', encodedUri)
       .attr('download', `${util.machineName(object.props.file.title)}.csv`);
   }
+  getTickValues(dataVals, count){
+      var max = d3.max(dataVals, function(array) {
+        return d3.max(array.filter(function(d){ return !isNaN(parseFloat(d))}));
+      });
+      var min = d3.min(dataVals, function(array) {
+        return d3.min(array.filter(function(d){ return !isNaN(parseFloat(d))}));
+      });
+      var scale = d3.scale.linear().domain([min,max]).nice();
+      return scale.ticks(count)
+  }
+
   checkVerticalLabels() {
     // Make bottom axis labels vertical for tablet/mobile.
     const width = window.innerWidth;
@@ -379,8 +390,7 @@ export class BaseGraph extends Component {
           data.axis.x.tick = {};
         }
         if(this.props.small == 'true'){
-          data.axis.y.tick.count = 4;
-          data.axis.y.tick.fit = true;
+          data.axis.y.tick.values = this.getTickValues(data.data.columns, 4);
         }
         if (data.axis.x.type == 'category' && width <= util.breakpointWidth('mid')) {
           data.axis.x.tick.rotate = 20;
@@ -401,8 +411,7 @@ export class BaseGraph extends Component {
           data.axis.y.tick = {};
         }
         if(this.props.small == 'true'){
-          data.axis.y.tick.count = 4;
-          data.axis.y.tick.fit = true;
+          data.axis.y.tick.values = this.getTickValues(data.data.columns, 4);
         }
         if (width <= util.breakpointWidth('mid')) {
           data.axis.y.tick.rotate = 20;
