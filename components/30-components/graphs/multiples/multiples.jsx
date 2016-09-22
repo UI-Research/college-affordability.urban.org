@@ -16,19 +16,18 @@ export default class Multiples extends Component {
     // log this
     var children = this.props.children.length
     const graphSet = _.map(this.props.children, (component) => {
-      // log this
-      // component.props.children = children
-      var x = component
-      x.props["children"] = children
+      var newComponent = component
+      newComponent.props["children"] = children
 
-      var foo = "c-graph-multiple children_"+String(children)
+      var childClass = "c-graph-multiple children_"+String(children)
       return (
-        <div className={foo} key={util.uniqueID()}>
-          {x}
+        <div className={childClass} key={util.uniqueID()}>
+          {newComponent}
         </div>
       );
     });
-
+    var notes = (this.props.notes == "") ? undefined : <GraphAttribution type="notes" text={this.props.notes} /> 
+    var source = (this.props.source == "") ? undefined : <GraphAttribution type="source" text={this.props.source} />
     return (
       <div className="c-graph-multiples">
       <h2>{this.props.title}</h2>
@@ -36,7 +35,8 @@ export default class Multiples extends Component {
         <div className="c-text__caption c-text__caption--bottom">
           <div className="c-text__viz-notes">
             <GraphAttribution type="source" text={this.props.source} />
-            <GraphAttribution type="notes" text={this.props.notes} />
+            {notes}
+            {source}
           </div>
         </div>
       </div>
