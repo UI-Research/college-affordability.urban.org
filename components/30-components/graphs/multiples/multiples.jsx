@@ -34,7 +34,6 @@ export default class Multiples extends Component {
         {graphSet}
         <div className="c-text__caption c-text__caption--bottom">
           <div className="c-text__viz-notes">
-            <GraphAttribution type="source" text={this.props.source} />
             {notes}
             {source}
           </div>
