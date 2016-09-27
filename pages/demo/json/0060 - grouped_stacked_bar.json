@@ -30,7 +30,7 @@
     "x": {
       "label": "X Label",
       "type": "category",
-      "categories": ["First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth"]
+      "categories": ["a", "b", "c"]
     },
     "y" : {
       "label": "Y Label",
