@@ -30,7 +30,7 @@ let singlepage = (
     <p><strong>Public</strong> research universities spend almost 50 percent more per student per year than public master’s universities and more than twice as much as public two-year colleges. These gaps have grown over time.</p>
     <p>Because the funds states provide to public institutions have not kept up with growing enrollments, students received smaller subsidies in 2013-14 than in 2005-06. This means <strong>that tuition and fees cover an increasing portion of educational expenses</strong>, as these prices have risen much more rapidly than total institutional expenditures.</p>
 
-    <Multiples title="Education and Related Spending per Full-Time Equivalent Student at Public Institutions, 2005-–06 to 2013-–14" source="Integrated Postsecondary Education Data System" notes="Institutions are sorted according to the Carnegie Classification of Institutions of Higher Education framework.">
+    <Multiples title="Education and Related Spending per Full-Time Equivalent Student at Public Institutions, 2005–06 to 2013–14" source="Integrated Postsecondary Education Data System" notes="Institutions are sorted according to the Carnegie Classification of Institutions of Higher Education framework.">
       <Graph file={require('./json/02_0071.json')} small="true" />
       <Graph file={require('./json/02_0072.json')} small="true" />
       <Graph file={require('./json/02_0073.json')} small="true" />
@@ -38,7 +38,7 @@ let singlepage = (
 
     <p>The pattern is quite different at <strong>private</strong> nonprofit colleges and universities, which are not dependent on state funding. Average per-student spending was two and a half times as high at private research universities as at public research universities, although the gap between private and public master’s universities was much smaller. Additionally, at private institutions, <strong>the share of spending covered by tuition revenues has remained constant</strong>.</p>
 
-    <Multiples title="Education and Related Spending per Full-Time Equivalent Student at Private Nonprofit Institutions, 2005-–06 to 2013-–14" source="Integrated Postsecondary Education Data System" notes="Institutions are sorted according to the Carnegie Classification of Institutions of Higher Education framework.">
+    <Multiples title="Education and Related Spending per Full-Time Equivalent Student at Private Nonprofit Institutions, 2005–06 to 2013-–14" source="Integrated Postsecondary Education Data System" notes="Institutions are sorted according to the Carnegie Classification of Institutions of Higher Education framework.">
       <Graph file={require('./json/02_0081.json')} small="true" />
       <Graph file={require('./json/02_0082.json')} small="true" />
       <Graph file={require('./json/02_0083.json')} small="true" />
