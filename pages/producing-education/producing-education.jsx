@@ -38,7 +38,7 @@ let singlepage = (
 
     <p>The pattern is quite different at <strong>private</strong> nonprofit colleges and universities, which are not dependent on state funding. Average per-student spending was two and a half times as high at private research universities as at public research universities, although the gap between private and public master’s universities was much smaller. Additionally, at private institutions, <strong>the share of spending covered by tuition revenues has remained constant</strong>.</p>
 
-    <Multiples title="Education and Related Spending per Full-Time Equivalent Student at Private Nonprofit Institutions, 2005–06 to 2013-–14" source="Integrated Postsecondary Education Data System" notes="Institutions are sorted according to the Carnegie Classification of Institutions of Higher Education framework.">
+    <Multiples title="Education and Related Spending per Full-Time Equivalent Student at Private Nonprofit Institutions, 2005–06 to 2013–14" source="Integrated Postsecondary Education Data System" notes="Institutions are sorted according to the Carnegie Classification of Institutions of Higher Education framework.">
       <Graph file={require('./json/02_0081.json')} small="true" />
       <Graph file={require('./json/02_0082.json')} small="true" />
       <Graph file={require('./json/02_0083.json')} small="true" />
@@ -47,7 +47,14 @@ let singlepage = (
     <p>Average subsidies in each sector <strong>conceal wide variation across institutions, with a small number of colleges and universities in each sector providing a high percentage of total subsidies.</strong></p>
     <p>To examine within-sector variation, we broke students in the different sectors into deciles by the size of the subsidies their institutions gave them. This reveals that the institutions with the biggest subsidies skew the averages. <strong>The differences in per-student subsidy across types of institutions are less extreme when considering the middle 60 percent of undergraduate students.</strong></p>
 
-    <Graph file={require('./json/stacked_bar.json')} />
+    <Multiples title="Average Subsidy per Full-Time Equivalent Student within Undergraduate Deciles" source="Integrated Postsecondary Education Data System" notes="Average subsidy per student is calculated by dividing an institution’s total subsidy by its full-time equivalent student enrollment, including graduate students. Calculations represent the average subsidy per student within deciles of undergraduate students (institutions weighted by undergraduate enrollment).">
+      <Graph file={require('./json/02_0091.json')} small="true" />
+      <Graph file={require('./json/02_0092.json')} small="true" />
+      <Graph file={require('./json/02_0093.json')} small="true" />
+      <Graph file={require('./json/02_0094.json')} small="true" />
+      <Graph file={require('./json/02_0095.json')} small="true" />
+      <Graph file={require('./json/02_0096.json')} small="true" />
+  </Multiples>
 
     <Box>
       <h4>Q: Why do students in the top subsidy decile at research universities receive so much more?</h4>
@@ -130,11 +137,8 @@ let singlepage = (
       <p>A: Many of the institutions with the largest endowments are doctoral universities, where graduate students make up a significant share of total enrollment. At these universities, simply dividing endowment income by student enrollment overstates the resources available for undergraduates, because it costs more to educate graduate students than undergraduates, who require more faculty attention and resources.</p>
       <p>Across all sectors, institutions with higher endowment income per student tend to have more graduate students as a share of total enrollment. At institutions with $500 to $1,500 of endowment income per student, graduate students make up about 20 percent of enrollment. But at institutions with endowment income per student of more than $9,000, graduate students make up 35 to 45 percent of enrollment.</p>
 
-      <Graph file={require('./json/single_bar.json')} />
-
       <p>Existing data do not allow separation of institutional spending on graduate versus undergraduate students. But assuming that graduate students receive two or three times the support from endowment income that undergraduates do reduces the estimated endowment spending per undergraduate student at public and private research universities. Assuming that they receive three times the support almost closes the gap between private nonprofit research and bachelor’s institutions. It may be more accurate to estimate that both types of institutions spend an average of close to $1,500 of endowment on undergraduates, rather than that private nonprofit research universities spend twice that.</p>
 
-      <Graph file={require('./json/single_bar_2.json')} />
     </Box>
 
     <p>In each sector, only a small number of institutions have the necessary endowment income to provide significant subsidies to students.</p>
@@ -149,7 +153,6 @@ let singlepage = (
     <p>At both private nonprofit and public four-year institutions, those with open admissions policies have less than $400 in endowment income per student. In contrast, private nonprofit four-year institutions that admit fewer than 25 percent of their applicants have an average of more than $22,000 in endowment income per student.</p>
     <p>Public four-year institutions that admit between 25 percent and 50 percent of applicants actually have higher endowment incomes per student than those in the more selective category, likely because the small number of public research universities with large endowments fall into the latter category.</p>
 
-    <Graph file={require('./json/single_bar.json')} />
   </div>
 );
 
