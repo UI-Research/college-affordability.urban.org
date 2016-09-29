@@ -73,7 +73,7 @@ module.exports = {
       if (_.isNumber(v) && v > 9999 && alt) {
         pattern = alt;
       }
-      else if(flag == "dual_percent_second"){
+      if(flag == "dual_percent_second"){
         if(type == "axis"){
           return d3.format(pattern)(v)
         }
