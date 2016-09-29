@@ -234,6 +234,7 @@ let singlepage = (
 
     <p>Stacking bar charts requires the same structure as grouped with another set of parameters needed.  In this case, we need to embed another array in <strong>data.grouped</strong>, which contains arrays of unique dataset labels you want grouped together.  Each array represents one group.  <a href="http://c3js.org/samples/chart_bar_stacked.html">Reference: Stacked Bar Chart</a></p>
     <Graph file={require('./json/0050 - stacked_bar.json')} />
+    <Graph file={require('./json/03_0050.json')} />
     <Box>
       <h3>Code Sample</h3>
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0050 - stacked_bar.json'))}} />
