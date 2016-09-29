@@ -64,7 +64,6 @@ module.exports = {
 
       // If empty, don't bother showing the labels.
       // Prevents stacked charts from having values stack.
-      console.log(zero, v, id, i, j, type)
       if (v == 0 && type == "label") {
         return '';
       }

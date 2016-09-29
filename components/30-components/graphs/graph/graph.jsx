@@ -446,7 +446,8 @@ export class BaseGraph extends Component {
 
     let legend = d3.selectAll(`#${object.props.id} .c3-legend-item`);
     // If there's only one data set, don't bother listing the legend.
-    if (legend[0].length <= 1) {
+    //Hide legend for small multiples, if needed it's drawn by the component (1 per group of multiples)
+    if (legend[0].length <= 1 || d3.select(d3.select(`#${object.props.id}`).node().parentNode.parentNode.parentNode.parentNode.parentNode.parentNode).classed("c-graph-multiple") == true) {
       legend.remove();
     }
     else {
@@ -586,10 +587,14 @@ export class BaseGraph extends Component {
     const dropdown = `${this.props.id}_dropdown`;
     const options = `${this.props.id}_options`;
 
+
     var chart_classes = `c-graph__container c-${this.props.file.data.type}__container`;
     if (this.props.file.data.groups) {
       chart_classes += ` c-${this.props.file.data.type}__container--grouped`;
     }
+    // if (this.props.small === true){
+    //  chart_classes += ` small-multiple-{this.props.small}` 
+    // }
 
     return (
       <div>

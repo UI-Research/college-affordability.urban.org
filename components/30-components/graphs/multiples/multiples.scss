@@ -42,3 +42,27 @@
   }
 }
 
+.small-multiple-legend-key{
+    width: 10px;
+    height: 10px;
+    top: 1px;
+    position: relative;
+    display: inline-block;
+    margin-right: 6px;
+    margin-left: 12px;
+}
+.small-multiple-legend-text{
+  font-size: 12px;
+  color: black;
+}
+.small-multiple-legend-item{
+  display: inline-block;
+}
+.small-multiple-legend{
+  margin: 0 auto;
+  width: 0px;
+  display: table;
+}
+.small-multiple-legend-container{
+  margin-bottom: 20px;
+}
