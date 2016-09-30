@@ -369,15 +369,51 @@ export class BaseGraph extends Component {
       .attr('href', encodedUri)
       .attr('download', `${util.machineName(object.props.file.title)}.csv`);
   }
-  getTickValues(dataVals, count){
+  getTickValues(dataVals, count, groups, inMin, inMax){
+    if(typeof(groups) == "undefined"){
       var max = d3.max(dataVals, function(array) {
         return d3.max(array.filter(function(d){ return !isNaN(parseFloat(d))}));
       });
       var min = d3.min(dataVals, function(array) {
         return d3.min(array.filter(function(d){ return !isNaN(parseFloat(d))}));
       });
-      var scale = d3.scale.linear().domain([min,max]).nice();
-      return scale.ticks(count)
+      min = d3.min([0,min])
+      // var scale = d3.scale.linear().domain([min,max]).nice();
+      // return scale.ticks(count)
+    }else{
+      var reshaped = {}
+      for(var i = 0; i < dataVals.length; i++){
+        reshaped[ dataVals[i][0] ]= []
+        for(var j = 1; j < dataVals[i].length; j++){
+          reshaped[ dataVals[i][0] ].push( dataVals[i][j] )
+        }
+      }
+      var totals = []
+      for(var p = 0; p < reshaped[ groups[0][0] ].length; p++){
+        totals.push(0)
+      }
+      var increment;
+      for(var k = 0; k < groups[0].length; k++){
+        for(var l = 0; l < reshaped[ groups[0][0] ].length; l++){
+          if( !isNaN( reshaped[ groups[0][k] ][l] )){
+            totals[l] += parseFloat(reshaped[ groups[0][0] ][l])  
+          }
+          
+        }
+      }
+      totals.push(0)
+      var max = d3.max(totals);
+      var min = d3.min(totals);
+    }
+//for small multiples, max value should be defined in json (so all small multiples on same scale)
+    if(typeof(inMax) != "undefined"){
+      max = inMax;
+    }
+    if(typeof(inMin) != "undefined"){
+      min = inMin;
+    }
+    var scale = d3.scale.linear().domain([min,max]).nice();
+    return scale.ticks(count)
   }
 
   checkVerticalLabels() {
@@ -389,9 +425,12 @@ export class BaseGraph extends Component {
         if (!data.axis.x.tick) {
           data.axis.x.tick = {};
         }
-        if(this.props.small == 'true'){
-          data.axis.y.tick.values = this.getTickValues(data.data.columns, 4);
-        }
+        var ticks = (this.props.small == 'true') ? 4 : 8
+        
+//for small multiples, max value should be defined in json (so all small multiples on same scale)
+//As fall back, get ticks
+        data.axis.y.tick.values = this.getTickValues(data.data.columns, ticks, data.data.groups, this.props.file.axis.y.min, this.props.file.axis.y.max);
+        
         if (data.axis.x.type == 'category' && width <= util.breakpointWidth('mid')) {
           data.axis.x.tick.rotate = 20;
           data.axis.x.tick.multiline = false;
@@ -410,9 +449,12 @@ export class BaseGraph extends Component {
         if (!data.axis.y.tick) {
           data.axis.y.tick = {};
         }
-        if(this.props.small == 'true'){
-          data.axis.y.tick.values = this.getTickValues(data.data.columns, 4);
-        }
+        var ticks = (this.props.small == 'true') ? 4 : 8
+        
+//for small multiples, max value should be defined in json (so all small multiples on same scale)
+//As fall back, get ticks
+        data.axis.y.tick.values = this.getTickValues(data.data.columns, ticks, data.data.groups, this.props.file.axis.y.min, this.props.file.axis.y.max);
+
         if (width <= util.breakpointWidth('mid')) {
           data.axis.y.tick.rotate = 20;
           data.axis.y.tick.multiline = false;
@@ -512,6 +554,8 @@ export class BaseGraph extends Component {
     // of the labels.
     if (object.props.file.axis && object.props.file.axis.x && !_.isEmpty(object.props.file.axis.x.type) && object.props.file.axis.x.type == 'category') {
       d3.selectAll(`#${object.props.id} g.c3-axis-x g.tick line`).remove();
+//for small multiples, bind data of tick vals to graph, so in post-render steps we can find max tick and apply to all
+      d3.selectAll(`#${object.props.id}`).datum(`${object.props.tickValues}`)
       let ticks = d3.selectAll(`#${object.props.id} g.c3-axis-x g.tick`);
       _.map(ticks[0],function (tick) {
         d3.select(tick).insert('line', ':first-child')
@@ -581,6 +625,7 @@ export class BaseGraph extends Component {
       d3.select(this).attr('x', y);
     });
   }
+
 
   render() {
     const legend = `${this.props.id}_legend`;
