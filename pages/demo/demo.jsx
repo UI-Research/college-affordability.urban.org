@@ -320,8 +320,8 @@ let singlepage = (
     <h2>TESTING</h2>
     <h3>Tuition and fees</h3>
     <Multiples title="In-State or In-District Tuition, by State, 2014–15" source="Integrated Postsecondary Education Data System" notes="Alaska does not have public two-year colleges. The District of Columbia is not shown, but its public four-year college is included in the national average.">
-      <Graph file={require('./json/multiples/03_0041.json')} small="true" />
-      <Graph file={require('./json/multiples/3_0042.json')} small="true" />
+      <Graph file={require('./json/03_0041.json')} small="true" />
+      <Graph file={require('./json/03_0042.json')} small="true" />
     </Multiples>
     <Graph file={require('./json/03_0040.json')} />
   </div>
