@@ -305,6 +305,7 @@ let singlepage = (
     <p>To support this, we introduce a new attribute within the <strong>data</strong> called <strong>sets</strong>.  They include entries with their own unique labels not used by C3 but by the dropdown labels in the widget.  Essentially, the component willl transfer the data array for the chosen set and put them within <strong>data.columns</strong> automatically.</p>
 
     <Graph file={require('./json/0090 - toggles.json')} />
+    <Graph file={require('./json/03_0040.json')} />
     <Box>
       <h3>Code Sample</h3>
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0090 - toggles.json'))}} />
