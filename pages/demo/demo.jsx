@@ -305,7 +305,6 @@ let singlepage = (
     <p>To support this, we introduce a new attribute within the <strong>data</strong> called <strong>sets</strong>.  They include entries with their own unique labels not used by C3 but by the dropdown labels in the widget.  Essentially, the component willl transfer the data array for the chosen set and put them within <strong>data.columns</strong> automatically.</p>
 
     <Graph file={require('./json/0090 - toggles.json')} />
-    <Graph file={require('./json/03_0040.json')} />
     <Box>
       <h3>Code Sample</h3>
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0090 - toggles.json'))}} />
@@ -317,6 +316,14 @@ let singlepage = (
       <h3>Code Sample</h3>
       <div dangerouslySetInnerHTML={{__html: jsonMarkup(require('./json/0091 - toggles_dual.json'))}} />
     </Box>
+
+    <h2>TESTING</h2>
+    <h3>Tuition and fees</h3>
+    <Multiples title="In-State or In-District Tuition, by State, 2014–15" source="Integrated Postsecondary Education Data System" notes="Alaska does not have public two-year colleges. The District of Columbia is not shown, but its public four-year college is included in the national average.">
+      <Graph file={require('./json/multiples/03_0041.json')} small="true" />
+      <Graph file={require('./json/multiples/3_0042.json')} small="true" />
+    </Multiples>
+    <Graph file={require('./json/03_0040.json')} />
   </div>
 );
 
