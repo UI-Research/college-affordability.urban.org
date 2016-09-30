@@ -60,6 +60,11 @@ export class BaseGraph extends Component {
         show: true
       };
 
+      //for stacked bar chart, make stack order same as series order (not sorted asc/desc)
+      if(data.data.groups){
+        data.data.order = null
+      }
+
 
       // Apply formatting functions to axis labels.
       if (data.axis) {
@@ -234,7 +239,6 @@ export class BaseGraph extends Component {
           };
         }
       }
-
 
 
       // Set default colors.
