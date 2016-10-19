@@ -35,6 +35,9 @@ const ForgoneEarnings = React.createClass({
   }
 });
 
+if (util.canUseDOM()) {
+  require('./' + specifications.name.toLowerCase() + '.scss');
+}
 util.printToPage('forgone-earnings', ForgoneEarnings);
 
 module.exports = ForgoneEarnings;
