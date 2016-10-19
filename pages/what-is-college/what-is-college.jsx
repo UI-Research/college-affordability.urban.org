@@ -24,24 +24,22 @@ let singlepage = (
 
 let specifications = {
   'name': 'what-is-college',
-  'title': 'What is College?',
+  'title': 'What is College',
   'content': <SinglePage content={singlepage} />
 };
 
-export default class Page extends Component {
-  render() {
+const WhatIsCollege = React.createClass({
+  render: function() {
     return (
       <Template title={specifications.title} machineName={specifications.name} includeHTML={this.props.includeHTML}>
         {specifications.content}
       </Template>
     );
   }
-}
-
-
+});
 if (util.canUseDOM()) {
-  // require('./' + specifications.name.toLowerCase() + '.scss');
+  require('./' + specifications.name.toLowerCase() + '.scss');
 }
-util.printToPage(specifications.name, Page);
+util.printToPage('what-is-college', WhatIsCollege);
 
-module.exports = Page;
+module.exports = WhatIsCollege;

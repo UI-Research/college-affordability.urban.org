@@ -18,26 +18,25 @@ let singlepage = (
 );
 
 let specifications = {
-  'name': 'forgone-earnings',
-  'title': 'Forgone Earnings',
+  'name': 'room-and-board',
+  'title': 'Room and Board',
   'content': <SinglePage content={singlepage} />
 };
 
-export default class Page extends Component {
-  render() {
+const RoomAndBoard = React.createClass({
+  render: function() {
     return (
       <Template title={specifications.title} machineName={specifications.name} includeHTML={this.props.includeHTML}>
         {specifications.content}
       </Template>
     );
   }
-}
+});
 
 
 if (util.canUseDOM()) {
-  // Enable if you have page-specific styles.
-  // require('./' + specifications.name.toLowerCase() + '.scss');
+  require('./' + specifications.name.toLowerCase() + '.scss');
 }
-util.printToPage(specifications.name, Page);
+util.printToPage('room-and-board', RoomAndBoard);
 
-module.exports = Page;
+module.exports = RoomAndBoard;

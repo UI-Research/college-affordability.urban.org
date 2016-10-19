@@ -23,25 +23,25 @@ let singlepage = (
 );
 
 let specifications = {
-  'name': 'what-is-college',
-  'title': 'What is College?',
+  'name': 'debt-burden',
+  'title': 'Debt Burden',
   'content': <SinglePage content={singlepage} />
 };
 
-export default class Page extends Component {
-  render() {
+const DebtBurden = React.createClass({
+  render: function() {
     return (
       <Template title={specifications.title} machineName={specifications.name} includeHTML={this.props.includeHTML}>
         {specifications.content}
       </Template>
     );
   }
-}
+});
 
 
 if (util.canUseDOM()) {
-  // require('./' + specifications.name.toLowerCase() + '.scss');
+  require('./' + specifications.name.toLowerCase() + '.scss');
 }
-util.printToPage(specifications.name, Page);
+util.printToPage('debt-burden', DebtBurden);
 
-module.exports = Page;
+module.exports = DebtBurden;

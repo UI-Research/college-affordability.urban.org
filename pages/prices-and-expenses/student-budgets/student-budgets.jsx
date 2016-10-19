@@ -23,21 +23,20 @@ let specifications = {
   'content': <SinglePage content={singlepage} />
 };
 
-export default class Page extends Component {
-  render() {
+const StudentBudgets = React.createClass({
+  render: function() {
     return (
       <Template title={specifications.title} machineName={specifications.name} includeHTML={this.props.includeHTML}>
         {specifications.content}
       </Template>
     );
   }
-}
+});
 
 
 if (util.canUseDOM()) {
-  // Enable if you have page-specific styles.
-  // require('./' + specifications.name.toLowerCase() + '.scss');
+  require('./' + specifications.name.toLowerCase() + '.scss');
 }
-util.printToPage(specifications.name, Page);
+util.printToPage('student-budgets', StudentBudgets);
 
-module.exports = Page;
+module.exports = StudentBudgets;

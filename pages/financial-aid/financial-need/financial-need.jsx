@@ -23,25 +23,23 @@ let singlepage = (
 );
 
 let specifications = {
-  'name': 'what-is-college',
-  'title': 'What is College?',
+  'name': 'financial-need',
+  'title': 'Financial Need',
   'content': <SinglePage content={singlepage} />
 };
 
-export default class Page extends Component {
-  render() {
+const FinancialNeed = React.createClass({
+  render: function() {
     return (
       <Template title={specifications.title} machineName={specifications.name} includeHTML={this.props.includeHTML}>
         {specifications.content}
       </Template>
     );
   }
-}
-
-
+});
 if (util.canUseDOM()) {
-  // require('./' + specifications.name.toLowerCase() + '.scss');
+  require('./' + specifications.name.toLowerCase() + '.scss');
 }
-util.printToPage(specifications.name, Page);
+util.printToPage('financial-need', FinancialNeed);
 
-module.exports = Page;
+module.exports = FinancialNeed;

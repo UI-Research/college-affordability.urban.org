@@ -12,7 +12,7 @@ import util from 'util.jsx';
 let singlepage = (
   <div>
     <h1>Breaking Even</h1>
-    <h2>Defining Higher Education</h2>
+    <h2>Defining Higher Education Foo</h2>
 
     <ul>
       <li><a href="#">Degree-granting institutions by sector and degree-type in fall 2014</a></li>
@@ -83,7 +83,7 @@ let specifications = {
   'content': <SinglePage content={singlepage} />
 };
 
-const ListingExample = React.createClass({
+const BreakingEven = React.createClass({
   render: function() {
     return (
       <Template title={specifications.title} machineName={specifications.name} includeHTML={this.props.includeHTML}>
@@ -97,6 +97,7 @@ const ListingExample = React.createClass({
 if (util.canUseDOM()) {
   require('./' + specifications.name.toLowerCase() + '.scss');
 }
-util.printToPage('listing-example', ListingExample);
+util.printToPage('breaking-even', BreakingEven);
 
-module.exports = ListingExample;
+module.exports = BreakingEven;
+

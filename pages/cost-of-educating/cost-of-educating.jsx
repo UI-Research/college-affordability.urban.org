@@ -8,7 +8,6 @@ import Box from '30-components/box/box/box.jsx';
 import SinglePage from '30-components/singlepage/singlepage.jsx';
 import util from 'util.jsx';
 
-
 let singlepage = (
   <div>
     <h1>What is College?</h1>
@@ -23,25 +22,25 @@ let singlepage = (
 );
 
 let specifications = {
-  'name': 'what-is-college',
-  'title': 'What is College?',
+  'name': 'cost-of-educating',
+  'title': 'Cost of Educating',
   'content': <SinglePage content={singlepage} />
 };
 
-export default class Page extends Component {
-  render() {
+const CostOfEducating = React.createClass({
+  render: function() {
     return (
       <Template title={specifications.title} machineName={specifications.name} includeHTML={this.props.includeHTML}>
         {specifications.content}
       </Template>
     );
   }
-}
+});
 
+util.printToPage('cost-of-educating', CostOfEducating);
 
 if (util.canUseDOM()) {
-  // require('./' + specifications.name.toLowerCase() + '.scss');
+  require('./' + specifications.name.toLowerCase() + '.scss');
 }
-util.printToPage(specifications.name, Page);
 
-module.exports = Page;
+module.exports = CostOfEducating;

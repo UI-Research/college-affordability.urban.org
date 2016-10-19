@@ -86,7 +86,7 @@ let specifications = {
   'content': <SinglePage content={singlepage} />
 };
 
-const ListingExample = React.createClass({
+const AfterCollege = React.createClass({
   render: function() {
     return (
       <Template title={specifications.title} machineName={specifications.name} includeHTML={this.props.includeHTML}>
@@ -100,6 +100,6 @@ const ListingExample = React.createClass({
 if (util.canUseDOM()) {
   require('./' + specifications.name.toLowerCase() + '.scss');
 }
-util.printToPage('listing-example', ListingExample);
+util.printToPage('after-college', AfterCollege);
 
-module.exports = ListingExample;
+module.exports = AfterCollege;
