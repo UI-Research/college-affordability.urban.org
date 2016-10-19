@@ -1,6 +1,6 @@
 'use strict';
 
-import React from 'react';
+import React, { Component } from 'react';
 import Template from '20-templates/default/default.jsx';
 import Graph from '30-components/graphs/graph/graph.jsx';
 import Multiples from '30-components/graphs/multiples/multiples.jsx';
