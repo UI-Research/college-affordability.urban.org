@@ -31,6 +31,7 @@ let singlepage = (
       <li><a href="#">Enrollment Sectors of Dependent First-year students by parent income</a></li>
       <li><a href="#">Enrollment Patterns by Race and Ethnicity, First-year students</a></li>
       <li><a href="#">Sectors of full-time and part-time forts-year students</a></li>
+      <li><a href="#">Testing</a></li>
     </ul>
 
     <Graph file={require('./json/03_0170.json')} small="true" />
