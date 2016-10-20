@@ -319,6 +319,7 @@ let singlepage = (
 
     <h2>TESTING</h2>
     <h3>Tuition and fees</h3>
+     <Graph file={require('./json/06_0150.json')} />
     <Multiples title="Distribution of Full-Time Students by Published Tuition and Fees within Sectors, 2014–15" source="Integrated Postsecondary Education Data System" notes="For each sector, the average tuition and fees for each decile is calculated by ordering the institutions in the sector by published tuition and fees and dividing the undergraduate students in the sector into deciles.">
       <Graph file={require('./json/03_0031.json')} small="true" />
       <Graph file={require('./json/03_0032.json')} small="true" />
