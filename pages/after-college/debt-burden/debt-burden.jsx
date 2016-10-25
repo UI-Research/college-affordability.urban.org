@@ -22,6 +22,7 @@ let singlepage = (
       <Graph file={require('./json/06_0110.json')}/>
       <Graph file={require('./json/06_0120.json')}/>
      <Graph file={require('./json/06_0130.json')}/>
+      <Graph file={require('./json/06_0140.json')}/>
      <Graph file={require('./json/06_0150.json')}/>
   </div>
 );
