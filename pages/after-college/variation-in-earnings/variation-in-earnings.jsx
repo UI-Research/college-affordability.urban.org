@@ -8,6 +8,7 @@ import Box from '30-components/box/box/box.jsx';
 import SinglePage from '30-components/singlepage/singlepage.jsx';
 import util from 'util.jsx';
 
+
 let singlepage = (
   <div>
     <h1>What is College?</h1>
@@ -22,12 +23,12 @@ let singlepage = (
 );
 
 let specifications = {
-  'name': 'earnings-after-college',
-  'title': 'Earnings After College',
+  'name': 'loan-repayment-and-default',
+  'title': 'Loan Repayment and Default',
   'content': <SinglePage content={singlepage} />
 };
 
-const EarningsAfterCollege = React.createClass({
+const LoanRepaymentAndDefault = React.createClass({
   render: function() {
     return (
       <Template title={specifications.title} machineName={specifications.name} includeHTML={this.props.includeHTML}>
@@ -41,6 +42,6 @@ const EarningsAfterCollege = React.createClass({
 if (util.canUseDOM()) {
   require('./' + specifications.name.toLowerCase() + '.scss');
 }
-util.printToPage('earnings-after-college', EarningsAfterCollege);
+util.printToPage('loan-repayment-and-default', LoanRepaymentAndDefault);
 
-module.exports = EarningsAfterCollege;
+module.exports = LoanRepaymentAndDefault;
