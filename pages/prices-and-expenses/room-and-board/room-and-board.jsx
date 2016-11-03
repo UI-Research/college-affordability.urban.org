@@ -15,6 +15,7 @@ let singlepage = (
     <h2>Overview</h2>
     <p>In progress...</p>
     <Graph file={require('./json/03_0050.json')}/>
+    <Graph file={require('./json/03_0070.json')}/>
   </div>
 );
 
