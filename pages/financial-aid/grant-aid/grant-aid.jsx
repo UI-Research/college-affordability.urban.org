@@ -22,6 +22,7 @@ let singlepage = (
 
 
     <Graph file={require('./json/04_0010.json')} />
+    <Graph file={require('./json/04_0060.json')}/>
 
 
     <Multiples title="Grant Aid by Source for Independent and Dependent Students, by Sector, 2011-12" source="National Postsecondary Student Aid Study 2012">
