@@ -1,14 +1,9 @@
 {
   "title": "Sample Graph 3",
-  "padding": {
-    "top": 30,
-    "bottom": 30,
-    "left": 30,
-    "right": 30
-  },
+
   "data": {
     "columns": [
-      ["data1", 420, 200, 10, 490, 510, 250]
+      ["data1", 42000, 20000, 1000, 49000, 51000, 25000]
     ],
     "type": "area"
   },
@@ -21,7 +16,7 @@
     "y": {
       "tick": {
         "count": 2,
-        "format": "number"
+        "format": "$s"
       }
     }
   }
