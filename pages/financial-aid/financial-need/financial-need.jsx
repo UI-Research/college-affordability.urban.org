@@ -23,7 +23,14 @@ let singlepage = (
     <Graph file={require('./json/04_0010.json')}/>
     <Graph file={require('./json/04_0020.json')}/>
      <Graph file={require('./json/04_0030.json')}/>
-    <Graph file={require('./json/04_0040.json')}/>
+  
+    <Multiples title="Distribution of Unmet Need by Dependency Status and Sector, 2011-12" source="National Postsecondary Student Aid Study 2012">
+        <Graph file={require('./json/04_0041.json')} small="true"/>
+        <Graph file={require('./json/04_0042.json')} small="true"/>
+        <Graph file={require('./json/04_0043.json')} small="true"/>
+        <Graph file={require('./json/04_0044.json')} small="true"/>
+         <Graph file={require('./json/04_0045.json')} small="true"/>
+    </Multiples>
 
   </div>
 );
