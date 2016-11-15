@@ -30,6 +30,8 @@ let singlepage = (
         <Graph file={require('./json/04_0072.json')} small="true"/>
     </Multiples>
 
+    <Graph file={require('./json/04_0080.json')}/>
+
   
 
   </div>
