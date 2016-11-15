@@ -19,7 +19,28 @@ let singlepage = (
     <p>Duis in diam sem. Nunc tempus malesuada nisl ac tincidunt. Donec eget rhoncus erat. Mauris finibus enim eget libero eleifend, sit amet pellentesque leo dignissim. Proin quis orci eu lectus iaculis iaculis. Mauris gravida vehicula eros, sit amet eleifend ex porttitor et. Ut eget tincidunt nisi.</p>
     <h3>Sub Heading</h3>
     <p>Donec ornare, sem id consectetur dapibus, tortor mi pretium metus, ac malesuada mauris ligula commodo massa. Phasellus sed aliquam risus. Curabitur id dui lacus. Sed eleifend dolor at pellentesque molestie. Maecenas fringilla sem condimentum, aliquam nisl sit amet, dignissim ex. Mauris mattis justo risus, ac sodales neque euismod quis. Duis porttitor eget risus ut dictum. Aenean laoreet elit elit, et pellentesque leo pellentesque eu. Duis sodales gravida lobortis. Suspendisse potenti. Vivamus urna nunc, viverra nec nulla sed, volutpat eleifend metus. Duis nec nisi a magna lobortis ultrices in id justo. Pellentesque vestibulum odio vehicula bibendum hendrerit. Maecenas dignissim lectus sapien, ut faucibus libero tempor sit amet. Aliquam erat volutpat.</p>
+    <Graph file={require('./json/04_0130.json')} />
+
+    <Graph file={require('./json/04_0140.json')} />
+    <Graph file={require('./json/04_0170.json')} />
+   <Multiples title="Percentage of Undergraduates Receiving State Grant Aid, 2011-12" source="National Postsecondary Student Aid Study 2012">
+        <Graph file={require('./json/04_0151.json')} small="true"/>
+        <Graph file={require('./json/04_0152.json')} small="true"/>
+        <Graph file={require('./json/04_0153.json')} small="true"/>
+        <Graph file={require('./json/04_0154.json')} small="true"/>
+        <Graph file={require('./json/04_0155.json')} small="true"/>
+    </Multiples>
+
+
+    <Multiples title="Average State Grant Aid per Recipient, 2011-12" source="National Postsecondary Student Aid Study 2012">
+        <Graph file={require('./json/04_0161.json')} small="true"/>
+        <Graph file={require('./json/04_0162.json')} small="true"/>
+        <Graph file={require('./json/04_0163.json')} small="true"/>
+        <Graph file={require('./json/04_0164.json')} small="true"/>
+        <Graph file={require('./json/04_0165.json')} small="true"/>
+    </Multiples>
   </div>
+
 );
 
 let specifications = {

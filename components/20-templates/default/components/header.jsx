@@ -125,42 +125,78 @@ export default class Header extends Component {
               <div className="header-site__nav-primary-wrapper">
                 <div className="nav-primary">
                   <ul className="nav-primary__first-level">
-                    <li>
-                      <a href="/what-is-college">What is College?</a>
-                    </li>
-                    <li>
-                      <a href="/producing-education">Producing Education</a>
-                    </li>
                     <li className="has-submenu">
-                      <a href="/prices-expenses/index.html">Prices and Expenses</a>
+                      <a href="/what-is-college/index.html">What is College?</a>
                       <span onClick={toggle} className="fa fa-chevron-down"></span>
                       <ul className="nav-primary__second-level">
                         <li>
-                          <a href="/prices-expenses/sticker-prices">Sticker Prices</a>
+                          <a href="/what-is-college/institutions">Institutions</a>
                         </li>
                         <li>
-                          <a href="#">Student Budgets</a>
-                        </li>
-                        <li>
-                          <a href="#">Forgone Earnings</a>
+                          <a href="/what-is-college/students">Students</a>
                         </li>
                       </ul>
                     </li>
                     <li className="has-submenu">
-                      <a href="/student-aid">Student Aid</a>
+                      <a href="/cost-of-educating/index.html">The Cost of Educating Students</a>
                       <span onClick={toggle} className="fa fa-chevron-down"></span>
                       <ul className="nav-primary__second-level">
                         <li>
-                          <a href="#">Net Price</a>
+                          <a href="/cost-of-educating/subsidies">Institutional Subsidies</a>
                         </li>
                         <li>
-                          <a href="#">Financial Need</a>
+                          <a href="/cost-of-educating/appropriations">Appropriations</a>
                         </li>
                         <li>
-                          <a href="#">Grant Aid</a>
+                          <a href="/cost-of-educating/endowments">Endowments</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="has-submenu">
+                      <a href="/prices-and-expenses/index.html">Prices and Expenses</a>
+                      <span onClick={toggle} className="fa fa-chevron-down"></span>
+                      <ul className="nav-primary__second-level">
+                        <li>
+                          <a href="/prices-and-expenses/tuition-and-fees">Tuition and Fees</a>
                         </li>
                         <li>
-                          <a href="#">Tax Benefits</a>
+                          <a href="/prices-and-expenses/room-and-board">Room and Board</a>
+                        </li>
+                        <li>
+                          <a href="/prices-and-expenses/student-budgets">Student Budgets</a>
+                        </li>
+                         <li>
+                          <a href="/prices-and-expenses/forgone-earnings">Forgone Earnings</a>
+                        </li>
+                         <li>
+                          <a href="/prices-and-expenses/net-price">Net Price</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="has-submenu">
+                      <a href="/financial-aid">Financial Aid</a>
+                      <span onClick={toggle} className="fa fa-chevron-down"></span>
+                      <ul className="nav-primary__second-level">
+                        <li>
+                          <a href="/financial-aid/financial-need">Financial Need</a>
+                        </li>
+                        <li>
+                          <a href="/financial-aid/grant-aid">Grant Aid</a>
+                        </li>
+                        <li>
+                          <a href="/financial-aid/federal">Federal Grant Aid</a>
+                        </li>
+                        <li>
+                          <a href="/financial-aid/state">State Grant Aid</a>
+                        </li>
+                        <li>
+                          <a href="/financial-aid/institutional">Institutional Grant Aid</a>
+                        </li>
+                        <li>
+                          <a href="/financial-aid/other">Other</a>
+                        </li>
+                        <li>
+                          <a href="/financial-aid/tax-benefits">Tax Benefits</a>
                         </li>
                       </ul>
                     </li>
@@ -169,16 +205,19 @@ export default class Header extends Component {
                       <span onClick={toggle} className="fa fa-chevron-down"></span>
                       <ul className="nav-primary__second-level">
                         <li>
-                          <a href="#">Pre-College Income and Savings</a>
+                          <a href="/covering-expenses">Pre-College Income</a>
                         </li>
                         <li>
-                          <a href="#">Working During College</a>
+                          <a href="/covering-expenses/savings">Savings</a>
                         </li>
                         <li>
-                          <a href="#">Borrowing</a>
+                          <a href="/covering-expenses/working-during-college">Working During College</a>
                         </li>
                         <li>
-                          <a href="#">Time to Degree</a>
+                          <a href="/covering-expenses/borrowing">Borrowing</a>
+                        </li>
+                        <li>
+                          <a href="/covering-expenses/time-to-degree">Time to Degree</a>
                         </li>
                       </ul>
                     </li>
@@ -187,36 +226,24 @@ export default class Header extends Component {
                       <span onClick={toggle} className="fa fa-chevron-down"></span>
                       <ul className="nav-primary__second-level">
                         <li>
-                          <a href="#">Income After College</a>
+                          <a href="/after-college/employment-after-college">Employment After College</a>
                         </li>
                         <li>
-                          <a href="#">Student Debt and Repayment</a>
+                          <a href="/after-college/variation-in-earnings">Variation in Earnings</a>
                         </li>
                         <li>
-                          <a href="/after-college/breaking-even">Breaking Even</a>
+                          <a href="/after-college/debt-burden">Debt Burden</a>
+                        </li>
+                        <li>
+                          <a href="/after-college/loan-repayment-and-default">Loan Repayment and Default</a>
                         </li>
                       </ul>
                     </li>
                     <li>
+                      <a href="/breaking-even">Breaking Even</a>
+                    </li>
+                    <li>
                       <a href="/student-profiles">Student Profiles</a>
-                      <span onClick={toggle} className="fa fa-chevron-down"></span>
-                      <ul className="nav-primary__second-level">
-                        <li>
-                          <a href="#">Independent</a>
-                        </li>
-                        <li>
-                          <a href="#">Low-Income Dependent</a>
-                        </li>
-                        <li>
-                          <a href="#">Lower-Middle-Income Dependent</a>
-                        </li>
-                        <li>
-                          <a href="#">Upper-Middle-Income Dependent</a>
-                        </li>
-                        <li>
-                          <a href="#">Top-Income Dependent</a>
-                        </li>
-                      </ul>
                     </li>
                   </ul>
                 </div>

@@ -1,1 +1,0 @@
-{"axis": {"y": {"tick": {"format": "percent"}}, "x": {"type": "category", "categories": "All"}, "rotated": true}, "series": false, "data": {"type": "bar", "columns": [[false]], "labels": {"format": "percent"}}, "metadata": {"source": "National Postsecondary Student Aid Study 2012 ", "notes": null}}
