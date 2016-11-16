@@ -10,14 +10,21 @@ import util from 'util.jsx';
 
 let singlepage = (
   <div>
-    <h1>What is College?</h1>
-    <h2>Overview</h2>
-    <p>Quisque nec orci at mi iaculis ornare vel eu enim. Fusce vestibulum cursus nisi, vestibulum rhoncus ligula porta non. Maecenas dignissim sagittis ante, at porta urna elementum vitae. Donec accumsan ac sapien vitae maximus. Integer malesuada auctor congue. Maecenas molestie efficitur risus ac ullamcorper. Proin orci leo, luctus vitae erat ac, tristique aliquam eros. Aliquam lobortis lorem ante, ut volutpat ante ornare ut. Vestibulum facilisis ullamcorper ornare. Praesent volutpat tincidunt felis, at convallis tortor elementum id.</p>
-    <p>Duis imperdiet posuere fermentum. Sed bibendum ultricies sapien sed placerat. Etiam ac nunc condimentum, ultrices velit a, malesuada nisi. Vestibulum risus justo, varius et orci ut, commodo convallis purus. Nulla velit urna, viverra eget accumsan quis, feugiat vitae erat. Pellentesque in porttitor orci. Suspendisse id risus et leo laoreet luctus sit amet et tellus. Donec urna nunc, dictum a quam a, ultrices dignissim nisl. Nulla lobortis cursus erat, id rhoncus quam mollis non. Nam ut ipsum dui.</p>
-    <h2>Heading 2</h2>
-    <p>Duis in diam sem. Nunc tempus malesuada nisl ac tincidunt. Donec eget rhoncus erat. Mauris finibus enim eget libero eleifend, sit amet pellentesque leo dignissim. Proin quis orci eu lectus iaculis iaculis. Mauris gravida vehicula eros, sit amet eleifend ex porttitor et. Ut eget tincidunt nisi.</p>
-    <h3>Sub Heading</h3>
-    <p>Donec ornare, sem id consectetur dapibus, tortor mi pretium metus, ac malesuada mauris ligula commodo massa. Phasellus sed aliquam risus. Curabitur id dui lacus. Sed eleifend dolor at pellentesque molestie. Maecenas fringilla sem condimentum, aliquam nisl sit amet, dignissim ex. Mauris mattis justo risus, ac sodales neque euismod quis. Duis porttitor eget risus ut dictum. Aenean laoreet elit elit, et pellentesque leo pellentesque eu. Duis sodales gravida lobortis. Suspendisse potenti. Vivamus urna nunc, viverra nec nulla sed, volutpat eleifend metus. Duis nec nisi a magna lobortis ultrices in id justo. Pellentesque vestibulum odio vehicula bibendum hendrerit. Maecenas dignissim lectus sapien, ut faucibus libero tempor sit amet. Aliquam erat volutpat.</p>
+   <h1>The Cost of Educating Students</h1>
+	<p>Students see the sticker prices colleges charge, but they might not realize that the tuition they pay, whether out of pocket or with financial aid, often covers only a fraction of what their education really costs. </p>
+	<p>Colleges must pay for instructors, student services, administrative support, and maintenance, among other expenses. Average spending per student varies across institutions, partially because of differences in their missions and activities. For example, public two-year colleges focus almost exclusively on educating lower-level undergraduates, while public research universities educate both undergraduate and graduate students in addition to engaging in a significant amount of research activity. </p>
+	<Box>
+		<h3><em>Education and related spending</em></h3>
+		<p><em>Education and related expenditures include money spent on instruction, student services, academic and administrative support, and operations and maintenance. This does not include the cost of constructing new buildings or spending on research and public service. It also excludes scholarships and fellowships, which are discounts to students. </em></p>
+		<p><em>Instruction, the largest single cost at public and private nonprofit institutions, includes faculty salaries and benefits. Student services spending includes expenses such as the admissions and registrar&rsquo;s offices, provision of health services, and student affairs, which includes extracurricular activities, social and emotional supports, and related services. Academic support includes advising, libraries, technology, and academic administration.</em></p>
+	</Box>
+	<p>Almost all colleges and universities use revenues from tuition and fees to help cover these costs, and nonprofit colleges supplement that revenue with their own resources. Public colleges and universities use <strong>state and local tax revenues</strong><strong>, </strong>and most private universities use <strong>endowment income </strong>or other<strong> </strong>private funding sources<strong>.</strong> Money from these sources <strong>subsidizes the cost of education</strong>, so the sticker prices students see are lower than the actual cost. </p>
+	<Box>
+		<h3><em>Comparing costs: undergraduate and graduate students</em></h3>
+		<p><em>Because of how higher education accounting systems work, spending on graduate students cannot be precisely separated from spending on undergraduates, but there is broad agreement that it is about </em><a href="https://tcf.org/assets/downloads/20130523-Bridging_the_Higher_Education_Divide-Baum_Kurose.pdf"><em>three times more</em></a><em> expensive</em><em> to educate graduate students.</em></p>
+		<p><em>Why are there cost differences? Undergraduate introductory courses are generally larger than smaller graduate seminars, and teaching loads vary both within and across institutions. Moreover, graduate students teaching introductory courses and assistant professors teaching upper-level undergraduates are paid much less than full professors teaching graduate courses. </em></p>
+		<p><em>Field of study also factors into cost. For example, instructional costs in mechanical engineering programs are </em><a href="http://nces.ed.gov/pubs2003/2003161.pdf"><em>about three times as high</em></a><em> as those in English programs. Professors in the sciences also require more investment in laboratory space and equipment for research and teaching at the graduate level.</em></p>
+	</Box>
   </div>
 );
 
