@@ -23,10 +23,13 @@ let singlepage = (
     <Graph file={require('./json/01_0050.json')}/>
     <Graph file={require('./json/01_0060.json')}/>
     <Graph file={require('./json/01_0070.json')}/>
+     <Graph file={require('./json/01_0080.json')}/>
     <Graph file={require('./json/01_0090.json')}/>
     <Graph file={require('./json/01_0100.json')}/>
     <Graph file={require('./json/01_0110.json')}/>
     <Graph file={require('./json/01_0120.json')}/>
+    <Graph file={require('./json/01_0130.json')}/>
+    <Graph file={require('./json/01_0140.json')}/>
   </div>
 );
 
