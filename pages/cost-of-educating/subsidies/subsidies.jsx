@@ -11,36 +11,35 @@ import util from 'util.jsx';
 
 let singlepage = (
   <div>
-    <h1>What is College?</h1>
-    <h2>Overview</h2>
-    <p>Quisque nec orci at mi iaculis ornare vel eu enim. Fusce vestibulum cursus nisi, vestibulum rhoncus ligula porta non. Maecenas dignissim sagittis ante, at porta urna elementum vitae. Donec accumsan ac sapien vitae maximus. Integer malesuada auctor congue. Maecenas molestie efficitur risus ac ullamcorper. Proin orci leo, luctus vitae erat ac, tristique aliquam eros. Aliquam lobortis lorem ante, ut volutpat ante ornare ut. Vestibulum facilisis ullamcorper ornare. Praesent volutpat tincidunt felis, at convallis tortor elementum id.</p>
-    <p>Duis imperdiet posuere fermentum. Sed bibendum ultricies sapien sed placerat. Etiam ac nunc condimentum, ultrices velit a, malesuada nisi. Vestibulum risus justo, varius et orci ut, commodo convallis purus. Nulla velit urna, viverra eget accumsan quis, feugiat vitae erat. Pellentesque in porttitor orci. Suspendisse id risus et leo laoreet luctus sit amet et tellus. Donec urna nunc, dictum a quam a, ultrices dignissim nisl. Nulla lobortis cursus erat, id rhoncus quam mollis non. Nam ut ipsum dui.</p>
-    <h2>Heading 2</h2>
-    <p>Duis in diam sem. Nunc tempus malesuada nisl ac tincidunt. Donec eget rhoncus erat. Mauris finibus enim eget libero eleifend, sit amet pellentesque leo dignissim. Proin quis orci eu lectus iaculis iaculis. Mauris gravida vehicula eros, sit amet eleifend ex porttitor et. Ut eget tincidunt nisi.</p>
-    <h3>Sub Heading</h3>
-    <p>Donec ornare, sem id consectetur dapibus, tortor mi pretium metus, ac malesuada mauris ligula commodo massa. Phasellus sed aliquam risus. Curabitur id dui lacus. Sed eleifend dolor at pellentesque molestie. Maecenas fringilla sem condimentum, aliquam nisl sit amet, dignissim ex. Mauris mattis justo risus, ac sodales neque euismod quis. Duis porttitor eget risus ut dictum. Aenean laoreet elit elit, et pellentesque leo pellentesque eu. Duis sodales gravida lobortis. Suspendisse potenti. Vivamus urna nunc, viverra nec nulla sed, volutpat eleifend metus. Duis nec nisi a magna lobortis ultrices in id justo. Pellentesque vestibulum odio vehicula bibendum hendrerit. Maecenas dignissim lectus sapien, ut faucibus libero tempor sit amet. Aliquam erat volutpat.</p>
-   
-   <Multiples title="Education and Related Spending per Full-Time Equivalent Student at Public Institutions, 2005-–06 to 2013-–14">
+    <h1>Institutional Subsidies</h1>
+      <p>Colleges use <a href="../appropriations">appropriations</a>, <a href="../endowments">endowments</a>, and other revenue sources to <em>subsidize </em>the cost of education for students. This means that many students paying full tuition price are still paying less than the school is spending to educate them. </p>
+      <p>This subsidy is different from financial aid or scholarships because it is given to all students at the institution—and most don&rsquo;t even know they&rsquo;re receiving it. The subsidy supplements the college&rsquo;s published tuition price to equal the true total cost of providing an education. Subsidies vary both across and <a href="#distribution_of_subsidies">within sectors</a>. </p>
+      <p><strong>Overall, subsidies have shrunk in recent years, leaving revenue from tuition and fees to cover more of the cost of education.</strong></p>
+      <Multiples title="Education and Related Spending per Full-Time Equivalent Student at Public Institutions, 2005-–06 to 2013-–14">
         <Graph file={require('./json/02_0071.json')} small="true"/>
         <Graph file={require('./json/02_0072.json')} small="true"/>
         <Graph file={require('./json/02_0073.json')} small="true"/>
-    </Multiples>
-
-    <Multiples title="Education and Related Spending per Full-Time Equivalent Student at Private Nonprofit Institutions, 2005-–06 to 2013-–14">
+      </Multiples>
+      <p>As the chart above shows, net tuition revenues per student—the amount students paid schools either out of pocket or through financial aid—grew by 34 percent at public research universities between 2005–06 and 2013–14, but total educational expenditures grew by only 12 percent. This means schools were asking students to cover a larger share of their educational expenses. Indeed, the portion of educational costs covered by institutions from nontuition revenues—the subsidy—fell from 50 percent to 40 percent during that period. </p>
+      <p>There are significant differences across sectors, however. In 2013–14, average per-student spending was two and a half times greater at private research universities than at public research universities, although the gap between private and public master&rsquo;s universities was much smaller. Revenues from tuition and fees are expected to cover almost all of the cost of education at private nonprofit master&rsquo;s universities, as students, on average, receive very little institutional subsidy.</p>
+      <p><strong>At private institutions, unlike public institutions, tuition revenues covered roughly the same share of education spending from 2005–06 to 2013–14.</strong></p>
+      <Multiples title="Education and Related Spending per Full-Time Equivalent Student at Private Nonprofit Institutions, 2005-–06 to 2013-–14">
         <Graph file={require('./json/02_0081.json')} small="true"/>
         <Graph file={require('./json/02_0082.json')} small="true"/>
         <Graph file={require('./json/02_0083.json')} small="true"/>
-    </Multiples>
-
-    <Multiples title="Average Subsidy per Full-Time Equivalent Student within Undergraduate Deciles">
+      </Multiples>
+    <h2>Distribution of Subsidies</h2>
+      <p><strong>Looking at average subsidies by sector conceals wide variation across institutions, and just a small number of colleges and universities in each sector provide the majority of total subsidies.</strong></p>
+      <p>To examine the distribution of subsidies, we divided students into deciles based on the size of the subsidies they received. The 10 percent of students receiving the largest subsidies at private nonprofit research universities received more than four times as much support as students in the top decile at public research universities. Public master&rsquo;s institutions, however, have higher per-student subsidies than their private counterparts.   </p>
+      <p>Estimated subsidies are many times higher among the top decile of students at research institutions than among those at less resourced institutions. But high per-student subsidies at research universities may not translate to resources available to undergraduates. These institutions enroll large graduate populations and have active research agendas, both of which command considerable financial resources. Precise measurements are not available, but research universities with high estimated subsidies spend considerably less on undergraduate students than these figures would suggest.</p>
+      <Multiples title="Average Subsidy per Full-Time Equivalent Student within Undergraduate Deciles">
         <Graph file={require('./json/02_0091.json')} small="true"/>
         <Graph file={require('./json/02_0092.json')} small="true"/>
         <Graph file={require('./json/02_0093.json')} small="true"/>
         <Graph file={require('./json/02_0094.json')} small="true"/>
         <Graph file={require('./json/02_0095.json')} small="true"/>
         <Graph file={require('./json/02_0096.json')} small="true"/>
-    </Multiples>
-
+      </Multiples>
 
   </div>
 );
