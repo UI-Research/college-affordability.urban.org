@@ -26,7 +26,7 @@ let singlepage = (
         <p><em>Average endowment assets per student at private nonprofit institutions fell by 29 percent between 2007–08 and 2008–09 and were 12 percent lower in 2012–13 than they had been five years earlier. Investment income exceeded income from all other sources combined at private doctoral universities in 2006–07 but generated losses slightly greater than total income from other sources in 2008–09.</em></p>
       </Box>
       <p>The few public and private nonprofit doctoral universities with very high endowment income per student use those assets to support undergraduate and graduate students and to further their research missions. <strong>During the 2013–14 academic year, 10 percent of students enrolled at private doctoral universities benefited from about $60,400 of endowment spending per full-time equivalent (FTE) student, but median endowment spending per FTE student in this sector was only $3,200.</strong> <strong>In public doctoral universities, 10 percent of students attended institutions with an average of $5,500 of endowment spending per student compared to just $733 for the median student.</strong></p>
-      <Multiples title="Average endowment income per student within deciles of enrolled students">
+      <Multiples title="Average Endowment Income per Student by Decile" source="Integrated Postsecondary Education Data System (IPEDS).">
         <Graph file={require('./json/02_0051.json')} small="true"/>
         <Graph file={require('./json/02_0052.json')} small="true"/>
         <Graph file={require('./json/02_0053.json')} small="true"/>
@@ -35,7 +35,7 @@ let singlepage = (
     </Multiples>
       <h3>More selective schools tend to have higher endowment income.</h3>
         <p>At both private nonprofit and public four-year institutions with open admissions policies, median endowment income per student is about $200. In contrast, the median private nonprofit four-year institution that admits fewer than 25 percent of applicants has almost $16,000 in endowment income per student. </p>
-        <Multiples title="Median endowment income per student by level of selectivity">
+        <Multiples title="Percentage Endowment Income per Student by Share of Applicants Admitted" source="Integrated Postsecondary Education Data System (IPEDS).">
           <Graph file={require('./json/02_0061.json')} small="true"/>
           <Graph file={require('./json/02_0062.json')} small="true"/>
         </Multiples>
