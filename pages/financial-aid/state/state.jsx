@@ -23,7 +23,7 @@ let singlepage = (
 
     <Graph file={require('./json/04_0140.json')} />
     <Graph file={require('./json/04_0170.json')} />
-   <Multiples title="Percentage of Undergraduates Receiving State Grant Aid, 2011-12" source="National Postsecondary Student Aid Study 2012">
+   <Multiples title="Share of Undergraduates Receiving State Grant Aid, 2011–12" source="National Postsecondary Student Aid Study 2012">
         <Graph file={require('./json/04_0151.json')} small="true"/>
         <Graph file={require('./json/04_0152.json')} small="true"/>
         <Graph file={require('./json/04_0153.json')} small="true"/>
@@ -32,7 +32,7 @@ let singlepage = (
     </Multiples>
 
 
-    <Multiples title="Average State Grant Aid per Recipient, 2011-12" source="National Postsecondary Student Aid Study 2012">
+    <Multiples title="Average State Grant Aid per Recipient, 2011–12" source="National Postsecondary Student Aid Study 2012">
         <Graph file={require('./json/04_0161.json')} small="true"/>
         <Graph file={require('./json/04_0162.json')} small="true"/>
         <Graph file={require('./json/04_0163.json')} small="true"/>
