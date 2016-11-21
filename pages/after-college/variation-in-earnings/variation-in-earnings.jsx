@@ -25,12 +25,12 @@ let singlepage = (
 );
 
 let specifications = {
-  'name': 'loan-repayment-and-default',
-  'title': 'Loan Repayment and Default',
+  'name': 'variation-in-earnings',
+  'title': 'Variation in Earning',
   'content': <SinglePage content={singlepage} />
 };
 
-const LoanRepaymentAndDefault = React.createClass({
+const VariationInEarning = React.createClass({
   render: function() {
     return (
       <Template title={specifications.title} machineName={specifications.name} includeHTML={this.props.includeHTML}>
@@ -44,6 +44,6 @@ const LoanRepaymentAndDefault = React.createClass({
 if (util.canUseDOM()) {
   require('./' + specifications.name.toLowerCase() + '.scss');
 }
-util.printToPage('loan-repayment-and-default', LoanRepaymentAndDefault);
+util.printToPage('variation-in-earnings', VariationInEarning);
 
-module.exports = LoanRepaymentAndDefault;
+module.exports = VariationInEarning;
