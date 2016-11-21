@@ -20,7 +20,14 @@ let singlepage = (
     <h3>Sub Heading</h3>
     <p>Donec ornare, sem id consectetur dapibus, tortor mi pretium metus, ac malesuada mauris ligula commodo massa. Phasellus sed aliquam risus. Curabitur id dui lacus. Sed eleifend dolor at pellentesque molestie. Maecenas fringilla sem condimentum, aliquam nisl sit amet, dignissim ex. Mauris mattis justo risus, ac sodales neque euismod quis. Duis porttitor eget risus ut dictum. Aenean laoreet elit elit, et pellentesque leo pellentesque eu. Duis sodales gravida lobortis. Suspendisse potenti. Vivamus urna nunc, viverra nec nulla sed, volutpat eleifend metus. Duis nec nisi a magna lobortis ultrices in id justo. Pellentesque vestibulum odio vehicula bibendum hendrerit. Maecenas dignissim lectus sapien, ut faucibus libero tempor sit amet. Aliquam erat volutpat.</p>
 
-    <Graph file={require('./json/05_0010.json')}/>
+    
+    <Multiples title="Median Total Income of Families by Race/Ethnicity, Geographical Region, and Age, 2015" source="U.S. Census Bureau, Current Population Survey, 2016 Annual Social and Economic Supplement, Table FINC-01">
+        <Graph file={require('./json/05_0011.json')} small="true"/>
+        <Graph file={require('./json/05_0012.json')} small="true"/>
+        <Graph file={require('./json/05_0013.json')} small="true"/>
+        <Graph file={require('./json/05_0014.json')} small="true"/>
+    </Multiples>
+    
     <Graph file={require('./json/05_0020.json')}/>
   </div>
 );
