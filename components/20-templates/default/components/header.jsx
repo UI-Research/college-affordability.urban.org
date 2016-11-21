@@ -205,7 +205,7 @@ export default class Header extends Component {
                       <span onClick={toggle} className="fa fa-chevron-down"></span>
                       <ul className="nav-primary__second-level">
                         <li>
-                          <a href="/covering-expenses">Pre-College Income</a>
+                          <a href="/covering-expenses/pre-college-income">Pre-College Income</a>
                         </li>
                         <li>
                           <a href="/covering-expenses/savings">Savings</a>
