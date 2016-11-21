@@ -18,7 +18,7 @@ let singlepage = (
 
 let specifications = {
   'name': 'pre-college-income-and-savings',
-  'title': 'Pre-College Income and Savings',
+  'title': 'Pre College Income and Savings',
   'content': <SinglePage content={singlepage} />
 };
 
