@@ -15,12 +15,15 @@ let singlepage = (
     <h2>Overview</h2>
     <p>In progress...</p>
 
-    <Multiples title="Cost of attendance by sector from 2005-06 to 2015-16 in 2015 dollars" source="Cost of attendance by sector from 2005-06 to 2015-16 in 2015 dollars">
+    <Multiples title="Cost of Attendance by Sector from 2005-06 to 2015-16 in 2015 dollars" source="IPEDS and Trends in College Pricing 2015">
         <Graph file={require('./json/03_0121.json')} small="true"/>
-        <Graph file={require('./json/04_0122.json')} small="true"/>
-        <Graph file={require('./json/04_0123.json')} small="true"/>
-        <Graph file={require('./json/04_0124.json')} small="true"/>
+        <Graph file={require('./json/03_0122.json')} small="true"/>
+        <Graph file={require('./json/03_0123.json')} small="true"/>
+        <Graph file={require('./json/03_0124.json')} small="true"/>
     </Multiples>
+    <Graph file={require('./json/03_0130.json')}/>
+    <Graph file={require('./json/03_0150.json')}/>
+
   </div>
 );
 
