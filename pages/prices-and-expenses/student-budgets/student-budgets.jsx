@@ -23,6 +23,7 @@ let singlepage = (
     </Multiples>
     <Graph file={require('./json/03_0130.json')}/>
     <Graph file={require('./json/03_0150.json')}/>
+    <Graph file={require('./json/03_0160.json')}/>
 
   </div>
 );
