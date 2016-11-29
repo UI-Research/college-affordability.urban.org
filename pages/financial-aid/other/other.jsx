@@ -19,7 +19,31 @@ let singlepage = (
     <p>Duis in diam sem. Nunc tempus malesuada nisl ac tincidunt. Donec eget rhoncus erat. Mauris finibus enim eget libero eleifend, sit amet pellentesque leo dignissim. Proin quis orci eu lectus iaculis iaculis. Mauris gravida vehicula eros, sit amet eleifend ex porttitor et. Ut eget tincidunt nisi.</p>
     <h3>Sub Heading</h3>
     <p>Donec ornare, sem id consectetur dapibus, tortor mi pretium metus, ac malesuada mauris ligula commodo massa. Phasellus sed aliquam risus. Curabitur id dui lacus. Sed eleifend dolor at pellentesque molestie. Maecenas fringilla sem condimentum, aliquam nisl sit amet, dignissim ex. Mauris mattis justo risus, ac sodales neque euismod quis. Duis porttitor eget risus ut dictum. Aenean laoreet elit elit, et pellentesque leo pellentesque eu. Duis sodales gravida lobortis. Suspendisse potenti. Vivamus urna nunc, viverra nec nulla sed, volutpat eleifend metus. Duis nec nisi a magna lobortis ultrices in id justo. Pellentesque vestibulum odio vehicula bibendum hendrerit. Maecenas dignissim lectus sapien, ut faucibus libero tempor sit amet. Aliquam erat volutpat.</p>
-    <Graph file={require('./json/04_0220.json')}/>
+      <Multiples title="Percentage of Undergraduates Receiving Employer Assistance and Private Scholarships, 2011–12">
+        <Graph file={require('./json/04_0221.json')} small="true"/>
+        <Graph file={require('./json/04_0222.json')} small="true"/>
+        <Graph file={require('./json/04_0223.json')} small="true"/>
+        <Graph file={require('./json/04_0224.json')} small="true"/>
+    </Multiples>
+          <Multiples title="Percentage of Undergraduates Receiving Employer Assistance and Private Scholarships, 2011–12">
+        <Graph file={require('./json/04_02211.json')} small="true"/>
+        <Graph file={require('./json/04_02222.json')} small="true"/>
+        <Graph file={require('./json/04_02233.json')} small="true"/>
+        <Graph file={require('./json/04_02244.json')} small="true"/>
+    </Multiples>
+    <Multiples title="Average Employer Assistance and Private Scholarships per Recipient, 2011–12">
+        <Graph file={require('./json/04_0231.json')} small="true"/>
+        <Graph file={require('./json/04_0232.json')} small="true"/>
+        <Graph file={require('./json/04_0233.json')} small="true"/>
+        <Graph file={require('./json/04_0234.json')} small="true"/>
+    </Multiples>
+          <Multiples title="Average Employer Assistance and Private Scholarships per Recipient, 2011–12">
+        <Graph file={require('./json/04_02311.json')} small="true"/>
+        <Graph file={require('./json/04_02322.json')} small="true"/>
+        <Graph file={require('./json/04_02333.json')} small="true"/>
+        <Graph file={require('./json/04_02344.json')} small="true"/>
+    </Multiples>
+
   </div>
 );
 
