@@ -377,13 +377,17 @@ export class BaseGraph extends Component {
   }
   getTimeSeriesCount(allVals, count){
     if(allVals.length <= count){
-      return count;
+      return allVals.length;
     }
     var total = allVals.length;
     for(var c = count; c > 0; c--){
       for (var s = 1; s< 20; s++){
         if(total -1 == (c-1)*(s+1)){
-          return c
+          if(c != 2){
+            return c
+          }else{
+            return allVals.length;
+          }
         }
       }
     }
