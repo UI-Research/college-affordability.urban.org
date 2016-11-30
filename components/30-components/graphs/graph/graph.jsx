@@ -342,6 +342,8 @@ export class BaseGraph extends Component {
   polishChart(object) {
     const setLegend = object.setLegend;
     setLegend(object);
+    const resizeLegend = object.resizeLegend;
+    resizeLegend(object);
     const setTick = object.setTick;
     setTick(object);
     const moveAxisLabel = object.moveAxisLabel;
@@ -374,9 +376,7 @@ export class BaseGraph extends Component {
       .attr('download', `${util.machineName(object.props.file.title)}.csv`);
   }
   getTimeSeriesCount(allVals, count){
-    console.log(allVals, count)
     if(allVals.length <= count){
-      console.log("foo")
       return count;
     }
     var total = allVals.length;
@@ -387,10 +387,6 @@ export class BaseGraph extends Component {
         }
       }
     }
-    // else{
-    //   console.log(allVals)
-    //   return [allVals[4], allVals[7]]
-    // }
   }
   getTickValues(dataVals, count, groups, inMin, inMax){
     if(typeof(groups) == "undefined"){
@@ -454,8 +450,7 @@ export class BaseGraph extends Component {
 //As fall back, get ticks
         data.axis.y.tick.values = this.getTickValues(data.data.columns, ticks, data.data.groups, this.props.file.axis.y.min, this.props.file.axis.y.max);
         
-        if(data.data.type == "line"){
-          // data.axis.x.tick.values = this.getTimeSeriesValues(data.axis.x.categories, 8)
+        if(data.data.type == "line" || data.data.type == "area"){
           data.axis.x.tick.count = this.getTimeSeriesCount(data.axis.x.categories, 13);
         }
         if (data.axis.x.type == 'category' && width <= util.breakpointWidth('mid')) {
@@ -466,7 +461,6 @@ export class BaseGraph extends Component {
           }
         }
         else {
-          console.log(data)
           data.axis.x.tick.rotate = 0;
           data.axis.x.tick.multiline = true;
         }
@@ -530,6 +524,21 @@ export class BaseGraph extends Component {
       });
     }
 
+  }
+  resizeLegend(object){
+    let svg = d3.select(`#${object.props.id}_legend`)
+    // console.log(svg)
+    let gs = svg.selectAll("g")
+    var bottoms = []
+    gs.each(function(){
+      bottoms.push(this.getBoundingClientRect().bottom)
+    })
+    // console.log(bottoms)
+    if(bottoms.length != 0){
+      svg.select("svg").style("height", 2*Math.abs(Math.max.apply(null, bottoms)-Math.min.apply(null, bottoms)) + "px")
+    }
+
+    
   }
   moveAxisLabel(object) {
     // Transform Y axis to not be so vertical...
