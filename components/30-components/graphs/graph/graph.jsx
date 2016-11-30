@@ -186,7 +186,7 @@ export class BaseGraph extends Component {
             if (data.axis.x.type == 'indexed') {
               data.axis.x.padding = {
                 left: 0.15,
-                right: 0.2
+                right: 0.3
               };
             }
             else {
@@ -373,6 +373,25 @@ export class BaseGraph extends Component {
       .attr('href', encodedUri)
       .attr('download', `${util.machineName(object.props.file.title)}.csv`);
   }
+  getTimeSeriesCount(allVals, count){
+    console.log(allVals, count)
+    if(allVals.length <= count){
+      console.log("foo")
+      return count;
+    }
+    var total = allVals.length;
+    for(var c = count; c > 0; c--){
+      for (var s = 1; s< 20; s++){
+        if(total -1 == (c-1)*(s+1)){
+          return c
+        }
+      }
+    }
+    // else{
+    //   console.log(allVals)
+    //   return [allVals[4], allVals[7]]
+    // }
+  }
   getTickValues(dataVals, count, groups, inMin, inMax){
     if(typeof(groups) == "undefined"){
       var max = d3.max(dataVals, function(array) {
@@ -435,6 +454,10 @@ export class BaseGraph extends Component {
 //As fall back, get ticks
         data.axis.y.tick.values = this.getTickValues(data.data.columns, ticks, data.data.groups, this.props.file.axis.y.min, this.props.file.axis.y.max);
         
+        if(data.data.type == "line"){
+          // data.axis.x.tick.values = this.getTimeSeriesValues(data.axis.x.categories, 8)
+          data.axis.x.tick.count = this.getTimeSeriesCount(data.axis.x.categories, 13);
+        }
         if (data.axis.x.type == 'category' && width <= util.breakpointWidth('mid')) {
           data.axis.x.tick.rotate = 20;
           data.axis.x.tick.multiline = false;
@@ -443,6 +466,7 @@ export class BaseGraph extends Component {
           }
         }
         else {
+          console.log(data)
           data.axis.x.tick.rotate = 0;
           data.axis.x.tick.multiline = true;
         }
