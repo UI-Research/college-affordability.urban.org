@@ -29,6 +29,13 @@ export class BaseGraph extends Component {
       // Identify DOM element we want to apply the graph to.
       data.bindto = '#' + this.props.id;
 
+      if (_.includes(['line', 'area'], data.data.type)) {
+        console.log(data.data, data.axis.x)
+        data.axis.x.categories.push("")
+        data.data.columns.forEach(function(arr){
+          arr.push(null)
+        })
+      }
       // Set max number of axis ticks on y axis
       // TODO: There is a bug that's not allowing C3 to align the values correctly.
         // We can't tap into this feature until it gets fixed on their end.
