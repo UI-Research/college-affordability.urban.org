@@ -186,7 +186,7 @@ export class BaseGraph extends Component {
             if (data.axis.x.type == 'indexed') {
               data.axis.x.padding = {
                 left: 0.15,
-                right: 0.2
+                right: 0.3
               };
             }
             else {
@@ -342,6 +342,8 @@ export class BaseGraph extends Component {
   polishChart(object) {
     const setLegend = object.setLegend;
     setLegend(object);
+    const resizeLegend = object.resizeLegend;
+    resizeLegend(object);
     const setTick = object.setTick;
     setTick(object);
     const moveAxisLabel = object.moveAxisLabel;
@@ -372,6 +374,23 @@ export class BaseGraph extends Component {
     d3.select(`.c-${object.props.id}-container a.button-download_data__csv_`)
       .attr('href', encodedUri)
       .attr('download', `${util.machineName(object.props.file.title)}.csv`);
+  }
+  getTimeSeriesCount(allVals, count){
+    if(allVals.length <= count){
+      return allVals.length;
+    }
+    var total = allVals.length;
+    for(var c = count; c > 0; c--){
+      for (var s = 1; s< 20; s++){
+        if(total -1 == (c-1)*(s+1)){
+          if(c != 2){
+            return c
+          }else{
+            return allVals.length;
+          }
+        }
+      }
+    }
   }
   getTickValues(dataVals, count, groups, inMin, inMax){
     if(typeof(groups) == "undefined"){
@@ -435,6 +454,9 @@ export class BaseGraph extends Component {
 //As fall back, get ticks
         data.axis.y.tick.values = this.getTickValues(data.data.columns, ticks, data.data.groups, this.props.file.axis.y.min, this.props.file.axis.y.max);
         
+        if(data.data.type == "line" || data.data.type == "area"){
+          data.axis.x.tick.count = this.getTimeSeriesCount(data.axis.x.categories, 13);
+        }
         if (data.axis.x.type == 'category' && width <= util.breakpointWidth('mid')) {
           data.axis.x.tick.rotate = 20;
           data.axis.x.tick.multiline = false;
@@ -506,6 +528,21 @@ export class BaseGraph extends Component {
       });
     }
 
+  }
+  resizeLegend(object){
+    let svg = d3.select(`#${object.props.id}_legend`)
+    // console.log(svg)
+    let gs = svg.selectAll("g")
+    var bottoms = []
+    gs.each(function(){
+      bottoms.push(this.getBoundingClientRect().bottom)
+    })
+    // console.log(bottoms)
+    if(bottoms.length != 0){
+      svg.select("svg").style("height", 2*Math.abs(Math.max.apply(null, bottoms)-Math.min.apply(null, bottoms)) + "px")
+    }
+
+    
   }
   moveAxisLabel(object) {
     // Transform Y axis to not be so vertical...
