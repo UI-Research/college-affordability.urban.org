@@ -386,11 +386,13 @@ export class BaseGraph extends Component {
           if(c != 2){
             return c
           }else{
-            return allVals.length;
+            // return allVals.length;
+            return c
           }
         }
       }
     }
+    return allVals.length
   }
   getTickValues(dataVals, count, groups, inMin, inMax){
     if(typeof(groups) == "undefined"){
@@ -531,13 +533,11 @@ export class BaseGraph extends Component {
   }
   resizeLegend(object){
     let svg = d3.select(`#${object.props.id}_legend`)
-    // console.log(svg)
     let gs = svg.selectAll("g")
     var bottoms = []
     gs.each(function(){
       bottoms.push(this.getBoundingClientRect().bottom)
     })
-    // console.log(bottoms)
     if(bottoms.length != 0){
       svg.select("svg").style("height", 2*Math.abs(Math.max.apply(null, bottoms)-Math.min.apply(null, bottoms)) + "px")
     }
@@ -626,28 +626,49 @@ export class BaseGraph extends Component {
   }
   barChartFormatting(object) {
     let bar_text = d3.selectAll(`#${object.props.id}.c-bar__container--grouped .c3-chart-texts .c3-text`);
+    let bar_bar = d3.selectAll(`#${object.props.id}.c-bar__container--grouped .c3-chart-bar .c3-bar`);
     bar_text.each(function() {
       var style = d3.select(this).attr('style');
       var style_array = BaseGraph.stylesToObject(style);
-      // Need to use rgb and hex for different browsers.
-      var colors_light_text = [
-        'rgb(22, 150, 210)',
-        'rgb(0, 0, 0)',
-        'rgb(236, 0, 139)',
-        'rgb(85, 183, 72)',
-        'rgb(92, 88, 89)',
-        'rgb(219, 43, 39)',
-        '#1696d2',
-        '#000000',
-        '#ec008b',
-        '#55b748',
-        '#5c5859',
-        '#db2b27'
-      ];
-      // Assign fill color to chart text.
-      var is_white = colors_light_text.indexOf(style_array['fill']);
-      var color = (is_white > -1) ? 'white' : 'black';
-      d3.select(this).attr('style', style + ' fill:' + color + ' !important');
+      //get the index number of the text element in its parent group, which is the same as the index number of the corresponding bar in its group
+      var indexNum = [].slice.call(this.parentNode.children).indexOf(this)
+      var textColor = style_array['fill'];
+      var barGroup;
+      bar_bar.each(function(){
+        var barStyle = d3.select(this).attr('style');
+        var barStyle_array = BaseGraph.stylesToObject(barStyle);
+        if(barStyle_array['fill'] == textColor){
+          barGroup = this.parentNode;
+          return false;
+        }
+      })
+      var barBounds = barGroup.querySelectorAll(".c3-bar")[indexNum].getBoundingClientRect()
+      var textBounds = this.getBoundingClientRect()
+      //if label doesn't fit in bar slice, don't show it
+      if(barBounds.width <= textBounds.width + 5 || barBounds.height <= textBounds.height +5){
+         d3.select(this).attr('style', style + ' fill:' + 'rgba(0,0,0,0)' + ' !important'); 
+      }
+      else{
+        // Need to use rgb and hex for different browsers.
+        var colors_light_text = [
+          'rgb(22, 150, 210)',
+          'rgb(0, 0, 0)',
+          'rgb(236, 0, 139)',
+          'rgb(85, 183, 72)',
+          'rgb(92, 88, 89)',
+          'rgb(219, 43, 39)',
+          '#1696d2',
+          '#000000',
+          '#ec008b',
+          '#55b748',
+          '#5c5859',
+          '#db2b27'
+        ];
+        // Assign fill color to chart text.
+        var is_white = colors_light_text.indexOf(textColor);
+        var color = (is_white > -1) ? 'white' : 'black';
+        d3.select(this).attr('style', style + ' fill:' + color + ' !important');
+      }
     });
   }
   formatDataLabel(object) {
