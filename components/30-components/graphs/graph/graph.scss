@@ -87,6 +87,52 @@
     }
   }
 
+
+  .c-graph__wrapper.tall_wrapper {
+    height: 900px;
+    @include breakpoint($bp--mid) {
+      height: 900px;
+    }
+    @include breakpoint($bp--large) {
+      height: 900px;
+    }
+  }
+
+  &.has-legend {
+    .c-graph__wrapper.tall_wrapper {
+      height: 900px;
+      @include breakpoint($bp--mid) {
+        height: 900px;
+      }
+      @include breakpoint($bp--large) {
+        height: 900px;
+      }
+    }
+  }
+  &.has-toggle {
+    .c-graph__wrapper.tall_wrapper {
+      height: 900px;
+      @include breakpoint($bp--mid) {
+        height: 900px;
+      }
+      @include breakpoint($bp--large) {
+        height: 900px;
+      }
+    }
+  }
+  &.has-toggle.has-legend {
+    .c-graph__wrapper.tall_wrapper {
+      height: 900px;
+      @include breakpoint($bp--mid) {
+        height: 900px;
+      }
+      @include breakpoint($bp--large) {
+        height: 900px;
+      }
+    }
+  }
+
+
   .c-graph__container {
     height: 375px;
     @include breakpoint($bp--mid) {
@@ -102,6 +148,16 @@
       padding: 5px;
       text-decoration: none;
       cursor: hand;
+    }
+  }
+
+  .c-graph__container.tall_container {
+    height: 900px;
+    @include breakpoint($bp--mid) {
+      height: 900px;
+    }
+    @include breakpoint($bp--large) {
+      height: 900px;
     }
   }
 
@@ -254,6 +310,39 @@
       }
     }
   }
+
+
+
+  .c-graph__wrapper.tall_wrapper {
+    height: 900px;
+    @include breakpoint($bp--small) {
+      height: 900px;
+    }
+    @include breakpoint($bp--mid) {
+      height: 900px;
+    }
+    @include breakpoint($bp--large) {
+      height: 900px;
+    }
+  }
+  &.has-toggle.has-legend {
+    .c-graph__wrapper.tall_wrapper {
+      height: 900px;
+      @include breakpoint($bp--small) {
+        height: 900px;
+      }
+      @include breakpoint($bp--mid) {
+        height: 900px;
+      }
+      @include breakpoint($bp--large) {
+        height: 900px;
+      }
+    }
+  }
+
+
+
+
 }
 .c-bar.c-bar-horizontal.c-bar-grouped {
   .c3-text {
@@ -307,4 +396,3 @@
     display: none;
   }
 }
-

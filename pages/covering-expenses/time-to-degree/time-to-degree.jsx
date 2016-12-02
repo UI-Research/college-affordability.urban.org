@@ -11,21 +11,38 @@ import util from 'util.jsx';
 
 let singlepage = (
   <div>
-    <h1>What is College?</h1>
-    <h2>Overview</h2>
-    <p>Quisque nec orci at mi iaculis ornare vel eu enim. Fusce vestibulum cursus nisi, vestibulum rhoncus ligula porta non. Maecenas dignissim sagittis ante, at porta urna elementum vitae. Donec accumsan ac sapien vitae maximus. Integer malesuada auctor congue. Maecenas molestie efficitur risus ac ullamcorper. Proin orci leo, luctus vitae erat ac, tristique aliquam eros. Aliquam lobortis lorem ante, ut volutpat ante ornare ut. Vestibulum facilisis ullamcorper ornare. Praesent volutpat tincidunt felis, at convallis tortor elementum id.</p>
-    <p>Duis imperdiet posuere fermentum. Sed bibendum ultricies sapien sed placerat. Etiam ac nunc condimentum, ultrices velit a, malesuada nisi. Vestibulum risus justo, varius et orci ut, commodo convallis purus. Nulla velit urna, viverra eget accumsan quis, feugiat vitae erat. Pellentesque in porttitor orci. Suspendisse id risus et leo laoreet luctus sit amet et tellus. Donec urna nunc, dictum a quam a, ultrices dignissim nisl. Nulla lobortis cursus erat, id rhoncus quam mollis non. Nam ut ipsum dui.</p>
-    <h2>Heading 2</h2>
-    <p>Duis in diam sem. Nunc tempus malesuada nisl ac tincidunt. Donec eget rhoncus erat. Mauris finibus enim eget libero eleifend, sit amet pellentesque leo dignissim. Proin quis orci eu lectus iaculis iaculis. Mauris gravida vehicula eros, sit amet eleifend ex porttitor et. Ut eget tincidunt nisi.</p>
-    <h3>Sub Heading</h3>
-    <p>Donec ornare, sem id consectetur dapibus, tortor mi pretium metus, ac malesuada mauris ligula commodo massa. Phasellus sed aliquam risus. Curabitur id dui lacus. Sed eleifend dolor at pellentesque molestie. Maecenas fringilla sem condimentum, aliquam nisl sit amet, dignissim ex. Mauris mattis justo risus, ac sodales neque euismod quis. Duis porttitor eget risus ut dictum. Aenean laoreet elit elit, et pellentesque leo pellentesque eu. Duis sodales gravida lobortis. Suspendisse potenti. Vivamus urna nunc, viverra nec nulla sed, volutpat eleifend metus. Duis nec nisi a magna lobortis ultrices in id justo. Pellentesque vestibulum odio vehicula bibendum hendrerit. Maecenas dignissim lectus sapien, ut faucibus libero tempor sit amet. Aliquam erat volutpat.</p>
-    
-    <Graph file={require('./json/05_0190.json')}/>
-    <Graph file={require('./json/05_0200.json')}/>
-    <Graph file={require('./json/05_0210.json')}/>
-    <Graph file={require('./json/05_0220.json')}/>
-    <Graph file={require('./json/05_0230.json')}/>
-    <Graph file={require('./json/05_0240.json')}/>
+    <h1>Time to Degree </h1>
+      <p>The most common way to talk about college prices is in terms of the price of a single year. People tend to discuss the sticker price for tuition and fees, the cost of attendance or total student budget, the net price, and the expected family contribution all as though students were only in school for one year. But earning an associate degree requires at least two years of full-time enrollment and earning a bachelor&rsquo;s degree usually requires at least four years. </p>
+      <p>The time it takes to earn a degree varies depending on a number of factors, including some choices students make, and those choices can affect the price of college. Although taking fewer classes may give students more time to work, increasing their in-school earnings and the resources they have available to pay for college, taking longer to graduate increases the net price of the degree. This strategy can also increase forgone earnings, reduce financial aid, and increase the amount of debt students accumulate. </p>
+      <Box>
+        <h3><em>Time enrolled vs time elapsed</em></h3>
+        <p><em>The number of years a student is actually enrolled in college may differ from the number of years that elapse between first enrolling and completing a degree. A student who enrolls half time will take two years to complete one full-time year of enrollment. Some students take time off. Some students go to summer school, enrolling for more than one year of school during a calendar year.</em></p>
+        <p><em>Students who earned bachelor&rsquo;s degrees in 2014–15 were enrolled for an average of 5.0 years, but 5.7 calendar years elapsed between the beginning and the end of their studies. Students who earned associate degrees at two-year public colleges were enrolled for 3.4 years over an average of 5.4 years. Time enrolled is a better indicator of the price of a college education than time elapsed.</em></p>
+        <p><em>The lower average time to degree for bachelor&rsquo;s degree recipients at private nonprofit four-year institutions reduces the price differential between earning a bachelor&rsquo;s degree at a private nonprofit college and going to a public college.</em></p>
+        <Graph file={require('./json/05_0190.json')}/></Box>
+      <h2>How Long Are Students in College?</h2>
+        <p><strong>The majority of students who complete their programs take longer than two years to complete an associate degree and longer than four years to complete a bachelor&rsquo;s degree. </strong></p>
+        <p>The time elapsed does not necessarily reflect how long students were enrolled. A student who takes a year off, for example, may still graduate after four years of enrollment, even though five years will have passed between starting college and graduation. There is no good measure of time enrolled, however, so here we examine time elapsed.</p>
+        <p>Forty-five percent of 2011–12 bachelor&rsquo;s degree recipients completed their degrees within four years and another 25 percent finished within five years. But for 30 percent of students, six years or more elapsed before they received their bachelor&rsquo;s degrees.</p>
+        <Graph file={require('./json/05_0200.json')}/>
+        <p>Students may take longer than expected to complete their degrees for a variety of reasons. Some spend time in developmental classes, which do not count toward a degree, preparing for college-level work; some do not complete an average of 15 credit hours each semester; others may take too many courses that do not fulfill their degree requirements. </p>
+        <p>On-time completion rates are even lower for associate degrees. <strong>A majority of students earning associate degrees in 2011–12 took more than two years to complete their programs in both the public two-year and for-profit sectors.</strong></p>
+        <Graph file={require('./json/05_0210.json')}/>
+        <p>Only 25 percent of 2011–12 associate degree recipients completed their degrees in two years or less. Another 20 percent finished within three years, but a majority of students receiving associate degrees took at least four years to graduate. </p>
+        <p>One reason it is so common for associate degree recipients to take longer than two years to graduate is that a high proportion of these students attend college part time while working.</p>
+      <h2>The Price of a Degree Versus the Price of a Year</h2>
+        <p><strong>Extra years of enrollment add significantly to the price of a bachelor&rsquo;s degree.</strong></p>
+        <p>For example, a student paying the full sticker price of tuition and fees and room and board at an in-state public four-year university at 2016-17 prices would pay $80,400 over four years. But enrolling full time for five years would cost $100,500 and for six years, the charges would be $120,500.</p>
+        <Graph file={require('./json/05_0220.json')}/>
+        <Box>
+          <h3>Debt Burden and Time to Degree</h3>
+          <p><strong><em>Higher expenses associated with longer times to degree mean that students in college longer accumulate higher debts. </em></strong><em>Pell grants are available for as many as 12 semesters of full-time study, but many state and institutional grants are available only for four years of undergraduate enrollment.<strong> </strong></em></p>
+          <Graph file={require('./json/05_0230.json')}/>
+        </Box>
+        <p>Staying in school longer also means students forgo more <a href="../forgone-earnings">potential earnings</a>. Adding forgone earnings to tuition and fees and the cost of books and supplies gives the most accurate picture of the actual price of more time in college </p>
+        <p>The relevant forgone earnings for the fifth, sixth, and further years of undergraduate study are higher than those for the first four years, since a student who graduated in four years would be earning at the college-graduate level—not the high school graduate level.</p>
+        <p><strong>Staying out of the labor force for six years instead of four years to earn a bachelor&rsquo;s degree doubles forgone earnings.</strong></p>
+        <Graph file={require('./json/05_0240.json')}/>  
   </div>
 );
 

@@ -29,13 +29,20 @@ export class BaseGraph extends Component {
       // Identify DOM element we want to apply the graph to.
       data.bindto = '#' + this.props.id;
 
+      //add a blank data point at the end of line/area charts to avoid cut of
+      //If/when this issue https://github.com/UI-Research/college-affordability.urban.org/issues/153
+      // is resolved, should add a test to not add extra point if end of col == null 
       if (_.includes(['line', 'area'], data.data.type)) {
-        console.log(data.data, data.axis.x)
         data.axis.x.categories.push("")
         data.data.columns.forEach(function(arr){
           arr.push(null)
         })
       }
+
+      if(data.data.type == "bar" && data.axis.x.categories.length > 25){
+        data.size = { "height" : 900}
+      }
+
       // Set max number of axis ticks on y axis
       // TODO: There is a bug that's not allowing C3 to align the values correctly.
         // We can't tap into this feature until it gets fixed on their end.
@@ -631,7 +638,77 @@ export class BaseGraph extends Component {
       hover_states.on('mouseover', function() { return false; });
     });
   }
+  getClosest( elem, selector ) {
+
+    // Variables
+    var firstChar = selector.charAt(0);
+    var supports = 'classList' in document.documentElement;
+    var attribute, value;
+
+    // If selector is a data attribute, split attribute from value
+    if ( firstChar === '[' ) {
+        selector = selector.substr( 1, selector.length - 2 );
+        attribute = selector.split( '=' );
+
+        if ( attribute.length > 1 ) {
+            value = true;
+            attribute[1] = attribute[1].replace( /"/g, '' ).replace( /'/g, '' );
+        }
+    }
+
+    // Get closest match
+    for ( ; elem && elem !== document && elem.nodeType === 1; elem = elem.parentNode ) {
+
+        // If selector is a class
+        if ( firstChar === '.' ) {
+            if ( supports ) {
+                if ( elem.classList.contains( selector.substr(1) ) ) {
+                    return elem;
+                }
+            } else {
+                if ( new RegExp('(^|\\s)' + selector.substr(1) + '(\\s|$)').test( elem.className ) ) {
+                    return elem;
+                }
+            }
+        }
+
+        // If selector is an ID
+        if ( firstChar === '#' ) {
+            if ( elem.id === selector.substr(1) ) {
+                return elem;
+            }
+        }
+
+        // If selector is a data attribute
+        if ( firstChar === '[' ) {
+            if ( elem.hasAttribute( attribute[0] ) ) {
+                if ( value ) {
+                    if ( elem.getAttribute( attribute[0] ) === attribute[1] ) {
+                        return elem;
+                    }
+                } else {
+                    return elem;
+                }
+            }
+        }
+
+        // If selector is a tag
+        if ( elem.tagName.toLowerCase() === selector ) {
+            return elem;
+        }
+
+    }
+
+    return null;
+
+  }
   barChartFormatting(object) {
+    let bar_cats = d3.selectAll(`#${object.props.id}.c-bar__container .c3-axis-x[style*="visibility: visible"] .tick text`);
+    if(bar_cats[0].length > 25){
+      object.getClosest( d3.select(`#${object.props.id}`).node() , ".c-graph__container").classList.add("tall_container")
+      object.getClosest( d3.select(`#${object.props.id}`).node() , ".c-graph__wrapper").classList.add("tall_wrapper")
+    }
+
     let bar_text = d3.selectAll(`#${object.props.id}.c-bar__container--grouped .c3-chart-texts .c3-text`);
     let bar_bar = d3.selectAll(`#${object.props.id}.c-bar__container--grouped .c3-chart-bar .c3-bar`);
     bar_text.each(function() {
