@@ -11,18 +11,35 @@ import util from 'util.jsx';
 
 let singlepage = (
   <div>
-    <h1>What is College?</h1>
-    <h2>Overview</h2>
-    <p>Quisque nec orci at mi iaculis ornare vel eu enim. Fusce vestibulum cursus nisi, vestibulum rhoncus ligula porta non. Maecenas dignissim sagittis ante, at porta urna elementum vitae. Donec accumsan ac sapien vitae maximus. Integer malesuada auctor congue. Maecenas molestie efficitur risus ac ullamcorper. Proin orci leo, luctus vitae erat ac, tristique aliquam eros. Aliquam lobortis lorem ante, ut volutpat ante ornare ut. Vestibulum facilisis ullamcorper ornare. Praesent volutpat tincidunt felis, at convallis tortor elementum id.</p>
-    <p>Duis imperdiet posuere fermentum. Sed bibendum ultricies sapien sed placerat. Etiam ac nunc condimentum, ultrices velit a, malesuada nisi. Vestibulum risus justo, varius et orci ut, commodo convallis purus. Nulla velit urna, viverra eget accumsan quis, feugiat vitae erat. Pellentesque in porttitor orci. Suspendisse id risus et leo laoreet luctus sit amet et tellus. Donec urna nunc, dictum a quam a, ultrices dignissim nisl. Nulla lobortis cursus erat, id rhoncus quam mollis non. Nam ut ipsum dui.</p>
-    <h2>Heading 2</h2>
-    <p>Duis in diam sem. Nunc tempus malesuada nisl ac tincidunt. Donec eget rhoncus erat. Mauris finibus enim eget libero eleifend, sit amet pellentesque leo dignissim. Proin quis orci eu lectus iaculis iaculis. Mauris gravida vehicula eros, sit amet eleifend ex porttitor et. Ut eget tincidunt nisi.</p>
-    <h3>Sub Heading</h3>
-    <p>Donec ornare, sem id consectetur dapibus, tortor mi pretium metus, ac malesuada mauris ligula commodo massa. Phasellus sed aliquam risus. Curabitur id dui lacus. Sed eleifend dolor at pellentesque molestie. Maecenas fringilla sem condimentum, aliquam nisl sit amet, dignissim ex. Mauris mattis justo risus, ac sodales neque euismod quis. Duis porttitor eget risus ut dictum. Aenean laoreet elit elit, et pellentesque leo pellentesque eu. Duis sodales gravida lobortis. Suspendisse potenti. Vivamus urna nunc, viverra nec nulla sed, volutpat eleifend metus. Duis nec nisi a magna lobortis ultrices in id justo. Pellentesque vestibulum odio vehicula bibendum hendrerit. Maecenas dignissim lectus sapien, ut faucibus libero tempor sit amet. Aliquam erat volutpat.</p>
-        <Graph file={require('./json/04_0090.json')}/>
-        <Graph file={require('./json/04_0100.json')}/>
-        <Graph file={require('./json/04_0110.json')}/>
-        <Graph file={require('./json/04_0120.json')}/>
+    <h1>Federal Grant Aid</h1>
+      <p>The federal government provides student aid through several programs:</p>
+        <ul>
+          <li><strong><a href="#pell_grants">Pell grants</a></strong> are the primary source of federal grant aid for low-income students and the largest source of federal aid. Students receive federal Pell grants based on their financial circumstances and whether they enroll full time or part time. It doesn&rsquo;t matter where they go to school.  </li>
+          <li><strong>Federal Supplemental Educational Opportunity Grants</strong> (FSEOG) are also based on financial need, often supplementing Pell grants for low-income students. But these grants are limited to students at participating colleges, which must contribute a quarter of the aid their students receive through this program.</li>
+          <li><strong>GI Bill benefits </strong>and other veterans&rsquo; or military benefits are restricted to veterans, members of the military, or their dependents. The <a href="#post_9_11_gi_benefits">Post-9/11 GI Bill</a> is the largest of these programs, providing more than $12 billion in support to undergraduates in 2015–16.</li>
+        </ul>
+      <p><strong>The federal government provides much more grant aid to students now than it did before the Great Recession. The two main types of federal grants—Pell grants and aid to veterans—increased dramatically in 2009</strong><strong>–10 and 2010–11. </strong></p>
+      <p>More than 7.5 million students received Pell grants in 2015–16, with an average award of about $3,720. In contrast, about 1.6 million students received FSEOGs averaging about $450 each. Fewer than 1 million students received veterans&rsquo; benefits, but the average benefit was more than $14,500 per recipient.</p>
+    <h2>Pell Grants</h2>
+      <p>About two-thirds of federal grant aid for undergraduate students comes from the Pell Grant program. This program has funded low- and moderate-income students to enroll in the colleges and universities of their choice since the mid-1970s. In 2016–17, the lowest-income students received $5,815 toward their college expenses</p>
+      <p>WHO GETS PELL GRANTS?</p>
+      <p><strong>Almost all Pell grant recipients are independent students or dependent students from the bottom half of the income distribution.</strong> In 2011–12, 49 percent of full-time students received Pell grants and the average grant per recipient was $4,440. </p>
+      <p>In 2011–12, averaged across all full-time students, the program provided $1,700 per dependent student and $3,300 per independent student. Among dependent students, those whose parents&rsquo; incomes were less than $30,000 received an average of $4,800 per student, and those whose parental income was between $30,000 and $65,000 received an average of $2,200 per full-time student.</p>
+      <p><strong>Not everyone who gets a Pell grant receives the maximum amount. Instead, the size of the grant varies by income and family circumstances.</strong></p>
+      <p>In 2011–12, the average grant for dependent full-time Pell recipients from families with incomes under $30,000 was $5,200.  </p>
+      <Graph file={require('./json/04_0090.json')}/>
+      <p>Part-time students also receive Pell grants, but their awards are smaller than those of similar students who are enrolled full time. </p>
+      <p>PELL GRANTS SINCE 2011–12</p>
+      <p><strong>After adjusting for inflation, Pell award levels have declined somewhat since 2011</strong><strong>–12.</strong></p>
+      <Graph file={require('./json/04_0100.json')}/>
+    <h2>Post-9/11 GI Benefits</h2>
+      <p><strong>Some veterans are eligible for generous benefits from the Post-9/11 GI Bill. The program covers full tuition for in-state students at public institutions and, in 2016</strong><strong>–17, up to </strong><a href="http://www.benefits.va.gov/GIBILL/resources/benefits_resources/rates/ch33/ch33rates080116.asp#TUITION" target="_blank"><strong>$21,970 </strong></a><strong>for students at participating private colleges.</strong></p>
+      <p>Participation in the Post-9/11 GI Bill program has grown rapidly since it was introduced in 2009–10. Almost 850,000 students received this support in 2015–16. On average, recipients got $14,575 per year toward tuition, fees, living expenses while they were in school.</p>
+      <Graph file={require('./json/04_0110.json')}/>
+    <h2>Federal Grant Aid over Time</h2>
+      <p><strong>Both Pell grants and aid to veterans through the Post-9/11 GI Bill increased dramatically in 2009</strong><strong>–10 as a result of policy changes, increased financial need, and increased enrollment during the economic downturn. </strong></p>
+      <p>In 2008–09, undergraduate students received an average of $1,610 (in 2015 dollars) in Pell grants and $380 in veterans&rsquo; and military assistance. The following year, they received an average of $2,500 in Pell grants and $680 in veterans&rsquo; and military assistance. In 2015–16, veterans&rsquo; and military educational support provided almost half as much aid as Pell grants.</p>
+      <Graph file={require('./json/04_0120.json')}/>      
   </div>
 );
 
