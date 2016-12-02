@@ -27,7 +27,16 @@ let singlepage = (
       <p>In 2011–12, averaged across all full-time students, the program provided $1,700 per dependent student and $3,300 per independent student. Among dependent students, those whose parents&rsquo; incomes were less than $30,000 received an average of $4,800 per student, and those whose parental income was between $30,000 and $65,000 received an average of $2,200 per full-time student.</p>
       <p><strong>Not everyone who gets a Pell grant receives the maximum amount. Instead, the size of the grant varies by income and family circumstances.</strong></p>
       <p>In 2011–12, the average grant for dependent full-time Pell recipients from families with incomes under $30,000 was $5,200.  </p>
-      <Graph file={require('./json/04_0090.json')}/>
+       <Multiples title="Pell Grant per Full-Time Recipient by Dependency Status and Income, 2011–12 (with percentage receiving Pell)" source="National Postsecondary Student Aid Study 2012">
+        <Graph file={require('./json/04_0091.json')} small="true"/>
+        <Graph file={require('./json/04_0092.json')} small="true"/>
+        <Graph file={require('./json/04_0093.json')} small="true"/>
+    </Multiples>
+        <Multiples title="Pell Grant per Full-Time Student by Dependency Status and Income, 2011–12 (with percentage receiving Pell)" source="National Postsecondary Student Aid Study 2012">
+        <Graph file={require('./json/04_00911.json')} small="true"/>
+        <Graph file={require('./json/04_00922.json')} small="true"/>
+        <Graph file={require('./json/04_00933.json')} small="true"/>
+    </Multiples>
       <p>Part-time students also receive Pell grants, but their awards are smaller than those of similar students who are enrolled full time. </p>
       <p>PELL GRANTS SINCE 2011–12</p>
       <p><strong>After adjusting for inflation, Pell award levels have declined somewhat since 2011</strong><strong>–12.</strong></p>
