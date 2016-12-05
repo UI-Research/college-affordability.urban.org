@@ -350,8 +350,8 @@
   }
 }
 
-.c3-event-rects {
-  display: none
+.c3-grid .c3-xgrid-focus {
+   visibility : hidden !important;
 }
 
 .c-bar.c-bar-horizontal {
