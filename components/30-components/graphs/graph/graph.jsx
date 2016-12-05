@@ -126,6 +126,7 @@ export class BaseGraph extends Component {
       //   }
       // }
       // }
+      console.log(data)
       if (data.axis && data.axis.rotated && data.axis.y && data.axis.y.label && typeof data.axis.y.label === 'string') {
         data.axis.y.label = {
           text: data.axis.y.label,
@@ -390,10 +391,12 @@ export class BaseGraph extends Component {
     };
 
     // Generate link for CSV download.
-    let encodedUri = 'data:Application/octet-stream,' + toCSV(object.props.file.data.columns);
-    d3.select(`.c-${object.props.id}-container a.button-download_data__csv_`)
-      .attr('href', encodedUri)
-      .attr('download', `${util.machineName(object.props.file.title)}.csv`);
+    if(d3.select(d3.select(`#${object.props.id}`).node().parentNode.parentNode.parentNode.parentNode.parentNode.parentNode).classed("c-graph-multiple") == false){
+      let encodedUri = 'data:Application/octet-stream,' + toCSV(object.props.file.data.columns);
+      d3.select(`.c-${object.props.id}-container a.button-download_data__csv_`)
+        .attr('href', encodedUri)
+        .attr('download', `${util.machineName(object.props.file.title)}.csv`);
+    }
   }
   getTimeSeriesCount(allVals, count){
     if(allVals.length <= count){
@@ -434,7 +437,6 @@ export class BaseGraph extends Component {
         }
       }
       var totals = []
-      console.log(reshaped, groups, dataVals)
       for(var p = 0; p < reshaped[ groups[0][0] ].length; p++){
         totals.push(0)
       }
