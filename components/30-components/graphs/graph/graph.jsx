@@ -126,7 +126,6 @@ export class BaseGraph extends Component {
       //   }
       // }
       // }
-      console.log(data)
       if (data.axis && data.axis.rotated && data.axis.y && data.axis.y.label && typeof data.axis.y.label === 'string') {
         data.axis.y.label = {
           text: data.axis.y.label,
