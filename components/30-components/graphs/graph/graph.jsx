@@ -358,8 +358,8 @@ export class BaseGraph extends Component {
     setLegend(object);
     const resizeLegend = object.resizeLegend;
     resizeLegend(object);
-    // const setTick = object.setTick;
-    // setTick(object);
+    const setTick = object.setTick;
+    setTick(object);
     const moveAxisLabel = object.moveAxisLabel;
     moveAxisLabel(object);
     const lineChartFormatting = object.lineChartFormatting;
@@ -618,16 +618,9 @@ export class BaseGraph extends Component {
     // When in category mode, align the ticks to be directly on top
     // of the labels.
     if (object.props.file.axis && object.props.file.axis.x && !_.isEmpty(object.props.file.axis.x.type) && object.props.file.axis.x.type == 'category') {
-      d3.selectAll(`#${object.props.id} g.c3-axis-x g.tick line`).remove();
-//for small multiples, bind data of tick vals to graph, so in post-render steps we can find max tick and apply to all
-      d3.selectAll(`#${object.props.id}`).datum(`${object.props.tickValues}`)
-      let ticks = d3.selectAll(`#${object.props.id} g.c3-axis-x g.tick`);
-      _.map(ticks[0],function (tick) {
-        d3.select(tick).insert('line', ':first-child')
-          .attr('y2', 6)
-          .attr('x1', 0)
-          .attr('x2', 0);
-      });
+      d3.selectAll(`#${object.props.id} g.c3-axis-x g.tick line`)
+        .attr("x1",0)
+        .attr("x2",0)
     }
   }
   lineChartFormatting(object) {
