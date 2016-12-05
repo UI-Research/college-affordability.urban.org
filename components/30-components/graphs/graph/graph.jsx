@@ -39,7 +39,7 @@ export class BaseGraph extends Component {
         })
       }
 
-      if(data.data.type == "bar" && data.axis.x.categories.length > 25){
+      if(data.data.type == "bar" && data.axis.x.categories.length > 20){
         data.size = { "height" : 900}
       }
 
@@ -358,8 +358,8 @@ export class BaseGraph extends Component {
     setLegend(object);
     const resizeLegend = object.resizeLegend;
     resizeLegend(object);
-    const setTick = object.setTick;
-    setTick(object);
+    // const setTick = object.setTick;
+    // setTick(object);
     const moveAxisLabel = object.moveAxisLabel;
     moveAxisLabel(object);
     const lineChartFormatting = object.lineChartFormatting;
@@ -428,6 +428,7 @@ export class BaseGraph extends Component {
         }
       }
       var totals = []
+      console.log(reshaped, groups, dataVals)
       for(var p = 0; p < reshaped[ groups[0][0] ].length; p++){
         totals.push(0)
       }
@@ -468,7 +469,11 @@ export class BaseGraph extends Component {
         
 //for small multiples, max value should be defined in json (so all small multiples on same scale)
 //As fall back, get ticks
-        data.axis.y.tick.values = this.getTickValues(data.data.columns, ticks, data.data.groups, this.props.file.axis.y.min, this.props.file.axis.y.max);
+
+        //for now, use default tick values for toggle charts
+        if(typeof(data.sets) != "undefined"){
+          data.axis.y.tick.values = this.getTickValues(data.data.columns, ticks, data.data.groups, this.props.file.axis.y.min, this.props.file.axis.y.max);
+        }
         
         if(data.data.type == "line" || data.data.type == "area"){
           data.axis.x.tick.count = this.getTimeSeriesCount(data.axis.x.categories, 13);
@@ -495,7 +500,12 @@ export class BaseGraph extends Component {
         
 //for small multiples, max value should be defined in json (so all small multiples on same scale)
 //As fall back, get ticks
-        data.axis.y.tick.values = this.getTickValues(data.data.columns, ticks, data.data.groups, this.props.file.axis.y.min, this.props.file.axis.y.max);
+
+
+        //for now, use default tick values for toggle charts
+        if(typeof(data.sets) != "undefined"){
+          data.axis.y.tick.values = this.getTickValues(data.data.columns, ticks, data.data.groups, this.props.file.axis.y.min, this.props.file.axis.y.max);
+        }
 
         if (width <= util.breakpointWidth('mid')) {
           data.axis.y.tick.rotate = 20;
@@ -704,7 +714,7 @@ export class BaseGraph extends Component {
   }
   barChartFormatting(object) {
     let bar_cats = d3.selectAll(`#${object.props.id}.c-bar__container .c3-axis-x[style*="visibility: visible"] .tick text`);
-    if(bar_cats[0].length > 25){
+    if(bar_cats[0].length > 20){
       object.getClosest( d3.select(`#${object.props.id}`).node() , ".c-graph__container").classList.add("tall_container")
       object.getClosest( d3.select(`#${object.props.id}`).node() , ".c-graph__wrapper").classList.add("tall_wrapper")
     }
