@@ -43,6 +43,12 @@ export class BaseGraph extends Component {
         data.size = { "height" : 900}
       }
 
+      if(typeof(data.highlightIndex) != "undefined"){
+        data.data.color = function(color, d) {
+            return d.index === data.highlightIndex ? "#000" : "#1696d2";
+        }
+      }
+
       // Set max number of axis ticks on y axis
       // TODO: There is a bug that's not allowing C3 to align the values correctly.
         // We can't tap into this feature until it gets fixed on their end.
