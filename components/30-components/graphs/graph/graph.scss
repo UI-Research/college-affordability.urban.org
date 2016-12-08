@@ -167,7 +167,7 @@
   }
 }
 
-.c-line__container .c3-axis-x g.tick:last-of-type, .c-area__container .c3-axis-x g.tick:last-of-type{
+.c-line__container .c3-axis-x g.tick:last-of-type, .c-area__container .c3-axis-x g.tick:last-of-type, .c-line__container .c3-axis-x g.tick:last-of-type, .c-area__container .c3-axis-x g.tick:first-of-type{
   display: none;
 }
 .c-bar {

@@ -34,9 +34,12 @@ export class BaseGraph extends Component {
       // is resolved, should add a test to not add extra point if end of col == null 
       if (_.includes(['line', 'area'], data.data.type)) {
         data.axis.x.categories.push("")
+        data.axis.x.categories.unshift("")
         data.data.columns.forEach(function(arr){
           arr.push(null)
+          arr.splice(1, 0, null)
         })
+        data.axis.x.padding = {"left" : 100, "right": 100}
       }
 
       if(data.data.type == "bar" && data.axis.x.categories.length > 20){
