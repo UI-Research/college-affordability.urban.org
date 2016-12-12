@@ -16,6 +16,18 @@ let singlepage = (
     <p>In progress...</p>
     
     <Graph file={require('./json/03_0170.json')}/>
+     <Multiples title="Median Earnings with 25th and 75th Percentiles among Full-Time Full-Year Workers Age 18–34 with Only a High School Diploma or GED and Not in School, by Gender and Age" source="IPUMS 2014 ACS five-year sample (2010–14).">
+        <Graph file={require('./json/03_0181.json')} small="true"/>
+        <Graph file={require('./json/03_0182.json')} small="true"/>
+    </Multiples>
+    <Multiples title="Median Earnings with 25th and 75th Percentiles among Full-Time Full-Year Workers Age 18–34 with Only a High School Diploma or GED and Not in School, by Gender and Age" source="IPUMS 2014 ACS five-year sample (2010–14).">
+        <Graph file={require('./json/03_01811.json')} small="true"/>
+        <Graph file={require('./json/03_01812.json')} small="true"/>
+    </Multiples>
+    <Multiples title="Median Earnings with 25th and 75th Percentiles among Full-Time Full-Year Workers Age 18–34 with Only a High School Diploma or GED and Not in School, by Gender and Age" source="IPUMS 2014 ACS five-year sample (2010–14).">
+        <Graph file={require('./json/03_01821.json')} small="true"/>
+        <Graph file={require('./json/03_01822.json')} small="true"/>
+    </Multiples>
   </div>
 );
 
