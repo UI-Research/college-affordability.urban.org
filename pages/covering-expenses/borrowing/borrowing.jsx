@@ -31,6 +31,7 @@ let singlepage = (
     <Graph file={require('./json/05_0152.json')}/>
     <Graph file={require('./json/05_0160.json')}/>
 
+
   </div>
 );
 
