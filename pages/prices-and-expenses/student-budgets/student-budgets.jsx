@@ -14,6 +14,7 @@ let singlepage = (
     <h1>Student Budgets</h1>
     <h2>Overview</h2>
     <p>In progress...</p>
+    <Graph file={require('./json/03_0110.json')}/>
 
     <Multiples title="Cost of Attendance by Sector from 2005-06 to 2015-16 in 2015 dollars" source="IPEDS and Trends in College Pricing 2015">
         <Graph file={require('./json/03_0121.json')} small="true"/>

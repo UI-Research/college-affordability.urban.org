@@ -1,1 +1,74 @@
-{"title": "Percent", "series": ["Grant Aid", "Tuition and fees left over"], "axis": {"y": {"tick": {"format": "percent"}}, "rotated": false, "x": {"type": "category", "categories": [{"category": "All public four-year colleges", "tuition_percent": 0.3633, "grant_aid_percent": 0.6367}, {"category": "Public research", "tuition_percent": 0.3727, "grant_aid_percent": 0.6273}, {"category": "Public masters", "tuition_percent": 0.3439, "grant_aid_percent": 0.6561}, {"category": "All private four-year colleges", "tuition_percent": 0.4648, "grant_aid_percent": 0.5352}, {"category": "Private nonprofit research", "tuition_percent": 0.5486, "grant_aid_percent": 0.4514}, {"category": "Private nonprofit masters", "tuition_percent": 0.4053, "grant_aid_percent": 0.5947}, {"category": "Private nonprofit bachelors", "tuition_percent": 0.4349, "grant_aid_percent": 0.5651}, {"category": "All public two-year colleges", "tuition_percent": 0, "grant_aid_percent": 1}, {"category": "For-profit colleges", "tuition_percent": 0.6814, "grant_aid_percent": 0.3186}]}}, "metadata": {"notes": "Grant aid includes federal, state, local, and institutional grant aid, but does not include private scholarships or employer assistance.", "source": "Integrated Postsecondary Education Data System."}, "data": {"type": "bar", "labels": {"format": "percent"}, "columns": [["Grant Aid", 0.6367, 0.6273, 0.6561, 0.5352, 0.4514, 0.5947, 0.5651, 1, 0.3186], ["Tuition and fees left over", 0.3633, 0.3727, 0.3439, 0.4648, 0.5486, 0.4053, 0.4349, 0, 0.6814]], "groups": [["Grant Aid", "Tuition and fees left over"]]}}
+{
+  "axis": {
+    "rotated": true,
+    "x": {
+      "type": "category",
+      "categories": [
+        "All public four-year colleges",
+        "Public research",
+        "Public masters",
+        "All private four-year colleges",
+        "Private nonprofit research",
+        "Private nonprofit masters",
+        "Private nonprofit bachelors",
+        "All public two-year colleges",
+        "For-profit colleges"
+      ]
+    },
+    "y": {
+    	"max": 0.81,
+      "tick": {
+        "format": "percent",
+        "count": 5
+      }
+    }
+  },
+  "title": "Percent",
+  "metadata": {
+    "source": "Integrated Postsecondary Education Data System.",
+    "notes": "Grant aid includes federal, state, local, and institutional grant aid, but does not include private scholarships or employer assistance."
+  },
+  "series": [
+    "Grant Aid",
+    "Tuition and fees left over"
+  ],
+  "data": {
+    "type": "bar",
+    "labels": {
+      "format": "percent"
+    },
+    "columns": [
+      [
+        "Grant Aid",
+        0.6367,
+        0.6273,
+        0.6561,
+        0.5352,
+        0.4514,
+        0.5947,
+        0.5651,
+        1,
+        0.3186
+      ],
+      [
+        "Tuition and fees left over",
+        0.3633,
+        0.3727,
+        0.3439,
+        0.4648,
+        0.5486,
+        0.4053,
+        0.4349,
+        0,
+        0.6814
+      ]
+    ],
+    "groups": [
+      [
+        "Grant Aid",
+        "Tuition and fees left over"
+      ]
+    ]
+  }
+
+}
