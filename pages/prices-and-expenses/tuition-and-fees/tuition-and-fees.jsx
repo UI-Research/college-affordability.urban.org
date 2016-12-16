@@ -22,6 +22,14 @@ let singlepage = (
     </Multiples>
     
     <Graph file={require('./json/03_0020.json')}/>
+    <Multiples title="Distribution of Full-Time Students by Published Tuition and Fees within Sectors, 2014–15" source="Integrated Postsecondary Education Data System">
+        <Graph file={require('./json/03_0031.json')} small="true"/>
+        <Graph file={require('./json/03_0032.json')} small="true"/>
+        <Graph file={require('./json/03_0033.json')} small="true"/>
+        <Graph file={require('./json/03_0034.json')} small="true"/>
+
+
+    </Multiples>
 
   </div>
 );

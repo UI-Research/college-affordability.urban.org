@@ -1,1 +1,39 @@
-{"series": "Undergraduates receiving state aid", "axis": {"y": {"tick": {"format": "percent"}}, "x": {"label": "Residency", "type": "category", "categories": ["Out-of-state", "In-state"]}, "rotated": true}, "data": {"columns": [["Undergraduates receiving state aid", 0.01, 0.18]], "labels": {"format": "percent"}, "type": "bar"}, "metadata": {"notes": null, "source": "National Postsecondary Student Aid Study 2012 "}}
+{
+  "series": "Undergraduates receiving state aid",
+  "axis": {
+    "y": {
+    	"max": 0.4,
+    	"padding": {"top": 0, "bottom": 0},
+      "tick": {
+        "format": "percent",
+        "count": 5
+      }
+    },
+    "x": {
+      "label": "Residency",
+      "type": "category",
+      "categories": [
+        "Out-of-state",
+        "In-state"
+      ]
+    },
+    "rotated": true
+  },
+  "data": {
+    "columns": [
+      [
+        "Undergraduates receiving state aid",
+        0.01,
+        0.18
+      ]
+    ],
+    "labels": {
+      "format": "percent"
+    },
+    "type": "bar"
+  },
+  "metadata": {
+    "notes": null,
+    "source": "National Postsecondary Student Aid Study 2012 "
+  }
+}

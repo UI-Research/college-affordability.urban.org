@@ -1,1 +1,37 @@
-{"series": "Undergraduates receiving state aid", "data": {"labels": {"format": "percent"}, "type": "bar", "columns": [["Undergraduates receiving state aid", 0.15]]}, "metadata": {"source": "National Postsecondary Student Aid Study 2012 ", "notes": null}, "axis": {"x": {"type": "category", "label": "All", "categories": ["All"]}, "rotated": true, "y": {"tick": {"format": "percent"}}}}
+{
+  "series": "Undergraduates receiving state aid",
+  "data": {
+    "labels": {
+      "format": "percent"
+    },
+    "type": "bar",
+    "columns": [
+      [
+        "Undergraduates receiving state aid",
+        0.15
+      ]
+    ]
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2012 ",
+    "notes": null
+  },
+  "axis": {
+    "x": {
+      "type": "category",
+      "label": "All",
+      "categories": [
+        "All"
+      ]
+    },
+    "rotated": true,
+    "y": {
+    	"max": 0.4,
+    	"padding": {"top": 0, "bottom": 0},
+      "tick": {
+        "format": "percent",
+        "count": 5
+      }
+    }
+  }
+}

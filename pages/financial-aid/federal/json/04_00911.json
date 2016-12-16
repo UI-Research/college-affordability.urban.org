@@ -1,1 +1,35 @@
-{"title": "All", "data": {"labels": {"format": "dollar"}, "type": "bar", "columns": [["Pell-Grant", 2200]]}, "axis": {"y": {"tick": {"format": "dollar"}}, "x": {"type": "category", "categories": "All (49%)"}, "rotated": true}, "metadata": {"source": "National Postsecondary Student Aid Study 2012 ", "notes": null}, "series": "Pell-Grant"}
+{
+  "title": "All",
+  "data": {
+    "labels": {
+      "format": "dollar"
+    },
+    "type": "bar",
+    "columns": [
+      [
+        "Pell-Grant",
+        2200
+      ]
+    ]
+  },
+  "axis": {
+    "y": {
+    "max": 6000,
+    "padding": {"top": 0, "bottom": 0},
+      "tick": {
+        "format": "dollar",
+        "count": 4
+      }
+    },
+    "x": {
+      "type": "category",
+      "categories": "All (49%)"
+    },
+    "rotated": true
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2012 ",
+    "notes": null
+  },
+  "series": "Pell-Grant"
+}

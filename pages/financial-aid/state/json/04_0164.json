@@ -1,1 +1,39 @@
-{"series": "Average state grant aid per recipient", "data": {"labels": {"format": "dollar"}, "columns": [["Average state grant aid per recipient", 2700, 2600]], "type": "bar"}, "axis": {"rotated": true, "y": {"tick": {"format": "dollar"}}, "x": {"categories": ["Out-of-state", "In-state"], "label": "Residency", "type": "category"}}, "metadata": {"notes": null, "source": "National Postsecondary Student Aid Study 2012 "}}
+{
+  "series": "Average state grant aid per recipient",
+  "data": {
+    "labels": {
+      "format": "dollar"
+    },
+    "columns": [
+      [
+        "Average state grant aid per recipient",
+        2700,
+        2600
+      ]
+    ],
+    "type": "bar"
+  },
+  "axis": {
+    "rotated": true,
+    "y": {
+    "max": 6000,
+      "padding": {"top": 0, "bottom": 0},
+      "tick": {
+        "format": "dollar",
+        "count": 4
+      }
+    },
+    "x": {
+      "categories": [
+        "Out-of-state",
+        "In-state"
+      ],
+      "label": "Residency",
+      "type": "category"
+    }
+  },
+  "metadata": {
+    "notes": null,
+    "source": "National Postsecondary Student Aid Study 2012 "
+  }
+}
