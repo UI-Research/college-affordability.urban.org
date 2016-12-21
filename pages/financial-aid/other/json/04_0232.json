@@ -1,1 +1,42 @@
-{"data": {"columns": [["Employer aid", 5500, 5600]], "type": "bar", "labels": {"format": "dollar"}}, "axis": {"y": {"tick": {"format": "dollar"}}, "x": {"type": "category", "label": "Dependency Status", "categories": ["Independent student", "Dependent student"]}, "rotated": true}, "series": "Employer aid", "metadata": {"source": "National Postsecondary Student Aid Study 2012 ", "notes": null}}
+{
+  "data": {
+    "columns": [
+      [
+        "Employer aid",
+        5500,
+        5600
+      ]
+    ],
+    "type": "bar",
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "y": {
+    	"padding": {"top": 0, "bottom":0},
+    	"max": 15000,
+      "tick": {
+        "format": "dollar",
+        "count": 4
+      }
+    },
+    "x": {
+      "type": "category",
+      "label": "Dependency Status",
+      "categories": [
+        "Independent           student",
+        "Dependent             student"
+      ]
+    },
+    "rotated": true
+  },
+  "series": "Employer aid",
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2012 ",
+    "notes": null
+  },
+"padding": {
+	"right": 20
+}
+}

@@ -26,9 +26,9 @@
     "x": {
       "categories": [
         "For-profit",
-        "Public Two-Year",
-        "Public Four-Year",
-        "Private Four-Year"
+        "Public        Two-Year",
+        "Public       Four-Year",
+        "Private         Four-Year"
       ],
       "type": "category",
       "label": "Sector"

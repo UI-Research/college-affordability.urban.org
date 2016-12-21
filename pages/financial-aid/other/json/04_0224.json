@@ -1,1 +1,45 @@
-{"metadata": {"source": "National Postsecondary Student Aid Study 2012 ", "notes": null}, "series": "Employer aid", "axis": {"x": {"type": "category", "categories": ["Less than $30,000", "$30,000–64,999", "$65,000–105,999", "$106,000 or more"], "label": "Dependent students' parents' income"}, "rotated": true, "y": {"tick": {"format": "percent"}}}, "data": {"labels": {"format": "percent"}, "columns": [["Employer aid", 0.05, 0.08, 0.07, 0.07]], "type": "bar"}}
+{
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2012 ",
+    "notes": null
+  },
+  "series": "Employer aid",
+  "axis": {
+    "x": {
+      "type": "category",
+      "categories": [
+        "Less than        $30,000",
+        "$30,000\u2013        $64,999",
+        "$65,000\u2013       $105,999",
+        "$106,000           or more"
+      ],
+      "label": "Dependent students' parents' income"
+    },
+    "rotated": true,
+    "y": {
+    "padding": {"top":0, "bottom":0},
+    "max": 0.15,
+      "tick": {
+        "format": "percent",
+        "count": 4
+      }
+    }
+  },
+  "data": {
+    "labels": {
+      "format": "percent"
+    },
+    "columns": [
+      [
+        "Employer aid",
+        0.05,
+        0.08,
+        0.07,
+        0.07
+      ]
+    ],
+    "type": "bar"
+  },
+      "padding": {"right": 20}
+
+}
