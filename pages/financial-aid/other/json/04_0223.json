@@ -1,1 +1,45 @@
-{"data": {"labels": {"format": "percent"}, "columns": [["Employer aid", 0.09, 0.06, 0.04, 0.06]], "type": "bar"}, "metadata": {"notes": null, "source": "National Postsecondary Student Aid Study 2012 "}, "series": "Employer aid", "axis": {"y": {"tick": {"format": "percent"}}, "rotated": true, "x": {"label": "Sector", "categories": ["Private four-year", "Public four-year", "Public two-year", "For-profit"], "type": "category"}}}
+{
+  "data": {
+    "labels": {
+      "format": "percent"
+    },
+    "columns": [
+      [
+        "Employer aid",
+        0.09,
+        0.06,
+        0.04,
+        0.06
+      ]
+    ],
+    "type": "bar"
+  },
+  "metadata": {
+    "notes": null,
+    "source": "National Postsecondary Student Aid Study 2012 "
+  },
+  "series": "Employer aid",
+  "axis": {
+    "y": {
+    "padding": {"top":0, "bottom":0, "right": 50},
+    "max": 0.15,
+      "tick": {
+        "format": "percent",
+        "count": 4,
+        "multiline": true
+      }
+    },
+    "rotated": true,
+    "x": {
+      "label": "Sector",
+      "categories": [
+        "Private         four-year",
+        "Public         four-year",
+        "Public          two-year",
+        "For-profit"
+      ],
+      "type": "category"
+    }
+  },
+  "padding": {"right": 20}
+}

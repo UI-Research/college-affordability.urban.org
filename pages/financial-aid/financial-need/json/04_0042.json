@@ -1,1 +1,75 @@
-{"axis": {"rotated": true, "x": {"type": "category", "categories": ["Dependent ", "Independent"]}, "y": {"tick": {"format": "percent"}}}, "title": "Public four-year", "series": ["$0", "$1–$4,999", "$5,000–$9,999", "$10,000–$14,999", "$15,000 or higher"], "metadata": {"source": "National Postsecondary Student Aid Study 2012 ", "notes": "Department of Defense grants including the Post-9/11 GI Bill benefits are not included as part of financial aid for this figure due to data limitations."}, "data": {"groups": [["$0", "$1–$4,999", "$5,000–$9,999", "$10,000–$14,999", "$15,000 or higher"]], "type": "bar", "columns": [["$0", 0.5136, 0.3694], ["$1–$4,999", 0.1998, 0.2682], ["$5,000–$9,999", 0.1491, 0.1981], ["$10,000–$14,999", 0.0781, 0.1037], ["$15,000 or higher", 0.0594, 0.0606]], "labels": {"format": "percent"}}}
+{
+  "axis": {
+    "rotated": true,
+    "x": {
+      "type": "category",
+      "categories": [
+        "Dependent ",
+        "Independent"
+      ]
+    },
+    "y": {
+    	"padding": {"top": 0, "bottom": 0},
+    	"max": 1,
+      "tick": {
+        "format": "percent",
+        "count": 5
+      }
+    }
+  },
+  "title": "Public four-year",
+  "series": [
+    "$0",
+    "$1\u2013$4,999",
+    "$5,000\u2013$9,999",
+    "$10,000\u2013$14,999",
+    "$15,000 or higher"
+  ],
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2012 ",
+    "notes": "Department of Defense grants including the Post-9\/11 GI Bill benefits are not included as part of financial aid for this figure due to data limitations."
+  },
+  "data": {
+    "groups": [
+      [
+        "$0",
+        "$1\u2013$4,999",
+        "$5,000\u2013$9,999",
+        "$10,000\u2013$14,999",
+        "$15,000 or higher"
+      ]
+    ],
+    "type": "bar",
+    "columns": [
+      [
+        "$0",
+        0.5136,
+        0.3694
+      ],
+      [
+        "$1\u2013$4,999",
+        0.1998,
+        0.2682
+      ],
+      [
+        "$5,000\u2013$9,999",
+        0.1491,
+        0.1981
+      ],
+      [
+        "$10,000\u2013$14,999",
+        0.0781,
+        0.1037
+      ],
+      [
+        "$15,000 or higher",
+        0.0594,
+        0.0606
+      ]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },    "padding": {"right": 20}
+
+}

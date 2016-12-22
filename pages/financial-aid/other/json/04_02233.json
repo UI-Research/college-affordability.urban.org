@@ -1,1 +1,48 @@
-{"series": "Private Grants", "data": {"type": "bar", "columns": [["Private Grants", 0.22, 0.16, 0.09, 0.04]], "labels": {"format": "percent"}}, "metadata": {"source": "National Postsecondary Student Aid Study 2012 ", "notes": null}, "axis": {"y": {"tick": {"format": "percent"}}, "rotated": true, "x": {"type": "category", "label": "Sector", "categories": ["Private Four-Year", "Public Four-Year", "Public Two-Year", "For-profit"]}}}
+{
+  "series": "Private Grants",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Private Grants",
+        0.22,
+        0.16,
+        0.09,
+        0.04
+      ]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2012 ",
+    "notes": null
+  },
+  "axis": {
+    "y": {
+    "padding": {
+    		"top": 0, "bottom": 0
+    	},
+    	"max": 0.3,
+      "tick": {
+        "format": "percent",
+        "count": 4
+      }
+    },
+    "rotated": true,
+    "x": {
+      "type": "category",
+      "label": "Sector",
+      "categories": [
+        "Private          Four-Year",
+        "Public           Four-Year",
+        "Public              Two-Year",
+        "For-profit"
+      ]
+    }
+  },
+    "padding": {
+  	"right": 20
+  }
+}

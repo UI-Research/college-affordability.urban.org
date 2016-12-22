@@ -1,1 +1,38 @@
-{"metadata": {"source": "National Postsecondary Student Aid Study 2012 ", "notes": null}, "axis": {"x": {"type": "category", "categories": "Total"}, "rotated": true, "y": {"tick": {"format": "percent"}}}, "data": {"type": "bar", "columns": [["Employer aid", 0.06]], "labels": {"format": "percent"}}, "series": "Employer aid"}
+{
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2012 ",
+    "notes": null
+  },
+  "axis": {
+    "x": {
+    "label": "Total",
+
+      "type": "category",
+      "categories": ["Total"]
+    },
+    "rotated": true,
+    "y": {
+    "padding": {"top":0, "bottom":0},
+    "max": 0.15,
+      "tick": {
+      	"count": 4,
+        "format": "percent"
+      }
+    }
+  },
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Employer aid",
+        0.06
+      ]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "series": "Employer aid",
+    "padding": {"right": 20}
+
+}
