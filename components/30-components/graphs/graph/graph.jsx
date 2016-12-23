@@ -32,7 +32,7 @@ export class BaseGraph extends Component {
       //add a blank data point at the end of line/area charts to avoid cut of
       //If/when this issue https://github.com/UI-Research/college-affordability.urban.org/issues/153
       // is resolved, should add a test to not add extra point if end of col == null 
-      if (_.includes(['line', 'area'], data.data.type)) {
+      if (_.includes(['line', 'area'], data.data.type) && !data.data.sets) {
         data.axis.x.categories.push("")
         data.axis.x.categories.unshift("")
         data.data.columns.forEach(function(arr){
@@ -204,7 +204,7 @@ export class BaseGraph extends Component {
 
         // Line and area graphs must flush to left and right,
         // but show start/end points.
-        if (data.data.type == 'line') {
+        if (data.data.type == 'line' ) {
           if (data.axis && data.axis.x) {
             if (data.axis.x.type == 'indexed') {
               data.axis.x.padding = {
@@ -485,7 +485,7 @@ export class BaseGraph extends Component {
           data.axis.y.tick.values = this.getTickValues(data.data.columns, ticks, data.data.groups, this.props.file.axis.y.min, this.props.file.axis.y.max);
         }
         
-        if(data.data.type == "line" || data.data.type == "area"){
+        if( (data.data.type == "line" || data.data.type == "area") && !data.data.sets){
           data.axis.x.tick.count = this.getTimeSeriesCount(data.axis.x.categories, 13);
         }
         if (data.axis.x.type == 'category' && width <= util.breakpointWidth('mid')) {
