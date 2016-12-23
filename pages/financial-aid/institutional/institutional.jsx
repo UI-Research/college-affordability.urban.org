@@ -22,6 +22,14 @@ let singlepage = (
      <Graph file={require('./json/04_0180.json')}/>
       <Graph file={require('./json/04_0190.json')}/>
       <Graph file={require('./json/04_0200.json')}/>
+    <Multiples title="Average Need-Based and Non-Need-Based A1:U146 Grant Aid per Full-Time Student (and Percentage Receiving Institutional Aid), Public Four-Year Institutions, 2011-12" source="Baum et al, Trends in Student Aid 2014, The College Board, based on NPSAS 2012.">
+      <Graph file={require('./json/04_0211.json')} small="true"/>
+      <Graph file={require('./json/04_0212.json')} small="true"/>
+      <Graph file={require('./json/04_0213.json')} small="true"/>
+    </Multiples>
+
+
+
 
   </div>
 );
