@@ -25,11 +25,14 @@ let singlepage = (
         <Graph file={require('./json/05_0132.json')} small="true"/>
         <Graph file={require('./json/05_0133.json')} small="true"/>
         <Graph file={require('./json/05_0134.json')} small="true"/>
+
     </Multiples>
     <Graph file={require('./json/05_0140.json')}/>
     <Graph file={require('./json/05_0151.json')}/>
     <Graph file={require('./json/05_0152.json')}/>
     <Graph file={require('./json/05_0160.json')}/>
+
+
     <Multiples title="Average Parent PLUS Loans borrowed among full-time dependent students, 2011-12" source="National Postsecondary Student Aid Study 2012">
         <Graph file={require('./json/05_0171.json')} small="true"/>
         <Graph file={require('./json/05_0172.json')} small="true"/>
