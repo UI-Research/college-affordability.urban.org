@@ -35,7 +35,7 @@
     }
   },
   "metadata": {
-    "source": "National Postsecondary Student Aid Study 2012 ",
+    "source": "National Postsecondary Student Aid Study (NPSAS), 2012.",
     "notes": null
   },
   "data": {
@@ -72,6 +72,4 @@
     "type": "bar"
   },
   "title": "Median EFC by Parents\u2019 Income: Dependent Students 2011\u201312",
-  "series": "Median EFC",
-  "padding": {"left": 0}
-}
+  "series": "Median EFC"}

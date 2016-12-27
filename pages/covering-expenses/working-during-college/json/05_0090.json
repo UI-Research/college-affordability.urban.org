@@ -10,6 +10,8 @@
     },
     "rotated": true,
     "y": {
+      "padding": {"top": 0, "bottom": 0},
+      "max": 1,
       "tick": {
         "format": "percent"
       }

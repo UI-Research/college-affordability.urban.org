@@ -8,7 +8,7 @@
 
 
       "tick": {
-        "format": "dollar"
+        "format": "$.2s"
       }
     },
     "x": {
@@ -157,7 +157,7 @@
       ]
     ],
     "labels": {
-      "format": "dollar"
+      "format": "$.2s"
     }
   },
   "padding": {"left": 50}

@@ -1,0 +1,48 @@
+{
+  "series": [
+    "Institutional need-based",
+    "Institutional non-need-based"
+  ],
+  "axis": {
+    "rotated": true,
+    "x": {
+      "type": "category",
+      "categories": ["Independent students"],
+      "label": "Independent students"
+    },
+    "y": {
+    "padding": {"top": 0, "bottom": 0},
+  	"max": 1000,
+      "tick": {
+        "format": "$s",
+        "count": 3
+      }
+    }
+  },
+  "data": {
+    "type": "bar",
+    "labels": {
+      "format": "$s"
+    },
+    "groups": [
+      [
+        "Institutional need-based",
+        "Institutional non-need-based"
+      ]
+    ],
+    "columns": [
+      [
+        "Institutional need-based",
+        510
+      ],
+      [
+        "Institutional non-need-based",
+        277
+      ]
+    ]
+  },
+  "metadata": {
+    "notes": null,
+    "source": "Baum et al, Trends in Student Aid 2014, The College Board, based on NPSAS 2012."
+  }
+}

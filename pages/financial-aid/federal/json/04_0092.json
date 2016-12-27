@@ -13,7 +13,7 @@
     "max": 8000,
     "padding": {"top": 0, "botom": 0},
       "tick": {
-        "format": "dollar",
+        "format": "$s",
         "count": 5
       }
     },
@@ -36,7 +36,7 @@
       ]
     ],
     "labels": {
-      "format": "dollar"
+      "format": "$s"
     }
   },
   "title": "Dependent students' family income"

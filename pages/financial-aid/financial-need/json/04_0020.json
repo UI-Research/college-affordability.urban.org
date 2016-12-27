@@ -18,7 +18,7 @@
     "rotated": true,
     "y": {
       "tick": {
-        "format": "dollar"
+        "format": "$.2s"
       }
     }
   },
@@ -70,19 +70,16 @@
       ]
     ],
        "labels": {
-      "format": "dollar"
+      "format": "$.2s"
     }
   },
   "metadata": {
     "notes": null,
-    "source": "National Postsecondary Student Aid Study 2012 "
+    "source": "NPSAS, 2012."
   },
   "series": [
     "Independent, no dependents, single",
     "Independent, no dependents, married",
     "Independent with dependents"
-  ],
-  "size": {
-  	"height": 400
-  }
+  ]
 }

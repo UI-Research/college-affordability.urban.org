@@ -36,7 +36,7 @@ let singlepage = (
     </Multiples>
       <p><strong>More selective schools tend to have higher endowment income.</strong></p>
       <p>At both private nonprofit and public four-year institutions with open admissions policies, median endowment income per student is about $200. In contrast, the median private nonprofit four-year institution that admits fewer than 25 percent of applicants has almost $16,000 in endowment income per student. </p>
-      <Multiples title="Percentage Endowment Income per Student by Share of Applicants Admitted" source="Integrated Postsecondary Education Data System (IPEDS).">
+      <Multiples title="Share of Endowment Income per Student by Institution Selectivity" source="IPEDS.">
           <Graph file={require('./json/02_0061.json')} small="true"/>
           <Graph file={require('./json/02_0062.json')} small="true"/>
       </Multiples>

@@ -6,7 +6,7 @@
   "title": "All",
   "data": {
     "labels": {
-      "format": "dollar"
+      "format": "$s"
     },
     "type": "bar",
     "columns": [
@@ -26,7 +26,7 @@
     "max": 8000,
     "padding": {"top": 0, "bottom": 0},
       "tick": {
-        "format": "dollar",
+        "format": "$s",
         "count": 5
       }
     },

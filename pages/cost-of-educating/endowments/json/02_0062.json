@@ -1,1 +1,45 @@
-{"data": {"labels": {"format": "dollar"}, "type": "bar", "columns": [["Endowment income per student", 916.46, 268.2457, 221.4388, 256.303, 235.7057]]}, "axis": {"x": {"type": "category", "categories": ["0 ≤ 25%", "25 ≤ 50%", "50 ≤ 75%", "75 ≤ 100%", "Open admissions policy"]}, "rotated": true, "y": {"tick": {"format": "dollar"}}}, "series": "Percentage of Applicants Admitted", "metadata": {"notes": null, "source": "Integrated Postsecondary Education Data System"}, "title": "Public four-year institutions by Share of Applicants Admitted"}
+{
+  "data": {
+    "labels": {
+      "format": "$.2s"
+    },
+    "type": "bar",
+    "columns": [
+      [
+        "Endowment income per student",
+        916.46,
+        268.2457,
+        221.4388,
+        256.303,
+        235.7057
+      ]
+    ]
+  },
+  "axis": {
+    "x": {
+      "type": "category",
+      "categories": [
+        "0 \u2264 25%",
+        "25 \u2264 50%",
+        "50 \u2264 75%",
+        "75 \u2264 100%",
+        "Open admissions policy"
+      ]
+    },
+    "rotated": true,
+    "y": {
+     "padding": {"top": 0, "bottom": 0},
+     "max": 1000,
+      "tick": {
+        "format": "$.2s",
+        "count": 5
+      }
+    }
+  },
+  "series": "Percentage of Applicants Admitted",
+  "metadata": {
+    "notes": null,
+    "source": "Integrated Postsecondary Education Data System"
+  },
+  "title": "Public four-year institutions by share of applicants admitted"
+}

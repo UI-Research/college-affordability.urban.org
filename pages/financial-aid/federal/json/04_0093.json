@@ -16,7 +16,7 @@
     "max": 8000,
     "padding": {"top": 0, "botom": 0},
       "tick": {
-        "format": "dollar",
+        "format": "$s",
         "count": 5
       }
     },
@@ -33,7 +33,7 @@
     ],
     "type": "bar",
     "labels": {
-      "format": "dollar"
+      "format": "$s"
     }
   }
 }

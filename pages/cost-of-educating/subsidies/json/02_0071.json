@@ -16,7 +16,9 @@
       ]
     ],
     "type": "bar",
-    "labels": {"format": "dollar"},
+    "labels": {
+      "format": "dollar"
+    },
     "groups": [
       [
         "Average subsidy per FTE student",
@@ -27,17 +29,16 @@
   "axis": {
     "x": {
       "categories": [
-        "'05\u2013  '06",
-        "'09\u2013  '10",
-        "'13\u2013  '14"
+        "'05\u2013'06",
+        "'09\u2013'10",
+        "'13\u2013'14"
       ],
       "type": "category"
     },
     "y": {
-      "max": 14600,
+      "max": 19286.626,
       "tick": {
-        "format": "dollar",
-        "count": 5
+        "format": "dollar"
       }
     },
     "rotated": false
