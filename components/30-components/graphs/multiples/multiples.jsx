@@ -16,7 +16,6 @@ export default class Multiples extends Component {
     var children = this.props.children.length
     const graphSet = _.map(this.props.children, (component) => {
       var newComponent = component
-      console.log(newComponent, children)
       newComponent.props["children"] = children
       var childClass = "c-graph-multiple children_"+String(children)
       return (

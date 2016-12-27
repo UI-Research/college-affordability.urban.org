@@ -16,7 +16,7 @@
     "x": {
       "type": "category",
       "label": "All dependent students",
-      "categories": ["All dependent students"]
+      "categories": ["All dependent            students"]
     }
   },
   "data": {
@@ -46,3 +46,4 @@
     "notes": null
   }
 }
+

@@ -7,7 +7,7 @@
     "rotated": true,
     "x": {
       "type": "category",
-      "categories": ["Independent students"],
+      "categories": ["Independent               students"],
       "label": "Independent students"
     },
     "y": {
@@ -46,3 +46,4 @@
     "source": "Baum et al, Trends in Student Aid 2014, The College Board, based on NPSAS 2012."
   }
 }
+
