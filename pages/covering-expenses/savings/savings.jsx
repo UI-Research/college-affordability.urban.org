@@ -24,12 +24,12 @@ let singlepage = (
 );
 
 let specifications = {
-  'name': 'pre-college-income-and-savings',
-  'title': 'Pre-College Income and Savings',
+  'name': 'savings',
+  'title': 'Savings',
   'content': <SinglePage content={singlepage} />
 };
 
-const PreCollegeIncomeAndSavings = React.createClass({
+const Savings = React.createClass({
   render: function() {
     return (
       <Template title={specifications.title} machineName={specifications.name} includeHTML={this.props.includeHTML}>
@@ -43,6 +43,6 @@ const PreCollegeIncomeAndSavings = React.createClass({
 if (util.canUseDOM()) {
   require('./' + specifications.name.toLowerCase() + '.scss');
 }
-util.printToPage('pre-college-income-and-savings', PreCollegeIncomeAndSavings);
+util.printToPage('savings', Savings);
 
-module.exports = PreCollegeIncomeAndSavings;
+module.exports = Savings;
