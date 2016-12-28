@@ -1,1 +1,43 @@
-{"metadata": {"source": "National Postsecondary Student Aid Study 2012 ", "notes": null}, "axis": {"rotated": true, "x": {"categories": ["Less than $30,000", "$30,000-$64,999", "$65,000-$105,999", "$106,000 or more"], "type": "category", "label": "Family income"}, "y": {"max": 17000, "tick": {"format": "dual_$_%"}}}, "data": {"labels": {"format": "dual_$_%"}, "type": "bar", "columns": [["Loans borrowed", 8800, 10900, 12800, 16100]]}, "series": "Loans borrowed"}
+{
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2012 ",
+    "notes": null
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": [
+        "Less than                                      $30,000",
+        "$30,000-                                       $64,999",
+        "$65,000-                                       $105,999",
+        "$106,000                                       or more"
+      ],
+      "type": "category",
+      "label": "Family income"
+    },
+    "y": {
+      "padding": {"top": 0, "bottom": 0},
+      "tick": {
+      	"count": 3,
+        "format": "dollar"
+      },
+      "max": 20000
+    }
+  },
+  "data": {
+    "labels": {
+      "format": "dollar"
+    },
+    "type": "bar",
+    "columns": [
+      [
+        "Loans borrowed",
+        8800,
+        10900,
+        12800,
+        16100
+      ]
+    ]
+  },
+  "series": "Loans borrowed"
+}
