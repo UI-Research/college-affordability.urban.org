@@ -39,7 +39,7 @@
     },
     "y": {
       "tick": {
-        "format": "dollar"
+        "format": "$s"
       }
     }
   },

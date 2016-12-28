@@ -11,7 +11,7 @@ import util from 'util.jsx';
 
 let singlepage = (
   <div>
-    <h1>hat is College?</h1>
+    <h1>What is College?</h1>
     <h2>Overview</h2>
     <p>Quisque nec orci at mi iaculis ornare vel eu enim. Fusce vestibulum cursus nisi, vestibulum rhoncus ligula porta non. Maecenas dignissim sagittis ante, at porta urna elementum vitae. Donec accumsan ac sapien vitae maximus. Integer malesuada auctor congue. Maecenas molestie efficitur risus ac ullamcorper. Proin orci leo, luctus vitae erat ac, tristique aliquam eros. Aliquam lobortis lorem ante, ut volutpat ante ornare ut. Vestibulum facilisis ullamcorper ornare. Praesent volutpat tincidunt felis, at convallis tortor elementum id.</p>
     <p>Duis imperdiet posuere fermentum. Sed bibendum ultricies sapien sed placerat. Etiam ac nunc condimentum, ultrices velit a, malesuada nisi. Vestibulum risus justo, varius et orci ut, commodo convallis purus. Nulla velit urna, viverra eget accumsan quis, feugiat vitae erat. Pellentesque in porttitor orci. Suspendisse id risus et leo laoreet luctus sit amet et tellus. Donec urna nunc, dictum a quam a, ultrices dignissim nisl. Nulla lobortis cursus erat, id rhoncus quam mollis non. Nam ut ipsum dui.</p>
@@ -25,7 +25,7 @@ let singlepage = (
     <Graph file={require('./json/04_0060.json')}/>
 
 
-    <Multiples title="Grant Aid by Source for Independent and Dependent Students, by Sector, 2011-12" source="National Postsecondary Student Aid Study 2012">
+    <Multiples title="Grant Aid by Source for Independent and Dependent Students, by Sector, 2011-12" source="NPSAS 2012.">
         <Graph file={require('./json/04_0071.json')} small="true"/>
         <Graph file={require('./json/04_0072.json')} small="true"/>
     </Multiples>

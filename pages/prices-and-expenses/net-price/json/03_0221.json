@@ -3,17 +3,20 @@
     "rotated": false,
     "x": {
       "categories": [
-        1996,
-        2000,
-        2004,
-        2008,
-        2012
+        "'96",
+        "'00",
+        "'04",
+        "'08",
+        "'12"
       ],
       "type": "category"
     },
     "y": {
+      "padding": {"top": 0, "bottom": 0},
+      "max": 30000,
       "tick": {
-        "format": "dollar"
+        "format": "dollar",
+        "count": 4
       }
     }
   },

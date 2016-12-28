@@ -1,1 +1,90 @@
-{"metadata": {"notes": "For each sector, the average tuition and fees for each decile is calculated by ordering the institutions in the sector by published tuition and fees and dividing the undergraduate students in the sector into deciles. ", "source": "IPEDS."}, "series": ["Lowest decile", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "Highest decile"], "data": {"columns": [["Lowest decile", 3505.2197], ["2nd", 6717.2832], ["3rd", 7172.9521], ["4th", 7827.2319], ["5th", 8533.3867], ["6th", 9442.5693], ["7th", 10065.791], ["8th", 11076.6348], ["9th", 12856.3896], ["Highest decile", 15051.7588]], "type": "bar"}, "axis": {"x": {"categories": ["Public four-year"], "type": "category"}, "y": {"tick": {"format": "dollar"}}, "rotated": false}, "title": "Public four-year"}
+{
+  "metadata": {
+    "notes": "For each sector, the average tuition and fees for each decile is calculated by ordering the institutions in the sector by published tuition and fees and dividing the undergraduate students in the sector into deciles. ",
+    "source": "IPEDS."
+  },
+  "series": [
+    "Lowest decile",
+    "2nd",
+    "3rd",
+    "4th",
+    "5th",
+    "6th",
+    "7th",
+    "8th",
+    "9th",
+    "Highest decile"
+  ],
+  "data": {
+    "columns": [
+      [
+        "Lowest decile",
+        3505.2197
+      ],
+      [
+        "2nd",
+        6717.2832
+      ],
+      [
+        "3rd",
+        7172.9521
+      ],
+      [
+        "4th",
+        7827.2319
+      ],
+      [
+        "5th",
+        8533.3867
+      ],
+      [
+        "6th",
+        9442.5693
+      ],
+      [
+        "7th",
+        10065.791
+      ],
+      [
+        "8th",
+        11076.6348
+      ],
+      [
+        "9th",
+        12856.3896
+      ],
+      [
+        "Highest decile",
+        15051.7588
+      ]
+    ],
+    "colors": {
+   	"Lowest decile": "#1696D2", 
+    "2nd":"#000000", 
+    "3rd":"#FDBF11", 
+    "4th": "#55b748", 
+    "5th":"#d2d2d2", 
+    "6th": "#ec008b", 
+    "7th": "#cb9f5b", 
+    "8th": "#7348b7", 
+    "9th": "#ff0000", 
+    "Highest decile": "#0f658d"
+   },
+    "type": "bar"
+  },
+  "axis": {
+    "x": {
+      "categories": [
+        "Public four-year"
+      ],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    },
+    "rotated": false
+  },
+  "title": "Public four-year"
+}

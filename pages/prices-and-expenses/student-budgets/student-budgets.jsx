@@ -16,7 +16,7 @@ let singlepage = (
     <p>In progress...</p>
     <Graph file={require('./json/03_0110.json')}/>
 
-    <Multiples title="Cost of Attendance by Sector from 2005-06 to 2015-16 in 2015 dollars" source="IPEDS and Trends in College Pricing 2015">
+    <Multiples title="Cost of Attendance by Sector from 2005–06 to 2015–16 in 2015 dollars" source="IPEDS; Jennifer Ma, Sandy Baum, Matea Pender, and D'Wayne Bell, Trends in College Pricing 2015 (New York: College Board, 2015).">
         <Graph file={require('./json/03_0121.json')} small="true"/>
         <Graph file={require('./json/03_0122.json')} small="true"/>
         <Graph file={require('./json/03_0123.json')} small="true"/>

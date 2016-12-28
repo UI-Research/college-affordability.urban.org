@@ -1,1 +1,82 @@
-{"axis": {"rotated": false, "x": {"categories": [1996, 2000, 2004, 2008, 2012], "type": "category"}, "y": {"tick": {"format": "dollar"}}}, "title": "Lower Middle 25 percent", "data": {"labels": {"format": "dollar"}, "columns": [["Tuition and fees covered by grant aid", 1300, 2700, 3000, 2000, 3700], ["Remaining (net) tuition and fees", 9300, 11400, 11300, 15100, 14300], ["Living expenses covered by grant aid", 0, 0, 0, 0, 0], ["Remaining (net) living expenses", 8600, 11500, 11100, 13500, 13400]], "type": "bar", "groups": [["Tuition and fees covered by grant aid", "Remaining (net) tuition and fees", "Living expenses covered by grant aid", "Remaining (net) living expenses"]]}, "metadata": {"notes": null, "source": "NPSAS, 2012. "}, "series": ["Tuition and fees covered by grant aid", "Remaining (net) tuition and fees", "Living expenses covered by grant aid", "Remaining (net) living expenses"]}
+{
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": [
+        "'96",
+        "'00",
+        "'04",
+        "'08",
+        "'12"
+      ],
+      "type": "category"
+    },
+    "y": {
+      "padding": {"top": 0, "bottom": 0},
+      "max": 40000,
+      "tick": {
+      	"count": 5,
+        "format": "dollar"
+      }
+    }
+  },
+  "title": "Lower Middle 25 percent",
+  "data": {
+    "labels": {
+      "format": "dollar"
+    },
+    "columns": [
+      [
+        "Tuition and fees covered by grant aid",
+        1300,
+        2700,
+        3000,
+        2000,
+        3700
+      ],
+      [
+        "Remaining (net) tuition and fees",
+        9300,
+        11400,
+        11300,
+        15100,
+        14300
+      ],
+      [
+        "Living expenses covered by grant aid",
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        "Remaining (net) living expenses",
+        8600,
+        11500,
+        11100,
+        13500,
+        13400
+      ]
+    ],
+    "type": "bar",
+    "groups": [
+      [
+        "Tuition and fees covered by grant aid",
+        "Remaining (net) tuition and fees",
+        "Living expenses covered by grant aid",
+        "Remaining (net) living expenses"
+      ]
+    ]
+  },
+  "metadata": {
+    "notes": null,
+    "source": "NPSAS, 2012. "
+  },
+  "series": [
+    "Tuition and fees covered by grant aid",
+    "Remaining (net) tuition and fees",
+    "Living expenses covered by grant aid",
+    "Remaining (net) living expenses"
+  ]
+}

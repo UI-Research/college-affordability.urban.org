@@ -1,1 +1,90 @@
-{"axis": {"y": {"tick": {"format": "dollar"}}, "x": {"type": "category", "categories": ["Public two-year"]}, "rotated": false}, "series": ["Lowest decile", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "Highest decile"], "metadata": {"notes": "For each sector, the average tuition and fees for each decile is calculated by ordering the institutions in the sector by published tuition and fees and dividing the undergraduate students in the sector into deciles. ", "source": "IPEDS."}, "data": {"type": "bar", "columns": [["Lowest decile", 1144], ["2nd", 1348], ["3rd", 1919.5], ["4th", 2460], ["5th", 2860.5], ["6th", 3323], ["7th", 3707], ["8th", 4074], ["9th", 4460], ["Highest decile", 5528.5]]}, "title": "Public two-year"}
+{
+  "axis": {
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    },
+    "x": {
+      "type": "category",
+      "categories": [
+        "Public two-year"
+      ]
+    },
+    "rotated": false
+  },
+  "series": [
+    "Lowest decile",
+    "2nd",
+    "3rd",
+    "4th",
+    "5th",
+    "6th",
+    "7th",
+    "8th",
+    "9th",
+    "Highest decile"
+  ],
+  "metadata": {
+    "notes": "For each sector, the average tuition and fees for each decile is calculated by ordering the institutions in the sector by published tuition and fees and dividing the undergraduate students in the sector into deciles. ",
+    "source": "IPEDS."
+  },
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Lowest decile",
+        1144
+      ],
+      [
+        "2nd",
+        1348
+      ],
+      [
+        "3rd",
+        1919.5
+      ],
+      [
+        "4th",
+        2460
+      ],
+      [
+        "5th",
+        2860.5
+      ],
+      [
+        "6th",
+        3323
+      ],
+      [
+        "7th",
+        3707
+      ],
+      [
+        "8th",
+        4074
+      ],
+      [
+        "9th",
+        4460
+      ],
+      [
+        "Highest decile",
+        5528.5
+      ]
+    ],
+   "colors": {
+   	"Lowest decile": "#1696D2", 
+    "2nd":"#000000", 
+    "3rd":"#FDBF11", 
+    "4th": "#55b748", 
+    "5th":"#d2d2d2", 
+    "6th": "#ec008b", 
+    "7th": "#cb9f5b", 
+    "8th": "#7348b7", 
+    "9th": "#ff0000", 
+    "Highest decile": "#0f658d"
+   }
+  },
+  "title": "Public two-year"
+}
