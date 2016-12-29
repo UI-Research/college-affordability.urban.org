@@ -27,69 +27,83 @@
       "format": "dollar"
     },
     "type": "bar",
+    "colors": {
+      "Expected family contribution":"#d700ec",
+      "Federal grants":"#000000",
+      "Military/Veterans":"#55b748",
+      "State grants":"#00ecd7",
+      "Institutional grants":"#ffff00",
+      "Private and employer aid":"#88ec00",
+      "Federal student loans":"#d2d2d2",
+      "Federal  parent loans":"#6100ec",
+      "Private loans":"#ec0015",
+      "Earnings and other resources":"#ffa500",
+      "Budget beyond tuition and fees":"#ec008b",
+      "Tuition and fees": "#1696d2"
+      },
     "sets": {
       "set1": [
         "Public four-year in-state",
         [
           [
             "Budget beyond tuition and fees",
-            0,
+            "NA",
             14338.2015
           ],
           [
             "Earnings and other resources",
             12.6343,
-            0
+            "NA"
           ],
           [
             "Expected family contribution",
             13638.03,
-            0
+            "NA"
           ],
           [
             "Private loans",
             704.7509,
-            0
+            "NA"
           ],
           [
             "Private and employer aid",
             695.0588,
-            0
+            "NA"
           ],
           [
             "Federal grants",
             144.2608,
-            0
+            "NA"
           ],
           [
             "Federal  parent loans",
             1824.354,
-            0
+            "NA"
           ],
           [
             "Federal student loans",
             3855.0435,
-            0
+            "NA"
           ],
           [
             "Military\/Veterans",
             88.193,
-            0
+            "NA"
           ],
           [
             "Tuition and fees",
-            0,
+            "NA",
             8689.527
           ],
           [
             "Institutional grants",
             1268.946,
-            0
+            "NA"
           ],
           [
             "State grants",
             796.4572,
-            0
+            "NA"
           ]
         ]
       ],
@@ -98,63 +112,63 @@
         [
           [
             "Budget beyond tuition and fees",
-            0,
+            "NA",
             15260.5635
           ],
           [
             "Earnings and other resources",
             6515.1626,
-            0
+            "NA"
           ],
           [
             "Expected family contribution",
             13306.713,
-            0
+            "NA"
           ],
           [
             "Private loans",
             1596.735,
-            0
+            "NA"
           ],
           [
             "Private and employer aid",
             2602.1801,
-            0
+            "NA"
           ],
           [
             "Federal grants",
             237.322,
-            0
+            "NA"
           ],
           [
             "Federal  parent loans",
             3564.2565,
-            0
+            "NA"
           ],
           [
             "Federal student loans",
             4977.693,
-            0
+            "NA"
           ],
           [
             "Military\/Veterans",
             116.5814,
-            0
+            "NA"
           ],
           [
             "Tuition and fees",
-            0,
+            "NA",
             30875.1975
           ],
           [
             "Institutional grants",
             12499.6935,
-            0
+            "NA"
           ],
           [
             "State grants",
             719.4238,
-            0
+            "NA"
           ]
         ]
       ],
@@ -163,63 +177,63 @@
         [
           [
             "Budget beyond tuition and fees",
-            0,
+            "NA",
             30875.1975
           ],
           [
             "Earnings and other resources",
             3568.9038,
-            0
+            "NA"
           ],
           [
             "Expected family contribution",
             13604.6715,
-            0
+            "NA"
           ],
           [
             "Private loans",
             1876.0245,
-            0
+            "NA"
           ],
           [
             "Private and employer aid",
             443.9374,
-            0
+            "NA"
           ],
           [
             "Federal grants",
             217.5268,
-            0
+            "NA"
           ],
           [
             "Federal  parent loans",
             7372.9845,
-            0
+            "NA"
           ],
           [
             "Federal student loans",
             6201.4155,
-            0
+            "NA"
           ],
           [
             "Military\/Veterans",
             396.6425,
-            0
+            "NA"
           ],
           [
             "Tuition and fees",
-            0,
+            "NA",
             15260.5635
           ],
           [
             "Institutional grants",
             322.8856,
-            0
+            "NA"
           ],
           [
             "State grants",
             190.6624,
-            0
+            "NA"
           ]
         ]
       ],
@@ -228,63 +242,63 @@
         [
           [
             "Budget beyond tuition and fees",
-            0,
+            "NA",
             14987.9835
           ],
           [
             "Earnings and other resources",
             5808.5282,
-            0
+            "NA"
           ],
           [
             "Expected family contribution",
             14896.686,
-            0
+            "NA"
           ],
           [
             "Private loans",
             1071.3045,
-            0
+            "NA"
           ],
           [
             "Private and employer aid",
             1289.9243,
-            0
+            "NA"
           ],
           [
             "Federal grants",
             103.1298,
-            0
+            "NA"
           ],
           [
             "Federal  parent loans",
             4000.9095,
-            0
+            "NA"
           ],
           [
             "Federal student loans",
             4012.869,
-            0
+            "NA"
           ],
           [
             "Military\/Veterans",
             120.1937,
-            0
+            "NA"
           ],
           [
             "Tuition and fees",
-            0,
+            "NA",
             19199.061
           ],
           [
             "Institutional grants",
             2883.4995,
-            0
+            "NA"
           ],
           [
             "State grants",
-            0,
-            0
+            "NA",
+            "NA"
           ]
         ]
       ],
@@ -293,63 +307,63 @@
         [
           [
             "Budget beyond tuition and fees",
-            0,
+            "NA",
             12017.1135
           ],
           [
             "Earnings and other resources",
             -390.3159,
-            0
+            "NA"
           ],
           [
             "Expected family contribution",
             13187.4015,
-            0
+            "NA"
           ],
           [
             "Private loans",
             208.4828,
-            0
+            "NA"
           ],
           [
             "Private and employer aid",
             146.1509,
-            0
+            "NA"
           ],
           [
             "Federal grants",
             118.3983,
-            0
+            "NA"
           ],
           [
             "Federal  parent loans",
             94.0065,
-            0
+            "NA"
           ],
           [
             "Federal student loans",
             1342.4565,
-            0
+            "NA"
           ],
           [
             "Military\/Veterans",
             21.9512,
-            0
+            "NA"
           ],
           [
             "Tuition and fees",
-            0,
+            "NA",
             3292.233
           ],
           [
             "Institutional grants",
             282.6092,
-            0
+            "NA"
           ],
           [
             "State grants",
             298.2056,
-            0
+            "NA"
           ]
         ]
       ]

@@ -3,7 +3,7 @@
     "source": "State Higher Education Executive Officers Association (SHEEO)",
     "notes": null
   },
-  "title": "Change in Total Appropriations, Enrollment, and Appropriations per Student Relative to 2000\u201301",
+  "title": "Change in Total Appropriations, Enrollment, and Appropriations per Full-Time Equivalent (FTE) Student Relative to 2000–01",
   "axis": {
     "y": {
       "tick": {
@@ -61,7 +61,7 @@
         null
       ],
       [
-        "Public student enrollment",
+        "FTE public sector enrollment",
         0,
         0.0073,
         0.05,
@@ -81,7 +81,7 @@
         null
       ],
       [
-        "State and local public higher education appropriations per public student",
+        "State and local public higher education appropriations per public sector FTE student",
         0,
         0.0345,
         -0.0015,
@@ -107,7 +107,7 @@
   },
   "series": [
     "State and local public higher education appropriations",
-    "Public student enrollment",
-    "State and local public higher education appropriations per public student"
+    "FTE public sector enrollment",
+    "State and local public higher education appropriations per public sector FTE student"
   ]
 }

@@ -4,6 +4,20 @@
       "format": "dollar"
     },
     "type": "bar",
+    "colors": {
+      "Institutional grants":"#1696d2",
+      "Military\/Veterans": "#000000",
+      "Tuition and fees": "#55b748",
+      "Earnings and other resources": "#ffff00",
+      "Private and employer aid": "#d2d2d2",
+      "NonTF budget": "#ec008b",
+      "Federal grants": "#6100ec",
+      "State grants": "#d700ec",
+      "Private loans": "#88ec00",
+      "Federal student loans": "#ffa500",
+      "Expected family contribution": "#ec0015",
+      "Federal  parent loans": "#00ecd7"
+      },
     "sets": {
       "set2": [
         "Public four-year out-of-state",
@@ -11,62 +25,62 @@
           [
             "Institutional grants",
             1685.7435,
-            0
+            "NA"
           ],
           [
             "Military\/Veterans",
             1040.823,
-            0
+            "NA"
           ],
           [
             "Tuition and fees",
-            0,
+            "NA",
             14048.07
           ],
           [
             "Earnings and other resources",
             13385.64,
-            0
+            "NA"
           ],
           [
             "Private and employer aid",
             646.8648,
-            0
+            "NA"
           ],
           [
             "NonTF budget",
-            0,
+            "NA",
             16291.11
           ],
           [
             "Federal grants",
             3431.064,
-            0
+            "NA"
           ],
           [
             "State grants",
-            0,
-            0
+            "NA",
+            "NA"
           ],
           [
             "Private loans",
             995.4862,
-            0
+            "NA"
           ],
           [
             "Federal student loans",
             6946.485,
-            0
+            "NA"
           ],
           [
             "Expected family contribution",
             2207.0685,
-            0
+            "NA"
           ],
           [
             "Federal  parent loans",
-            0,
-            0
+            "NA",
+            "NA"
           ]
         ]
       ],

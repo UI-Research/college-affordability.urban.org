@@ -1,12 +1,26 @@
 {
   "data": {
     "type": "bar",
+    "colors": {
+          "Private loans":"#d700ec",
+          "Institutional grants":"#000000",
+          "Tuition and fees":"#55b748",
+          "State grants": "#ffff00",
+          "Federal grants":"#1696d2",
+          "NonTF budget":"#ec008b",
+          "EFC": "#d2d2d2",
+          "Military/Veterans":"#6100ec",
+          "Private and employer aid": "#88ec00",
+          "Federal parent loans":"#ffa500",
+          "Federal student loans":"#ec0015",
+          "Earnings and other resources": "#00ecd7"
+      },
     "groups": [
       [
             "Private loans", 
             "Institutional grants", 
             "Tuition and fees", 
-            "State public grants",
+            "State grants",
             "Federal grants", 
             "NonTF budget", 
             "EFC", 
@@ -25,17 +39,17 @@
           "Public four-year out-of-state",
           [
           
-            ["Private loans", 669.4777,0],
-            ["Institutional grants", 5167.197,0],
-            ["Tuition and fees", 0,18695.691],
-            ["State public grants", 0,0],
+            ["Private loans", 669.4777,"NA"],
+            ["Institutional grants", 5167.197,"NA"],
+            ["Tuition and fees", "NA",18695.691],
+            ["State public grants", "NA","NA"],
             ["Federal grants", 4891.341,0],
-            ["NonTF budget", 0,15385.0515],
-            ["EFC", 985.5524,0],
-            ["Military/Veterans", 600.4635,0],
-            ["Private and employer aid", 1321.7734,0],
-            ["Federal parent loans", 2422.749,0],
-            ["Federal student loans", 5572.14,0],
+            ["NonTF budget", "NA",15385.0515],
+            ["EFC", 985.5524,"NA"],
+            ["Military/Veterans", 600.4635,"NA"],
+            ["Private and employer aid", 1321.7734,"NA"],
+            ["Federal parent loans", 2422.749,"NA"],
+            ["Federal student loans", 5572.14,"NA"],
             ["Earnings and other resources", 12450.04860]
 
         ]
@@ -44,17 +58,17 @@
         [
           "Public four-year in-state",
           [
-            ["Earnings and other resources", 6537.1514,0],
-            ["Federal parent loans", 474.957,0],
-            ["Private loans", 161.2832,0],
-            ["Private and employer aid", 827.688,0],
-            ["Tuition and fees", 0,8210.265],
-            ["Federal grants", 5429.445,0],
-            ["Military/Veterans", 130.599,0],
-            ["EFC", 367.4939,0],
-            ["State public grants", 2532.4215,0],
-            ["NonTF budget", 0,14075.5965],
-            ["Institutional grants", 1590.246,0],
+            ["Earnings and other resources", 6537.1514,"NA"],
+            ["Federal parent loans", 474.957,"NA"],
+            ["Private loans", 161.2832,"NA"],
+            ["Private and employer aid", 827.688,"NA"],
+            ["Tuition and fees", "NA",8210.265],
+            ["Federal grants", 5429.445,"NA"],
+            ["Military/Veterans", 130.599,"NA"],
+            ["EFC", 367.4939,"NA"],
+            ["State public grants", 2532.4215,"NA"],
+            ["NonTF budget", "NA",14075.5965],
+            ["Institutional grants", 1590.246,"NA"],
             ["Federal student loans", 4234.57650]
           ]
         ]
@@ -72,8 +86,8 @@
     "x": {
       "type": "category",
       "categories": [
-        1,
-        2
+        "Student resources",
+        "Student budget"
       ]
     }
   },

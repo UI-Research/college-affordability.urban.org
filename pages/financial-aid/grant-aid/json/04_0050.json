@@ -1,1 +1,42 @@
-{"title": "Undergraduate Grant Aid by Source, Percentage Distribution and Total Dollars (in billions), 2015–16", "axis": {"rotated": true, "y": {"tick": {"format": "dollar"}}, "x": {"type": "category", "categories": ["Institutional Grants", "Federal Pell Grants", "Veterans and Military Grants", "Private and Employer Grants", "State Grants"]}}, "data": {"type": "bar", "columns": [[false, 43, 28.2, 12.8, 11.8, 10.4]], "labels": {"format": "dollar"}}, "series": "Grant aid", "metadata": {"notes": null, "source": "Sandy Baum, Jennifer Ma, Matea Pender, and Meredith Welch, Trends in Student Aid 2016 (Washington, DC: College Board, 2016)."}}
+{
+  "metadata": {
+    "notes": null,
+    "source": "Sandy Baum, Jennifer Ma, Matea Pender, and Meredith Welch,\u00a0Trends in Student Aid 2016\u00a0(Washington, DC: College Board, 2016)."
+  },
+  	 "series": "Grant aid",
+  "title": "Undergraduate Grant Aid by Source, Percentage Distribution and Total Dollars (in billions), 2015\u201316",
+  "axis": {
+    "rotated": true,
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    },
+    "x": {
+      "type": "category",
+      "categories": [
+        "Institutional Grants",
+        "Federal Pell Grants",
+        "Veterans and Military Grants",
+        "Private and Employer Grants",
+        "State Grants"
+      ]
+    }
+  },
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        false,
+        43,
+        28.2,
+        12.8,
+        11.8,
+        10.4
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  }
+}
