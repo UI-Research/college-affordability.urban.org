@@ -8,18 +8,20 @@
   "axis": {
     "rotated": true,
     "y": {
+      "label": "Grant aid in billions",
       "tick": {
         "format": "dollar"
       }
     },
     "x": {
+
       "type": "category",
       "categories": [
-        "Institutional Grants",
-        "Federal Pell Grants",
-        "Veterans and Military Grants",
-        "Private and Employer Grants",
-        "State Grants"
+        "Institutional grants",
+        "Federal Pell grants",
+        "Veterans and military grants",
+        "Private and employer grants",
+        "State grants"
       ]
     }
   },

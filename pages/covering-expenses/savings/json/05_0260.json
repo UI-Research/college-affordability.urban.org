@@ -1,1 +1,68 @@
-{"series": "Total EFC", "axis": {"rotated": false, "x": {"type": "category", "categories": [0, 10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000, "NA"]}, "y": {"tick": {"format": "dollar"}}}, "metadata": {"notes": null, "source": "Estimates based on federal methodology formula for EFC."}, "title": "Effect of Savings on Expected Family Contribution", "data": {"type": "line", "columns": [["Total EFC", 5000, 5000, 5000, 5101.52, 5665.52, 6229.52, 6793.52, 7357.52, 7921.52, 8485.52, 9049.52, "NA"]], "labels": {"format": "dollar"}}}
+{
+  "series": ["Savings", "Total EFC"],
+  "axis": {
+    "rotated": false,
+    "x": {
+      "type": "category",
+      "categories": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "y": {
+      "tick": {
+        "format": "$.2s"
+      }
+    }
+  },
+  "metadata": {
+    "notes": null,
+    "source": "Estimates based on federal methodology formula for EFC."
+  },
+  "title": "Effect of Savings on Expected Family Contribution",
+  "data": {
+    "type": "line",
+    "columns": [
+     [    
+     "Savings",
+        0,
+        10000,
+        20000,
+        30000,
+        40000,
+        50000,
+        60000,
+        70000,
+        80000,
+        90000,
+        100000
+      ],
+      [
+        "Total EFC",
+        5000,
+        5000,
+        5000,
+        5101.52,
+        5665.52,
+        6229.52,
+        6793.52,
+        7357.52,
+        7921.52,
+        8485.52,
+        9049.52
+      ]
+    ],
+    "labels": {
+      "format": "$.2s"
+    }
+  }
+}

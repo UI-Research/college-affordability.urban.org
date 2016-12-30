@@ -2,7 +2,7 @@
   "series": "Average state grant aid per recipient",
   "data": {
     "labels": {
-      "format": "dollar"
+      "format": "$s"
     },
     "columns": [
       [
@@ -19,7 +19,7 @@
     "max": 6000,
       "padding": {"top": 0, "bottom": 0},
       "tick": {
-        "format": "dollar",
+        "format": "$s",
         "count": 4
       }
     },

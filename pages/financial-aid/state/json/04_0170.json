@@ -51,7 +51,7 @@
         570
       ],
       [
-        "Non Need-based",
+        "Non need-based",
         0,
         0,
         0,
@@ -156,6 +156,6 @@
   },
   "series": [
     "Need-based",
-    "Non Need-based"
+    "Non need-based"
   ]
 }

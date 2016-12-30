@@ -36,9 +36,11 @@
       "type": "category"
     },
     "y": {
-      "max": 19286.626,
+      "padding": {"top": 0, "bottom": 0},
+      "max": 20000,
       "tick": {
-        "format": "dollar"
+        "format": "dollar",
+        "count": 5
       }
     },
     "rotated": false

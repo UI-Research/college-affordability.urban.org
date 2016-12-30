@@ -23,7 +23,7 @@
     },
     "x": {
       "type": "category",
-      "categories": "All (49%)"
+      "categories": ["All (49%)"]
     },
     "rotated": true
   },

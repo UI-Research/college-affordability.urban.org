@@ -7,7 +7,7 @@
   "data": {
     "type": "bar",
     "labels": {
-      "format": "dollar"
+      "format": "$s"
     },
     "columns": [
       [
@@ -24,9 +24,9 @@
       "type": "category",
       "categories": [
         "For-profit",
-        "Public            Two-Year",
-        "Public          Four-Year",
-        "Private         Four-Year"
+        "Public                        Two-Year",
+        "Public                        Four-Year",
+        "Private                       Four-Year"
       ],
       "label": "Sector"
     },
@@ -35,7 +35,7 @@
     "max": 6000,
       "padding": {"top": 0, "bottom": 0},
       "tick": {
-        "format": "dollar",
+        "format": "$s",
         "count": 4
       }
     }
