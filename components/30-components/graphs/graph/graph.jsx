@@ -32,7 +32,7 @@ export class BaseGraph extends Component {
       //add a blank data point at the end of line/area charts to avoid cut of
       //If/when this issue https://github.com/UI-Research/college-affordability.urban.org/issues/153
       // is resolved, should add a test to not add extra point if end of col == null 
-      if (_.includes(['line', 'area'], data.data.type) && !data.data.sets) {
+      if (_.includes(['line', 'area'], data.data.type) && !data.data.sets && !data.overrideTickCount) {
         data.axis.x.categories.push("")
         data.axis.x.categories.unshift("")
         data.data.columns.forEach(function(arr){
