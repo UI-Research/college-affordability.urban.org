@@ -1,9 +1,10 @@
 {
+  "title": "Median earnings of women by race",
+  "metadata": {
+    "notes": null,
+    "source": "IPUMS 2014 ACS five-year sample (2010\u201314)."
+  },
   "data": {
-    "type": "bar",
-    "labels": {
-      "format": "dollar"
-    },
     "columns": [
       [
         "25th percentile",
@@ -26,36 +27,35 @@
         18656,
         17793
       ]
-    ]
+    ],
+    "type": "bar",
+    "labels": {
+      "format": "dollar"
+    }
   },
   "series": [
     "25th percentile",
     "75th percentile",
     "Median"
   ],
-  "metadata": {
-    "notes": null,
-    "source": "IPUMS 2014 ACS five-year sample (2010\u201314)."
-  },
-  "title": "Median earnings of women by race",
   "axis": {
-    "rotated": false,
+    "rotated": true,
     "x": {
-      "type": "category",
       "categories": [
         "White",
         "Asian",
         "Hispanic",
         "Black"
-      ]
+      ],
+      "type": "category"
     },
-  "y": {
-    "padding": {"top": 0, "bottom": 0},
-    "max": 40000,
-    "tick": {
-      "format": "dollar",
-      "count": 5
+   "y": {
+      "padding": {"top": 0, "bottom": 0},
+      "max": 40000,
+      "tick": {
+        "format": "dollar",
+        "count": 5
+      }
     }
-  }
   }
 }

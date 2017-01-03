@@ -10,17 +10,20 @@
   "data": {
     "type": "bar",
     "colors": {
-      "Expected family contribution":"#d700ec",
-      "Federal grants": "#000000",
-      "Military/Veterans": "#55b748",
-      "State grants": "#ffff00",
-      "Institutional grants": "#1696d2",
-      "Private and employer aid": "#ec008b", 
-      "Federal student loans": "#d2d2d2",
-      "Federal  parent loans": "#6100ec", 
-      "Private loans": "#88ec00",
-      "Budget beyond tuition and fees": "#ec0015",
-      "Tuition and fees": "#00ecd7"
+        "Expected family contribution": "#848081",
+         "Federal grants": "#cfe8f3",
+         "Military\/Veterans": "#a2d4ec",
+        "State grants": "#73bfe2",
+        "Institutional grants":"#1696d2",
+        "Private and employer grant aid": "#1696d2",
+        "Federal student loans": "#fccb41",
+        "Federal  parent loans": "#fdbf11",
+        "Private loans": "#fce39e",
+        "Earnings and other resources": "#d5d5d4",
+        "Tuition and fees": "#ec008b",
+        "Budget beyond tuition and fees": "#000000"
+
+
     },
     "sets": {
       "set5": [

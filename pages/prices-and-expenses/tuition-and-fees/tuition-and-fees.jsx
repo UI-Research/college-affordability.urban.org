@@ -15,11 +15,6 @@ let singlepage = (
     <h2>Overview</h2>
     <p>In progress...</p>
     <Graph file={require('./json/03_0010.json')}/>
-
-    <Multiples title="In-State or In-District Tuition, by State, 2014–15" source="Integrated Postsecondary Education Data System">
-        <Graph file={require('./json/03_0041.json')} small="true"/>
-        <Graph file={require('./json/03_0042.json')} small="true"/>
-    </Multiples>
     
     <Graph file={require('./json/03_0020.json')}/>
     <Multiples title="Distribution of Full-Time Students by Published Tuition and Fees within Sectors, 2014–15" source="Integrated Postsecondary Education Data System">
@@ -30,6 +25,7 @@ let singlepage = (
 
 
     </Multiples>
+    <Graph file={require('./json/03_0040.json')}/>
 
   </div>
 );
