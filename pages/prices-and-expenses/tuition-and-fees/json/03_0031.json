@@ -74,7 +74,7 @@
       ]
     ],
    "colors": {
-   	"Lowest decile": "#cfe8f3", 
+    "Lowest decile": "#cfe8f3", 
     "2nd":"#a2d4ec", 
     "3rd":"#73bfe2", 
     "4th": "#5eb5de", 
@@ -84,6 +84,7 @@
     "8th": "#12719e", 
     "9th": "#0a4c6a", 
     "Highest decile": "#062635"
-   },
+   }
+ },
   "title": "Public two-year"
 }

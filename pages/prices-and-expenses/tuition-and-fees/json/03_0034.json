@@ -55,18 +55,18 @@
       ]
     ],
     "type": "bar",
-   "colors": [
-    "#1696D2", 
-    "#000000", 
-    "#FDBF11", 
-    "#55b748", 
-    "#d2d2d2", 
-    "#ec008b", 
-    "#cb9f5b", 
-    "#7348b7", 
-    "#ff0000", 
-    "#0f658d"
-   ]
+   "colors": {
+    "Lowest decile": "#cfe8f3", 
+    "2nd":"#a2d4ec", 
+    "3rd":"#73bfe2", 
+    "4th": "#5eb5de", 
+    "5th":"#46abdb", 
+    "6th": "#2da0d6", 
+    "7th": "#1696d2", 
+    "8th": "#12719e", 
+    "9th": "#0a4c6a", 
+    "Highest decile": "#062635"
+   }
   },
   "axis": {
     "x": {
