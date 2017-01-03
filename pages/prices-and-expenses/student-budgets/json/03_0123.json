@@ -1,14 +1,5 @@
 {
   "data": {
-    "groups": [
-      [
-        "Tuition and fees",
-        "Room and board",
-        "Books and supplies",
-        "Transportation",
-        "Other"
-      ]
-    ],
     "columns": [
       [
         "Tuition and fees",
@@ -46,30 +37,19 @@
         1647
       ]
     ],
-    "type": "bar",
     "labels": {
       "format": "dollar"
-    }
-  },
-  "axis": {
-    "y": {
-    "max": 50000,
-    "padding": {"top": 0, "bottom": 0},
-      "tick": {
-        "format": "dollar",
-        "count": 6
-      }
     },
-    "rotated": false,
-    "x": {
-      "type": "category",
-      "categories": [
-        2001,
-        2006,
-        2011,
-        2016
+    "type": "bar",
+    "groups": [
+      [
+        "Tuition and fees",
+        "Room and board",
+        "Books and supplies",
+        "Transportation",
+        "Other"
       ]
-    }
+    ]
   },
   "series": [
     "Tuition and fees",
@@ -79,8 +59,28 @@
     "Other"
   ],
   "metadata": {
-    "source": "IPEDS and Trends in College Pricing 2015\u00a0",
-    "notes": "Public two-year and for profit COAs are those estimated for students living off campus and not with their families. The 2015-16 tuition and fees and room and board components of COA are estimated using percentage increases from Trends in College Pricing 2015. 2015-16 books and supplies and other expenses are estimated based on the change from 2013-14 to 2014-15."
+    "notes": "Public two-year and for profit COAs are those estimated for students living off campus and not with their families. The 2015-16 tuition and fees and room and board components of COA are estimated using percentage increases from Trends in College Pricing 2015. 2015-16 books and supplies and other expenses are estimated based on the change from 2013-14 to 2014-15.",
+    "source": "IPEDS; Jennifer Ma, Sandy Baum, Matea Pender, and D'Wayne Bell,\u00a0Trends in College Pricing 2015\u00a0(New York: College Board, 2015)."
   },
-  "title": "Private nonprofit four-year, living on campus"
+  "title": "Private nonprofit four-year, living on campus",
+  "axis": {
+"y": {
+  "max": 50000,
+  "padding": {"top": 0, "bottom": 0},
+  "tick": {
+    "format": "dollar",
+    "count": 6
+  }
+},
+    "rotated": false,
+    "x": {
+      "categories": [
+        "'01\u2013'02",
+        "'06\u2013'07",
+        "'11\u2013'12",
+        "'16\u2013'17"
+      ],
+      "type": "category"
+    }
+  }
 }
