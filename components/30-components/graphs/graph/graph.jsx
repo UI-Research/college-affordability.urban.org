@@ -365,8 +365,6 @@ export class BaseGraph extends Component {
   polishChart(object) {
     const setLegend = object.setLegend;
     setLegend(object);
-    const resizeLegend = object.resizeLegend;
-    resizeLegend(object);
     const setTick = object.setTick;
     setTick(object);
     const moveAxisLabel = object.moveAxisLabel;
@@ -379,6 +377,8 @@ export class BaseGraph extends Component {
     formatDataLabel(object);
     const createCSV = object.createCSV;
     createCSV(object);
+    const resizeLegend = object.resizeLegend;
+    resizeLegend(object);
   }
   createCSV(object) {
     // Create CSV objects based off of arrays.
@@ -573,7 +573,13 @@ export class BaseGraph extends Component {
       bottoms.push(this.getBoundingClientRect().bottom)
     })
     if(bottoms.length != 0){
-      svg.select("svg").style("height", 2*Math.abs(Math.max.apply(null, bottoms)-Math.min.apply(null, bottoms)) + "px")
+      svg.select("svg").style("height", function(){
+        if(Math.abs(Math.max.apply(null, bottoms)-Math.min.apply(null, bottoms)) < 1){
+          return null
+        }else{
+          return 2*Math.abs(Math.max.apply(null, bottoms)-Math.min.apply(null, bottoms)) + "px"
+        }
+      });
     }
 
     
