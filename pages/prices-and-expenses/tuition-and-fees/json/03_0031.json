@@ -73,18 +73,18 @@
         5528.5
       ]
     ],
-   "colors": {
-   	"Lowest decile": "#1696D2", 
-    "2nd":"#000000", 
-    "3rd":"#FDBF11", 
-    "4th": "#55b748", 
-    "5th":"#d2d2d2", 
-    "6th": "#ec008b", 
-    "7th": "#cb9f5b", 
-    "8th": "#7348b7", 
-    "9th": "#ff0000", 
-    "Highest decile": "#0f658d"
-   }
+   "colors": [
+   	"#1696D2", 
+    "#000000", 
+    "#FDBF11", 
+    "#55b748", 
+    "#d2d2d2", 
+    "#ec008b", 
+    "#cb9f5b", 
+    "#7348b7", 
+    "#ff0000", 
+    "#0f658d"
+   ]
   },
   "title": "Public two-year"
 }
