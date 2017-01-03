@@ -485,7 +485,7 @@ export class BaseGraph extends Component {
           data.axis.y.tick.values = this.getTickValues(data.data.columns, ticks, data.data.groups, this.props.file.axis.y.min, this.props.file.axis.y.max);
         }
         
-        if( (data.data.type == "line" || data.data.type == "area") && !data.data.sets){
+        if( (data.data.type == "line" || data.data.type == "area") && !data.data.sets && !data.overrideTickCount){
           data.axis.x.tick.count = this.getTimeSeriesCount(data.axis.x.categories, 13);
         }
         if (data.axis.x.type == 'category' && width <= util.breakpointWidth('mid')) {
