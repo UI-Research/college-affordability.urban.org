@@ -4,27 +4,37 @@
       "format": "dollar"
     },
     "type": "bar",
-    "colors": {
-      "Institutional grants":"#1696d2",
-      "Military\/Veterans": "#000000",
-      "Tuition and fees": "#55b748",
-      "Earnings and other resources": "#ffff00",
-      "Private and employer aid": "#d2d2d2",
-      "NonTF budget": "#ec008b",
-      "Federal grants": "#6100ec",
-      "State grants": "#d700ec",
-      "Private loans": "#88ec00",
-      "Federal student loans": "#ffa500",
-      "Expected family contribution": "#ec0015",
-      "Federal  parent loans": "#00ecd7"
-      },
+"colors": {
+   "Expected family contribution": "#848081",
+   "Federal grants": "#cfe8f3",
+   "Military\/Veterans": "#a2d4ec",
+    "State grants": "#73bfe2",
+  "Institutional grants":"#1696d2",
+    "Private and employer grant aid": "#1696d2",
+  "Federal student loans": "#fccb41",
+  "Federal  parent loans": "#fdbf11",
+    "Private loans": "#fce39e",
+
+  "Earnings and other resources": "#d5d5d4",
+
+  "Tuition and fees": "#ec008b",
+  "NonTF budget": "#000000"
+  
+ 
+},
+
     "sets": {
       "set2": [
         "Public four-year out-of-state",
         [
           [
-            "Institutional grants",
-            1685.7435,
+            "Expected family contribution",
+            2207.0685,
+            "NA"
+          ],
+          [
+            "Federal grants",
+            3431.064,
             "NA"
           ],
           [
@@ -33,32 +43,28 @@
             "NA"
           ],
           [
-            "Tuition and fees",
+            "State grants",
             "NA",
-            14048.07
-          ],
-          [
-            "Earnings and other resources",
-            13385.64,
             "NA"
           ],
           [
-            "Private and employer aid",
+            "Institutional grants",
+            1685.7435,
+            "NA"
+          ],
+          [
+            "Private and employer grant aid",
             646.8648,
             "NA"
           ],
           [
-            "NonTF budget",
-            "NA",
-            16291.11
-          ],
-          [
-            "Federal grants",
-            3431.064,
+            "Federal student loans",
+            6946.485,
             "NA"
           ],
+
           [
-            "State grants",
+            "Federal  parent loans",
             "NA",
             "NA"
           ],
@@ -68,20 +74,22 @@
             "NA"
           ],
           [
-            "Federal student loans",
-            6946.485,
+            "Earnings and other resources",
+            13385.64,
             "NA"
           ],
           [
-            "Expected family contribution",
-            2207.0685,
-            "NA"
-          ],
-          [
-            "Federal  parent loans",
+            "Tuition and fees",
             "NA",
-            "NA"
+            14048.07
+          ],
+
+          [
+            "NonTF budget",
+            "NA",
+            16291.11
           ]
+
         ]
       ],
       "set3": [
@@ -108,7 +116,7 @@
             0
           ],
           [
-            "Private and employer aid",
+            "Private and employer grant aid",
             1919.0895,
             0
           ],
@@ -173,7 +181,7 @@
             0
           ],
           [
-            "Private and employer aid",
+            "Private and employer grant aid",
             107.108,
             0
           ],
@@ -238,7 +246,7 @@
             0
           ],
           [
-            "Private and employer aid",
+            "Private and employer grant aid",
             457.5113,
             0
           ],
@@ -303,7 +311,7 @@
             0
           ],
           [
-            "Private and employer aid",
+            "Private and employer grant aid",
             489.9041,
             0
           ],
@@ -352,7 +360,7 @@
      "Military/Veterans", 
      "State grants", 
      "Institutional grants", 
-     "Private and employer aid", 
+     "Private and employer grant aid", 
      "Federal student loans", 
      "Federal  parent loans", 
      "Private loans", 

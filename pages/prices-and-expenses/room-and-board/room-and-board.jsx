@@ -17,6 +17,7 @@ let singlepage = (
     <Graph file={require('./json/03_0050.json')}/>
     <Graph file={require('./json/03_0060.json')}/>
     <Graph file={require('./json/03_0070.json')}/>
+    <Graph file={require('./json/03_0080.json')}/>
     <Graph file={require('./json/03_0090.json')}/>
     <Graph file={require('./json/03_0100.json')}/>
     <Graph file={require('./json/03_0101.json')}/>
