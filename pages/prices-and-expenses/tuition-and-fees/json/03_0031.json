@@ -74,16 +74,16 @@
       ]
     ],
    "colors": {
-   	"Lowest decile": "#1696D2", 
-    "2nd":"#000000", 
-    "3rd":"#FDBF11", 
-    "4th": "#55b748", 
-    "5th":"#d2d2d2", 
-    "6th": "#ec008b", 
-    "7th": "#cb9f5b", 
-    "8th": "#7348b7", 
-    "9th": "#ff0000", 
-    "Highest decile": "#0f658d"
+   	"Lowest decile": "#cfe8f3", 
+    "2nd":"#a2d4ec", 
+    "3rd":"#73bfe2", 
+    "4th": "#5eb5de", 
+    "5th":"#46abdb", 
+    "6th": "#2da0d6", 
+    "7th": "#1696d2", 
+    "8th": "#12719e", 
+    "9th": "#0a4c6a", 
+    "Highest decile": "#062635"
    }
   },
   "title": "Public two-year"

@@ -32,7 +32,7 @@
         ""
       ],
       "tick": {
-      	"fit":  true
+      	"fit":  false
       }
     },
     "rotated": false
