@@ -43,7 +43,7 @@
     "rotated": true,
     "y": {
       "tick": {
-        "format": "dual_$.0f_%",
+        "format": "dual_$.2s_%",
         "count": 4
       }
     },
