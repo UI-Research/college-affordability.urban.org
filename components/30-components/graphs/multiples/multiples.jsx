@@ -13,6 +13,9 @@ export default class Multiples extends Component {
     super(props);
   }
   render() {
+    // this.props.children.forEach(function(obj){
+    //   obj.props.file.size = { "height" : 900 }
+    // })
     var children = this.props.children.length
     const graphSet = _.map(this.props.children, (component) => {
       var newComponent = component
@@ -44,14 +47,18 @@ export default class Multiples extends Component {
     }else{
       colors = this.props.children[0].props.file.data.colors;
     }
-    console.log(colors)
     var legend;
     if(typeof(series) == "string" || typeof(series) == "undefined"){
       legend = []
     }else{
       legend = [] 
       for(var i = 0; i< series.length; i++){
-        var colorStyle = { "background-color": colors[i]}
+        var colorStyle
+        if (typeof(this.props.children[0].props.file.data.colors) != "undefined"){
+          colorStyle = { "background-color": colors[series[i]]}
+        }else{
+          colorStyle = { "background-color": colors[i]}
+        }
         legend.push(<div className="small-multiple-legend-item"><span className="small-multiple-legend-key" style={colorStyle}></span><span className="small-multiple-legend-text">{series[i]}</span></div>)
       }
     }
