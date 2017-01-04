@@ -19,28 +19,28 @@ let singlepage = (
       <p>The largest source of private grants is Scholarship America, an umbrella organization for local Dollars for Scholars programs that provide scholarships to college students in their communities. The organization distributes more than $200 million to students across the country each year. A number of foundations also each distribute more than $10 million a year in scholarships and numerous organizations provide smaller amounts, sometimes targeting very specific types of students, such as American Indians, foster children, and academic leaders. </p>
       <p><strong>Students from low-income families are less likely than those from higher-income families to receive either employer assistance or private grants. Both forms of aid are most common among students enrolled in private nonprofit four-year institutions</strong></p>
       <Multiples title="Percentage of Undergraduates Receiving Employer Assistance 2011–12">
-        <Graph file={require('./json/04_0221.json')} small="true"/>
-        <Graph file={require('./json/04_0222.json')} small="true"/>
-        <Graph file={require('./json/04_0223.json')} small="true"/>
-        <Graph file={require('./json/04_0224.json')} small="true"/>
+        <Graph file={require('./json/04_2211.json')} small="true"/>
+        <Graph file={require('./json/04_2212.json')} small="true"/>
+        <Graph file={require('./json/04_2213.json')} small="true"/>
+        <Graph file={require('./json/04_2214.json')} small="true"/>
       </Multiples>
       <Multiples title="Percentage of Undergraduates Receiving Private Scholarships, 2011–12">
-        <Graph file={require('./json/04_02211.json')} small="true"/>
-        <Graph file={require('./json/04_02222.json')} small="true"/>
-        <Graph file={require('./json/04_02233.json')} small="true"/>
-        <Graph file={require('./json/04_02244.json')} small="true"/>
+        <Graph file={require('./json/04_2221.json')} small="true"/>
+        <Graph file={require('./json/04_2222.json')} small="true"/>
+        <Graph file={require('./json/04_2223.json')} small="true"/>
+        <Graph file={require('./json/04_2224.json')} small="true"/>
       </Multiples>
       <Multiples title="Average Employer Assistance 2011–12">
-        <Graph file={require('./json/04_0231.json')} small="true"/>
-        <Graph file={require('./json/04_0232.json')} small="true"/>
-        <Graph file={require('./json/04_0233.json')} small="true"/>
-        <Graph file={require('./json/04_0234.json')} small="true"/>
+        <Graph file={require('./json/04_2311.json')} small="true"/>
+        <Graph file={require('./json/04_2312.json')} small="true"/>
+        <Graph file={require('./json/04_2313.json')} small="true"/>
+        <Graph file={require('./json/04_2314.json')} small="true"/>
       </Multiples>
       <Multiples title="Private Scholarships per Recipient, 2011–12">
-        <Graph file={require('./json/04_02311.json')} small="true"/>
-        <Graph file={require('./json/04_02322.json')} small="true"/>
-        <Graph file={require('./json/04_02333.json')} small="true"/>
-        <Graph file={require('./json/04_02344.json')} small="true"/>
+        <Graph file={require('./json/04_2321.json')} small="true"/>
+        <Graph file={require('./json/04_2322.json')} small="true"/>
+        <Graph file={require('./json/04_2323.json')} small="true"/>
+        <Graph file={require('./json/04_2324.json')} small="true"/>
       </Multiples>
   </div>
 );

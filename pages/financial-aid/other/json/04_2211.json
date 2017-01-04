@@ -1,0 +1,36 @@
+{
+  "axis": {
+    "x": {
+      "type": "category",
+      "categories": [
+        "Total"
+      ]
+    },
+    "y": {
+  "padding": {"top":0, "bottom":0},
+  "max": 0.15,
+  "tick": {
+    "count": 4,
+    "format": "percent"
+  }
+},
+    "rotated": true
+  },
+  "metadata": {
+    "notes": null,
+    "source": "National Postsecondary Student Aid Study 2012 "
+  },
+  "series": "Employer aid",
+  "data": {
+    "type": "bar",
+    "labels": {
+      "format": "percent"
+    },
+    "columns": [
+      [
+        "Employer aid",
+        0.06
+      ]
+    ]
+  }
+}

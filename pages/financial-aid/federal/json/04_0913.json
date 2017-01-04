@@ -1,9 +1,4 @@
 {
-  "metadata": {
-    "source": "National Postsecondary Student Aid Study 2012 ",
-    "notes": null
-  },
-  "series": "Pell-Grant",
   "axis": {
     "x": {
       "type": "category",
@@ -12,16 +7,21 @@
         "Dependent (39%)"
       ]
     },
-    "y": {
-    "max": 8000,
-    "padding": {"top": 0, "botom": 0},
-      "tick": {
-        "format": "$s",
-        "count": 5
-      }
-    },
+"y": {
+  "max": 8000,
+  "padding": {"top": 0, "bottom": 0},
+  "tick": {
+    "format": "$s",
+    "count": 5
+  }
+},
     "rotated": true
   },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study, 2012. ",
+    "notes": null
+  },
+  "series": "Pell-Grant",
   "title": "Dependency status",
   "data": {
     "columns": [

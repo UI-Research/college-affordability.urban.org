@@ -1,0 +1,37 @@
+{
+  "title": "All",
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study, 2012. ",
+    "notes": null
+  },
+  "data": {
+    "columns": [
+      [
+        "Pell-Grant",
+        2200
+      ]
+    ],
+    "type": "bar",
+    "labels": {
+      "format": "$s"
+    }
+  },
+  "axis": {
+    "rotated": true,
+"y": {
+  "max": 6000,
+  "padding": {"top": 0, "bottom": 0},
+  "tick": {
+    "format": "$s",
+    "count": 4
+  }
+},
+    "x": {
+      "type": "category",
+      "categories": [
+        "All (49%)"
+      ]
+    }
+  },
+  "series": "Pell-Grant"
+}

@@ -1,0 +1,43 @@
+{
+  "axis": {
+    "x": {
+      "categories": [
+        "Less than                          $30,000 (91%)",
+        "$30,000 -                          $64,999 (64%)",
+        "$65,000 -                                 $105,999 (7%)",
+        "$106,000              or higher (0%)"
+      ],
+      "type": "category"
+    },
+"y": {
+  "max": 8000,
+  "padding": {"top": 0, "bottom": 0},
+  "tick": {
+    "format": "$s",
+    "count": 5
+  }
+},
+    "rotated": true
+  },
+  "series": "Pell-Grant",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Pell-Grant",
+        "5200",
+        "3400",
+        "1900",
+        "null"
+      ]
+    ],
+    "labels": {
+      "format": "$s"
+    }
+  },
+  "metadata": {
+    "notes": null,
+    "source": "National Postsecondary Student Aid Study, 2012. "
+  },
+  "title": "Dependent students' family income"
+}
