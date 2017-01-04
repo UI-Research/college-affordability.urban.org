@@ -42,7 +42,7 @@ export class BaseGraph extends Component {
         data.axis.x.padding = {"left" : 100, "right": 100}
       }
 
-      if(data.data.type == "bar" && data.axis.x.categories.length > 20){
+      if( (data.data.type == "bar" && data.axis.x.categories.length > 20) || (!data.data.sets && data.axis.rotated == true && data.data.type == "bar" && data.data.columns.length > 1 && !data.data.groups && ( data.data.columns.length * data.axis.x.categories.length ) > 19 ) ){
         data.size = { "height" : 900}
       }
 
@@ -718,7 +718,22 @@ export class BaseGraph extends Component {
   }
   barChartFormatting(object) {
     let bar_cats = d3.selectAll(`#${object.props.id}.c-bar__container .c3-axis-x[style*="visibility: visible"] .tick text`);
-    if(bar_cats[0].length > 20){
+    let legend_cats = d3.selectAll(`#${object.props.id}_legend .c3-legend-item text`);
+
+    console.log(legend_cats)
+    if(
+      (object.getClosest( d3.select(`#${object.props.id}`).node() , ".c-graph").classList.contains("c-bar") 
+      &&
+      object.getClosest( d3.select(`#${object.props.id}`).node() , ".c-graph").classList.contains("has-legend")
+      &&
+      !object.getClosest( d3.select(`#${object.props.id}`).node() , ".c-graph").classList.contains("c-bar-grouped")
+      &&
+      !object.getClosest( d3.select(`#${object.props.id}`).node() , ".c-graph").classList.contains("c-bar-vertical")
+      &&
+      bar_cats[0].length*legend_cats[0].length > 19
+      ) 
+      ||
+      bar_cats[0].length > 20){
       object.getClosest( d3.select(`#${object.props.id}`).node() , ".c-graph__container").classList.add("tall_container")
       object.getClosest( d3.select(`#${object.props.id}`).node() , ".c-graph__wrapper").classList.add("tall_wrapper")
     }
@@ -755,15 +770,14 @@ export class BaseGraph extends Component {
           'rgb(85, 183, 72)',
           'rgb(92, 88, 89)',
           'rgb(219, 43, 39)',
-          'rgb(132,128,129)'
+          'rgb(132, 128, 129)',
           '#1696d2',
           '#000000',
           '#ec008b',
           '#55b748',
           '#5c5859',
           '#db2b27',
-          '#848081',
-
+          '#848081'
         ];
         // Assign fill color to chart text.
         var is_white = colors_light_text.indexOf(textColor);
