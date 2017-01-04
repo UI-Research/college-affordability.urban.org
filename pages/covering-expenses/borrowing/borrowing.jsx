@@ -28,8 +28,8 @@ let singlepage = (
 
     </Multiples>
     <Graph file={require('./json/05_0140.json')}/>
-    <Graph file={require('./json/05_0151.json')}/>
-    <Graph file={require('./json/05_0152.json')}/>
+    <Graph file={require('./json/05_1510.json')}/>
+    <Graph file={require('./json/05_1520.json')}/>
     <Graph file={require('./json/05_0160.json')}/>
 
 

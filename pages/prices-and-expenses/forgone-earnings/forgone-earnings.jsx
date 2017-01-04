@@ -29,7 +29,7 @@ let singlepage = (
         <Graph file={require('./json/03_1832.json')} small="true"/>
     </Multiples>
     <Graph file={require('./json/03_1910.json')}/>
-    <Graph file={require('./json/03_1921.json')}/>
+    <Graph file={require('./json/03_1920.json')}/>
 
 
   </div>

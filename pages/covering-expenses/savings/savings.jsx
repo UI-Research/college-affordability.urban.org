@@ -25,8 +25,8 @@ let singlepage = (
     <Graph file={require('./json/05_0280.json')}/>
     <Graph file={require('./json/05_0290.json')}/>
     <Graph file={require('./json/05_0300.json')}/>
-    <Graph file={require('./json/05_0311.json')}/>
-    <Graph file={require('./json/05_0312.json')}/>
+    <Graph file={require('./json/05_3110.json')}/>
+    <Graph file={require('./json/05_3120.json')}/>
     <Graph file={require('./json/05_0320.json')}/>
 
   </div>
