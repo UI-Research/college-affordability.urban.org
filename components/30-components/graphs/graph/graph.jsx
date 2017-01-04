@@ -755,12 +755,15 @@ export class BaseGraph extends Component {
           'rgb(85, 183, 72)',
           'rgb(92, 88, 89)',
           'rgb(219, 43, 39)',
+          'rgb(132,128,129)'
           '#1696d2',
           '#000000',
           '#ec008b',
           '#55b748',
           '#5c5859',
-          '#db2b27'
+          '#db2b27',
+          '#848081',
+
         ];
         // Assign fill color to chart text.
         var is_white = colors_light_text.indexOf(textColor);
