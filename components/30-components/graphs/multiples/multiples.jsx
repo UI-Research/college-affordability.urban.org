@@ -53,7 +53,7 @@ export default class Multiples extends Component {
     }else{
       legend = [] 
       for(var i = 0; i< series.length; i++){
-        var colorStyle = { "background-color": colors[i]}
+        var colorStyle = { "background-color": colors[series[i]]}
         legend.push(<div className="small-multiple-legend-item"><span className="small-multiple-legend-key" style={colorStyle}></span><span className="small-multiple-legend-text">{series[i]}</span></div>)
       }
     }
