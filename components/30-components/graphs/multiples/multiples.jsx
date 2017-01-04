@@ -13,6 +13,9 @@ export default class Multiples extends Component {
     super(props);
   }
   render() {
+    // this.props.children.forEach(function(obj){
+    //   obj.props.file.size = { "height" : 900 }
+    // })
     var children = this.props.children.length
     const graphSet = _.map(this.props.children, (component) => {
       var newComponent = component
@@ -44,7 +47,6 @@ export default class Multiples extends Component {
     }else{
       colors = this.props.children[0].props.file.data.colors;
     }
-    console.log(colors)
     var legend;
     if(typeof(series) == "string" || typeof(series) == "undefined"){
       legend = []

@@ -70,7 +70,7 @@ module.exports = {
 
       // If values exceed a certain point, let's use the special
       // thousands/millions/billions formatter instead.
-      if (_.isNumber(v) && v > 9999 && alt) {
+      if (_.isNumber(v) && v > 9999 && alt && flag != "dual_percent_second" && flag != "dual_percent_first") {
         pattern = alt;
       }
       if(flag == "dual_percent_second"){
@@ -82,6 +82,7 @@ module.exports = {
         for(var n = 0; n < data["data"]["columns"].length; n++){
           total += data["data"]["columns"][n][counter+1]
         }
+        console.log(total)
         if (v == 0 && type != 'tooltip') {
           return '';
         }else{

@@ -99,6 +99,7 @@ export class BaseGraph extends Component {
         if (data.axis.y && data.axis.y.tick && data.axis.y.tick.format) {
           if (!_.isFunction(data.axis.y.tick.format)) {
             if(data.tooltip){
+              console.log("formatting")
               data.tooltip.format = {}
               data.tooltip.format.value = formatting.f(data.axis.y.tick.format, true, 'tooltip', data)
             }
@@ -111,12 +112,6 @@ export class BaseGraph extends Component {
           }
         }
       }
-
-
-
-
-
-
 
 
       // Relocate the x axis to the bottom outer center of the graph.
