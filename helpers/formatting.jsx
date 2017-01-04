@@ -82,7 +82,6 @@ module.exports = {
         for(var n = 0; n < data["data"]["columns"].length; n++){
           total += data["data"]["columns"][n][counter+1]
         }
-        console.log(total)
         if (v == 0 && type != 'tooltip') {
           return '';
         }else{

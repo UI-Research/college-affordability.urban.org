@@ -48,6 +48,7 @@ export default class Multiples extends Component {
       colors = this.props.children[0].props.file.data.colors;
     }
     var legend;
+
     if(typeof(series) == "string" || typeof(series) == "undefined"){
       legend = []
     }else{

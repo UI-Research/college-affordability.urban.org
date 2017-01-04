@@ -99,7 +99,6 @@ export class BaseGraph extends Component {
         if (data.axis.y && data.axis.y.tick && data.axis.y.tick.format) {
           if (!_.isFunction(data.axis.y.tick.format)) {
             if(data.tooltip){
-              console.log("formatting")
               data.tooltip.format = {}
               data.tooltip.format.value = formatting.f(data.axis.y.tick.format, true, 'tooltip', data)
             }
@@ -297,11 +296,11 @@ export class BaseGraph extends Component {
       if (this.props.small == 'true') {
         var width = (this.props.children == 2) ? 335 : 210;
 
-        if (!data.data.size) {
-          data.size = {
-            'height': 210,
-            'width': width
-          };
+        
+        if(!data.size){
+            data.size = { "width" : width}
+        }else{
+            data.size.width = width
         }
 
         // Reset height of x-axis declared previously.
@@ -318,6 +317,7 @@ export class BaseGraph extends Component {
 
       // Generate the graph!
       this.checkVerticalLabels();
+      console.dir(data)
       let chart = c3.generate(data);
 
       // Make it available to other scopes.
@@ -720,7 +720,6 @@ export class BaseGraph extends Component {
     let bar_cats = d3.selectAll(`#${object.props.id}.c-bar__container .c3-axis-x[style*="visibility: visible"] .tick text`);
     let legend_cats = d3.selectAll(`#${object.props.id}_legend .c3-legend-item text`);
 
-    console.log(legend_cats)
     if(
       (object.getClosest( d3.select(`#${object.props.id}`).node() , ".c-graph").classList.contains("c-bar") 
       &&
