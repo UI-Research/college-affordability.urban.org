@@ -139,6 +139,7 @@
   },
   "axis": {
     "y": {
+    "padding": {"bottom": 15}, 
       "tick": {
         "format": "dollar"
       }
