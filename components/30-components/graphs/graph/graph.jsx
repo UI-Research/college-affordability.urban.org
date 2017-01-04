@@ -296,7 +296,9 @@ export class BaseGraph extends Component {
       if (this.props.small == 'true') {
         var width = (this.props.children == 2) ? 335 : 210;
 
-        
+        if(data.data.type == "bar" && data.axis.rotated == true){
+          data.padding = {"right" : 20}
+        } 
         if(!data.size){
             data.size = { "width" : width}
         }else{
