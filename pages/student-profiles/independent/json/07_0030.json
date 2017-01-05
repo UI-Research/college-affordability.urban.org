@@ -28,6 +28,7 @@
     "notes": null
   },
   "data": {
+    "order": null,
   	"colors": {
 	  "Expected family contribution": "#848081",
 	  "Federal grant aid": "#cfe8f3",
@@ -66,17 +67,38 @@
       "set2": [
         "Public four-year out-of-state",
         [
+          "Expected family contribution",
+            2207.0685,
+            "NA"          ],
+        [
+            "Federal grant aid",
+            3431.064,
+            "NA"          ],
+          [
+            "Military and veterans grant aid",
+            1040.823,
+            "NA"          ],
           [
             "State grant aid",
             "NA"          ],
           [
-            "Budget beyond tuition and fees",
-            "NA",
-            16291.11
-          ],
+            "Institutional grant aid",
+            1685.7435,
+            "NA"          ],  
           [
-            "Military and veterans grant aid",
-            1040.823,
+            "Private and employer grant aid",
+            646.8648,
+            "NA"          ],  
+          [
+            "Federal student loans",
+            6946.485,
+            "NA"          ],  
+          [
+            "Federal parent loans",
+            "NA"          ],    
+          [
+            "Private loans",
+            995.4862,
             "NA"          ],
           [
             "Earnings and other resources",
@@ -88,33 +110,10 @@
             14048.07
           ],
           [
-            "Private loans",
-            995.4862,
-            "NA"          ],
-          [
-            "Private and employer grant aid",
-            646.8648,
-            "NA"          ],
-          [
-            "Federal grant aid",
-            3431.064,
-            "NA"          ],
-          [
-            "Expected family contribution",
-            2207.0685,
-            "NA"          ],
-          [
-            "Federal parent loans",
-            "NA"          ],
-          [
-            "Institutional grant aid",
-            1685.7435,
-            "NA"          ],
-          [
-            "Federal student loans",
-            6946.485,
-            "NA"          ]
-        ]
+            "Budget beyond tuition and fees",
+            "NA",
+            16291.11
+          ]
       ],
       "set5": [
         "Public two-year",
