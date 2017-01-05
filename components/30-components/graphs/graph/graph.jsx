@@ -100,7 +100,6 @@ export class BaseGraph extends Component {
           if (!_.isFunction(data.axis.y.tick.format)) {
             if(data.tooltip){
               data.tooltip.format = {}
-              console.log(formatting.f(data.axis.y.tick.format, true, 'tooltip', data))
               data.tooltip.format.value = formatting.f(data.axis.y.tick.format, true, 'tooltip', data)
             }
             data.axis.y.tick.format = formatting.f(data.axis.y.tick.format, true, 'axis');
@@ -302,7 +301,7 @@ export class BaseGraph extends Component {
           data.padding = {"right" : 20}
         }
         else if(data.data.type == "bar" && data.axis.rotated != true){
-           data.padding = {"top": 10, "bottom": 20}
+           data.padding = {"top": 10, "bottom": 25}
         }else{
           data.padding = {"top": 10}
         }
@@ -766,7 +765,7 @@ export class BaseGraph extends Component {
       var barBounds = barGroup.querySelectorAll(".c3-bar")[indexNum].getBoundingClientRect()
       var textBounds = this.getBoundingClientRect()
       //if label doesn't fit in bar slice, don't show it
-      if(barBounds.width <= textBounds.width || barBounds.height <= textBounds.height ){
+      if(barBounds.width <= textBounds.width -3 || barBounds.height <= textBounds.height -3){
          d3.select(this).attr('style', style + ' fill:' + 'rgba(0,0,0,0)' + ' !important'); 
       }
       else{
