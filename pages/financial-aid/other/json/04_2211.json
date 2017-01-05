@@ -1,6 +1,7 @@
-{"title": "Total",
+{
   "axis": {
     "x": {
+      "label": "Total",
       "type": "category",
       "categories": [
         "Total"

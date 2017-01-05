@@ -70,7 +70,7 @@ module.exports = {
 
       // If values exceed a certain point, let's use the special
       // thousands/millions/billions formatter instead.
-      if (_.isNumber(v) && v > 9999 && alt && flag != "dual_percent_second" && flag != "dual_percent_first") {
+      if (_.isNumber(v) && v > 999 && alt && flag != "dual_percent_second" && flag != "dual_percent_first") {
         pattern = alt;
       }
       if(flag == "dual_percent_second"){
