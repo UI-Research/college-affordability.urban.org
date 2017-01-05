@@ -35,10 +35,10 @@
     },
     "y": {
       "padding": {"top": 0, "bottom": 0},
-      "max": 20000,
+      "max": 25000,
       "tick": {
         "format": "$.2s",
-        "count": 5
+        "count": 6
       }
     }
   }
