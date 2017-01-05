@@ -295,11 +295,17 @@ export class BaseGraph extends Component {
       // If small flag is set on <Graph />,
       // apply special formatting for small graph sizes!
       if (this.props.small == 'true') {
+        data.legend.show = false;
         var width = (this.props.children == 2) ? 335 : 210;
         data.padding = {"top": 10}
         if(data.data.type == "bar" && data.axis.rotated == true){
           data.padding = {"right" : 20}
-        } 
+        }
+        else if(data.data.type == "bar" && data.axis.rotated != true){
+           data.padding = {"top": 10, "bottom": 20}
+        }else{
+          data.padding = {"top": 10}
+        }
         if(!data.size){
             data.size = { "width" : width}
         }else{
