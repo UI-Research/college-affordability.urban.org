@@ -30,7 +30,7 @@
     	"padding": {"top": 0, "bottom": 0},
       "tick": {
         "format": "percent",
-        "count": 5
+        "count": 3
       }
     }
   }
