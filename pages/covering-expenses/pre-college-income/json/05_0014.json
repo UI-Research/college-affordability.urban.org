@@ -23,9 +23,9 @@
     "rotated": true,
     "y": {
       "padding": {"top": 0, "bottom": 0},
-      "max": 100000,
+      "max": 120000,
       "tick": {
-      	"count": 3,
+      	"count": 4,
         "format": "dollar"
       }
     },
@@ -33,10 +33,10 @@
       "label": "Age",
       "type": "category",
       "categories": [
-        "25–34 years",
-        "35–44 years",
-        "45–54 years",
-        "55–64 years"
+        "25–34                   years",
+        "35–44                   years",
+        "45–54                   years",
+        "55–64                   years"
       ]
     }
   },

@@ -6,6 +6,7 @@
     "Institutional grants",
     "Employer or private grants"
   ],
+  "title": "Independent",
   "data": {
     "groups": [
       [
@@ -62,10 +63,10 @@
     "rotated": true,
     "x": {
       "categories": [
-        "Independent                   Public 4 year ",
-        "Independent                   Private 4 year ",
-        "Independent                   Public 2 year ",
-        "Independent                   For-profit "
+        "Public 4 year ",
+        "Private 4 year ",
+        "Public 2 year ",
+        "For-profit "
       ],
       "type": "category"
     },
