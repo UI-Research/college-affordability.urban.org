@@ -298,7 +298,7 @@ export class BaseGraph extends Component {
         var width = (this.props.children == 2) ? 335 : 210;
         data.padding = {"top": 10}
         if(data.data.type == "bar" && data.axis.rotated == true){
-          data.padding = {"right" : 20}
+          data.padding = {"right" : 20, "bottom" : 20}
         }
         else if(data.data.type == "bar" && data.axis.rotated != true){
            data.padding = {"top": 10, "bottom": 25}
