@@ -294,11 +294,17 @@ export class BaseGraph extends Component {
       // If small flag is set on <Graph />,
       // apply special formatting for small graph sizes!
       if (this.props.small == 'true') {
+        data.legend.show = false;
         var width = (this.props.children == 2) ? 335 : 210;
-
+        data.padding = {"top": 10}
         if(data.data.type == "bar" && data.axis.rotated == true){
           data.padding = {"right" : 20}
-        } 
+        }
+        else if(data.data.type == "bar" && data.axis.rotated != true){
+           data.padding = {"top": 10, "bottom": 25}
+        }else{
+          data.padding = {"top": 10}
+        }
         if(!data.size){
             data.size = { "width" : width}
         }else{
@@ -319,8 +325,8 @@ export class BaseGraph extends Component {
 
       // Generate the graph!
       this.checkVerticalLabels();
-      console.dir(data)
       let chart = c3.generate(data);
+
 
       // Make it available to other scopes.
       const polishChart = this.polishChart;
@@ -759,7 +765,7 @@ export class BaseGraph extends Component {
       var barBounds = barGroup.querySelectorAll(".c3-bar")[indexNum].getBoundingClientRect()
       var textBounds = this.getBoundingClientRect()
       //if label doesn't fit in bar slice, don't show it
-      if(barBounds.width <= textBounds.width || barBounds.height <= textBounds.height ){
+      if(barBounds.width <= textBounds.width -3 || barBounds.height <= textBounds.height -3){
          d3.select(this).attr('style', style + ' fill:' + 'rgba(0,0,0,0)' + ' !important'); 
       }
       else{
