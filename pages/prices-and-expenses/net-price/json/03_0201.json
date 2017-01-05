@@ -42,9 +42,12 @@
   "axis": {
     "rotated": true,
     "y": {
+      "padding": {"top":0, "bottom":0},
+      "max": 50000,
+      "min":-10000,
       "tick": {
-        "format": "dual_$.2s_%",
-        "count": 4
+        "format": "dollar",
+        "count": 6
       }
     },
     "x": {
