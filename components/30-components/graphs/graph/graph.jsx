@@ -100,6 +100,7 @@ export class BaseGraph extends Component {
           if (!_.isFunction(data.axis.y.tick.format)) {
             if(data.tooltip){
               data.tooltip.format = {}
+              console.log(formatting.f(data.axis.y.tick.format, true, 'tooltip', data))
               data.tooltip.format.value = formatting.f(data.axis.y.tick.format, true, 'tooltip', data)
             }
             data.axis.y.tick.format = formatting.f(data.axis.y.tick.format, true, 'axis');
@@ -295,7 +296,7 @@ export class BaseGraph extends Component {
       // apply special formatting for small graph sizes!
       if (this.props.small == 'true') {
         var width = (this.props.children == 2) ? 335 : 210;
-
+        data.padding = {"top": 10}
         if(data.data.type == "bar" && data.axis.rotated == true){
           data.padding = {"right" : 20}
         } 
@@ -319,8 +320,8 @@ export class BaseGraph extends Component {
 
       // Generate the graph!
       this.checkVerticalLabels();
-      console.dir(data)
       let chart = c3.generate(data);
+
 
       // Make it available to other scopes.
       const polishChart = this.polishChart;
