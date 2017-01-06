@@ -57,9 +57,7 @@
         26041.12
       ]
     ],
-    "labels": {
-      "format": "dollar"
-    },
+    "labels": false,
     "type": "bar"
   }
 }
