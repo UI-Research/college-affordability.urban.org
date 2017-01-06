@@ -91,7 +91,6 @@ export class BaseGraph extends Component {
         })
         data.axis.x.padding = {"left" : 100, "right": 100}
       }
-
       if( (data.data.type == "bar" && data.axis.x.categories.length > 20) || (!data.data.sets && data.axis.rotated == true && data.data.type == "bar" && data.data.columns.length > 1 && !data.data.groups && ( data.data.columns.length * data.axis.x.categories.length ) > 19 ) ){
         data.size = { "height" : 900}
       }
@@ -346,8 +345,10 @@ export class BaseGraph extends Component {
       if (this.props.small == 'true') {
         data.legend.show = false;
         var multExceptions = ["graph25","graph26","graph27","graph28","graph19", "graph20","graph21","graph4", "graph5","graph6"]
-
+        var tallMultExceptions = ["graph63","graph64"]
+        console.log(this.props.id)
         var width = (this.props.children == 2 || multExceptions.includes(this.props.id)) ? 335 : 210;
+        var height = (tallMultExceptions.includes(this.props.id)) ? 335 : 210;
         data.padding = {"top": 10}
         if(data.data.type == "bar" && data.axis.rotated == true){
           data.padding = {"right" : 20, "bottom" : 20}
@@ -358,9 +359,10 @@ export class BaseGraph extends Component {
           data.padding = {"top": 10}
         }
         if(!data.size){
-            data.size = { "width" : width}
+            data.size = { "width" : width, "height": height}
         }else{
             data.size.width = width
+            data.size.height = height
         }
 
         // Reset height of x-axis declared previously.
@@ -803,8 +805,12 @@ export class BaseGraph extends Component {
     let bar_cats = d3.selectAll(`#${object.props.id}.c-bar__container .c3-axis-x[style*="visibility: visible"] .tick text`);
     let legend_cats = d3.selectAll(`#${object.props.id}_legend .c3-legend-item text`);
     let multExceptions = ["graph25","graph26","graph27","graph28","graph19", "graph20","graph21","graph4", "graph5","graph6"]
-    if(multExceptions.includes(object.props.id)){
-      object.getClosest( d3.select(`#${object.props.id}`).node() , ".c-graph-multiple").classList.add("children_2")
+    let tallMultExceptions = ["graph63","graph64"]
+
+    if(tallMultExceptions.includes(object.props.id) && object.props.small == "true"){
+      object.getClosest( d3.select(`#${object.props.id}`).node() , ".c-graph__wrapper").classList.add("tall_mult_exception")
+    }
+    if(tallMultExceptions.includes(object.props.id) && object.props.small == "true"){
     }
     if(
       (object.getClosest( d3.select(`#${object.props.id}`).node() , ".c-graph").classList.contains("c-bar") 
