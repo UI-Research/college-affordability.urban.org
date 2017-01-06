@@ -378,29 +378,52 @@ export class BaseGraph extends Component {
     barChartFormatting(object);
     const formatDataLabel = object.formatDataLabel;
     formatDataLabel(object);
-    const createCSV = object.createCSV;
-    createCSV(object);
+    const createTSV = object.createTSV;
+    createTSV(object);
     const resizeLegend = object.resizeLegend;
     resizeLegend(object);
   }
-  createCSV(object) {
-    // Create CSV objects based off of arrays.
-    const toCSV = (arr) => {
+  createTSV(object) {
+    // Create TSV objects based off of arrays.
+    const toTSV = (dataObj) => {
+      // let dataObj = jQuery.extend(true, {}, oldDataObj);
+      let arr;
+      let cats = dataObj.axis.x.categories.slice(0)
+      if(dataObj.data.sets){
+        arr = []
+        let sets = dataObj.data.sets
+        let set;
+        let setLen;
+        for (var key in sets){
+          set = sets[key].slice(0)
+          setLen = set[1][0].length
+          // var subset;
+          for(var i = 0; i < set[1].length; i++){
+            arr.push([set[0]].concat(set[1][i]))
+          }
+                  }
+        arr.unshift(["data_set","data_category"].concat(cats.slice(0,setLen-1)))
+      }else{
+        cats.unshift("data_category")
+        arr = dataObj.data.columns.slice(0)
+        arr.unshift(cats)
+      }
+
       let s ='';
       _.each(arr, (object) => {
-        s += object.join(',');
+        s += object.join('\t');
         s += '\r\n';
       });
 
       return encodeURIComponent(s);
     };
 
-    // Generate link for CSV download.
+    // Generate link for TSV download.
     if(d3.select(d3.select(`#${object.props.id}`).node().parentNode.parentNode.parentNode.parentNode.parentNode.parentNode).classed("c-graph-multiple") == false){
-      let encodedUri = 'data:Application/octet-stream,' + toCSV(object.props.file.data.columns);
-      d3.select(`.c-${object.props.id}-container a.button-download_data__csv_`)
+      let encodedUri = 'data:Application/octet-stream,' + toTSV(object.props.file);
+      d3.select(`.c-${object.props.id}-container a.button-download_data__tsv_`)
         .attr('href', encodedUri)
-        .attr('download', `${util.machineName(object.props.file.title)}.csv`);
+        .attr('download', `${util.machineName(object.props.file.title)}.tsv`);
     }
   }
   getTimeSeriesCount(allVals, count){
@@ -578,7 +601,7 @@ export class BaseGraph extends Component {
     if(bottoms.length != 0){
       svg.select("svg").style("height", function(){
         if(Math.abs(Math.max.apply(null, bottoms)-Math.min.apply(null, bottoms)) < 1){
-          return null
+          return "40px"
         }else{
           return 2*Math.abs(Math.max.apply(null, bottoms)-Math.min.apply(null, bottoms)) + "px"
         }
@@ -936,7 +959,7 @@ export default class Graph extends Component {
       action_buttons = (
         <Actions>
           <ActionButton title='Save Image' href={img_href} disable={img_disable} />
-          <ActionButton title='Download data (csv)' href='#' />
+          <ActionButton title='Download data (tsv)' href='#' />
         </Actions>
       );
     }
