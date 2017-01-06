@@ -345,10 +345,8 @@ export class BaseGraph extends Component {
       if (this.props.small == 'true') {
         data.legend.show = false;
         var multExceptions = ["graph25","graph26","graph27","graph28","graph19", "graph20","graph21","graph4", "graph5","graph6"]
-        var tallMultExceptions = ["graph63","graph64"]
-        console.log(this.props.id)
         var width = (this.props.children == 2 || multExceptions.includes(this.props.id)) ? 335 : 210;
-        var height = (tallMultExceptions.includes(this.props.id)) ? 335 : 210;
+        var height = (this.props.file.tallSmallMultiple == true) ? 335 : 210;
         data.padding = {"top": 10}
         if(data.data.type == "bar" && data.axis.rotated == true){
           data.padding = {"right" : 20, "bottom" : 20}
@@ -450,7 +448,7 @@ export class BaseGraph extends Component {
         let setLen;
         for (var key in sets){
           set = sets[key].slice(0)
-          if(set.length == 2){
+          if(set.length != 1){
             setLen = set[1][0].length
             for(var i = 0; i < set[1].length; i++){
               arr.push([set[0]].concat(set[1][i]))
@@ -809,12 +807,9 @@ export class BaseGraph extends Component {
     let bar_cats = d3.selectAll(`#${object.props.id}.c-bar__container .c3-axis-x[style*="visibility: visible"] .tick text`);
     let legend_cats = d3.selectAll(`#${object.props.id}_legend .c3-legend-item text`);
     let multExceptions = ["graph25","graph26","graph27","graph28","graph19", "graph20","graph21","graph4", "graph5","graph6"]
-    let tallMultExceptions = ["graph63","graph64"]
 
-    if(tallMultExceptions.includes(object.props.id) && object.props.small == "true"){
+    if(object.props.file.tallSmallMultiple == true && object.props.small == "true"){
       object.getClosest( d3.select(`#${object.props.id}`).node() , ".c-graph__wrapper").classList.add("tall_mult_exception")
-    }
-    if(tallMultExceptions.includes(object.props.id) && object.props.small == "true"){
     }
     if(
       (object.getClosest( d3.select(`#${object.props.id}`).node() , ".c-graph").classList.contains("c-bar") 
