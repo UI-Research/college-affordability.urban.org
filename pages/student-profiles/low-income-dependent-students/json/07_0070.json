@@ -17,15 +17,10 @@
             "NA"
          ],
           [
-            "Budget beyond tuition and fees",
-            "NA",
-            14750.5965
-          ],
-          [
-            "Tuition and fees",
-            "NA",
-            8210.265
-          ],
+            "Federal grant aid",
+            5429.445,
+            "NA"
+         ],
           [
             "Military and veterans grant aid",
             130.599,
@@ -34,6 +29,11 @@
           [
             "State grant aid",
             2532.4215,
+            "NA"
+         ],
+          [
+            "Institutional grant aid",
+            1590.246,
             "NA"
          ],
           [
@@ -52,25 +52,26 @@
             "NA"
          ],
           [
-            "Earnings and other resources",
-            6537.1514,
-            "NA"
-         ],
-          [
-            "Federal grant aid",
-            5429.445,
-            "NA"
-         ],
-          [
             "Private loans",
             161.2832,
             "NA"
          ],
           [
-            "Institutional grant aid",
-            1590.246,
+            "Earnings and other resources",
+            6537.1514,
             "NA"
-         ]
+         ],
+          [
+            "Tuition and fees",
+            "NA",
+            8210.265
+          ],
+          [
+            "Budget beyond tuition and fees",
+            "NA",
+            14750.5965
+          ]
+
         ]
       ],
       "set3": [
@@ -82,15 +83,10 @@
             "NA"
          ],
           [
-            "Budget beyond tuition and fees",
-            "NA",
-            15076.509
-          ],
-          [
-            "Tuition and fees",
-            "NA",
-            29489.7645
-          ],
+            "Federal grant aid",
+            5688.102,
+            "NA"
+         ],
           [
             "Military and veterans grant aid",
             170.9295,
@@ -99,6 +95,11 @@
           [
             "State grant aid",
             2392.404,
+            "NA"
+         ],
+          [
+            "Institutional grant aid",
+            13667.283,
             "NA"
          ],
           [
@@ -117,25 +118,27 @@
             "NA"
          ],
           [
-            "Earnings and other resources",
-            11899.7984,
-            "NA"
-         ],
-          [
-            "Federal grant aid",
-            5688.102,
-            "NA"
-         ],
-          [
             "Private loans",
             385.8307,
             "NA"
          ],
           [
-            "Institutional grant aid",
-            13667.283,
+            "Earnings and other resources",
+            11899.7984,
             "NA"
-         ]
+         ],
+          [
+            "Tuition and fees",
+            "NA",
+            29489.7645
+          ],
+          [
+            "Budget beyond tuition and fees",
+            "NA",
+            15076.509
+          ]
+
+
         ]
       ],
       "set2": [
@@ -147,15 +150,10 @@
             "NA"
          ],
           [
-            "Budget beyond tuition and fees",
-            "NA",
-            15385.515
-          ],
-          [
-            "Tuition and fees",
-            "NA",
-            18695.691
-          ],
+            "Federal grant aid",
+            4891.341,
+            "NA"
+         ],
           [
             "Military and veterans grant aid",
             600.4635,
@@ -164,6 +162,11 @@
           [
             "State grant aid",
             "NA",
+            "NA"
+         ],
+          [
+            "Institutional grant aid",
+            5167.197,
             "NA"
          ],
           [
@@ -182,25 +185,26 @@
             "NA"
          ],
           [
-            "Earnings and other resources",
-            12450.4856,
-            "NA"
-         ],
-          [
-            "Federal grant aid",
-            4891.341,
-            "NA"
-         ],
-          [
             "Private loans",
             669.4777,
             "NA"
          ],
           [
-            "Institutional grant aid",
-            5167.197,
+            "Earnings and other resources",
+            12450.4856,
             "NA"
-         ]
+         ],
+          [
+            "Tuition and fees",
+            "NA",
+            18695.691
+          ],
+          [
+            "Budget beyond tuition and fees",
+            "NA",
+            15385.515
+          ]
+
         ]
       ],
       "set4": [
@@ -212,15 +216,10 @@
             "NA"
          ],
           [
-            "Budget beyond tuition and fees",
-            "NA",
-            13909.2975
-          ],
-          [
-            "Tuition and fees",
-            "NA",
-            17914.491
-          ],
+            "Federal grant aid",
+            5078.451,
+            "NA"
+         ],
           [
             "Military and veterans grant aid",
             89.544,
@@ -231,6 +230,12 @@
             937.3216,
             "NA"
          ],
+          [
+            "Institutional grant aid",
+            343.7234,
+            "NA"
+         ],
+
           [
             "Private and employer grant aid",
             647.8218,
@@ -247,25 +252,28 @@
             "NA"
          ],
           [
-            "Earnings and other resources",
-            14129.4215,
-            "NA"
-         ],
-          [
-            "Federal grant aid",
-            5078.451,
-            "NA"
-         ],
-          [
             "Private loans",
             908.25,
             "NA"
          ],
           [
-            "Institutional grant aid",
-            343.7234,
+            "Earnings and other resources",
+            14129.4215,
             "NA"
-         ]
+         ],
+          [
+            "Tuition and fees",
+            "NA",
+            17914.491
+          ],
+          [
+            "Budget beyond tuition and fees",
+            "NA",
+            13909.2975
+          ]
+
+
+
         ]
       ],
       "set5": [
@@ -277,15 +285,10 @@
             "NA"
          ],
           [
-            "Budget beyond tuition and fees",
-            "NA",
-            11911.431
-          ],
-          [
-            "Tuition and fees",
-            "NA",
-            2839.977
-          ],
+            "Federal grant aid",
+            4749.633,
+            "NA"
+         ],
           [
             "Military and veterans grant aid",
             22.764,
@@ -294,6 +297,11 @@
           [
             "State grant aid",
             594.39,
+            "NA"
+         ],
+          [
+            "Institutional grant aid",
+            370.2666,
             "NA"
          ],
           [
@@ -312,25 +320,27 @@
             "NA"
          ],
           [
-            "Earnings and other resources",
-            7624.465,
-            "NA"
-         ],
-          [
-            "Federal grant aid",
-            4749.633,
-            "NA"
-         ],
-          [
             "Private loans",
             55.7765,
             "NA"
          ],
           [
-            "Institutional grant aid",
-            370.2666,
+            "Earnings and other resources",
+            7624.465,
             "NA"
-         ]
+         ],
+          [
+            "Tuition and fees",
+            "NA",
+            2839.977
+          ],
+          [
+            "Budget beyond tuition and fees",
+            "NA",
+            11911.431
+          ]
+
+
         ]
       ]
     },

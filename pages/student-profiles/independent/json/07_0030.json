@@ -58,23 +58,13 @@
         "For-profit",
         [
           [
+            "Expected family contribution",
+            2696.0115,
+            "NA"
+          ],
+          [
             "Federal grant aid",
             3555.6885,
-            "NA"
-          ],
-          [
-            "State grant aid",
-            144.7655,
-            "NA"
-          ],
-          [
-            "Earnings and other resources",
-            11693.3746,
-            "NA"
-          ],
-          [
-            "Private and employer grant aid",
-            489.9041,
             "NA"
           ],
           [
@@ -83,18 +73,18 @@
             "NA"
           ],
           [
-            "Tuition and fees",
-            "0",
-            "14855.379"
-          ],
-          [
-            "Expected family contribution",
-            2696.0115,
+            "State grant aid",
+            144.7655,
             "NA"
           ],
           [
             "Institutional grant aid",
             107.3369,
+            "NA"
+          ],
+          [
+            "Private and employer grant aid",
+            489.9041,
             "NA"
           ],
           [
@@ -107,38 +97,41 @@
             "NA"
           ],
           [
-            "Budget beyond tuition and fees",
-            "0",
-            "14687.673"
-          ],
-          [
             "Private loans",
             1176.567,
             "NA"
+          ],
+          [
+            "Earnings and other resources",
+            11693.3746,
+            "NA"
+          ],
+
+          [
+            "Tuition and fees",
+            "0",
+            14855.379
+          ],
+
+          [
+            "Budget beyond tuition and fees",
+            "0",
+            14687.673
           ]
+
         ]
       ],
       "set5": [
         "Public two-year",
         [
           [
+            "Expected family contribution",
+            2143.806,
+            "NA"
+          ],
+          [
             "Federal grant aid",
             3397.4535,
-            "NA"
-          ],
-          [
-            "State grant aid",
-            383.8204,
-            "NA"
-          ],
-          [
-            "Earnings and other resources",
-            7693.6679,
-            "NA"
-          ],
-          [
-            "Private and employer grant aid",
-            107.108,
             "NA"
           ],
           [
@@ -147,18 +140,18 @@
             "NA"
           ],
           [
-            "Tuition and fees",
-            "0",
-            2823.33
-          ],
-          [
-            "Expected family contribution",
-            2143.806,
+            "State grant aid",
+            383.8204,
             "NA"
           ],
           [
             "Institutional grant aid",
             208.2298,
+            "NA"
+          ],
+          [
+            "Private and employer grant aid",
+            107.108,
             "NA"
           ],
           [
@@ -171,38 +164,41 @@
             "NA"
           ],
           [
-            "Budget beyond tuition and fees",
-            "0",
-            14236.85
-          ],
-          [
             "Private loans",
             58.1199,
             "NA"
+          ],
+          [
+            "Earnings and other resources",
+            7693.6679,
+            "NA"
+          ],
+
+          [
+            "Tuition and fees",
+            "0",
+            2823.33
+          ],
+
+          [
+            "Budget beyond tuition and fees",
+            "0",
+            14236.85
           ]
+
         ]
       ],
       "set1": [
         "Public four-year in-state",
         [
           [
+            "Expected family contribution",
+            2349.9105,
+            "NA"
+          ],
+          [
             "Federal grant aid",
             3728.109,
-            "NA"
-          ],
-          [
-            "State grant aid",
-            1029.3042,
-            "NA"
-          ],
-          [
-            "Earnings and other resources",
-            6804.6006,
-            "NA"
-          ],
-          [
-            "Private loans",
-            376.2933,
             "NA"
           ],
           [
@@ -211,13 +207,8 @@
             "NA"
           ],
           [
-            "Federal parent loans",
-            "NA",
-            "NA"
-          ],
-          [
-            "Expected family contribution",
-            2349.9105,
+            "State grant aid",
+            1029.3042,
             "NA"
           ],
           [
@@ -226,14 +217,30 @@
             "NA"
           ],
           [
+            "Private and employer grant aid",
+            457.5113,
+            "NA"
+          ],
+          [
             "Federal student loans",
             6575.604,
             "NA"
           ],
           [
-            "Budget beyond tuition and fees",
-            "0",
-            "15452.178"
+            "Federal parent loans",
+            "NA",
+            "NA"
+          ],
+          [
+            "Private loans",
+            376.2933,
+            "NA"
+          ],
+
+          [
+            "Earnings and other resources",
+            6804.6006,
+            "NA"
           ],
           [
             "Tuition and fees",
@@ -241,38 +248,25 @@
             "7706.055"
           ],
           [
-            "Private and employer grant aid",
-            457.5113,
-            "NA"
+            "Budget beyond tuition and fees",
+            "0",
+            "15452.178"
           ]
+
         ]
       ],
       "set2": [
         "Public four-year out-of-state",
         [
           [
+            "Expected family contribution",
+            2207.0685,
+            "NA"
+          ],
+          [
             "Federal grant aid",
             3431.064,
             "NA"
-          ],
-          [
-            "State grant aid",
-            "NA"
-          ],
-          [
-            "Earnings and other resources",
-            13385.64,
-            "NA"
-          ],
-          [
-            "Private and employer grant aid",
-            646.8648,
-            "NA"
-          ],
-          [
-            "Tuition and fees",
-            "0",
-            "14048.07"
           ],
           [
             "Military and veterans grant aid",
@@ -280,12 +274,7 @@
             "NA"
           ],
           [
-            "Federal parent loans",
-            "NA"
-          ],
-          [
-            "Expected family contribution",
-            2207.0685,
+            "State grant aid",
             "NA"
           ],
           [
@@ -294,43 +283,53 @@
             "NA"
           ],
           [
+            "Private and employer grant aid",
+            646.8648,
+            "NA"
+          ],
+          [
             "Federal student loans",
             6946.485,
             "NA"
           ],
           [
-            "Budget beyond tuition and fees",
-            "0",
-            "16291.11"
+            "Federal parent loans",
+            "NA"
           ],
           [
             "Private loans",
             995.4862,
             "NA"
+          ],
+          [
+            "Earnings and other resources",
+            13385.64,
+            "NA"
+          ],
+          [
+            "Tuition and fees",
+            "0",
+            "14048.07"
+          ],
+          [
+            "Budget beyond tuition and fees",
+            "0",
+            "16291.11"
           ]
+
         ]
       ],
       "set3": [
         "Private nonprofit four-year",
         [
           [
+            "Expected family contribution",
+            4468.9995,
+            "NA"
+          ],
+          [
             "Federal grant aid",
             3382.2495,
-            "NA"
-          ],
-          [
-            "State grant aid",
-            1006.468,
-            "NA"
-          ],
-          [
-            "Earnings and other resources",
-            10958.5924,
-            "NA"
-          ],
-          [
-            "Private and employer grant aid",
-            1919.0895,
             "NA"
           ],
           [
@@ -339,18 +338,18 @@
             "NA"
           ],
           [
-            "Tuition and fees",
-            "0",
-            "22388.499"
-          ],
-          [
-            "Expected family contribution",
-            4468.9995,
+            "State grant aid",
+            1006.468,
             "NA"
           ],
           [
             "Institutional grant aid",
             4982.25,
+            "NA"
+          ],
+          [
+            "Private and employer grant aid",
+            1919.0895,
             "NA"
           ],
           [
@@ -363,15 +362,28 @@
             "NA"
           ],
           [
-            "Budget beyond tuition and fees",
-            "0",
-            "15319.5945"
-          ],
-          [
             "Private loans",
             1406.328,
             "NA"
+          ],
+          [
+            "Earnings and other resources",
+            10958.5924,
+            "NA"
+          ],
+
+          [
+            "Tuition and fees",
+            "0",
+            "22388.499"
+          ],
+
+          [
+            "Budget beyond tuition and fees",
+            "0",
+            "15319.5945"
           ]
+
         ]
       ]
     },
