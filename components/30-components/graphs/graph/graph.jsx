@@ -450,12 +450,16 @@ export class BaseGraph extends Component {
         let setLen;
         for (var key in sets){
           set = sets[key].slice(0)
-          setLen = set[1][0].length
-          // var subset;
-          for(var i = 0; i < set[1].length; i++){
-            arr.push([set[0]].concat(set[1][i]))
+          if(set.length == 2){
+            setLen = set[1][0].length
+            for(var i = 0; i < set[1].length; i++){
+              arr.push([set[0]].concat(set[1][i]))
+            }
+          }else{
+            setLen = set[0].length
+            arr.push([""].concat(set[0]))
           }
-                  }
+        }
         arr.unshift(["data_set","data_category"].concat(cats.slice(0,setLen-1)))
       }else{
         cats.unshift("data_category")
