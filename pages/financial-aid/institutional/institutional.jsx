@@ -11,27 +11,32 @@ import util from 'util.jsx';
 
 let singlepage = (
   <div>
-    <h1>What is College?</h1>
-    <h2>Overview</h2>
-    <p>Quisque nec orci at mi iaculis ornare vel eu enim. Fusce vestibulum cursus nisi, vestibulum rhoncus ligula porta non. Maecenas dignissim sagittis ante, at porta urna elementum vitae. Donec accumsan ac sapien vitae maximus. Integer malesuada auctor congue. Maecenas molestie efficitur risus ac ullamcorper. Proin orci leo, luctus vitae erat ac, tristique aliquam eros. Aliquam lobortis lorem ante, ut volutpat ante ornare ut. Vestibulum facilisis ullamcorper ornare. Praesent volutpat tincidunt felis, at convallis tortor elementum id.</p>
-    <p>Duis imperdiet posuere fermentum. Sed bibendum ultricies sapien sed placerat. Etiam ac nunc condimentum, ultrices velit a, malesuada nisi. Vestibulum risus justo, varius et orci ut, commodo convallis purus. Nulla velit urna, viverra eget accumsan quis, feugiat vitae erat. Pellentesque in porttitor orci. Suspendisse id risus et leo laoreet luctus sit amet et tellus. Donec urna nunc, dictum a quam a, ultrices dignissim nisl. Nulla lobortis cursus erat, id rhoncus quam mollis non. Nam ut ipsum dui.</p>
-    <h2>Heading 2</h2>
-    <p>Duis in diam sem. Nunc tempus malesuada nisl ac tincidunt. Donec eget rhoncus erat. Mauris finibus enim eget libero eleifend, sit amet pellentesque leo dignissim. Proin quis orci eu lectus iaculis iaculis. Mauris gravida vehicula eros, sit amet eleifend ex porttitor et. Ut eget tincidunt nisi.</p>
-    <h3>Sub Heading</h3>
-    <p>Donec ornare, sem id consectetur dapibus, tortor mi pretium metus, ac malesuada mauris ligula commodo massa. Phasellus sed aliquam risus. Curabitur id dui lacus. Sed eleifend dolor at pellentesque molestie. Maecenas fringilla sem condimentum, aliquam nisl sit amet, dignissim ex. Mauris mattis justo risus, ac sodales neque euismod quis. Duis porttitor eget risus ut dictum. Aenean laoreet elit elit, et pellentesque leo pellentesque eu. Duis sodales gravida lobortis. Suspendisse potenti. Vivamus urna nunc, viverra nec nulla sed, volutpat eleifend metus. Duis nec nisi a magna lobortis ultrices in id justo. Pellentesque vestibulum odio vehicula bibendum hendrerit. Maecenas dignissim lectus sapien, ut faucibus libero tempor sit amet. Aliquam erat volutpat.</p>
-     <Graph file={require('./json/04_0180.json')}/>
-      <Graph file={require('./json/04_0190.json')}/>
+    <h1>Institutional Grant Aid</h1>
+      <p><strong>Whether it is called institutional grant aid, scholarships, or discounts, about 40 percent of the grant aid that helps undergraduate students pay the sticker price of college comes from the institutions in which they enroll. </strong>This is on top of the <a href="../../cost-of-educating/subsidies/">subsidy</a> the institution already provides by charging students less than the amount it spends to educate them. </p>
+      <p>Public four-year colleges and universities provide institutional aid to fewer of their students than do colleges in the private nonprofit sector; public two-year and for-profit colleges provide aid to the smallest share of students. </p>
+      <p>Institutional aid may be awarded based on the student&rsquo;s and the family&rsquo;s financial capacity or it may be awarded to attract applicants with academic accomplishments, athletic skills, or other characteristics the college values. Higher-priced private nonprofit colleges and universities tend to rely more on financial need to determine institutional aid than do lower-priced institutions in that sector, so low-income students might actually pay less at institutions with higher sticker prices. </p>
+      <p>In 2013–14, the share of full-time first-year students receiving institutional grant aid ranged from 13 percent in public two-year colleges to 91 percent in private nonprofit master&rsquo;s universities.</p>
+      <Graph file={require('./json/04_0180.json')}/>
+    <h2>Average Institutional Grants</h2>
+      <p><strong>The average institutional grant per recipient is more than three times as high in private nonprofit as in public four-year universities—a ratio similar to that for published tuition and fees.</strong></p>
+      <p>Although fewer students in private doctoral universities than in other types of private nonprofit colleges receive financial aid from their institutions, the 71 percent of full-time first-year students who received this aid received an average of $22,800 in 2012–13. </p>
+      <p>In public universities, where the tuition and fees are much lower than in the private sector, institutional grants tend to be smaller. The average grant per recipient ranged from $4,100 at public master&rsquo;s universities to $6,400 at public research universities in 2012–13, but these amounts vary considerably across institutions within each sector.</p>
+      <h3>Average Institutional Grant Aid Relative to Tuition and Fees</h3>
+        <p><strong>Institutions with higher tuition prices narrow, but do not close, the price gaps by awarding more institutional grant aid.</strong></p>
+        <p>Although students at private nonprofit four-year colleges and universities receive more institutional grant and scholarship aid than students at public four-year universities, they still pay higher average net tuition and fees.</p>
+        <p>Students attending public two-year and for-profit institutions receive similar institutional aid, but those attending for-profits have much higher remaining tuition and fees because the sticker prices in that sector are much higher.</p>
+        <p>On average, students receiving institutional grant aid at public and private nonprofit colleges receive discounts worth over 50 percent of tuition and fees.</p>
+        <Graph file={require('./json/04_0190.json')}/>
+      <h3>Distribution of Need-Based and Non-Need–Based Institutional Grant Aid</h3>
+      <p>Both public and private nonprofit institutions award a combination of &ldquo;need based&rdquo; institutional grants, which depend on financial circumstances, and &ldquo;non-need based&rdquo; or &ldquo;merit-based&rdquo; institutional grants, which are based on other characteristics. Lower-income students receive more need-based aid than their peers from more affluent families, but even students from families in the highest-income quartile receive some need-based aid. Non-need–based aid goes to students from all income backgrounds.</p>
+      <p><strong>At the highest-priced private nonprofit colleges and universities, where most aid is need-based, students from low-income families receive significantly more institutional grant aid than their more affluent classmates, but this is not the case at lower-priced institutions in the sector.</strong></p>
       <Graph file={require('./json/04_0200.json')}/>
-   <Multiples title="Average Need-Based and Non-Need-Based A1:U146 Grant Aid per Full-Time Student (and Percentage Receiving Institutional Aid), Public Four-Year Institutions, 2011-12" source="Baum et al, Trends in Student Aid 2014, The College Board, based on NPSAS 2012.">
+      <p><strong>The average institutional grant aid received by full-time students in public four-year colleges and universities in 2011–12 differed by only a few hundred dollars across dependent students with different family income levels.</strong></p>
+      <Multiples title="Average Need-Based and Non-Need-Based A1:U146 Grant Aid per Full-Time Student (and Percentage Receiving Institutional Aid), Public Four-Year Institutions, 2011-12" source="Baum et al, Trends in Student Aid 2014, The College Board, based on NPSAS 2012.">
         <Graph file={require('./json/04_0211.json')} small="true"/>
         <Graph file={require('./json/04_0212.json')} small="true"/>
         <Graph file={require('./json/04_0213.json')} small="true"/>
-
-    </Multiples>
-
-
-
-
+       </Multiples>
 
   </div>
 );
