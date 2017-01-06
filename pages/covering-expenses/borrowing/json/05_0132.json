@@ -1,4 +1,5 @@
 {
+  "wideSmallMultiple": true,
   "data": {
     "labels": {
       "format": "dollar"

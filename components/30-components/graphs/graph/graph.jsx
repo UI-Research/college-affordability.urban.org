@@ -344,8 +344,8 @@ export class BaseGraph extends Component {
       // apply special formatting for small graph sizes!
       if (this.props.small == 'true') {
         data.legend.show = false;
-        var multExceptions = ["graph25","graph26","graph27","graph28","graph19", "graph20","graph21","graph4", "graph5","graph6"]
-        var width = (this.props.children == 2 || multExceptions.includes(this.props.id)) ? 335 : 210;
+
+        var width = (this.props.children == 2 || this.props.file.wideSmallMultiple == true) ? 335 : 210;
         var height = (this.props.file.tallSmallMultiple == true) ? 335 : 210;
         data.padding = {"top": 10}
         if(data.data.type == "bar" && data.axis.rotated == true){
@@ -806,11 +806,13 @@ export class BaseGraph extends Component {
   barChartFormatting(object) {
     let bar_cats = d3.selectAll(`#${object.props.id}.c-bar__container .c3-axis-x[style*="visibility: visible"] .tick text`);
     let legend_cats = d3.selectAll(`#${object.props.id}_legend .c3-legend-item text`);
-    let multExceptions = ["graph25","graph26","graph27","graph28","graph19", "graph20","graph21","graph4", "graph5","graph6"]
 
     if(object.props.file.tallSmallMultiple == true && object.props.small == "true"){
       object.getClosest( d3.select(`#${object.props.id}`).node() , ".c-graph__wrapper").classList.add("tall_mult_exception")
     }
+    if(object.props.file.wideSmallMultiple == true && object.props.small == "true"){
+       object.getClosest( d3.select(`#${object.props.id}`).node() , ".c-graph-multiple").classList.add("children_2")
+     }
     if(
       (object.getClosest( d3.select(`#${object.props.id}`).node() , ".c-graph").classList.contains("c-bar") 
       &&
