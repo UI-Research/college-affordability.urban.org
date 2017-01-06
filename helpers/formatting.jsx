@@ -14,7 +14,7 @@ module.exports = {
     let scalar = 0;
 
     if(pattern == 'dollar'){
-        pattern = '$,.0f';
+        pattern = '$,.1f';
         alt = '$,.2s';
     }
     else if(pattern == 'percent'){
@@ -22,7 +22,7 @@ module.exports = {
         alt = '%'
     }
     else if(pattern == 'number'){
-        pattern = ',.0f';
+        pattern = ',.1f';
         alt = ',.2s';
     }
     // else if(pattern.search('dual') == 0){
