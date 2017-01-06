@@ -47,7 +47,7 @@
       "min":-10000,
       "tick": {
         "format": "dollar",
-        "count": 6
+        "count": 7
       }
     },
     "x": {
