@@ -1,8 +1,6 @@
 {
   "data": {
-    "labels": {
-      "format": "dollar"
-    },
+    "labels": false,
     "columns": [
       [
         "25th percentile",

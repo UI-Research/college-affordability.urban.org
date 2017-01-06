@@ -29,9 +29,7 @@
       ]
     ],
     "type": "bar",
-    "labels": {
-      "format": "dollar"
-    }
+    "labels": false
   },
   "series": [
     "25th percentile",

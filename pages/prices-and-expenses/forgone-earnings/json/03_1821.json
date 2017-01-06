@@ -5,9 +5,7 @@
     "Median"
   ],
   "data": {
-    "labels": {
-      "format": "dollar"
-    },
+    "labels": false,
     "type": "bar",
     "columns": [
       [
