@@ -12,28 +12,13 @@ import util from 'util.jsx';
 let singlepage = (
   <div>
     <h1>After College</h1>
-    <h2>Defining Higher Education</h2>
-
-    <ul>
-      <li><a href="#">Degree-granting institutions by sector and degree-type in fall 2014</a></li>
-      <li><a href="#">Distribution of degree-granting institutions in each sector by size of undergraduate enrollment in fall 2014</a></li>
-      <li><a href="#">Enrollment Patterns by Sector</a></li>
-      <li><a href="#">Undergraduate and Graduate Postsecondary Enrollment</a></li>
-      <li><a href="#">Enrollment Sector by Age and Dependency: All Undergraduates</a></li>
-      <li><a href="#">Undergraduates by Parent Income</a></li>
-      <li><a href="#">Enrollment Patterns by Race and Ethnicity</a></li>
-      <li><a href="#">Dependency between sectors</a></li>
-      <li><a href="#">Income distribution of dependent students within sectors</a></li>
-      <li><a href="#">Age within sectors</a></li>
-      <li><a href="#">Distribution of family income among all dependent undergraduates versus first-year only</a></li>
-      <li><a href="#">Distribution of enrollment by sector among all undergraduates versus first-year only</a></li>
-      <li><a href="#">Enrollment Sector by Age and Dependency: First Year Undergraduates</a></li>
-      <li><a href="#">Enrollment Sectors of Dependent First-year students by parent income</a></li>
-      <li><a href="#">Enrollment Patterns by Race and Ethnicity, First-year students</a></li>
-      <li><a href="#">Sectors of full-time and part-time forts-year students</a></li>
-      <li><a href="#">Testing</a></li>
-    </ul>
-
+<p>Although it&rsquo;s tempting to think about college affordability as whether or not a family has the resources to pay at the time of enrollment, affordability depends on resources available before, during, and<em> after</em> college. </p>
+<p>Whether or not students borrow to help finance their college education, the investment of time, money, and effort is significant. Too many students leave school without a degree or certificate; for them, the investment may not pay off well and any debts will be difficult to repay. But for most of those who do earn a degree, the earnings premium is large enough to repay any debts and maintain a higher standard of living than they would have had if they had not gone to college.</p>
+<Box>
+<h3><em>College Completion Rates</em></h3>
+<p><em>The number of people—both recent high school graduates and older adults—enrolling in college has increased rapidly over time, but the percentage of people earning degrees has grown much more slowly.</em></p>
+<p><em>There are a number of ways to measure completion rates. The federal government collects the information only for first-time full-time students and counts completions only for students who earn their degrees at the institution in which they first enrolled. Among students who first enrolled full time at a public four-year institution in 2008, 34 percent had earned a bachelor&rsquo;s degree within four years; two years later a total of 59 percent had earned bachelor&rsquo;s degrees. Completion rates were higher for students at private nonprofit institutions, and much lower for those enrolled in the for-profit sector.</em></p>
+<p><em>According to the federal definition, the six-year bachelor&rsquo;s degree completion rate is much higher than the four-year completion rate in all sectors.</em></p>
 <Graph file={require('./06_1000.json')}/>
 <Graph file={require('./06_2000.json')}/>
 
@@ -41,42 +26,18 @@ let singlepage = (
     <p>To educate a student, a college must pay for instructors, student services, administrative support, and maintenance, among other things. Average education and related spending1 per student varies considerably across sectors, partially because of differences in institutions’ activities. For example, public two-year colleges almost exclusively educate lower-level undergraduates, while public research universities educate these students, upper-level undergraduates, and graduate students, in addition to engaging in a significant amount of research activity.</p>
     <p>To cover costs, all colleges and universities use revenues from tuition and fees, but nonprofit colleges also supplement that revenue with their own resources, which include state and local tax revenues in the public sector and endowment income and annual giving in the private sector.</p>
 
-    <h2>Topic 02</h2>
-    <p>An institutional subsidy is the share of the total cost that is covered by the institution rather than by the students’ tuition. This share varies significantly both across sectors and within sectors. Though a student likely doesn’t know the size of the subsidy he’s receiving, it can be an important factor in determining the cost of his education.</p>
-    <ul>
-      <li><a href="#">Distribution of degree-granting institutions in each sector by size of undergraduate enrollment in fall 2014</a></li>
-      <li><a href="#">Enrollment Patterns by Sector</a></li>
-      <li><a href="#">Undergraduate and Graduate Postsecondary Enrollment</a></li>
-      <li><a href="#">Enrollment Sector by Age and Dependency: All Undergraduates</a></li>
-      <li><a href="#">Undergraduates by Parent Income</a></li>
-      <li><a href="#">Enrollment Patterns by Race and Ethnicity</a></li>
-      <li><a href="#">Dependency between sectors</a></li>
-      <li><a href="#">Sectors of full-time and part-time forts-year students</a></li>
-    </ul>
+<p><em>The National Student Clearinghouse (NSC) tracks students across institutions and measures completion rates for both full-time and part-time students. Including those who transfer raises measured completion rates, but including part-time students has the opposite effect, since full-time students are more likely than part-time students to finish their degrees.</em></p>
+<p><em>According to NSC data, only 50 percent of all students beginning at a public four-year institution in 2008 completed a bachelor&rsquo;s degree within six years at their first college, but another 10 percent earned degrees at other institutions. When considering only full-time students, NSC&rsquo;s completion rate jumps to 80 percent.</em></p>
 
-    <h2>Topic 03</h2>
-    <p>At public colleges and universities, subsidies come in the form of state and local government appropriations. Over time, state funds have covered a smaller and smaller the portion of the cost of education at public colleges and universities. As state taxpayers foot less of the bill, students and families see tuition and fees rising.</p>
-    <p>State tax revenues are the primary source of state and local funding for higher education institutions, but community colleges are also supported by local taxes. State and local appropriations are dedicated primarily to public colleges and universities, but some of the funds go to student aid, some benefit students in private colleges, and some are restricted funds for special purposes like research, agriculture, or medical education.</p>
-    <ul>
-      <li><a href="#">Enrollment Sectors of Dependent First-year students by parent income</a></li>
-      <li><a href="#">Enrollment Patterns by Race and Ethnicity, First-year students</a></li>
-      <li><a href="#">Sectors of full-time and part-time forts-year students</a></li>
-    </ul>
+</Box>
 
-    <h2>Topic 04</h2>
-    <p>Many universities, primarily those in the private sector, use endowment funds as a means of subsidizing the cost of an education. Endowments come from donations to colleges and universities that are designated for investment, rather than immediate expenditure. Maintaining the principal of the endowment over time—as required by law for true endowments funds—means ensuring that the value of the funds keeps up with inflation. Additional income can be used either for expenditures or for reinvestment. Most institutions spend four to five percent of the endowment value each year. (The analyses below rely on the approximation that institutions receive 4.5% of their endowment as income each year.) Because of donor specifications, however, a substantial share of endowment funds are restricted-use, meaning they can only be spent for specifically prescribed purposes. Both public and private institutions hold endowments, but the vast majority of these funds are in the private sector. In both sectors, endowment assets are highly concentrated among a small number of institutions.</p>
-    <p>Since institutions can only spend a limited percentage of their assets each year, their spending is constrained when stocks and other financial assets lose value.</p>
-    <ul>
-      <li><a href="#">Enrollment Patterns by Race and Ethnicity</a></li>
-      <li><a href="#">Dependency between sectors</a></li>
-      <li><a href="#">Income distribution of dependent students within sectors</a></li>
-      <li><a href="#">Age within sectors</a></li>
-      <li><a href="#">Distribution of family income among all dependent undergraduates versus first-year only</a></li>
-      <li><a href="#">Distribution of enrollment by sector among all undergraduates versus first-year only</a></li>
-      <li><a href="#">Enrollment Sector by Age and Dependency: First Year Undergraduates</a></li>
+<p>Average earnings increase with level of education. Adults with college degrees are more likely to be in the labor force—working or actively looking for work—and are more likely to be employed than high school graduates. When they are employed, they are more likely to have full-time jobs. And their wages and salaries are higher than those for people without degrees.</p>
+<p>In short, a college degree generates a high average return in future earnings, but the payoff varies quite a bit. </p>
+<p>It is not easy to predict post-college employment and earnings for individual students. However, understanding the patterns for different groups of students with different levels of education sheds light on how well those who borrow will be able to manage their debt repayment and whether over the long run, the investment in college will have paid off—making college affordable.</p>
 
-    </ul>
-    <p>Private nonprofit research and private nonprofit bachelor’s institutions have much greater endowment income per student than other institutions on average, because these sectors include most of the institutions with large endowments.</p>
+
+
+    
 
   </div>
 );
