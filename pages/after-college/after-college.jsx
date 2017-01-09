@@ -35,10 +35,8 @@ let singlepage = (
     </ul>
 
 <Graph file={require('./06_1000.json')}/>
-<Multiples title="Percentage of First-Time Four-Year College Students in 2008 Who Had Completed Bachelor’s Degrees Six Years Later" source="National Student Clearinghouse, Fall 2008 Cohort" notes="The share of students completing in six years includes those who completed after transferring to different four-year institutions.">
-  <Graph file={require('./06_2001.json')} small="true"/>
-  <Graph file={require('./06_2002.json')} small="true"/>
-</Multiples>
+<Graph file={require('./06_2000.json')}/>
+
     <p>Students see the prices colleges charge, but what they might not realize is that the tuition amount they see is only a fraction of what their education really costs.</p>
     <p>To educate a student, a college must pay for instructors, student services, administrative support, and maintenance, among other things. Average education and related spending1 per student varies considerably across sectors, partially because of differences in institutions’ activities. For example, public two-year colleges almost exclusively educate lower-level undergraduates, while public research universities educate these students, upper-level undergraduates, and graduate students, in addition to engaging in a significant amount of research activity.</p>
     <p>To cover costs, all colleges and universities use revenues from tuition and fees, but nonprofit colleges also supplement that revenue with their own resources, which include state and local tax revenues in the public sector and endowment income and annual giving in the private sector.</p>
