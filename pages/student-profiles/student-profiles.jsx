@@ -11,7 +11,7 @@ import util from 'util.jsx';
 
 let singlepage = (
   <div>
-    <h1>Student Profiles</h1>
+<h1>Student Profiles</h1>
 <p>The array of colleges, programs, and prices makes it difficult for individual students to predict how much they will have to pay. Although college affordability will look different for everyone, looking at averages for students in different financial circumstances enrolling in different kinds of institutions is a good starting point. The charts and tables below help demonstrate how the question of affordability depends on both students&rsquo; circumstances and the choices they make. </p>
 
 <h2>Independent Students</h2>
@@ -155,6 +155,10 @@ let singlepage = (
     <td width="65" nowrap="nowrap" valign="top"><p align="right">$8,200</p></td>
   </tr>
 </table>
+<br />
+<p><strong>How does time to degree affect cost? </strong><strong> </strong></p>
+<Graph file={require('./json/07_0070.json')}/>
+  <Graph file={require('./json/07_0080.json')}/>
 <h2>Lower-Middle-Income Dependent Students</h2>
 <p><strong>Who are lower-middle-income dependent students?</strong></p>
 <p>In 2011–12, about 25 percent of dependent students came from families with incomes between $30,000 and $65,000 (in 2015 dollars). These are the students categorized as lower-middle-income dependent students. All of them are younger than 24. They are not married, do not have dependents of their own, and have no other characteristics that would make the financial aid system declare them independent of their parents.</p>
@@ -221,6 +225,10 @@ let singlepage = (
     <td width="65" nowrap="nowrap" valign="top"><p align="right">$6,800</p></td>
   </tr>
 </table>
+<br />
+<p><strong>How does time to degree affect cost? </strong><strong> </strong></p>
+<Graph file={require('./json/07_0110.json')}/>
+    <Graph file={require('./json/07_0120.json')}/>
 <h2>Upper-Middle-Income Dependent Students</h2>
 <p><strong>Who are upper-middle-income dependent students?</strong>In 2011–12, about 25 percent of dependent students came from families with incomes between $65,000 and $106,000 (in 2015 dollars). These are the students categorized as upper-middle-income dependent students. All of them are younger than 24. They are not married, do not have dependents of their own, and have no other characteristics that would make the financial aid system declare them independent of their parents.</p>
 <p><strong>Where do upper-middle-income dependent students enroll?</strong></p>
@@ -287,6 +295,10 @@ let singlepage = (
   </tr>
 </table>
 <p>Source: NPSAS, 2012</p>
+
+<p><strong>How does time to degree affect cost? </strong><strong> </strong></p>
+<Graph file={require('./json/07_0150.json')}/>
+    <Graph file={require('./json/07_0160.json')}/>
 <h2>Upper-Income Dependent Students</h2>
 <p><strong>Who are upper-income dependent students?</strong></p>
 <p>In 2011–12, about 25 percent of dependent students came from families with incomes above $106,000. This translates to $111,300 in 2015 dollars. These are the students categorized as upper- income dependent students. All of them are younger than 24. They are not married, do not have dependents of their own, and have no other characteristics that would make the financial aid system declare them independent of their parents.</p>
@@ -362,6 +374,9 @@ let singlepage = (
   </tr>
 </table>
 <p>Source: NPSAS, 2012.<strong></strong></p>
+ <p><strong>How does time to degree affect cost? </strong></p>
+<Graph file={require('./json/07_0190.json')}/>
+<Graph file={require('./json/07_0200.json')}/>
   </div>
 );
 
