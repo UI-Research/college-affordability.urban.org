@@ -91,7 +91,7 @@ export class BaseGraph extends Component {
         })
         data.axis.x.padding = {"left" : 100, "right": 100}
       }
-      if( (data.data.type == "bar" && data.axis.x.categories.length > 20) || (!data.data.sets && data.axis.rotated == true && data.data.type == "bar" && data.data.columns.length > 1 && !data.data.groups && ( data.data.columns.length * data.axis.x.categories.length ) > 19 ) ){
+      if( (data.data.type == "bar" && data.axis.x.categories.length > 20) || (!data.data.sets && data.axis.rotated == true && data.data.type == "bar" && data.data.columns.length > 1 && !data.data.groups && ( data.data.columns.length * data.axis.x.categories.length ) > 19 )  || data.forceTall == true){
         data.size = { "height" : 900}
       }
 
@@ -825,7 +825,9 @@ export class BaseGraph extends Component {
       bar_cats[0].length*legend_cats[0].length > 19
       ) 
       ||
-      bar_cats[0].length > 20){
+      bar_cats[0].length > 20
+      ||
+      object.props.file.forceTall == true){
       object.getClosest( d3.select(`#${object.props.id}`).node() , ".c-graph__container").classList.add("tall_container")
       object.getClosest( d3.select(`#${object.props.id}`).node() , ".c-graph__wrapper").classList.add("tall_wrapper")
     }

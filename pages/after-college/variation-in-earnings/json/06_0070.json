@@ -1,4 +1,6 @@
 {
+  "forceTall": true,
+  "padding": {"bottom": 30},
   "data": {
     "columns": [
       [
