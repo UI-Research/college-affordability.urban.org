@@ -32,7 +32,7 @@ let singlepage = (
       <p><strong>At the highest-priced private nonprofit colleges and universities, where most aid is need-based, students from low-income families receive significantly more institutional grant aid than their more affluent classmates, but this is not the case at lower-priced institutions in the sector.</strong></p>
       <Graph file={require('./json/04_0200.json')}/>
       <p><strong>The average institutional grant aid received by full-time students in public four-year colleges and universities in 2011–12 differed by only a few hundred dollars across dependent students with different family income levels.</strong></p>
-      <Multiples title="Average Need-Based and Non-Need-Based A1:U146 Grant Aid per Full-Time Student (and Percentage Receiving Institutional Aid), Public Four-Year Institutions, 2011-12" source="Baum et al, Trends in Student Aid 2014, The College Board, based on NPSAS 2012.">
+      <Multiples title="Average Need-Based and Non-Need-Based Grant Aid per Full-Time Student (and Percentage Receiving Institutional Aid), Public Four-Year Institutions, 2011-12" source="Baum et al, Trends in Student Aid 2014, The College Board, based on NPSAS 2012.">
         <Graph file={require('./json/04_0211.json')} small="true"/>
         <Graph file={require('./json/04_0212.json')} small="true"/>
         <Graph file={require('./json/04_0213.json')} small="true"/>
