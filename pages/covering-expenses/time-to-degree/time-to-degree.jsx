@@ -33,7 +33,10 @@ let singlepage = (
       <h2>The Price of a Degree Versus the Price of a Year</h2>
         <p><strong>Extra years of enrollment add significantly to the price of a bachelor&rsquo;s degree.</strong></p>
         <p>For example, a student paying the full sticker price of tuition and fees and room and board at an in-state public four-year university at 2016-17 prices would pay $80,400 over four years. But enrolling full time for five years would cost $100,500 and for six years, the charges would be $120,500.</p>
-        <Graph file={require('./json/05_0220.json')}/>
+      <Multiples title="Tuition and Fees and Room and Board over four, five, and six years, 2015–16 prices" source="National Postsecondary Student Aid Study 2012" source="Baum et al., Trends in Student Aid 2016.">
+        <Graph file={require('./json/05_0221.json')} small="true"/>
+        <Graph file={require('./json/05_0222.json')} small="true"/>
+      </Multiples>
         <Box>
           <h3>Debt Burden and Time to Degree</h3>
           <p><strong><em>Higher expenses associated with longer times to degree mean that students in college longer accumulate higher debts. </em></strong><em>Pell grants are available for as many as 12 semesters of full-time study, but many state and institutional grants are available only for four years of undergraduate enrollment.<strong> </strong></em></p>
