@@ -14,7 +14,7 @@ let singlepage = (
     <h1>All Sources of Grant Aid</h1>
       <p><strong>Grant aid, sometimes called scholarships or tuition discounts, lowers the price a student pays for college.</strong></p>
       <p>Unlike <a href="../../covering-expenses/borrowing/">student loans</a>, grant aid does not have to be repaid. Subtracting grant aid from the cost of attendance yields the net price—the price a student actually pays. This matters more for college affordability than the sticker price.</p>
-      <p>Typically, students get more grant aid if they attend private nonprofit colleges than if they attend public colleges, <a href="../../prices-and-expenses/net-price/">narrowing the gap</a> <a href="#by_sector">between the prices</a> of these different types of institutions. </p>
+      <p>Typically, students get more grant aid if they attend private nonprofit colleges than if they attend public colleges, narrowing the gap between the prices of these different types of institutions. </p>
       <p>Grant aid does not, however, <a href="#by_income_and_dependency_status">close the gap</a> in ability to pay for college between high-income and low-income families. Though low-income students tend to receive more grant aid, it is not enough to put them on equal footing with the highest-income families.</p>
     <h2>Sources of Grant Aid</h2>
       <p>Grants come from a variety of sources: the federal government, state governments, the colleges and universities students attend, and employers or other private sources.</p>
