@@ -17,10 +17,10 @@
       "type": "category",
       "label": "Family income",
       "categories": [
-        "Public four-year",
-        "Private four-year",
-        "Public two- year",
-        "For-profit"
+        "Public four-year (14%)",
+        "Private four-year (19%)",
+        "Public two- year (20%)",
+        "For-profit (4%)"
       ]
     }
   },

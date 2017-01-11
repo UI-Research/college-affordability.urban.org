@@ -57,7 +57,7 @@ let singlepage = (
       <p>Because eligibility for Parent PLUS Loans depends on cost of attendance exceeding financial aid, higher Parent PLUS borrowing in the for-profit and private nonprofit sectors is related to these institutions&rsquo; higher net prices relative to public two-year and public four-year prices.  </p>
       <Graph file={require('./json/05_0160.json')}/>
       <p><strong>Parents of low-income students are less likely to take Parent PLUS loans than other parents and when they borrow, they borrow smaller amounts. </strong>Low-income students are more likely than others to enroll in community colleges and to live at home with their parents, but these parents are also most likely to be ineligible for PLUS loans because of problems with their credit histories.</p>
-      <Multiples title="Average Parent PLUS Loans borrowed among full-time dependent students, 2011-12" source="National Postsecondary Student Aid Study 2012">
+      <Multiples title="Average Amount Borrowed and Percent Receiving Parent PLUS Loans Among Full-Time Dependent Students, 2011–12" source="National Postsecondary Student Aid Study 2012">
         <Graph file={require('./json/05_0171.json')} small="true"/>
         <Graph file={require('./json/05_0172.json')} small="true"/>
         <Graph file={require('./json/05_0173.json')} small="true"/>
