@@ -126,7 +126,7 @@ export default class Header extends Component {
                 <div className="nav-primary">
                   <ul className="nav-primary__first-level">
                     <li className="has-submenu">
-                      <a href="/what-is-college/index.html">What is College?</a>
+                      <a href="/what-is-college/index.html">What Is College?</a>
                       <span onClick={toggle} className="fa fa-chevron-down"></span>
                       <ul className="nav-primary__second-level">
                         <li>
