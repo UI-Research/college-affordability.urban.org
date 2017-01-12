@@ -14,7 +14,7 @@ let singlepage = (
     <h1>Institutions</h1>
       <p>There is a wide range of postsecondary institutions in the United States, and they offer a wide range of degrees and experiences.</p>
       <p>College is not just ivy-covered dormitories where 18-year-olds go to earn a bachelor&rsquo;s degree. In fact, the selective institutions that sometimes dominate the headlines represent a small share of undergraduate enrollment—only 10 percent of undergraduates attend colleges that accept fewer than 50 percent of applicants.</p>
-      <p>One important difference is ownership and mission, which define the different sectors of higher education:</p>
+      <p>Variation in ownership and mission defines the different sectors of higher education:</p>
       <ul>
         <li><strong>Public colleges and universities </strong>are under the purview of state governments. They receive some funding through state tax revenues and they tend to offer lower tuition to in-state residents than to other students.</li>
         <li><strong>Private nonprofit institutions </strong>have no owners and are run by a board of trustees and college administrators. Like all nonprofits, they use revenues to run the institution, not to earn profits. Most private colleges and universities are independent, though some are affiliated with religious organizations.</li>
@@ -40,15 +40,15 @@ let singlepage = (
       <p>There were 20.2 million postsecondary students enrolled in degree-granting institutions in fall 2014. Of these, 17.3 million (86 percent) were undergraduate students. Among these undergraduates</p>
       <ul>
         <li>42 percent were enrolled in public associate colleges; </li>
-        <li>33 percent were enrolled in public four-year colleges, including research and master&rsquo;s colleges;</li>
-        <li>14 percent were enrolled in private nonprofit four-year colleges, including research, master&rsquo;s, and bachelor&rsquo;s colleges;</li>
+        <li>33 percent were enrolled in public four-year colleges, including research and master&rsquo;s universities;</li>
+        <li>14 percent were enrolled in private nonprofit four-year colleges, including research, master&rsquo;s, and bachelor&rsquo;s colleges and universities;</li>
         <li>7 percent were enrolled in the for-profit sector; and</li>
-        <li>the remaining 5 percent were enrolled in other degree-granting institutions such as public bachelor&rsquo;s and  private nonprofit two-year colleges.</li>
+        <li>the remaining 5 percent were enrolled in other degree-granting institutions such as public bachelor&rsquo;s and private nonprofit two-year colleges.</li>
       </ul>
-      <p>Enrollment patterns—whether a student enrolls full or part time—also differ by sector. Overall, 38 percent of college students enrolled part time, but 62 percent of students at public two-year colleges did so. </p>
+      <p>Enrollment patterns—whether a student enrolls full or part time—also differ by sector. Overall, 38 percent of college students enrolled part time, but 62 percent of students at public two-year colleges did so, in 2014-15. </p>
       <Graph file={require('./json/01_0030.json')}/>
     <h2>Enrollment over time</h2>
-      <p>Total enrollment almost doubled between 1974 and 2012, jumping from 10.2 million to 20.2 million.</p>
+      <p>Total undergraduate enrollment almost doubled between 1974 and 2012, jumping from 10.2 million to 20.2 million.</p>
       <Graph file={require('./json/01_0040.json')}/>
       <p>The for-profit sector, which remains the smallest of the four major sectors with only 7 percent of all graduate and undergraduate students in 2014, grew most, increasing dramatically from about 200,000 at the end of the 1980s to a peak enrollment of 2 million in 2010.</p>
       <p>The four-year public sector, which is the largest sector with 35 percent of all students, grew most slowly—75 percent over 40 years. But in contrast to other sectors, the growth has been more rapid in each succeeding decade. </p>

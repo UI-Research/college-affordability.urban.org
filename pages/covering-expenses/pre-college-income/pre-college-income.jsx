@@ -26,9 +26,9 @@ let singlepage = (
         <Graph file={require('./json/05_0013.json')} small="true"/>
         <Graph file={require('./json/05_0014.json')} small="true"/>
       </Multiples>
-      <p>Family incomes vary widely by state, ranging from more than $15,000 below the US average in Mississippi and New Mexico to more than $25,000 above it in Alaska and Maryland.<strong> </strong>There are also, of course, significant differences in the cost-of-living within states.</p>
-      <Graph file={require('./json/05_0020.json')}/>
       <p>Another characteristic that predicts family income is education levels. In 2015, the median income of families headed by an individual whose highest degree was a bachelor&rsquo;s degree was about twice as high as the median for high school graduates. Median income was more than 50 percent higher for those with professional degrees than for those with bachelor&rsquo;s degrees.</p>
+      <Graph file={require('./json/05_0020.json')}/>
+      <p>Family incomes vary widely by state, ranging from more than $15,000 below the US average in Mississippi and New Mexico to more than $25,000 above it in Alaska and Maryland. There are also, of course, significant differences in the cost-of-living within states.</p>
       <Graph file={require('./json/05_0030.json')}/>
     <h2>Incomes Over Time</h2>
       <p>The financial aid system looks at one year of income to determine expected family contributions. This is an imperfect measure of a family&rsquo;s ability to pay because incomes fluctuate over time and not all families with the same current level of income have the same earnings histories.</p>
