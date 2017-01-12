@@ -27,14 +27,7 @@
     "type": "bar",
     "labels": {
       "format": "dollar"
-    },
-    "groups": [
-      [
-        "4 years",
-        "5 years",
-        "6 years"
-      ]
-    ]
+    }
   },
   "axis": {
     "rotated": true,

@@ -35,7 +35,6 @@ let singlepage = (
 			<Graph file={require('./json/04_0010.json')}/>
 			<p>For independent students, EFC depends not just on income, but on whether they are married and whether they are supporting their own children (or other dependents). </p>
 			<p>The median EFC in 2011–12 for single independent students with no dependents and incomes between $20,000 and $24,999 was $5,300. Married students whose household incomes were in this range had median EFCs of $2,700, and the majority of students with dependents in this income range had no expected contribution. </p>
-			<Graph file={require('./json/04_0020.json')}/>
 			<p>In 2011–12, 38 percent of undergraduate students had $0 EFCs. <strong>Independent students of all family types were more likely than dependent students to have $0 EFCs, but nearly a quarter of dependent students had $0 EFCs.</strong></p>
 			<Graph file={require('./json/04_0030.json')}/>
 		<h2>Unmet Need</h2>
