@@ -430,14 +430,14 @@ export class BaseGraph extends Component {
     barChartFormatting(object);
     const formatDataLabel = object.formatDataLabel;
     formatDataLabel(object);
-    const createTSV = object.createTSV;
-    createTSV(object);
+    const createCSV = object.createCSV;
+    createCSV(object);
     const resizeLegend = object.resizeLegend;
     resizeLegend(object);
   }
-  createTSV(object) {
-    // Create TSV objects based off of arrays.
-    const toTSV = (dataObj) => {
+  createCSV(object) {
+    // Create CSV objects based off of arrays.
+    const toCSV = (dataObj) => {
       // let dataObj = jQuery.extend(true, {}, oldDataObj);
       let arr;
       let cats = dataObj.axis.x.categories.slice(0)
@@ -467,19 +467,31 @@ export class BaseGraph extends Component {
 
       let s ='';
       _.each(arr, (object) => {
-        s += object.join('\t');
-        s += '\r\n';
+        let tmp = []
+        object.forEach(function(o){
+          // console.log(o, typeof(o) == "string")
+          if(typeof(o) == "string"){
+            tmp.push("\"" + o.replace(/–/g,"-") + "\"")
+          }else{
+            tmp.push(o)
+          }
+          // console.log(tmp)
+        })
+          s += tmp.join(',');
+          s += '\r\n';          
+        
+        // console.log(s)
       });
 
       return encodeURIComponent(s);
     };
 
-    // Generate link for TSV download.
+    // Generate link for CSV download.
     if(d3.select(d3.select(`#${object.props.id}`).node().parentNode.parentNode.parentNode.parentNode.parentNode.parentNode).classed("c-graph-multiple") == false){
-      let encodedUri = 'data:Application/octet-stream,' + toTSV(object.props.file);
-      d3.select(`.c-${object.props.id}-container a.button-download_data__tsv_`)
+      let encodedUri = 'data:Application/octet-stream,' + toCSV(object.props.file);
+      d3.select(`.c-${object.props.id}-container a.button-download_data__csv_`)
         .attr('href', encodedUri)
-        .attr('download', `${util.machineName(object.props.file.title)}.tsv`);
+        .attr('download', `${util.machineName(object.props.file.title)}.csv`);
     }
   }
   getTimeSeriesCount(allVals, count){
@@ -1023,7 +1035,7 @@ export default class Graph extends Component {
       action_buttons = (
         <Actions>
           <ActionButton title='Save Image' href={img_href} disable={img_disable} />
-          <ActionButton title='Download data (tsv)' href='#' />
+          <ActionButton title='Download data (csv)' href='#' />
         </Actions>
       );
     }
