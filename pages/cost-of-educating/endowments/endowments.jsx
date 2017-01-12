@@ -35,7 +35,7 @@ let singlepage = (
         <Graph file={require('./json/02_0055.json')} small="true"/>
     </Multiples>
       <p><strong>More selective schools tend to have higher endowment income.</strong></p>
-      <p>At both private nonprofit and public four-year institutions with open admissions policies, median endowment income per student is about $200. In contrast, the median private nonprofit four-year institution that admits fewer than 25 percent of applicants has almost $16,000 in endowment income per student. </p>
+      <p>At both private nonprofit and public four-year institutions with open admissions policies, median endowment income per student is about $200. In contrast, the median private nonprofit four-year institution that admits fewer than 25 percent of applicants has almost $18,000 in endowment income per student. </p>
       <Multiples title="Share of Endowment Income per Student by Institution Selectivity" source="IPEDS.">
           <Graph file={require('./json/02_0061.json')} small="true"/>
           <Graph file={require('./json/02_0062.json')} small="true"/>
@@ -43,7 +43,7 @@ let singlepage = (
       <Box>
         <h3><em>How do graduate students affect per-student spending from university endowments? </em></h3>
         <p><em>Estimated subsidies are much higher among students attending research institutions in the top decile than among those at less-resourced institutions in both the public and private sectors. But per-student subsidies at research universities do not represent resources devoted solely to undergraduate education. These institutions also educate many graduate students and have active research agendas.</em></p>
-        <p><em>Many of the institutions with the largest endowments are doctoral universities, where graduate students make up a large share of total enrollment. At these universities, simply dividing endowment income by number of students enrolled overstates the resources available for undergraduates because it </em><a href="http://nces.ed.gov/pubs2003/2003161.pdf"><em>costs more</em></a><em> to educate graduate students, who require more faculty attention and resources. </em> </p>
+        <p><em>Many of the institutions with the largest endowments are doctoral universities, where graduate students make up a large share of total enrollment. At these universities, simply dividing endowment income by number of students enrolled overstates the resources available for undergraduates because it </em><a href="https://tcf.org/assets/downloads/20130523-Bridging_the_Higher_Education_Divide-Baum_Kurose.pdf"  target="_blank"><em>costs more</em></a><em> to educate graduate students, who require more faculty attention and resources. </em> </p>
         <p><em>Across all sectors, institutions with higher endowment income per student tend to have more graduate students as a share of total enrollment. At institutions with $500 to $1,500 of endowment income per student, graduate students make up about 20 percent of enrollment compared with 35 to 45 percent at institutions with endowment income per student of more than $9,000.</em></p>
       </Box>
   </div>

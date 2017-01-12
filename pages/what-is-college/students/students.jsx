@@ -13,12 +13,12 @@ let singlepage = (
   <div>
     <h1>Students</h1>
       <p><strong>Students from different backgrounds and of different ages attend different types of colleges and universities.</strong></p>
-      <p>For example, a majority of dependent students are in public or private four-year colleges, and most independent students are enrolled in public two-year and for-profit colleges. Enrollment patterns also differ by age, income, race, and ethnicity. </p>
+      <p>For example, a majority of dependent students are in public or private nonprofit four-year colleges, and most independent students are enrolled in public two-year and for-profit colleges. Enrollment patterns also differ by age, income, race, and ethnicity. </p>
       <p>Describing all undergraduates provides the best picture of the student bodies at different types of institutions, but focusing only on first-year students provides a better perspective on where different types of students choose to enroll. The composition of first-year students can differ quite a bit from the composition of the entire student body, because some students are more likely than others to remain enrolled beyond the first year and some transfer, particularly from two-year to four-year colleges.</p>
       <p>Although 27 percent of all undergraduates attend public four-year colleges and universities, only 13 percent of first-year students initially enroll in this sector. In contrast, 46 percent of all undergraduates attend public two-year colleges, but 58 percent of first-year students enroll in that sector.</p>
       <Graph file={require('./json/01_0050.json')}/>
     <h2>By Age and Dependency</h2>
-      <p>Though the majority of undergraduates are under age 24, over 30 percent are in their 30s, and another 10 percent are age 40 or older. About half of all undergraduates are dependent.</p>
+      <p>Though the majority of undergraduates are under age 24, over 30 percent are in their 30s, and another 10 percent are age 40 or older. About half of all undergraduates are dependent. Dependent students are younger than 24, not married, without dependents of their own, and have no other characteristics that would make the financial aid system declare them independent of their parents.</p>
       <p>In 2011–12, 52 percent of all independent undergraduates and 39 percent of dependent undergraduates were enrolled in public two-year colleges. Eighteen percent of independent students, compared with just 4 percent of dependent students, attended for-profit institutions.</p>
       <Graph file={require('./json/01_0060.json')}/>
       <p>In 2011–12, 6 percent of dependent first-year students enrolled in for-profit institutions, compared with 22 percent of independent students. Very few first-year students over the age of 24 enroll in four-year public or private nonprofit colleges and universities.</p>
@@ -29,7 +29,7 @@ let singlepage = (
       <Graph file={require('./json/01_0080.json')}/>
       <p>About 70 percent of students from the top quartile of family income were enrolled in four-year colleges, compared with about 40 percent of students from the lowest income quartile.</p>
       <Graph file={require('./json/01_0090.json')}/>
-      <p>Among dependent first-year students from the lowest income group, 7 percent enrolled in private nonprofit four-year institutions and 59 percent enrolled in community colleges. Among first-year students from the highest income group, 19 percent enrolled in private nonprofit four-year institutions and 45 percent enrolled in community colleges.</p>
+      <p>Among dependent first-year students from the lowest income group, 7 percent enrolled in private nonprofit four-year institutions in 2011-12 and 59 percent enrolled in community colleges. Among first-year students from the highest income group, 19 percent enrolled in private nonprofit four-year institutions and 45 percent enrolled in community colleges.</p>
       <Graph file={require('./json/01_0100.json')}/>
     <h2>By Race and Ethnicity</h2>
       <p>White and Asian students are more likely than black and Hispanic students to be enrolled in public and private nonprofit four-year colleges and universities. They are less likely to attend community colleges or for-profit institutions.</p>
