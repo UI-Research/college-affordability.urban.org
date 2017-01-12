@@ -1,7 +1,7 @@
 {
   "series": [
-    "Average subsidy per FTE student",
-    "Average net tuition revenue per FTE student"
+   "Average net tuition revenue per FTE student",
+    "Average subsidy per FTE student"
   ],
   "data": {
     "type": "bar",
@@ -16,28 +16,26 @@
     ],
     "columns": [
       [
-        "Average subsidy per FTE student",
-        17018.944,
-        17049.5415,
-        19316.6164
-      ],
-      [
         "Average net tuition revenue per FTE student",
         22596.6335,
         21785.0389,
         25319.0852
+      ],
+  [
+        "Average subsidy per FTE student",
+        17018.944,
+        17049.5415,
+        19316.6164
       ]
     ]
   },
   "title": "Research institutions",
   "axis": {
-    "y": {
-      "tick": {
-        "format": "dollar",
-        "count": 6
-      },
-      "max": 36380
-    },
+  "y": {
+    "padding": {"top":0, "bottom":0}, 
+    "max": 50000, 
+    "tick": {"format": "dollar", "count": 6}
+  },
     "x": {
       "type": "category",
       "categories": [

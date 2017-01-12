@@ -28,7 +28,7 @@ let singlepage = (
   <br />
 As an organization, the Urban Institute does not take positions on issues, but it does empower and support its experts in sharing their own evidence-based views and policy recommendations that have been shaped by scholarship.</p>
 <p><strong>Research</strong> <br />
-Sandy Baum and Martha Johnson</p>
+Sandy Baum, Martha Johnson, and Victoria Lee</p>
 <p><strong>Writing</strong> <br />
 Alexandra Tisley</p>
 <p><strong>Editorial</strong> <br />

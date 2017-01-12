@@ -1,8 +1,8 @@
 {
   "series": [
-    "Average subsidy per FTE student",
-    "Average net tuition revenue per FTE student"
-  ],
+  "Average net tuition revenue per FTE student",
+
+    "Average subsidy per FTE student"  ],
   "metadata": {
     "source": "Integrated Postsecondary Education Data System",
     "notes": "Institutions are sorted according to the Carnegie Classification of Institutions of Higher Education framework."
@@ -31,22 +31,23 @@
       "labels": {"format": "dollar"},
     "groups": [
       [
-        "Average subsidy per FTE student",
-        "Average net tuition revenue per FTE student"
+        "Average net tuition revenue per FTE student",
+       "Average subsidy per FTE student"
+
       ]
     ],
     "columns": [
-      [
-        "Average subsidy per FTE student",
-        6093.8715,
-        5745.5128,
-        5906.1973
-      ],
       [
         "Average net tuition revenue per FTE student",
         5907.0764,
         6843.6308,
         7594.8937
+      ],
+      [
+        "Average subsidy per FTE student",
+        6093.8715,
+        5745.5128,
+        5906.1973
       ]
     ]
   },

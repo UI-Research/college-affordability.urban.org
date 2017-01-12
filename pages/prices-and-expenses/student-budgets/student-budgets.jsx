@@ -41,7 +41,6 @@ let singlepage = (
     <h2>Other Expenses</h2>
       <p>Other expenses students might encounter in college include transportation, toiletries, snack food, entertainment, and clothing. Individual students have considerably more discretion over these expenditures than they do over tuition and fees, transportation, and other components of their budgets.</p>
       <p><strong>On average, private four-year nonprofit colleges have lower estimates for other expenses in their reported COA than do other types of institutions.</strong></p>
-      <Graph file={require('./json/03_0160.json')}/>
   </div>
 );
 

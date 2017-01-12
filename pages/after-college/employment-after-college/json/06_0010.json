@@ -5,6 +5,7 @@
   },
   "axis": {
     "x": {
+        "padding": {"top": 400},
       "tick": {"count": 9},
       "type": "category",
       "categories": [
@@ -40,7 +41,7 @@
     		"top": 0, "bottom": 0
     	},
     	"max": 1,
-    	"min": 0,
+    	"min": 0.5,
       "tick": {
         "format": "percent"
       }

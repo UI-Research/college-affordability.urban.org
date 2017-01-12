@@ -126,7 +126,7 @@ export default class Header extends Component {
                 <div className="nav-primary">
                   <ul className="nav-primary__first-level">
                     <li className="has-submenu">
-                      <a href="/what-is-college/index.html">What is College?</a>
+                      <a href="/what-is-college/index.html">What Is College?</a>
                       <span onClick={toggle} className="fa fa-chevron-down"></span>
                       <ul className="nav-primary__second-level">
                         <li>
@@ -242,26 +242,8 @@ export default class Header extends Component {
                     <li>
                       <a href="/breaking-even">Breaking Even</a>
                     </li>
-                    <li className="has-submenu">
+                     <li>
                       <a href="/student-profiles">Student Profiles</a>
-                      <span onClick={toggle} className="fa fa-chevron-down"></span>
-                      <ul className="nav-primary__second-level">
-                        <li>
-                          <a href="/student-profiles/independent">Independent</a>
-                        </li>
-                        <li>
-                          <a href="/student-profiles/low-income-dependent-students">Low-Income Dependent</a>
-                        </li>
-                        <li>
-                          <a href="/student-profiles/lower-middle-income-dependent-students">Lower-Middle Income Dependent</a>
-                        </li>
-                        <li>
-                          <a href="/student-profiles/upper-middle-income-dependent-students">Upper-Middle Income Dependent</a>
-                        </li>
-                        <li>
-                          <a href="/student-profiles/upper-income-dependent-students">Upper Income Dependent</a>
-                        </li>
-                      </ul>
                     </li>
                   </ul>
                 </div>

@@ -14,7 +14,7 @@ let singlepage = (
     <h1>Borrowing</h1>
       <p>Many students borrow to fund a portion of their college expenses. Each year, about 40 percent of all undergraduate students take federal student loans and about 70 percent of those who receive a bachelor&rsquo;s degree have education debt by the time they graduate. </p>
       <p>Borrowers face a complicated array of choices. Most loans come directly from the federal government, but a small number of students take private loans from banks or other lenders or borrow through state or institutional programs. Annual borrowing levels have risen significantly over the past decade, but have declined slightly from a peak in 2010–11.</p>
-      <p>The federal government makes loans to students and families on better terms than the private market would offer to students with no credit history. There are two main types of federal loans for undergraduate students and a program for parents:</p>
+      <p>The federal government makes loans to students and families on better terms than the private market would offer to students with no credit history or collateral. There are two main types of federal loans for undergraduate students and a program for parents:</p>
       <ul>
         <li><strong>Subsidized federal loans</strong> are available to students with documented financial need. These loans do not accrue interest while the student is in school. </li>
         <li><strong>Unsubsidized federal loans</strong> are available to all students. Interest begins to accrue as soon as the loans are disbursed. Because the federal government regulates the interest rates on these loans and offers them to all students regardless of credit ratings, they are considered part of the financial aid package. </li>
@@ -24,8 +24,8 @@ let singlepage = (
       <p>Many students borrow from federal or other sources during some, but not all, of their college years. As a result,<strong> the percentage of students borrowing in any year is lower than the percentage of students who will leave college with debt.</strong></p>
       <Graph file={require('./json/05_0120.json')}/>
     <h2>By Student Characteristics</h2>
-      <p><strong>Average annual borrowing does not vary widely by dependency status and family income level.</strong></p>
-      <p>Dependent students from families in the highest income quartile were least likely to borrow in 2011–12, but when they took loans, they borrowed larger amounts, on average, than those from lower- and middle-income families. This is in part because students from higher-income families are more likely to enroll full time and more likely to attend high-price colleges than students from lower-income families. It is also possible that students from higher-income families have other options if they just need a few thousand dollars, so there are fewer borrowers in this range who take relatively small loans.</p>
+      <p><strong>Average annual per-student borrowing does not vary widely by dependency status and family income level.</strong></p>
+      <p>Dependent students from families in the highest income quartile were least likely to borrow in 2011–12, but when they took loans, they borrowed larger amounts, on average, than those from lower- and middle-income families. This is in part because students from higher-income families are more likely to enroll full time and more likely to attend high-price colleges than students from lower-income families. It is also possible that students from higher-income families have other options if they just need a few thousand dollars, so there are fewer borrowers in this group who take relatively small loans.</p>
       <p>Students who attended college part time were much less likely to borrow than those who attended full time, but borrowing limits are the same for full- and part-time students. The part-time students who took loans borrowed an average of only $1,000 less than the full-time borrowers.  </p>
       <Multiples title="Annual borrowing by student characteristics: averages per borrower and per undergraduate student (with percentage borrowing) in 2011-12" source="National Postsecondary Student Aid Study 2012">
         <Graph file={require('./json/05_0131.json')} small="true"/>
@@ -48,16 +48,16 @@ let singlepage = (
     <h2>By Sector</h2>
       <p>Borrowing patterns differ significantly across sectors of postsecondary education. In 2013–14, the percentage of undergraduates borrowing ranged from 24 percent in public two-year colleges to 63 percent in for-profit institutions. Students enrolled in for-profit institutions are more likely to borrow than those in other sectors, and, when they borrow, they borrow more.</p>
       <Graph file={require('./json/05_1510.json')}/>
+      <Graph file={require('./json/05_1520.json')}/>
     <h2>Parent Borrowing</h2>
       <p>Through the federal Parent PLUS Loan program, parents without adverse credit histories can borrow an amount equal to the difference between the full student budget (the cost of attendance) and the amount of financial aid received. </p>
       <p>The interest rate on these loans was 6.31 percent for the 2016–17 academic year compared with 4.29 percent for subsidized and unsubsidized federal student loans. The parents of about 7 percent of dependent students take PLUS loans each year.</p>
-      <p>The average amount borrowed by Parent PLUS participants increased from $10,600 (in 2015 dollars) in 2000–01 to $15,300in 2015–16. Because of the low participation rates, the average amount borrowed per dependent student increased from just $600 to $1,200.</p>
-      <Graph file={require('./json/05_1520.json')}/>
+      <p>The average amount borrowed by Parent PLUS participants increased from $10,600 (in 2015 dollars) in 2000–01 to $15,300 in 2015–16. Because of the low participation rates, the average amount borrowed per dependent student increased from just $600 to $1,200.</p> 
       <p><strong>Parents of dependent students attending for-profit colleges are most likely to borrow Parent PLUS Loans.</strong> Although only 22 percent of full-time students in the for-profit sector are dependent students (and as such potentially eligible for Parent PLUS Loans), 32 percent of these parents borrowed from the federal government in 2011–12—a much higher participation rate than the 13 percent for full-time dependent undergraduates overall.</p>
       <p>Because eligibility for Parent PLUS Loans depends on cost of attendance exceeding financial aid, higher Parent PLUS borrowing in the for-profit and private nonprofit sectors is related to these institutions&rsquo; higher net prices relative to public two-year and public four-year prices.  </p>
       <Graph file={require('./json/05_0160.json')}/>
       <p><strong>Parents of low-income students are less likely to take Parent PLUS loans than other parents and when they borrow, they borrow smaller amounts. </strong>Low-income students are more likely than others to enroll in community colleges and to live at home with their parents, but these parents are also most likely to be ineligible for PLUS loans because of problems with their credit histories.</p>
-      <Multiples title="Average Parent PLUS Loans borrowed among full-time dependent students, 2011-12" source="National Postsecondary Student Aid Study 2012">
+      <Multiples title="Average Amount Borrowed and Percent Receiving Parent PLUS Loans Among Full-Time Dependent Students, 2011–12" source="National Postsecondary Student Aid Study 2012">
         <Graph file={require('./json/05_0171.json')} small="true"/>
         <Graph file={require('./json/05_0172.json')} small="true"/>
         <Graph file={require('./json/05_0173.json')} small="true"/>
