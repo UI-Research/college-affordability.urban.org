@@ -134,7 +134,7 @@ export default class Multiples extends Component {
     var action_buttons = (
         <Actions>
           <ActionButton title='Save Image' href={img_href} />
-          <ActionButton title='Download data (csv)' href={downloadLink} download= {fileName} disable='false'/>
+          <ActionButton title='Download data (csv)' href={downloadLink} download= {fileName} disable='true'/>
         </Actions>
       );
 //Draw only 1 legend (not one per multiple)
