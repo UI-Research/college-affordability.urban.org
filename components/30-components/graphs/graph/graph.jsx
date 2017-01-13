@@ -469,18 +469,15 @@ export class BaseGraph extends Component {
       _.each(arr, (object) => {
         let tmp = []
         object.forEach(function(o){
-          // console.log(o, typeof(o) == "string")
           if(typeof(o) == "string"){
             tmp.push("\"" + o.replace(/–/g,"-") + "\"")
           }else{
             tmp.push(o)
           }
-          // console.log(tmp)
         })
           s += tmp.join(',');
           s += '\r\n';          
         
-        // console.log(s)
       });
 
       return encodeURIComponent(s);
@@ -1039,7 +1036,6 @@ export default class Graph extends Component {
         </Actions>
       );
     }
-
     return (
       <div className={base_class}>
         <h2>{this.props.file.title}</h2>
