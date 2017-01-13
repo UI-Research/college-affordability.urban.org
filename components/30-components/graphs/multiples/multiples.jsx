@@ -1,6 +1,8 @@
 'use strict';
 import React, { Component } from 'react';
 import { GraphAttribution } from '30-components/graphs/graph/graph.jsx';
+import Actions from '30-components/basic/actions/actions.jsx';
+import ActionButton from '30-components/basic/action_button/action_button.jsx';
 import _ from 'lodash';
 import util from 'util.jsx';
 
@@ -56,10 +58,59 @@ if (!Array.prototype.includes) {
   });
 }
 
+  function createMultipleCSV(objects) {
+    // Create CSV objects based off of arrays.
+    const toCSV = (dataObjs) => {
+      // let dataObj = jQuery.extend(true, {}, oldDataObj);
+      let arr;
+      let cats = dataObjs[0].props.file.axis.x.categories.slice(0)
+      cats.unshift("data_category")
+      cats.unshift("data_set")
+      let s ='';
+      _.each(dataObjs, (dataObj, dataInd) => {
+        arr = dataObj.props.file.data.columns.slice(0)
+        if(dataInd == 0){
+          arr.unshift(cats)
+        }
+
+        
+        _.each(arr, (object) => {
+          let tmp;
+          if(object[0] == "data_set"){
+            tmp = []
+          }else{
+            tmp = [dataObj.props.file.title]
+          }
+          object.forEach(function(o){
+            if(typeof(o) == "string"){
+              tmp.push("\"" + o.replace(/–/g,"-") + "\"")
+            }else{
+              tmp.push(o)
+            }
+          })
+            s += tmp.join(',');
+            s += '\r\n';          
+          
+        });
+      });
+
+      return encodeURIComponent(s);
+    };
+
+    // Generate link for CSV download.
+      let encodedUri = 'data:Application/octet-stream,' + toCSV(objects);
+      // d3.select(`.c-${object.props.id}-container a.button-download_data__csv_`)
+        // .attr('href', encodedUri)
+        // .attr('download', `${util.machineName(object.props.file.title)}.csv`);
+      return encodedUri
+    }
+
 export default class Multiples extends Component {
   constructor(props) {
     super(props);
   }
+
+
   render() {
     // this.props.children.forEach(function(obj){
     //   obj.props.file.size = { "height" : 900 }
@@ -77,7 +128,15 @@ export default class Multiples extends Component {
     });
     var notes = (this.props.notes == "") ? undefined : <GraphAttribution type="notes" text={this.props.notes} /> 
     var source = (this.props.source == "") ? undefined : <GraphAttribution type="source" text={this.props.source} />
-
+    var fileName = util.machineName(this.props.title) + ".csv"
+    var downloadLink = createMultipleCSV(this.props.children)
+    var img_href = "\/img\/" + util.machineName(this.props.title) + ".png"
+    var action_buttons = (
+        <Actions>
+          <ActionButton title='Save Image' href={img_href} disable = 'true'/>
+          <ActionButton title='Download data (csv)' href={downloadLink} download= {fileName} disable='false'/>
+        </Actions>
+      );
 //Draw only 1 legend (not one per multiple)
 //ASSUMPTION: all multiples share same series and therefore color scheme
     var series = this.props.children[0].props.file.series;
@@ -122,6 +181,8 @@ export default class Multiples extends Component {
             {notes}
           </div>
         </div>
+        {action_buttons}
+
       </div>
     );
   }
