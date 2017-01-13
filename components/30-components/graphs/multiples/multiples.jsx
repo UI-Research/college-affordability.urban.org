@@ -130,9 +130,11 @@ export default class Multiples extends Component {
     var source = (this.props.source == "") ? undefined : <GraphAttribution type="source" text={this.props.source} />
     var fileName = util.machineName(this.props.title) + ".csv"
     var downloadLink = createMultipleCSV(this.props.children)
+    var img_href = "\/img\/" + util.machineName(this.props.title) + ".png"
     var action_buttons = (
         <Actions>
-          <ActionButton title='Download data (csv)' href={downloadLink} download= {fileName} />
+          <ActionButton title='Save Image' href={img_href} />
+          <ActionButton title='Download data (csv)' href={downloadLink} download= {fileName} disable='false'/>
         </Actions>
       );
 //Draw only 1 legend (not one per multiple)
