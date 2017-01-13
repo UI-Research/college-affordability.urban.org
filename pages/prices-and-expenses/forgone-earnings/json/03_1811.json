@@ -1,18 +1,18 @@
 {
-  "series": [
-    "25th percentile",
-    "75th percentile",
-    "Median"
-  ],
+  "metadata": {
+    "notes": null,
+    "source": "IPUMS 2014 ACS five-year sample (2010\u201314)."
+  },
+  "title": "Median earnings of men by age",
   "axis": {
-"y": {
-      "padding": {"top": 0, "bottom": 0},
-      "max": 60000,
-      "tick": {
-        "format": "dollar",
-        "count": 7
-      }
-},
+  "y": {
+        "padding": {"top": 0, "bottom": 0},
+        "max": 60000,
+        "tick": {
+          "format": "dollar",
+          "count": 7
+        }
+  },
     "rotated": true,
     "x": {
       "categories": [
@@ -26,9 +26,12 @@
       "type": "category"
     }
   },
-  "title": "Median earnings of men by age",
+  "series": [
+    "25th percentile",
+    "Median",
+    "75th percentile"
+  ],
   "data": {
-    "labels": false,
     "columns": [
       [
         "25th percentile",
@@ -40,15 +43,6 @@
         20788
       ],
       [
-        "75th percentile",
-        26260,
-        31250,
-        39583,
-        43765,
-        49999,
-        41666
-      ],
-      [
         "Median",
         20366,
         23581,
@@ -56,12 +50,17 @@
         31950,
         35295,
         29950
+      ],
+      [
+        "75th percentile",
+        26260,
+        31250,
+        39583,
+        43765,
+        49999,
+        41666
       ]
     ],
     "type": "bar"
-  },
-  "metadata": {
-    "notes": null,
-    "source": "IPUMS 2014 ACS five-year sample (2010\u201314)."
   }
 }

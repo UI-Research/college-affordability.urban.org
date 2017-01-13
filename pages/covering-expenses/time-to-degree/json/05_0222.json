@@ -19,7 +19,7 @@
     },
     "rotated": true,
     "x": {
-      "label": "Public four-year in-state",
+      "label": "Private nonprofit four-year",
       "type": "category",
       "categories": [
         "Tuition and fees",
@@ -30,13 +30,7 @@
   },
   "data": {
     "type": "bar",
-    "groups": [
-      [
-        "4 years",
-        "5 years",
-        "6 years"
-      ]
-    ],
+
     "labels": {
       "format": "dollar"
     },
