@@ -32,7 +32,7 @@ let singlepage = (
         <Graph file={require('./json/04_0912.json')} small="true"/>
         <Graph file={require('./json/04_0913.json')} small="true"/>
     </Multiples>
-        <Multiples title="Pell Grant by Dependency Status and Income, 2011–12 (with percentage receiving Pell)" source=“NPSAS, 2012" notes="Includes all full-time students, both Pell grant recipients and nonrecipients.">
+        <Multiples title="Pell Grant by Dependency Status and Income, 2011–12 (with percentage receiving Pell)" source="NPSAS, 2012" notes="Includes all full-time students, both Pell grant recipients and nonrecipients.">
         <Graph file={require('./json/04_0921.json')} small="true"/>
         <Graph file={require('./json/04_0922.json')} small="true"/>
         <Graph file={require('./json/04_0923.json')} small="true"/>
