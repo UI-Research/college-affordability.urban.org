@@ -1017,6 +1017,10 @@ export default class Graph extends Component {
     if (this.props.file.metadata && this.props.file.metadata.source) {
       source = <GraphAttribution type="source" text={this.props.file.metadata.source} />;
     }
+    let subtitle = false;
+    if (this.props.file.subtitle) {
+      subtitle = <div className="subtitle">{this.props.file.subtitle}</div>;
+    }
 
     // Check if there is an associated image with graph.  If so, mock up the ActionButton appropriately.
     let img_href = '#';
@@ -1039,6 +1043,7 @@ export default class Graph extends Component {
     return (
       <div className={base_class}>
         <h2>{this.props.file.title}</h2>
+        {subtitle}
         {anchor}
         <div className="c-graph__wrapper">
           <LazyLoad>
