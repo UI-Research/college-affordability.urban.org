@@ -27,12 +27,12 @@ let singlepage = (
       <p>In 2011–12, averaged across all full-time students, the program provided $1,700 per dependent student and $3,300 per independent student. Among dependent students, those whose parents&rsquo; incomes were less than $30,000 received an average of $4,800 per student, and those whose parental income was between $30,000 and $65,000 received an average of $2,200 per full-time student.</p>
       <p><strong>Not everyone who gets a Pell grant receives the maximum amount. Instead, the size of the grant varies by income, and family circumstances, and full-time or part-time enrollment.</strong></p>
       <p>In 2011–12, the average grant for dependent full-time Pell recipients from families with incomes under $30,000 was $5,200.  </p>
-       <Multiples title="Pell Grant per Full-Time Recipient by Dependency Status and Income, 2011–12 (with percentage receiving Pell)" source="National Postsecondary Student Aid Study 2012" notes="Includes all full-time students, both Pell grant recipients and non-recipients.">
+       <Multiples title="Pell Grant by Dependency Status and Income, 2011–12 (with percentage receiving Pell)" source="National Postsecondary Student Aid Study (NPSAS), 2012." notes="Includes all full-time students, both Pell grant recipients and nonrecipients.">
         <Graph file={require('./json/04_0911.json')} small="true"/>
         <Graph file={require('./json/04_0912.json')} small="true"/>
         <Graph file={require('./json/04_0913.json')} small="true"/>
     </Multiples>
-        <Multiples title="Pell Grant per Full-Time Student by Dependency Status and Income, 2011–12 (with percentage receiving Pell)" source="National Postsecondary Student Aid Study 2012" notes="Includes all full-time students, both Pell grant recipients and non-recipients.">
+        <Multiples title="Pell Grant by Dependency Status and Income, 2011–12 (with percentage receiving Pell)" source=“NPSAS, 2012" notes="Includes all full-time students, both Pell grant recipients and nonrecipients.">
         <Graph file={require('./json/04_0921.json')} small="true"/>
         <Graph file={require('./json/04_0922.json')} small="true"/>
         <Graph file={require('./json/04_0923.json')} small="true"/>
