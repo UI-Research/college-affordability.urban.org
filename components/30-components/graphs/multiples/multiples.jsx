@@ -128,6 +128,7 @@ export default class Multiples extends Component {
     });
     var notes = (this.props.notes == "") ? undefined : <GraphAttribution type="notes" text={this.props.notes} /> 
     var source = (this.props.source == "") ? undefined : <GraphAttribution type="source" text={this.props.source} />
+    var subtitle = (this.props.subtitle == "") ? undefined : <div className="subtitle">{this.props.subtitle}</div>
     var fileName = util.machineName(this.props.title) + ".csv"
     var downloadLink = createMultipleCSV(this.props.children)
     var img_href = "\/img\/" + util.machineName(this.props.title) + ".png"
@@ -173,6 +174,7 @@ export default class Multiples extends Component {
     return (
       <div className="c-graph-multiples">
       <h2>{this.props.title}</h2>
+      {subtitle}
       <div className="small-multiple-legend-container"><div className="small-multiple-legend">{legend}</div></div>
         {graphSet}
         <div className="c-text__caption c-text__caption--bottom">
@@ -191,10 +193,12 @@ export default class Multiples extends Component {
 Multiples.propTypes = {
   title: React.PropTypes.string,
   source: React.PropTypes.string,
-  notes: React.PropTypes.string
+  notes: React.PropTypes.string,
+  subtitle: React.PropTypes.string
 };
 Multiples.defaultProps = {
   title: 'Sample Multiples',
   source: '',
-  notes: ''
+  notes: '',
+  subtitle: ''
 };

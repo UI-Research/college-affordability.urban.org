@@ -24,7 +24,7 @@ let singlepage = (
         <h2>Across Sectors</h2>
             <p>At all types of institutions, the average net price is lower than the sticker price, though there is wide variation across students and sectors.</p>
             <p>In the for-profit sector, students pay about 70 percent of the sticker price because of grant aid; at private nonprofit universities, first-time full-time students pay just 46 percent of the sticker price, on average. In the public sector, students at four-year colleges and universities face net prices equal to 36 percent of the sticker price, and, on average, grant aid covers the full tuition and fees price for students at two-year colleges.</p>
-            <Multiples title="Average Grant Aid and Net Tuition and Fees for First-Time Full-Time Students, by Sector, 2013–14" source="Integrated Postsecondary Education Data System.">
+            <Multiples title="Average Grant Aid and Net Tuition and Fees for First-Time Full-Time Students, by Sector, 2013–14" subtitle = "Test subtitle" source="Integrated Postsecondary Education Data System.">
                 <Graph file={require('./json/03_0201.json')} small="true"/>
                 <Graph file={require('./json/03_0202.json')} small="true"/>
             </Multiples>
@@ -65,7 +65,7 @@ let singlepage = (
                 <Graph file={require('./json/03_02214.json')} small="true"/>
                 <Graph file={require('./json/03_02215.json')} small="true"/>
             </Multiples>
-            <Multiples title="Total Student Budget, Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2011–12, in 2011 Dollars" source="NPSAS, 2012.">
+            <Multiples title="" subtitle = "Test subtitle" source="NPSAS, 2012.">
                 <Graph file={require('./json/03_02221.json')} small="true"/>
                 <Graph file={require('./json/03_02222.json')} small="true"/>
                 <Graph file={require('./json/03_02223.json')} small="true"/>

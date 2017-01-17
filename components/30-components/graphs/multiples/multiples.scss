@@ -1,5 +1,11 @@
 @import '_global.scss';
 
+.subtitle{
+    font-size: 14px;
+    color: #000;
+    margin-top: -17px;
+    margin-bottom: 15px;
+}
 
 .c-graph-multiples {
   @include clearfix();
