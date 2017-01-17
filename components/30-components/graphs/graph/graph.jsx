@@ -291,6 +291,12 @@ export class BaseGraph extends Component {
         };
       }
 
+      let gridBaseVal;
+      if(data.axis.y.min && data.axis.y.min > 0){
+        gridBaseVal = data.axis.y.min
+      }else{
+        gridBaseVal = 0;
+      }
       // Show grid lines by default
       if (!data.grid) {
         data.grid = {};
@@ -305,7 +311,7 @@ export class BaseGraph extends Component {
             // the black line to cut in the middle of the canvas
             // to prove where the 0 value is.
             lines: [{
-              value: 0,
+              value: gridBaseVal,
               class: 'grid-base'
             }]
           };
