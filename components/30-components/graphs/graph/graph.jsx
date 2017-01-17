@@ -128,9 +128,15 @@ export class BaseGraph extends Component {
       }
 
       // Hide tooltip.
-      data.tooltip = {
-        show: true
-      };
+      if(!data.hideTooltip){
+        data.tooltip = {
+          show: true
+        };
+      }else{
+        data.tooltip = {
+          show: false
+        };    
+      }
 
       //for stacked bar chart, make stack order same as series order (not sorted asc/desc)
       if(data.data.groups){
