@@ -2,6 +2,7 @@
   "tallSmallMultiple": true,
   "data": {
     "type": "bar",
+
     "columns": [
       [
         "Grant Aid",
