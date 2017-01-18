@@ -1,5 +1,8 @@
 @import '_global.scss';
 
+.graphTitle{
+  line-height: 22px;
+}
 .c-graph {
   .c-graph__container svg {
     font-family: $font-lato;

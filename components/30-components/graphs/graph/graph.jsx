@@ -1054,7 +1054,7 @@ export default class Graph extends Component {
     }
     return (
       <div className={base_class}>
-        <h2>{this.props.file.title}</h2>
+        <h2 className="graphTitle">{this.props.file.title}</h2>
         {subtitle}
         {anchor}
         <div className="c-graph__wrapper">

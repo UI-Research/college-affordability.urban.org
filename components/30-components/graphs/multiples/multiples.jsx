@@ -173,7 +173,7 @@ export default class Multiples extends Component {
     }
     return (
       <div className="c-graph-multiples">
-      <h2>{this.props.title}</h2>
+      <h2 className="graphTitle">{this.props.title}</h2>
       {subtitle}
       <div className="small-multiple-legend-container"><div className="small-multiple-legend">{legend}</div></div>
         {graphSet}
