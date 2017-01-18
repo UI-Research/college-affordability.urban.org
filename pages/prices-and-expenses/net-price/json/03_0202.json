@@ -36,9 +36,7 @@
   ],
   "data": {
     "type": "bar",
-    "labels": {
-      "format": "percent"
-    },
+
     "columns": [
       [
         "Grant Aid",
