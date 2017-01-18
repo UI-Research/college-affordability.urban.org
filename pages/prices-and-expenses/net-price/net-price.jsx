@@ -24,7 +24,7 @@ let singlepage = (
         <h2>Across Sectors</h2>
             <p>At all types of institutions, the average net price is lower than the sticker price, though there is wide variation across students and sectors.</p>
             <p>In the for-profit sector, students pay about 70 percent of the sticker price because of grant aid; at private nonprofit universities, first-time full-time students pay just 46 percent of the sticker price, on average. In the public sector, students at four-year colleges and universities face net prices equal to 36 percent of the sticker price, and, on average, grant aid covers the full tuition and fees price for students at two-year colleges.</p>
-            <Multiples title="Average Grant Aid and Net Tuition and Fees for First-Time Full-Time Students, by Sector, 2013–14" subtitle = "Test subtitle" source="Integrated Postsecondary Education Data System.">
+            <Multiples title="Average Grant Aid and Net Tuition and Fees for First-Time Full-Time Students, by Sector, 2013–14" source="Integrated Postsecondary Education Data System.">
                 <Graph file={require('./json/03_0201.json')} small="true"/>
                 <Graph file={require('./json/03_0202.json')} small="true"/>
             </Multiples>
@@ -51,28 +51,30 @@ let singlepage = (
             <p>Between 1996 and 2012, tuition and fees rose rapidly in all sectors, with the exception of community colleges. Grant aid also rose rapidly in the public and private nonprofit sectors, but it rose less rapidly in the for-profit sector. For dependent students in the lowest family income quartile, grant aid rose fast enough that net tuition and fees declined for these students in all sectors, except the for-profit sector.</p>
             <p>Net tuition and fees increased for dependent students in the upper half of the income distribution between 1996 and 2012, but not nearly as rapidly as published prices. For independent students, net tuition prices fell in public two-year and four-year institutions but rose in private nonprofit and for-profit institutions.<strong></strong></p>
             <p><em>Total student budget, divided into the portions of tuition and fees and living expenses covered by grant aid, and the tuition and fees and living expenses remaining, from 1995</em> <em>96 to 2011</em><em>–</em><em>12, in 2011 dollars</em></p>    
-            <Multiples title="Total Student Budget, Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2011–12, in 2011 Dollars" source="NPSAS, 2012.">
+            <Multiples title="Total Student Budget, Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2011–12, in 2011 Dollars" 
+            subtitle = "Public four-year institutions"
+            source="NPSAS, 2012.">
                 <Graph file={require('./json/03_0221.json')} small="true"/>
                 <Graph file={require('./json/03_0222.json')} small="true"/>
                 <Graph file={require('./json/03_0223.json')} small="true"/>
                 <Graph file={require('./json/03_0224.json')} small="true"/>
                 <Graph file={require('./json/03_0225.json')} small="true"/>
             </Multiples>
-            <Multiples title="Total Student Budget, Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2011–12, in 2011 Dollars" source="NPSAS, 2012.">
+            <Multiples title="" subtitle = "Private four-year institutions" source="NPSAS, 2012.">
                 <Graph file={require('./json/03_02211.json')} small="true"/>
                 <Graph file={require('./json/03_02212.json')} small="true"/>
                 <Graph file={require('./json/03_02213.json')} small="true"/>
                 <Graph file={require('./json/03_02214.json')} small="true"/>
                 <Graph file={require('./json/03_02215.json')} small="true"/>
             </Multiples>
-            <Multiples title="" subtitle = "Test subtitle" source="NPSAS, 2012.">
+            <Multiples title="" subtitle = "Public two-year institutions" source="NPSAS, 2012.">
                 <Graph file={require('./json/03_02221.json')} small="true"/>
                 <Graph file={require('./json/03_02222.json')} small="true"/>
                 <Graph file={require('./json/03_02223.json')} small="true"/>
                 <Graph file={require('./json/03_02224.json')} small="true"/>
                 <Graph file={require('./json/03_02225.json')} small="true"/>
             </Multiples>
-            <Multiples title="Total Student Budget, Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2011–12, in 2011 Dollars" source="NPSAS, 2012.">
+            <Multiples title="" subtitle = "For-profit institutions" source="NPSAS, 2012.">
                 <Graph file={require('./json/03_02231.json')} small="true"/>
                 <Graph file={require('./json/03_02232.json')} small="true"/>
                 <Graph file={require('./json/03_02233.json')} small="true"/>
