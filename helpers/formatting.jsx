@@ -23,37 +23,9 @@ module.exports = {
     }
     else if(pattern == 'number'){
         pattern = ',.1f';
-        alt = ',.2s';
+        alt = '.2s';
     }
-    // else if(pattern.search('dual') == 0){
-    //     if(type == 'axis'){
-    //       pattern = '$,.0f';
-    //       alt = '$,.2s';
-    //     }else if(pattern == "dual_stacked"){
-    //       pattern = 0;
-    //       alt = "dual_stacked"
-    //     }else{
-    //       pattern = pattern.split("_")[1];
-    //       alt = "dual";
-    //     }
-    // }
-    else if(pattern.search("dual") == 0){
-      let components = pattern.split("_")
-      if (components[1].search("%") != -1){
-        flag = "dual_percent_first"
-        scalar = components[3]
-      }else{
-        flag = "dual_percent_second"
-      }
-      pattern = components[1]
-      alt = components[2]
 
-      // tmp = pattern
-      // pattern = tmp[0]
-      // alt = tmp[1]
-      // flag = "dual"
-
-    }
 
     // Additional formatting logic.
     return (v, id, i, j) => {
@@ -67,43 +39,23 @@ module.exports = {
       if (v == 0 && type == "label") {
         return '';
       }
+      else if(v == 0 && (pattern = '$,.1f' || pattern == '$,.2s')){
+        pattern = '$'
+      }
+      else if(v == 0 && (pattern = ',.1f' || pattern == '.2s')){
+        pattern = 'f'
+      }
 
       // If values exceed a certain point, let's use the special
       // thousands/millions/billions formatter instead.
-      if (_.isNumber(v) && v > 999 && alt && flag != "dual_percent_second" && flag != "dual_percent_first") {
-        pattern = alt;
+      if (_.isNumber(v) && (v > 999 || v < -999) && alt) {
+        pattern = alt
       }
-      if(flag == "dual_percent_second"){
-        if(type == "axis"){
-          return d3.format(pattern)(v)
-        }
-        var counter = (type == 'tooltip') ? j : i;
-        var total = 0;
-        for(var n = 0; n < data["data"]["columns"].length; n++){
-          total += data["data"]["columns"][n][counter+1]
-        }
-        if (v == 0 && type != 'tooltip') {
-          return '';
-        }else{
-          return d3.format(pattern)(v) + " (" + d3.format(alt)(v/parseFloat(total)) + ")"
-        }
-        
-      }
-      else if(flag == "dual_percent_first"){
-        if(type == "axis"){
-          return d3.format(pattern)(v)
-        }
-        if (v == 0 && type != 'tooltip') {
-          return '';
-        }else{
-          return d3.format(pattern)(v) + " (" + d3.format(alt)(v*parseFloat(scalar)) + ")"
-        }
-        
-      }
-
-      else{
-        return d3.format(pattern)(v);
-      }
+      return d3.format(pattern)(v);
+      
+     
+      
+      
     }
   }
 }
