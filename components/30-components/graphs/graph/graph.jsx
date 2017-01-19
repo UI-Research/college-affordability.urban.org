@@ -1023,11 +1023,19 @@ export default class Graph extends Component {
     // Set up notes and source if they exist
     let notes = false;
     if (this.props.file.metadata && this.props.file.metadata.notes) {
-      notes = <GraphAttribution type="notes" text={this.props.file.metadata.notes} />;
+      if(this.props.file.metadata.pluralNotes){
+        notes = <GraphAttribution type="notes" text={this.props.file.metadata.notes} />;
+      }else{
+        notes = <GraphAttribution type="note" text={this.props.file.metadata.notes} />;
+      }
     }
     let source = false;
     if (this.props.file.metadata && this.props.file.metadata.source) {
-      source = <GraphAttribution type="source" text={this.props.file.metadata.source} />;
+      if(this.props.file.metadata.pluralSources){
+        source = <GraphAttribution type="sources" text={this.props.file.metadata.source} />;
+      }else{
+        source = <GraphAttribution type="source" text={this.props.file.metadata.source} />;
+      }
     }
     let subtitle = false;
     if (this.props.file.subtitle) {
