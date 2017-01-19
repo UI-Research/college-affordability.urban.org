@@ -63,6 +63,7 @@ let singlepage = (
         <Graph file={require('./json/05_0173.json')} small="true"/>
       </Multiples>
   </div>
+  
 );
 
 let specifications = {
