@@ -14,10 +14,21 @@ module.exports = {
     let flag = "";
     let scalar = 0;
 
+    let max = null;
+    if(data != null && !data.data.sets){
+      max = d3.max(data.data.columns, function(array) {
+        return d3.max(array.map(function(o){ return +o}) );
+      });
+    }
+
     if(pattern == 'dollar'){
-        axis = '$s'
+        if(max < 2000 && max != null){
+          axis = '$.2s'
+        }else{
+          axis = '$s'  
+        }
         pattern = '$,.1f';
-        alt = '$,.2s';
+        alt = '$.2s';
     }
     else if(pattern == 'percent'){
         axis = '%'
@@ -25,11 +36,15 @@ module.exports = {
         alt = '%'
     }
     else if(pattern == 'number'){
-        axis = 's'
+        if(max < 2000 && max != null){
+          axis = '.2s'
+        }else{
+          axis = 's'  
+        }
         pattern = ',.1f';
         alt = '.2s';
     }
-    console.log(data)
+
 
 
     // Additional formatting logic.
@@ -49,7 +64,7 @@ module.exports = {
             pattern = 'f'
           }
         }else{
-          pattern = axis;  
+          pattern = axis;    
         }
       }
 

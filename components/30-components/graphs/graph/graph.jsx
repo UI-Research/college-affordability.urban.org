@@ -1050,7 +1050,10 @@ export default class Graph extends Component {
       extension = ".png"
     }
 
-    if(this.props.file.imageOverride){
+    if(this.props.small == 'true'){
+      imgFileName = "#"
+    }
+    else if(this.props.file.imageOverride){
       imgFileName = "\/img\/" + util.machineName(this.props.file.imageOverride) + extension
     }else{
       imgFileName = "\/img\/" + util.machineName(this.props.file.title) + extension
