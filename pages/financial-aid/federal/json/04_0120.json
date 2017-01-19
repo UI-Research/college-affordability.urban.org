@@ -2,7 +2,7 @@
   "axis": {
     "y": {
       "tick": {
-        "format": "$.2s"
+        "format": "dollar"
       }
     },
     "rotated": false,
@@ -45,7 +45,7 @@
   },
   "data": {
     "labels": {
-      "format": "$.2s"
+      "format": "dollar"
     },
     "type": "line",
     "columns": [

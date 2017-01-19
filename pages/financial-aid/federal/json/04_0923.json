@@ -4,7 +4,7 @@
   "title": "Dependency status",
   "data": {
     "labels": {
-      "format": "$s"
+      "format": "dollar"
     },
     "type": "bar",
     "columns": [
@@ -24,7 +24,7 @@
   "max": 6000,
   "padding": {"top": 0, "bottom": 0},
   "tick": {
-    "format": "$s",
+    "format": "dollar",
     "count": 4
   }
 },

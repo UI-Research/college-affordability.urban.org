@@ -13,7 +13,7 @@
       ]
     ],
     "labels": {
-      "format": "$s"
+      "format": "dollar"
     }
   },
   "metadata": {
@@ -27,7 +27,7 @@
   "max": 6000,
   "padding": {"top": 0, "bottom": 0},
   "tick": {
-    "format": "$s",
+    "format": "dollar",
     "count": 4
   }
 },

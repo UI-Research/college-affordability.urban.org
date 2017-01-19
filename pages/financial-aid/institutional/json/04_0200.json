@@ -17,7 +17,7 @@
       ]
     ],
     "labels": {
-      "format": "$s"
+      "format": "dollar"
     },
     "type": "bar",
     "sets": {
@@ -105,7 +105,7 @@
     "rotated": true,
     "y": {
       "tick": {
-        "format": "$s"
+        "format": "dollar"
       }
     },
     "x": {

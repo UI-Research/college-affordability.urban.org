@@ -2,7 +2,7 @@
   "axis": {
     "y": {
       "tick": {
-        "format": "$s"
+        "format": "dollar"
       }
     },
     "rotated": false,
@@ -257,7 +257,7 @@
       "75th percentile": "#000000"
     },
     "labels": {
-      "format": "$s"
+      "format": "dollar"
     }
   },
   "title": "Women Age 18\u201323, 24\u201334 with High School Diploma or Equivalent Working Full Time Full Year",

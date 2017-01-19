@@ -19,7 +19,7 @@
       ]
     ],
     "labels": {
-      "format": "$s"
+      "format": "dollar"
     },
     "groups": [
       [
@@ -38,7 +38,7 @@
     "padding": {"top": 0, "bottom": 0},
   	"max": 1800,
       "tick": {
-        "format": "$s",
+        "format": "dollar",
         "count": 3
       }
     },

@@ -2,7 +2,7 @@
   "axis": {
     "y": {
       "tick": {
-        "format": "$.2s"
+        "format": "dollar"
       }
     },
     "x": {
