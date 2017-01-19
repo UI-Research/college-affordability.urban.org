@@ -1,6 +1,7 @@
 {
   "tallSmallMultiple": true,
   "data": {
+    "labels": {"format": "dollar"},
     "type": "bar",
 
     "columns": [
@@ -40,7 +41,8 @@
     "Grant Aid",
     "Tuition and fees left over"
   ],
-  "title": "Dollars",
+  "title": "Average Grant Aid and Net Tuition and Fees for First-Time Full-Time Students, by Sector, 2013–14",
+  "subtitle": "Dollars",
   "axis": {
     "rotated": true,
     "y": {

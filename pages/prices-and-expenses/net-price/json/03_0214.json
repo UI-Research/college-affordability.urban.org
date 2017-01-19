@@ -1,4 +1,4 @@
-{
+{"wideSmallMultiple": true,
 
   "metadata": {
     "source": "National Postsecondary Student Aid Study (NPSAS), 2012. ",
@@ -6,7 +6,8 @@
   },
   "axis": {
     "y": {
-    	"max": 50000,
+      "max": 50000,
+      "padding": {"top": 0, "bottom": 0},
       "tick": {
         "format": "dollar",
         "count": 3
