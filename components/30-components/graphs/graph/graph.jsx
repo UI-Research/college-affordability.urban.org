@@ -1057,7 +1057,6 @@ export default class Graph extends Component {
     }
 
 
-    console.log(imgFileName)
 
     // Check if there is an associated image with graph.  If so, mock up the ActionButton appropriately.
     let img_href = '#';
