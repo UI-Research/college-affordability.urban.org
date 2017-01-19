@@ -49,6 +49,7 @@ let singlepage = (
       <p>State grant aid per student grew rapidly in the 1990s, when a number of states, particularly in the south, were introducing merit-based grant programs. Total state grant aid per student peaked in 2007–08, before the Great Recession, but recovered from an average of $690 per student in 2011–12 to $750 per student in 2014–15.</p>
       <Graph file={require('./json/04_0170.json')} />
       
+      
   </div>
 
 );

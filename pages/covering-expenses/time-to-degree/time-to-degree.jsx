@@ -47,6 +47,7 @@ let singlepage = (
         <p><strong>Staying out of the labor force for six years instead of four years to earn a bachelor&rsquo;s degree doubles forgone earnings.</strong></p>
         <Graph file={require('./json/05_0240.json')}/>  
   </div>
+  
 );
 
 let specifications = {

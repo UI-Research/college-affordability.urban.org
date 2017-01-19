@@ -43,6 +43,7 @@ let singlepage = (
         <Graph file={require('./json/04_2324.json')} small="true"/>
       </Multiples>
   </div>
+  
 );
 
 let specifications = {

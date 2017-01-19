@@ -39,6 +39,7 @@ let singlepage = (
        </Multiples>
 
   </div>
+  
 );
 
 let specifications = {
