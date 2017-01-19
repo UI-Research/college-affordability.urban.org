@@ -1,7 +1,7 @@
 {
   "series": [
-    "Part-time or full-time",
-    "Exclusively full-time"
+    "Mixed",
+    "Full-time"
   ],
   "metadata": {
     "notes": "The share of students completing in six years includes those who completed after transferring to different four-year institutions.",
@@ -10,7 +10,7 @@
   "data": {
     "groups": [
       [
-        "Completed other degree at two-year college",
+        "Completed degree at two-year college",
         "Completed Bachelor's degree at four-year college",
         "Not enrolled",
         "Still enrolled"
@@ -19,7 +19,7 @@
     "type": "bar",
     "sets": {
       "set2": [
-        "Exclusively full-time",
+        "Full-time",
         [
           [
             "Completed other degree at two-year college",
@@ -48,7 +48,7 @@
         ]
       ],
       "set1": [
-        "Part-time or full-time",
+        "Mixed",
         [
           [
             "Completed other degree at two-year college",
