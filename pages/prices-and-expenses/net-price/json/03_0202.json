@@ -1,5 +1,5 @@
 {
-  "tallSmallMultiple": true,
+  
   "axis": {
     "rotated": true,
     "x": {
@@ -25,7 +25,8 @@
       }
     }
   },
-  "title": "Percent",
+  "title": "",
+  "subtitle": "Percent",
   "metadata": {
     "source": "Integrated Postsecondary Education Data System.",
     "notes": "Grant aid includes federal, state, local, and institutional grant aid, but does not include private scholarships or employer assistance."
@@ -35,6 +36,7 @@
     "Tuition and fees left over"
   ],
   "data": {
+    "labels": {"format": "percent"},
     "type": "bar",
 
     "columns": [

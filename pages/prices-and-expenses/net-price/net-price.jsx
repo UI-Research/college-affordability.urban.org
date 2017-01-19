@@ -24,10 +24,11 @@ let singlepage = (
         <h2>Across Sectors</h2>
             <p>At all types of institutions, the average net price is lower than the sticker price, though there is wide variation across students and sectors.</p>
             <p>In the for-profit sector, students pay about 70 percent of the sticker price because of grant aid; at private nonprofit universities, first-time full-time students pay just 46 percent of the sticker price, on average. In the public sector, students at four-year colleges and universities face net prices equal to 36 percent of the sticker price, and, on average, grant aid covers the full tuition and fees price for students at two-year colleges.</p>
-            <Multiples title="Average Grant Aid and Net Tuition and Fees for First-Time Full-Time Students, by Sector, 2013–14" source="Integrated Postsecondary Education Data System.">
-                <Graph file={require('./json/03_0201.json')} small="true"/>
-                <Graph file={require('./json/03_0202.json')} small="true"/>
-            </Multiples>
+
+                <Graph file={require('./json/03_0201.json')}/>
+                <Graph file={require('./json/03_0202.json')}/>
+
+
             <p><strong>Students in the private nonprofit sector receive more grant aid, on average, than students in other sectors, shrinking the gap between the prices students in different sectors pay. Still, net prices are higher in the private nonprofit sector than in public institutions. </strong></p>
         <h2>By Income</h2>
             <p><strong>One of the biggest determinants of net price for an individual student is income because it plays a key role </strong><strong>in determining need-based grant aid.</strong> Lower-income students generally receive more grant aid, and, because the institutions with higher sticker prices are often the ones that offer more institutional grant aid, low-income students might find that the more expensive—on paper—institutions are actually cheaper for them. </p>
