@@ -1034,13 +1034,30 @@ export default class Graph extends Component {
       subtitle = <div className="subtitle">{this.props.file.subtitle}</div>;
     }
 
+    let extension = false;
+    let imgFileName = false;
+    if(this.props.file.data.sets){
+      extension = ".zip"
+    }else{
+      extension = ".png"
+    }
+
+    if(this.props.file.imageOverride){
+      imgFileName = "\/img\/" + util.machineName(this.props.file.imageOverride) + extension
+    }else{
+      imgFileName = "\/img\/" + util.machineName(this.props.file.title) + extension
+    }
+
+
+    console.log(imgFileName)
+
     // Check if there is an associated image with graph.  If so, mock up the ActionButton appropriately.
     let img_href = '#';
     let img_disable = 'true';
-    if (this.props.image) {
-      img_href = this.props.image;
-      img_disable = 'false';
-    }
+
+    img_href = imgFileName;
+    img_disable = 'false';
+    
 
     // Only show buttons on all but small graphs (otherwise, it'd look ridiculous...).
     let action_buttons;

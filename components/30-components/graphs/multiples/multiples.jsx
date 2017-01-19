@@ -131,10 +131,11 @@ export default class Multiples extends Component {
     var subtitle = (this.props.subtitle == "") ? undefined : <div className="subtitle">{this.props.subtitle}</div>
     var fileName = util.machineName(this.props.title) + ".csv"
     var downloadLink = createMultipleCSV(this.props.children)
-    var img_href = "\/img\/" + util.machineName(this.props.title) + ".png"
+    var imgFileName = (this.props.imageOverride == '') ? this.props.title : this.props.imageOverride;
+    var img_href = "\/img\/" + util.machineName(imgFileName) + ".png"
     var action_buttons = (
         <Actions>
-          <ActionButton title='Save Image' href={img_href} disable = 'true'/>
+          <ActionButton title='Save Image' href={img_href} disable = 'false'/>
           <ActionButton title='Download data (csv)' href={downloadLink} download= {fileName} disable='false'/>
         </Actions>
       );
@@ -194,11 +195,13 @@ Multiples.propTypes = {
   title: React.PropTypes.string,
   source: React.PropTypes.string,
   notes: React.PropTypes.string,
-  subtitle: React.PropTypes.string
+  subtitle: React.PropTypes.string,
+  imageOverride: React.PropTypes.string
 };
 Multiples.defaultProps = {
   title: 'Sample Multiples',
   source: '',
   notes: '',
-  subtitle: ''
+  subtitle: '',
+  imageOverride: ''
 };
