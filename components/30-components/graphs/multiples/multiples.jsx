@@ -126,8 +126,24 @@ export default class Multiples extends Component {
         </div>
       );
     });
-    var notes = (this.props.notes == "") ? undefined : <GraphAttribution type="notes" text={this.props.notes} /> 
-    var source = (this.props.source == "") ? undefined : <GraphAttribution type="source" text={this.props.source} />
+
+    var notes = undefined;
+    if(this.props.notes){
+      if(this.props.pluralNotes){
+          notes = <GraphAttribution type="notes" text={this.props.notes} />;
+      }else{
+          notes = <GraphAttribution type="note" text={this.props.notes} />;
+      }
+    }
+    var source = undefined;
+    if(this.props.source){
+      if(this.props.pluralSources){
+        source = <GraphAttribution type="sources" text={this.props.source} />;
+      }else{
+        source = <GraphAttribution type="source" text={this.props.source} />;
+      }
+    }
+
     var subtitle = (this.props.subtitle == "") ? undefined : <div className="subtitle">{this.props.subtitle}</div>
     var fileName = util.machineName(this.props.title) + ".csv"
     var downloadLink = createMultipleCSV(this.props.children)
