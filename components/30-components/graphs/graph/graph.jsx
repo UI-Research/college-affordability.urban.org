@@ -148,7 +148,7 @@ export class BaseGraph extends Component {
       if (data.axis) {
         if (data.axis.x && data.axis.x.tick && data.axis.x.tick.format) {
           if (!_.isFunction(data.axis.x.tick.format)) {
-            data.axis.x.tick.format = formatting.f(data.axis.x.tick.format, true, 'axis');
+            data.axis.x.tick.format = formatting.f(data.axis.x.tick.format, true, 'axis', data);
           }
         }
         if (data.axis.y && data.axis.y.tick && data.axis.y.tick.format) {
@@ -157,12 +157,12 @@ export class BaseGraph extends Component {
               data.tooltip.format = {}
               data.tooltip.format.value = formatting.f(data.axis.y.tick.format, true, 'tooltip', data)
             }
-            data.axis.y.tick.format = formatting.f(data.axis.y.tick.format, true, 'axis');
+            data.axis.y.tick.format = formatting.f(data.axis.y.tick.format, true, 'axis', data);
           }
         }
         if (data.axis.y2 && data.axis.y2.tick && data.axis.y2.tick.format) {
           if (!_.isFunction(data.axis.y2.tick.format)) {
-            data.axis.y2.tick.format = formatting.f(data.axis.y2.tick.format, true, 'axis');
+            data.axis.y2.tick.format = formatting.f(data.axis.y2.tick.format, true, 'axis', data);
           }
         }
       }
