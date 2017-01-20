@@ -26,6 +26,7 @@ module.exports = {
       });
     }
 
+
     if(pattern == 'dollar'){
         axisSmall = '$.2s';
         axisBig = '$.1s';
@@ -75,12 +76,17 @@ module.exports = {
         }else{
           if(max < 3000 && max != null){
 //For axis labels such as 0, 500, 1.0k, 1.5k, 2.0k, 2.5k
-            pattern = axisSmall;    
+            if(v < 10){
+//For axis labels such as **5**, 10, 15, 20 (vs 5.0...)
+              pattern = axisBig
+            }else{
+              pattern = axisSmall
+            }
           }else{
 //For axis labels such as -2k, -1k, 1k, 2k, 3k
 //OR
 //-2M, -1M, 1M, 2M
-            if( (v > 9999 && v < 999999) ||( v < -9999 && v > -999999) ){
+            if( (v > 9999 && v < 999999) || ( v < -9999 && v > -999999) ){
               pattern = axisSmall
             }else{
 //For axis labels such as -45k, -15k, 45k, 150k, 250k etc.
