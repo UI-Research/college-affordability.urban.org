@@ -859,8 +859,9 @@ export class BaseGraph extends Component {
       var style = d3.select(this).attr('style');
       var style_array = BaseGraph.stylesToObject(style);
       //get the index number of the text element in its parent group, which is the same as the index number of the corresponding bar in its group
-      console.log(this)
-      var indexNum = [].slice.call(this.parentNode.children).indexOf(this)
+      console.log(this, this.parentNode.children)
+      var testObj = this;
+      var indexNum = [].slice.call(testObj).indexOf(testObj)
       var textColor = style_array['fill'];
       var barGroup;
       bar_bar.each(function(){
