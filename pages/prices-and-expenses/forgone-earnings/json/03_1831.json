@@ -21,11 +21,11 @@
     "x": {
       "type": "category",
       "categories": [
-        "white",
-        "asian",
-        "hispanic",
-        "black",
-        "other"
+        "White",
+        "Asian",
+        "Hispanic",
+        "Black",
+        "Other"
       ]
     }
   },
