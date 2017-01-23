@@ -32,16 +32,16 @@
     ],
     "groups": [
       [
-        "Grant Aid",
+        "Grant aid",
         "Tuition and fees left over"
       ]
     ]
   },
   "series": [
-    "Grant Aid",
+    "Grant aid",
     "Tuition and fees left over"
   ],
-  "title": "Average Grant Aid and Net Tuition and Fees for First-Time Full-Time Students, by Sector, 2013–14",
+  "title": "Average Grant aid and Net Tuition and Fees for First-Time Full-Time Students, by Sector, 2013–14",
   "subtitle": "Dollars",
   "axis": {
     "rotated": true,
@@ -62,15 +62,15 @@
         "Public masters",
         "All private four-year colleges",
         "Private nonprofit research",
-        "Private nonprofit masters",
-        "Private nonprofit bachelors",
+        "Private nonprofit master's",
+        "Private nonprofit bachelor's",
         "All public two-year colleges",
         "For-profit colleges"
       ]
     }
   },
   "metadata": {
-    "source": "Integrated Postsecondary Education Data System.",
-    "notes": "Grant aid includes federal, state, local, and institutional grant aid, but does not include private scholarships or employer assistance."
+    "source": "Integrated Postsecondary Education Data System (IPEDS).",
+    "notes": "Grant aid includes federal, state, local, and institutional grant aid, but it does not include private scholarships or employer assistance."
   }
 }

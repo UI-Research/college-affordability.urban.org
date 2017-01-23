@@ -66,13 +66,13 @@
     }
   },
   "series": [
-    "Age 18\u201323",
-    "Age 24\u201334"
+    "Ages 18\u201323",
+    "Ages 24\u201334"
   ],
   "data": {
     "sets": {
       "set1": [
-        "Age 18\u201323",
+        "Ages 18\u201323",
         [
           [
             "Median",
@@ -161,7 +161,7 @@
         ]
       ],
       "set2": [
-        "Age 24\u201334",
+        "Ages 24\u201334",
         [
           [
             "Median",
@@ -260,9 +260,9 @@
       "format": "dollar"
     }
   },
-  "title": "Women Age 18\u201323, 24\u201334 with High School Diploma or Equivalent Working Full Time Full Year",
+  "title": "Women Ages 18\u201323, 24\u201334 with High School Diploma or Equivalent Working Full Time Full Year",
   "metadata": {
-    "source": "Current Population Survey Annual Social and Economic Supplement 1991\u20132015",
+    "source": "Current Population Survey Annual Social and Economic Supplement 1991\u20132015.",
     "notes": null
   }
 }
