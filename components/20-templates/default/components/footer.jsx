@@ -20,9 +20,6 @@ export default class Footer extends Component {
                 <a href="/about">About</a>
               </li>
               <li>
-                <a href="#">Research &amp; Resources</a>
-              </li>
-              <li>
                 <a href="#">Chart Indexes</a>
               </li>
               <li>
