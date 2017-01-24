@@ -23,7 +23,7 @@
     "rotated": true,
     "y": {
       "padding": {"top": 0, "bottom": 0},
-      "max": 120000,
+      "max": 150000,
       "tick": {
       	"count": 4,
         "format": "dollar"

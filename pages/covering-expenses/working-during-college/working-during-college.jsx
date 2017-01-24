@@ -43,7 +43,7 @@ let singlepage = (
       <p>The FWS program is part of the campus-based financial aid system. The federal government provides funds to institutions, which add some of their own dollars and provide part-time jobs for undergraduate and graduate students. Most work-study jobs are on campus, but others are at nonprofit organizations off campus or, occasionally, for-profit organizations providing jobs related to a student&rsquo;s program of study.</p>
       <p>The formula allocating campus-based aid to institutions is largely based on program participation in the 1970s and results in larger allocations of FWS per student at older private colleges and institutions with higher estimated costs of attendance. Institutions decide how to distribute the funds among eligible students. <a href="https://www.nasfaa.org/uploads/documents/ektron/02449fc6-a14e-40f4-b9de-e22d19252947/80d69b186d124195b22a59471714e3d14.pdf" target="_blank">Criticism of this practice</a> is widespread because it leaves many high-need students who are enrolled in institutions serving large numbers of low-income students without access to this form of assistance.</p>
       <Graph file={require('./json/05_0110.json')}/>
-      <p><a name="fn1"></a><sup>1 </sup>Sandy Baum, Jennifer Ma, Matea Pender, and Meredith Welch, <em>Trends in Student Aid 2016 (New York: College Board, 2016).</em></p> 
+
   </div>
 );
 
