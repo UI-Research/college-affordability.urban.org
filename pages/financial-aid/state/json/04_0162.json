@@ -3,7 +3,7 @@
     "rotated": true,
     "x": {
       "type": "category",
-      "label": "Dependency Status",
+      "label": "Dependency status",
       "categories": [
         "Independent",
         "Dependent"

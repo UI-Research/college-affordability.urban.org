@@ -51,7 +51,7 @@
         570
       ],
       [
-        "Non need-based",
+        "Non-need-based",
         0,
         0,
         0,
@@ -152,10 +152,10 @@
   },
   "metadata": {
     "notes": null,
-    "source": "Baum et al, Trends in Student Aid 2016, The College Board"
+    "source": "Sandy Baum, Jennifer Ma, Matea Pender, and Meredith Welch, <em>Trends in Student Aid 2016</em> (New York: College Board, 2016)."
   },
   "series": [
     "Need-based",
-    "Non need-based"
+    "Non-need-based"
   ]
 }
