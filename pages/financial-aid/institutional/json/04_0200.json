@@ -1,7 +1,8 @@
 {
   "metadata": {
-    "notes": null,
-    "source": "Baum et al, Trends in Student Aid 2014, The College Board, based on NPSAS 2012."
+    "pluralNotes": true,
+    "source": "Baum et al, Trends in Student Aid 2014, The College Board, based on NPSAS 2012.",
+    "notes": "<p>Only full-time students who were U.S. citizens or permanent residents were included. Income categories represent quartiles of dependent undergraduate students across all sectors. Income categories are: lowest: less than $30,000; second: $30,000 to $64,999; third: $65,000 to $105,999; highest: $106,000 or higher.</p> <br /><p> Only full-time dependent students who were U.S. citizens or permanent residents are included. Tuition and fee categories are based on quartiles of full-time student enrollment. Income categories represent quartiles of dependent undergraduate students across all sectors. Tuition categories are: lowest: less than $22,105; second: $22,105 to $28,726; third: $28,727 to $36,420; highest: $36,421 or higher. Income categories are: lowest: less than $30,000; second: $30,000 to $64,999; third: $65,000 to $105,999; highest: $106,000 or higher.</p>"
   },
   "series": [
     "Lowest tuition group",
@@ -104,6 +105,7 @@
   "axis": {
     "rotated": true,
     "y": {
+      "label": "Dependent undergraduate student income quartiles",
       "tick": {
         "format": "dollar"
       }
