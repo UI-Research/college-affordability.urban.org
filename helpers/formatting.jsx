@@ -20,7 +20,7 @@ module.exports = {
     let p1000000 = "";
 
 
-    let short = 0;
+    let postDecimalDigits = 0;
     let max = null;
     if(data != null && !data.data.sets){
       if(data.axis.y.max){
@@ -30,23 +30,32 @@ module.exports = {
           return d3.max(array.map(function(o){ return +o}) );
         });
       }
-      if(data.axis.y.tick.format == "percent"){
-        short = d3.max(data.data.columns, function(array){
-          return array.map(function(o){
-            if (isNaN(+o)){return 0}
-            else { return o.toString().split(".")[1].length }
+      // if(data.axis.y.tick.format == "percent"){
+      //   short = d3.max(data.data.columns, function(array){
+      //     return array.map(function(o){
+      //       if (isNaN(+o)){return 0}
+      //       else { return o.toString().split(".")[1].length }
+      //     })
+      //   })
+      // }else{
+        postDecimalDigits = d3.max(
+          d3.max(data.data.columns, function(array){
+            return array.map(function(o){
+              // console.log(o)
+              if (o == null || isNaN(+o) || o.toString().search(/\./g) == -1){return 0}
+              else { return o.toString().split(".")[1].length }
+            })
           })
-        })
+        )
       }
-    }
-    console.log(short)
+    // }
 
 
     if(pattern == 'dollar'){
         axisSmall = '$.2s';
         axisBig = '$.1s';
         zeroFormat = '$';
-        p100 = '$f';
+        p100 = (max < 100 && postDecimalDigits != 0) ? '$.1f' : '$f';
         p1000 = '$.2s';
         p10000 = '$.3s';
         p100000 = '$.4s';
@@ -57,7 +66,7 @@ module.exports = {
         axisSmall = '%';
         axisBig = '%';
         zeroFormat = '%';
-        p100 = '.1%';
+        p100 = (postDecimalDigits == 2) ? '%' : '.1%';
         p1000 = '.%';
         p10000 = '.1%';
         p100000 = '.1%';
@@ -69,7 +78,7 @@ module.exports = {
         axisSmall = '.2s'
         axisBig = '.1s'  
         zeroFormat = 'f';
-        p100 = 'f';
+        p100 = (max < 100 && postDecimalDigits != 0) ? '.1f' : 'f';
         p1000 = '.2s';
         p10000 = '.3s';
         p100000 = '.4s';
