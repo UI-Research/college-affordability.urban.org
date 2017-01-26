@@ -15,7 +15,7 @@
     "rotated": true,
     "x": {
       "type": "category",
-      "label": "Family income",
+      "label": "Institution",
       "categories": [
         "Public four-year (14%)",
         "Private four-year (19%)",

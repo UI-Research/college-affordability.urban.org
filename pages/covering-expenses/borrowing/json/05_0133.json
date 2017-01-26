@@ -15,11 +15,11 @@
     },
     "rotated": true,
     "x": {
-      "label": "Dependent Student's Parent Income",
+      "label": "Dependent student's parent income",
       "categories": [
         "Less than                   $30,000 (45%)",
-        "$30,000-                     $64,999 (48%)",
-        "$65,000-                      $105,999 (45%)",
+        "$30,000–                     $64,999 (48%)",
+        "$65,000–                      $105,999 (45%)",
         "$106,000                       or more (38%)"
       ],
       "type": "category"

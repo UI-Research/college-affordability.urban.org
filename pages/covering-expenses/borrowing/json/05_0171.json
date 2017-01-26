@@ -10,7 +10,7 @@
       "max": 20000
     },
     "x": {
-      "categories": ["All full-time                    dependent                                                students"],
+      "categories": ["All full-time dependent students"],
       "label": "All full-time dependent students",
       "type": "category"
     },
