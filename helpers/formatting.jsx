@@ -19,12 +19,27 @@ module.exports = {
     let p100000 = "";
     let p1000000 = "";
 
+
+    let short = 0;
     let max = null;
     if(data != null && !data.data.sets){
-      max = d3.max(data.data.columns, function(array) {
-        return d3.max(array.map(function(o){ return +o}) );
-      });
+      if(data.axis.y.max){
+        max = data.axis.y.max
+      }else{
+        max = d3.max(data.data.columns, function(array) {
+          return d3.max(array.map(function(o){ return +o}) );
+        });
+      }
+      if(data.axis.y.tick.format == "percent"){
+        short = d3.max(data.data.columns, function(array){
+          return array.map(function(o){
+            if (isNaN(+o)){return 0}
+            else { return o.toString().split(".")[1].length }
+          })
+        })
+      }
     }
+    console.log(short)
 
 
     if(pattern == 'dollar'){
@@ -43,7 +58,7 @@ module.exports = {
         axisBig = '%';
         zeroFormat = '%';
         p100 = '.1%';
-        p1000 = '.1%';
+        p1000 = '.%';
         p10000 = '.1%';
         p100000 = '.1%';
         p1000000 = '.1%';
