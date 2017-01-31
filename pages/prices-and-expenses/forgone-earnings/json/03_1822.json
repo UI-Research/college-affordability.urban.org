@@ -24,16 +24,23 @@
         24653
       ]
     ],
-    "type": "bar"
+    "type": "bar",
+        "groups": [
+  [
+    "25th percentile",
+    "Median",
+    "75th percentile"
+    ]
+  ]
   },
   "axis": {
     "rotated": true,
    "y": {
       "padding": {"top": 0, "bottom": 0},
-      "max": 40000,
+      "max": 80000,
       "tick": {
         "format": "dollar",
-        "count": 5
+        "count": 3
       }
     },
     "x": {

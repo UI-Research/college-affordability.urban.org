@@ -23,7 +23,14 @@
         27649
       ]
     ],
-    "type": "bar"
+    "type": "bar",
+    "groups": [
+  [
+    "25th percentile",
+    "Median",
+    "75th percentile"
+    ]
+  ]
   },
   "title": "Median earnings of men by race",
   "series": [
@@ -44,10 +51,10 @@
     },
    "y": {
       "padding": {"top": 0, "bottom": 0},
-      "max": 40000,
+      "max": 80000,
       "tick": {
         "format": "dollar",
-        "count": 5
+        "count": 3
       }
     }
   },

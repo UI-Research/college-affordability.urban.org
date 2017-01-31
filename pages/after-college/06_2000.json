@@ -81,7 +81,8 @@
         "Not enrolled"
       ]
     ],
-    "type": "bar"
+    "type": "bar",
+    "labels": {"format": "percent"}
   },
   "metadata": {
     "notes": "The share of students completing in six years includes those who completed after transferring to different four-year institutions.",
