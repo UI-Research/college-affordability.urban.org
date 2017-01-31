@@ -874,7 +874,8 @@ export class BaseGraph extends Component {
       var barBounds = barGroup.querySelectorAll(".c3-bar")[indexNum].getBoundingClientRect()
       var textBounds = this.getBoundingClientRect()
       //if label doesn't fit in bar slice, don't show it
-      if(barBounds.width <= textBounds.width -3 || barBounds.height <= textBounds.height -3){
+      if(barBounds.width <= textBounds.width -3 || barBounds.height <= textBounds.height -3 || (object.props.file.customHideLabel == true && this.innerHTML == "2%")){
+
          d3.select(this).attr('style', style + ' fill:' + 'rgba(0,0,0,0)' + ' !important'); 
       }
       else{
