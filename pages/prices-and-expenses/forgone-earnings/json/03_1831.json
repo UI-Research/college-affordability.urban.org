@@ -12,10 +12,10 @@
     "rotated": true,
   "y": {
     "padding": {"top": 0, "bottom": 0},
-    "max": 50000,
+    "max": 120000,
     "tick": {
       "format": "dollar",
-      "count": 6
+      "count": 4
     }
   },
     "x": {
@@ -31,6 +31,13 @@
   },
   "data": {
     "type": "bar",
+    "groups": [
+  [
+    "25th percentile",
+    "Median",
+    "75th percentile"
+    ]
+  ],
     "columns": [
       [
         "25th percentile",

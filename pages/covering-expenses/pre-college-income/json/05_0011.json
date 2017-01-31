@@ -9,7 +9,7 @@
       "padding": {"top": 0, "bottom": 0},
       "max": 150000,
       "tick": {
-      	"count": 4,
+      	"count": 3,
         "format": "dollar"
       }
     },

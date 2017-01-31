@@ -1,15 +1,39 @@
 {
+  "axis": {
+    "y": {
+    "padding": {"top": 0, "bottom": 0},
+    "max": 120000,
+      "tick": {
+        "count": 4,
+        "format": "dollar"
+      }
+    },
+    "x": {
+      "type": "category",
+      "categories": [
+        "18\u201320",
+        "21\u201323",
+        "24\u201326",
+        "27\u201329",
+        "30\u201334",
+        "Total"
+      ]
+    },
+    "rotated": true
+  },
   "metadata": {
     "source": "IPUMS 2014 ACS five-year sample (2010\u201314).",
     "notes": null
   },
-  "series": [
-    "25th percentile",
-    "Median",
-    "75th percentile"
-  ],
   "title": "Median earnings of women by age",
   "data": {
+    "groups": [
+      [
+        "25th percentile",
+        "Median",
+        "75th percentile"
+      ]
+    ],
     "type": "bar",
     "columns": [
       [
@@ -41,26 +65,9 @@
       ]
     ]
   },
-  "axis": {
-  "y": {
-        "padding": {"top": 0, "bottom": 0},
-        "max": 50000,
-        "tick": {
-          "format": "dollar",
-          "count": 7
-        }
-  },
-    "x": {
-      "categories": [
-        "18\u201320",
-        "21\u201323",
-        "24\u201326",
-        "27\u201329",
-        "30\u201334",
-        "Total"
-      ],
-      "type": "category"
-    },
-    "rotated": true
-  }
+  "series": [
+    "25th percentile",
+    "Median",
+    "75th percentile"
+  ]
 }
