@@ -19,7 +19,7 @@ let singlepage = (
 <p><strong>Who are independent students?</strong></p>
 <p>Independent students are those who are 24 and older, are married, have dependents, are active duty military or veterans, or are orphans, in foster care, wards of the court, or unaccompanied homeless youth. These students&rsquo; eligibility for financial aid is based only on their own financial circumstances (and their spouse&rsquo;s if they are married). Their parents&rsquo; resources are not considered.</p>
 <p><strong>Where do independent students enroll?</strong></p>
-<p>In 2011–12, more than half of all independent undergraduates attended community colleges, four-year colleges, and universities.</p>
+<p>In 2011–12, more than half of all independent undergraduates attended community colleges.</p>
 <Graph file={require('./json/07_0010.json')}/>
 <p><strong>How do annual finances differ across sectors?</strong></p>
 <p><a name="OLE_LINK10" id="OLE_LINK10">Average Published Prices, Budgets, and Resources Used to Pay for College for Independent Students, 2011</a>–12</p>
@@ -84,11 +84,9 @@ let singlepage = (
 <p>Source: NPSAS, 2012.</p>
 
 <p><strong>How do independent students pay for college?</strong></p>
-<p><em>Average Expected Family Contribution, Total Grants, Total Loan, and Earnings and Other Resources Equal Tuition and Fees and Other Expense: Public Two-Year Colleges</em></p>
-<p><em>Total Tuition and Fees and Average Total Debt for an Associate Degree at a Public Two-Year College, 2016</em><em>–</em><em>17: Two Years, Three Years, or Four Years of Full-Time Enrollment</em></p>
-<p><strong>How does time to degree affect cost? </strong><strong> </strong></p>
 <Graph file={require('./json/07_0030.json')}/>
-    <Graph file={require('./json/07_0040.json')}/>
+<p><strong>How does time to degree affect cost? </strong></p>
+<Graph file={require('./json/07_0040.json')}/>
 <h2>Low-Income Dependent Students</h2>
 <p><strong>Who are low-income dependent students?</strong></p>
 <p>In 2011–12, about 25 percent of dependent students came from families with incomes below $30,000 (in 2015 dollars). These are the students categorized as low-income dependent students. All of them are younger than 24. They are not married, do not have dependents of their own, and have no other characteristics that would make the financial aid system declare them independent of their parents.<strong></strong></p>
@@ -156,9 +154,10 @@ let singlepage = (
   </tr>
 </table>
 <br />
-<p><strong>How does time to degree affect cost? </strong><strong> </strong></p>
+<p><strong>How do low-income dependent pay for college?</strong></p>
 <Graph file={require('./json/07_0070.json')}/>
-  <Graph file={require('./json/07_0080.json')}/>
+<p><strong>How does time to degree affect cost? </strong></p>
+<Graph file={require('./json/07_0080.json')}/>
 <h2>Lower-Middle-Income Dependent Students</h2>
 <p><strong>Who are lower-middle-income dependent students?</strong></p>
 <p>In 2011–12, about 25 percent of dependent students came from families with incomes between $30,000 and $65,000 (in 2015 dollars). These are the students categorized as lower-middle-income dependent students. All of them are younger than 24. They are not married, do not have dependents of their own, and have no other characteristics that would make the financial aid system declare them independent of their parents.</p>
@@ -226,11 +225,13 @@ let singlepage = (
   </tr>
 </table>
 <br />
-<p><strong>How does time to degree affect cost? </strong><strong> </strong></p>
+<p><strong>How do low-income dependent pay for college?</strong></p>
 <Graph file={require('./json/07_0110.json')}/>
-    <Graph file={require('./json/07_0120.json')}/>
+<p><strong>How does time to degree affect cost? </strong><strong> </strong></p>
+
+<Graph file={require('./json/07_0120.json')}/>
 <h2>Upper-Middle-Income Dependent Students</h2>
-<p><strong>Who are upper-middle-income dependent students?</strong>In 2011–12, about 25 percent of dependent students came from families with incomes between $65,000 and $106,000 (in 2015 dollars). These are the students categorized as upper-middle-income dependent students. All of them are younger than 24. They are not married, do not have dependents of their own, and have no other characteristics that would make the financial aid system declare them independent of their parents.</p>
+<p><strong>Who are upper-middle-income dependent students?</strong> In 2011–12, about 25 percent of dependent students came from families with incomes between $65,000 and $106,000 (in 2015 dollars). These are the students categorized as upper-middle-income dependent students. All of them are younger than 24. They are not married, do not have dependents of their own, and have no other characteristics that would make the financial aid system declare them independent of their parents.</p>
 <p><strong>Where do upper-middle-income dependent students enroll?</strong></p>
 <p>Very few upper-middle income students enroll in for-profit institutions.</p>
 <Graph file={require('./json/07_0130.json')}/>
@@ -295,9 +296,9 @@ let singlepage = (
   </tr>
 </table>
 <p>Source: NPSAS, 2012</p>
-
-<p><strong>How does time to degree affect cost? </strong><strong> </strong></p>
+<p><strong>How do upper-middle-income dependent pay for college?</strong></p>
 <Graph file={require('./json/07_0150.json')}/>
+<p><strong>How does time to degree affect cost? </strong><strong> </strong></p>
     <Graph file={require('./json/07_0160.json')}/>
 <h2>Upper-Income Dependent Students</h2>
 <p><strong>Who are upper-income dependent students?</strong></p>
@@ -374,8 +375,9 @@ let singlepage = (
   </tr>
 </table>
 <p>Source: NPSAS, 2012.<strong></strong></p>
- <p><strong>How does time to degree affect cost? </strong></p>
+<p><strong>How do upper-income dependent pay for college?</strong></p>
 <Graph file={require('./json/07_0190.json')}/>
+ <p><strong>How does time to degree affect cost? </strong></p>
 <Graph file={require('./json/07_0200.json')}/>
   </div>
 );
