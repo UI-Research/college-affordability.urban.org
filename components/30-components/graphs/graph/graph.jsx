@@ -94,6 +94,13 @@ export class BaseGraph extends Component {
       if( (data.data.type == "bar" && data.axis.x.categories.length > 20) || (!data.data.sets && data.axis.rotated == true && data.data.type == "bar" && data.data.columns.length > 1 && !data.data.groups && ( data.data.columns.length * data.axis.x.categories.length ) > 19 )  || data.forceTall == true){
         data.size = { "height" : 900}
       }
+      else if(data.forceMediumHeight == true){
+        if(data.data.sets){
+          data.size = { "height" : 520}
+        }else{
+          data.size = { "height" : 570}
+        }
+      }
 
       if(typeof(data.highlightIndex) != "undefined"){
         data.data.color = function(color, d) {
@@ -851,6 +858,10 @@ export class BaseGraph extends Component {
       object.props.file.forceTall == true){
       object.getClosest( d3.select(`#${object.props.id}`).node() , ".c-graph__container").classList.add("tall_container")
       object.getClosest( d3.select(`#${object.props.id}`).node() , ".c-graph__wrapper").classList.add("tall_wrapper")
+    }
+    else if(object.props.file.forceMediumHeight == true){
+      object.getClosest( d3.select(`#${object.props.id}`).node() , ".c-graph__container").classList.add("medium_container")
+      object.getClosest( d3.select(`#${object.props.id}`).node() , ".c-graph__wrapper").classList.add("medium_wrapper")
     }
 
     let bar_text = d3.selectAll(`#${object.props.id}.c-bar__container--grouped .c3-chart-texts .c3-text`);
