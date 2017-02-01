@@ -84,10 +84,14 @@ export class BaseGraph extends Component {
       // is resolved, should add a test to not add extra point if end of col == null 
       if (_.includes(['line', 'area'], data.data.type) && !data.data.sets && !data.overrideTickCount) {
         data.axis.x.categories.push("")
-        data.axis.x.categories.unshift("")
+        if(!data.noAxisPadding){
+          data.axis.x.categories.unshift("")
+        }
         data.data.columns.forEach(function(arr){
           arr.push(null)
-          arr.splice(1, 0, null)
+          if(!data.noAxisPadding){
+            arr.splice(1, 0, null)
+          }
         })
         data.axis.x.padding = {"left" : 100, "right": 100}
       }
@@ -709,7 +713,9 @@ export class BaseGraph extends Component {
       return d3.select(this[0][last]);
     };
 
-
+    if(data.noAxisPadding){
+      d3.select(`#${object.props.id}.c-line__container`).classed("noAxisPadding",true)
+    }
     if (data.axis) {
       if(!data.rotated && data.axis.x && data.axis.x.label){
         if(data.customLabelPosition == true){
