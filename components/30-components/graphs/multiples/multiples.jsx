@@ -79,7 +79,7 @@ if (!Array.prototype.includes) {
           if(object[0] == "data_set"){
             tmp = []
           }else{
-            tmp = [dataObj.props.file.title]
+            tmp = ["\"" + dataObj.props.file.title + "\""]
           }
           object.forEach(function(o){
             if(typeof(o) == "string"){
