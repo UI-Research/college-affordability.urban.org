@@ -709,7 +709,13 @@ export class BaseGraph extends Component {
       return d3.select(this[0][last]);
     };
 
+
     if (data.axis) {
+      if(!data.rotated && data.axis.x && data.axis.x.label){
+        if(data.customLabelPosition == true){
+          d3.select(`#${object.props.id} .c3-axis-x .c3-axis-x-label`).attr("dy",45)
+        }
+      }
       if (!data.axis.rotated && data.axis.y && data.axis.y.label) {
         // Create container for y axis
         const container = d3.select(`#${object.props.id}`).insert('svg', ':first-child')
@@ -727,6 +733,7 @@ export class BaseGraph extends Component {
       }
 
       if (data.axis.rotated && data.axis.x && data.axis.x.label) {
+        let dx = (data.customLabelPosition == true) ? 110 : 0;
         // Create container for x axis
         const container = d3.select(`#${object.props.id}`).insert('svg', ':first-child')
           .attr('width', '100%')
@@ -736,7 +743,7 @@ export class BaseGraph extends Component {
           .attr('transform', 'rotate(0)')
           .attr('dy', '1em')
           .attr('style', 'text-anchor: start')
-          .attr('dx', '0');
+          .attr('dx', dx);
         // Move it over to new container
         x_axis_label.each(function() {
           container.node().appendChild(this);

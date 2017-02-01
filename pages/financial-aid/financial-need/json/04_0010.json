@@ -1,7 +1,8 @@
-{"padding": {"bottom": 30},
+{"customLabelPosition":true,
+  "padding": {"bottom": 30},
   "axis": {
     "x": {
-      "label": "              Income",
+      "label": "Income",
       "categories": [
         "$0–$4999",
         "$5,000–$9,999",
