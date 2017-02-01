@@ -60,7 +60,16 @@ module.exports = {
         p10000 = '$.3s';
         p100000 = '$.4s';
         p1000000 = '$.3s';
-
+    }
+    else if(pattern == 'dollarCents'){
+        axisSmall = '$.2s';
+        axisBig = '$.1s';
+        zeroFormat = '$';
+        p100 = (max < 100 && postDecimalDigits != 0) ? '$.2f' : '$f';
+        p1000 = '$.2s';
+        p10000 = '$.3s';
+        p100000 = '$.4s';
+        p1000000 = '$.3s';
     }
     else if(pattern == 'percent'){
         axisSmall = '%';
