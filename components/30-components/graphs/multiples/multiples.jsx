@@ -66,11 +66,12 @@ if (!Array.prototype.includes) {
       let uniformCats;
       let cats;
       if(dataObjs[0].props.file.axis.x.categories.slice(0).toString() == dataObjs[1].props.file.axis.x.categories.slice(0).toString()){
+       uniformCats = true;
        cats = dataObjs[0].props.file.axis.x.categories.slice(0) 
      }else{
+      uniformCats = false;
       cats = []
         _.each(dataObjs, (dataObj, dataInd) => {
-          // console.log(dataObj.props.file.axis.x.categories.slice(0))
           if(typeof(dataObj.props.file.axis.x.categories) != "undefined"){
             cats = cats.concat(dataObj.props.file.axis.x.categories.slice(0) )
           }
@@ -80,6 +81,9 @@ if (!Array.prototype.includes) {
       cats.unshift("data_category")
       cats.unshift("data_set")
       let s ='';
+      let objLen = 0;
+      let oldSetName = "";
+      let setName = ""
       _.each(dataObjs, (dataObj, dataInd) => {
         arr = dataObj.props.file.data.columns.slice(0)
         if(dataInd == 0){
@@ -87,14 +91,29 @@ if (!Array.prototype.includes) {
         }
 
         
-        _.each(arr, (object) => {
+        _.each(arr, (object, ind) => {
           let tmp;
+
           if(object[0] == "data_set"){
-            tmp = []
+            tmp = [].concat(new Array(objLen).fill(""))
           }else{
-            tmp = ["\"" + dataObj.props.file.title + "\""]
+            setName = (dataObj.props.file.title) ? dataObj.props.file.title : dataObj.props.file.axis.x.label
+            if(typeof(setName) == object){
+              setName = setName.text
+            }
+            tmp = ["\"" + setName + "\""]
           }
-          object.forEach(function(o){
+//If this isn't the first row of data, and small multiples don't all share the same category names (uniformCats) and this row doesn't have the same set name as the previous row (grouped/stacked bar multiples), then...
+          if(uniformCats == false && dataInd != 0 && setName != oldSetName){
+//Incrememt the number of cells to shift the row to the right by the length of the previous row. Not convoluted at all!
+            objLen += (dataObjs[dataInd-1].props.file.data.columns.slice(0)[0].length-1)
+          }
+          oldSetName = setName;
+          object.forEach(function(o, i){
+            if(i == 1){
+//Shift cells over by adding objLen number of blank cells
+              tmp = tmp.concat(_.times(objLen,""))
+            }
             if(typeof(o) == "string"){
               tmp.push("\"" + o.replace(/–/g,"-") + "\"")
             }else{
@@ -102,7 +121,8 @@ if (!Array.prototype.includes) {
             }
           })
             s += tmp.join(',');
-            s += '\r\n';          
+            s += '\r\n';     
+
           
         });
       });
