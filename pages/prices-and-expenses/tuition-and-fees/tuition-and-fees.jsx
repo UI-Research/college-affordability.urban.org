@@ -58,8 +58,8 @@ let singlepage = (
 	<h2>Variation Across States</h2>
 		<p><strong>Tuition prices—particularly at public universities—vary dramatically across states.</strong></p>
 		<p>Because of differences in the cost of living and the characteristics of the institutions, including selectivity, programs offered, <a href="../../cost-of-educating/endowments/">endowment levels</a>, size, and religious affiliation, prices at private colleges follow geographical patterns. For example, in 2015–16, the average sticker price in this sector was $40,700 in the Northeast compared to $28,500 in the South. But the differences are clearest in the public sectors, where state policies and student residency status play a big role.</p>
-		<Graph file={require('./json/03_0041.json')}/>
-		<Graph file={require('./json/03_0042.json')}/>
+		<Graph file={require('./json/03_0410.json')}/>
+		<Graph file={require('./json/03_0420.json')}/>
 		<p><strong>In 2016-17, published tuition and fees for in-state students at public four-year institutions ranged from $5,060 in Wyoming to $15,650 in New Hampshire.</strong> Twenty-three states charged at least $1,000 less than the national average of $9,650, and 15 states charged more than $1,000 above the national average. These differences arise primarily from variation in state funding levels, but they are also associated with enrollment patterns, cost of living, and other factors. </p>
   </div>
 );
