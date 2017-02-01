@@ -63,7 +63,20 @@ if (!Array.prototype.includes) {
     const toCSV = (dataObjs) => {
       // let dataObj = jQuery.extend(true, {}, oldDataObj);
       let arr;
-      let cats = dataObjs[0].props.file.axis.x.categories.slice(0)
+      let uniformCats;
+      let cats;
+      if(dataObjs[0].props.file.axis.x.categories.slice(0).toString() == dataObjs[1].props.file.axis.x.categories.slice(0).toString()){
+       cats = dataObjs[0].props.file.axis.x.categories.slice(0) 
+     }else{
+      cats = []
+        _.each(dataObjs, (dataObj, dataInd) => {
+          // console.log(dataObj.props.file.axis.x.categories.slice(0))
+          if(typeof(dataObj.props.file.axis.x.categories) != "undefined"){
+            cats = cats.concat(dataObj.props.file.axis.x.categories.slice(0) )
+          }
+        })
+     }
+      // let cats = dataObjs[0].props.file.axis.x.categories.slice(0)
       cats.unshift("data_category")
       cats.unshift("data_set")
       let s ='';
@@ -145,9 +158,11 @@ export default class Multiples extends Component {
     }
 
     var subtitle = (this.props.subtitle == "") ? undefined : <div className="subtitle">{this.props.subtitle}</div>
-    var fileName = util.machineName(this.props.title) + ".csv"
-    var downloadLink = createMultipleCSV(this.props.children)
+    
     var imgFileName = (this.props.imageOverride == '') ? this.props.title : this.props.imageOverride;
+
+    var fileName = util.machineName(imgFileName) + ".csv"
+    var downloadLink = createMultipleCSV(this.props.children)    
     var img_href = "\/img\/" + util.machineName(imgFileName) + ".png"
     var action_buttons = (
         <Actions>

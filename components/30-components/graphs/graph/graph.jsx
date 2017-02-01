@@ -502,12 +502,16 @@ export class BaseGraph extends Component {
       return encodeURIComponent(s);
     };
 
+
+    let csvFileName = (object.props.file.imageOverride == '') ? object.props.file.title : object.props.file.imageOverride;
+
+
     // Generate link for CSV download.
     if(d3.select(d3.select(`#${object.props.id}`).node().parentNode.parentNode.parentNode.parentNode.parentNode.parentNode).classed("c-graph-multiple") == false){
       let encodedUri = 'data:Application/octet-stream,' + toCSV(object.props.file);
       d3.select(`.c-${object.props.id}-container a.button-download_data__csv_`)
         .attr('href', encodedUri)
-        .attr('download', `${util.machineName(object.props.file.title)}.csv`);
+        .attr('download', `${util.machineName(csvFileName)}.csv`);
     }
   }
   getTimeSeriesCount(allVals, count){
