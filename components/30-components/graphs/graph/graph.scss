@@ -136,6 +136,54 @@
   }
 
 
+  .c-graph__wrapper.medium_wrapper {
+    height: 550px !important;
+    @include breakpoint($bp--mid) {
+      height: 550px !important;
+    }
+    @include breakpoint($bp--large) {
+      height: 550px !important;
+    }
+  }
+
+  &.has-legend {
+    .c-graph__wrapper.medium_wrapper {
+      height: 550px !important;
+      @include breakpoint($bp--mid) {
+        height: 550px !important;
+      }
+      @include breakpoint($bp--large) {
+        height: 550px !important;
+      }
+    }
+  }
+  &.has-toggle {
+    .c-graph__wrapper.medium_wrapper {
+      height: 550px !important;
+      @include breakpoint($bp--mid) {
+        height: 550px !important;
+      }
+      @include breakpoint($bp--large) {
+        height: 550px !important;
+      }
+    }
+  }
+  &.has-toggle.has-legend {
+    .c-graph__wrapper.medium_wrapper {
+      height: 550px !important;
+      @include breakpoint($bp--mid) {
+        height: 550px !important;
+      }
+      @include breakpoint($bp--large) {
+        height: 550px !important;
+      }
+    }
+  }
+
+
+
+
+
   .c-graph__container {
     height: 375px;
     @include breakpoint($bp--mid) {
@@ -161,6 +209,15 @@
     }
     @include breakpoint($bp--large) {
       height: 900px;
+    }
+  }
+  .c-graph__container.medium_container {
+    height: 550px !important;
+    @include breakpoint($bp--mid) {
+      height: 550px !important;
+    }
+    @include breakpoint($bp--large) {
+      height: 550px !important;
     }
   }
 
