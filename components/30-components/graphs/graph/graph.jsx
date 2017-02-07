@@ -739,7 +739,15 @@ export class BaseGraph extends Component {
       }
 
       if (data.axis.rotated && data.axis.x && data.axis.x.label) {
-        let dx = (data.customLabelPosition == true) ? 110 : 0;
+        let dx;
+        if(data.multipleCustomLabelPosition == true){
+          dx = 20
+        }
+        else if(data.customLabelPosition == true){
+          dx = 110
+        }else{
+          dx = 0
+        }
         // Create container for x axis
         const container = d3.select(`#${object.props.id}`).insert('svg', ':first-child')
           .attr('width', '100%')
@@ -902,7 +910,7 @@ export class BaseGraph extends Component {
       var barBounds = barGroup.querySelectorAll(".c3-bar")[indexNum].getBoundingClientRect()
       var textBounds = this.getBoundingClientRect()
       //if label doesn't fit in bar slice, don't show it
-      if(barBounds.width <= textBounds.width -3 || barBounds.height <= textBounds.height -3 || (object.props.file.customHideLabel == true && this.innerHTML == "2%")){
+      if(barBounds.width <= textBounds.width -3 || barBounds.height <= textBounds.height -3 || (object.props.file.customHideLabel == true && this.innerHTML == "2%") || (object.props.file.customHideLabelTwo == true && (this.innerHTML == "3.8%" || this.innerHTML == "3.7%") )){
 
          d3.select(this).attr('style', style + ' fill:' + 'rgba(0,0,0,0)' + ' !important'); 
       }
