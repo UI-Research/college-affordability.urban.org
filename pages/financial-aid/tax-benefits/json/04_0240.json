@@ -1,8 +1,8 @@
 {"overrideTickCount": true,
   "title": "Federal Education Tax Credits and Deductions, 1998\u20132014",
   "series": [
-    "Total Credits",
-    "Total Deduction"
+    "Total credits",
+    "Total deduction"
   ],
   "axis": {
     "x": {
@@ -29,6 +29,7 @@
       "type": "category"
     },
     "y": {
+      "label": "Billions",
       "padding": {"top":0, "bottom": 0},
        "max": 25,
       "tick": {
@@ -44,7 +45,7 @@
     },
     "columns": [
       [
-        "Total Credits",
+        "Total credits",
         4.3,
         5.9,
         5.7,
@@ -65,7 +66,7 @@
         null
       ],
       [
-        "Total Deduction",
+        "Total deduction",
         0,
         0,
         0,
@@ -89,7 +90,7 @@
     "type": "area"
   },
   "metadata": {
-    "notes": "Credits and deductions include the Hope Credit \/ AOTC, LLC, and the tuition and fees deduction.",
-    "source": "Baum et al, Trends in Student Aid 2016, The College Board"
+    "notes": "Credits and deductions include the Hope Credit\/AOTC, LLC, and the tuition and fees deduction.",
+    "source": "Sandy Baum, Jennifer Ma, Matea Pender, and Meredith Welch, <em>Trends in Student Aid 2016</em> (New York: College Board, 2016)."
   }
 }

@@ -1,5 +1,5 @@
-{
-
+{"wideSmallMultiple": true,
+"multipleCustomLabelPosition": true,
   "title": "Public two-year",
   "metadata": {
     "notes": "Net tuition and fee amounts are calculated by subtracting average total grant aid for all full-time students, including those who do and do not receive grant aid, from the published tuition and fee price. This yields a slightly different measure that that identified in NPSAS as net tuition and fees, because that calculation excludes any aid individual students receive that exceeds their tuition and fee prices.",
@@ -7,6 +7,7 @@
   },
   "axis": {
     "x": {
+      "label": "Parent Income Quartile",
       "categories": [
         "Lowest",
         "Lower middle",

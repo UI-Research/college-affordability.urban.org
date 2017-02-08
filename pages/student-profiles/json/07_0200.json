@@ -1,4 +1,3 @@
-
 {
   "data": {
     "type": "bar",
@@ -85,6 +84,28 @@
             50727.096
           ]
         ]
+      ],
+      "set5": ["For-profit",
+        [
+          ["2 years",
+            39968.565,
+            27398.14119],
+          ["3 years",
+            59952.8475,
+            41097.21179],
+          ["4 years",
+            79937.13,
+            54796.28238],
+          ["5 years",
+            99921.4125,
+            68495.35298],
+          ["6 years",
+            119905.695,
+          82194.42357]
+
+        ]
+
+
       ]
     }
   },
@@ -117,7 +138,9 @@
     "Public four-year in-state",
     "Public four-year out-of-state",
     "Private nonprofit four-year",
-    "Public two-year"
+    "Public two-year",
+    "For-profit"
   ],
   "title": "Total published tuition and fee price and total debt based on time to degree"
+,"forceMediumHeight": true
 }

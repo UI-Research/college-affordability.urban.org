@@ -1,7 +1,7 @@
 {
   "data": {
     "labels": {
-      "format": "$.2s"
+      "format": "dollar"
     },
     "type": "bar",
     "columns": [
@@ -31,7 +31,7 @@
      "padding": {"top": 0, "bottom": 0},
      "max": 1200,
       "tick": {
-        "format": "$.2s",
+        "format": "dollar",
         "count": 7
       }
     }

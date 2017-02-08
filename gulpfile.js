@@ -182,6 +182,10 @@ gulp.task('images', function () {
       gulp.src(src_image_dir + '/**/*.svg')
         .pipe(rename({dirname: ''}))
         .pipe(gulp.dest(dist_image_dir));
+      // Move zips (toggle graph screenshots)
+      gulp.src(src_image_dir + '/**/*.zip')
+        .pipe(rename({dirname: ''}))
+        .pipe(gulp.dest(dist_image_dir));
     }
   });
 });

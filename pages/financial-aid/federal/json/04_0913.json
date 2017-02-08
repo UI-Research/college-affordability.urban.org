@@ -1,4 +1,4 @@
-{
+{"hideTooltip": true,
   "wideSmallMultiple": true,  
   "axis": {
     "x": {
@@ -12,7 +12,7 @@
   "max": 8000,
   "padding": {"top": 0, "bottom": 0},
   "tick": {
-    "format": "$s",
+    "format": "dollar",
     "count": 5
   }
 },
@@ -34,7 +34,7 @@
     ],
     "type": "bar",
     "labels": {
-      "format": "$s"
+      "format": "dollar"
     }
   }
 }

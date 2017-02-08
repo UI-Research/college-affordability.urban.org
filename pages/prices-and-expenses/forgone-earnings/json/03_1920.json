@@ -2,16 +2,17 @@
   "axis": {
     "y": {
       "tick": {
-        "format": "$s"
+        "format": "dollar"
       }
     },
     "rotated": false,
     "x": {
       "tick": {
-        "count": 13
+        "count": 14
       },
       "type": "category",
       "categories": [
+        "",
         "1991",
         "1992",
         "1993",
@@ -61,21 +62,23 @@
         "2012",
         "2013",
         "2014",
-        "2015"
+        "2015",
+        ""
       ]
     }
   },
   "series": [
-    "Age 18\u201323",
-    "Age 24\u201334"
+    "Ages 18\u201323",
+    "Ages 24\u201334"
   ],
   "data": {
     "sets": {
       "set1": [
-        "Age 18\u201323",
+        "Ages 18\u201323",
         [
           [
             "Median",
+            null,
             21750,
             20464.21,
             20467.2,
@@ -100,10 +103,12 @@
             20600,
             20400,
             20000,
-            20000
+            20000,
+            null
           ],
           [
             "25th percentile",
+            null,
             15660,
             16900,
             15088,
@@ -128,10 +133,12 @@
             15450,
             15300,
             15000,
-            15000
+            15000,
+            null
           ],
           [
             "75th percentile",
+            null,
             28710,
             27885,
             27880,
@@ -156,43 +163,18 @@
             25750,
             25500,
             26000,
-            25000
+            25000,
+            null
           ]
         ]
       ],
       "set2": [
-        "Age 24\u201334",
+        "Ages 24\u201334",
         [
-          [
-            "Median",
-            27840,
-            28730,
-            28044,
-            28640,
-            27300,
-            25670,
-            26640,
-            27550,
-            28400,
-            27600,
-            28140,
-            29040,
-            29670,
-            28750,
-            28169,
-            27612,
-            26733,
-            26400,
-            27500,
-            27250,
-            26250,
-            25752,
-            25500,
-            25000,
-            25000
-          ],
+
           [
             "25th percentile",
+            null,
             20880,
             20956,
             21238,
@@ -217,10 +199,42 @@
             19055,
             18360,
             20000,
-            20000
+            20000,
+            null
+          ],
+        [
+            "Median",
+            null,
+            27840,
+            28730,
+            28044,
+            28640,
+            27300,
+            25670,
+            26640,
+            27550,
+            28400,
+            27600,
+            28140,
+            29040,
+            29670,
+            28750,
+            28169,
+            27612,
+            26733,
+            26400,
+            27500,
+            27250,
+            26250,
+            25752,
+            25500,
+            25000,
+            25000,
+            null
           ],
           [
             "75th percentile",
+            null,
             36540,
             37180,
             38868,
@@ -245,7 +259,8 @@
             35020,
             35700,
             35000,
-            34000
+            34000,
+            null
           ]
         ]
       ]
@@ -257,12 +272,12 @@
       "75th percentile": "#000000"
     },
     "labels": {
-      "format": "$s"
+      "format": "dollar"
     }
   },
-  "title": "Women Age 18\u201323, 24\u201334 with High School Diploma or Equivalent Working Full Time Full Year",
+  "title": "Women Ages 18\u201323, 24\u201334 with High School Diploma or Equivalent Working Full Time Full Year",
   "metadata": {
-    "source": "Current Population Survey Annual Social and Economic Supplement 1991\u20132015",
+    "source": "Current Population Survey Annual Social and Economic Supplement 1991\u20132015.",
     "notes": null
   }
 }
