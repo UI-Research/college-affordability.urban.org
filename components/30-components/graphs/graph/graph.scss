@@ -1,8 +1,5 @@
 @import '_global.scss';
 
-.graphTitle{
-  line-height: 22px;
-}
 .c-graph {
   .c-graph__container svg {
     font-family: $font-lato;
@@ -136,54 +133,6 @@
   }
 
 
-  .c-graph__wrapper.medium_wrapper {
-    height: 550px !important;
-    @include breakpoint($bp--mid) {
-      height: 550px !important;
-    }
-    @include breakpoint($bp--large) {
-      height: 550px !important;
-    }
-  }
-
-  &.has-legend {
-    .c-graph__wrapper.medium_wrapper {
-      height: 550px !important;
-      @include breakpoint($bp--mid) {
-        height: 550px !important;
-      }
-      @include breakpoint($bp--large) {
-        height: 550px !important;
-      }
-    }
-  }
-  &.has-toggle {
-    .c-graph__wrapper.medium_wrapper {
-      height: 550px !important;
-      @include breakpoint($bp--mid) {
-        height: 550px !important;
-      }
-      @include breakpoint($bp--large) {
-        height: 550px !important;
-      }
-    }
-  }
-  &.has-toggle.has-legend {
-    .c-graph__wrapper.medium_wrapper {
-      height: 550px !important;
-      @include breakpoint($bp--mid) {
-        height: 550px !important;
-      }
-      @include breakpoint($bp--large) {
-        height: 550px !important;
-      }
-    }
-  }
-
-
-
-
-
   .c-graph__container {
     height: 375px;
     @include breakpoint($bp--mid) {
@@ -211,15 +160,6 @@
       height: 900px;
     }
   }
-  .c-graph__container.medium_container {
-    height: 550px !important;
-    @include breakpoint($bp--mid) {
-      height: 550px !important;
-    }
-    @include breakpoint($bp--large) {
-      height: 550px !important;
-    }
-  }
 
   h2 {
     font-size: 18px;
@@ -227,7 +167,7 @@
   }
 }
 
-.c-line__container .c3-axis-x g.tick:last-of-type, .c-area__container .c3-axis-x g.tick:last-of-type, .c-line__container:not(.noAxisPadding) .c3-axis-x g.tick:first-of-type, .c-area__container .c3-axis-x g.tick:first-of-type{
+.c-line__container .c3-axis-x g.tick:last-of-type, .c-area__container .c3-axis-x g.tick:last-of-type, .c-line__container .c3-axis-x g.tick:first-of-type, .c-area__container .c3-axis-x g.tick:first-of-type{
   display: none;
 }
 .c-bar {

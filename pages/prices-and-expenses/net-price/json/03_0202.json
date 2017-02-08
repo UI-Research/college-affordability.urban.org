@@ -10,8 +10,8 @@
         "Public masters",
         "All private four-year colleges",
         "Private nonprofit research",
-        "Private nonprofit master's",
-        "Private nonprofit bachelor's",
+        "Private nonprofit masters",
+        "Private nonprofit bachelors",
         "All public two-year colleges",
         "For-profit colleges"
       ]
@@ -25,21 +25,33 @@
       }
     }
   },
-  "title": "",
-  "subtitle": "Percent",
+  "title": "Percent",
   "metadata": {
-    "source": "IPEDS.",
-    "notes": "Grant aid includes federal, state, local, and institutional grant aid, but it does not include private scholarships or employer assistance."
+    "source": "Integrated Postsecondary Education Data System.",
+    "notes": "Grant aid includes federal, state, local, and institutional grant aid, but does not include private scholarships or employer assistance."
   },
   "series": [
-    "Grant aid",
+    "Grant Aid",
     "Tuition and fees left over"
   ],
   "data": {
-    "labels": {"format": "percent"},
     "type": "bar",
-
+    "labels": {
+      "format": "percent"
+    },
     "columns": [
+      [
+        "Grant Aid",
+        0.6367,
+        0.6273,
+        0.6561,
+        0.5352,
+        0.4514,
+        0.5947,
+        0.5651,
+        1,
+        0.3186
+      ],
       [
         "Tuition and fees left over",
         0.3633,
@@ -51,23 +63,11 @@
         0.4349,
         0,
         0.6814
-      ],
-      [
-        "Grant aid",
-        0.6367,
-        0.6273,
-        0.6561,
-        0.5352,
-        0.4514,
-        0.5947,
-        0.5651,
-        1,
-        0.3186
       ]
     ],
     "groups": [
       [
-        "Grant aid",
+        "Grant Aid",
         "Tuition and fees left over"
       ]
     ]

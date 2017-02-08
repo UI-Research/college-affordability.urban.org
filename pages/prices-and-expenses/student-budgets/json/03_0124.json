@@ -1,11 +1,11 @@
-{"wideSmallMultiple": true,
+{
   "title": "For profit, living off campus",
   "axis": {
     "x": {
       "categories": [
         "'12\u2013  '13",
         "'14\u2013  '15",
-        "'16\u2013  '17"
+        "'16'\u2013  '17"
       ],
       "type": "category"
     },

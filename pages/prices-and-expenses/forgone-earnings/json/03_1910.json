@@ -1,21 +1,20 @@
 {"overrideTickCount": true,
   "series": [
-    "Ages 18\u201323",
-    "Ages 24\u201334"
+    "Age 18\u201323",
+    "Age 24\u201334"
   ],
   "axis": {
     "y": {
       "tick": {
-        "format": "dollar"
+        "format": "$s"
       }
     },
     "x": {
       "tick": {
-        "count": 14
+        "count": 13
       },
       "type": "category",
       "categories": [
-        "",
         "1991",
         "1992",
         "1993",
@@ -65,54 +64,22 @@
         "2012",
         "2013",
         "2014",
-        "2015",
-        ""
+        "2015"
       ]
     },
     "rotated": false
   },
   "metadata": {
-    "source": "Current Population Survey Annual Social and Economic Supplement 1991\u20132015.",
+    "source": "Current Population Survey Annual Social and Economic Supplement 1991\u20132015",
     "notes": null
   },
   "data": {
     "sets": {
           "set1": [
-        "Ages 18\u201323",
+        "Age 18\u201323",
         [
-            [
-            "25th percentile",
-            null,
-            18096,
-            18590,
-            18040,
-            16640,
-            17472,
-            16685.5,
-            17760,
-            17400,
-            19880,
-            19320,
-            20100,
-            19800,
-            19350,
-            18750,
-            18150,
-            17700,
-            17558.28,
-            17600,
-            17602.2,
-            19620,
-            15750,
-            16453.22,
-            15914.04,
-            17784,
-            19270,
-            null
-          ] ,
           [
             "Median",
-            null,
             25578,
             24608.09,
             24600,
@@ -137,12 +104,10 @@
             21630,
             22440,
             24891,
-            25000,
-            null
+            25000
           ],
           [
             "75th percentile",
-            null,
             33060,
             33800,
             32800,
@@ -167,17 +132,43 @@
             30900,
             30600,
             35000,
-            35000,
-            null
+            35000
+          ],
+          [
+            "25th percentile",
+            18096,
+            18590,
+            18040,
+            16640,
+            17472,
+            16685.5,
+            17760,
+            17400,
+            19880,
+            19320,
+            20100,
+            19800,
+            19350,
+            18750,
+            18150,
+            17700,
+            17558.28,
+            17600,
+            17602.2,
+            19620,
+            15750,
+            16453.22,
+            15914.04,
+            17784,
+            19270
           ]
         ]
       ],
       "set2": [
-        "Ages 24\u201334",
+        "Age 24\u201334",
         [
           [
             "Median",
-            null,
             36540,
             37180,
             36080,
@@ -202,12 +193,10 @@
             32960,
             32640,
             32000,
-            32000,
-            null
+            32000
           ],
           [
             "75th percentile",
-            null,
             50634,
             50700,
             49200,
@@ -232,12 +221,10 @@
             46350,
             45900,
             45000,
-            46000,
-            null
+            46000
           ],
           [
             "25th percentile",
-            null,
             26100,
             25350,
             25584,
@@ -262,14 +249,13 @@
             24720,
             24480,
             23000,
-            24000,
-            null
+            24000
           ]
         ]
       ]
     },
     "labels": {
-      "format": "dollar"
+      "format": "$s"
     },
     "type": "line",
     "colors": {
@@ -278,5 +264,5 @@
       "75th percentile": "#000000"
     }
   },
-  "title": "Men Ages 18\u201323, 24\u201334 with High School Diploma or Equivalent Working Full Time Full Year"
+  "title": "Men Age 18\u201323, 24\u201334 with High School Diploma or Equivalent Working Full Time Full Year"
 }

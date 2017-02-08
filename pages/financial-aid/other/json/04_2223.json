@@ -35,9 +35,9 @@
       "type": "category",
       "label": "Sector",
       "categories": [
-        "Private          four-year",
-        "Public           four-year",
-        "Public              two-year",
+        "Private          Four-Year",
+        "Public           Four-Year",
+        "Public              Two-Year",
         "For-profit"
       ]
     }

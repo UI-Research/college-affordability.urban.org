@@ -19,16 +19,15 @@ let singlepage = (
         <p>Though it is not possible to predict exactly what the net price will be for any individual student at a particular type of institution, or even a specific college, examining trends in net prices is critical to understanding how affordable college is.  </p>
         <Box>
             <h3><em>What counts as student aid for estimating net prices?</em></h3>
-            <p><em>The difference between sticker price and net price is the amount of financial aid a student receives—excluding loans. Though loans </em><em>are often included in financial aid packages, they are different from grant aid. Loans change the timing of payments, but don&rsquo;t diminish the total amounts students have to pay. Tax credits and deductions, on the other hand, do lower net prices for students. Because the data on students&rsquo; tax benefits </em><em>are not readily available, however, most estimates of net price—including those on this website—do not incorporate this very real and often quite large source of aid. (</em><a href="https://trends.collegeboard.org/college-pricing/figures-tables/average-net-price-over-time-full-time-students-sector"><em>Trends in College Pricing</em></a><em> estimates do incorporate tax credits and deductions.) Federal estimates of net price also sometimes exclude employer assistance and private scholarships.</em></p>
+            <p><em>The difference between sticker price and net price is the amount of financial aid a student receives—excluding loans. Though loans </em><em>are often included in financial aid packages, they are different from grant aid. Loans change the timing of payments, but don&rsquo;t diminish the total amounts students have to pay. Tax credits and deductions, on the other hand, do lower net prices for students. Because the data on students&rsquo; tax benefits </em><em>are not readily available, however, most estimates of net price—including those on this website—do not incorporate this very real and often quite large source of aid. (</em><a href="https://trends.collegeboard.org/college-pricing/figures-tables/average-net-price-over-time-full-time-students-sector"><em>Trends in College Pricing</em></a><em> estimates do incorporate tax credits and deductions. Federal estimates of net price also sometimes exclude employer assistance and private scholarships.)</em></p>
         </Box>
         <h2>Across Sectors</h2>
             <p>At all types of institutions, the average net price is lower than the sticker price, though there is wide variation across students and sectors.</p>
-            <p>In the for-profit sector, students pay about 70 percent of the sticker price because of grant aid; at private nonprofit universities, first-time full-time students pay just 46 percent of the sticker price, on average. In the public sector, students at four-year colleges and universities face net prices equal to 36 percent of the sticker price, and, on average, grant aid covers the full tuition and fee price for students at two-year colleges.</p>
-
-                <Graph file={require('./json/03_0201.json')}/>
-                <Graph file={require('./json/03_0202.json')}/>
-
-
+            <p>In the for-profit sector, students pay about 70 percent of the sticker price because of grant aid; at private nonprofit universities, first-time full-time students pay just 46 percent of the sticker price, on average. In the public sector, students at four-year colleges and universities face net prices equal to 36 percent of the sticker price, and, on average, grant aid covers the full tuition and fees price for students at two-year colleges.</p>
+            <Multiples title="Average Grant Aid and Net Tuition and Fees for First-Time Full-Time Students, by Sector, 2013–14" source="Integrated Postsecondary Education Data System.">
+                <Graph file={require('./json/03_0201.json')} small="true"/>
+                <Graph file={require('./json/03_0202.json')} small="true"/>
+            </Multiples>
             <p><strong>Students in the private nonprofit sector receive more grant aid, on average, than students in other sectors, shrinking the gap between the prices students in different sectors pay. Still, net prices are higher in the private nonprofit sector than in public institutions. </strong></p>
         <h2>By Income</h2>
             <p><strong>One of the biggest determinants of net price for an individual student is income because it plays a key role </strong><strong>in determining need-based grant aid.</strong> Lower-income students generally receive more grant aid, and, because the institutions with higher sticker prices are often the ones that offer more institutional grant aid, low-income students might find that the more expensive—on paper—institutions are actually cheaper for them. </p>
@@ -40,7 +39,7 @@ let singlepage = (
                 <p><em>The Scorecard includes information on average net price by income. But because higher-income students are less likely to receive federal aid, the net prices reported for these students are less accurate than those reported for lower-income students.</em></p>
                 <p><em>Another issue is that the income categories available in these federal data do not distinguish between independent and dependent students. The financial aid system, however, treats students with similar family incomes quite differently, depending on whether the income is that of the student and spouse or that of their parents.</em></p>
             </Box>
-            <Multiples title="Cost of Attendance (Total Expenses) Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, 2011–12" source="National Postsecondary Student Aid Study (NPSAS), 2012.">
+            <Multiples title="Cost of Attendance (Total Expenses) Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, 2011–12." source="National Postsecondary Student Aid Study (NPSAS), 2012.">
                 <Graph file={require('./json/03_0211.json')} small="true"/>
                 <Graph file={require('./json/03_0212.json')} small="true"/>
                 <Graph file={require('./json/03_0213.json')} small="true"/>
@@ -52,30 +51,28 @@ let singlepage = (
             <p>Between 1996 and 2012, tuition and fees rose rapidly in all sectors, with the exception of community colleges. Grant aid also rose rapidly in the public and private nonprofit sectors, but it rose less rapidly in the for-profit sector. For dependent students in the lowest family income quartile, grant aid rose fast enough that net tuition and fees declined for these students in all sectors, except the for-profit sector.</p>
             <p>Net tuition and fees increased for dependent students in the upper half of the income distribution between 1996 and 2012, but not nearly as rapidly as published prices. For independent students, net tuition prices fell in public two-year and four-year institutions but rose in private nonprofit and for-profit institutions.<strong></strong></p>
             <p><em>Total student budget, divided into the portions of tuition and fees and living expenses covered by grant aid, and the tuition and fees and living expenses remaining, from 1995</em> <em>96 to 2011</em><em>–</em><em>12, in 2011 dollars</em></p>    
-            <Multiples title="Total Student Budget, Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2011–12, in 2011 Dollars" imageOverride = "Total Student Budget, Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2011–12, in 2011 Dollars ___Public four-year institutions"
-            subtitle = "Public four-year institutions"
-            source="NPSAS, 2012.">
+            <Multiples title="Total Student Budget, Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2011–12, in 2011 Dollars" source="NPSAS, 2012.">
                 <Graph file={require('./json/03_0221.json')} small="true"/>
                 <Graph file={require('./json/03_0222.json')} small="true"/>
                 <Graph file={require('./json/03_0223.json')} small="true"/>
                 <Graph file={require('./json/03_0224.json')} small="true"/>
                 <Graph file={require('./json/03_0225.json')} small="true"/>
             </Multiples>
-            <Multiples title="" subtitle = "Private four-year institutions" source="NPSAS, 2012.">
+            <Multiples title="Total Student Budget, Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2011–12, in 2011 Dollars" source="NPSAS, 2012.">
                 <Graph file={require('./json/03_02211.json')} small="true"/>
                 <Graph file={require('./json/03_02212.json')} small="true"/>
                 <Graph file={require('./json/03_02213.json')} small="true"/>
                 <Graph file={require('./json/03_02214.json')} small="true"/>
                 <Graph file={require('./json/03_02215.json')} small="true"/>
             </Multiples>
-            <Multiples title="" subtitle = "Public two-year institutions" source="NPSAS, 2012.">
+            <Multiples title="Total Student Budget, Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2011–12, in 2011 Dollars" source="NPSAS, 2012.">
                 <Graph file={require('./json/03_02221.json')} small="true"/>
                 <Graph file={require('./json/03_02222.json')} small="true"/>
                 <Graph file={require('./json/03_02223.json')} small="true"/>
                 <Graph file={require('./json/03_02224.json')} small="true"/>
                 <Graph file={require('./json/03_02225.json')} small="true"/>
             </Multiples>
-            <Multiples title="" subtitle = "For-profit institutions" source="NPSAS, 2012.">
+            <Multiples title="Total Student Budget, Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2011–12, in 2011 Dollars" source="NPSAS, 2012.">
                 <Graph file={require('./json/03_02231.json')} small="true"/>
                 <Graph file={require('./json/03_02232.json')} small="true"/>
                 <Graph file={require('./json/03_02233.json')} small="true"/>

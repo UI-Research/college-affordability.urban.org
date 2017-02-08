@@ -1,13 +1,12 @@
-{"wideSmallMultiple": true,
-"multipleCustomLabelPosition": true,
+{
+
   "metadata": {
     "source": "National Postsecondary Student Aid Study (NPSAS), 2012. ",
     "notes": "Net tuition and fee amounts are calculated by subtracting average total grant aid for all full-time students, including those who do and do not receive grant aid, from the published tuition and fee price. This yields a slightly different measure that that identified in NPSAS as net tuition and fees, because that calculation excludes any aid individual students receive that exceeds their tuition and fee prices."
   },
   "axis": {
     "y": {
-      "max": 50000,
-      "padding": {"top": 0, "bottom": 0},
+    	"max": 50000,
       "tick": {
         "format": "dollar",
         "count": 3
@@ -15,7 +14,6 @@
       }
     },
     "x": {
-      "label": "Parent Income Quartile",
       "type": "category",
       "categories": [
         "Lowest",

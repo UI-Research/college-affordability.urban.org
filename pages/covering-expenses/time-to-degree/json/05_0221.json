@@ -6,19 +6,19 @@
   "data": {
     "columns": [
       [
-        "Four years",
+        "4 years",
         38600,
         41760,
         80360
       ],
       [
-        "Five years",
+        "5 years",
         48250,
         52200,
         100450
       ],
       [
-        "Six years",
+        "6 years",
         57900,
         62640,
         120540
@@ -27,16 +27,23 @@
     "type": "bar",
     "labels": {
       "format": "dollar"
-    }
+    },
+    "groups": [
+      [
+        "4 years",
+        "5 years",
+        "6 years"
+      ]
+    ]
   },
   "axis": {
     "rotated": true,
     "y": {
       "padding": {"top":0 , "bottom":0},
-      "max": 500000,
+      "max": 400000,
       "tick": {
         "format": "dollar",
-        "count": 3
+        "count": 5
       }
     },
     "x": {
@@ -50,8 +57,8 @@
     }
   },
   "series": [
-    "Four years",
-    "Five years",
-    "Six years"
+    "4 years",
+    "5 years",
+    "6 years"
   ]
 }

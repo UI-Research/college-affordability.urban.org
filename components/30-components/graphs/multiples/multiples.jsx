@@ -1,8 +1,6 @@
 'use strict';
 import React, { Component } from 'react';
 import { GraphAttribution } from '30-components/graphs/graph/graph.jsx';
-import Actions from '30-components/basic/actions/actions.jsx';
-import ActionButton from '30-components/basic/action_button/action_button.jsx';
 import _ from 'lodash';
 import util from 'util.jsx';
 
@@ -58,92 +56,10 @@ if (!Array.prototype.includes) {
   });
 }
 
-  function createMultipleCSV(objects) {
-    // Create CSV objects based off of arrays.
-    const toCSV = (dataObjs) => {
-      // let dataObj = jQuery.extend(true, {}, oldDataObj);
-      let arr;
-      let uniformCats;
-      let cats;
-      if(dataObjs[0].props.file.axis.x.categories.slice(0).toString() == dataObjs[1].props.file.axis.x.categories.slice(0).toString()){
-       uniformCats = true;
-       cats = dataObjs[0].props.file.axis.x.categories.slice(0) 
-     }else{
-      uniformCats = false;
-      cats = []
-        _.each(dataObjs, (dataObj, dataInd) => {
-          if(typeof(dataObj.props.file.axis.x.categories) != "undefined"){
-            cats = cats.concat(dataObj.props.file.axis.x.categories.slice(0) )
-          }
-        })
-     }
-      // let cats = dataObjs[0].props.file.axis.x.categories.slice(0)
-      cats.unshift("data_category")
-      cats.unshift("data_set")
-      let s ='';
-      let objLen = 0;
-      let oldSetName = "";
-      let setName = ""
-      _.each(dataObjs, (dataObj, dataInd) => {
-        arr = dataObj.props.file.data.columns.slice(0)
-        if(dataInd == 0){
-          arr.unshift(cats)
-        }
-
-        
-        _.each(arr, (object, ind) => {
-          let tmp;
-
-          if(object[0] == "data_set"){
-            tmp = [].concat(new Array(objLen).fill(""))
-          }else{
-            setName = (dataObj.props.file.title) ? dataObj.props.file.title : dataObj.props.file.axis.x.label
-            if(typeof(setName) == object){
-              setName = setName.text
-            }
-            tmp = ["\"" + setName + "\""]
-          }
-//If this isn't the first row of data, and small multiples don't all share the same category names (uniformCats) and this row doesn't have the same set name as the previous row (grouped/stacked bar multiples), then...
-          if(uniformCats == false && dataInd != 0 && setName != oldSetName){
-//Incrememt the number of cells to shift the row to the right by the length of the previous row. Not convoluted at all!
-            objLen += (dataObjs[dataInd-1].props.file.data.columns.slice(0)[0].length-1)
-          }
-          oldSetName = setName;
-          object.forEach(function(o, i){
-            if(i == 1){
-//Shift cells over by adding objLen number of blank cells
-              tmp = tmp.concat(_.times(objLen,""))
-            }
-            if(typeof(o) == "string"){
-              tmp.push("\"" + o.replace(/–/g,"-") + "\"")
-            }else{
-              tmp.push(o)
-            }
-          })
-            s += tmp.join(',');
-            s += '\r\n';     
-
-          
-        });
-      });
-
-      return encodeURIComponent(s);
-    };
-
-    // Generate link for CSV download.
-      let encodedUri = 'data:Application/octet-stream,' + toCSV(objects);
-      // d3.select(`.c-${object.props.id}-container a.button-download_data__csv_`)
-        // .attr('href', encodedUri)
-        // .attr('download', `${util.machineName(object.props.file.title)}.csv`);
-      return encodedUri
-    }
-
 export default class Multiples extends Component {
   constructor(props) {
     super(props);
   }
-
-
   render() {
     // this.props.children.forEach(function(obj){
     //   obj.props.file.size = { "height" : 900 }
@@ -159,37 +75,9 @@ export default class Multiples extends Component {
         </div>
       );
     });
+    var notes = (this.props.notes == "") ? undefined : <GraphAttribution type="notes" text={this.props.notes} /> 
+    var source = (this.props.source == "") ? undefined : <GraphAttribution type="source" text={this.props.source} />
 
-    var notes = undefined;
-    if(this.props.notes){
-      if(this.props.pluralNotes){
-          notes = <GraphAttribution type="notes" text={this.props.notes} />;
-      }else{
-          notes = <GraphAttribution type="note" text={this.props.notes} />;
-      }
-    }
-    var source = undefined;
-    if(this.props.source){
-      if(this.props.pluralSources){
-        source = <GraphAttribution type="sources" text={this.props.source} />;
-      }else{
-        source = <GraphAttribution type="source" text={this.props.source} />;
-      }
-    }
-
-    var subtitle = (this.props.subtitle == "") ? undefined : <div className="subtitle">{this.props.subtitle}</div>
-    
-    var imgFileName = (this.props.imageOverride == '') ? this.props.title : this.props.imageOverride;
-
-    var fileName = util.machineName(imgFileName) + ".csv"
-    var downloadLink = createMultipleCSV(this.props.children)    
-    var img_href = "\/img\/" + util.machineName(imgFileName) + ".png"
-    var action_buttons = (
-        <Actions>
-          <ActionButton title='Save Image' href={img_href} disable = 'false'/>
-          <ActionButton title='Download data (csv)' href={downloadLink} download= {fileName} disable='false'/>
-        </Actions>
-      );
 //Draw only 1 legend (not one per multiple)
 //ASSUMPTION: all multiples share same series and therefore color scheme
     var series = this.props.children[0].props.file.series;
@@ -225,8 +113,7 @@ export default class Multiples extends Component {
     }
     return (
       <div className="c-graph-multiples">
-      <h2 className="graphTitle">{this.props.title}</h2>
-      {subtitle}
+      <h2>{this.props.title}</h2>
       <div className="small-multiple-legend-container"><div className="small-multiple-legend">{legend}</div></div>
         {graphSet}
         <div className="c-text__caption c-text__caption--bottom">
@@ -235,8 +122,6 @@ export default class Multiples extends Component {
             {notes}
           </div>
         </div>
-        {action_buttons}
-
       </div>
     );
   }
@@ -245,14 +130,10 @@ export default class Multiples extends Component {
 Multiples.propTypes = {
   title: React.PropTypes.string,
   source: React.PropTypes.string,
-  notes: React.PropTypes.string,
-  subtitle: React.PropTypes.string,
-  imageOverride: React.PropTypes.string
+  notes: React.PropTypes.string
 };
 Multiples.defaultProps = {
   title: 'Sample Multiples',
   source: '',
-  notes: '',
-  subtitle: '',
-  imageOverride: ''
+  notes: ''
 };

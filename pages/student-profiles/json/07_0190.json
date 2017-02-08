@@ -371,7 +371,7 @@
       ]
     }
   },
-  "title": "Average Expected Family Contribution, Total Grants, Total Loan, and Earnings and Other Resources Equal Tuition and Fees and Other Expenses",
+  "title": "Average Expected Family Contribution, Total Grants, Total Loan, and Earnings and Other Resources Equal Tuition and Fees and Other Expense",
   "series": [
     "Public four-year in-state",
     "Public four-year out-of-state",
@@ -379,5 +379,4 @@
     "For-profit",
     "Public two-year"
   ]
-,"forceMediumHeight": true
 }

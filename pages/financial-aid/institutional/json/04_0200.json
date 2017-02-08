@@ -1,8 +1,7 @@
 {
   "metadata": {
-    "pluralNotes": true,
-    "source": "Baum et al, Trends in Student Aid 2014, The College Board, based on NPSAS 2012.",
-    "notes": "<p>Only full-time students who were U.S. citizens or permanent residents were included. Income categories represent quartiles of dependent undergraduate students across all sectors. Income categories are: lowest: less than $30,000; second: $30,000 to $64,999; third: $65,000 to $105,999; highest: $106,000 or higher.</p> <br /><p> Only full-time dependent students who were U.S. citizens or permanent residents are included. Tuition and fee categories are based on quartiles of full-time student enrollment. Income categories represent quartiles of dependent undergraduate students across all sectors. Tuition categories are: lowest: less than $22,105; second: $22,105 to $28,726; third: $28,727 to $36,420; highest: $36,421 or higher. Income categories are: lowest: less than $30,000; second: $30,000 to $64,999; third: $65,000 to $105,999; highest: $106,000 or higher.</p>"
+    "notes": null,
+    "source": "Baum et al, Trends in Student Aid 2014, The College Board, based on NPSAS 2012."
   },
   "series": [
     "Lowest tuition group",
@@ -18,7 +17,7 @@
       ]
     ],
     "labels": {
-      "format": "dollar"
+      "format": "$s"
     },
     "type": "bar",
     "sets": {
@@ -101,13 +100,12 @@
 
     }
   },
-  "title": "Average Need-Based and Non-Need-Based Institutional Grant Aid per Full-Time Dependent Student, Private Nonprofit Four-Year Institutions, 2011-12",
+  "title": "Average Need-Based and Non-Need-Based Institutional Grant Aid per Full-Time Dependent Student (and Percentage Receiving Institutional Aid), Private Nonprofit Four-Year Institutions, 2011-12",
   "axis": {
     "rotated": true,
     "y": {
-      "label": "Dependent undergraduate student income quartiles",
       "tick": {
-        "format": "dollar"
+        "format": "$s"
       }
     },
     "x": {

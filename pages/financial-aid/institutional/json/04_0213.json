@@ -19,7 +19,7 @@
       ]
     ],
     "labels": {
-      "format": "dollar"
+      "format": "$s"
     },
     "groups": [
       [
@@ -38,17 +38,17 @@
     "padding": {"top": 0, "bottom": 0},
   	"max": 1800,
       "tick": {
-        "format": "dollar",
+        "format": "$s",
         "count": 3
       }
     },
     "x": {
       "type": "category",
       "categories": [
-        "Lowest (38%)",
-        "Second (38%)",
-        "Third (30%)",
-        "Highest (25%)"
+        "Lowest",
+        "Second",
+        "Third ",
+        "Highest"
       ],
       "label": "Dependent students' family income quartile"
     }

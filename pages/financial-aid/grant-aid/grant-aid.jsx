@@ -34,7 +34,7 @@ let singlepage = (
     <Graph file={require('./json/04_0060.json')}/>
   <h2>By Income and Dependency Status</h2>
     <p><strong>Independent and dependent students are equally likely to receive grant aid, but independent students are more likely to receive federal grants, and dependent students are more likely to receive each of the other types of grant.</strong></p>
-    <Multiples title="Grant Aid by Source for Independent and Dependent Students, by Sector, 2011–12" source="NPSAS, 2012.">
+    <Multiples title="Grant Aid by Source for Independent and Dependent Students, by Sector, 2011-12" source="NPSAS 2012.">
         <Graph file={require('./json/04_0071.json')} small="true"/>
         <Graph file={require('./json/04_0072.json')} small="true"/>
     </Multiples>

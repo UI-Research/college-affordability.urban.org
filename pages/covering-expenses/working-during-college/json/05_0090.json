@@ -1,6 +1,4 @@
 {
-  "customHideLabel": true,
-  "hideTooltip": true,
   "title": "Distribution of Hours Worked, Full-Time Full-Year Undergraduates, 2011\u201312",
   "axis": {
     "x": {
@@ -13,7 +11,7 @@
     "rotated": true,
     "y": {
       "padding": {"top": 0, "bottom": 0},
-      "max": 1.05,
+      "max": 1,
       "tick": {
         "format": "percent"
       }
@@ -21,7 +19,7 @@
   },
   "metadata": {
     "notes": null,
-    "source": "National Postsecondary Student Aid Study (NPSAS), 2012. "
+    "source": "National Postsecondary Student Aid Study 2012 "
   },
   "data": {
     "columns": [

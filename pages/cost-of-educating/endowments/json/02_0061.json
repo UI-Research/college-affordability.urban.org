@@ -12,7 +12,7 @@
       ]
     ],
     "labels": {
-      "format": "dollar"
+      "format": "$.2s"
     }
   },
   "title": "Private nonprofit four-year institutions by share of applicants admitted",
@@ -37,7 +37,7 @@
       "padding": {"top": 0, "bottom": 0},
       "max": 25000,
       "tick": {
-        "format": "dollar",
+        "format": "$.2s",
         "count": 6
       }
     }

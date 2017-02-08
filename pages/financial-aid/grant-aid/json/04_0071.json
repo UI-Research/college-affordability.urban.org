@@ -1,7 +1,7 @@
 {
   "series": [
     "Federal grants",
-    "Veterans and military",
+    "Veterans' and military",
     "State grants",
     "Institutional grants",
     "Employer or private grants"
@@ -10,11 +10,11 @@
   "data": {
     "groups": [
       [
-        "Federal grants",
-        "Veterans and military",
-        "State grants",
-        "Institutional grants",
-        "Employer or private grants"
+        "Federal Grants",
+        "Veterans' and Military",
+        "State Grants",
+        "Institutional Grants",
+        "Employer or Private Grants"
       ]
     ],
     "labels": {
@@ -22,35 +22,35 @@
     },
     "columns": [
       [
-        "Federal grants",
+        "Federal Grants",
         3500,
         3200,
         3200,
         3500
       ],
       [
-        "Veterans and military",
+        "Veterans' and Military",
         900,
         1700,
         500,
         1400
       ],
       [
-        "State grants",
+        "State Grants",
         900,
         1000,
         400,
         100
       ],
       [
-        "Institutional grants",
+        "Institutional Grants",
         900,
         4700,
         200,
         100
       ],
       [
-        "Employer or private grants",
+        "Employer or Private Grants",
         400,
         1800,
         200,
@@ -63,9 +63,9 @@
     "rotated": true,
     "x": {
       "categories": [
-        "Public four-year ",
-        "Private four-year ",
-        "Public two-year ",
+        "Public 4 year ",
+        "Private 4 year ",
+        "Public 2 year ",
         "For-profit "
       ],
       "type": "category"
@@ -81,7 +81,7 @@
   },
   "metadata": {
     "notes": null,
-    "source": "NPSAS, 2012. "
+    "source": "NPSAS 2012. "
   },
   "padding": {"right": 20}
 }

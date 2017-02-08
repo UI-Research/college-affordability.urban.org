@@ -1,33 +1,53 @@
+
 {
-  "series": [
-    "Public four-year in-state",
-    "Public four-year out-of-state",
-    "Private nonprofit four-year",
-    "For-profit",
-    "Public two-year"
-  ],
-  "data": {
-    "labels": {
-      "format": "dollar"
+  "axis": {
+    "x": {
+      "type": "category",
+      "categories": [
+        "Tuition",
+        "Debt",
+        "Tuition",
+        "Debt",
+        "Tuition",
+        "Debt",
+        "Tuition",
+        "Debt",
+        "Tuition",
+        "Debt"
+      ]
     },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    },
+    "rotated": false
+  },
+  "data": {
+    "type": "bar",
     "sets": {
-      "set3": [
-        "Private nonprofit four-year",
+      "set4": [
+        "For-profit",
         [
           [
+            "2 years",
+            176938.587,
+            48423.8651
+          ],
+          [
+            "3 years",
+            35828.982,
+            28304.136
+          ],
+          [
             "4 years",
-            117959.058,
-            32282.5768
+            53743.473,
+            42456.204
           ],
           [
             "5 years",
-            147448.8225,
-            40353.221
-          ],
-                    [
-            "6 years",
-            176938.587,
-            48423.8651
+            71657.964,
+            56608.272
           ]
         ]
       ],
@@ -44,10 +64,31 @@
             41051.325,
             24354.0832
           ],
-                    [
+          [
             "6 years",
             49261.59,
             29224.8999
+          ]
+
+        ]
+      ],
+      "set3": [
+        "Private nonprofit four-year",
+        [
+          [
+            "4 years",
+            117959.058,
+            32282.5768
+          ],
+          [
+            "5 years",
+            147448.8225,
+            40353.221
+          ],
+          [
+            "6 years",
+            176938.587,
+            48423.8651
           ]
         ]
       ],
@@ -64,37 +105,11 @@
             93478.455,
             43321.8334
           ],
-                    [
+          [
             "6 years",
             112174.146,
             51986.2001
           ]
-        ]
-      ],
-      "set4": [
-        "For-profit",
-        [
-          [
-            "2 years",
-            35829,
-            28304
-          ],
-          [
-            "3 years",
-            53743,
-            42456
-          ],
-          [
-            "4 years",
-            71658,
-            56608
-          ],
-          [
-            "5 years",
-            89572,
-            70760
-          ]
-
         ]
       ],
       "set5": [
@@ -118,36 +133,20 @@
         ]
       ]
     },
-    "type": "bar"
+    "labels": {
+      "format": "dollar"
+    }
   },
-  "axis": {
-    "x": {
-      "categories": [
-        "Tuition",
-        "Debt",
-        "Tuition",
-        "Debt",
-        "Tuition",
-        "Debt",
-        "Tuition",
-        "Debt",
-        "Tuition",
-        "Debt"
-      ],
-      "type": "category"
-    },
-    "y": {
-      "tick": {
-        "format": "dollar"
-      }
-    },
-    "rotated": false
-  },
+  "series": [
+    "Public four-year in-state",
+    "Public four-year out-of-state",
+    "Private nonprofit four-year",
+    "For-profit",
+    "Public two-year"
+  ],
   "metadata": {
     "source": "NPSAS ",
     "notes": null
   },
-  "title": "Total published tuition and fee price and total debt based on time to degree",
-  "imageOverride": "Low-Income Dependent Students___ Total published tuition and fee price and total debt based on time to degree"
-,"forceMediumHeight": true
+  "title": "Total published tuition and fee price and total debt based on time to degree"
 }

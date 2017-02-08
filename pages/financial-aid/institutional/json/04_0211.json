@@ -9,14 +9,14 @@
       "padding": {"top": 0, "bottom": 0},
       "max": 1800,
       "tick": {
-        "format": "dollar",
+        "format": "$s",
         "count": 3
       }
     },
     "x": {
       "type": "category",
       "label": "All dependent students",
-      "categories": ["All dependent            students (34%)"]
+      "categories": ["All dependent            students"]
     }
   },
   "data": {
@@ -28,7 +28,7 @@
     ],
     "type": "bar",
     "labels": {
-      "format": "dollar"
+      "format": "$s"
     },
     "columns": [
       [

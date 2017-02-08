@@ -1,7 +1,7 @@
 {
   "data": {
     "labels": {
-      "format": "number"
+      "format": "dollar"
     },
     "columns": [
       [
@@ -134,14 +134,14 @@
     "For-profit"
   ],
   "metadata": {
-    "source": "United States Department of Education <em>Digest of Education Statistics</em>.",
+    "source": "United States Department of Education Digest of Education Statisitcs",
     "notes": null
   },
   "axis": {
     "y": {
     "padding": {"bottom": 15}, 
       "tick": {
-        "format": "number"
+        "format": "dollar"
       }
     },
     "rotated": false,

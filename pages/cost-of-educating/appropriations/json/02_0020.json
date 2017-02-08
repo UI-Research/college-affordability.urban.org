@@ -1,0 +1,66 @@
+{"overrideTickCount": true,
+  "data": {
+    "type": "line",
+    "columns": [
+      [
+        "Appropriations per tax revenue",
+
+        0.0594,
+        0.0611,
+        0.0639,
+        0.0619,
+        0.0567,
+        0.0545,
+        0.0535,
+        0.054,
+        0.056,
+        0.0577,
+        0.0577,
+        0.055,
+        0.049,
+        0.0471,
+        null
+ 
+      ]
+    ]
+  },
+  "title": "Percentage of State and Local Tax Revenues Funding Higher Education",
+  "metadata": {
+    "notes": null,
+    "source": "SHEEO; State and Local Finance Initiative"
+  },
+  "series": "Appropriations per tax revenue",
+  "axis": {
+    "rotated": false,
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    },
+    "x": {
+      "categories": [
+
+        "'99\u2013'00",
+        "'00\u2013'01",
+        "'01\u2013'02",
+        "'02\u2013'03",
+        "'03\u2013'04",
+        "'04\u2013'05",
+        "'05\u2013'06",
+        "'06\u2013'07",
+        "'07\u2013'08",
+        "'08\u2013'09",
+        "'09\u2013'10",
+        "'10\u2013'11",
+        "'11\u2013'12",
+        "'12\u2013'13",
+        ""
+      
+      ], 
+      "type": "category",
+      "tick": {
+        "count": 8
+      }
+    }
+  }
+}

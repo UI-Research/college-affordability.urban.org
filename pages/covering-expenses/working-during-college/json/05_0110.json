@@ -1,4 +1,4 @@
-{"hideTooltip": true,
+{
   "axis": {
     "y": {
       "padding": {"top": 0, "bottom": 0},
@@ -23,7 +23,7 @@
     }
   },
   "metadata": {
-    "source": "NPSAS, 2012. ",
+    "source": "National Postsecondary Student Aid Study 2012 ",
     "notes": null
   },
   "title": "Percentage of Undergraduate Students Participating in Federal Work-Study, 2011\u201312",

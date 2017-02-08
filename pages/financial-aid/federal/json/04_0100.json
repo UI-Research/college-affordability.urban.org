@@ -1,14 +1,14 @@
 {
   "metadata": {
     "notes": null,
-    "source": "Sandy Baum, Jennifer Ma, Matea Pender, and Meredith Welch, <em>Trends in Student Aid 2016</em> (New York: College Board, 2016)."
+    "source": "Baum et al, Trends in Student Aid 2016, The College Board"
   },
   "axis": {
     "y": {
 
 
       "tick": {
-        "format": "dollar"
+        "format": "$.2s"
       }
     },
     "x": {
@@ -59,7 +59,7 @@
     },
     "rotated": false
   },
-  "title": "Average and Maximum Pell Grant over Time",
+  "title": "Average and Maximum Pell Grant Over Time",
   "series": [
     "Maximum Pell (2015 dollars)",
     "Average Pell (2015 dollars)"
@@ -157,7 +157,7 @@
       ]
     ],
     "labels": {
-      "format": "dollar"
+      "format": "$.2s"
     }
   },
   "padding": {"left": 50}

@@ -1,11 +1,11 @@
-{"hideTooltip": true,
+{
   "wideSmallMultiple": true,
   "axis": {
     "x": {
       "categories": [
         "Less than $30,000 (91%)",
-        "$30,000–$64,999 (64%)",
-        "$65,000–$105,999 (7%)",
+        "$30,000 - $64,999 (64%)",
+        "$65,000 - $105,999 (7%)",
         "$106,000 or higher (0%)"
       ],
       "type": "category"
@@ -14,7 +14,7 @@
   "max": 8000,
   "padding": {"top": 0, "bottom": 0},
   "tick": {
-    "format": "dollar",
+    "format": "$s",
     "count": 5
   }
 },
@@ -33,7 +33,7 @@
       ]
     ],
     "labels": {
-      "format": "dollar"
+      "format": "$s"
     }
   },
   "metadata": {

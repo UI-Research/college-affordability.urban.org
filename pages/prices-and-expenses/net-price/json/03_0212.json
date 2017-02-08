@@ -1,5 +1,4 @@
-{"wideSmallMultiple": true,
-"multipleCustomLabelPosition": true,
+{
 
   "title": "Private nonprofit four-year",
   "axis": {
@@ -14,7 +13,6 @@
     },
     "rotated": true,
     "x": {
-      "label": "Parent Income Quartile",
       "type": "category",
       "categories": [
         "Lowest",

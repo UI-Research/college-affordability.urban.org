@@ -1,5 +1,12 @@
 {
+  "series": [
+    "25th percentile",
+    "75th percentile",
+    "Median"
+  ],
   "data": {
+    "labels": false,
+    "type": "bar",
     "columns": [
       [
         "25th percentile",
@@ -9,37 +16,34 @@
         15006
       ],
       [
-        "Median",
-        23194,
-        23194,
-        21177,
-        20480
-      ],
-      [
         "75th percentile",
         31250,
         30870,
         28125,
         27649
+      ],
+      [
+        "Median",
+        23194,
+        23194,
+        21177,
+        20480
       ]
-    ],
-    "type": "bar",
-    "groups": [
-  [
-    "25th percentile",
-    "Median",
-    "75th percentile"
     ]
-  ]
   },
-  "title": "Median earnings of men by race",
-  "series": [
-    "25th percentile",
-    "Median",
-    "75th percentile"
-  ],
+  "metadata": {
+    "notes": null,
+    "source": "IPUMS 2014 ACS five-year sample (2010\u201314)."
+  },
   "axis": {
-    "rotated": true,
+   "y": {
+      "padding": {"top": 0, "bottom": 0},
+      "max": 40000,
+      "tick": {
+        "format": "dollar",
+        "count": 5
+      }
+    },
     "x": {
       "categories": [
         "White",
@@ -49,17 +53,7 @@
       ],
       "type": "category"
     },
-   "y": {
-      "padding": {"top": 0, "bottom": 0},
-      "max": 80000,
-      "tick": {
-        "format": "dollar",
-        "count": 3
-      }
-    }
+    "rotated": true
   },
-  "metadata": {
-    "notes": null,
-    "source": "IPUMS 2014 ACS five-year sample (2010\u201314)."
-  }
+  "title": "Median earnings of men by race"
 }

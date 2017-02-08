@@ -39,7 +39,7 @@ let singlepage = (
     <h2>By Attendance Pattern</h2>
       <p>About half of all undergraduates are enrolled exclusively full time and 10 percent are enrolled exclusively less than half time. Over 80 percent of students enrolled less than half time are in the public two-year sector, compared with 29 percent of those who are enrolled full time.</p>
       <Graph file={require('./json/01_0130.json')}/>
-      <p>Very few students who enroll part time the first year they are in college attend institutions other than public two-year colleges. Approximately forty-percent of full-time first-year students were in this sector in 2011–12.</p>
+      <p>Very few students who enroll part time the first year they are in college attend institutions other than public two-year colleges.  Forty-percent of full-time first-year students were in this sector in 2011–12.</p>
       <Graph file={require('./json/01_0140.json')}/>   
   </div>
 );

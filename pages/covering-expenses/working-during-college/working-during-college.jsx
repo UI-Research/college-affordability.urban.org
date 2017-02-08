@@ -13,7 +13,7 @@ let singlepage = (
   <div>
     <h1>Working during college</h1>
       <p>Most students work at least part time while they are in college. In 2011–12, 66 percent of undergraduates—and 62 percent of full-time students—worked either full time or part time while they were enrolled. Twenty-seven percent of all undergraduates, including both full- and part-time students, had full-time jobs.</p>
-      <p>It is not unreasonable to expect that undergraduate students can earn some money while they are in school, but the portion of their expenses they can cover this way depends both on the hourly wage and on how many hours they can work without interfering with their studies.</p>
+      <p>It is not unreasonable to expect that undergraduate students can earn some money while they are in school, but the portion of their expenses they can cover this way depends both on the <a href="#working_at_the_minimum_wage">hourly wage</a> and on how many hours they can work without interfering with their studies. </p>
       <p>It is difficult to measure the effect of working while in college on a student&rsquo;s experience, but research suggests that although working part time—up to about 15 hours per week for full-time students—does not damage a student&rsquo;s academic performance, working full time or close to full time is likely to interfere with studying and timely graduation.</p>
       <p>Many students enroll in college part time to reserve more time to work. But those who consistently take this path have much more <a href="../time-to-degree">difficulty persisting to graduation</a>. And even if they do earn degrees, they have diminished the amount of time they will have in the workforce earning college-graduate wages.</p>
       <Box>
@@ -23,7 +23,7 @@ let singlepage = (
         <p><em>For students with dependents, allowances are much higher and depend on family circumstances. And for those earning more than the allowances, higher earnings have less effect on aid eligibility than for dependent and single independent students. The expected contribution from income increases between 22 and 47 cents for each additional dollar earned, depending on the student&rsquo;s income level.</em></p>
       </Box>
     <h2>Working at the Minimum Wage</h2>
-      <p><strong>Because college prices have risen and the minimum wage has declined after adjusting for inflation, it has become much more difficult over time for students to cover costs by working part time during college.</strong></p>
+      <p><strong>Because college prices have risen and the minimum wage has declined, it has become much more difficult over time for students to cover costs by working part time during college.</strong></p>
       <p>In the 1960s and 1970s, a student working 10 hours a week for 38 weeks during the college term and 35 hours a week for 12 weeks over the summer—a total of 800 hours per year—at the minimum wage could earn enough to pay for tuition and fees as well as most of the room and board charges at the average public four-year college.</p>
       <p>Since then, college prices have risen rapidly and the minimum wage has declined in real terms. <strong>The same amount of work at the minimum wage would now cover about one-third of the average public four-year college published charges.</strong> Financial aid has become more generous and <a href="../../prices-and-expenses/net-price">net prices</a> have not risen as fast as published prices, but &ldquo;working your way through college&rdquo; is not the viable option it once was.</p>
       <Graph file={require('./json/05_0060.json')}/>
@@ -43,7 +43,7 @@ let singlepage = (
       <p>The FWS program is part of the campus-based financial aid system. The federal government provides funds to institutions, which add some of their own dollars and provide part-time jobs for undergraduate and graduate students. Most work-study jobs are on campus, but others are at nonprofit organizations off campus or, occasionally, for-profit organizations providing jobs related to a student&rsquo;s program of study.</p>
       <p>The formula allocating campus-based aid to institutions is largely based on program participation in the 1970s and results in larger allocations of FWS per student at older private colleges and institutions with higher estimated costs of attendance. Institutions decide how to distribute the funds among eligible students. <a href="https://www.nasfaa.org/uploads/documents/ektron/02449fc6-a14e-40f4-b9de-e22d19252947/80d69b186d124195b22a59471714e3d14.pdf" target="_blank">Criticism of this practice</a> is widespread because it leaves many high-need students who are enrolled in institutions serving large numbers of low-income students without access to this form of assistance.</p>
       <Graph file={require('./json/05_0110.json')}/>
-
+      <p><a name="fn1"></a><sup>1 </sup>Sandy Baum, Jennifer Ma, Matea Pender, and Meredith Welch, <em>Trends in Student Aid 2016 (New York: College Board, 2016).</em></p> 
   </div>
 );
 

@@ -20,7 +20,7 @@ let singlepage = (
       <p>The earnings premium is an important component of college affordability because students can pay for college out of their post-college earnings, not just out of the funds they have available when they are enrolled. <a href="../../covering-expenses/borrowing">Borrowing</a> against future income to pay the bills while in college opens up educational opportunities that would not otherwise be available.<em><br clear="all" /></em></p>
     <h2>Over Time</h2>
       <p><strong>Median earnings have not risen for young people at any level of education in recent years, but the gap between those with college degrees and those with only a high school education continues to grow. </strong></p>
-      <p>In 2015, median earnings for individuals ages 25 to 34 whose highest degree was a bachelor&rsquo;s degree were 70 percent higher than the median for high school graduates. During the economic downturn from 2008 to 2012, gaps by educational attainment widened as those with no college education experienced steeper declines in earnings.</p>
+      <p>In 2014, median earnings for individuals ages 25 to 34 whose highest degree was a bachelor&rsquo;s degree were 70 percent higher than the median for high school graduates. During the economic downturn from 2008 to 2012, gaps by educational attainment widened as those with no college education experienced steeper declines in earnings.</p>
       <Graph file={require('./json/06_0040.json')} />
     <h2>Variation by Age</h2>
       <p><strong>The earnings gap between high school graduates and college graduates is larger for older people because earnings tend to increase more rapidly for individuals with higher levels of education.</strong></p>

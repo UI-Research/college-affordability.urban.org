@@ -1,7 +1,7 @@
 {
   "axis": {
     "x": {
-      "label": "Dependency status",
+      "label": "Dependency Status",
       "type": "category",
       "categories": [
         "Independent     student",

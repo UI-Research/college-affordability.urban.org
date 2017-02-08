@@ -7,9 +7,9 @@
     },
     "y": {
       "padding": {"top": 0, "bottom": 0},
-      "max": 150000,
+      "max": 120000,
       "tick": {
-      	"count": 3,
+      	"count": 4,
         "format": "dollar"
       }
     },

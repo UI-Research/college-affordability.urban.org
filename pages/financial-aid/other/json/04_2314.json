@@ -21,10 +21,10 @@
       "label": "Dependent students' parents' income",
       "type": "category",
       "categories": [
-        "Less than           $30,000",
-        "$30,000\u2013          $64,999",
-        "$65,000\u2013       $105,999",
-        "$106,000            or more"
+        "Private             four-year",
+        "Public              four-year",
+        "Public                two-year",
+        "For-profit"
       ]
     },
     "y": {

@@ -31,7 +31,7 @@ let singlepage = (
       <p>Both public and private nonprofit institutions award a combination of &ldquo;need based&rdquo; institutional grants, which depend on financial circumstances, and &ldquo;non-need based&rdquo; or &ldquo;merit-based&rdquo; institutional grants, which are based on other characteristics. Lower-income students receive more need-based aid than their peers from more affluent families, but even students from families in the highest-income quartile receive some need-based aid. Non-need–based aid goes to students from all income backgrounds.</p>
       <p><strong>At the highest-priced private nonprofit colleges and universities, where most aid is need-based, students from low-income families receive significantly more institutional grant aid than their more affluent classmates, but this is not the case at lower-priced institutions in the sector.</strong></p>
       <Graph file={require('./json/04_0200.json')}/>
-      <p><strong>At the highest-tuition private nonprofit colleges and universities, students from low-income families receive much more institutional grant aid than those from higher-income families. However, at lower-price institutions in the sector, there is much less variation in the grant aid received by students from families with different income levels. In 2011-12, students from the lowest family income quartile received more than twice as much institutional grant aid, on average, as those from the highest family income quartile. But in the half of institutions with the lowest prices, grant aid was similar for these two groups.</strong></p>
+      <p><strong>The average institutional grant aid received by full-time students in public four-year colleges and universities in 2011–12 differed by only a few hundred dollars across dependent students with different family income levels.</strong></p>
       <Multiples title="Average Need-Based and Non-Need-Based Grant Aid per Full-Time Student (and Percentage Receiving Institutional Aid), Public Four-Year Institutions, 2011-12" source="Baum et al, Trends in Student Aid 2014, The College Board, based on NPSAS 2012.">
         <Graph file={require('./json/04_0211.json')} small="true"/>
         <Graph file={require('./json/04_0212.json')} small="true"/>
@@ -39,7 +39,6 @@ let singlepage = (
        </Multiples>
 
   </div>
-  
 );
 
 let specifications = {

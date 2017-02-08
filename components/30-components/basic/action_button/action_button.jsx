@@ -9,14 +9,12 @@ if (util.canUseDOM()) {
 const ActionButton = React.createClass({
   propTypes: {
     href: React.PropTypes.string,
-    title: React.PropTypes.string,
-    download: React.PropTypes.string
+    title: React.PropTypes.string
   },
   getDefaultProps: function() {
     return {
       href: '',
-      title: '',
-      download: ''
+      title: ''
     };
   },
   render: function() {
@@ -28,7 +26,7 @@ const ActionButton = React.createClass({
     }
 
     return (
-      <a href={this.props.href} className={className} target="_blank" download={this.props.download}>{this.props.title} <i className="fa fa-download"></i></a>
+      <a href={this.props.href} className={className} target="_blank">{this.props.title} <i className="fa fa-download"></i></a>
     );
   }
 });
