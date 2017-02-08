@@ -147,15 +147,15 @@
     "x": {
       "type": "category",
       "categories": [
-        "Tuition",
+        "Tuition and fees",
         "Debt",
-        "Tuition",
+        "Tuition and fees",
         "Debt",
-        "Tuition",
+        "Tuition and fees",
         "Debt",
-        "Tuition",
+        "Tuition and fees",
         "Debt",
-        "Tuition",
+        "Tuition and fees",
         "Debt"
       ]
     },
@@ -166,7 +166,7 @@
     },
     "rotated": false
   },
-  "title": "Total published tuition and fee price and total debt based on time to degree",
+  "title": "otal published tuition and fee price and total debt based on time to degree",
   "metadata": {
     "notes": null,
     "source": "NPSAS "
