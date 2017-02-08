@@ -79,9 +79,7 @@ export class BaseGraph extends Component {
       // Identify DOM element we want to apply the graph to.
       data.bindto = '#' + this.props.id;
 
-      //add a blank data point at the end of line/area charts to avoid cut of
-      //If/when this issue https://github.com/UI-Research/college-affordability.urban.org/issues/153
-      // is resolved, should add a test to not add extra point if end of col == null 
+      //add a blank data point at the end of line/area charts to avoid cut off
       if (_.includes(['line', 'area'], data.data.type) && !data.data.sets && !data.overrideTickCount) {
         data.axis.x.categories.push("")
         if(!data.noAxisPadding){
