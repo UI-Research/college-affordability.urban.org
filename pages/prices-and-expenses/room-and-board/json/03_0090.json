@@ -67,8 +67,8 @@
     }
   },
   "metadata": {
-    "notes": "Institutions are weighted by full-time undergraduate fall enrollment. Based on published room and board from IPEDS for 2000-01 through 2014-15 and percentage increase from 2014-15 to 2015-16 from Ma et al, Trends in College Pricing 2015, The College Board.",
-    "source": "Based on published room and board costs from IPDES for 2000\u201301 through 2014\u201315 and the percentage increase from 2014\u201315 to 2016\u201317 from Jennifer Ma, Sandy Baum, Matea Pender, and Meredith Welch, Trends in College Pricing 2016 (New York: College Board, 2016).\r\nNote: Institutions are weighted by full-time equivalent undergraduate fall enrollment.\r\n"
+    
+    "source": "Baum et al, Trends in College Pricing 2016."
   },
   "series": [
     "Private nonprofit four-year",

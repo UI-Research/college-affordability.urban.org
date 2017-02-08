@@ -3,7 +3,7 @@
     "rotated": true,
     "x": {
       "type": "category",
-      "label": "Dependency Status",
+      "label": "Dependency status",
       "categories": [
         "Independent",
         "Dependent"
@@ -13,14 +13,14 @@
      "max": 6000,
       "padding": {"top": 0, "bottom": 0},
       "tick": {
-        "format": "$s",
+        "format": "dollar",
         "count": 4
       }
     }
   },
   "data": {
     "labels": {
-      "format": "$s"
+      "format": "dollar"
     },
     "type": "bar",
     "columns": [

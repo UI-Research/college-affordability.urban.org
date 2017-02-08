@@ -1,4 +1,5 @@
-{
+{"wideSmallMultiple": true,
+"multipleCustomLabelPosition": true,
 
   "axis": {
     "rotated": true,
@@ -11,6 +12,7 @@
       }
     },
     "x": {
+      "label": "Parent Income Quartile",
       "categories": [
         "Lowest",
         "Lower middle",

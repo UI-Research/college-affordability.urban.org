@@ -1,4 +1,4 @@
-{
+{"padding": {"top": 30},
   "metadata": {
     "source": "National Postsecondary Student Aid Study 2012 ",
     "notes": null
@@ -7,10 +7,10 @@
     "rotated": true,
     "x": {
       "categories": [
-        "Less than                                      $30,000",
-        "$30,000–                                       $64,999",
-        "$65,000–                                       $105,999",
-        "$106,000                                       or more"
+        "Less than $30,000 (9%)",
+        "$30,000– $64,999 (13%)",
+        "$65,000– $105,999 (16%)",
+        "$106,000 or more (14%)"
       ],
       "type": "category",
       "label": "Family income"
@@ -39,5 +39,6 @@
       ]
     ]
   },
-  "series": "Loans borrowed"
+  "series": "Loans borrowed",
+  "wideSmallMultiple":true
 }

@@ -11,7 +11,7 @@ import util from 'util.jsx';
 
 let singlepage = (
   <div>
-    <h1>What is college?</h1>
+    <h1>What Is college?</h1>
       <p>Drawing conclusions about &ldquo;college affordability&rdquo; is complicated by the many different types of colleges there are. Students pursue a variety of credentials that require different amounts of time and have different expected returns. Both the cost of higher education and whether it is financially feasible for students depend on the credentials they are pursuing and the institutions in which they enroll.</p>
       <p>Media coverage of higher education tends to focus on the colleges on either end of the spectrum—those with billion-dollar endowments that regularly top rankings lists or those shutting down because of poor performance. But in reality, most students go to colleges that sit somewhere in between those two extremes. </p>
       <p>Along that spectrum there are different kinds of <a href="institutions">institutions</a> and programs students can pick from. Colleges can be nonprofit or for profit, private or public, and doctoral or master&rsquo;s universities or bachelor&rsquo;s or associate colleges. Students can earn a bachelor&rsquo;s degree, an associate degree, or a certificate. </p>
@@ -22,7 +22,7 @@ let singlepage = (
 
 let specifications = {
   'name': 'what-is-college',
-  'title': 'What is College',
+  'title': 'What Is College',
   'content': <SinglePage content={singlepage} />
 };
 

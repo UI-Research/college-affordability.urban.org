@@ -20,7 +20,7 @@
     	"max": 4000,
     	 "padding": {"top": 0, "bottom": 0},
       "tick": {
-        "format": "$.2s",
+        "format": "dollar",
         "count": 5
       }
     }

@@ -37,7 +37,11 @@ module.exports = {
   },
   // Converts text into computer-friendly labels.
   machineName: (text) => {
-    return text.replace(/[^a-zA-Z0-9]/g, '_').toLowerCase();
+    if(typeof(text) == "undefined"){
+      return undefined
+    }else{
+      return text.slice(0,200).replace(/[^a-zA-Z0-9]/g, '_').toLowerCase();
+    }
   },
   // Gets the width of a breakpoint by size.
   breakpointWidth: (size) => {

@@ -32,7 +32,7 @@
         "Dependent",
         "Independent"
       ],
-      "label": "Dependency Status",
+      "label": "Dependency status",
       "type": "category"
     }
   }

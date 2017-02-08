@@ -4,14 +4,14 @@
     "rotated": true,
     "x": {
       "label": "All",
-      "categories": ["All Under-                   graduates (43%)"],
+      "categories": ["All Undergraduates (43%)"],
       "type": "category"
     },
     "y": {
       "padding": {"top": 0, "bottom": 0},
       "max": 10000,
       "tick": {
-        "format": "$s",
+        "format": "dollar",
         "count": 3
       }
     }

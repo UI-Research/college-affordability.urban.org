@@ -7,14 +7,14 @@
     "rotated": true,
     "x": {
       "type": "category",
-      "categories": ["Independent               students"],
+      "categories": ["Independent               students (34%)"],
       "label": "Independent students"
     },
     "y": {
     "padding": {"top": 0, "bottom": 0},
   	"max": 1800,
       "tick": {
-        "format": "$s",
+        "format": "dollar",
         "count": 3
       }
     }
@@ -22,7 +22,7 @@
   "data": {
     "type": "bar",
     "labels": {
-      "format": "$s"
+      "format": "dollar"
     },
     "groups": [
       [

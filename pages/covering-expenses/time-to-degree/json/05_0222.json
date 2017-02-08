@@ -1,8 +1,8 @@
 {
   "series": [
-    "4 years",
-    "5 years",
-    "6 years"
+    "Four years",
+    "Five years",
+    "Six years"
   ],
   "metadata": {
     "source": "Baum et al., Trends in Student Aid 2016.",
@@ -11,15 +11,15 @@
   "axis": {
     "y": {
       "padding": {"top": 0, "bottom": 0},
-      "max": 800000,
+      "max": 500000,
       "tick": {
         "format": "dollar",
-        "count": 5
+        "count": 3
       }
     },
     "rotated": true,
     "x": {
-      "label": "Public four-year in-state",
+      "label": "Private nonprofit four-year",
       "type": "category",
       "categories": [
         "Tuition and fees",
@@ -30,31 +30,25 @@
   },
   "data": {
     "type": "bar",
-    "groups": [
-      [
-        "4 years",
-        "5 years",
-        "6 years"
-      ]
-    ],
+
     "labels": {
       "format": "dollar"
     },
     "columns": [
       [
-        "4 years",
+        "Four years",
         133920,
         47560,
         181480
       ],
       [
-        "5 years",
+        "Five years",
         167400,
         59450,
         226850
       ],
       [
-        "6 years",
+        "Six years",
         200880,
         71340,
         272220

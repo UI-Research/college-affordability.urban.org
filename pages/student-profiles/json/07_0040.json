@@ -1,5 +1,4 @@
-
-{
+{ 
   "data": {
     "sets": {
       "set4": [
@@ -97,21 +96,7 @@
       "set1": [
         "Public four-year in-state",
         [
-          [
-            "1 year",
-            7706.055,
-            6951.8973
-          ],
-          [
-            "2 years",
-            15412.11,
-            13903.7947
-          ],
-          [
-            "3 years",
-            23118.165,
-            20855.692
-          ],
+        
           [
             "4 years",
             30824.22,
@@ -172,4 +157,5 @@
     "notes": null,
     "source": "NPSAS "
   }
+,"forceMediumHeight": true
 }

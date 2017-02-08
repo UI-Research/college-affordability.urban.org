@@ -31,7 +31,7 @@
       "padding": {"top": 0, "bottom": 0},
       "max": 10000,
       "tick": {
-        "format": "$s",
+        "format": "dollar",
         "count": 3
       }
     },
