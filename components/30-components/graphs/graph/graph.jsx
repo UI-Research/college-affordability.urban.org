@@ -79,15 +79,17 @@ export class BaseGraph extends Component {
       // Identify DOM element we want to apply the graph to.
       data.bindto = '#' + this.props.id;
 
-      //add a blank data point at the end of line/area charts to avoid cut of
-      //If/when this issue https://github.com/UI-Research/college-affordability.urban.org/issues/153
-      // is resolved, should add a test to not add extra point if end of col == null 
+      //add a blank data point at the end of line/area charts to avoid cut off
       if (_.includes(['line', 'area'], data.data.type) && !data.data.sets && !data.overrideTickCount) {
         data.axis.x.categories.push("")
-        data.axis.x.categories.unshift("")
+        if(!data.noAxisPadding){
+          data.axis.x.categories.unshift("")
+        }
         data.data.columns.forEach(function(arr){
           arr.push(null)
-          arr.splice(1, 0, null)
+          if(!data.noAxisPadding){
+            arr.splice(1, 0, null)
+          }
         })
         data.axis.x.padding = {"left" : 100, "right": 100}
       }
@@ -709,7 +711,9 @@ export class BaseGraph extends Component {
       return d3.select(this[0][last]);
     };
 
-
+    if(data.noAxisPadding){
+      d3.select(`#${object.props.id}.c-line__container`).classed("noAxisPadding",true)
+    }
     if (data.axis) {
       if(!data.rotated && data.axis.x && data.axis.x.label){
         if(data.customLabelPosition == true){
@@ -733,7 +737,15 @@ export class BaseGraph extends Component {
       }
 
       if (data.axis.rotated && data.axis.x && data.axis.x.label) {
-        let dx = (data.customLabelPosition == true) ? 110 : 0;
+        let dx;
+        if(data.multipleCustomLabelPosition == true){
+          dx = 20
+        }
+        else if(data.customLabelPosition == true){
+          dx = 110
+        }else{
+          dx = 0
+        }
         // Create container for x axis
         const container = d3.select(`#${object.props.id}`).insert('svg', ':first-child')
           .attr('width', '100%')
@@ -896,7 +908,7 @@ export class BaseGraph extends Component {
       var barBounds = barGroup.querySelectorAll(".c3-bar")[indexNum].getBoundingClientRect()
       var textBounds = this.getBoundingClientRect()
       //if label doesn't fit in bar slice, don't show it
-      if(barBounds.width <= textBounds.width -3 || barBounds.height <= textBounds.height -3 || (object.props.file.customHideLabel == true && this.innerHTML == "2%")){
+      if(barBounds.width <= textBounds.width -3 || barBounds.height <= textBounds.height -3 || (object.props.file.customHideLabel == true && this.innerHTML == "2%") || (object.props.file.customHideLabelTwo == true && (this.innerHTML == "3.8%" || this.innerHTML == "3.7%") )){
 
          d3.select(this).attr('style', style + ' fill:' + 'rgba(0,0,0,0)' + ' !important'); 
       }

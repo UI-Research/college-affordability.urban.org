@@ -1,4 +1,4 @@
-{"padding": {"top": 30},
+{
   "wideSmallMultiple": true,
   "data": {
     "columns": [
@@ -30,16 +30,16 @@
     "rotated": true,
     "x": {
       "categories": [
-        "Full-time                            full-year (58%)",
-        "Full-time                            part-year (46%) ",
-        "Part-time                            full-year (36%)",
-        "Part-time                            part-year (21%)"
+        "Full-time full-year (58%)",
+        "Full-time part-year (46%) ",
+        "Part-time full-year (36%)",
+        "Part-time part-year (21%)"
       ],
       "type": "category",
       "label": "Attendance pattern"
     },
     "y": {
-      "padding": {"top": 0, "bottom": 0},
+      
       "max": 10000,
       "tick": {
         "format": "dollar",

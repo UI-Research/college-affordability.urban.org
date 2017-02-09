@@ -5,6 +5,7 @@
     "labels": {
       "format": "dollar"
     },
+    "groups": [["Need-based", "Non-need-based"]],
     "columns": [
       [
         "Need-based",

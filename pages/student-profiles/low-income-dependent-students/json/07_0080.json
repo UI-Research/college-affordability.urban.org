@@ -1,4 +1,27 @@
 {
+  "axis": {
+    "x": {
+      "type": "category",
+      "categories": [
+        "Tuition and fees",
+        "Debt",
+        "Tuition and fees",
+        "Debt",
+        "Tuition and fees",
+        "Debt",
+        "Tuition and fees",
+        "Debt",
+        "Tuition and fees",
+        "Debt"
+      ]
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    },
+    "rotated": false
+  },
   "series": [
     "Public four-year in-state",
     "Public four-year out-of-state",
