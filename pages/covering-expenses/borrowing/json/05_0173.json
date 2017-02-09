@@ -1,43 +1,43 @@
 {
-  "metadata": {
-    "source": "National Postsecondary Student Aid Study 2012 ",
-    "notes": null
-  },
+  "series": "Loans borrowed",
   "axis": {
-    "y": {
-      "padding": {"top": 0, "bottom": 0},
-      "tick": {
-      	"count": 3,
-        "format": "dollar"
-      },
-      "max": 20000
-    },
+"y": {
+  "padding": {"top": 0, "bottom": 0},
+  "tick": {
+    "count": 3,
+    "format": "dollar"
+  },
+  "max": 32000
+},
     "rotated": true,
     "x": {
       "type": "category",
-      "label": "Institution",
       "categories": [
-        "Public four-year (14%)",
-        "Private four-year (19%)",
-        "Public two- year (20%)",
-        "For-profit (4%)"
-      ]
+        "Public four-year (14%) ",
+        "Private nonprofit four-year (20%)",
+        "Public two-year (11%)",
+        "For-profit (35%)"
+      ],
+      "label": "Institution"
     }
   },
-  "series": "Loans borrowed",
   "data": {
+    "type": "bar",
     "labels": {
       "format": "dollar"
     },
-    "type": "bar",
     "columns": [
       [
         "Loans borrowed",
-        11600,
-        14900,
-        9400,
-        12600
+        11719.957,
+        15020.3018,
+        6757.1875,
+        12444.3311
       ]
     ]
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2012 ",
+    "notes": null
   }
 }
