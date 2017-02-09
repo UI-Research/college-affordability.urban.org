@@ -111,6 +111,7 @@
       }
     },
     "x": {
+      "label": "Family income quartile",
       "type": "category",
       "categories": [
         "Lowest",

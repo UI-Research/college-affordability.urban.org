@@ -2,7 +2,7 @@
   "data": {
     "sets": {
       "set2": [
-        "Per recipient",
+        "Per first-time full-time recipient",
         [
           [
             "Remaining (net) tuition and fees",
@@ -58,7 +58,7 @@
   "title": "Average Institutional Grant Aid and Remaining (Net) Tuition and Fees, 2011–12",
   "series": [
     "Per first-time full-time student",
-    "Per recipient"
+    "Per first-time full-time recipient"
   ],
   "axis": {
     "x": {

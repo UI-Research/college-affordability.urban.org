@@ -27,7 +27,7 @@ let singlepage = (
       <p><strong>Average annual per-student borrowing does not vary widely by dependency status and family income level.</strong></p>
       <p>Dependent students from families in the highest income quartile were least likely to borrow in 2011–12, but when they took loans, they borrowed larger amounts, on average, than those from lower- and middle-income families. This is in part because students from higher-income families are more likely to enroll full time and more likely to attend high-price colleges than students from lower-income families. It is also possible that students from higher-income families have other options if they just need a few thousand dollars, so there are fewer borrowers in this group who take relatively small loans.</p>
       <p>Students who attended college part time were much less likely to borrow than those who attended full time, but borrowing limits are the same for full- and part-time students. The part-time students who took loans borrowed an average of only $1,000 less than the full-time borrowers.  </p>
-      <Multiples title="Annual borrowing by student characteristics: averages per borrower and per undergraduate student (with percentage borrowing) in 2011-12" source="NPSAS, 2012.">
+      <Multiples title="Annual Undergraduate Borrowing by Student Characteristics: Averages per Borrower and per Undergraduate Student (with Percentage Borrowing) in 2011–12" source="NPSAS, 2012.">
         <Graph file={require('./json/05_0131.json')} small="true"/>
         <Graph file={require('./json/05_0132.json')} small="true"/>
         <Graph file={require('./json/05_0133.json')} small="true"/>

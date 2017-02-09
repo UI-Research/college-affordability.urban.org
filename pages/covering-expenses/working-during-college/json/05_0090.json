@@ -5,8 +5,8 @@
   "axis": {
     "x": {
       "categories": [
-        "Dependent",
-        "Independent"
+        "Dependent students",
+        "Independent students"
       ],
       "type": "category"
     },
