@@ -5,15 +5,15 @@
     "x": {
       "type": "category",
       "categories": [
-        "All public four-year colleges",
+        "All public four-year",
         "Public research",
-        "Public masters",
-        "All private four-year colleges",
+        "Public master's",
+        "All private four-year",
         "Private nonprofit research",
         "Private nonprofit master's",
         "Private nonprofit bachelor's",
-        "All public two-year colleges",
-        "For-profit colleges"
+        "All public two-year",
+        "For-profit"
       ]
     },
     "y": {
@@ -26,7 +26,7 @@
     }
   },
   "title": "",
-  "subtitle": "Percent",
+  "subtitle": "Percentages",
   "metadata": {
     "source": "IPEDS.",
     "notes": "Grant aid includes federal, state, local, and institutional grant aid, but it does not include private scholarships or employer assistance."
