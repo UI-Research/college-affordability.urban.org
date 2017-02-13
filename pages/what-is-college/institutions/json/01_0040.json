@@ -135,7 +135,7 @@
   ],
   "metadata": {
     "source": "United States Department of Education <em>Digest of Education Statistics</em>.",
-    "notes": null
+    "notes": "FTE = full-time equivalent."
   },
   "axis": {
     "y": {
@@ -182,5 +182,5 @@
       }
     }
   },
-  "title": "Undergraduate Postsecondary Enrollment"
+  "title": "Undergraduate Postsecondary FTE Enrollment"
 }

@@ -1,1 +1,56 @@
-{"series": ["Average net tuition revenue per FTE student", "Average subsidy per FTE student"], "metadata": {"source": "Integrated Postsecondary Education Data System", "notes": "Institutions are sorted according to the Carnegie Classification of Institutions of Higher Education framework."}, "axis": {"rotated": false, "x": {"type": "category", "categories": [" '05– '06", " '09– '10", " '13– '14"]}, "y": {"padding": {"top":0, "bottom":0}, "max": 50000, "tick": {"format": "dollar", "count": 6}}}, "data": {"groups": [["Average subsidy per FTE student", "Average net tuition revenue per FTE student"]], "type": "bar", "labels": {"format": "dollar"}, "columns": [["Average net tuition revenue per FTE student", 15635.8135, 16166.0647, 16122.4115], ["Average subsidy per FTE student", 6930.6149, 6928.4747, 7427.3001]]}, "title": "Two-year institutions"}
+{
+  "axis": {
+    "rotated": false,
+    "x": {
+      "type": "category",
+      "categories": [
+        "'03\u2013             '04",
+        "'08\u2013           '09",
+        "'13\u2013            '14"
+      ]
+    },
+"y": {
+  "padding": {"top":0, "bottom": 0},
+  "max": 60000,
+  "tick": {
+    "format": "dollar",
+    "count": 4
+  }
+}
+  },
+  "series": [
+    "Average net tuition revenue per FTE student",
+    "Average subsidy per FTE student"
+  ],
+  "metadata": {
+    "notes": "Institutions are sorted according to the Carnegie Classification of Institutions of Higher Education framework. FTE = full-time equivalent.",
+    "source": "Ma et al (2016), Trends in College Pricing."
+  },
+  "title": "Bachelor's",
+  "data": {
+    "labels": {
+      "format": "dollar"
+    },
+    "type": "bar",
+    "columns": [
+      [
+        "Average net tuition revenue per FTE student",
+        14460,
+        15460,
+        15420
+      ],
+      [
+        "Average subsidy per FTE student",
+        7570,
+        7500,
+        7970
+      ]
+    ],
+    "groups": [
+      [
+        "Average net tuition revenue per FTE student",
+        "Average subsidy per FTE student"
+      ]
+    ]
+  }
+}

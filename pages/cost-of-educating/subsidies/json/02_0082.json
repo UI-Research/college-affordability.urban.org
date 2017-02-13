@@ -1,1 +1,56 @@
-{"series": ["Average net tuition revenue per FTE student", "Average subsidy per FTE student"], "axis": {"y": {"padding": {"top":0, "bottom":0}, "max": 50000, "tick": {"format": "dollar", "count": 6}}, "x": {"type": "category", "categories": ["'05–   '06", "'09–   '10", "'13–   '14"]}, "rotated": false}, "data": {"type": "bar", "groups": [["Average subsidy per FTE student", "Average net tuition revenue per FTE student"]], "columns": [["Average net tuition revenue per FTE student", 15346.9515, 15391.433, 16123.1384],["Average subsidy per FTE student", 2179.736, 1717.6157, 2111.3669]], "labels": {"format": "dollar"}}, "metadata": {"source": "Integrated Postsecondary Education Data System", "notes": "Institutions are sorted according to the Carnegie Classification of Institutions of Higher Education framework."}, "title": "Master's institutions"}
+{
+  "data": {
+    "groups": [
+      [
+        "Average net tuition revenue per FTE student",
+        "Average subsidy per FTE student"
+      ]
+    ],
+    "type": "bar",
+    "labels": {
+      "format": "dollar"
+    },
+    "columns": [
+      [
+        "Average net tuition revenue per FTE student",
+        13690,
+        14810,
+        15060
+      ],
+      [
+        "Average subsidy per FTE student",
+        1810,
+        1460,
+        1500
+      ]
+    ]
+  },
+  "series": [
+    "Average net tuition revenue per FTE student",
+    "Average subsidy per FTE student"
+  ],
+  "metadata": {
+    "source": "Ma et al (2016), Trends in College Pricing.",
+    "notes": "Institutions are sorted according to the Carnegie Classification of Institutions of Higher Education framework. FTE = full-time equivalent."
+  },
+  "axis": {
+    "x": {
+      "type": "category",
+      "categories": [
+        "'03\u2013              '04",
+        "'08\u2013               '09",
+        "'13\u2013               '14"
+      ]
+    },
+"y": {
+  "padding": {"top":0, "bottom": 0},
+  "max": 60000,
+  "tick": {
+    "format": "dollar",
+    "count": 4
+  }
+},
+    "rotated": false
+  },
+  "title": "Master's"
+}

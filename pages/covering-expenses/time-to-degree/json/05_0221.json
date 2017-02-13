@@ -32,6 +32,7 @@
   "axis": {
     "rotated": true,
     "y": {
+      "label": "Total charges",
       "padding": {"top":0 , "bottom":0},
       "max": 500000,
       "tick": {
