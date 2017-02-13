@@ -40,7 +40,7 @@ let singlepage = (
                 <p><em>The Scorecard includes information on average net price by income. But because higher-income students are less likely to receive federal aid, the net prices reported for these students are less accurate than those reported for lower-income students.</em></p>
                 <p><em>Another issue is that the income categories available in these federal data do not distinguish between independent and dependent students. The financial aid system, however, treats students with similar family incomes quite differently, depending on whether the income is that of the student and spouse or that of their parents.</em></p>
             </Box>
-            <Multiples title="Cost of Attendance (Total Expenses) Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, 2011–12" source="National Postsecondary Student Aid Study (NPSAS), 2012.">
+            <Multiples title="Cost of Attendance (Total Expenses) Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, by Parent Income Quartile, 2011–12" source="National Postsecondary Student Aid Study (NPSAS), 2012.">
                 <Graph file={require('./json/03_0211.json')} small="true"/>
                 <Graph file={require('./json/03_0212.json')} small="true"/>
                 <Graph file={require('./json/03_0213.json')} small="true"/>
