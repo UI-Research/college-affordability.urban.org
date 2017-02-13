@@ -52,5 +52,6 @@
         "Average subsidy per FTE student"
       ]
     ]
-  }
+  },
+   "wideSmallMultiple": true
 }

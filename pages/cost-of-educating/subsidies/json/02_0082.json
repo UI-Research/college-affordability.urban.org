@@ -52,5 +52,6 @@
 },
     "rotated": false
   },
-  "title": "Master's"
+  "title": "Master's",
+   "wideSmallMultiple": true
 }

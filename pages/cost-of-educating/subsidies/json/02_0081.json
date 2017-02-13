@@ -52,5 +52,6 @@
       ]
     }
   },
-  "title": "Research"
+  "title": "Research",
+  "wideSmallMultiple": true
 }
