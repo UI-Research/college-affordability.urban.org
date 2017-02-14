@@ -19,7 +19,7 @@ let specifications = {
         <h2>How Students, Institutions, and the Public Pay for Higher Education</h2>
       </Hero>
       <div className="c-narrative">
-        <p>Rising concerns over college tuition and student debt combined with the widespread conviction that a degree is essential for a middle-class lifestyle have led to a sense that college in the United States has become "unaffordable." <strong>But what does affordability actually mean?</strong></p>
+        <p>Rising concerns over college tuition and student debt, combined with the widespread conviction that a degree is essential for a middle-class lifestyle, have led to a sense that college in the United States has become "unaffordable." <strong>But what does affordability actually mean?</strong></p>
         <a href="/about" className="c-home__button">Learn About the Project <i className="fa fa-chevron-right"></i></a>
       </div>
       <Alerts>

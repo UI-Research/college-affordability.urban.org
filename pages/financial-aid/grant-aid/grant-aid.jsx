@@ -11,15 +11,15 @@ import util from 'util.jsx';
 
 let singlepage = (
   <div>
-    <h1>All Sources of Grant Aid</h1>
+    <h1>Grant Aid</h1>
       <p><strong>Grant aid, sometimes called scholarships or tuition discounts, lowers the price a student pays for college.</strong></p>
       <p>Unlike <a href="../../covering-expenses/borrowing/">student loans</a>, grant aid does not have to be repaid. Subtracting grant aid from the cost of attendance yields the net price—the price a student actually pays. This matters more for college affordability than the sticker price.</p>
       <p>Typically, students get more grant aid if they attend private nonprofit colleges than if they attend public colleges, narrowing the gap between the prices of these different types of institutions. </p>
-      <p>Grant aid does not, however, <a href="#by_income_and_dependency_status">close the gap</a> in ability to pay for college between high-income and low-income families. Though low-income students tend to receive more grant aid, it is not enough to put them on equal footing with the highest-income families.</p>
+      <p>Grant aid does not <a href="#by_income_and_dependency_status">close the gap</a> in ability to pay for college between high-income and low-income families. Though low-income students tend to receive more grant aid, it is not enough to put them on equal footing with the highest-income families.</p>
     <h2>Sources of Grant Aid</h2>
       <p>Grants come from a variety of sources: the federal government, state governments, the colleges and universities students attend, and employers or other private sources.</p>
       <ul>
-        <li><a href="../institutional/"><strong>Institutional grant aid</strong></a>, often called a scholarship, discounts tuition and fees on the basis of need, academic qualifications, or other characteristics. </li>
+        <li><strong><a href="../institutional/">Institutional grant aid</a></strong>, often called a scholarship, discounts tuition and fees on the basis of need, academic qualifications, or other characteristics. </li>
         <li><strong><a href="../federal/">Federal grant aid</a></strong> is typically targeted to low-income students and families. By far the largest program is the <a href="https://studentaid.ed.gov/sa/types/grants-scholarships/pell" target="_blank">Pell Grant program</a>. In 2015–16, 7.6 million low-income students received up to $5,775 in Pell grant aid. More than 1.6 million students also benefit from the Federal Supplemental Educational Opportunity Grant program, through which many colleges distribute federal funds to some of their lower-income students. The federal government also provides aid to veterans and their dependents and members of the armed forces on active duty. </li>
         <li><strong><a href="../other/">Private and employer grant aid</a></strong> includes scholarships from private sources, such as foundations, as well as educational stipends from employers.</li>
         <li><strong><a href="../state/">State grant aid</a></strong> varies widely by state and supports students on the basis of need or academic merit. Most states provide this aid only to students who remain in their state to attend public or private colleges.</li>

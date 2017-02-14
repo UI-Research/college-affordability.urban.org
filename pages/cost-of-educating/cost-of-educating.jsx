@@ -12,7 +12,7 @@ let singlepage = (
   <div>
    <h1>The Cost of Educating Students</h1>
 	<p>Students see the sticker prices colleges charge, but they might not realize that the tuition they pay, whether out of pocket or with financial aid, often covers only a fraction of what their education really costs. </p>
-	<p>Colleges must pay for instructors, student services, administrative support, and maintenance, among other expenses. Average spending per student varies across institutions, partially because of differences in their missions and activities. For example, public two-year colleges focus almost exclusively on educating lower-level undergraduates, while public research universities educate both undergraduate and graduate students in addition to engaging in a significant amount of research activity. </p>
+	<p>Colleges must pay for instructors, student services, administrative support, and maintenance, among other expenses. Average spending per student varies across institutions, partially because of differences in institutions’ missions and activities. For example, public two-year colleges focus almost exclusively on educating lower-level undergraduates, while public research universities educate both undergraduate and graduate students in addition to engaging in a significant amount of research activity. </p>
 	<Box>
 		<h3><em>Education and related spending</em></h3>
 		<p><em>Education and related expenditures include money spent on instruction, student services, academic and administrative support, and operations and maintenance. This does not include the cost of constructing new buildings or spending on research and public service. It also excludes scholarships and fellowships, which are discounts to students. </em></p>

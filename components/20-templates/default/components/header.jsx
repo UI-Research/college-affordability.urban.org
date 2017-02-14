@@ -193,7 +193,7 @@ export default class Header extends Component {
                           <a href="/financial-aid/institutional">Institutional Grant Aid</a>
                         </li>
                         <li>
-                          <a href="/financial-aid/other">Other</a>
+                          <a href="/financial-aid/other">Other Grant Aid</a>
                         </li>
                         <li>
                           <a href="/financial-aid/tax-benefits">Tax Benefits</a>

@@ -25,7 +25,7 @@ let singlepage = (
       <p>WHO GETS PELL GRANTS?</p>
       <p><strong>Almost all Pell grant recipients are independent students or dependent students from the bottom half of the income distribution.</strong> In 2011–12, 49 percent of full-time students received Pell grants and the average grant per recipient was $4,440. </p>
       <p>In 2011–12, averaged across all full-time students, the program provided $1,700 per dependent student and $3,300 per independent student. Among dependent students, those whose parents&rsquo; incomes were less than $30,000 received an average of $4,800 per student, and those whose parental income was between $30,000 and $65,000 received an average of $2,200 per full-time student.</p>
-      <p><strong>Not everyone who gets a Pell grant receives the maximum amount. Instead, the size of the grant varies by income, and family circumstances, and full-time or part-time enrollment.</strong></p>
+      <p><strong>Not everyone who gets a Pell grant receives the maximum amount. Instead, the size of the grant varies by income, family circumstances, and full-time or part-time enrollment.</strong></p>
       <p>In 2011–12, the average grant for dependent full-time Pell recipients from families with incomes under $30,000 was $5,200.  </p>
        <Multiples title="Pell Grant by Dependency Status and Income, 2011–12 (with percentage receiving Pell)" subtitle= "Dollars per recipient" source="National Postsecondary Student Aid Study (NPSAS), 2012.">
         <Graph file={require('./json/04_0911.json')} small="true"/>
@@ -43,7 +43,7 @@ let singlepage = (
       <Graph file={require('./json/04_0100.json')}/>
     <h2>Post-9/11 GI Benefits</h2>
       <p><strong>Some veterans are eligible for generous benefits from the Post-9/11 GI Bill. The program covers full tuition for in-state students at public institutions and, in 2016</strong><strong>–17, up to </strong><a href="http://www.benefits.va.gov/GIBILL/resources/benefits_resources/rates/ch33/ch33rates080116.asp#TUITION" target="_blank"><strong>$21,970 </strong></a><strong>for students at participating private colleges.</strong></p>
-      <p>Participation in the Post-9/11 GI Bill program has grown rapidly since it was introduced in 2009–10. Almost 850,000 students received this support in 2015–16. On average, recipients got $14,575 per year toward tuition, fees, living expenses while they were in school.</p>
+      <p>Participation in the Post-9/11 GI Bill program has grown rapidly since it was introduced in 2009–10. Almost 850,000 students received this support in 2015–16. On average, recipients got $14,575 per year toward tuition, fees, and living expenses while they were in school.</p>
       <Graph file={require('./json/04_0110.json')}/>
     <h2>Federal Grant Aid over Time</h2>
       <p><strong>Both Pell grants and aid to veterans through the Post-9/11 GI Bill increased dramatically in 2009</strong><strong>–10 as a result of policy changes, increased financial need, and increased enrollment during the economic downturn. </strong></p>
