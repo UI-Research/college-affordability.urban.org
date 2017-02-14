@@ -22,7 +22,7 @@
       }
     },
     "x": {
-      "label": "All",
+      "label": "All recipients",
       "type": "category",
       "categories": ["All"]
     }

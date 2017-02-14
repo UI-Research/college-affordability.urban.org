@@ -19,7 +19,7 @@
   "axis": {
     "x": {
       "type": "category",
-      "label": "All",
+      "label": "All undergraduates",
       "categories": [
         "All"
       ]

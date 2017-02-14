@@ -28,7 +28,7 @@
         "Out-of-state",
         "In-state"
       ],
-      "label": "Residency",
+      "label": "State residency",
       "type": "category"
     }
   },

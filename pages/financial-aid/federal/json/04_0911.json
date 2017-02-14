@@ -1,7 +1,7 @@
 {"hideTooltip": true,
   "wideSmallMultiple": true,
   "series": "Pell-Grant",
-  "title": "All",
+  "title": "All students",
   "data": {
     "labels": {
       "format": "dollar"

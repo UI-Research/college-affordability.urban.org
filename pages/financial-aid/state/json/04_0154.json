@@ -10,7 +10,7 @@
       }
     },
     "x": {
-      "label": "Residency",
+      "label": "State residency",
       "type": "category",
       "categories": [
         "Out-of-              state",
