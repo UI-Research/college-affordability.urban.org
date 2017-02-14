@@ -10,6 +10,7 @@
     },
     "rotated": true,
     "x": {
+      "label": "Parent Income or Dependency Status",
       "categories": [
         "All undergraduates",
         "All dependent students",

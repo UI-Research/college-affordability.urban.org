@@ -20,7 +20,7 @@
     },
     "rotated": false
   },
-  "title": "Highest 25 percent",
+  "title": "Highest income quartile",
   "data": {
     "type": "bar",
     "groups": [

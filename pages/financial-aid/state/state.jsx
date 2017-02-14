@@ -28,23 +28,25 @@ let singlepage = (
         <p><em>Are the &ldquo;tuition set-aside&rdquo; grants really coming from tuition money? Or are they coming from state appropriations that pass through the institutions to the recipients? There is no way to determine which dollars are actually going to student aid and which dollars are funding instructional costs.</em></p></Box>
     <h2>Who Receives State Grant Aid?</h2>
       <p><strong>State grant aid goes almost exclusively to students enrolled in college in their states of legal residence. Low-income dependent students and those enrolled in public and private nonprofit four-year institutions are most likely to receive state grant aid</strong>. In addition to income requirements for eligibility, the fact that about one-quarter of dependent students from families in the highest income quartile enroll out-of-state compared with just over 10 percent of those from the lowest-income families contributes to the concentration of aid at the lower end of the income distribution.</p>
-      <Multiples title="Average State Grant Aid per Recipient, 2011–12" source="National Postsecondary Student Aid Study (NPSAS), 2012.">
-        <Graph file={require('./json/04_0161.json')} small="true"/>
-        <Graph file={require('./json/04_0162.json')} small="true"/>
-        <Graph file={require('./json/04_0163.json')} small="true"/>
-        <Graph file={require('./json/04_0164.json')} small="true"/>
-        <Graph file={require('./json/04_0165.json')} small="true"/>
-    </Multiples>
-    <h2>Average State Grant Aid</h2>
-      <p><strong>Most variation in state grant aid is a function of eligibility requirements. Among those who receive state grants, the average sizes of the awards are similar.</strong></p>
-      <p>Although students from lower-income families are more likely than their more affluent peers to receive state grant aid, average amounts received do not differ much by family income.</p>
+
       <Multiples title="Share of Undergraduates Receiving State Grant Aid, 2011–12" source="NPSAS, 2012">
         <Graph file={require('./json/04_0151.json')} small="true"/>
         <Graph file={require('./json/04_0152.json')} small="true"/>
         <Graph file={require('./json/04_0153.json')} small="true"/>
         <Graph file={require('./json/04_0154.json')} small="true"/>
         <Graph file={require('./json/04_0155.json')} small="true"/>
-    </Multiples>
+      </Multiples>
+
+    <h2>Average State Grant Aid</h2>
+      <p><strong>Most variation in state grant aid is a function of eligibility requirements. Among those who receive state grants, the average sizes of the awards are similar.</strong></p>
+      <p>Although students from lower-income families are more likely than their more affluent peers to receive state grant aid, average amounts received do not differ much by family income.</p>
+      <Multiples title="Average State Grant Aid per Recipient, 2011–12" source="National Postsecondary Student Aid Study (NPSAS), 2012.">
+        <Graph file={require('./json/04_0161.json')} small="true"/>
+        <Graph file={require('./json/04_0162.json')} small="true"/>
+        <Graph file={require('./json/04_0163.json')} small="true"/>
+        <Graph file={require('./json/04_0164.json')} small="true"/>
+        <Graph file={require('./json/04_0165.json')} small="true"/>
+      </Multiples>
     <h2>State Grant Aid over Time</h2>
       <p>State grant aid per student grew rapidly in the 1990s, when a number of states, particularly in the south, were introducing merit-based grant programs. Total state grant aid per student peaked in 2007–08, before the Great Recession, but recovered from an average of $690 per student in 2011–12 to $750 per student in 2014–15.</p>
       <Graph file={require('./json/04_0170.json')} />
