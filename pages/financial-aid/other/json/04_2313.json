@@ -28,7 +28,7 @@
         "For-profit"
       ],
       "type": "category",
-      "label": "Sector"
+      "label": "Institutional sector"
     },
     "y": {
       "padding": {"top": 0, "bottom":0},

@@ -3,8 +3,8 @@
   "axis": {
     "rotated": true,
     "x": {
-      "label": "All",
-      "categories": ["All Undergraduates (43%)"],
+      "label": "All undergraduates",
+      "categories": ["All undergraduates                       (43%)"],
       "type": "category"
     },
     "y": {

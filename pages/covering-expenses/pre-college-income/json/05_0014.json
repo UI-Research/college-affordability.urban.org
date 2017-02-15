@@ -30,7 +30,7 @@
       }
     },
     "x": {
-      "label": "Age",
+      "label": "Age category",
       "type": "category",
       "categories": [
         "25–34                   years",

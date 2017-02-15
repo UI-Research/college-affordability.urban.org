@@ -24,7 +24,7 @@
     "rotated": true,
     "x": {
       "type": "category",
-      "label": "Race",
+      "label": "Race and ethnicity",
       "categories": [
         "White",
         "Hispanic",

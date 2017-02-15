@@ -33,7 +33,7 @@
     "rotated": true,
     "x": {
       "type": "category",
-      "label": "Sector",
+      "label": "Institutional sector",
       "categories": [
         "Private          four-year",
         "Public           four-year",

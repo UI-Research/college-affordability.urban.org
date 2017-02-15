@@ -21,7 +21,7 @@
       }
     },
     "x": {
-    	"label": "Total",
+    	"label": "All full-time undergraduates",
       "categories": ["Total"],
       "type": "category"
     },

@@ -1,7 +1,7 @@
 {
   "axis": {
     "x": {
-      "label": "Total",
+      "label": "All full-time undergraduates",
       "type": "category",
       "categories": [
         "Total"

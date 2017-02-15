@@ -1,7 +1,7 @@
 {
   "axis": {
     "x": {
-      "label": "All",
+      "label": "All families",
       "type": "category",
       "categories": ["All families"]
     },

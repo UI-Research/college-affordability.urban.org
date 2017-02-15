@@ -36,7 +36,7 @@
         "Public                   two-year",
         "For-profit"
       ],
-      "label": "Sector",
+      "label": "Institutional sector",
       "type": "category"
     }
   },
