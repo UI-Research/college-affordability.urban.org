@@ -26,7 +26,7 @@ let singlepage = (
 		<p>Despite the name &ldquo;expected family contribution,&rdquo; families could end up having to pay less—or, more likely, more—than the EFC to cover all college expenses. Even though students with lower EFCs receive more aid than those with higher ability to pay, there is no guarantee that either the government or the college will be able to provide enough funds to fill the gap between a family&rsquo;s EFC and the total student budget. Any remaining gap is the student&rsquo;s<a href="#unmet_need"> unmet need</a>.</p>
 		<Box>
 			<h3><em>Can students have different EFCs at different schools?</em></h3>
-				<p><em>All colleges and universities must allocate federal student aid on the basis of the FAFSA, and most states also rely on the federal EFC. But institutions maybe use alternative calculations to distribute their own resources to students.</em></p>
+				<p><em>All colleges and universities must allocate federal student aid on the basis of the FAFSA, and most states also rely on the federal EFC. But institutions may use alternative calculations to distribute their own resources to students.</em></p>
 				<p><em>Some colleges and scholarship programs require students to complete another financial aid application in addition to the FAFSA. The most common is the College Board&rsquo;s Profile form. This form asks for more detailed information than the FAFSA. For example, the federal formula does not ask about a family&rsquo;s home, but the Profile does. When parents are divorced, the federal government asks only about the finances of the custodial parent and, if that parent has remarried, the step parent. The Profile asks for information about both parents. The Profile EFC may be higher or lower than the federal EFC.</em></p>
 		</Box>
 		<h2>EFC by Income</h2>
@@ -48,7 +48,7 @@ let singlepage = (
         		<Graph file={require('./json/04_0044.json')} small="true"/>
          		<Graph file={require('./json/04_0045.json')} small="true"/>
     		</Multiples>
-			<p>Financial aid meets the full measured financial need of only 40 percent of undergraduate students, ranging from 23 percent of independent students in for-profit institutions to 51 percent of dependent students in public four-year colleges and universities.</p>
+			<p>Financial aid meets the full measured financial need of only 40 percent of undergraduate students, ranging from 25 percent of independent students in for-profit institutions to 51 percent of dependent students in public four-year colleges and universities.</p>
 			<p>Almost 20 percent of students in for-profit and private four-year nonprofit institutions are left with over $15,000 of expenses to cover after adding their financial aid to their EFCs. </p>
   </div>
 );
