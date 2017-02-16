@@ -22,7 +22,7 @@ let singlepage = (
 <p>In 2011–12, more than half of all independent undergraduates attended community colleges.</p>
 <Graph file={require('./json/07_0010.json')}/>
 <p><strong>How do annual finances differ across sectors?</strong></p>
-<p><a name="OLE_LINK10" id="OLE_LINK10">Average Published Prices, Budgets, and Resources Used to Pay for College for Independent Students, 2011</a>–12</p>
+<p><a name="OLE_LINK10" id="OLE_LINK10">Average Published Prices, Budgets, and Resources Used to Pay for College for Independent Students, 2011–12</a></p>
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
   <tr>
     <td width="146" nowrap="nowrap" valign="top"><p>&nbsp;</p></td>
