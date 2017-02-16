@@ -40,7 +40,7 @@
     "Grant aid",
     "Tuition and fees left over"
   ],
-  "title": "Average Grant aid and Net Tuition and Fees for First-Time Full-Time Students, by Sector, 2013–14",
+  "title": "Average Grant Aid and Net Tuition and Fees for First-Time Full-Time Students, by Sector, 2013–14",
   "subtitle": "Dollars per full-time student",
   "axis": {
     "rotated": true,
@@ -69,7 +69,7 @@
     }
   },
   "metadata": {
-    "source": "Integrated Postsecondary Education Data System (IPEDS).",
+    "source": "Integrated Postsecondary Education Data System, 2013–14.",
     "notes": "Grant aid includes federal, state, local, and institutional grant aid, but it does not include private scholarships or employer assistance."
   }
 }

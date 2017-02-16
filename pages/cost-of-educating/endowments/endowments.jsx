@@ -27,7 +27,7 @@ let singlepage = (
         <p><em>Average endowment assets per student at private nonprofit institutions fell 29 percent between 2007–08 and 2008–09 and were 12 percent lower in 2012–13 than they had been five years earlier. Investment income exceeded income from all other sources combined at private doctoral universities in 2006–07 but generated losses slightly greater than total income from other sources in 2008–09.</em></p>
       </Box>
       <p>The few public and private nonprofit doctoral universities with very high endowment income per student use those assets to support undergraduate and graduate students and to further their research missions. <strong>During the 2013–14 academic year, 10 percent of students enrolled at private doctoral universities benefited from about $51,600 of endowment spending per full-time equivalent (FTE) student, but median endowment spending per FTE student in this sector was only $2,400.</strong> <strong>In public doctoral universities, 10 percent of students attended institutions with an average of $5,100 of endowment spending per student compared with just $630 for the median student.</strong></p>
-      <Multiples title="Average Endowment Income per Student by Decile" source="Integrated Postsecondary Education Data System (IPEDS).">
+      <Multiples title="Average Endowment Income per Student by Decile" source="Integrated Postsecondary Education Data System (IPEDS), 2013–14.">
         <Graph file={require('./json/02_0051.json')} small="true"/>
         <Graph file={require('./json/02_0052.json')} small="true"/>
         <Graph file={require('./json/02_0053.json')} small="true"/>
@@ -36,7 +36,7 @@ let singlepage = (
     </Multiples>
       <p><strong>More selective schools tend to have higher endowment income.</strong></p>
       <p>At both private nonprofit and public four-year institutions with open admissions policies, median annual endowment income per student is about $300. In contrast, the median private nonprofit four-year institution that admits fewer than 25 percent of applicants has almost $18,000 in annual endowment income per student. </p>
-      <Multiples title="Average Endowment Income per Student by Institution Selectivity" source="IPEDS.">
+      <Multiples title="Average Endowment Income per Student by Institution Selectivity" source="IPEDS, 2013–14.">
           <Graph file={require('./json/02_0061.json')} small="true"/>
           <Graph file={require('./json/02_0062.json')} small="true"/>
       </Multiples>

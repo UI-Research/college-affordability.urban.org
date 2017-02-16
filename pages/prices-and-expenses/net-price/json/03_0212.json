@@ -14,7 +14,7 @@
     },
     "rotated": true,
     "x": {
-      "label": "Parent Income Quartile",
+      "label": "Parental income quartile",
       "type": "category",
       "categories": [
         "Lowest",

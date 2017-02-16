@@ -1,7 +1,7 @@
 {
   "metadata": {
     "pluralNotes": true,
-    "source": "Baum et al, Trends in Student Aid 2014, The College Board, based on NPSAS 2012.",
+    "source": "Sandy Baum, Jennifer Ma, Matea Pender, and Diane Cardenas Elliott, <em>Trends in Student Aid 2014</em> (New York: College Board, 2014).",
     "notes": "Includes only full-time students who were US citizens or permanent residents. Income categories represent quartiles of dependent undergraduate students across all sectors: lowest is less than $30,000, second is $30,000 to $64,999, third is $65,000 to $105,999, and highest is $106,000 or higher. The tuition categories are as follows: the lowest is less than $22,105, second is $22,105 to $28,726, third is $28,727 to $36,420, and highest is $36,421 or higher."
   },
   "series": [
@@ -101,7 +101,7 @@
 
     }
   },
-  "title": "Average Need-Based and Non-Need-Based Institutional Grant Aid per Full-Time Dependent Student, Private Nonprofit Four-Year Institutions, 2011-12",
+  "title": "Average Need-Based and Non-Need–Based Institutional Grant Aid per Full-Time Dependent Student, Private Nonprofit Four-Year Institutions, 2011–12",
   "axis": {
     "rotated": true,
     "y": {

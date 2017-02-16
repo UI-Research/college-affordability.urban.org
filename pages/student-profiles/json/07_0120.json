@@ -2,9 +2,9 @@
 {
   "metadata": {
     "notes": null,
-    "source": "NPSAS "
+    "source": "NPSAS, 2012."
   },
-  "title": "Total published tuition and fee price and total debt based on time to degree",
+  "title": "Total Published Tuition and Fee Price and Total Debt Based on Time to Degree",
   "axis": {
     "rotated": false,
     "x": {
@@ -42,19 +42,39 @@
         "Public four-year out-of-state",
         [
           [
-            "4 years",
+            "Four years",
             79453.92,
             42556.1039
           ],
           [
-            "5 years",
+            "Five years",
             99317.4,
             53195.1299
           ],
           [
-            "6 years",
+            "Six years",
             119180.88,
             63834.1559
+          ]
+        ]
+      ],
+      "set1": [
+        "Public four-year in-state",
+        [
+          [
+            "Four years",
+            34368.558,
+            24000.5917
+          ],
+          [
+            "Five years",
+            42960.6975,
+            30000.7396
+          ],
+          [
+            "Six years",
+            51552.837,
+            36000.8876
           ]
         ]
       ],
@@ -62,17 +82,17 @@
         "Public two-year",
         [
           [
-            "2 years",
+            "Two years",
             6205.416,
             2322.9266
           ],
           [
-            "3 years",
+            "Three years",
             9308.124,
             3484.3898
           ],
           [
-            "4 years",
+            "Four years",
             12410.832,
             4645.8531
           ]
@@ -83,17 +103,17 @@
         [
 
           [
-            "4 years",
+            "Four years",
             122860.5,
             39314.0727
           ],
           [
-            "5 years",
+            "Five years",
             153575.625,
             49142.5909
           ],
           [
-            "6 years",
+            "Six years",
             184290.75,
             58971.109
           ]
@@ -104,51 +124,31 @@
         [
 
           [
-            "2 years",
+            "Two years",
             36952.902,
             28304.136
           ],
           [
-            "3 years",
+            "Three years",
             55429.353,
             42456.204
           ],
           [
-            "4 years",
+            "Four years",
             73905.804,
             56608.272
           ],
           [
-            "5 years",
+            "Five years",
             92382.255,
             70760.34
           ],
           [
-            "6 years",
+            "Six years",
             110858.706,
             84912.408
           ]
 
-        ]
-      ],
-      "set1": [
-        "Public four-year in-state",
-        [
-          [
-            "4 years",
-            34368.558,
-            24000.5917
-          ],
-          [
-            "5 years",
-            42960.6975,
-            30000.7396
-          ],
-          [
-            "6 years",
-            51552.837,
-            36000.8876
-          ]
         ]
       ]
     },
