@@ -11,23 +11,24 @@
       "format": "dollar"
     },
     "sets": {
-      "set3": [
-        "Private nonprofit four-year",
+
+      "set2": [
+        "Public four-year out-of-state",
         [
           [
-            "4 years",
-            117959.058,
-            32282.5768
+            "Four years",
+            74782.764,
+            34657.4668
           ],
           [
-            "5 years",
-            147448.8225,
-            40353.221
+            "Five years",
+            93478.455,
+            43321.8334
           ],
                     [
-            "6 years",
-            176938.587,
-            48423.8651
+            "Six years",
+            112174.146,
+            51986.2001
           ]
         ]
       ],
@@ -35,86 +36,87 @@
         "Public four-year in-state",
         [
           [
-            "4 years",
+            "Four years",
             32841.06,
             19483.2666
           ],
           [
-            "5 years",
+            "Five years",
             41051.325,
             24354.0832
           ],
                     [
-            "6 years",
+            "Six years",
             49261.59,
             29224.8999
           ]
         ]
       ],
-      "set2": [
-        "Public four-year out-of-state",
+      "set3": [
+        "Private nonprofit four-year",
         [
           [
-            "4 years",
-            74782.764,
-            34657.4668
+            "Four years",
+            117959.058,
+            32282.5768
           ],
           [
-            "5 years",
-            93478.455,
-            43321.8334
+            "Five years",
+            147448.8225,
+            40353.221
           ],
                     [
-            "6 years",
-            112174.146,
-            51986.2001
+            "Six years",
+            176938.587,
+            48423.8651
           ]
-        ]
-      ],
-      "set4": [
-        "For-profit",
-        [
-          [
-            "2 years",
-            35829,
-            28304
-          ],
-          [
-            "3 years",
-            53743,
-            42456
-          ],
-          [
-            "4 years",
-            71658,
-            56608
-          ],
-          [
-            "5 years",
-            89572,
-            70760
-          ]
-
         ]
       ],
       "set5": [
         "Public two-year",
         [
           [
-            "2 years",
+            "Two years",
             5679.954,
             1618.7459
           ],
           [
-            "3 years",
+            "Three years",
             8519.931,
             2428.1189
           ],
           [
-            "4 years",
+            "Four years",
             11359.908,
             3237.4919
           ]
+        ]
+      ],
+
+      "set4": [
+        "For-profit",
+        [
+          [
+            "Two years",
+            35829,
+            28304
+          ],
+          [
+            "Three years",
+            53743,
+            42456
+          ],
+          [
+            "Four years",
+            71658,
+            56608
+          ],
+          [
+            "Five years",
+            89572,
+            70760
+          ]
+
         ]
       ]
     },
@@ -144,10 +146,10 @@
     "rotated": false
   },
   "metadata": {
-    "source": "NPSAS ",
+    "source": "NPSAS, 2012.",
     "notes": null
   },
-  "title": "Total published tuition and fee price and total debt based on time to degree",
+  "title": "Total Published Tuition and Fee Price and Total Debt Based on Time to Degree",
   "imageOverride": "Low-Income Dependent Students___ Total published tuition and fee price and total debt based on time to degree"
 ,"forceMediumHeight": true
 }

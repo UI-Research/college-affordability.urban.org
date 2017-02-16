@@ -7,7 +7,7 @@
   },
   "axis": {
     "x": {
-      "label": "Parent Income Quartile",
+      "label": "Parental income quartile",
       "categories": [
         "Lowest",
         "Lower middle",

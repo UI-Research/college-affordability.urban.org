@@ -8,7 +8,7 @@
   ],
   "metadata": {
     "notes": null,
-    "source": "NPSAS "
+    "source": "NPSAS, 2012."
   },
   "title": "Average Expected Family Contribution, Total Grants, Total Loan, and Earnings and Other Resources Equal Tuition and Fees and Other Expenses",
   "data": {
@@ -179,75 +179,74 @@
 
         ]
       ],
-      "set4": [
-        "For-profit",
+     "set5": [
+        "Public two-year",
         [
           [
             "Expected family contribution",
-            13604.67,
+            13187.4015,
             "NA"
          ],
           [
             "Federal grant aid",
-            217.53,
+            118.3983,
             "NA"
          ],
           [
             "Military and veterans grant aid",
-            396.64,
+            21.9512,
             "NA"
          ],
           [
             "State grant aid",
-            190.66,
+            298.2056,
             "NA"
          ],
           [
             "Institutional grant aid",
-            322.89,
+            282.6092,
             "NA"
          ],
           [
             "Private and employer grant aid",
-            443.94,
+            146.1509,
+            "NA"
+         ],
+
+          [
+            "Federal parent loans",
+            94.0065,
             "NA"
          ],
           [
             "Federal student loans",
-            6201.42,
-            "NA"
-         ],
-          [
-            "Federal parent loans",
-            7372.98,
+            1342.4565,
             "NA"
          ],
           [
             "Private loans",
-            1876.02,
+            208.4828,
             "NA"
          ],
-
           [
             "Earnings and other resources",
-            3568.9,
+            "NA",
             "NA"
          ],
-
           [
             "Tuition and fees",
             "NA",
-            19412.83
+            3292.233
           ],
+
           [
             "Budget beyond tuition and fees",
             "NA",
-            14782.82
+            12017.1135
           ]
-
-
         ]
       ],
+ 
       "set3": [
         "Private nonprofit four-year",
         [
@@ -317,71 +316,74 @@
 
         ]
       ],
-      "set5": [
-        "Public two-year",
+ 
+     "set4": [
+        "For-profit",
         [
           [
             "Expected family contribution",
-            13187.4015,
+            13604.67,
             "NA"
          ],
           [
             "Federal grant aid",
-            118.3983,
+            217.53,
             "NA"
          ],
           [
             "Military and veterans grant aid",
-            21.9512,
+            396.64,
             "NA"
          ],
           [
             "State grant aid",
-            298.2056,
+            190.66,
             "NA"
          ],
           [
             "Institutional grant aid",
-            282.6092,
+            322.89,
             "NA"
          ],
           [
             "Private and employer grant aid",
-            146.1509,
-            "NA"
-         ],
-
-          [
-            "Federal parent loans",
-            94.0065,
+            443.94,
             "NA"
          ],
           [
             "Federal student loans",
-            1342.4565,
+            6201.42,
+            "NA"
+         ],
+          [
+            "Federal parent loans",
+            7372.98,
             "NA"
          ],
           [
             "Private loans",
-            208.4828,
+            1876.02,
             "NA"
          ],
+
           [
             "Earnings and other resources",
-            "NA",
+            3568.9,
             "NA"
          ],
+
           [
             "Tuition and fees",
             "NA",
-            3292.233
+            19412.83
           ],
-
           [
             "Budget beyond tuition and fees",
             "NA",
-            12017.1135
+            14782.82
           ]
+
+
         ]
       ]
     },

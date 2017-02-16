@@ -1,95 +1,23 @@
 { 
   "data": {
     "sets": {
-      "set4": [
-        "For-profit",
-        [
-          [
-            "2 years",
-            28295.96,
-            18434.976
-          ],
-          [
-            "3 years",
-            42443.94,
-            27652.464
-          ],
-          [
-            "4 years",
-            56591.92,
-            36869.952
-          ],
-          [
-            "5 years",
-            70739.9,
-            46087.44
-          ],
-          [
-            "6 years",
-            84887.88,
-            55304.928
-          ]
-
-
-        ]
-      ],
       "set2": [
         "Public four-year out-of-state",
         [
           [
-            "4 years",
+            "Four years",
             53516.44,
             31767.8848
           ],
           [
-            "5 years",
+            "Five years",
             66895.55,
             39709.856
           ],
           [
-            "6 years",
+            "Six years",
             80274.66,
             47651.8272
-          ]
-        ]
-      ],
-      "set3": [
-        "Private nonprofit four-year",
-        [
-          [
-            "4 years",
-            85289.52,
-            36989.484
-          ],
-          [
-            "5 years",
-            106611.9,
-            46236.855
-          ],
-          [
-            "6 years",
-            127934.28,
-            55484.226
-          ]
-        ]
-      ],
-      "set5": [
-        "Public two-year",
-        [
-          [
-            "2 years",
-            5377.78,
-            5235.7038
-          ],
-          [
-            "3 years",
-            8066.67,
-            7853.5557
-          ],
-          [
-            "4 years",
-            10755.56,
-            10471.4077
           ]
         ]
       ],
@@ -98,24 +26,98 @@
         [
         
           [
-            "4 years",
+            "Four years",
             30824.22,
             27807.5893
           ],
           [
-            "5 years",
+            "Five years",
             38530.275,
             34759.4866
           ],
 
           [
-            "6 years",
+            "Six years",
             46236.33,
             41711.384
           ]
 
         ]
+      ],
+      "set5": [
+        "Public two-year",
+        [
+          [
+            "Two years",
+            5377.78,
+            5235.7038
+          ],
+          [
+            "Three years",
+            8066.67,
+            7853.5557
+          ],
+          [
+            "Four years",
+            10755.56,
+            10471.4077
+          ]
+        ]
+      ],
+      "set3": [
+        "Private nonprofit four-year",
+        [
+          [
+            "Four years",
+            85289.52,
+            36989.484
+          ],
+          [
+            "Five years",
+            106611.9,
+            46236.855
+          ],
+          [
+            "Six years",
+            127934.28,
+            55484.226
+          ]
+        ]
+      ],
+      "set4": [
+        "For-profit",
+        [
+          [
+            "Two years",
+            28295.96,
+            18434.976
+          ],
+          [
+            "Three years",
+            42443.94,
+            27652.464
+          ],
+          [
+            "Four years",
+            56591.92,
+            36869.952
+          ],
+          [
+            "Five years",
+            70739.9,
+            46087.44
+          ],
+          [
+            "Six years",
+            84887.88,
+            55304.928
+          ]
+
+
+        ]
       ]
+
+
     },
     "type": "bar",
     "labels": {
@@ -152,10 +154,10 @@
     },
     "rotated": false
   },
-  "title": "Total published tuition and fee price and total debt based on time to degree",
+  "title": "Total Published Tuition and Fee Price and Total Debt Based on Time to Degree",
   "metadata": {
     "notes": null,
-    "source": "NPSAS "
+    "source": "NPSAS, 2012."
   }
 ,"forceMediumHeight": true
 }
