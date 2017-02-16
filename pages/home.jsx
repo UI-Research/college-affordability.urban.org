@@ -35,53 +35,72 @@ let specifications = {
       </Alerts>
       <div className="cta__container">
         <HomePageCTA src="img/defining-higher-education.svg">
-          <h2>What is College?</h2>
-          <p>Morbi ac fringilla magna, quis lobortis urna. Sed id eros sed nibh aliquam fringilla non varius mauris. Pellentesque a volutpat odio. Donec eu nisi sit amet lectus malesuada pellentesque sed eget dolor. Vestibulum sollicitudin tristique nibh, non efficitur velit rutrum nec. Integer condimentum sapien ac erat venenatis luctus.</p>
+          <a href="what-is-college"><h2>What is College?</h2></a>
+          <p>Nonprofit or for profit, public or private, two-year or four-year—colleges, much like the students who attend them, come in all shapes and sizes. </p>
           <ul>
-            <li><a href="#">Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="what-is-college/institutions/">Institutions<i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="what-is-college/students/">Students<i className="fa fa-chevron-right"></i></a></li>
           </ul>
         </HomePageCTA>
         <HomePageCTA src="img/cost-aid-prices.svg">
-          <h2>Producing Education</h2>
-          <p>Nunc non diam quis magna volutpat laoreet in nec tortor. Sed at ex tellus. Donec egestas arcu non neque volutpat, quis lacinia nibh fringilla.</p>
+          <a href="cost-of-educating/"><h2>The Cost of Educating Students</h2></a>
+          <p>Tuition and fees cover only a fraction of what an education actually costs. How do institutions fund the rest?</p>
           <ul>
-            <li><a href="#">Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
-            <li><a href="#">Another Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
-            <li><a href="#">Third Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="cost-of-educating/subsidies/">Subsidies<i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="cost-of-educating/appropriations/">Appropriations<i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="cost-of-educating/endowments/">Endowments<i className="fa fa-chevron-right"></i></a></li>
           </ul>
         </HomePageCTA>
         <HomePageCTA src="img/paying-for-college.svg">
-          <h2>Prices and Expenses</h2>
-          <p>Pellentesque egestas varius tortor eget efficitur. Nunc dignissim pharetra libero a consectetur. Morbi accumsan ex non rhoncus molestie. In commodo venenatis tortor id interdum. Integer condimentum sapien ac erat venenatis luctus.</p>
+          <a href="prices-and-expenses/"><h2>Prices and Expenses</h2></a>
+          <p>Tuition is the most obvious expense facing college students, but it&rsquo;s far from the only budget item they must consider when planning for college.</p>
           <ul>
-            <li><a href="#">Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
-            <li><a href="#">Another Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="prices-and-expenses/tuition-and-fees/">Tuition and Fees<i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="prices-and-expenses/room-and-board/">Room and Board<i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="prices-and-expenses/student-budgets/">Student Budgets<i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="prices-and-expenses/forgone-earnings/">Forgone Earnings<i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="prices-and-expenses/net-price/">Net Price<i className="fa fa-chevron-right"></i></a></li>
           </ul>
         </HomePageCTA>
         <HomePageCTA src="img/student-aid.svg">
-          <h2>Student Aid</h2>
-          <p>Mauris sapien orci, sagittis vel feugiat varius, scelerisque non urna. In eu massa sapien. Nulla aliquet purus eu nisl vulputate, nec tempus elit pulvinar. Etiam nec egestas leo, id rhoncus augue. In nec sollicitudin turpis. Integer bibendum arcu ut viverra ullamcorper. Duis eleifend congue rhoncus.</p>
+          <a href="financial-aid/"><h2>Financial Aid</h2></a>
+          <p>Financial aid helps students and families pay tuition, fees, and other expenses associated with going to college. Where does that aid come from, and which students get it?</p>
           <ul>
-            <li><a href="#">Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
-            <li><a href="#">Another Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
-            <li><a href="#">Third Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="financial-aid/financial-need/">Financial Need<i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="financial-aid/grant-aid/">Grant Aid<i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="financial-aid/federal/">Federal Aid<i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="financial-aid/state/">State Aid<i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="financial-aid/institutional/">Institutional Aid<i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="financial-aid/other/">Other Source of Aid<i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="financial-aid/tax-benefits/">Tax Benefits <i className="fa fa-chevron-right"></i></a></li>
           </ul>
         </HomePageCTA>
         <HomePageCTA src="img/covering-expenses.svg">
-          <h2>Covering Expenses</h2>
-          <p>Pellentesque egestas varius tortor eget efficitur. Nunc dignissim pharetra libero a consectetur. Morbi accumsan ex non rhoncus molestie. In commodo venenatis tortor id interdum. Integer condimentum sapien ac erat venenatis luctus.</p>
+          <a href="covering-expenses/"><h2>Covering Expenses</h2></a>
+          <p>How do students fill the financial gap between the financial aid they&rsquo;re offered and the full cost of attending college?</p>
           <ul>
-            <li><a href="#">Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
-            <li><a href="#">Another Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="covering-expenses/pre-college-income/">Pre-College Income<i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="covering-expenses/savings/">Savings<i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="covering-expenses/working-during-college/">Working During College<i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="covering-expenses/borrowing/">Borrowing<i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="covering-expenses/time-to-degree/">Time to Degree<i className="fa fa-chevron-right"></i></a></li>
           </ul>
         </HomePageCTA>
         <HomePageCTA src="img/after-college.svg">
-          <h2>After College</h2>
-          <p>Mauris sapien orci, sagittis vel feugiat varius, scelerisque non urna. In eu massa sapien. Nulla aliquet purus eu nisl vulputate, nec tempus elit pulvinar. Etiam nec egestas leo, id rhoncus augue. In nec sollicitudin turpis. Integer bibendum arcu ut viverra ullamcorper. Duis eleifend congue rhoncus.</p>
+          <h2><a href="after-college/">After College</a></h2>
+          <p>College affordability isn&rsquo;t just about the resources available when a student enrolls. How well the investment of time and money pays off is just as important.</p>
           <ul>
-            <li><a href="#">Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
-            <li><a href="#">Another Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
-            <li><a href="#">Third Call to Action Link <i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="after-college/employment-after-college/">Employment after College<i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="after-college/variation-in-earnings/">Variation in Earnings<i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="after-college/student-debt/">Debt Burdens<i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="after-college/loan-repayment-and-default/">Loan Repayment and Default<i className="fa fa-chevron-right"></i></a></li>
+          </ul>
+        </HomePageCTA>
+        <HomePageCTA src="img/breaking-even.svg">
+          <a href="breaking-even/"><h2>Breaking Even</h2></a>
+          <p>Going to college is an investment. How long will it take to break even on that investment? </p>
+          <ul>
+            <li><a href="breaking-even/">Breaking Even<i className="fa fa-chevron-right"></i></a></li>
           </ul>
         </HomePageCTA>
 
@@ -89,13 +108,13 @@ let specifications = {
       <StudentProfiles>
         <h2>Explore Student Profiles</h2>
         <hr />
-        <p>Suspendisse sodales tempus vehicula. Nullam in mauris et justo mattis sollicitudin eu non sem. Etiam semper dictum purus sit amet maximus. Phasellus ullamcorper tempor ante, sit.</p>
+        <p>College affordability is different depending on who you are, where you come from, and where you go. Explore these student profiles to better understand how different circumstances and decisions affect different students.</p>
         <ul>
-          <StudentProfile href="#" title="Independent" />
-          <StudentProfile href="#" title="Low-Income Dependent" />
-          <StudentProfile href="#" title="Lower-Middle Income Dependent" />
-          <StudentProfile href="#" title="Upper-Middle Income Dependent" />
-          <StudentProfile href="#" title="Top-Income Dependent" />
+          <StudentProfile href="student-profiles/#independent_students" title="Independent" />
+          <StudentProfile href="student-profiles/#low_income_dependent_students" title="Low-Income Dependent" />
+          <StudentProfile href="student-profiles/#lower_middle_income_dependent_students" title="Lower-Middle Income Dependent" />
+          <StudentProfile href="student-profiles/#upper_middle_income_dependent_students" title="Upper-Middle Income Dependent" />
+          <StudentProfile href="student-profiles/#upper_income_dependent_students" title="Top-Income Dependent" />
         </ul>
       </StudentProfiles>
 

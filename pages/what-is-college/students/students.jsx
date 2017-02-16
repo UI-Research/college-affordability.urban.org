@@ -24,12 +24,12 @@ let singlepage = (
       <p>In 2011–12, 6 percent of dependent first-year students enrolled in for-profit institutions, compared with 22 percent of independent students. Very few first-year students over the age of 24 enroll in four-year public or private nonprofit colleges and universities.</p>
       <Graph file={require('./json/01_0070.json')}/>
     <h2>By Income</h2>
-      <p>The median family income among all dependent students in 2011–12 was about $65,000. A quarter of dependent undergraduates were from families with incomes lower than $30,000 and another quarter were from families with incomes higher than $106,000. </p>
+      <p>The median parental income among all dependent students in 2011–12 was about $65,000. A quarter of dependent undergraduates were from families with incomes lower than $30,000 and another quarter were from families with incomes higher than $106,000. </p>
       <p>Looking only at first-year students, a higher percentage came from low-income families and a lower percentage from families with incomes of $106,000 or more. In other words, those from higher-income backgrounds are more likely to stay in college beyond the first year.</p>
       <Graph file={require('./json/01_0080.json')}/>
-      <p>About 70 percent of students from the top quartile of family income were enrolled in four-year colleges, compared with about 40 percent of students from the lowest income quartile.</p>
+      <p>About 70 percent of students from the top quartile of parental income were enrolled in four-year colleges, compared with about 40 percent of students from the lowest income quartile.</p>
       <Graph file={require('./json/01_0090.json')}/>
-      <p>Among dependent first-year students from the lowest income group, 7 percent enrolled in private nonprofit four-year institutions in 2011-12 and 59 percent enrolled in community colleges. Among first-year students from the highest income group, 19 percent enrolled in private nonprofit four-year institutions and 45 percent enrolled in community colleges.</p>
+      <p>Among dependent first-year students from the lowest income group, 7 percent enrolled in private nonprofit four-year institutions in 2011&ndash;12 and 59 percent enrolled in community colleges. Among first-year students from the highest income group, 19 percent enrolled in private nonprofit four-year institutions and 45 percent enrolled in community colleges.</p>
       <Graph file={require('./json/01_0100.json')}/>
     <h2>By Race and Ethnicity</h2>
       <p>White and Asian students are more likely than black and Hispanic students to be enrolled in public and private nonprofit four-year colleges and universities. They are less likely to attend community colleges or for-profit institutions.</p>
@@ -39,7 +39,7 @@ let singlepage = (
     <h2>By Attendance Pattern</h2>
       <p>About half of all undergraduates are enrolled exclusively full time and 10 percent are enrolled exclusively less than half time. Over 80 percent of students enrolled less than half time are in the public two-year sector, compared with 29 percent of those who are enrolled full time.</p>
       <Graph file={require('./json/01_0130.json')}/>
-      <p>Very few students who enroll part time the first year they are in college attend institutions other than public two-year colleges. Approximately forty-percent of full-time first-year students were in this sector in 2011–12.</p>
+      <p>Very few students who enroll part time the first year they are in college attend institutions other than public two-year colleges. Approximately 40 percent of full-time first-year students were in this sector in 2011–12, compared with 69 percent to 90 percent of those with enrollment patterns that include at least some part-time attendance.</p>
       <Graph file={require('./json/01_0140.json')}/>   
   </div>
 );

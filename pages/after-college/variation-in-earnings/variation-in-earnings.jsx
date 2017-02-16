@@ -11,7 +11,7 @@ import util from 'util.jsx';
 
 let singlepage = (
   <div>
-    <h1>Variation in earnings</h1>
+    <h1>Variation in Earnings</h1>
       <p><strong>Most college degrees pay off very well in the labor market.</strong> <strong>Average earnings increase sharply with higher levels of education.</strong></p>
       <p>The earnings gaps between bachelor&rsquo;s and advanced degree recipients and those with only a high school education are largest, but the typical associate degree holder earns more than someone with some college but no degree, who earns more than those with no college experience. And even though median earnings <a href="#over_time">have not risen</a> much for young people at any level of education in recent years, the gap between those with college degrees and those with only a high school education continues to grow, as finding a well-paying job without any college gets harder. </p>
       <p>It is not easy to know how much of the earnings differential is really caused by education and how much results from preexisting differences between those who go to college and those who do not. But careful <a href="https://www.stlouisfed.org/publications/regional-economist/january-2010/the-return-to-education-isnt-calculated-easily#sidebar1" target="_blank">statistical analyses</a> suggest that most of the gaps are, indeed, caused by college education. </p>
@@ -24,7 +24,7 @@ let singlepage = (
       <Graph file={require('./json/06_0040.json')} />
     <h2>Variation by Age</h2>
       <p><strong>The earnings gap between high school graduates and college graduates is larger for older people because earnings tend to increase more rapidly for individuals with higher levels of education.</strong></p>
-      <p>The earnings gaps across levels of education are larger for 35- to 44-year olds than for younger adults.</p>
+      <p>The earnings gaps across levels of education are larger for 35- to 44-year-olds than for younger adults.</p>
       <Graph file={require('./json/06_0050.json')} />
     <h2>Variation within Education Levels</h2>
       <p>There is considerable variation in earnings among workers in the same age group with the same level of education, though as level of education increases the percentage of workers with low earnings declines rapidly and the percentage of workers with high earnings increases.</p>

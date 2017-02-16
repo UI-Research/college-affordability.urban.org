@@ -232,7 +232,7 @@ export default class Header extends Component {
                           <a href="/after-college/variation-in-earnings">Variation in Earnings</a>
                         </li>
                         <li>
-                          <a href="/after-college/debt-burden">Debt Burden</a>
+                          <a href="/after-college/student-debt">Student Debt</a>
                         </li>
                         <li>
                           <a href="/after-college/loan-repayment-and-default">Loan Repayment and Default</a>
