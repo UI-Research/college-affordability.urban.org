@@ -29,7 +29,7 @@ let singlepage = (
     <h2>Who Receives State Grant Aid?</h2>
       <p><strong>State grant aid goes almost exclusively to students enrolled in college in their states of legal residence. Low-income dependent students and those enrolled in public and private nonprofit four-year institutions are most likely to receive state grant aid</strong>. In addition to income requirements for eligibility, the fact that about one-quarter of dependent students from families in the highest income quartile enroll out-of-state compared with just over 10 percent of those from the lowest-income families contributes to the concentration of aid at the lower end of the income distribution.</p>
 
-      <Multiples title="Share of Undergraduates Receiving State Grant Aid, 2011–12" source="NPSAS, 2012">
+      <Multiples title="Share of Undergraduates Receiving State Grant Aid, 2011–12" source="National Postsecondary Student Aid Study (NPSAS), 2012">
         <Graph file={require('./json/04_0151.json')} small="true"/>
         <Graph file={require('./json/04_0152.json')} small="true"/>
         <Graph file={require('./json/04_0153.json')} small="true"/>
@@ -40,7 +40,7 @@ let singlepage = (
     <h2>Average State Grant Aid</h2>
       <p><strong>Most variation in state grant aid is a function of eligibility requirements. Among those who receive state grants, the average sizes of the awards are similar.</strong></p>
       <p>Although students from lower-income families are more likely than their more affluent peers to receive state grant aid, average amounts received do not differ much by family income.</p>
-      <Multiples title="Average State Grant Aid per Recipient, 2011–12" source="National Postsecondary Student Aid Study (NPSAS), 2012.">
+      <Multiples title="Average State Grant Aid per Recipient, 2011–12" source="NPSAS, 2012.">
         <Graph file={require('./json/04_0161.json')} small="true"/>
         <Graph file={require('./json/04_0162.json')} small="true"/>
         <Graph file={require('./json/04_0163.json')} small="true"/>
