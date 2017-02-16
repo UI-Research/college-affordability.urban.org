@@ -38,7 +38,7 @@ let singlepage = (
         <Graph file={require('./json/04_0071.json')} small="true"/>
         <Graph file={require('./json/04_0072.json')} small="true"/>
     </Multiples>
-    <p><strong>Within each sector, dependent students from families with lower incomes receive more aid than those from more affluent families—but the aid is not nearly enough to make up for differences in ability to pay.</strong> For example, the average full-time student in a private nonprofit four-year college or university whose family income was $155,000 or higher received more than half of the average grant that students from families with incomes of less than $30,000 received in 2011–12, despite having more than five times the resources.  </p>
+    <p><strong>Within each sector, dependent students from families with lower incomes receive more aid than those from more affluent families—but the aid is not nearly enough to make up for differences in ability to pay.</strong> For example, the average full-time student in a private nonprofit four-year college or university whose family income was $155,000 or higher received more than half of the average grant that students from families with incomes of less than $30,000 received in 2011&ndash;12, despite having more than five times the resources.  </p>
     <Graph file={require('./json/04_0080.json')}/>
     <Box>
       <h3><em>How do colleges assess the income of an independent student? </em></h3>

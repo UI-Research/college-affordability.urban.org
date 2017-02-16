@@ -21,7 +21,7 @@ let singlepage = (
         <p>Because tax dollars fund public higher education, changes in state and local appropriations tend to follow trends in tax revenues. The Great Recession dealt a blow to state budgets and led states to reduce public funding for higher education. This decline would likely have been more severe had the federal government not supplemented state revenues through the American Recovery and Reinvestment Act of 2009. </p>
         <p>Total appropriations continued to decline after 2009–10 but have increased slightly since 2012–13 as tax revenues have recovered.</p>
       <h2>Local Support</h2>
-        <p><strong>Since 1999–2000, state financial support for public higher education has risen only 6 percent while local support has increased 30 percent.</strong> However, local support still made up just 12 percent of total appropriations in 2014-15.</p>
+        <p><strong>Since 1999&ndash;2000, state financial support for public higher education has risen only 6 percent while local support has increased 30 percent.</strong> However, local support still made up just 12 percent of total appropriations in 2014&ndash;15.</p>
         <Graph file={require('./json/02_0030.json')}/>
       <h2>Variation across States</h2>
        <p>National averages provide a meaningful overview of the circumstances facing college students. <strong>But state funding patterns and the price of college vary dramatically across states, generating considerable geographic differences in college affordability.</strong></p>
