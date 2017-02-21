@@ -15,10 +15,11 @@
       "format": "dollar"
     }
   },
-  "title": "Private nonprofit four-year institutions by share of applicants admitted",
+  "title": "Average Endowment Income per Student by Institution Selectivity",
+  "subtitle": "Private nonprofit four-year institutions by share of applicants admitted",
   "metadata": {
     "notes": null,
-    "source": "Integrated Postsecondary Education Data System"
+    "source": "IPEDS, 2013–14."
   },
   "series": "Applicants Admitted by Percentage",
   "axis": {
