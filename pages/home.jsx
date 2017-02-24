@@ -117,6 +117,7 @@ let specifications = {
           <StudentProfile href="student-profiles/#upper_income_dependent_students" title="Top-Income Dependent" />
         </ul>
       </StudentProfiles>
+      
 
     </div>
   )
