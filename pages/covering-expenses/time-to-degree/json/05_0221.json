@@ -24,10 +24,7 @@
         120540
       ]
     ],
-    "type": "bar",
-    "labels": {
-      "format": "dollar"
-    }
+    "type": "bar"
   },
   "axis": {
     "rotated": true,

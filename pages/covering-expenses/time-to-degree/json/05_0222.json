@@ -32,9 +32,6 @@
   "data": {
     "type": "bar",
 
-    "labels": {
-      "format": "dollar"
-    },
     "columns": [
       [
         "Four years",
