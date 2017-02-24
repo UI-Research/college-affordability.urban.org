@@ -36,8 +36,9 @@ let singlepage = (
     </Multiples>
       <p><strong>More selective schools tend to have higher endowment income.</strong></p>
       <p>At both private nonprofit and public four-year institutions with open admissions policies, median annual endowment income per student is about $300. In contrast, the median private nonprofit four-year institution that admits fewer than 25 percent of applicants has almost $18,000 in annual endowment income per student. </p>
-          <Graph file={require('./json/02_0061.json')}>
-          <Graph file={require('./json/02_0062.json')}>
+        <Graph file={require('./json/02_0610.json')}/>
+        <Graph file={require('./json/02_0620.json')}/>
+
       <Box>
         <h3><em>How do graduate students affect per-student spending from university endowments? </em></h3>
         <p><em>Estimated subsidies are much higher among students attending research institutions in the top decile than among those at less-resourced institutions in both the public and private sectors. But per-student subsidies at research universities do not represent resources devoted solely to undergraduate education. These institutions also educate many graduate students and have active research agendas.</em></p>
