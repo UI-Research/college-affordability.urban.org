@@ -98,7 +98,7 @@ export class BaseGraph extends Component {
       }
       else if(data.forceMediumHeight == true){
         if(data.data.sets){
-          data.size = { "height" : 520}
+          data.size = { "height" : 480}
         }else{
           data.size = { "height" : 570}
         }
@@ -636,6 +636,7 @@ export class BaseGraph extends Component {
         if (width <= util.breakpointWidth('mid')) {
           data.axis.y.tick.rotate = 20;
           data.axis.y.tick.multiline = false;
+
           if (data.axis.y.padding && data.axis.y.padding.right && data.axis.y.padding.right < 0) {
             data.axis.y.padding.right = 0;
           }
@@ -692,6 +693,9 @@ export class BaseGraph extends Component {
       svg.select("svg").style("height", function(){
         if(Math.abs(Math.max.apply(null, bottoms)-Math.min.apply(null, bottoms)) < 1){
           return "40px"
+        }
+        else if(bottoms.length >= 10){
+          return 1.5*Math.abs(Math.max.apply(null, bottoms)-Math.min.apply(null, bottoms)) + "px"
         }else{
           return 2*Math.abs(Math.max.apply(null, bottoms)-Math.min.apply(null, bottoms)) + "px"
         }
