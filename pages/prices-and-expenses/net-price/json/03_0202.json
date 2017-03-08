@@ -1,4 +1,5 @@
 {
+  "padding": {"right": 30},
   "tallSmallMultiple": true,
   "axis": {
     "rotated": true,
