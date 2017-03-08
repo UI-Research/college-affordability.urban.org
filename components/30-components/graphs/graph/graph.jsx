@@ -505,7 +505,7 @@ export class BaseGraph extends Component {
     };
 
 
-    let csvFileName = (object.props.file.imageOverride == '') ? object.props.file.title : object.props.file.imageOverride;
+    let csvFileName = (object.props.file.imageOverride == '' || typeof(object.props.file.imageOverride) == "undefined") ? object.props.file.title : object.props.file.imageOverride;
 
 
     // Generate link for CSV download.
@@ -908,7 +908,15 @@ export class BaseGraph extends Component {
       var barBounds = barGroup.querySelectorAll(".c3-bar")[indexNum].getBoundingClientRect()
       var textBounds = this.getBoundingClientRect()
       //if label doesn't fit in bar slice, don't show it
-      if(barBounds.width <= textBounds.width -3 || barBounds.height <= textBounds.height -3 || (object.props.file.customHideLabel == true && this.innerHTML == "2%") || (object.props.file.customHideLabelTwo == true && (this.innerHTML == "3.8%" || this.innerHTML == "3.7%") )){
+      if(barBounds.width <= textBounds.width -3 || barBounds.height <= textBounds.height -3 || (object.props.file.customHideLabel == true && this.innerHTML == "2%")
+        ||
+        (object.props.file.customHideLabelTwo == true && (this.innerHTML == "3.8%" || this.innerHTML == "3.7%") )
+        ||
+        (object.props.file.customHideLabelThree == true && (this.innerHTML == "26.8%" || this.innerHTML == "25.2%" || this.innerHTML == "23.8%") )
+        ||
+        (object.props.file.customHideLabelFour == true && (this.innerHTML == "$700" || this.innerHTML == "$800") )
+        
+        ){
 
          d3.select(this).attr('style', style + ' fill:' + 'rgba(0,0,0,0)' + ' !important'); 
       }
