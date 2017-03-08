@@ -365,8 +365,9 @@ export class BaseGraph extends Component {
       // apply special formatting for small graph sizes!
       if (this.props.small == 'true') {
         data.legend.show = false;
-
-        var width = (this.props.children == 2 || this.props.file.wideSmallMultiple == true) ? 335 : 210;
+        const iwidth = window.innerWidth
+        
+        var width = (this.props.children == 2 || this.props.file.wideSmallMultiple == true || iwidth <= util.breakpointWidth('mid')) ? 335 : 210;
         var height = (this.props.file.tallSmallMultiple == true) ? 335 : 210;
         data.padding = {"top": 10}
         if(data.data.type == "bar" && data.axis.rotated == true){

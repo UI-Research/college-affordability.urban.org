@@ -34,7 +34,13 @@
     width: 345px;
   }
   .c-graph-multiple {
-    width: 225px;
+    width: 345px;
+    @include breakpoint($bp--large) {
+      width: 225px;
+    }
+    @include breakpoint($bp--mid) {
+      width: 225px;
+    }
     float: left;
 
     h2 {
