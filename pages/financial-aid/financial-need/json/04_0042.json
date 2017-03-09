@@ -1,4 +1,6 @@
-{"hideTooltip": true,
+{
+  "customHideLabelThree": true,
+  "hideTooltip": true,
   "axis": {
     "rotated": true,
     "x": {

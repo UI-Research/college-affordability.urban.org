@@ -98,7 +98,7 @@ export class BaseGraph extends Component {
       }
       else if(data.forceMediumHeight == true){
         if(data.data.sets){
-          data.size = { "height" : 520}
+          data.size = { "height" : 480}
         }else{
           data.size = { "height" : 570}
         }
@@ -365,8 +365,9 @@ export class BaseGraph extends Component {
       // apply special formatting for small graph sizes!
       if (this.props.small == 'true') {
         data.legend.show = false;
-
-        var width = (this.props.children == 2 || this.props.file.wideSmallMultiple == true) ? 335 : 210;
+        const iwidth = window.innerWidth
+        
+        var width = (this.props.children == 2 || this.props.file.wideSmallMultiple == true || iwidth <= util.breakpointWidth('mid')) ? 335 : 210;
         var height = (this.props.file.tallSmallMultiple == true) ? 335 : 210;
         data.padding = {"top": 10}
         if(data.data.type == "bar" && data.axis.rotated == true){
@@ -505,7 +506,7 @@ export class BaseGraph extends Component {
     };
 
 
-    let csvFileName = (object.props.file.imageOverride == '') ? object.props.file.title : object.props.file.imageOverride;
+    let csvFileName = (object.props.file.imageOverride == '' || typeof(object.props.file.imageOverride) == "undefined") ? object.props.file.title : object.props.file.imageOverride;
 
 
     // Generate link for CSV download.
@@ -636,6 +637,7 @@ export class BaseGraph extends Component {
         if (width <= util.breakpointWidth('mid')) {
           data.axis.y.tick.rotate = 20;
           data.axis.y.tick.multiline = false;
+
           if (data.axis.y.padding && data.axis.y.padding.right && data.axis.y.padding.right < 0) {
             data.axis.y.padding.right = 0;
           }
@@ -692,6 +694,9 @@ export class BaseGraph extends Component {
       svg.select("svg").style("height", function(){
         if(Math.abs(Math.max.apply(null, bottoms)-Math.min.apply(null, bottoms)) < 1){
           return "40px"
+        }
+        else if(bottoms.length >= 10){
+          return 1.5*Math.abs(Math.max.apply(null, bottoms)-Math.min.apply(null, bottoms)) + "px"
         }else{
           return 2*Math.abs(Math.max.apply(null, bottoms)-Math.min.apply(null, bottoms)) + "px"
         }
@@ -908,7 +913,15 @@ export class BaseGraph extends Component {
       var barBounds = barGroup.querySelectorAll(".c3-bar")[indexNum].getBoundingClientRect()
       var textBounds = this.getBoundingClientRect()
       //if label doesn't fit in bar slice, don't show it
-      if(barBounds.width <= textBounds.width -3 || barBounds.height <= textBounds.height -3 || (object.props.file.customHideLabel == true && this.innerHTML == "2%") || (object.props.file.customHideLabelTwo == true && (this.innerHTML == "3.8%" || this.innerHTML == "3.7%") )){
+      if(barBounds.width <= textBounds.width -3 || barBounds.height <= textBounds.height -3 || (object.props.file.customHideLabel == true && this.innerHTML == "2%")
+        ||
+        (object.props.file.customHideLabelTwo == true && (this.innerHTML == "3.8%" || this.innerHTML == "3.7%") )
+        ||
+        (object.props.file.customHideLabelThree == true && (this.innerHTML == "26.8%" || this.innerHTML == "25.2%" || this.innerHTML == "23.8%") )
+        ||
+        (object.props.file.customHideLabelFour == true && (this.innerHTML == "$700" || this.innerHTML == "$800") )
+        
+        ){
 
          d3.select(this).attr('style', style + ' fill:' + 'rgba(0,0,0,0)' + ' !important'); 
       }
