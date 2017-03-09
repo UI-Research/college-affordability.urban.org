@@ -1,6 +1,6 @@
 { "overrideTickCount": true,
   "metadata": {
-    "source": "Current Population Survey (CPS), Annual Social and Economic Supplement (ASES), 1995–2015.",
+    "source": "Current Population Survey (CPS), Annual Social and Economic Supplement (ASES), 1993–2015.",
     "notes": null
   },
   "axis": {
@@ -48,7 +48,7 @@
     },
     "rotated": false
   },
-  "title": "Labor Force Participation Rates Among Individuals Ages 25\u201334 by Educational Attainment, 1993\u20132015",
+  "title": "Labor Force Participation Rates among Individuals Ages 25\u201334 by Educational Attainment, 1993\u20132015",
   "data": {
     "type": "line",
     "labels": {

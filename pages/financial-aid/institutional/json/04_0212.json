@@ -1,7 +1,7 @@
 {
   "series": [
     "Institutional need-based",
-    "Institutional non-need-based"
+    "Institutional non-need–based"
   ],
   "axis": {
     "rotated": true,
@@ -27,7 +27,7 @@
     "groups": [
       [
         "Institutional need-based",
-        "Institutional non-need-based"
+        "Institutional non-need–based"
       ]
     ],
     "columns": [
@@ -36,7 +36,7 @@
         510
       ],
       [
-        "Institutional non-need-based",
+        "Institutional non-need–based",
         277
       ]
     ]

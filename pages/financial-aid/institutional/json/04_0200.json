@@ -15,7 +15,7 @@
     "groups": [
       [
         "Need-based",
-        "Non-need-based"
+        "Non-need–based"
       ]
     ],
     "labels": {
@@ -34,7 +34,7 @@
             1300
           ],
           [
-            "Non-need-based",
+            "Non-need–based",
             3800,
             4100,
             4800,
@@ -53,7 +53,7 @@
             3500
           ],
           [
-            "Non-need-based",
+            "Non-need–based",
             7500,
             7300,
             6100,
@@ -72,7 +72,7 @@
             3000
           ],
           [
-            "Non-need-based",
+            "Non-need–based",
             6600,
             7300,
             7800,
@@ -91,7 +91,7 @@
             5100
           ],
           [
-            "Non-need-based",
+            "Non-need–based",
             4300,
             5100,
             5500,
@@ -102,7 +102,7 @@
 
     }
   },
-  "title": "Average Need-Based and Non-Need–Based Institutional Grant Aid per Full-Time Dependent Student, Private Nonprofit Four-Year Institutions, 2011–12",
+  "title": "Average Need-Based and Non-need–Based Institutional Grant Aid per Full-Time Dependent Student, Private Nonprofit Four-Year Institutions, 2011–12",
   "axis": {
     "rotated": true,
     "y": {
