@@ -25,11 +25,11 @@ let singlepage = (
         <Graph file={require('./json/03_1811.json')} small="true"/>
         <Graph file={require('./json/03_1812.json')} small="true"/>
       </Multiples>
-      <Multiples title="" subtitle="Ages 18–23, by gender and race and ethnicity" source="IPUMS 2014 ACS five-year sample (2010–14).">
+      <Multiples title="" subtitle="Ages 18–23, by gender and race and ethnicity" source="ACS, five-year sample 2010–14.">
         <Graph file={require('./json/03_1821.json')} small="true"/>
         <Graph file={require('./json/03_1822.json')} small="true"/>
       </Multiples>
-      <Multiples title="" subtitle="Ages 24–34, by gender and race and ethnicity" source="IPUMS 2014 ACS five-year sample (2010–14).">
+      <Multiples title="" subtitle="Ages 24–34, by gender and race and ethnicity" source="ACS, five-year sample 2010–14.">
         <Graph file={require('./json/03_1831.json')} small="true"/>
         <Graph file={require('./json/03_1832.json')} small="true"/>
       </Multiples>

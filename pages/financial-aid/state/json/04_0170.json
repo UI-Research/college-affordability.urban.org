@@ -5,7 +5,7 @@
     "labels": {
       "format": "dollar"
     },
-    "groups": [["Need-based", "Non-need-based"]],
+    "groups": [["Need-based", "Non-need–based"]],
     "columns": [
       [
         "Need-based",
@@ -52,7 +52,7 @@
         570
       ],
       [
-        "Non-need-based",
+        "Non-need–based",
         0,
         0,
         0,
@@ -157,6 +157,6 @@
   },
   "series": [
     "Need-based",
-    "Non-need-based"
+    "Non-need–based"
   ]
 }
