@@ -12,7 +12,7 @@ import util from 'util.jsx';
 let singlepage = (
   <div>
     <h1>Prices and Expenses</h1>
-		<p>Tuition is the most obvious expense facing college students, but it&rsquo;s far from the only budget item they must consider. In fact, tuition is not even the biggest expense for most students attending public colleges and universities. </p>
+		<p>Tuition is the most obvious expense students face, but it&rsquo;s far from the only budget item they must consider. In fact, tuition is not even the biggest expense for most students attending public colleges and universities. </p>
 		<p>Assessing college affordability requires consideration of not just tuition and fees, but living expenses students incur while in school rather than in the workforce. </p>
 		<p>Colleges and universities provide the &ldquo;cost of attendance,&rdquo; essentially an estimate of a <strong><a href="student-budgets">student&rsquo;s budget</a></strong> for a year of college. It includes tuition and fees along with expenses like <strong>food, <a href="room-and-board">housing</a>, and books and supplies</strong>. </p>
 		<p>A problem with this estimate is that some of those expenses, such as housing and food, are not truly part of the cost of college. Rather, these are expenses everyone faces whether they&rsquo;re in college or not. At the same time, cost of attendance omits one real cost: <strong><a href="forgone-earnings">forgone earnings</a>,</strong> the income students forego by attending school rather than working full time. The cost of attendance may tell you how much a student has to pay, but it doesn&rsquo;t tell you the true cost of college. </p>

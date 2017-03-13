@@ -205,13 +205,13 @@ export default class Header extends Component {
                       <span onClick={toggle} className="fa fa-chevron-down"></span>
                       <ul className="nav-primary__second-level">
                         <li>
-                          <a href="/covering-expenses/pre-college-income">Pre-College Income</a>
+                          <a href="/covering-expenses/pre-college-income">Pre-college Income</a>
                         </li>
                         <li>
                           <a href="/covering-expenses/savings">Savings</a>
                         </li>
                         <li>
-                          <a href="/covering-expenses/working-during-college">Working During College</a>
+                          <a href="/covering-expenses/working-during-college">Working during College</a>
                         </li>
                         <li>
                           <a href="/covering-expenses/borrowing">Borrowing</a>
@@ -226,7 +226,7 @@ export default class Header extends Component {
                       <span onClick={toggle} className="fa fa-chevron-down"></span>
                       <ul className="nav-primary__second-level">
                         <li>
-                          <a href="/after-college/employment-after-college">Employment After College</a>
+                          <a href="/after-college/employment-after-college">Employment after College</a>
                         </li>
                         <li>
                           <a href="/after-college/variation-in-earnings">Variation in Earnings</a>

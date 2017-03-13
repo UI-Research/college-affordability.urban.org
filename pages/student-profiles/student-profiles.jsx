@@ -25,60 +25,60 @@ let singlepage = (
 <p><a name="OLE_LINK10" id="OLE_LINK10">Average Published Prices, Budgets, and Resources Used to Pay for College for Independent Students, 2011–12</a></p>
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
   <tr>
-    <td width="146" nowrap="nowrap" valign="top"><p>&nbsp;</p></td>
-    <td width="53" valign="top"><p>Public four-year in-state</p></td>
-    <td width="62" valign="top"><p>Public four-year out-of-state</p></td>
-    <td width="60" valign="top"><p>Private nonprofit four-year</p></td>
-    <td width="53" valign="top"><p>For-profit</p></td>
-    <td width="53" valign="top"><p>Public two-year</p></td>
+    <td width="146" nowrap="nowrap" valign="top">&nbsp;</td>
+    <td width="53" align="center" valign="bottom"><strong>Public four-year in-state</strong></td>
+    <td width="62" align="center" valign="bottom"><strong>Public four-year out-of-state</strong></td>
+    <td width="60" align="center" valign="bottom"><strong>Private nonprofit four-year</strong></td>
+    <td width="53" align="center" valign="bottom"><strong>For-profit</strong></td>
+    <td width="53" align="center" valign="bottom"><strong>Public two-year</strong></td>
   </tr>
   <tr>
-    <td width="146" nowrap="nowrap" valign="top"><p>Published   tuition and fees</p></td>
-    <td width="53" nowrap="nowrap" valign="top"><p align="right">$7,700</p></td>
-    <td width="62" nowrap="nowrap" valign="top"><p align="right">$14,000</p></td>
-    <td width="60" nowrap="nowrap" valign="top"><p align="right">$22,400</p></td>
-    <td width="53" nowrap="nowrap" valign="top"><p align="right">$14,900</p></td>
-    <td width="53" nowrap="nowrap" valign="top"><p align="right">$2,800</p></td>
+    <td width="146" nowrap="nowrap" valign="top">Published tuition and fees</td>
+    <td width="53" align="right" valign="top" nowrap="nowrap">$7,700</td>
+    <td width="62" align="right" valign="top" nowrap="nowrap">$14,000</td>
+    <td width="60" align="right" valign="top" nowrap="nowrap">$22,400</td>
+    <td width="53" align="right" valign="top" nowrap="nowrap">$14,900</td>
+    <td width="53" align="right" valign="top" nowrap="nowrap">$2,800</td>
   </tr>
   <tr>
-    <td width="146" nowrap="nowrap" valign="top"><p>Budget   beyond tuition and fees</p></td>
-    <td width="53" nowrap="nowrap" valign="top"><p align="right">$15,500</p></td>
-    <td width="62" nowrap="nowrap" valign="top"><p align="right">$16,300</p></td>
-    <td width="60" nowrap="nowrap" valign="top"><p align="right">$15,300</p></td>
-    <td width="53" nowrap="nowrap" valign="top"><p align="right">$14,700</p></td>
-    <td width="53" nowrap="nowrap" valign="top"><p align="right">$14,200</p></td>
+    <td width="146" nowrap="nowrap" valign="top">Budget beyond tuition and fees</td>
+    <td width="53" align="right" valign="top" nowrap="nowrap">$15,500</td>
+    <td width="62" align="right" valign="top" nowrap="nowrap">$16,300</td>
+    <td width="60" align="right" valign="top" nowrap="nowrap">$15,300</td>
+    <td width="53" align="right" valign="top" nowrap="nowrap">$14,700</td>
+    <td width="53" align="right" valign="top" nowrap="nowrap">$14,200</td>
   </tr>
   <tr>
-    <td width="146" nowrap="nowrap" valign="top"><p>Expected   family contribution</p></td>
-    <td width="53" nowrap="nowrap" valign="top"><p align="right">$2,300</p></td>
-    <td width="62" nowrap="nowrap" valign="top"><p align="right">$2,200</p></td>
-    <td width="60" nowrap="nowrap" valign="top"><p align="right">$4,500</p></td>
-    <td width="53" nowrap="nowrap" valign="top"><p align="right">$2,700</p></td>
-    <td width="53" nowrap="nowrap" valign="top"><p align="right">$2,100</p></td>
+    <td width="146" nowrap="nowrap" valign="top">Expected family contribution</td>
+    <td width="53" align="right" valign="top" nowrap="nowrap">$2,300</td>
+    <td width="62" align="right" valign="top" nowrap="nowrap">$2,200</td>
+    <td width="60" align="right" valign="top" nowrap="nowrap">$4,500</td>
+    <td width="53" align="right" valign="top" nowrap="nowrap">$2,700</td>
+    <td width="53" align="right" valign="top" nowrap="nowrap">$2,100</td>
   </tr>
   <tr>
-    <td width="146" nowrap="nowrap" valign="top"><p>Total   grants</p></td>
-    <td width="53" nowrap="nowrap" valign="top"><p align="right">$7,100</p></td>
-    <td width="62" nowrap="nowrap" valign="top"><p align="right">$6,800</p></td>
-    <td width="60" nowrap="nowrap" valign="top"><p align="right">$13,000</p></td>
-    <td width="53" nowrap="nowrap" valign="top"><p align="right">$5,900</p></td>
-    <td width="53" nowrap="nowrap" valign="top"><p align="right">$4,600</p></td>
+    <td width="146" nowrap="nowrap" valign="top">Total grants</td>
+    <td width="53" align="right" valign="top" nowrap="nowrap">$7,100</td>
+    <td width="62" align="right" valign="top" nowrap="nowrap">$6,800</td>
+    <td width="60" align="right" valign="top" nowrap="nowrap">$13,000</td>
+    <td width="53" align="right" valign="top" nowrap="nowrap">$5,900</td>
+    <td width="53" align="right" valign="top" nowrap="nowrap">$4,600</td>
   </tr>
   <tr>
-    <td width="146" nowrap="nowrap" valign="top"><p>Total   loans</p></td>
-    <td width="53" nowrap="nowrap" valign="top"><p align="right">$7,000</p></td>
-    <td width="62" nowrap="nowrap" valign="top"><p align="right">$7,900</p></td>
-    <td width="60" nowrap="nowrap" valign="top"><p align="right">$9,200</p></td>
-    <td width="53" nowrap="nowrap" valign="top"><p align="right">$9,200</p></td>
-    <td width="53" nowrap="nowrap" valign="top"><p align="right">$2,600</p></td>
+    <td width="146" nowrap="nowrap" valign="top">Total loans</td>
+    <td width="53" align="right" valign="top" nowrap="nowrap">$7,000</td>
+    <td width="62" align="right" valign="top" nowrap="nowrap">$7,900</td>
+    <td width="60" align="right" valign="top" nowrap="nowrap">$9,200</td>
+    <td width="53" align="right" valign="top" nowrap="nowrap">$9,200</td>
+    <td width="53" align="right" valign="top" nowrap="nowrap">$2,600</td>
   </tr>
   <tr>
-    <td width="146" nowrap="nowrap" valign="top"><p>Earnings   and other resources</p></td>
-    <td width="53" nowrap="nowrap" valign="top"><p align="right">$6,800</p></td>
-    <td width="62" nowrap="nowrap" valign="top"><p align="right">$13,400</p></td>
-    <td width="60" nowrap="nowrap" valign="top"><p align="right">$11,000</p></td>
-    <td width="53" nowrap="nowrap" valign="top"><p align="right">$11,800</p></td>
-    <td width="53" nowrap="nowrap" valign="top"><p align="right">$7,700</p></td>
+    <td width="146" nowrap="nowrap" valign="top">Earnings and other resources</td>
+    <td width="53" align="right" valign="top" nowrap="nowrap">$6,800</td>
+    <td width="62" align="right" valign="top" nowrap="nowrap">$13,400</td>
+    <td width="60" align="right" valign="top" nowrap="nowrap">$11,000</td>
+    <td width="53" align="right" valign="top" nowrap="nowrap">$11,800</td>
+    <td width="53" align="right" valign="top" nowrap="nowrap">$7,700</td>
   </tr>
 </table>
 <p>Source: NPSAS, 2012.</p>
@@ -97,63 +97,64 @@ let singlepage = (
 <p>Average Published Prices, Budgets, and Resources Used to Pay for College for Low-Income Dependent Students, 2011–12</p>
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
   <tr>
-    <td width="161" nowrap="nowrap" valign="top"><p>&nbsp;</p></td>
-    <td width="72" valign="top"><p>Public four-year in-state</p></td>
-    <td width="69" valign="top"><p>Public four-year out-of-state</p></td>
-    <td width="69" valign="top"><p>Private nonprofit four-year </p></td>
-    <td width="69" valign="top"><p>For-profit</p></td>
-    <td width="65" valign="top"><p>Public two-year </p></td>
+    <td width="161" nowrap="nowrap" valign="top">&nbsp;</td>
+    <td width="72" align="center" valign="bottom"><strong>Public four-year in-state</strong></td>
+    <td width="69" align="center" valign="bottom"><strong>Public four-year out-of-state</strong></td>
+    <td width="69" align="center" valign="bottom"><strong>Private nonprofit four-year </strong></td>
+    <td width="69" align="center" valign="bottom"><strong>For-profit</strong></td>
+    <td width="65" align="center" valign="bottom"><strong>Public two-year </strong></td>
   </tr>
   <tr>
-    <td width="161" valign="top"><p>Tuition   and fees</p></td>
-    <td width="72" nowrap="nowrap" valign="top"><p align="right">$7,800</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">$18,700</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">$27,100</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">$15,000</p></td>
-    <td width="65" nowrap="nowrap" valign="top"><p align="right">$4,000</p></td>
+    <td width="161" valign="top">Tuition and fees</td>
+    <td width="72" align="right" valign="top" nowrap="nowrap">$7,800</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">$18,700</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">$27,100</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">$15,000</td>
+    <td width="65" align="right" valign="top" nowrap="nowrap">$4,000</td>
   </tr>
   <tr>
-    <td width="161" valign="top"><p>Budget   beyond tuition and fees</p></td>
-    <td width="72" nowrap="nowrap" valign="top"><p align="right">$16,000</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">$15,000</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">$17,200</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">$16,800</p></td>
-    <td width="65" nowrap="nowrap" valign="top"><p align="right">$11,300</p></td>
+    <td width="161" valign="top">Budget beyond tuition and fees</td>
+    <td width="72" align="right" valign="top" nowrap="nowrap">$16,000</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">$15,000</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">$17,200</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">$16,800</td>
+    <td width="65" align="right" valign="top" nowrap="nowrap">$11,300</td>
   </tr>
   <tr>
-    <td width="161" valign="top"><p>Expected   family contribution </p></td>
-    <td width="72" nowrap="nowrap" valign="top"><p align="right">$400</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">$1,000</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">$400</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">$200</p></td>
-    <td width="65" nowrap="nowrap" valign="top"><p align="right">$400</p></td>
+    <td width="161" valign="top">Expected family contribution </td>
+    <td width="72" align="right" valign="top" nowrap="nowrap">$400</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">$1,000</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">$400</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">$200</td>
+    <td width="65" align="right" valign="top" nowrap="nowrap">$400</td>
   </tr>
   <tr>
-    <td width="161" valign="top"><p>Total   grants </p></td>
-    <td width="72" nowrap="nowrap" valign="top"><p align="right">$10,500</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">$12,000</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">$24,200</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">$7,100</p></td>
-    <td width="65" nowrap="nowrap" valign="top"><p align="right">$5,900</p></td>
+    <td width="161" valign="top">Total grants </td>
+    <td width="72" align="right" valign="top" nowrap="nowrap">$10,500</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">$12,000</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">$24,200</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">$7,100</td>
+    <td width="65" align="right" valign="top" nowrap="nowrap">$5,900</td>
   </tr>
   <tr>
-    <td width="161" valign="top"><p>Total   loans </p></td>
-    <td width="72" nowrap="nowrap" valign="top"><p align="right">$4,900</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">$8,700</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">$8,100</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">$10,400</p></td>
-    <td width="65" nowrap="nowrap" valign="top"><p align="right">$800</p></td>
+    <td width="161" valign="top">Total loans </td>
+    <td width="72" align="right" valign="top" nowrap="nowrap">$4,900</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">$8,700</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">$8,100</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">$10,400</td>
+    <td width="65" align="right" valign="top" nowrap="nowrap">$800</td>
   </tr>
   <tr>
-    <td width="161" valign="top"><p>Earnings   and other resources </p></td>
-    <td width="72" nowrap="nowrap" valign="top"><p align="right">$8,000</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">$12,100</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">$11,600</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">$14,100</p></td>
-    <td width="65" nowrap="nowrap" valign="top"><p align="right">$8,200</p></td>
+    <td width="161" valign="top">Earnings and other resources </td>
+    <td width="72" align="right" valign="top" nowrap="nowrap">$8,000</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">$12,100</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">$11,600</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">$14,100</td>
+    <td width="65" align="right" valign="top" nowrap="nowrap">$8,200</td>
   </tr>
 </table>
-<br />
+<p>Source: NPSAS, 2012.</p>
+
 <p><strong>How do low-income dependent pay for college?</strong></p>
 <Graph file={require('./json/07_0070.json')}/>
 <p><strong>How does time to degree affect cost? </strong></p>
@@ -168,63 +169,63 @@ let singlepage = (
 <p>Average Published Prices, Budgets, and Resources Used to Pay for College for Lower-Middle-Income Dependent Students, 2011–12</p>
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
   <tr>
-    <td width="153" nowrap="nowrap" valign="top"><p>&nbsp;</p></td>
-    <td width="59" valign="top"><p>Public four-year in-state</p></td>
-    <td width="63" valign="top"><p>Public four-year out-of-state</p></td>
-    <td width="56" valign="top"><p>Private nonprofit four-year </p></td>
-    <td width="69" valign="top"><p>For-profit</p></td>
-    <td width="65" valign="top"><p>Public two-year </p></td>
+    <td width="153" nowrap="nowrap" valign="bottom">&nbsp;</td>
+    <td width="59" align="center" valign="bottom"><strong>Public four-year in-state</strong></td>
+    <td width="63" align="center" valign="bottom"><strong>Public four-year out-of-state</strong></td>
+    <td width="56" align="center" valign="bottom"><strong>Private nonprofit four-year </strong></td>
+    <td width="69" align="center" valign="bottom"><strong>For-profit</strong></td>
+    <td width="65" align="center" valign="bottom"><strong>Public two-year </strong></td>
   </tr>
   <tr>
-    <td width="153" valign="top"><p>Tuition   and fees</p></td>
-    <td width="59" nowrap="nowrap" valign="top"><p align="right">$7,800</p></td>
-    <td width="63" nowrap="nowrap" valign="top"><p align="right">$18,700</p></td>
-    <td width="56" nowrap="nowrap" valign="top"><p align="right">$27,100</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">$15,000</p></td>
-    <td width="65" nowrap="nowrap" valign="top"><p align="right">$4,000</p></td>
+    <td width="153" valign="top">Tuition and fees</td>
+    <td width="59" align="right" valign="top" nowrap="nowrap">$7,800</td>
+    <td width="63" align="right" valign="top" nowrap="nowrap">$18,700</td>
+    <td width="56" align="right" valign="top" nowrap="nowrap">$27,100</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">$15,000</td>
+    <td width="65" align="right" valign="top" nowrap="nowrap">$4,000</td>
   </tr>
   <tr>
-    <td width="153" valign="top"><p>Budget   beyond tuition and fees</p></td>
-    <td width="59" nowrap="nowrap" valign="top"><p align="right">$16,000</p></td>
-    <td width="63" nowrap="nowrap" valign="top"><p align="right">$15,000</p></td>
-    <td width="56" nowrap="nowrap" valign="top"><p align="right">$17,200</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">$16,800</p></td>
-    <td width="65" nowrap="nowrap" valign="top"><p align="right">$11,300</p></td>
+    <td width="153" valign="top">Budget beyond tuition and fees</td>
+    <td width="59" align="right" valign="top" nowrap="nowrap">$16,000</td>
+    <td width="63" align="right" valign="top" nowrap="nowrap">$15,000</td>
+    <td width="56" align="right" valign="top" nowrap="nowrap">$17,200</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">$16,800</td>
+    <td width="65" align="right" valign="top" nowrap="nowrap">$11,300</td>
   </tr>
   <tr>
-    <td width="153" valign="top"><p>Expected   family contribution </p></td>
-    <td width="59" nowrap="nowrap" valign="top"><p align="right">$4,300</p></td>
-    <td width="63" nowrap="nowrap" valign="top"><p align="right">$4,900</p></td>
-    <td width="56" nowrap="nowrap" valign="top"><p align="right">$4,100</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">$3,800</p></td>
-    <td width="65" nowrap="nowrap" valign="top"><p align="right">$4,100</p></td>
+    <td width="153" valign="top">Expected family contribution </td>
+    <td width="59" align="right" valign="top" nowrap="nowrap">$4,300</td>
+    <td width="63" align="right" valign="top" nowrap="nowrap">$4,900</td>
+    <td width="56" align="right" valign="top" nowrap="nowrap">$4,100</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">$3,800</td>
+    <td width="65" align="right" valign="top" nowrap="nowrap">$4,100</td>
   </tr>
   <tr>
-    <td width="153" valign="top"><p>Total   grants </p></td>
-    <td width="59" nowrap="nowrap" valign="top"><p align="right">$7,000</p></td>
-    <td width="63" nowrap="nowrap" valign="top"><p align="right">$8,300</p></td>
-    <td width="56" nowrap="nowrap" valign="top"><p align="right">$21,600</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">$4,700</p></td>
-    <td width="65" nowrap="nowrap" valign="top"><p align="right">$3,200</p></td>
+    <td width="153" valign="top">Total grants </td>
+    <td width="59" align="right" valign="top" nowrap="nowrap">$7,000</td>
+    <td width="63" align="right" valign="top" nowrap="nowrap">$8,300</td>
+    <td width="56" align="right" valign="top" nowrap="nowrap">$21,600</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">$4,700</td>
+    <td width="65" align="right" valign="top" nowrap="nowrap">$3,200</td>
   </tr>
   <tr>
-    <td width="153" valign="top"><p>Total   loans </p></td>
-    <td width="59" nowrap="nowrap" valign="top"><p align="right">$6,000</p></td>
-    <td width="63" nowrap="nowrap" valign="top"><p align="right">$10,600</p></td>
-    <td width="56" nowrap="nowrap" valign="top"><p align="right">$9,800</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">$14,200</p></td>
-    <td width="65" nowrap="nowrap" valign="top"><p align="right">$1,200</p></td>
+    <td width="153" valign="top">Total loans </td>
+    <td width="59" align="right" valign="top" nowrap="nowrap">$6,000</td>
+    <td width="63" align="right" valign="top" nowrap="nowrap">$10,600</td>
+    <td width="56" align="right" valign="top" nowrap="nowrap">$9,800</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">$14,200</td>
+    <td width="65" align="right" valign="top" nowrap="nowrap">$1,200</td>
   </tr>
   <tr>
-    <td width="153" valign="top"><p>Earnings   and other resources </p></td>
-    <td width="59" nowrap="nowrap" valign="top"><p align="right">$6,500</p></td>
-    <td width="63" nowrap="nowrap" valign="top"><p align="right">$9,900</p></td>
-    <td width="56" nowrap="nowrap" valign="top"><p align="right">$8,700</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">$9,200</p></td>
-    <td width="65" nowrap="nowrap" valign="top"><p align="right">$6,800</p></td>
+    <td width="153" valign="top">Earnings and other resources </td>
+    <td width="59" align="right" valign="top" nowrap="nowrap">$6,500</td>
+    <td width="63" align="right" valign="top" nowrap="nowrap">$9,900</td>
+    <td width="56" align="right" valign="top" nowrap="nowrap">$8,700</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">$9,200</td>
+    <td width="65" align="right" valign="top" nowrap="nowrap">$6,800</td>
   </tr>
 </table>
-<br />
+<p>Source: NPSAS, 2012.</p>
 <p><strong>How do low-income dependent pay for college?</strong></p>
 <Graph file={require('./json/07_0110.json')}/>
 <p><strong>How does time to degree affect cost? </strong><strong> </strong></p>
@@ -239,60 +240,60 @@ let singlepage = (
 <p>Average Published Prices, Budgets, and Resources Used to Pay for College for Upper-Middle-Income Dependent Students, 2011–12</p>
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
   <tr>
-    <td width="157" nowrap="nowrap" valign="top"><p>&nbsp;</p></td>
-    <td width="50" valign="top"><p>Public four-year in-state</p></td>
-    <td width="63" valign="top"><p>Public four-year out-of-state</p></td>
-    <td width="68" valign="top"><p>Private nonprofit four-year </p></td>
-    <td width="54" valign="top"><p>For-profit</p></td>
-    <td width="65" valign="top"><p>Public two-year </p></td>
+    <td width="157" nowrap="nowrap" valign="top">&nbsp;</td>
+    <td width="50" align="center" valign="bottom"><strong>Public four-year in-state</strong></td>
+    <td width="63" align="center" valign="bottom"><strong>Public four-year out-of-state</strong></td>
+    <td width="68" align="center" valign="bottom"><strong>Private nonprofit four-year </strong></td>
+    <td width="54" align="center" valign="bottom"><strong>For-profit</strong></td>
+    <td width="65" align="center" valign="bottom"><strong>Public two-year</strong></td>
   </tr>
   <tr>
-    <td width="157" valign="top"><p>Tuition   and fees</p></td>
-    <td width="50" nowrap="nowrap" valign="top"><p align="right">$7,800</p></td>
-    <td width="63" nowrap="nowrap" valign="top"><p align="right">$18,700</p></td>
-    <td width="68" nowrap="nowrap" valign="top"><p align="right">$27,100</p></td>
-    <td width="54" nowrap="nowrap" valign="top"><p align="right">$15,000</p></td>
-    <td width="65" nowrap="nowrap" valign="top"><p align="right">$4,000</p></td>
+    <td width="157" valign="top">Tuition and fees</td>
+    <td width="50" align="right" valign="top" nowrap="nowrap">$7,800</td>
+    <td width="63" align="right" valign="top" nowrap="nowrap">$18,700</td>
+    <td width="68" align="right" valign="top" nowrap="nowrap">$27,100</td>
+    <td width="54" align="right" valign="top" nowrap="nowrap">$15,000</td>
+    <td width="65" align="right" valign="top" nowrap="nowrap">$4,000</td>
   </tr>
   <tr>
-    <td width="157" valign="top"><p>Budget   beyond tuition and fees</p></td>
-    <td width="50" nowrap="nowrap" valign="top"><p align="right">$16,000</p></td>
-    <td width="63" nowrap="nowrap" valign="top"><p align="right">$15,000</p></td>
-    <td width="68" nowrap="nowrap" valign="top"><p align="right">$17,200</p></td>
-    <td width="54" nowrap="nowrap" valign="top"><p align="right">$16,800</p></td>
-    <td width="65" nowrap="nowrap" valign="top"><p align="right">$11,300</p></td>
+    <td width="157" valign="top">Budget beyond tuition and fees</td>
+    <td width="50" align="right" valign="top" nowrap="nowrap">$16,000</td>
+    <td width="63" align="right" valign="top" nowrap="nowrap">$15,000</td>
+    <td width="68" align="right" valign="top" nowrap="nowrap">$17,200</td>
+    <td width="54" align="right" valign="top" nowrap="nowrap">$16,800</td>
+    <td width="65" align="right" valign="top" nowrap="nowrap">$11,300</td>
   </tr>
   <tr>
-    <td width="157" valign="top"><p>Expected   family contribution </p></td>
-    <td width="50" nowrap="nowrap" valign="top"><p align="right">$13,600</p></td>
-    <td width="63" nowrap="nowrap" valign="top"><p align="right">$14,900</p></td>
-    <td width="68" nowrap="nowrap" valign="top"><p align="right">$13,300</p></td>
-    <td width="54" nowrap="nowrap" valign="top"><p align="right">$13,600</p></td>
-    <td width="65" nowrap="nowrap" valign="top"><p align="right">$13,200</p></td>
+    <td width="157" valign="top">Expected family contribution </td>
+    <td width="50" align="right" valign="top" nowrap="nowrap">$13,600</td>
+    <td width="63" align="right" valign="top" nowrap="nowrap">$14,900</td>
+    <td width="68" align="right" valign="top" nowrap="nowrap">$13,300</td>
+    <td width="54" align="right" valign="top" nowrap="nowrap">$13,600</td>
+    <td width="65" align="right" valign="top" nowrap="nowrap">$13,200</td>
   </tr>
   <tr>
-    <td width="157" valign="top"><p>Total   grants </p></td>
-    <td width="50" nowrap="nowrap" valign="top"><p align="right">$3,000</p></td>
-    <td width="63" nowrap="nowrap" valign="top"><p align="right">$4,400</p></td>
-    <td width="68" nowrap="nowrap" valign="top"><p align="right">$16,200</p></td>
-    <td width="54" nowrap="nowrap" valign="top"><p align="right">$1,600</p></td>
-    <td width="65" nowrap="nowrap" valign="top"><p align="right">$900</p></td>
+    <td width="157" valign="top">Total grants </td>
+    <td width="50" align="right" valign="top" nowrap="nowrap">$3,000</td>
+    <td width="63" align="right" valign="top" nowrap="nowrap">$4,400</td>
+    <td width="68" align="right" valign="top" nowrap="nowrap">$16,200</td>
+    <td width="54" align="right" valign="top" nowrap="nowrap">$1,600</td>
+    <td width="65" align="right" valign="top" nowrap="nowrap">$900</td>
   </tr>
   <tr>
-    <td width="157" valign="top"><p>Total   loans </p></td>
-    <td width="50" nowrap="nowrap" valign="top"><p align="right">$6,400</p></td>
-    <td width="63" nowrap="nowrap" valign="top"><p align="right">$9,100</p></td>
-    <td width="68" nowrap="nowrap" valign="top"><p align="right">$10,100</p></td>
-    <td width="54" nowrap="nowrap" valign="top"><p align="right">$15,500</p></td>
-    <td width="65" nowrap="nowrap" valign="top"><p align="right">$1,600</p></td>
+    <td width="157" valign="top">Total loans </td>
+    <td width="50" align="right" valign="top" nowrap="nowrap">$6,400</td>
+    <td width="63" align="right" valign="top" nowrap="nowrap">$9,100</td>
+    <td width="68" align="right" valign="top" nowrap="nowrap">$10,100</td>
+    <td width="54" align="right" valign="top" nowrap="nowrap">$15,500</td>
+    <td width="65" align="right" valign="top" nowrap="nowrap">$1,600</td>
   </tr>
   <tr>
-    <td width="157" valign="top"><p>Earnings   and other resources </p></td>
-    <td width="50" nowrap="nowrap" valign="top"><p align="right">$800</p></td>
-    <td width="63" nowrap="nowrap" valign="top"><p align="right">$5,400</p></td>
-    <td width="68" nowrap="nowrap" valign="top"><p align="right">$4,700</p></td>
-    <td width="54" nowrap="nowrap" valign="top"><p align="right">$1,200</p></td>
-    <td width="65" nowrap="nowrap" valign="top"><p align="right">-$400</p></td>
+    <td width="157" valign="top">Earnings and other resources </td>
+    <td width="50" align="right" valign="top" nowrap="nowrap">$800</td>
+    <td width="63" align="right" valign="top" nowrap="nowrap">$5,400</td>
+    <td width="68" align="right" valign="top" nowrap="nowrap">$4,700</td>
+    <td width="54" align="right" valign="top" nowrap="nowrap">$1,200</td>
+    <td width="65" align="right" valign="top" nowrap="nowrap">-$400</td>
   </tr>
 </table>
 <p>Source: NPSAS, 2012</p>
@@ -310,60 +311,60 @@ let singlepage = (
 <p>Average Published Prices, Budgets, and Resources Used to Pay for College for Upper-Income Dependent Students, 2011–12</p>
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
   <tr>
-    <td width="149" nowrap="nowrap" colspan="2" valign="top"><p>&nbsp;</p></td>
-    <td width="60" colspan="2" valign="top"><p>Public four-year in-state</p></td>
-    <td width="68" colspan="2" valign="top"><p>Public four-year out-of-state</p></td>
-    <td width="58" colspan="2" valign="top"><p>Private nonprofit four-year</p></td>
-    <td width="59" valign="top"><p>For-profit</p></td>
-    <td width="69" valign="top"><p>Public two-year</p></td>
+    <td width="149" nowrap="nowrap" colspan="2" valign="top">&nbsp;</td>
+    <td width="60" colspan="2" align="center" valign="bottom"><strong>Public four-year in-state</strong></td>
+    <td width="68" colspan="2" align="center" valign="bottom"><strong>Public four-year out-of-state</strong></td>
+    <td width="58" colspan="2" align="center" valign="bottom"><strong>Private nonprofit four-year</strong></td>
+    <td width="59" align="center" valign="bottom"><strong>For-profit</strong></td>
+    <td width="69" align="center" valign="bottom"><strong>Public two-year</strong></td>
   </tr>
   <tr>
-    <td width="149" colspan="2" valign="top"><p>Tuition   and fees</p></td>
-    <td width="60" nowrap="nowrap" colspan="2" valign="top"><p align="right">$7,800</p></td>
-    <td width="68" nowrap="nowrap" colspan="2" valign="top"><p align="right">$18,700</p></td>
-    <td width="58" nowrap="nowrap" colspan="2" valign="top"><p align="right">$27,100</p></td>
-    <td width="59" nowrap="nowrap" valign="top"><p align="right">$15,000</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">$4,000</p></td>
+    <td width="149" colspan="2" valign="top">Tuition and fees</td>
+    <td width="60" colspan="2" align="right" valign="top" nowrap="nowrap">$7,800</td>
+    <td width="68" colspan="2" align="right" valign="top" nowrap="nowrap">$18,700</td>
+    <td width="58" colspan="2" align="right" valign="top" nowrap="nowrap">$27,100</td>
+    <td width="59" align="right" valign="top" nowrap="nowrap">$15,000</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">$4,000</td>
   </tr>
   <tr>
-    <td width="149" colspan="2" valign="top"><p>Budget   beyond tuition and fees</p></td>
-    <td width="60" nowrap="nowrap" colspan="2" valign="top"><p align="right">$16,000</p></td>
-    <td width="68" nowrap="nowrap" colspan="2" valign="top"><p align="right">$15,000</p></td>
-    <td width="58" nowrap="nowrap" colspan="2" valign="top"><p align="right">$17,200</p></td>
-    <td width="59" nowrap="nowrap" valign="top"><p align="right">$16,800</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">$11,300</p></td>
+    <td width="149" colspan="2" valign="top">Budget beyond tuition and fees</td>
+    <td width="60" colspan="2" align="right" valign="top" nowrap="nowrap">$16,000</td>
+    <td width="68" colspan="2" align="right" valign="top" nowrap="nowrap">$15,000</td>
+    <td width="58" colspan="2" align="right" valign="top" nowrap="nowrap">$17,200</td>
+    <td width="59" align="right" valign="top" nowrap="nowrap">$16,800</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">$11,300</td>
   </tr>
   <tr>
-    <td width="149" colspan="2" valign="top"><p>Expected   family contribution </p></td>
-    <td width="60" nowrap="nowrap" colspan="2" valign="top"><p align="right">$32,700</p></td>
-    <td width="68" nowrap="nowrap" colspan="2" valign="top"><p align="right">$34,800</p></td>
-    <td width="58" nowrap="nowrap" colspan="2" valign="top"><p align="right">$37,400</p></td>
-    <td width="59" nowrap="nowrap" valign="top"><p align="right">$34,200</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">$30,900</p></td>
+    <td width="149" colspan="2" valign="top">Expected family contribution </td>
+    <td width="60" colspan="2" align="right" valign="top" nowrap="nowrap">$32,700</td>
+    <td width="68" colspan="2" align="right" valign="top" nowrap="nowrap">$34,800</td>
+    <td width="58" colspan="2" align="right" valign="top" nowrap="nowrap">$37,400</td>
+    <td width="59" align="right" valign="top" nowrap="nowrap">$34,200</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">$30,900</td>
   </tr>
   <tr>
-    <td width="149" colspan="2" valign="top"><p>Total   grants </p></td>
-    <td width="60" nowrap="nowrap" colspan="2" valign="top"><p align="right">$2,400</p></td>
-    <td width="68" nowrap="nowrap" colspan="2" valign="top"><p align="right">$4,000</p></td>
-    <td width="58" nowrap="nowrap" colspan="2" valign="top"><p align="right">$13,200</p></td>
-    <td width="59" nowrap="nowrap" valign="top"><p align="right">$2,600</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">$700</p></td>
+    <td width="149" colspan="2" valign="top">Total grants </td>
+    <td width="60" colspan="2" align="right" valign="top" nowrap="nowrap">$2,400</td>
+    <td width="68" colspan="2" align="right" valign="top" nowrap="nowrap">$4,000</td>
+    <td width="58" colspan="2" align="right" valign="top" nowrap="nowrap">$13,200</td>
+    <td width="59" align="right" valign="top" nowrap="nowrap">$2,600</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">$700</td>
   </tr>
   <tr>
-    <td width="149" colspan="2" valign="top"><p>Total   loans </p></td>
-    <td width="60" nowrap="nowrap" colspan="2" valign="top"><p align="right">$5,400</p></td>
-    <td width="68" nowrap="nowrap" colspan="2" valign="top"><p align="right">$8,800</p></td>
-    <td width="58" nowrap="nowrap" colspan="2" valign="top"><p align="right">$8,500</p></td>
-    <td width="59" nowrap="nowrap" valign="top"><p align="right">$13,700</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">$1,300</p></td>
+    <td width="149" colspan="2" valign="top">Total loans </td>
+    <td width="60" colspan="2" align="right" valign="top" nowrap="nowrap">$5,400</td>
+    <td width="68" colspan="2" align="right" valign="top" nowrap="nowrap">$8,800</td>
+    <td width="58" colspan="2" align="right" valign="top" nowrap="nowrap">$8,500</td>
+    <td width="59" align="right" valign="top" nowrap="nowrap">$13,700</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">$1,300</td>
   </tr>
   <tr>
-    <td width="149" colspan="2" valign="top"><p>Earnings   and other resources </p></td>
-    <td width="60" nowrap="nowrap" colspan="2" valign="top"><p align="right">-$16,700</p></td>
-    <td width="68" nowrap="nowrap" colspan="2" valign="top"><p align="right">-$13,900</p></td>
-    <td width="58" nowrap="nowrap" colspan="2" valign="top"><p align="right">-$14,800</p></td>
-    <td width="59" nowrap="nowrap" valign="top"><p align="right">-$18,700</p></td>
-    <td width="69" nowrap="nowrap" valign="top"><p align="right">-$17,600</p></td>
+    <td width="149" colspan="2" valign="top">Earnings and other resources </td>
+    <td width="60" colspan="2" align="right" valign="top" nowrap="nowrap">-$16,700</td>
+    <td width="68" colspan="2" align="right" valign="top" nowrap="nowrap">-$13,900</td>
+    <td width="58" colspan="2" align="right" valign="top" nowrap="nowrap">-$14,800</td>
+    <td width="59" align="right" valign="top" nowrap="nowrap">-$18,700</td>
+    <td width="69" align="right" valign="top" nowrap="nowrap">-$17,600</td>
   </tr>
   <tr>
     <td width="112" nowrap="nowrap" valign="bottom"></td>

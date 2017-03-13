@@ -25,7 +25,7 @@ let singlepage = (
       <Graph file={require('./json/01_0070.json')}/>
     <h2>By Income</h2>
       <p>The median parental income among all dependent students in 2011–12 was about $65,000. A quarter of dependent undergraduates were from families with incomes lower than $30,000 and another quarter were from families with incomes higher than $106,000. </p>
-      <p>Looking only at first-year students, a higher percentage came from low-income families and a lower percentage from families with incomes of $106,000 or more. In other words, those from higher-income backgrounds are more likely to stay in college beyond the first year.</p>
+      <p>Looking only at first-year students, a higher percentage came from low-income families and a lower percentage came from" families with incomes of $106,000 or more. In other words, those from higher-income backgrounds are more likely to stay in college beyond the first year.</p>
       <Graph file={require('./json/01_0080.json')}/>
       <p>About 70 percent of students from the top quartile of parental income were enrolled in four-year colleges, compared with about 40 percent of students from the lowest income quartile.</p>
       <Graph file={require('./json/01_0090.json')}/>

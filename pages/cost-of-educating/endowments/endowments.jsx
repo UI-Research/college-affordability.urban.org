@@ -13,7 +13,7 @@ let singlepage = (
   <div>
       <h1>Endowments</h1>
       <p>Endowments are financial assets colleges and universities hold that provide long-term funding.</p>
-      <p>Both public and private institutions hold endowments, but they are more common in the private sector. In both sectors, endowment assets are highly concentrated among a small number of institutions: just 25 institutions hold about half of all endowment assets in the United States.</p>
+      <p>Both public and private institutions hold endowments, but they are more common in the private sector. In both sectors, endowment assets are highly concentrated among a small number of institutions&mdash;just 25 institutions hold about half of all endowment assets in the United States.</p>
       <Box>
         <h3><em>The myth of massive endowments</em></h3>
         <p><em>Although only a few institutions have endowments large enough to cover a significant portion of their annual budgets, policymakers tend to give disproportionate attention to this small segment of the industry. In 2016, Rep. Tom Reed (R-NY) proposed legislation that would require colleges and universities with endowments exceeding $1 billion to spend 25 percent of annual income from the endowment on financial aid or lose their tax-exempt status. In 2012–13, fewer than 60 institutions—most of them private research universities—had endowments this high. There are 4,600 degree-granting postsecondary institutions in the United States.</em></p>

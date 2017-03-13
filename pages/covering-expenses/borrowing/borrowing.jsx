@@ -13,7 +13,7 @@ let singlepage = (
   <div>
     <h1>Borrowing</h1>
       <p>Many students borrow to fund a portion of their college expenses. Each year, about 40 percent of all undergraduate students take federal student loans and about 70 percent of those who receive a bachelor&rsquo;s degree have education debt by the time they graduate. </p>
-      <p>Borrowers face a complicated array of choices. Most loans come directly from the federal government, but a small number of students take private loans from banks or other lenders or borrow through state or institutional programs. Annual borrowing levels have risen significantly over the past decade, but have declined slightly from a peak in 2010–11.</p>
+      <p>Borrowers face a complicated array of choices. Most loans come directly from the federal government, but a small number of students take private loans from banks or other lenders or borrow through state or institutional programs. Annual borrowing levels have risen significantly over the past decade, but they have declined slightly from a peak in 2010–11.</p>
       <p>The federal government makes loans to students and families on better terms than the private market would offer to students with no credit history or collateral. There are two main types of federal loans for undergraduate students and a program for parents:</p>
       <ul>
         <li><strong>Subsidized federal loans</strong> are available to students with documented financial need. These loans do not accrue interest while the student is in school. </li>

@@ -11,11 +11,11 @@ import util from 'util.jsx';
 
 let singlepage = (
   <div>
-    <h1>Pre-College Income</h1>
+    <h1>Pre-college Income</h1>
       <p>Whether college is affordable depends on the opportunities it opens up for a student, but it also depends on the resources available at the time the student enrolls. Those resources depend on how much income a family has earned over the previous years and how much the family has saved. </p>
       <p>Income and savings can also affect financial aid, since the financial aid system in the United States is grounded in the principle that those who are in a financial position to do so should help pay for their own or their children&rsquo;s college education. </p>
       <p>Although there is considerable variation within groups, differences in savings and wealth levels, current incomes, and income paths over time mean that some groups of students tend to have a much easier time paying for college than others.</p>
-    <h2>Income Before College</h2>
+    <h2>Income before College</h2>
       <p>About <a href="http://www.theatlantic.com/politics/archive/2013/08/why-americans-all-believe-they-are-middle-class/278240/" target="_blank">90 percent of Americans</a> perceive themselves as members of the lower-, middle-, or upper-middle class. This means that many families overestimate how much financial aid they&rsquo;ll receive, not realizing that there are many families out there earning significantly less. In 2015, 20 percent of families had incomes below $30,000 and 20 percent had incomes above $135,000.</p>
       <p>To understand why people receive the financial aid they do, it&rsquo;s important to understand how income is distributed across families and how it changes over time. </p>
       <p>In 2015, the median income for all families was $70,700. But median income differs by race and ethnicity, by location, and by age. For example, median incomes for black and Hispanic families were about two-thirds of the overall median; median family income was about $18,000 a year higher in the Northeast than in the South.</p>

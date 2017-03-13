@@ -25,7 +25,7 @@ let singlepage = (
         <p>Students attending public two-year and for-profit institutions receive similar institutional aid, but those attending for-profits have much higher remaining tuition and fees because the sticker prices in that sector are much higher.</p>
         <p>On average, students receiving institutional grant aid at public and private nonprofit colleges receive discounts worth approximately 50 percent of tuition and fees.</p>
         <Graph file={require('./json/04_0190.json')}/>
-      <h3>Distribution of Need-Based and Non-Need–Based Institutional Grant Aid</h3>
+      <h3>Distribution of Need-Based and Non-need–Based Institutional Grant Aid</h3>
       <p>Both public and private nonprofit institutions award a combination of &ldquo;need based&rdquo; institutional grants, which depend on financial circumstances, and &ldquo;non-need based&rdquo; or &ldquo;merit-based&rdquo; institutional grants, which are based on other characteristics. Lower-income students receive more need-based aid than their peers from more affluent families, but even students from families in the highest-income quartile receive some need-based aid. Non-need–based aid goes to students from all income backgrounds.</p>
       <p><strong>At the highest-priced private nonprofit colleges and universities, where most aid is need-based, students from low-income families receive significantly more institutional grant aid than their more affluent classmates, but this is not the case at lower-priced institutions in the sector.</strong></p>
       <Graph file={require('./json/04_0200.json')}/>

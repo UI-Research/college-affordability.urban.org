@@ -41,7 +41,7 @@ let singlepage = (
       <p>The size of institutions varies significantly across sectors. A majority of for-profit institutions have undergraduate fall enrollments of fewer than 500, but only 7 percent of public and private nonprofit institutions are so small. Eighty percent of public four-year colleges enroll more than 5,000 undergraduates, but less than half of public two-year colleges and only 10 percent of private nonprofit four-year colleges are so large.</p>
       <Graph file={require('./json/01_0020.json')}/>
       <p>In addition to awarding different types of degrees, institutions in different sectors vary in their educational offerings for students. Some degree-granting institutions, particularly in the two-year public and for-profit sectors, focus primarily on preparing students for specific occupations, offering associate degrees and certificates in fields such as medical technology, cosmetology, and mechanics. In contrast, many four-year institutions concentrate on broader academic programs, even when they offer degrees in fields such as communications, engineering, and business.</p>
-    <h2>Enrollment by sector</h2>
+    <h2>Enrollment by Sector</h2>
       <p>Because of the wide range of institutional sizes, the distribution of students across sectors is quite different from the distribution of institutions by sector.</p>
       <p>There were 20.2 million postsecondary students enrolled in degree-granting institutions in fall 2014. Of these, 17.3 million (86 percent) were undergraduate students. Among these undergraduates</p>
       <ul>
@@ -53,7 +53,7 @@ let singlepage = (
       </ul>
       <p>Enrollment patterns—whether a student enrolls full or part time—also differ by sector. Overall, 38 percent of college students enrolled part time in 2015–16, but 62 percent of students at public two-year colleges did so. </p>
       <Graph file={require('./json/01_0030.json')}/>
-    <h2>Enrollment over time</h2>
+    <h2>Enrollment over Time</h2>
       <p>Total undergraduate enrollment increased 9 percent between fall 1990 and fall 2000 and 38 percent between fall 2000 and fall 2010. It fell 4 percent, to 17.3 million, between 2010 and 2014.</p>
       <Graph file={require('./json/01_0040.json')}/>
       <p>The for-profit sector, which remains the smallest of the four major sectors with only 7 percent undergraduate students in fall 2014, grew dramatically from about 125,000 undergraduates in 1990 to a peak enrollment of 1.72 million undergraduates in 2010. Enrollment in the sector declined 26 percent to 1.28 million in 2014.</p>      

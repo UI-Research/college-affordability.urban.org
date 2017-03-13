@@ -39,7 +39,7 @@ let singlepage = (
       <p>As<strong> college prices have risen, the alternatives available to men have been on a long-term downward trend. </strong>The option of not going to college is less financially rewarding, reducing the real cost of going to college for men. In the years since the Great Recession, men&rsquo;s earnings have recovered somewhat, though not enough to reverse the long-run trend.</p>
       <Graph file={require('./json/03_1910.json')}/>
       <Graph file={require('./json/03_1920.json')}/>
-      <p>The pattern for women has been a little different, but the story is similar. Median earnings for female high school graduates ages 18-23  working full time year-round were 10 percent lower in inflation-adjusted dollars in 2015 than in 1991.</p>
+      <p>The pattern for women has been a little different, but the story is similar. Median earnings for female high school graduates ages 18 to 23  working full time year-round were 10 percent lower in inflation-adjusted dollars in 2015 than in 1991.</p>
       <p>Earnings among the 24- to 34-year-olds have also declined in inflation-adjusted dollars from their levels in the 1990s and early 2000s. Median earnings among male high school graduates in this age group working full time year-round fell steadily from about $36,600 in 2000 to  $32,000 in 2015. Median earnings among women of the same age and work status were approximately the same in 2015 as they were in 2000.</p>
   </div>
 );

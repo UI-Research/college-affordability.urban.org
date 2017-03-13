@@ -20,22 +20,12 @@ let specifications = {
       </Hero>
       <div className="c-narrative">
         <p>Rising concerns over college tuition and student debt, combined with the widespread conviction that a degree is essential for a middle-class lifestyle, have led to a sense that college in the United States has become "unaffordable." <strong>But what does affordability actually mean?</strong></p>
-        <a href="/about" className="c-home__button">Learn About the Project <i className="fa fa-chevron-right"></i></a>
+        <a href="/about" className="c-home__button">Learn about the project <i className="fa fa-chevron-right"></i></a>
       </div>
-      <Alerts>
-        <Alert>
-          <p><strong>07/05/2016</strong> :: Example text can be a combination of <a href="#">site links</a> and a description of changes.</p>
-        </Alert>
-        <Alert>
-          <p><strong>06/30/2016</strong> :: Suspendisse iaculis, tortor id convallis eleifend, magna magna interdum augue, ac pulvinar elit purus.</p>
-        </Alert>
-        <Alert>
-          <p><strong>06/18/2016</strong> :: Donec a hendrerit dolor. In hac habitasse platea dictumst. Pellentesque ut pretium ante, fringilla cursus nulla.</p>
-        </Alert>
-      </Alerts>
+     
       <div className="cta__container">
         <HomePageCTA src="img/defining-higher-education.svg">
-          <a href="what-is-college"><h2>What is College?</h2></a>
+          <a href="what-is-college"><h2>What Is College?</h2></a>
           <p>Nonprofit or for profit, public or private, two-year or four-year—colleges, much like the students who attend them, come in all shapes and sizes. </p>
           <ul>
             <li><a href="what-is-college/institutions/">Institutions<i className="fa fa-chevron-right"></i></a></li>
@@ -79,9 +69,9 @@ let specifications = {
           <a href="covering-expenses/"><h2>Covering Expenses</h2></a>
           <p>How do students fill the financial gap between the financial aid they&rsquo;re offered and the full cost of attending college?</p>
           <ul>
-            <li><a href="covering-expenses/pre-college-income/">Pre-College Income<i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="covering-expenses/pre-college-income/">Pre-college Income<i className="fa fa-chevron-right"></i></a></li>
             <li><a href="covering-expenses/savings/">Savings<i className="fa fa-chevron-right"></i></a></li>
-            <li><a href="covering-expenses/working-during-college/">Working During College<i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="covering-expenses/working-during-college/">Working during College<i className="fa fa-chevron-right"></i></a></li>
             <li><a href="covering-expenses/borrowing/">Borrowing<i className="fa fa-chevron-right"></i></a></li>
             <li><a href="covering-expenses/time-to-degree/">Time to Degree<i className="fa fa-chevron-right"></i></a></li>
           </ul>
@@ -92,7 +82,7 @@ let specifications = {
           <ul>
             <li><a href="after-college/employment-after-college/">Employment after College<i className="fa fa-chevron-right"></i></a></li>
             <li><a href="after-college/variation-in-earnings/">Variation in Earnings<i className="fa fa-chevron-right"></i></a></li>
-            <li><a href="after-college/student-debt/">Debt Burdens<i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="after-college/student-debt/">Student Debt<i className="fa fa-chevron-right"></i></a></li>
             <li><a href="after-college/loan-repayment-and-default/">Loan Repayment and Default<i className="fa fa-chevron-right"></i></a></li>
           </ul>
         </HomePageCTA>
