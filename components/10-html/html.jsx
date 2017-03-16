@@ -8,6 +8,12 @@ if (util.canUseDOM()) {
 
 export default class HTML extends Component {
   render() {
+    /* Detect IE Version... */
+    let body_class;
+    if (util.canUseDOM() && document.documentMode && document.documentMode <= 10) {
+      body_class = 'ie9';
+    }
+
     let pageBundle = `/bundle--${this.props.machineName}.js`;
     let html = (
       <html>
@@ -17,7 +23,7 @@ export default class HTML extends Component {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <title>{this.props.title} - Urban Institute</title>
         </head>
-        <body>
+        <body className={body_class}>
           <div id="container">{this.props.children}</div>
 
           <script src="/bundle--vendor.js"></script>
