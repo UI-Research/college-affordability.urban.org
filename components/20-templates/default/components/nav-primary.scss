@@ -86,10 +86,10 @@
     &.has-submenu:hover,
     &.active-trail {
       @include breakpoint($bp--large) {
-        height: 86px;
+        //height: 86px;
       }
       @include breakpoint($bp--xlarge) {
-        height: 101px;
+        //height: 101px;
       }
     }
     > a:hover,

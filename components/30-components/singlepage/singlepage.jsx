@@ -25,7 +25,7 @@ export default class SinglePage extends Component {
   }
   calculateElevatorPadding() {
     // Use the header's current height for the padding.
-    let headerHeight = document.querySelector('.header-site').offsetHeight + 5;
+    let headerHeight = document.querySelector('.header-site').offsetHeight + 50;
     // Adjust padding if the header changes height.
     if (window.innerWidth > util.breakpointWidth('large')) {
       // If the header is not sticky, add more padding.
@@ -88,15 +88,22 @@ export default class SinglePage extends Component {
     const pageHeight = Math.max(body.scrollHeight, body.offsetHeight) - 20;
     if ((window.innerHeight + scrollTop) >= pageHeight) {
       const anchors = document.querySelectorAll('.nav-anchor__top-level a');
-      const anchor = _.findLast(anchors);
-      const href = _.replace(anchor.getAttribute('href'), '/', '');
-      let targetElement = document.querySelector(href);
-      this.setActiveSection(targetElement);
+      if (anchors.length > 0) {
+        const anchor = _.findLast(anchors);
+        const href = _.replace(anchor.getAttribute('href'), '/', '');
+        let targetElement = document.querySelector(href);
+        this.setActiveSection(targetElement);
+      }
     }
     // Determine the current section based on position.
     else {
       // Since the header is sticky, get the 'top' below the header.
-      const offsetTop = document.querySelector('.header-site').offsetHeight + 40;
+      const offsetTop = document.querySelector('.header-site').offsetHeight + 0;
+
+      //console.log('offsetTop: ' + offsetTop);
+      //console.log('scrollTop: ' + scrollTop);
+      //console.log('pageHeight:' + pageHeight);
+
       let headers = document.querySelectorAll('.col--3-4 h2[id], .col--3-4 h3[id]');
       let previousElement = null;
 
@@ -208,7 +215,7 @@ export default class SinglePage extends Component {
       };
       // Set a timeout,
       // as the Sticky component overrides our style.
-      setTimeout(unstick, 5);
+      setTimeout(unstick, 50);
     }
     else {
       let breadcrumb = document.querySelector('.breadcrumb');
@@ -349,6 +356,7 @@ export default class SinglePage extends Component {
       this.setState({
         headerHeight: document.querySelector('.header-site').offsetHeight
       });
+
       let activeAnchor = document.querySelector('.nav-anchor__top-level a.active');
       if (!activeAnchor) {
         let firstAnchor = document.querySelector('.nav-anchor__top-level a');
@@ -363,20 +371,30 @@ export default class SinglePage extends Component {
   }
   render() {
     if (util.canUseDOM()) {
+
+      // Do not render nav-anchor if there are no menu items on the page.
+      // TODO: Make sure no issues if we alter hierarchy.
+      let navAnchor = null;
+      if (this.state.menu.length > 0) {
+        navAnchor = <div className="nav-anchor">
+          <h2 className="active__section">{this.state.breadcrumbTitle}<span className="fa fa-chevron-down" onClick={this.toggleSectionClick.bind(this)}></span></h2>
+          <ul className="nav-anchor__top-level">
+              {this.state.menu}
+          </ul>
+        </div>;
+      }
+      else {
+        navAnchor = '';
+      }
+
       return (
         <div className="grid">
           <Sticky className="sticky-nav" topOffset={-10} bottomOffset={30} onStickyStateChange={this.handleStickyStateChange.bind(this)}>
             <Breadcrumb section={this.state.sectionTitle} title={this.state.breadcrumbTitle} />
             <div className="col col--1-4">
-              <div className="nav-anchor">
-                <h2 className="active__section">{this.state.breadcrumbTitle}<span className="fa fa-chevron-down" onClick={this.toggleSectionClick.bind(this)}></span></h2>
-                <ul className="nav-anchor__top-level">
-                  {this.state.menu}
-                </ul>
-              </div>
+              {navAnchor}
             </div>
           </Sticky>
-
           <div className="col col--3-4">
             {this.props.content}
           </div>
