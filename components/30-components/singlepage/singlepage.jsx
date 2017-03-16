@@ -384,7 +384,7 @@ export default class SinglePage extends Component {
 
       return (
         <div className="grid">
-          <Sticky className="sticky-nav" topOffset={-10} bottomOffset={30} onStickyStateChange={this.handleStickyStateChange.bind(this)}>
+          <Sticky className="sticky-nav" topOffset={20} bottomOffset={20} onStickyStateChange={this.handleStickyStateChange.bind(this)}>
             <Breadcrumb section={this.state.sectionTitle} title={this.state.breadcrumbTitle} />
             <div className="col col--1-4">
               {navAnchor}
