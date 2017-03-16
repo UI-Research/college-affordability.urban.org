@@ -113,7 +113,7 @@ export default class Header extends Component {
     let headerSite = `header-site ${this.state.headerClass}`;
     const toggle = this.toggleMenu.bind(this);
     return (
-      <Sticky className="sticky-header">
+      <Sticky className="sticky-header" topOffset={40}>
         <header className={headerSite}>
           <div className="header-site__nav-mobile" onClick={this.toggleMobileNav}><i className="fa fa-bars"></i><span>Menu</span></div>
           <div className="header-site__logo-wrapper">

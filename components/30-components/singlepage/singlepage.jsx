@@ -98,12 +98,7 @@ export default class SinglePage extends Component {
     // Determine the current section based on position.
     else {
       // Since the header is sticky, get the 'top' below the header.
-      const offsetTop = document.querySelector('.header-site').offsetHeight + 0;
-
-      //console.log('offsetTop: ' + offsetTop);
-      //console.log('scrollTop: ' + scrollTop);
-      //console.log('pageHeight:' + pageHeight);
-
+      const offsetTop = document.querySelector('.header-site').offsetHeight + 40;
       let headers = document.querySelectorAll('.col--3-4 h2[id], .col--3-4 h3[id]');
       let previousElement = null;
 
@@ -215,7 +210,7 @@ export default class SinglePage extends Component {
       };
       // Set a timeout,
       // as the Sticky component overrides our style.
-      setTimeout(unstick, 50);
+      setTimeout(unstick, 5);
     }
     else {
       let breadcrumb = document.querySelector('.breadcrumb');
