@@ -44,6 +44,9 @@
       max-height: 10000px;
       transition: max-height 5s ease-in;
     }
+    .read-more {
+      padding-top: 0;
+    }
   }
   &.collapsed {
     .inner{

@@ -143,13 +143,14 @@
       @include breakpoint($bp--large) {
         border-bottom: 6px solid transparent;
         font-size: 14px;
-        line-height: 40px;
+        line-height: 20px;
         padding-bottom: 2px;
       }
       @include breakpoint($bp--xlarge) {
         font-size: 16px;
-        line-height: 33px;
-        padding-top: 20px;
+        //line-height: 33px;
+        //padding-top: 20px;
+        padding-top: 13px;
       }
     }
   }
