@@ -139,7 +139,12 @@ export default class SinglePage extends Component {
       let path = (dom ? dom.getAttribute('href') : '');
       path = (scrollTop > 50 ? path : '#/');
 
-      history.replace(location.pathname + path);
+      //history.push(location.pathname + path);
+
+      history.push({
+        pathname: location.pathname,
+        hash: path
+      });
 
       //console.log(location.hash);
     }
