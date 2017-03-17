@@ -1,7 +1,9 @@
 'use strict';
 import _ from 'lodash';
-import ReactGA from 'react-ga'; // https://github.com/react-ga/react-ga
 import React, { Component } from 'react';
+import { Router, hashHistory, Route, Switch, browserHistory, useRouterHistory } from 'react-router';
+import { createHistory, createHashHistory, createBrowserHistory } from 'history';
+import ReactGA from 'react-ga'; // https://github.com/react-ga/react-ga
 import { Sticky } from 'react-sticky';
 import Breadcrumb from '30-components/basic/breadcrumb/breadcrumb.jsx';
 
@@ -26,8 +28,8 @@ export default class SinglePage extends Component {
     };
 
     // Init Google Analytics account and basic pageview.
-    ReactGA.initialize('UA-000000-01');
-    ReactGA.pageview(window.location.pathname + window.location.hash);
+   // ReactGA.initialize('UA-000000-01');
+    //ReactGA.pageview(location.pathname + location.hash);
 
   }
   calculateElevatorPadding() {
@@ -123,23 +125,23 @@ export default class SinglePage extends Component {
         previousElement = element;
       });
 
+      const history = createHistory();
+
+      history.listen((location, action) => {
+        console.log(`The current URL is ${location.pathname}${location.search}${location.hash}`)
+        console.log(`The last navigation action was ${action}`)
+      })
+      //console.log(history);
+
       // Populates the hash in the URL with the ID of the element the user
       // is currently on.
       let dom = document.querySelector('.nav-anchor a.active');
       let path = (dom ? dom.getAttribute('href') : '');
       path = (scrollTop > 50 ? path : '#/');
 
-      if (this.state.path !== path) {
-        this.setState({
-          path: path
-        });
-        // using history.replaceState to keep browser history sane.
-        history.replaceState(null, null, path);
-        // Log the pageview for GA.
-        ReactGA.pageview(window.location.pathname + window.location.hash);
-        //console.log(this.state.path);
-      }
+      history.replace(location.pathname + path);
 
+      //console.log(location.hash);
     }
   }
   setActiveSection(element) {
@@ -160,10 +162,6 @@ export default class SinglePage extends Component {
     this.setState({
       breadcrumbTitle: sectionTitle
     });
-
-
-
-
 
   }
   setActiveMenu(anchor) {
@@ -393,6 +391,10 @@ export default class SinglePage extends Component {
   render() {
     if (util.canUseDOM()) {
 
+      // window.onpopstate = function(event) {
+      //   alert("location: " + document.location + ", state: " + JSON.stringify(event.state));
+      // };
+
       // Do not render nav-anchor if there are no menu items on the page.
       // TODO: Make sure no issues if we alter hierarchy.
       let navAnchor = null;
@@ -409,6 +411,7 @@ export default class SinglePage extends Component {
       }
 
       return (
+      <Router history={browserHistory} />,
         <div className="grid">
           <Sticky className="sticky-nav" topOffset={-40} bottomOffset={30} onStickyStateChange={this.handleStickyStateChange.bind(this)}>
             <Breadcrumb section={this.state.sectionTitle} title={this.state.breadcrumbTitle} />
