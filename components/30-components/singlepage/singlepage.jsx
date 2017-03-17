@@ -1,5 +1,6 @@
 'use strict';
 import _ from 'lodash';
+import ReactGA from 'react-ga'; // https://github.com/react-ga/react-ga
 import React, { Component } from 'react';
 import { Sticky } from 'react-sticky';
 import Breadcrumb from '30-components/basic/breadcrumb/breadcrumb.jsx';
@@ -22,6 +23,11 @@ export default class SinglePage extends Component {
       headerHeight: 0,
       sectionTitle: ''
     };
+
+    // Init Google Analyitcs account and basic pageview.
+    ReactGA.initialize('UA-000000-01');
+    ReactGA.pageview(window.location.pathname);
+
   }
   calculateElevatorPadding() {
     // Use the header's current height for the padding.
@@ -103,7 +109,11 @@ export default class SinglePage extends Component {
       let previousElement = null;
 
       _.each(headers, (element) => {
-        let top = element.getBoundingClientRect().top;
+        let top = element.getBoundingClientRect().top - 40;
+
+        console.log('headerTop: ' + top);
+        console.log('offsetTop: ' + offsetTop);
+
         // Header is at/above the content top.
         if (top <= offsetTop) {
           this.setActiveSection(element);
