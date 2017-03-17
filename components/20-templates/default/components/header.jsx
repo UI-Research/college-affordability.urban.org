@@ -120,7 +120,7 @@ export default class Header extends Component {
             <a href="/" className="header-site__logo" alt="Urban Institute"></a>
           </div>
           <div className="header-site__right">
-            <div className="header-site__title">Understanding College Affordability</div>
+            <div className="header-site__title"><a href="/" alt="Understanding College Affordability">Understanding College Affordability</a></div>
             <div className="header-site__nav-wrapper">
               <div className="header-site__nav-primary-wrapper">
                 <div className="nav-primary">

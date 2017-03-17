@@ -115,6 +115,13 @@
   color: white;
   font-family: Futura, Arial, sans-serif;
 
+  a {
+    color: white;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
   @include breakpoint($bp--mid) {
     font-size: 19px;
     line-height: 28px;
