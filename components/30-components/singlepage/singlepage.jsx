@@ -21,12 +21,13 @@ export default class SinglePage extends Component {
       breadcrumbTitle : '',
       menu: '',
       headerHeight: 0,
-      sectionTitle: ''
+      sectionTitle: '',
+      path: ''
     };
 
-    // Init Google Analyitcs account and basic pageview.
+    // Init Google Analytics account and basic pageview.
     ReactGA.initialize('UA-000000-01');
-    ReactGA.pageview(window.location.pathname);
+    ReactGA.pageview(window.location.pathname + window.location.hash);
 
   }
   calculateElevatorPadding() {
@@ -109,11 +110,8 @@ export default class SinglePage extends Component {
       let previousElement = null;
 
       _.each(headers, (element) => {
+        // Set negative offset to trigger section change in correct spot.
         let top = element.getBoundingClientRect().top - 40;
-
-        console.log('headerTop: ' + top);
-        console.log('offsetTop: ' + offsetTop);
-
         // Header is at/above the content top.
         if (top <= offsetTop) {
           this.setActiveSection(element);
@@ -130,7 +128,18 @@ export default class SinglePage extends Component {
       let dom = document.querySelector('.nav-anchor a.active');
       let path = (dom ? dom.getAttribute('href') : '');
       path = (scrollTop > 50 ? path : '#/');
-      history.pushState(null, null, path);
+
+      if (this.state.path !== path) {
+        this.setState({
+          path: path
+        });
+        // using history.replaceState to keep browser history sane.
+        history.replaceState(null, null, path);
+        // Log the pageview for GA.
+        ReactGA.pageview(window.location.pathname + window.location.hash);
+        //console.log(this.state.path);
+      }
+
     }
   }
   setActiveSection(element) {
@@ -151,6 +160,11 @@ export default class SinglePage extends Component {
     this.setState({
       breadcrumbTitle: sectionTitle
     });
+
+
+
+
+
   }
   setActiveMenu(anchor) {
     let activeAnchor = document.querySelector('.nav-anchor__top-level a.active');
@@ -182,6 +196,7 @@ export default class SinglePage extends Component {
         chevron.classList.add('fa-chevron-left');
       }
     }
+
   }
   toggleSectionClick(event) {
     this.toggleSection(event.target);
