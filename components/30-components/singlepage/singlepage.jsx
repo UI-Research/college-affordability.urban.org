@@ -210,7 +210,8 @@ export default class SinglePage extends Component {
       };
       // Set a timeout,
       // as the Sticky component overrides our style.
-      setTimeout(unstick, 5);
+      //setTimeout(unstick, 5);
+      unstick();
     }
     else {
       let breadcrumb = document.querySelector('.breadcrumb');
@@ -384,7 +385,7 @@ export default class SinglePage extends Component {
 
       return (
         <div className="grid">
-          <Sticky className="sticky-nav" topOffset={20} bottomOffset={20} onStickyStateChange={this.handleStickyStateChange.bind(this)}>
+          <Sticky className="sticky-nav" topOffset={-40} bottomOffset={30} onStickyStateChange={this.handleStickyStateChange.bind(this)}>
             <Breadcrumb section={this.state.sectionTitle} title={this.state.breadcrumbTitle} />
             <div className="col col--1-4">
               {navAnchor}

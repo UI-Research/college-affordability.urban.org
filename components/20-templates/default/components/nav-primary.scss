@@ -230,16 +230,17 @@ ul.nav-primary__second-level {
     }
     .nav-primary__first-level {
       line-height: 20px;
-      > li {
+      & > li {
         &.has-submenu:hover,
         &.active-trail {
           height: 60px;
         }
-        > a {
+        & > a {
           animation: nav-mini $header-transition-duration ease;
           animation-fill-mode: forwards;
           line-height: 20px;
           padding-top: 0;
+          font-size: 12px;
         }
       }
 
@@ -255,4 +256,17 @@ ul.nav-primary__second-level {
       }
     }
   }
+
+  @include breakpoint($bp--xlarge) {
+    .nav-primary__first-level {
+
+      > li {
+        > a {
+          font-size: 14px;
+        }
+      }
+
+    }
+  }
+
 }
