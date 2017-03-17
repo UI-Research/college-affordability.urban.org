@@ -1,6 +1,12 @@
 @import '_global.scss';
 
 .header-site {
+
+  // Animate header transition.
+  * {
+    transition: all $header-transition-duration ease;
+  }
+
   background: #fff;
   width: 100%;
   border-top: 2px solid black;
@@ -167,7 +173,7 @@
     animation: header-mini $header-transition-duration ease;
     animation-fill-mode: forwards;
     border-top: 0;
-    max-height: 55px;
+    max-height: 86px;
 
     .header-site__title {
       animation: header-hide $header-transition-duration ease;
