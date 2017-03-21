@@ -164,6 +164,20 @@ export default class SinglePage extends Component {
       element.classList.add('active');
       const target = '#/' + element.getAttribute('id');
       anchor = document.querySelector(`.nav-anchor__top-level a[href="${target}"]`);
+
+      let secondLevel = document.querySelector('ul.nav-anchor__second-level');
+
+      if (secondLevel.classList.contains('open')) {
+
+        let parentTitle = secondLevel.previousElementSibling.previousElementSibling.textContent;
+        console.log(parentTitle);
+
+        sectionTitle = parentTitle + ' / ' + sectionTitle;
+
+      }
+
+
+
     }
     this.setActiveMenu(anchor);
     this.setState({
