@@ -20,6 +20,7 @@ require('babel-core/register');
 const fs = require('fs-extra'),
       React = require('react'),
       ReactDOMServer = require('react-dom/server'),
+      ReactGA = require('react-ga'),
       wiredep = require('wiredep').stream,
       glob = require('glob'),
       del = require('del'),

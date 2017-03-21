@@ -12,6 +12,7 @@ let config = {
     'vendor': [
       'react',
       'react-dom',
+      'react-ga',
       'd3',
       'c3',
       'lodash'

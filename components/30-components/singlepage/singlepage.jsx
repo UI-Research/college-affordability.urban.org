@@ -1,16 +1,27 @@
 'use strict';
 import _ from 'lodash';
 import React, { Component } from 'react';
+
 import { Sticky } from 'react-sticky';
 import Breadcrumb from '30-components/basic/breadcrumb/breadcrumb.jsx';
 
 const Elevator = require('elevator.js');
+
+//import { createHistory } from 'history';
+
+//import { History, hashHistory, browserHistory } from 'react-router';
+
+import { ReactGA } from 'react-ga';
+
+//const history = createHistory();
 
 import util from 'util.jsx';
 
 if (util.canUseDOM()) {
   require('./singlepage.scss');
 }
+
+
 
 export default class SinglePage extends Component {
   constructor(props) {
@@ -22,7 +33,16 @@ export default class SinglePage extends Component {
       headerHeight: 0,
       sectionTitle: ''
     };
+
+
+
+    // Init Google Analytics account and basic pageview.
+     // ReactGA.initialize('UA-000000-01');
+    // ReactGA.pageview(location.pathname + location.hash);
+
   }
+
+
   calculateElevatorPadding() {
     // Use the header's current height for the padding.
     let headerHeight = document.querySelector('.header-site').offsetHeight + 50;
@@ -86,6 +106,7 @@ export default class SinglePage extends Component {
     const scrollTop = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
     // Give a margin of error - have seen bottom not reached after side nav is un-stickied.
     const pageHeight = Math.max(body.scrollHeight, body.offsetHeight) - 20;
+
     if ((window.innerHeight + scrollTop) >= pageHeight) {
       const anchors = document.querySelectorAll('.nav-anchor__top-level a');
       if (anchors.length > 0) {
@@ -103,7 +124,8 @@ export default class SinglePage extends Component {
       let previousElement = null;
 
       _.each(headers, (element) => {
-        let top = element.getBoundingClientRect().top;
+        // Set negative offset to trigger section change in correct spot.
+        let top = element.getBoundingClientRect().top - 40;
         // Header is at/above the content top.
         if (top <= offsetTop) {
           this.setActiveSection(element);
@@ -115,12 +137,22 @@ export default class SinglePage extends Component {
         previousElement = element;
       });
 
+
       // Populates the hash in the URL with the ID of the element the user
       // is currently on.
       let dom = document.querySelector('.nav-anchor a.active');
       let path = (dom ? dom.getAttribute('href') : '');
       path = (scrollTop > 50 ? path : '#/');
-      history.pushState(null, null, path);
+
+      let stateData = {
+        path: window.location.href,
+        scrollTop: offsetTop
+      };
+
+      // This is about as close as I can get without re-working structure.
+
+      window.history.replaceState(stateData, null, window.location.pathname + path);
+      
     }
   }
   setActiveSection(element) {
@@ -141,6 +173,7 @@ export default class SinglePage extends Component {
     this.setState({
       breadcrumbTitle: sectionTitle
     });
+
   }
   setActiveMenu(anchor) {
     let activeAnchor = document.querySelector('.nav-anchor__top-level a.active');
@@ -172,6 +205,7 @@ export default class SinglePage extends Component {
         chevron.classList.add('fa-chevron-left');
       }
     }
+
   }
   toggleSectionClick(event) {
     this.toggleSection(event.target);
@@ -363,11 +397,13 @@ export default class SinglePage extends Component {
           // TODO: What do we do here?
         }
       }
+
     }
   }
+
+
   render() {
     if (util.canUseDOM()) {
-
       // Do not render nav-anchor if there are no menu items on the page.
       // TODO: Make sure no issues if we alter hierarchy.
       let navAnchor = null;
@@ -408,6 +444,7 @@ SinglePage.propTypes = {
   sectionTitle: React.PropTypes.string,
   menuTopSectionName: React.PropTypes.string
 };
+
 SinglePage.defaultProps = {
   content: {},
   sectionTitle: '',

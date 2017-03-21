@@ -85,6 +85,7 @@
     "react-addons-css-transition-group": "^15.0.2",
     "react-container-query": "^0.4.2",
     "react-dom": "^15.0.2",
+    "react-ga": "^2.1.2",
     "react-lazyload": "git+ssh://git@github.com/rsmylski/react-lazyload.git",
     "react-router": "^2.4.1",
     "react-sticky": "^5.0.4",
