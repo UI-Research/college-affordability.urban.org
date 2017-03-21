@@ -7,12 +7,13 @@ import Breadcrumb from '30-components/basic/breadcrumb/breadcrumb.jsx';
 
 const Elevator = require('elevator.js');
 
-//import { Router, hashHistory, Route, Switch, browserHistory, useRouterHistory } from 'react-router';
-import { createHistory, createHashHistory, createBrowserHistory } from 'history';
-import { History, Router, hashHistory, Link, browserHistory, withRouter } from 'react-router';
+//import { createHistory } from 'history';
+
+//import { History, hashHistory, browserHistory } from 'react-router';
 
 import { ReactGA } from 'react-ga';
 
+//const history = createHistory();
 
 import util from 'util.jsx';
 
@@ -20,7 +21,7 @@ if (util.canUseDOM()) {
   require('./singlepage.scss');
 }
 
-let history = createHistory();
+
 
 export default class SinglePage extends Component {
   constructor(props) {
@@ -30,8 +31,7 @@ export default class SinglePage extends Component {
       breadcrumbTitle : '',
       menu: '',
       headerHeight: 0,
-      sectionTitle: '',
-      path: ''
+      sectionTitle: ''
     };
 
 
@@ -144,13 +144,15 @@ export default class SinglePage extends Component {
       let path = (dom ? dom.getAttribute('href') : '');
       path = (scrollTop > 50 ? path : '#/');
 
-      // This is about as close as I can get without re-working structure.
-      history.replace({
-        pathname: location.pathname,
-        hash: path,
-        state: { oldHash: path }
-      });
+      let stateData = {
+        path: window.location.href,
+        scrollTop: offsetTop
+      };
 
+      // This is about as close as I can get without re-working structure.
+
+      window.history.replaceState(stateData, null, window.location.pathname + path);
+      
     }
   }
   setActiveSection(element) {
@@ -400,19 +402,8 @@ export default class SinglePage extends Component {
   }
 
 
-
   render() {
     if (util.canUseDOM()) {
-
-        //TODO: Is this necessary?
-        //Seems to be useful on page load so we can set our replace in scroll.
-        history.push({
-          pathname: location.pathname,
-          hash: location.hash,
-          state: {oldHash: location.hash}
-        });
-
-
       // Do not render nav-anchor if there are no menu items on the page.
       // TODO: Make sure no issues if we alter hierarchy.
       let navAnchor = null;
