@@ -10,7 +10,7 @@
       }
     },
     "x": {
-      "label": "Dependent students' family income",
+      "label": "Dependent students' parents' income",
       "type": "category",
       "categories": [
         "$106,000             or more",
