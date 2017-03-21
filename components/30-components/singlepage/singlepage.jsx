@@ -7,13 +7,11 @@ import Breadcrumb from '30-components/basic/breadcrumb/breadcrumb.jsx';
 
 const Elevator = require('elevator.js');
 
-//import { createHistory } from 'history';
+// required for ReactGA to compile with no errors.
+import root from 'window-or-global';
 
-//import { History, hashHistory, browserHistory } from 'react-router';
-
-import { ReactGA } from 'react-ga';
-
-//const history = createHistory();
+// Import does not work for some reason here.
+var ReactGA = require('react-ga');
 
 import util from 'util.jsx';
 
@@ -33,12 +31,6 @@ export default class SinglePage extends Component {
       headerHeight: 0,
       sectionTitle: ''
     };
-
-
-
-    // Init Google Analytics account and basic pageview.
-     // ReactGA.initialize('UA-000000-01');
-    // ReactGA.pageview(location.pathname + location.hash);
 
   }
 
@@ -75,6 +67,7 @@ export default class SinglePage extends Component {
     this.setState({
       breadcrumbTitle: anchor.textContent
     });
+
   }
   handleResize() {
     // Re-position the sidenav over the first h2 in the main content.
@@ -137,7 +130,6 @@ export default class SinglePage extends Component {
         previousElement = element;
       });
 
-
       // Populates the hash in the URL with the ID of the element the user
       // is currently on.
       let dom = document.querySelector('.nav-anchor a.active');
@@ -150,10 +142,14 @@ export default class SinglePage extends Component {
       };
 
       // This is about as close as I can get without re-working structure.
-
       window.history.replaceState(stateData, null, window.location.pathname + path);
       
     }
+  }
+  handleHashChange(e) {
+    // send pageview on hash change only.
+    ReactGA.pageview(location.pathname + location.hash);
+
   }
   setActiveSection(element) {
     let anchor = null;
@@ -268,6 +264,13 @@ export default class SinglePage extends Component {
       });
     }
 
+
+    var ReactGA = require('react-ga');
+    // Init Google Analytics account and basic pageview.
+    ReactGA.initialize('UA-000000-01');
+    ReactGA.pageview(location.pathname + location.hash);
+
+
     if (util.canUseDOM()) {
       let parentIndex = '',
           menuElements = {},
@@ -370,6 +373,7 @@ export default class SinglePage extends Component {
 
       window.addEventListener('resize', this.handleResize.bind(this));
       window.addEventListener('scroll', this.handleScroll.bind(this));
+      window.addEventListener('hashchange', this.handleHashChange);
 
       if (breadcrumbTitle) {
         this.state.breadcrumbTitle = breadcrumbTitle;
