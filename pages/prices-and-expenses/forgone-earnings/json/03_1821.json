@@ -2,21 +2,21 @@
   "data": {
     "columns": [
       [
-        "25th percentile",
+        "25th percentile and below",
         17506,
         17506,
         16078,
         15006
       ],
       [
-        "Median",
+        "25th percentile to median",
         23194,
         23194,
         21177,
         20480
       ],
       [
-        "75th percentile",
+        "Median to 75th percentile",
         31250,
         30870,
         28125,
@@ -26,17 +26,17 @@
     "type": "bar",
     "groups": [
   [
-    "25th percentile",
-    "Median",
-    "75th percentile"
+        "25th percentile and below",
+        "25th percentile to median",
+        "Median to 75th percentile"
     ]
   ]
   },
   "title": "Median earnings of men by race",
   "series": [
-    "25th percentile",
-    "Median",
-    "75th percentile"
+        "25th percentile and below",
+        "25th percentile to median",
+        "Median to 75th percentile"
   ],
   "axis": {
     "rotated": true,

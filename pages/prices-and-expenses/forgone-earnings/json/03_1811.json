@@ -28,15 +28,15 @@
   "data": {
     "groups": [
       [
-        "25th percentile",
-        "Median",
-        "75th percentile"
+        "25th percentile and below",
+        "25th percentile to median",
+        "Median to 75th percentile"
       ]
     ],
     "type": "bar",
     "columns": [
       [
-        "25th percentile",
+        "25th percentile and below",
         15126,
         17604,
         20480,
@@ -45,7 +45,7 @@
         20788
       ],
       [
-        "Median",
+        "25th percentile to median",
         20366,
         23581,
         28236,
@@ -54,7 +54,7 @@
         29950
       ],
       [
-        "75th percentile",
+        "Median to 75th percentile",
         26260,
         31250,
         39583,
@@ -65,9 +65,9 @@
     ]
   },
   "series": [
-    "25th percentile",
-    "Median",
-    "75th percentile"
+        "25th percentile and below",
+        "25th percentile to median",
+        "Median to 75th percentile"
   ],
   "title": "Median earnings of men by age"
 }

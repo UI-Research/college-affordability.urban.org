@@ -1,8 +1,8 @@
 {
   "series": [
-    "25th percentile",
-    "Median",
-    "75th percentile"
+        "25th percentile and below",
+        "25th percentile to median",
+        "Median to 75th percentile"
   ],
   "metadata": {
     "source": "IPUMS 2014 ACS five-year sample (2010\u201314).",
@@ -33,14 +33,14 @@
     "type": "bar",
     "groups": [
   [
-    "25th percentile",
-    "Median",
-    "75th percentile"
+        "25th percentile and below",
+        "25th percentile to median",
+        "Median to 75th percentile"
     ]
   ],
     "columns": [
       [
-        "25th percentile",
+        "25th percentile and below",
         25210.63,
         21006.95,
         20480.45,
@@ -48,7 +48,7 @@
         22509.15
       ],
       [
-        "Median",
+        "25th percentile to median",
         35294.88,
         31130.24,
         28235.9,
@@ -56,7 +56,7 @@
         32155.92
       ],
       [
-        "75th percentile",
+        "Median to 75th percentile",
         49236.54,
         42874.91,
         40337,

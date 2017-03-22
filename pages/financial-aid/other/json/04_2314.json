@@ -18,7 +18,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "label": "Dependent students' parents' income",
+      "label": "Dependent students' parental income",
       "type": "category",
       "categories": [
         "Less than           $30,000",

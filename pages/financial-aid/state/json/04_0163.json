@@ -29,7 +29,7 @@
         "Less than                 $30,000"
       ],
       "type": "category",
-      "label": "Dependent students' parents' income"
+      "label": "Dependent students' parental income"
     },
     "y": {
     "max": 6000,

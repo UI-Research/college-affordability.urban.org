@@ -29,15 +29,15 @@
   "data": {
     "groups": [
       [
-        "25th percentile",
-        "Median",
-        "75th percentile"
+        "25th percentile and below",
+        "25th percentile to median",
+        "Median to 75th percentile"
       ]
     ],
     "type": "bar",
     "columns": [
       [
-        "25th percentile",
+        "25th percentile and below",
         12500,
         15000,
         17408,
@@ -46,7 +46,7 @@
         17307
       ],
       [
-        "Median",
+        "25th percentile to median",
         17397,
         20044,
         23581,
@@ -55,7 +55,7 @@
         24117
       ],
       [
-        "75th percentile",
+        "Median to 75th percentile",
         22294,
         26041,
         31250,
@@ -66,8 +66,8 @@
     ]
   },
   "series": [
-    "25th percentile",
-    "Median",
-    "75th percentile"
+        "25th percentile and below",
+        "25th percentile to median",
+        "Median to 75th percentile"
   ]
 }
