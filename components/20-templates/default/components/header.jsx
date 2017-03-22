@@ -255,6 +255,9 @@ export default class Header extends Component {
                       <a href="/about">About the Project</a>
                     </li>
                     <li>
+                      <a href="/research-and-resources">Research and Resources</a>
+                    </li>
+                    <li>
                       <a href="#">Chart Index</a>
                     </li>
                   </ul>
