@@ -23,7 +23,7 @@ let singlepage = (
       <p>The financial payoff to college, however, depends on students graduating. Those who never complete college don&rsquo;t reap significant benefits in higher earnings, and so they can face real trouble paying off student debt. </p>
        <p>The federal government offers a variety of payment plans to help make sure monthly student loan payments are manageable. Enrollment in those plans is not automatic, however. Rather, students must select and apply for a plan. Some borrowers end up paying more per month than they can afford because they are unaware of these alternative payment options. These options also don&rsquo;t apply to private (nonfederal) loans, which can have high interest rates and harsh terms.  </p>
       <Box>
-        <h3><em>Private loans</em></h3>
+        <h3><em>Private Loans</em></h3>
         <p><em>Some students borrow from nonfederal sources, usually either because their needs exceed the federal loan limits or because they do not complete the application process for federal student aid. Private student loans from banks, Sallie Mae, or other lenders carry a range of interest rates. They may be either fixed for the life of the loan or variable, resetting over time. Borrowers with low credit ratings or other factors indicating risk generally face higher interest rates.</em></p>
       </Box>
     <h2>Repayment Plans</h2>

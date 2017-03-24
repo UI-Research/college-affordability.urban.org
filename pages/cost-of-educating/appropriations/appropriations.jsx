@@ -26,7 +26,7 @@ let singlepage = (
       <h2>Variation across States</h2>
        <p>National averages provide a meaningful overview of the circumstances facing college students. <strong>But state funding patterns and the price of college vary dramatically across states, generating considerable geographic differences in college affordability.</strong></p>
       <Box>
-        <h3><em>How do states determine appropriation levels?</em></h3>
+        <h3><em>How Do States Determine Appropriation Levels?</em></h3>
         <p><em>State financing of higher education varies across the country. Though funding for institutions is usually tied to the number of credit hours students enroll in or complete, states have adopted different methods for determining appropriations:</em></p>
         <ul>
           <li><em>Some states make annual adjustments to the funding each institution receives, while some have less defined approaches determined by legislative priorities.</em></li>
