@@ -42,6 +42,7 @@
     "Tuition and fees left over"
   ],
   "title": "Average Grant Aid and Net Tuition and Fees for First-Time Full-Time Students, by Sector, 2013–14",
+  "imageOverride": "Dollars per full-time student__Average Grant Aid and Net Tuition and Fees for First-Time Full-Time Students, by Sector, 2013–14",
   "subtitle": "Dollars per full-time student",
   "axis": {
     "rotated": true,
