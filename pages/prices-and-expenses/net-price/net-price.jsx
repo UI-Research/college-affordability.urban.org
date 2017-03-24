@@ -60,21 +60,21 @@ let singlepage = (
                 <Graph file={require('./json/03_0224.json')} small="true"/>
                 <Graph file={require('./json/03_0225.json')} small="true"/>
             </Multiples>
-            <Multiples title="" subtitle = "Private four-year institutions" source="NPSAS, 2012.">
+            <Multiples title="" imageOverride = "Total Student Budget, Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2011–12, in 2011 Dollars ___Private four-year institutions" subtitle = "Private four-year institutions" source="NPSAS, 2012.">
                 <Graph file={require('./json/03_02211.json')} small="true"/>
                 <Graph file={require('./json/03_02212.json')} small="true"/>
                 <Graph file={require('./json/03_02213.json')} small="true"/>
                 <Graph file={require('./json/03_02214.json')} small="true"/>
                 <Graph file={require('./json/03_02215.json')} small="true"/>
             </Multiples>
-            <Multiples title="" subtitle = "Public two-year institutions" source="NPSAS, 2012.">
+            <Multiples title="" imageOverride = "Total Student Budget, Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2011–12, in 2011 Dollars ___Public two-year institutions" subtitle = "Public two-year institutions" source="NPSAS, 2012.">
                 <Graph file={require('./json/03_02221.json')} small="true"/>
                 <Graph file={require('./json/03_02222.json')} small="true"/>
                 <Graph file={require('./json/03_02223.json')} small="true"/>
                 <Graph file={require('./json/03_02224.json')} small="true"/>
                 <Graph file={require('./json/03_02225.json')} small="true"/>
             </Multiples>
-            <Multiples title="" subtitle = "For-profit institutions" source="NPSAS, 2012.">
+            <Multiples title="" imageOverride = "Total Student Budget, Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2011–12, in 2011 Dollars ___For-profit institutions" subtitle = "For-profit institutions" source="NPSAS, 2012.">
                 <Graph file={require('./json/03_02231.json')} small="true"/>
                 <Graph file={require('./json/03_02232.json')} small="true"/>
                 <Graph file={require('./json/03_02233.json')} small="true"/>
