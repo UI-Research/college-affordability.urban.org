@@ -14,7 +14,7 @@ let singlepage = (
 
     <p>Rising concerns over college tuition and student debt combined with the widespread conviction that a degree is essential for a middle-class lifestyle have led to a sense that college in the United States has become &ldquo;unaffordable.&rdquo; <strong>But what does affordability actually mean?</strong></p>
 <p><strong>Affordability depends on what you&rsquo;re buying</strong></p>
-<p>&ldquo;College&rdquo; means many different things, and whether college is &ldquo;worth it&rdquo; depends on what kind of institution and program you&rsquo;re talking about. There are thousands of postsecondary institutions in the United States offering a wide range of undergraduate credentials. These include short-term certificates in very specific occupational areas to associate degrees in either general academic fields or more targeted vocational areas, and a variety of types of bachelor&rsquo;s degrees. Many of the institutions undergraduate students attend also educate graduate students.</p>
+<p>&ldquo;College&rdquo; means many different things, and whether college is &ldquo;worth it&rdquo; depends on what kind of institution and program you&rsquo;re talking about. There are thousands of postsecondary institutions in the United States offering a wide range of undergraduate credentials. These include short-term certificates in very specific occupational occupational areas, associate degrees in either general academic fields or more targeted vocational areas, and a variety of types of bachelor&rsquo;s degrees. Many of the institutions undergraduate students attend also educate graduate students.</p>
 <p>Just as someone who can afford to pay $20,000 for a new car would not think of paying nearly that much for a television, students should think of the price of a bachelor&rsquo;s degree differently than they think of the price of a short-term certificate. They should also consider the quality of the credential and the experiences of similar students. In addition, although we almost always focus on a year&rsquo;s tuition when talking about college prices, the number of years for which you pay that price matters a great deal. It is much more expensive to spend five years than four years in college to earn a bachelor&rsquo;s degree. </p>
 <p><strong>Sticker price is not an indicator of affordability</strong></p>
 <p>Most students and families don&rsquo;t actually pay the whole cost of education. They attend institutions that charge less in tuition and fees than the amount they spend educating students, relying on funds from state and local tax revenues, endowment income, and other philanthropic sources to cover part of the costs. Moreover, many students receive grants and tax benefits that help them cover the tuition and fees that are charged.</p>
@@ -33,6 +33,8 @@ Sandy Baum, Martha Johnson, and Victoria Lee</p>
 Alexandra Tisley</p>
 <p><strong>Editorial</strong> <br />
   Elizabeth Forney and Daniel Matos</p>
+<p><strong>Production</strong> <br />
+  Hannah Recht, Vivian Hou, Ben Chartoff, and Jerry Ta</p>
   </div>
 );
 

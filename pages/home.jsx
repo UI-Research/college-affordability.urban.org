@@ -58,10 +58,10 @@ let specifications = {
           <ul>
             <li><a href="financial-aid/financial-need/">Financial Need<i className="fa fa-chevron-right"></i></a></li>
             <li><a href="financial-aid/grant-aid/">Grant Aid<i className="fa fa-chevron-right"></i></a></li>
-            <li><a href="financial-aid/federal/">Federal Aid<i className="fa fa-chevron-right"></i></a></li>
-            <li><a href="financial-aid/state/">State Aid<i className="fa fa-chevron-right"></i></a></li>
-            <li><a href="financial-aid/institutional/">Institutional Aid<i className="fa fa-chevron-right"></i></a></li>
-            <li><a href="financial-aid/other/">Other Source of Aid<i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="financial-aid/federal/">Federal Grant Aid<i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="financial-aid/state/">Stater Grant Aid<i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="financial-aid/institutional/">Institutional Grant Aid<i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="financial-aid/other/">Other Grant Aid<i className="fa fa-chevron-right"></i></a></li>
             <li><a href="financial-aid/tax-benefits/">Tax Benefits <i className="fa fa-chevron-right"></i></a></li>
           </ul>
         </HomePageCTA>
@@ -77,7 +77,7 @@ let specifications = {
           </ul>
         </HomePageCTA>
         <HomePageCTA src="img/after-college.svg">
-          <h2><a href="after-college/">After College</a></h2>
+          <a href="after-college/"><h2>After College</h2></a>
           <p>College affordability isn&rsquo;t just about the resources available when a student enrolls. How well the investment of time and money pays off is just as important.</p>
           <ul>
             <li><a href="after-college/employment-after-college/">Employment after College<i className="fa fa-chevron-right"></i></a></li>
@@ -104,7 +104,7 @@ let specifications = {
           <StudentProfile href="student-profiles/#low_income_dependent_students" title="Low-Income Dependent" />
           <StudentProfile href="student-profiles/#lower_middle_income_dependent_students" title="Lower-Middle Income Dependent" />
           <StudentProfile href="student-profiles/#upper_middle_income_dependent_students" title="Upper-Middle Income Dependent" />
-          <StudentProfile href="student-profiles/#upper_income_dependent_students" title="Top-Income Dependent" />
+          <StudentProfile href="student-profiles/#upper_income_dependent_students" title="Upper-Income Dependent" />
         </ul>
       </StudentProfiles>
       

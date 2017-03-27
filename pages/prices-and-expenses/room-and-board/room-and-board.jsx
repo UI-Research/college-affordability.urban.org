@@ -13,7 +13,7 @@ let singlepage = (
   <div>
     <h1>Room and Board</h1>
       <p><strong>Everyone, regardless of whether they&rsquo;re in college, must have housing and food. Room and board are not costs specific to college, although going to college might affect how much people have to pay for food, housing, and other living expenses.</strong></p>
-      <p>The room and board charges discussed here are drawn from on-campus housing costs at public and private nonprofit four-year colleges and universities. Estimated housing and food expenses for all students, on campus or off, are included in student budgets.</p>
+      <p>The room and board charges discussed here are drawn from on-campus housing price at public and private nonprofit four-year colleges and universities. Estimated housing and food expenses for all students, on campus or off, are included in student budgets.</p>
     <h2>Room and Board by Type of Institution</h2>
       <p><strong>Over half of all full-time students enrolled in private nonprofit four-year colleges and universities live in college housing, compared with only one-third of public four-year college students—and virtually no students in other sectors. One-third of full-time undergraduate students live at home with their parents.</strong> For these families, living costs are likely not very different for college students than for high school students.</p>
       <Graph file={require('./json/03_0050.json')}/>
@@ -29,7 +29,7 @@ let singlepage = (
     <h2>Room and Board Charges over Time</h2>
       <p><strong>Room and board charges have steadily increased over time, but not as much as tuition and fees. </strong></p>
       <Graph file={require('./json/03_0090.json')}/>
-      <p>From 1999–2000 to 2016–17, on-campus room and board charges increased steadily in the public four-year sector by an average of 2.5 percent per year. Over the same period, on-campus room and board prices in the private nonprofit sector increased by an average of 2 percent per year. <strong>As with tuition and fees, room and board has grown at a faster pace at public four-year colleges than at private nonprofit four-year colleges. </strong></p>
+      <p>Between 2006&ndash;07 and 2016&ndash;17, on campus room and board charges increased 23 percent in the public four-year sector and 25 percent at private nonprofit four-year colleges and universities. In both sectors, the price increase in 2009–10 was about twice as large as in any other year. </strong></p>
 
   </div>
 );

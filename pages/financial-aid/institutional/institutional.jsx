@@ -35,14 +35,14 @@ let singlepage = (
         <Graph file={require('./json/04_0212.json')} small="true"/>
         <Graph file={require('./json/04_0213.json')} small="true"/>
        </Multiples>
-
+       <p>Full-time dependent students from the lower half of the income distribution attending public four-year institutions in 2011&ndash;12 received about two and half times as much need-based institutional grant aid as those from the upper half of the income distribution. But because the more affluent students received more non-need&ndash;based aid, the gap in total institutional grant aid was much smaller.</p>
   </div>
   
 );
 
 let specifications = {
   'name': 'institutional',
-  'title': 'Institutional',
+  'title': 'Institutional Grant Aid',
   'content': <SinglePage content={singlepage} />
 };
 

@@ -12,7 +12,7 @@ import util from 'util.jsx';
 let singlepage = (
   <div>
     <h1>Loan Repayment and Default</h1>
-      <p><strong>About 40 percent of undergraduate students take out <a href="../../covering-expenses/borrowing/">federal student loans</a> each year and about 70 percent of four-year college graduates leave college with debt. Borrowing reasonable amounts to spread the payment for this investment out over an extended number of years is a valuable strategy for making college affordable. However, too many borrowers do not successfully repay their debts, either because their <a href="../../prices-and-expenses/forgone-earnings/">incomes</a> are inadequate to cover the required payments or because of other obligations and priorities.</strong></p>
+      <p><strong>About 40 percent of undergraduate students take out <a href="../../covering-expenses/borrowing/">federal student loans</a> each year and about 70 percent of four-year college graduates leave college with debt. Borrowing reasonable amounts to spread the payment for this investment out over an extended number of years is a valuable strategy for making college affordable. However, too many borrowers do not successfully repay their debts, either because their <a href="../../after-college/variation-in-earnings/">incomes</a> are inadequate to cover the required payments or because of other obligations and priorities.</strong></p>
       <p>Student loans, like all loans, accrue interest, so although they decrease the amount of money a student has to pay at the time of enrollment, they increase the money the student will pay for college overall. By delaying those payments, however, loans allow students to pay for college when they are likely earning more money. In this way, loans can make college affordable. </p>
       <Box>
         <h3><em>Interest Rates</em></h3>
@@ -67,7 +67,7 @@ let singlepage = (
       <Box>
         <h3><em>Alternative Measures of Default.</em></h3>
         <p><em>The official federal student loan default rate—the three-year cohort default rate—measures the percentage of borrowers going into repayment in one fiscal year who default by the end of two more fiscal years. Until 2012, the official rate was a two-year cohort default rate, measured at the end of the fiscal year following the year in which the loan went into repayment. </em></p>
-        <p><em>The government also projects the percentage of dollars loaned each year that are likely to go into default over 20 years (president&rsquo;s budget lifetime default rate). The cumulative lifetime default rate is based on the percentage of loans (not dollars) that have defaulted from the year they went into repayment to the present.</em></p>
+        <p><em>The government also projects the percentage of dollars loaned each year that are likely to go into default over 20 years (president&rsquo;s budget lifetime default rate). The <a href="https://studentaid.ed.gov/sa/about/data-center/student/default" target="_blank">cumulative lifetime default rate</a> is based on the percentage of loans (not dollars) that have defaulted from the year they went into repayment to the present.</em></p>
         <p><em>The three-year default rate for borrowers entering repayment in 2011–12 was 12 percent, but the two-year default rate was 10 percent. The projected 20-year default rate was 18 percent.</em></p>
       </Box>
       <Graph file={require('./json/06_0180.json')}/>

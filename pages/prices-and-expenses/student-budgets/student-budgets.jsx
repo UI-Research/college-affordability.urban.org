@@ -38,7 +38,7 @@ let singlepage = (
       <p>An increasing amount of course material is available at no charge online, and alternative ways of obtaining materials are becoming more prevalent. Students may also opt not to buy all their textbooks. In addition, according to the National Association of College Stores, the average price of new textbooks has risen about twice as fast in recent years as the average price of used textbooks.</p>
       <Graph file={require('./json/03_0150.json')}/>
     <h2>Other Expenses</h2>
-      <p>Other expenses students might encounter in college include transportation, toiletries, snack food, entertainment, and clothing. Individual students have considerably more discretion over these expenditures than they do over tuition and fees, transportation, and other components of their budgets.</p>
+      <p>Other expenses students might encounter in college include transportation, toiletries, snack food, entertainment, and clothing. Individual students have considerably more discretion over these expenditures than they do over tuition and fees, and other components of their budgets.</p>
       <p><strong>On average, private four-year nonprofit colleges have lower estimates for other expenses in their reported COAs than do other types of institutions.</strong></p>
   </div>
 );

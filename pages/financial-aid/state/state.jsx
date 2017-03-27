@@ -58,7 +58,7 @@ let singlepage = (
 
 let specifications = {
   'name': 'state',
-  'title': 'State',
+  'title': 'State Grant Aid',
   'content': <SinglePage content={singlepage} />
 };
 
