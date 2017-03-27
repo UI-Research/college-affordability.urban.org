@@ -29,7 +29,7 @@ let singlepage = (
     <h2>Room and Board Charges over Time</h2>
       <p><strong>Room and board charges have steadily increased over time, but not as much as tuition and fees. </strong></p>
       <Graph file={require('./json/03_0090.json')}/>
-      <p>Between 2006&ndash;07 and 2016&ndash;17, on campus room and board charges increased 23 percent in the public four-year sector and 25 percent at private nonprofit four-year colleges and universities. In both sectors, the price increase in 2009–10 was about twice as large as in any other year. </strong></p>
+      <p>Between 2006&ndash;07 and 2016&ndash;17, on campus room and board charges increased 23 percent in the public four-year sector and 25 percent at private nonprofit four-year colleges and universities. In both sectors, the price increase in 2009–10 was about twice as large as in any other year.</p>
 
   </div>
 );
