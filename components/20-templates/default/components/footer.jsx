@@ -34,6 +34,9 @@ export default class Footer extends Component {
             </ul>
           </div>
         </div>
+          <div className="footer-site__copyright-info">
+          Home page photo by Jon Lovette/Getty Images. &copy; 2017 Urban Institute
+          </div>
       </footer>
     );
   }

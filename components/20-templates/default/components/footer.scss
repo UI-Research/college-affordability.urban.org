@@ -23,6 +23,36 @@ footer {
   }
 }
 
+.footer-site__copyright-info{
+    color: #9d9d9d;
+    font-style: italic;
+    font-size: 13px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    text-indent: 16px;
+    top: 0px;
+    max-width: 300px;
+    height: 46px;
+    text-indent: 0px;
+    left: 9px;
+    line-height: 18px;
+    @include breakpoint($bp--mid) {
+        text-indent: 16px;
+        max-width: 1050px;
+        left: 0px;
+        height: 31px;
+        line-height: auto
+    }
+    @include breakpoint($bp--large) {
+        height: 12px;
+        margin-top: 0px;
+        text-indent: 141px;
+        top: -34px;
+      }
+}
+
 .footer-site__logo {
   background: #000 url(./img/logo-mini.png) left center no-repeat;
   border: none;
@@ -42,6 +72,7 @@ footer {
     display: block;
     padding: 0;
     text-indent: -999px;
+    margin-top: 15px;
     width: 50px;
     &:after {
       content: '';
