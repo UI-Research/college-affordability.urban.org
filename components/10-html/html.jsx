@@ -1,6 +1,7 @@
 'use strict';
 import React, { Component } from 'react';
 import util from 'util.jsx';
+import GoogleTagManager from 'google-tag-manager.jsx';
 
 if (util.canUseDOM()) {
   require('./html.scss');
@@ -18,6 +19,7 @@ export default class HTML extends Component {
           <title>{this.props.title} - Urban Institute</title>
         </head>
         <body>
+          <GoogleTagManager gtmId='GTM-MKBD2W' />
           <div id="container">{this.props.children}</div>
 
           <script src="/bundle--vendor.js"></script>
