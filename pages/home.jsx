@@ -14,7 +14,7 @@ let specifications = {
   'title': 'Understanding College Affordability',
   'content': (
     <div>
-      <Hero src="img/female-student-using-laptop-for-taking-notes-to-study.jpg">
+      <Hero src="img/homepage-cover-photo.jpg">
         <h1>Understanding College Affordability</h1>
         <h2>How Students, Institutions, and the Public Pay for Higher Education</h2>
       </Hero>
