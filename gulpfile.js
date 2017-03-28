@@ -90,6 +90,9 @@ gulp.task('react', function() {
     })
   });
 
+  gulp.src('favicon.ico')
+    .pipe(gulp.dest('dist/'));
+
   return;
 });
 
@@ -187,6 +190,7 @@ gulp.task('images', function () {
       gulp.src(src_image_dir + '/**/*.zip')
         .pipe(rename({dirname: ''}))
         .pipe(gulp.dest(dist_image_dir));
+
     }
   });
 });
