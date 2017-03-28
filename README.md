@@ -45,7 +45,7 @@ gulp deploy
 The repository is hooked up to Urban's codeship account.  It continuously deploys new changes whenever there's a change to the repo (read note below).  To trigger a change to the staging environment, simply merge a branch to develop and AWS will be updated with the new code changes.
 
 Note: Because of our set up, Codeship triggers a deploy whenever a commit happens on ANY branch.  I tried to target a specific branch "master", but either I am misinterpreting the configurations or there is something I don't know.  For general purposes, it does CI, but a little more liberally.
-^^This is resolved . . .TODO: update README.md.
+^^This is resolved . . .*TODO: update README.md.*
 
 The shell script is all embedded within the Test Settings (https://codeship.com/projects/160168/configure_tests).  For future reference, here is the script in use.  When you change your staging and production environment, you may have to make a change here to reflect your new server configurations:
 
