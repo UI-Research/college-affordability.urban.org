@@ -148,7 +148,7 @@ export default class SinglePage extends Component {
   }
   handleHashChange(e) {
     // send pageview on hash change only.
-    ReactGA.pageview('/CollegeAffordability/' + location.pathname + location.hash);
+    ReactGA.pageview('/CollegeAffordability' + location.pathname + location.hash);
 
   }
   setActiveSection(element) {
@@ -282,7 +282,7 @@ export default class SinglePage extends Component {
     var ReactGA = require('react-ga');
     // Init Google Analytics account and basic pageview.
     ReactGA.initialize('UA-57529944-1');
-    ReactGA.pageview('/CollegeAffordability/' + location.pathname + location.hash);
+    ReactGA.pageview('/CollegeAffordability' + location.pathname + location.hash);
 
 
     if (util.canUseDOM()) {
