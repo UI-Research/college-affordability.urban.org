@@ -281,7 +281,7 @@ export default class SinglePage extends Component {
 
     var ReactGA = require('react-ga');
     // Init Google Analytics account and basic pageview.
-    ReactGA.initialize('UA-000000-01');
+    ReactGA.initialize('UA-57529944-1');
     ReactGA.pageview(location.pathname + location.hash);
 
 
