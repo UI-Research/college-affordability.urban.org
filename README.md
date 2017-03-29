@@ -42,23 +42,27 @@ gulp deploy
 ```
 
 ### Continuous Integration ###
-The repository is hooked up to Urban's codeship account.  It continuously deploys new changes whenever there's a change to the repo (read note below).  To trigger a change to the staging environment, simply merge a branch to develop and AWS will be updated with the new code changes.
+The repository is hooked up to Urban's codeship account.  It continuously deploys new changes whenever code changes are pushed to designated branches.
 
-Note: Because of our set up, Codeship triggers a deploy whenever a commit happens on ANY branch.  I tried to target a specific branch "master", but either I am misinterpreting the configurations or there is something I don't know.  For general purposes, it does CI, but a little more liberally.
-^^This is resolved . . .*TODO: update README.md.*
+Currently, our deployment branches are as follows:
 
-The shell script is all embedded within the Test Settings (https://codeship.com/projects/160168/configure_tests).  For future reference, here is the script in use.  When you change your staging and production environment, you may have to make a change here to reflect your new server configurations:
+* "develop" -> s3://urban-ca.dev.phase2tech.com (staging instance until further notice)
+* "live" -> s3://collegeaffordability.urban.org (live, production site)
+
+Since we are deploying to different servers with different access keys, we export the environment variables within each deployment pipeline. Here is an example of our deployment script.
 
 ```
-cd ~/clone
-npm install
+export AWS_ACCESS_KEY_ID=[A Key ID]
+export AWS_SECRET_ACCESS_KEY=[A Secret Access Key]
+export AWS_DEFAULT_REGION=[A Default Region]
 npm rebuild node-sass
 gulp
-aws s3 rm s3://urban-ca.dev.phase2tech.com/ --recursive;
-aws s3 cp ./dist s3://urban-ca.dev.phase2tech.com --recursive
+aws s3 rm s3://collegeaffordability.urban.org/ --recursive;
+aws s3 cp ./dist s3://collegeaffordability.urban.org --recursive
 ```
 
-Also, go to the environment variables configuration page (https://codeship.com/projects/160168/configure_environment) to add your own AWS credentials.
+You can view and edit the Codeship Development Pipelines [here](https://app.codeship.com/projects/160168/deployment_branches/166333)
+
 
 Reference: https://cwhite.me/continuous-delivery-for-your-static-site-with-codeship/
 
