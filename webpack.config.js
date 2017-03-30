@@ -3,6 +3,7 @@
 const webpack = require('webpack'),
       autoprefixer = require('autoprefixer'),
       glob = require('glob'),
+      ExtractTextPlugin = require('extract-text-webpack-plugin'),
       path = require('path');
 
 let config = {
@@ -51,11 +52,23 @@ let config = {
         test: /\.json$/,
         loader: 'json'
       },
-      // CSS: scss, css
+      // CSS: scss, css - saves to external css file.
       {
-        test: /\.s?css$/,
-        loaders: ['style', 'css', 'sass', 'postcss-loader']
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract('style', 'css!sass', 'postcss-loader'),
+        exclude: /\/pages\//
       },
+      //CSS: scss, css - saves inline for singlepage overrides.
+      {
+        test: /\.scss$/,
+        loaders: ['style', 'css', 'sass', 'postcss-loader'],
+        include: /\/pages\//
+      },
+      // Leaving here for now for reference. Remove if/when happy with above scss loaders.
+      // {
+      //   test: /\.s?css$/
+      //   loaders: ['style', 'css', 'sass', 'postcss-loader']
+      // },
       // SVGs: svg, svg?something
       {
         test: /\.svg(\?.*$|$)/,
@@ -85,6 +98,10 @@ let config = {
   plugins: [
     // Pro-tip: Order matters here.
     new webpack.optimize.CommonsChunkPlugin(['components', 'vendor'], 'bundle--[name].js'),
+    new ExtractTextPlugin('[name].css', {
+      disable: false,
+      allChunks: true
+    }),
     // Use the production version of third party libraries.
     new webpack.DefinePlugin({
       'process.env':{

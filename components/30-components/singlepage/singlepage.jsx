@@ -19,8 +19,6 @@ if (util.canUseDOM()) {
   require('./singlepage.scss');
 }
 
-
-
 export default class SinglePage extends Component {
   constructor(props) {
     super(props);
@@ -164,19 +162,13 @@ export default class SinglePage extends Component {
       element.classList.add('active');
       const target = '#/' + element.getAttribute('id');
       anchor = document.querySelector(`.nav-anchor__top-level a[href="${target}"]`);
-
+      // Set second and third level breadcrumbs if applicable.
       let secondLevel = document.querySelector('ul.nav-anchor__second-level');
-
-      if (secondLevel.classList.contains('open')) {
-
+      if (secondLevel && secondLevel.classList.contains('open')) {
         let parentTitle = secondLevel.previousElementSibling.previousElementSibling.textContent;
         console.log(parentTitle);
-
         sectionTitle = parentTitle + ' / ' + sectionTitle;
-
       }
-
-
 
     }
     this.setActiveMenu(anchor);

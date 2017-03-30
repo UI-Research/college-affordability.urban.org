@@ -17,6 +17,7 @@ export default class HTML extends Component {
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link href="/components.css" rel="stylesheet" />
           <title>{this.props.title} - Urban Institute</title>
         </head>
         <body>
