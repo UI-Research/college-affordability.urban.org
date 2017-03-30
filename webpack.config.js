@@ -52,13 +52,13 @@ let config = {
         test: /\.json$/,
         loader: 'json'
       },
-      // CSS: scss, css; saves to external css file
+      // CSS: scss, css - saves to external css file.
       {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract('style', 'css!sass', 'postcss-loader'),
         exclude: /\/pages\//
       },
-      //CSS: scss, css; saves inline for singlepage overrides.
+      //CSS: scss, css - saves inline for singlepage overrides.
       {
         test: /\.scss$/,
         loaders: ['style', 'css', 'sass', 'postcss-loader'],
