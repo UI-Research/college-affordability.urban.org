@@ -53,16 +53,16 @@ let config = {
         loader: 'json'
       },
       // CSS: scss, css - saves to external css file.
-      {
-        test: /\.scss$/,
-        loader: ExtractTextPlugin.extract('style', 'css!sass', 'postcss-loader'),
-        exclude: /\/pages\//
-      },
+      // {
+      //   test: /\.scss$/,
+      //   loader: ExtractTextPlugin.extract('style', 'css!sass', '-minimize', 'postcss-loader'),
+      //   exclude: /\/pages\//
+      // },
       //CSS: scss, css - saves inline for singlepage overrides.
       {
         test: /\.scss$/,
-        loaders: ['style', 'css', 'sass', 'postcss-loader'],
-        include: /\/pages\//
+        loaders: ['style', 'css', 'sass', 'postcss-loader']
+        // include: /\/pages\//
       },
       // Leaving here for now for reference. Remove if/when happy with above scss loaders.
       // {
