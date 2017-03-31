@@ -23,7 +23,7 @@ export default class Footer extends Component {
                 <a href="/research-and-resources">Research and Resources</a>
               </li>
               <li>
-                <a href="#">Chart Indexes</a>
+                <a href="/chart-index">Chart Indexes</a>
               </li>
               <li>
                 <a href="http://www.urban.org/privacy-policy" target="_blank">Privacy</a>
