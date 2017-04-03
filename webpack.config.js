@@ -55,7 +55,7 @@ let config = {
       // CSS: scss, css - saves to external css file.
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract('style', 'css!sass', 'postcss-loader'),
+        loader: ExtractTextPlugin.extract(['css?-minimize', 'postcss', 'sass']),
         exclude: /\/pages\//
       },
       //CSS: scss, css - saves inline for singlepage overrides.

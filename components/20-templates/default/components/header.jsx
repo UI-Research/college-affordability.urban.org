@@ -258,7 +258,7 @@ export default class Header extends Component {
                       <a href="/research-and-resources">Research and Resources</a>
                     </li>
                     <li>
-                      <a href="#">Chart Index</a>
+                      <a href="/chart-index">Chart Index</a>
                     </li>
                   </ul>
                 </div>

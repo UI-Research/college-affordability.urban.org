@@ -29,7 +29,7 @@ let singlepage = (
     <h2>Who Receives State Grant Aid?</h2>
       <p><strong>State grant aid goes almost exclusively to students enrolled in college in their states of legal residence. Low-income dependent students and those enrolled in public and private nonprofit four-year institutions are most likely to receive state grant aid</strong>. In addition to income requirements for eligibility, the fact that about one-quarter of dependent students from families in the highest income quartile enroll out-of-state compared with just over 10 percent of those from the lowest-income families contributes to the concentration of aid at the lower end of the income distribution.</p>
 
-      <Multiples title="Share of Undergraduates Receiving State Grant Aid, 2011–12" source="National Postsecondary Student Aid Study (NPSAS), 2012">
+      <Multiples title="Share of Undergraduates Receiving State Grant Aid, 2011–12" source="National Postsecondary Student Aid Study (NPSAS), 2012.">
         <Graph file={require('./json/04_0151.json')} small="true"/>
         <Graph file={require('./json/04_0152.json')} small="true"/>
         <Graph file={require('./json/04_0153.json')} small="true"/>
