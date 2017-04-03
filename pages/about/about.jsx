@@ -30,7 +30,7 @@ As an organization, the Urban Institute does not take positions on issues, but i
 <p><strong>Research</strong> <br />
 Sandy Baum, Martha Johnson, and Victoria Lee</p>
 <p><strong>Writing</strong> <br />
-Alexandra Tisley</p>
+Alexandra Tilsley</p>
 <p><strong>Editorial</strong> <br />
   Elizabeth Forney and Daniel Matos</p>
 <p><strong>Production</strong> <br />

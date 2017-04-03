@@ -36,7 +36,6 @@ let singlepage = (
 <p>Average Subsidy per Full-Time Equivalent Student within Undergraduate Deciles</p>
 <h3><a href="../cost-of-educating/appropriations/">Appropriations</a></h3>
 <p>Change in Total Appropriations, Enrollment, and Appropriations per FTE Student Relative to 1999–00, in Inflation-Adjusted Dollars</p>
-<p>Percentage of State and Local Tax Revenues Funding Higher Education</p>
 <p>Changes in State and Local Support for Higher Education Relative to 1999–00</p>
 <p>State and Local Appropriations for Higher Education per Public-Sector FTE Student, 2014–15</p>
 <h3><a href="../cost-of-educating/endowments/">Endowments</a></h3>
@@ -57,7 +56,6 @@ let singlepage = (
 <p>Average Published On-Campus Room and Board Price by Type of Institution, 2016–17</p>
 <p>Average Price of On-Campus Housing at Four-Year Public Institutions by State, 2013–14</p>
 <p>Difference between the Average Price of On-Campus Housing over the Academic Year at Four-Year Public and Private Nonprofit</p>
-<p>Colleges in 2010–14 and Average Rent over Nine Months among 18- to 24-Year-Olds, by State, in 2013 Dollars</p>
 <p>Average On-Campus Room and Board Charges by Sector, 2000–01 to 2016–17, in 2016 Dollars</p>
 <h3><a href="../prices-and-expenses/student-budgets/">Student Budgets</a></h3>
 <p>Full-Time Undergraduate Student Quintiles of Cost of Attendance by Sector, 2015–16</p>
