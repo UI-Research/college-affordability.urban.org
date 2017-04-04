@@ -12,7 +12,7 @@ export default class Footer extends Component {
       <footer className="footer-site">
         <div className="footer-site__logo-wrapper">
           <div className="footer-site__logo-wrapper-inner">
-            <a href="/" className="footer-site__logo" alt="Understanding College Affordability"></a>
+            <a href="http://www.urban.org/" className="footer-site__logo" alt="Understanding College Affordability"></a>
           </div>
           <div className="footer-site__nav-utility">
             <ul>
