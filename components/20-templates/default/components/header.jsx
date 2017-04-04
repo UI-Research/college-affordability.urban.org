@@ -117,7 +117,7 @@ export default class Header extends Component {
         <header className={headerSite}>
           <div className="header-site__nav-mobile" onClick={this.toggleMobileNav}><i className="fa fa-bars"></i><span>Menu</span></div>
           <div className="header-site__logo-wrapper">
-            <a href="/" className="header-site__logo" alt="Urban Institute"></a>
+            <a href="http://www.urban.org/" className="header-site__logo" alt="Urban Institute"></a>
           </div>
           <div className="header-site__right">
             <div className="header-site__title"><a href="/" alt="Understanding College Affordability">Understanding College Affordability</a></div>
