@@ -166,7 +166,6 @@ export default class SinglePage extends Component {
       let secondLevel = document.querySelector('ul.nav-anchor__second-level');
       if (secondLevel && secondLevel.classList.contains('open')) {
         let parentTitle = secondLevel.previousElementSibling.previousElementSibling.textContent;
-        console.log(parentTitle);
         sectionTitle = parentTitle + ' / ' + sectionTitle;
       }
 
