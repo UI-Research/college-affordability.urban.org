@@ -59,7 +59,7 @@ let specifications = {
             <li><a href="financial-aid/financial-need/">Financial Need<i className="fa fa-chevron-right"></i></a></li>
             <li><a href="financial-aid/grant-aid/">Grant Aid<i className="fa fa-chevron-right"></i></a></li>
             <li><a href="financial-aid/federal/">Federal Grant Aid<i className="fa fa-chevron-right"></i></a></li>
-            <li><a href="financial-aid/state/">Stater Grant Aid<i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="financial-aid/state/">State Grant Aid<i className="fa fa-chevron-right"></i></a></li>
             <li><a href="financial-aid/institutional/">Institutional Grant Aid<i className="fa fa-chevron-right"></i></a></li>
             <li><a href="financial-aid/other/">Other Grant Aid<i className="fa fa-chevron-right"></i></a></li>
             <li><a href="financial-aid/tax-benefits/">Tax Benefits <i className="fa fa-chevron-right"></i></a></li>
