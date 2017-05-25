@@ -31,8 +31,8 @@
   "series": [
     "Total",
     "Public four-year",
-    "Private nonprofit four-year",
     "Public two-year",
+    "Private nonprofit four-year",
     "For-profit"
   ],
   "data": {
@@ -51,7 +51,7 @@
       ],
       "set3": [
         [
-          "Private nonprofit four-year",
+          "Public two-year",
           0.0184,
           0.0231,
           0.0373,
@@ -63,7 +63,7 @@
       ],
       "set4": [
         [
-          "Public two-year",
+          "Private nonprofit four-year",
           0.2293,
           0.3048,
           0.4292,
