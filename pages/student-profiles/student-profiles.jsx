@@ -155,7 +155,7 @@ let singlepage = (
 </table>
 <p>Source: NPSAS, 2012.</p>
 
-<p><strong>How do low-income dependent pay for college?</strong></p>
+<p><strong>How do low-income dependent students pay for college?</strong></p>
 <Graph file={require('./json/07_0070.json')}/>
 <p><strong>How does time to degree affect cost? </strong></p>
 <Graph file={require('./json/07_0080.json')}/>
@@ -226,7 +226,7 @@ let singlepage = (
   </tr>
 </table>
 <p>Source: NPSAS, 2012.</p>
-<p><strong>How do low-income dependent pay for college?</strong></p>
+<p><strong>How do lower-middle-income dependent students pay for college?</strong></p>
 <Graph file={require('./json/07_0110.json')}/>
 <p><strong>How does time to degree affect cost? </strong><strong> </strong></p>
 
@@ -297,7 +297,7 @@ let singlepage = (
   </tr>
 </table>
 <p>Source: NPSAS, 2012</p>
-<p><strong>How do upper-middle-income dependent pay for college?</strong></p>
+<p><strong>How do upper-middle-income dependent students pay for college?</strong></p>
 <Graph file={require('./json/07_0150.json')}/>
 <p><strong>How does time to degree affect cost? </strong><strong> </strong></p>
     <Graph file={require('./json/07_0160.json')}/>
@@ -376,7 +376,7 @@ let singlepage = (
   </tr>
 </table>
 <p>Source: NPSAS, 2012.<strong></strong></p>
-<p><strong>How do upper-income dependent pay for college?</strong></p>
+<p><strong>How do upper-income dependent students pay for college?</strong></p>
 <Graph file={require('./json/07_0190.json')}/>
  <p><strong>How does time to degree affect cost? </strong></p>
 <Graph file={require('./json/07_0200.json')}/>
