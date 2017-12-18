@@ -163,7 +163,7 @@ let singlepage = (
 <p><strong>Who are lower-middle-income dependent students?</strong></p>
 <p>In 2011–12, about 25 percent of dependent students came from families with incomes between $30,000 and $65,000. These are the students categorized as lower-middle-income dependent students. All of them are younger than 24. They are not married, do not have dependents of their own, and have no other characteristics that would make the financial aid system declare them independent of their parents.</p>
 <p><strong>Where do lower-middle-income dependent students enroll?</strong></p>
-<p>In 2011–12, more than three-quarters of lower-middle-income students were enrolled in public two-year or four-year institutions.. </p>
+<p>In 2011–12, more than three-quarters of lower-middle-income students were enrolled in public two-year or four-year institutions. </p>
 <Graph file={require('./json/07_0090.json')}/>
 <p><strong>How do annual finances differ across sectors?</strong></p>
 <p>Average Published Prices, Budgets, and Resources Used to Pay for College for Lower-Middle-Income Dependent Students, 2011–12</p>
