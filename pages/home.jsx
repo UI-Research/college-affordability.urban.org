@@ -74,6 +74,7 @@ let specifications = {
             <li><a href="covering-expenses/working-during-college/">Working during College<i className="fa fa-chevron-right"></i></a></li>
             <li><a href="covering-expenses/borrowing/">Borrowing<i className="fa fa-chevron-right"></i></a></li>
             <li><a href="covering-expenses/time-to-degree/">Time to Degree<i className="fa fa-chevron-right"></i></a></li>
+            <li><a href="covering-expenses/state-policies/">State Policies<i className="fa fa-chevron-right"></i></a></li>
           </ul>
         </HomePageCTA>
         <HomePageCTA src="img/after-college.svg">

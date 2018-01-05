@@ -219,6 +219,9 @@ export default class Header extends Component {
                         <li>
                           <a href="/covering-expenses/time-to-degree">Time to Degree</a>
                         </li>
+                        <li>
+                          <a href="/covering-expenses/state-policies">State Policies</a>
+                        </li>
                       </ul>
                     </li>
                     <li>
