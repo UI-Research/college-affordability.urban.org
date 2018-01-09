@@ -21,6 +21,7 @@ let specifications = {
       <div className="c-narrative">
         <p>Rising concerns over college tuition and student debt, combined with the widespread conviction that a degree is essential for a middle-class lifestyle, have led to a sense that college in the United States has become "unaffordable." <strong>But what does affordability actually mean?</strong></p>
         <a href="/about" className="c-home__button">Learn about the project <i className="fa fa-chevron-right"></i></a>
+        <p><br/><em>Update January 2018: Both the options and the challenges students and families face in financing higher education vary considerably from state to state&mdash;what steps are states taking to address college affordability? <a href="http://collegeaffordability.urban.org/covering-expenses/state-policies/">Learn more in our new state policy section.</a></em></p>
       </div>
      
       <div className="cta__container">
