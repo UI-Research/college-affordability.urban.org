@@ -7,7 +7,6 @@
   "series": [
     "Tuition and fees covered by grant aid",
     "Remaining (net) tuition and fees",
-    "Living expenses covered by grant aid",
     "Remaining (net) living expenses"
   ],
   "axis": {
@@ -40,7 +39,6 @@
       [
         "Tuition and fees covered by grant aid",
         "Remaining (net) tuition and fees",
-        "Living expenses covered by grant aid",
         "Remaining (net) living expenses"
       ]
     ],
@@ -60,14 +58,6 @@
         8500,
         8500,
         10500
-      ],
-      [
-        "Living expenses covered by grant aid",
-        0,
-        0,
-        0,
-        0,
-        0
       ],
       [
         "Remaining (net) living expenses",
