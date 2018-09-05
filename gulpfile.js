@@ -100,7 +100,7 @@ gulp.task('react', function() {
 // Generate a webpack bundle
 // > gulp webpack
 gulp.task('webpack', function(cb) {
-  exec('webpack --color', function (err, stdout, stderr) {
+  exec('node_modules/.bin/webpack --color', function (err, stdout, stderr) {
     console.log(stdout);
     console.log(stderr);
     cb(err);
