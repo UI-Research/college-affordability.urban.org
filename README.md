@@ -49,7 +49,7 @@ The repository is hooked up to Urban's codeship account.  It continuously deploy
 
 Currently, our deployment branches are as follows:
 
-* *develop* -> s3://urban-ca.dev.phase2tech.com (staging instance until further notice)
+* *develop* -> s3://collegeaffordability-stg.s3-website-us-east-1.amazonaws.com (staging instance until further notice)
 * *live* -> s3://collegeaffordability.urban.org (live, production site)
 
 Since we are deploying to different servers with different access keys, we export the environment variables within each deployment pipeline. Here is an example of our deployment script.
