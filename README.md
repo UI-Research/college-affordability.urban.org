@@ -5,10 +5,12 @@ This repository encompasses the Urban College Affordability Static Site Generati
 ## Set up ##
 
 1. Install Homebrew (http://brew.sh/)
-1. Install node (brew install node)
+1. Install node (brew install node)*
 1. Install npm (sudo npm install npm -g)
 1. Install all dependencies (npm install)
 1. Install imagemagick on your machine (Refer to https://github.com/scalableminds/gulp-gm/blob/master/README.md for information on installing it on your machine).
+
+* Tested with node v6. Codeship is configured for node v6. If you are experiencing deployment issues, check your node version.
 
 ## How do I get started? ##
 
@@ -49,7 +51,7 @@ The repository is hooked up to Urban's codeship account.  It continuously deploy
 
 Currently, our deployment branches are as follows:
 
-* *develop* -> s3://urban-ca.dev.phase2tech.com (staging instance until further notice)
+* *develop* -> s3://collegeaffordability-stg.s3-website-us-east-1.amazonaws.com (staging instance until further notice)
 * *live* -> s3://collegeaffordability.urban.org (live, production site)
 
 Since we are deploying to different servers with different access keys, we export the environment variables within each deployment pipeline. Here is an example of our deployment script.
