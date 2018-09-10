@@ -1,0 +1,47 @@
+{
+  "wideSmallMultiple": true,
+  "title": "Bachelor's",
+  "series": ["Average net revenue per FTE student", "Average subsidy per FTE student"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Average net revenue per FTE student",
+        7170,
+        8680,
+        10170
+      ],
+      [
+        "Average subsidy per FTE student",
+        8180,
+        7840,
+        7710
+      ]
+    ],
+    "groups": [
+      ["Average net revenue per FTE student", "Average subsidy per FTE student"]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["04-'05", "09-'10", "14-'15"],
+      "type": "category"
+    },
+    "y": {
+      "axis": {
+        "tick": {
+          "format": "dollar"
+        },
+        "max": 25000
+      }
+    }
+  },
+  "metadata": {
+    "source": "IPEDS.",
+    "notes": null
+  }
+}

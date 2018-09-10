@@ -1,0 +1,54 @@
+{
+  "title": "Earnings of women by race",
+  "series": ["25th percentile and below", "25th percentile to median", "Median to 75th percentile"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "25th percentile and below",
+        15335.12,
+        16610.45,
+        14600.43,
+        13496.12
+      ],
+      [
+        "25th percentile to median",
+        21159.35,
+        24535.99,
+        20151.76,
+        19536.39
+      ],
+      [
+        "Median to 75th percentile",
+        30227.64,
+        36750.32,
+        25954.46,
+        26362.28
+      ]
+    ],
+    "groups": [
+      ["25th percentile and below", "25th percentile to median", "Median to 75th percentile"]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["White", "Asian", "Hispanic", "Black"],
+      "type": "category"
+    },
+    "y": {
+      "axis": {
+        "tick": {
+          "format": "dollar"
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "Integrated Public Use Microdata Series (IPUMS) 2014 American Community Survery (ACS) five-year sample (2010–14).",
+    "notes": null
+  }
+}

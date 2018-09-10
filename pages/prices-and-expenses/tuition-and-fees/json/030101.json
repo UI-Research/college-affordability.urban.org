@@ -1,0 +1,41 @@
+{
+  "title": "WhiteAsianHispanicBlack$0$40k$80k",
+  "series": "10830",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "10830",
+        8670,
+        9970,
+        25620,
+        3570,
+        42920,
+        29960,
+        34740,
+        16000
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["Public master's In-state", "Public bachelor's in-state", "Public bachelor's out-of-state", "Public two-year in-district", "Private nonprofit doctoral", "Private nonprofit master<92>s", "Private nonprofit bachelor's", "For-profit"],
+      "type": "category"
+    },
+    "y": {
+      "axis": {
+        "tick": {
+          "format": "dollar"
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "Integrated Postsecondary Education Data System (IPEDS), 2015; Jennifer Ma, Sandy Baum, Matea Pender, and D'Wayne Bell, Trends in College Pricing 2015, (New York: College Board, 2015).",
+    "notes": null
+  }
+}

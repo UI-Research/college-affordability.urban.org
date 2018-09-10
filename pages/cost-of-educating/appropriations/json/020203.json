@@ -1,0 +1,88 @@
+{
+  "forceTall": true,
+  "title": "State and Local Appropriations for Higher Education per Public-Sector FTE Student, 2014–15",
+  "highlightIndex": 36,
+  "series": "State and Local Appropriations for Higher Education per Public-Sector FTE Student",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "State and Local Appropriations for Higher Education per Public-Sector FTE Student",
+        5668.9621,
+        16391.4118,
+        5148.1705,
+        6757.2053,
+        10157.4788,
+        4394.1648,
+        10281.453,
+        6326.7392,
+        6483.8715,
+        8079.7754,
+        15367.0253,
+        8254.462,
+        15467.5735,
+        6454.7653,
+        5818.2016,
+        5847.4121,
+        6622.7723,
+        4891.7872,
+        7733.4712,
+        8684.2191,
+        8740.6284,
+        5956.6586,
+        6774.9255,
+        5891.819,
+        5691.4506,
+        5746.6503,
+        9274.3385,
+        7046.3648,
+        2958.9474,
+        7062.4545,
+        8932.2284,
+        10636.2092,
+        8778.046,
+        8975.8735,
+        5591.5387,
+        5665.4876,
+        6513.8985,
+        4430.8774,
+        6104.2245,
+        5506.1253,
+        6082.7988,
+        7225.2382,
+        7355.8212,
+        7642.4116,
+        6380.0314,
+        3016.8246,
+        5795.1802,
+        7294.5909,
+        9756.5844,
+        4744.4971,
+        5953.0348,
+        15820.8291,
+        null
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "US", "Utah", "Vermont", "Virginia", "Washington", "Washington DC", "West Virginia", "Wisconsin", "Wyoming", ""],
+      "type": "category"
+    },
+    "y": {
+      "axis": {
+        "tick": {
+          "format": "dollar"
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "SHEEO.",
+    "notes": null
+  }
+}

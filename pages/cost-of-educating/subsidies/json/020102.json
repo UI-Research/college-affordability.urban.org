@@ -1,0 +1,47 @@
+{
+  "wideSmallMultiple": true,
+  "title": "Associate",
+  "series": ["Average net tuition revenue per FTE student", "Average subsidy per FTE student"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Average net tuition revenue per FTE student",
+        2740,
+        2980,
+        3460
+      ],
+      [
+        "Average subsidy per FTE student",
+        6260,
+        5340,
+        6090
+      ]
+    ],
+    "groups": [
+      ["Average net tuition revenue per FTE student", "Average subsidy per FTE student"]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["04-'05", "09-'10", "14-'15"],
+      "type": "category"
+    },
+    "y": {
+      "axis": {
+        "tick": {
+          "format": "dollar"
+        },
+        "max": 25000
+      }
+    }
+  },
+  "metadata": {
+    "source": "IPEDS.",
+    "notes": null
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "title": "Earnings of men by race",
+  "series": ["25th percentile and below", "25th percentile to median", "Median to 75th percentile"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "25th percentile and below",
+        18136.58,
+        17441.68,
+        15840.05,
+        15209.2
+      ],
+      [
+        "25th percentile to median",
+        24535.99,
+        24535.99,
+        21159.35,
+        21120.4
+      ],
+      [
+        "Median to 75th percentile",
+        33736.86,
+        36273.17,
+        29200.86,
+        29403.12
+      ]
+    ],
+    "groups": [
+      ["25th percentile and below", "25th percentile to median", "Median to 75th percentile"]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["White", "Asian", "Hispanic", "Black"],
+      "type": "category"
+    },
+    "y": {
+      "axis": {
+        "tick": {
+          "format": "dollar"
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "Integrated Public Use Microdata Series (IPUMS) 2014 American Community Survery (ACS) five-year sample (2010–14).",
+    "notes": null
+  }
+}

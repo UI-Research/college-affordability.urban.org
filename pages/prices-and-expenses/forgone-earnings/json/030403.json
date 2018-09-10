@@ -1,0 +1,60 @@
+{
+  "title": "Earnings of women by age",
+  "series": ["25th percentile and below", "25th percentile to median", "Median to 75th percentile"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "25th percentile and below",
+        12167.36,
+        15572.68,
+        21120.4,
+        25189.7,
+        26600.32,
+        22112.68
+      ],
+      [
+        "25th percentile to median",
+        17649.24,
+        21753.8,
+        30417.4,
+        35781.95,
+        40303.52,
+        32715.32
+      ],
+      [
+        "Median to 75th percentile",
+        23513.45,
+        30227.64,
+        42240.8,
+        50696,
+        57792.96,
+        48793.58
+      ]
+    ],
+    "groups": [
+      ["25th percentile and below", "25th percentile to median", "Median to 75th percentile"]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["18-20", "21-23", "24-26", "27-29", "30-34", "Total"],
+      "type": "category"
+    },
+    "y": {
+      "axis": {
+        "tick": {
+          "format": "dollar"
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "Integrated Public Use Microdata Series (IPUMS) 2014 American Community Survery (ACS) five-year sample (2010–14).",
+    "notes": null
+  }
+}

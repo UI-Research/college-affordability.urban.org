@@ -17,12 +17,12 @@ let singlepage = (
       <p>State and local appropriations are used primarily to fund public colleges and universities, but some money goes to student aid, some benefits students in private colleges, and some is restricted for special purposes like research, agriculture, and medical education.</p>
       <h2>Changes over Time</h2>
         <p>From 1999–2000 to 2014-15, enrollment in public colleges and universities grew by more than 20 percent. But overall state and local appropriations to public higher education, which peaked in 2007–08, grew by less than 10 percent in this time period. <strong>These trends resulted in a decline of over 16 percent in appropriations per public-sector student over this period. Appropriations per student averaged $8,300 (in 2015 dollars) in 1999–20000 compared with just $6,960 for the 2014–15 academic year.</strong></p>
-        <Graph file={require('./json/02_0010.json')}/>
+        <Graph file={require('./json/020201.json')}/>
         <p>Because tax dollars fund public higher education, changes in state and local appropriations tend to follow trends in tax revenues. The Great Recession dealt a blow to state budgets and led states to reduce public funding for higher education. This decline would likely have been more severe had the federal government not supplemented state revenues through the American Recovery and Reinvestment Act of 2009. </p>
         <p>Total appropriations continued to decline after 2009–10 but have increased slightly since 2012–13 as tax revenues have recovered.</p>
       <h2>Local Support</h2>
         <p><strong>Since 1999&ndash;2000, state financial support for public higher education has risen only 6 percent while local support has increased 30 percent.</strong> However, local support still made up just 12 percent of total appropriations in 2014&ndash;15.</p>
-        <Graph file={require('./json/02_0030.json')}/>
+        <Graph file={require('./json/020202.json')}/>
       <h2>Variation across States</h2>
        <p>National averages provide a meaningful overview of the circumstances facing college students. <strong>But state funding patterns and the price of college vary dramatically across states, generating considerable geographic differences in college affordability.</strong></p>
       <Box>
@@ -35,7 +35,7 @@ let singlepage = (
           <li><em>Most state funding goes directly to public institutions, but some goes to higher education coordinating boards or to other state agencies that allocate funds to institutions, which sometimes include private colleges and universities.</em></li>
         </ul></Box>
       <p>Students who attended public colleges and universities in 2014–15 benefited from per-student appropriations ranging from $2,900 in New Hampshire to more than $17,000 in Alaska. Some of the variation across states is attributable to differences in state wealth and cost of living, but many other factors also contribute.</p>
-      <Graph file={require('./json/02_0040.json')}/>
+      <Graph file={require('./json/020203.json')}/>
   </div>
 );
 

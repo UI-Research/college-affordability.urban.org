@@ -1,0 +1,45 @@
+{
+  "forceMediumHeight": true,
+  "title": "Degree-Granting Institutions by Sector and Degree-Type in Fall 2014",
+  "series": "Number of institutions",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Number of institutions",
+        958,
+        445,
+        409,
+        117,
+        646,
+        1000,
+        125,
+        269,
+        193,
+        75,
+        4237
+      ]
+    ],
+    "labels": {
+      "format": "number"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["For-profit", "Private nonprofit bachelor's", "Private nonprofit master's", "Private nonprofit research", "Private nonprofit special focus or two-year", "Public associate", "Public bachelor's", "Public master's", "Public research", "Public Special Focus", "Total "],
+      "type": "category"
+    },
+    "y": {
+      "axis": {
+        "tick": {
+          "format": "number"
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "Integrated Postsecondary Education Data System",
+    "notes": null
+  }
+}

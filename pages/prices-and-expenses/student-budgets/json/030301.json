@@ -1,0 +1,66 @@
+{
+  "metadata.pluralNotes": true,
+  "title": null,
+  "series": ["Lowest quintile", "2nd", "3rd", "4th", "Highest quintile"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Lowest quintile",
+        20069,
+        29649,
+        13219,
+        18705
+      ],
+      [
+        "2nd",
+        22899,
+        43775,
+        16335,
+        21527
+      ],
+      [
+        "3rd",
+        24908,
+        52166,
+        18225,
+        24453
+      ],
+      [
+        "4th",
+        27064,
+        61903,
+        19818,
+        30328
+      ],
+      [
+        "Highest quintile",
+        31495,
+        70720,
+        24427,
+        39708
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["Public four year", "Private nonprofit four year", "Public two year", "For-profit"],
+      "type": "category"
+    },
+    "y": {
+      "axis": {
+        "tick": {
+          "format": "dollar"
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "Integrated Postsecondary Education Data System (IPEDS).",
+    "notes": null
+  }
+}

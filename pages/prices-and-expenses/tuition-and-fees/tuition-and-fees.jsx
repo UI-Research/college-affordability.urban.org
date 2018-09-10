@@ -22,7 +22,7 @@ let singlepage = (
 		</Box>
 	<h2>Tuition and Fees by Sector</h2>
 		<p>Media coverage of the few schools whose tuition and fees  exceed $50,000 ignores the fact that prices at most colleges are lower. As shown below, tuition is <strong>highest at private nonprofit research universities</strong>, where tuition averaged under $41,000 in 2016&ndash;17.</p>
-		<Graph file={require('./json/03_0010.json')}/>
+		<Graph file={require('./json/030101.json')}/>
 		<Box>
 			<h3><em><strong>One-Year Prices and Time to Degree</strong></em></h3>
 			<p><em>The tuition prices reported here are for one year of full-time enrollment. Institutions set their prices every year and charge students separately for each term they are enrolled, usually divided into semesters or quarters. But how much students pay—and how affordable their college education is—depends on how long they are enrolled.</em></p>
@@ -47,7 +47,7 @@ let singlepage = (
 		<p>In the public sector, variation in tuition and fees across institutions is explained primarily by differences across states and by differences in institutional mission. Universities where faculty produce more research and teach more graduate students tend to charge the highest undergraduate tuition prices.</p>
 		<p>In the private nonprofit sector, where individual institutions set their own prices, there is a much wider range of prices. There are large differences among private institutions in the type of education offered, the number of students and faculty members, the size of endowments and other private resources, and religious affiliations. Moreover, sticker prices depend on discounting practices, which vary widely. At some private colleges, all or almost all students receive aid packages that save them from paying the full published price. Other institutions might have lower sticker prices but more students paying full price.</p>
 		<p>The figure below shows the distribution of full-time students across the range of published tuition and fees charged by their public and private nonprofit four-year institutions. Although the median published tuition and fee price at private nonprofit institutions was $35,020 per year in 2016&ndash;17, 18 percent of students attended colleges charging less than $18,000. At the other end of the distribution, 17 percent faced published tuition and fee prices of $48,000 or more.</p>
-		<Graph file={require('./json/03_0030.json')}/>
+		<Graph file={require('./json/030103.json')}/>
 		<p>For 40 percent of full-time students in the public four-year sector, including both in-state and out-of-state students, the published tuition and fee price was less than $9,000 in 2016&ndash;17. The median sticker price in this sector was $11,730, but 17 percent of students faced sticker prices of $15,000 or higher.</p>
 	<h2>Variation across States</h2>
 		<p><strong>Tuition prices—particularly at public universities—vary dramatically across states.</strong></p>
