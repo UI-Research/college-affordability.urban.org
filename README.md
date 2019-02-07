@@ -10,7 +10,7 @@ This repository encompasses the Urban College Affordability Static Site Generati
 1. Install all dependencies (npm install)
 1. Install imagemagick on your machine (Refer to https://github.com/scalableminds/gulp-gm/blob/master/README.md for information on installing it on your machine).
 
-* Tested with node v6. Codeship is configured for node v6. If you are experiencing deployment issues, check your node version.
+* *Tested with node v6. Codeship is configured for node v6. If you are experiencing deployment issues, check your node version. To control the version of node in use, you can use a node version control manager like [n](https://www.npmjs.com/package/n)
 
 ## How do I get started? ##
 
