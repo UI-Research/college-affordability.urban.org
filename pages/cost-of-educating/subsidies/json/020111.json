@@ -1,0 +1,43 @@
+{
+  "title": "Average Subsidy per Full-Time Equivalent Student within Undergraduate Deciles",
+  "subtitle": "Private nonprofit bachelor's",
+  "series": "Average subsidy per FTE student",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Average subsidy per FTE student",
+        323,
+        2065,
+        3414,
+        4359,
+        5327,
+        6825,
+        8765,
+        11491,
+        15304,
+        28587
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      },
+      "max": 120000
+    }
+  },
+  "metadata": {
+    "source": "Integrated Postsecondary Education Data System (IPEDS).",
+    "notes": null
+  }
+}

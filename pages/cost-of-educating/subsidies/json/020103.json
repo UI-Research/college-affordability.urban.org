@@ -1,22 +1,22 @@
 {
   "wideSmallMultiple": true,
-  "title": "Education and Related Spending per Full-Time Equivalent Student at Public Institutions, 2005–06 to 2013–14",
-  "subtitle": "Associate",
+  "title": "Education and Related Spending per Full-Time Equivalent Student at Private Nonprofit Institutions, 2005–06 to 2013–14",
+  "subtitle": "Research",
   "series": ["Average net tuition revenue per FTE student", "Average subsidy per FTE student"],
   "data": {
     "type": "bar",
     "columns": [
       [
         "Average net tuition revenue per FTE student",
-        5070,
-        5540,
-        6100
+        20820,
+        22090,
+        24070
       ],
       [
         "Average subsidy per FTE student",
-        6980,
-        6330,
-        7410
+        17180,
+        17890,
+        20540
       ]
     ],
     "groups": [
@@ -34,10 +34,9 @@
     },
     "y": {
       "tick": {
-        "format": "dollar",
-        "count": 6
+        "format": "dollar"
       },
-      "max": 25000,
+      "max": 60000,
       "padding": {
         "top": 0,
         "bottom": 0

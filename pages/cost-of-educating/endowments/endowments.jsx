@@ -28,16 +28,16 @@ let singlepage = (
       </Box>
       <p>The few public and private nonprofit doctoral universities with very high endowment income per student use those assets to support undergraduate and graduate students and to further their research missions. <strong>During the 2013–14 academic year, 10 percent of students enrolled at private doctoral universities benefited from about $51,600 of endowment spending per full-time equivalent (FTE) student, but median endowment spending per FTE student in this sector was only $2,400.</strong> <strong>In public doctoral universities, 10 percent of students attended institutions with an average of $5,100 of endowment spending per student compared with just $630 for the median student.</strong></p>
       <Multiples title="Average Endowment Income per Student by Decile" source="Integrated Postsecondary Education Data System (IPEDS), 2013–14." notes="Institutions are sorted according to the Carnegie Classification of Institutions of Higher Education framework." pluralNotes="true">
-        <Graph file={require('./json/02_0051.json')} small="true"/>
-        <Graph file={require('./json/02_0052.json')} small="true"/>
-        <Graph file={require('./json/02_0053.json')} small="true"/>
-        <Graph file={require('./json/02_0054.json')} small="true"/>
-        <Graph file={require('./json/02_0055.json')} small="true"/>
+        <Graph file={require('./json/020301.json')} small="true"/>
+        <Graph file={require('./json/020302.json')} small="true"/>
+        <Graph file={require('./json/020303.json')} small="true"/>
+        <Graph file={require('./json/020304.json')} small="true"/>
+        <Graph file={require('./json/020305.json')} small="true"/>
     </Multiples>
       <p><strong>More selective schools tend to have higher endowment income.</strong></p>
       <p>At both private nonprofit and public four-year institutions with open admissions policies, median annual endowment income per student is about $300. In contrast, the median private nonprofit four-year institution that admits fewer than 25 percent of applicants has almost $18,000 in annual endowment income per student. </p>
-        <Graph file={require('./json/02_0610.json')}/>
-        <Graph file={require('./json/02_0620.json')}/>
+        <Graph file={require('./json/020306.json')}/>
+        <Graph file={require('./json/020307.json')}/>
 
       <Box>
         <h3><em>How Do Graduate Students Affect Per-Student Spending from University endowments? </em></h3>

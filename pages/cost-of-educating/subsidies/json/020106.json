@@ -1,0 +1,49 @@
+{
+  "wideSmallMultiple": true,
+  "title": "Average Subsidy per Full-Time Equivalent Student within Undergraduate Deciles",
+  "subtitle": "Public research",
+  "series": "Average subsidy per FTE student",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Average subsidy per FTE student",
+        1413,
+        2501,
+        3449,
+        4813,
+        5889,
+        7045,
+        8329,
+        10434,
+        15602,
+        25309
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 4
+      },
+      "max": 120000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "Integrated Postsecondary Education Data System (IPEDS).",
+    "notes": null
+  }
+}

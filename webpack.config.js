@@ -109,15 +109,15 @@ let config = {
       }
     }),
     // Minify assets.
-    new webpack.optimize.UglifyJsPlugin({
-      mangle: true,
-      output: {
-          comments: false
-      },
-      compress: {
-        warnings: false // https://github.com/webpack/webpack/issues/1496
-      }
-    })
+    // new webpack.optimize.UglifyJsPlugin({
+    //   mangle: true,
+    //   output: {
+    //       comments: false
+    //   },
+    //   compress: {
+    //     warnings: false // https://github.com/webpack/webpack/issues/1496
+    //   }
+    // })
   ]
 };
 

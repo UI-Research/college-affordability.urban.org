@@ -1,0 +1,40 @@
+{
+  "title": "Average Endowment Income per Student by Decile",
+  "subtitle": "Public master's",
+  "series": "Average Endowment Income per Student",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Average Endowment Income per Student",
+        48,
+        84,
+        109,
+        141,
+        181,
+        216,
+        263,
+        320,
+        405,
+        839
+      ]
+    ]
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Integrated Postsecondary Education Data System (IPEDS).",
+    "notes": null,
+    "subtitle": "Public master's"
+  }
+}
