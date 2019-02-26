@@ -1,7 +1,6 @@
 {
   "wideSmallMultiple": true,
-  "title": "Education and Related Spending per Full-Time Equivalent Student at Public Institutions, 2005–06 to 2013–13",
-  "subtitle": "Bachelor's",
+  "title": "Bachelor's",
   "series": ["Average net tuition revenue per FTE student", "Average subsidy per FTE student"],
   "data": {
     "type": "bar",
@@ -37,7 +36,7 @@
         "format": "dollar",
         "count": 6
       },
-      "max": 25000,
+      "max": 20000,
       "padding": {
         "top": 0,
         "bottom": 0

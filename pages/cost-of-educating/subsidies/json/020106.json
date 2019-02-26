@@ -1,7 +1,6 @@
 {
-  "wideSmallMultiple": true,
-  "title": "Average Subsidy per Full-Time Equivalent Student within Undergraduate Deciles",
-  "subtitle": "Public research",
+  "overrideTickCount": true,
+  "title": "Public research",
   "series": "Average subsidy per FTE student",
   "data": {
     "type": "bar",
@@ -19,23 +18,20 @@
         15602,
         25309
       ]
-    ],
-    "labels": {
-      "format": "dollar"
-    }
+    ]
   },
   "axis": {
-    "rotated": false,
+    "rotated": true,
     "x": {
-      "categories": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+      "categories": ["1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th"],
       "type": "category"
     },
     "y": {
       "tick": {
         "format": "dollar",
-        "count": 4
+        "count": 5
       },
-      "max": 120000,
+      "max": 100000,
       "padding": {
         "top": 0,
         "bottom": 0

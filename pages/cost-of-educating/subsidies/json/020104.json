@@ -1,7 +1,6 @@
 {
   "wideSmallMultiple": true,
-  "title": "Education and Related Spending per Full-Time Equivalent Student at Private Nonprofit Institutions, 2005–06 to 2013–15",
-  "subtitle": "Master's",
+  "title": "Master's",
   "series": ["Average net tuition revenue per FTE student", "Average subsidy per FTE student"],
   "data": {
     "type": "bar",
@@ -34,7 +33,8 @@
     },
     "y": {
       "tick": {
-        "format": "dollar"
+        "format": "dollar",
+        "count": 6
       },
       "max": 60000,
       "padding": {
