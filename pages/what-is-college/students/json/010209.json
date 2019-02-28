@@ -1,0 +1,67 @@
+{
+  "hideTooltip": true,
+  "title": "Sectors of Full-Time and Part-Time Students",
+  "series": ["Public four-year", "Private four-year", "Public two-year", "For-profit", "Other"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Public four-year",
+        0.2244,
+        0.0507,
+        0.046,
+        0.1112
+      ],
+      [
+        "Private four-year",
+        0.1376,
+        0.0423,
+        0.0186,
+        0.0585
+      ],
+      [
+        "Public two-year",
+        0.3527,
+        0.7959,
+        0.9056,
+        0.7148
+      ],
+      [
+        "For-profit",
+        0.14,
+        0.0711,
+        0.0203,
+        0.0802
+      ],
+      [
+        "Other",
+        0.1452,
+        0.0401,
+        0.0095,
+        0.0352
+      ]
+    ],
+    "groups": [
+      ["Public four-year", "Private four-year", "Public two-year", "For-profit", "Other"]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Exclusively full-time", "Exclusively half-time", "Exclusively less than half-time", "Mixed"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016",
+    "notes": null
+  }
+}

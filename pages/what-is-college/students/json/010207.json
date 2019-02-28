@@ -1,0 +1,68 @@
+{
+  "hideTooltip": true,
+  "customHideLabelTwo": true,
+  "title": "Enrollment Patterns by Race and Ethnicity",
+  "series": ["Public four-year", "Private four-year", "Public two-year", "For-profit", "Other"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Public four-year",
+        0.1531,
+        0.1385,
+        0.1044,
+        0.1632
+      ],
+      [
+        "Private four-year",
+        0.0987,
+        0.0819,
+        0.0611,
+        0.0682
+      ],
+      [
+        "Public two-year",
+        0.606,
+        0.5055,
+        0.642,
+        0.6649
+      ],
+      [
+        "For-profit",
+        0.075,
+        0.164,
+        0.099,
+        0.0585
+      ],
+      [
+        "Other",
+        0.0672,
+        0.1102,
+        0.0935,
+        0.0452
+      ]
+    ],
+    "groups": [
+      ["Public four-year", "Private four-year", "Public two-year", "For-profit", "Other"]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["White", "Black or African American", "Hispanic or Latino", "Asian"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016",
+    "notes": null
+  }
+}

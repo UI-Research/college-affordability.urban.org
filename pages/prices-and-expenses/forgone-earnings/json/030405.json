@@ -1,5 +1,6 @@
 {
-  "title": "Earnings of women by race",
+  "title": "Earnings by Age among Full-Time Full-Year Workers with Only a High School Diploma or GED and Not in School ",
+  "subtitle": "Earnings of women by race",
   "series": ["25th percentile and below", "25th percentile to median", "Median to 75th percentile"],
   "data": {
     "type": "bar",
@@ -40,15 +41,13 @@
       "type": "category"
     },
     "y": {
-      "axis": {
-        "tick": {
-          "format": "dollar"
-        }
+      "tick": {
+        "format": "dollar"
       }
     }
   },
   "metadata": {
-    "source": "Integrated Public Use Microdata Series (IPUMS) 2014 American Community Survery (ACS) five-year sample (2010–14).",
+    "source": null,
     "notes": null
   }
 }

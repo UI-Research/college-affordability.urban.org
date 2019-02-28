@@ -1,0 +1,56 @@
+{
+  "title": "Median Earnings with 25th and 75th Percentiles among Full-Time Full-Year Workers Age 18–34 with Only a High School Diploma or GED and Not in School, by Gender and Age",
+  "subtitle": "Earnings of women by race",
+  "series": ["25th percentile and below", "25th percentile to median", "Median to 75th percentile"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "25th percentile and below",
+        30417.4,
+        31692.78,
+        21120.4,
+        22491.91,
+        25954.46
+      ],
+      [
+        "25th percentile to median",
+        43915.03,
+        55023.26,
+        30417.4,
+        31692.78,
+        39450.58
+      ],
+      [
+        "Median to 75th percentile",
+        63478.04,
+        83053.27,
+        45626.6,
+        47027.9,
+        58807.24
+      ]
+    ],
+    "groups": [
+      ["25th percentile and below", "25th percentile to median", "Median to 75th percentile"]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["White", "Asian", "Hispanic", "Black", "Other"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": null,
+    "notes": null
+  }
+}

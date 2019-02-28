@@ -1,0 +1,55 @@
+{
+  "title": "Average Grant Aid and Net Tuition and Fees for First-Time Full-Time Students, by Sector, 2013–14 ",
+  "series": ["Tuition and fees left over", "Grant aid"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Tuition and fees left over",
+        11484.2821,
+        12530.3013,
+        16338.0377,
+        21691.5192,
+        8563.1028,
+        1893.0613,
+        3921.5356,
+        3531.9492,
+        4311.0618
+      ],
+      [
+        "Grant aid",
+        3758.6579,
+        15699.8987,
+        11400.9423,
+        15893.2408,
+        7206.5872,
+        2398.5847,
+        3817.2734,
+        4432.3818,
+        5508.6832
+      ]
+    ],
+    "groups": [
+      ["Tuition and fees left over", "Grant aid"]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["For-profit", "Private nonprofit bachelor's", "Private nonprofit master's", "Private nonprofit research", "Private nonprofit special focus or two-y", "Public associate", "Public bachelor's", "Public master's", "Public research"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Integrated Postsecondary Education Data System.",
+    "notes": null
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "wideSmallMultiple": true,
+  "title": "Cost of Attendance by Sector from 2005–06 to 2015–16 in 2015 Dollars",
+  "subtitle": "Public four-year in-state, living on campus",
+  "series": ["Tuition and fees", "Room and board", "Books and supplies", "Transportation", "Other"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Tuition and fees",
+        5570,
+        7280,
+        9240,
+        9970
+      ],
+      [
+        "Room and board",
+        7580,
+        8660,
+        9800,
+        10800
+      ],
+      [
+        "Books and supplies",
+        1060,
+        1170,
+        1280,
+        1250
+      ],
+      [
+        "Transportation",
+        1010,
+        1090,
+        1210,
+        1170
+      ],
+      [
+        "Other",
+        1770,
+        2170,
+        2210,
+        2100
+      ]
+    ],
+    "groups": [
+      ["Tuition and fees", "Room and board", "Books and supplies", "Transportation", "Other"]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["2002-03", "2007-08", "2012-13", "2017-18"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 6
+      },
+      "max": 50000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": null,
+    "notes": null
+  }
+}

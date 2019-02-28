@@ -1,6 +1,6 @@
 {
-  "title": "Average Endowment Income per Student by Decile",
-  "subtitle": "Private nonprofit research",
+  "overrideTickCount": true,
+  "title": "Private nonprofit research",
   "series": "Average Endowment Income per Student",
   "data": {
     "type": "bar",
@@ -28,13 +28,19 @@
     },
     "y": {
       "tick": {
-        "format": "dollar"
+        "format": "dollar",
+        "count": 4
+      },
+      "max": 70000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
       }
     }
   },
   "metadata": {
     "source": "Integrated Postsecondary Education Data System (IPEDS).",
     "notes": null,
-    "subtitle": "Private nonprofit research"
+    "subtitle": null
   }
 }

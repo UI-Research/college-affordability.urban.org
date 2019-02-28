@@ -1,0 +1,57 @@
+{
+  "hideTooltip": true,
+  "title": "Distribution of Enrollment by Sector Among All Undergraduates versus First-Year Only",
+  "series": ["Public four-year", "Private four-year", "Public two-year", "For-profit", "Other"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Public four-year",
+        0.297,
+        0.1386
+      ],
+      [
+        "Private four-year",
+        0.1396,
+        0.084
+      ],
+      [
+        "Public two-year",
+        0.4423,
+        0.6007
+      ],
+      [
+        "For-profit",
+        0.0784,
+        0.0969
+      ],
+      [
+        "Other",
+        0.0428,
+        0.0799
+      ]
+    ],
+    "groups": [
+      ["Public four-year", "Private four-year", "Public two-year", "For-profit", "Other"]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["All undergraduates", "First-year undergraduates"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016",
+    "notes": null
+  }
+}

@@ -1,9 +1,6 @@
 {
   "title": "Average Endowment Income per Student by Institution Selectivity",
   "subtitle": "Private nonprofit four-year institutions by share of applicants admitted",
-  "padding": {
-    "bottom": "s"
-  },
   "series": "Average Endowment Draw per Student",
   "data": {
     "type": "bar",

@@ -1,19 +1,20 @@
 {
-  "title": "WhiteAsianHispanicBlack$0$40k$80k",
-  "series": "10830",
+  "hideTooltip": true,
+  "title": "Average Published Tuition and Fees by Sector and Degree Type, 2015–16",
+  "series": "Amount",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "10830",
-        8670,
-        9970,
-        25620,
-        3570,
-        42920,
-        29960,
-        34740,
-        16000
+        "Amount",
+        11120,
+        8850,
+        8600,
+        3660,
+        44020,
+        30450,
+        34920,
+        14000
       ]
     ],
     "labels": {
@@ -23,14 +24,12 @@
   "axis": {
     "rotated": false,
     "x": {
-      "categories": ["Public master's In-state", "Public bachelor's in-state", "Public bachelor's out-of-state", "Public two-year in-district", "Private nonprofit doctoral", "Private nonprofit master<92>s", "Private nonprofit bachelor's", "For-profit"],
+      "categories": ["Public doctoral in-state", "Public master's in-state", "Public bachelor's in-state", "Public two-year in-district", "Private nonprofit doctoral", "Private nonprofit master's", "Private nonprofit bachelor's", "For-profit"],
       "type": "category"
     },
     "y": {
-      "axis": {
-        "tick": {
-          "format": "dollar"
-        }
+      "tick": {
+        "format": "dollar"
       }
     }
   },

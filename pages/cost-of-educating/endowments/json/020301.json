@@ -1,6 +1,6 @@
 {
-  "title": "Average Endowment Income per Student by Decile",
-  "subtitle": "Public research",
+  "overrideTickCount": true,
+  "title": "Public research",
   "series": "Average Endowment Income per Student",
   "data": {
     "type": "bar",
@@ -28,13 +28,18 @@
     },
     "y": {
       "tick": {
-        "format": "dollar"
+        "format": "dollar",
+        "count": 4
+      },
+      "padding": {
+        "top": 0,
+        "bottom": 0
       }
     }
   },
   "metadata": {
     "source": "Integrated Postsecondary Education Data System (IPEDS).",
     "notes": null,
-    "subtitle": "Public research"
+    "subtitle": null
   }
 }

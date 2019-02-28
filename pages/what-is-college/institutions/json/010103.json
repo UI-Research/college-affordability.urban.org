@@ -58,10 +58,8 @@
       "type": "category"
     },
     "y": {
-      "axis": {
-        "tick": {
-          "format": "number"
-        }
+      "tick": {
+        "format": "number"
       }
     }
   },

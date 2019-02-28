@@ -1,0 +1,42 @@
+{
+  "title": "Average Annual Spending on Required Course Materials, 2007–08 to 2014–15 in 2014 dollars",
+  "series": "Annual Spending",
+  "data": {
+    "type": "line",
+    "columns": [
+      [
+        "Annual Spending",
+        820,
+        null,
+        760,
+        null,
+        710,
+        710,
+        670,
+        580,
+        620,
+        590,
+        480
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["07-'08", "08-'09", "09-'10", "10-'11", "11-'12", "12-'13", "13-'14", "14-'15", "15-'16", "16-'17", "17-'18"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Association of College Stores, \"Infographic: Course Materials - Student Spending and Preferences,\" last modified fall 2015, http://www.nacs.org/research/industrystatistics/higheredfactsfigures.aspx.",
+    "notes": null
+  }
+}

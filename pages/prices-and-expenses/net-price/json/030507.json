@@ -1,0 +1,66 @@
+{
+  "title": "Total Student Budget, Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2011–12, in 2011 Dollars",
+  "subtitle": "Lowest income quartile",
+  "series": ["Tuition and fees covered by grant aid", "Reminaing (net) tuition  and fees", "Living expenses covered by grant aid", "Remaining (net) living expenses"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Tuition and fees covered by grant aid",
+        5200,
+        5400,
+        6500,
+        7100,
+        9200,
+        10700
+      ],
+      [
+        "Reminaing (net) tuition  and fees",
+        100,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        "Living expenses covered by grant aid",
+        0,
+        200,
+        700,
+        1600,
+        1300,
+        1000
+      ],
+      [
+        "Remaining (net) living expenses",
+        10200,
+        10700,
+        11300,
+        11400,
+        12800,
+        14700
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["96", "0", "4", "8", "12", "16"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      },
+      "max": 30000
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016",
+    "notes": null
+  }
+}

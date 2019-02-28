@@ -1,0 +1,52 @@
+{
+  "hideTooltip": true,
+  "title": "Enrollment Sector By Age and Dependency, First-Year Undergraduates",
+  "series": ["<a0><a0>Less than $27,900", "<a0><a0>$27,900-62,999", "<a0><a0>$63,000-113,499", "<a0><a0>$113,500 or more"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "<a0><a0>Less than $27,900",
+        0.2523,
+        0.2569
+      ],
+      [
+        "<a0><a0>$27,900-62,999",
+        0.2532,
+        0.2582
+      ],
+      [
+        "<a0><a0>$63,000-113,499",
+        0.2526,
+        0.2623
+      ],
+      [
+        "<a0><a0>$113,500 or more",
+        0.2419,
+        0.2226
+      ]
+    ],
+    "groups": [
+      ["<a0><a0>Less than $27,900", "<a0><a0>$27,900-62,999", "<a0><a0>$63,000-113,499", "<a0><a0>$113,500 or more"]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["All undergraduates", "First-year undergraduates "],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016",
+    "notes": null
+  }
+}

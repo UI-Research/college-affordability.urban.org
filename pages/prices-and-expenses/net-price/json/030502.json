@@ -1,0 +1,55 @@
+{
+  "title": "Average Percentage of Tuition and Fees Covered by Grant Aid and Percentage of Tuition and Fees Left Over, by Sector, 2013-14",
+  "series": ["Tuition and fees left over", "Grant Aid"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Tuition and fees left over",
+        0.7534,
+        0.4439,
+        0.589,
+        0.5771,
+        0.543,
+        0.4411,
+        0.5067,
+        0.4435,
+        0.439
+      ],
+      [
+        "Grant Aid",
+        0.2466,
+        0.5561,
+        0.411,
+        0.4229,
+        0.457,
+        0.5589,
+        0.4933,
+        0.5565,
+        0.561
+      ]
+    ],
+    "groups": [
+      ["Tuition and fees left over", "Grant Aid"]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["For-profit", "Private nonprofit bachelor's", "Private nonprofit master's", "Private nonprofit research", "Private nonprofit special focus or two-y", "Public associate", "Public bachelor's", "Public master's", "Public research"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Integrated Postsecondary Education Data System.",
+    "notes": null
+  }
+}

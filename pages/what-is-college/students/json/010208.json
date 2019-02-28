@@ -1,0 +1,68 @@
+{
+  "hideTooltip": true,
+  "customHideLabelTwo": true,
+  "title": "Enrollment Patterns by Race and Ethnicity, First-Year Students",
+  "series": ["Public four-year", "Private four-year", "Public two-year", "For-profit", "Other"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Public four-year",
+        0.382,
+        0.1613,
+        0.1183,
+        0.3109
+      ],
+      [
+        "Private four-year",
+        0.198,
+        0.0786,
+        0.0515,
+        0.1185
+      ],
+      [
+        "Public two-year",
+        0.2413,
+        0.6615,
+        0.8021,
+        0.4926
+      ],
+      [
+        "For-profit",
+        0.1058,
+        0.0708,
+        0.0194,
+        0.06
+      ],
+      [
+        "Other",
+        0.073,
+        0.0277,
+        0.0087,
+        0.0179
+      ]
+    ],
+    "groups": [
+      ["Public four-year", "Private four-year", "Public two-year", "For-profit", "Other"]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Exclusively full-time", "Exclusively half-time", "Exclusively less than half-time", "Mixed"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016",
+    "notes": null
+  }
+}

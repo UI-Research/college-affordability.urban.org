@@ -127,7 +127,7 @@
       ]
     ],
     "labels": {
-      "format": "number"
+      "format": "dollar"
     }
   },
   "axis": {
@@ -137,14 +137,8 @@
       "type": "category"
     },
     "y": {
-      "axis": {
-        "tick": {
-          "format": "number",
-          "count": 10
-        },
-        "padding": {
-          "bottom": 15
-        }
+      "tick": {
+        "format": "dollar"
       }
     }
   },

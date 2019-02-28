@@ -1,0 +1,62 @@
+{
+  "title": "Cost of Attendance (Total Expenses) Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, 2011–12",
+  "subtitle": "Public four-year",
+  "series": ["Tuition and fees covered by grant aid", "Reminaing (net) tuition  and fees", "Living expenses covered by grant aid", "Remaining (net) living expenses"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Tuition and fees covered by grant aid",
+        10500,
+        9100,
+        4800,
+        3500,
+        6700
+      ],
+      [
+        "Reminaing (net) tuition  and fees",
+        0,
+        1900,
+        7000,
+        10500,
+        3400
+      ],
+      [
+        "Living expenses covered by grant aid",
+        1200,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        "Remaining (net) living expenses",
+        14500,
+        15000,
+        14500,
+        15100,
+        15800
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["Lowest", "Second", "Third", "Hghest ", "Independent"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      },
+      "max": 50000
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study (NPSAS), 2016. ",
+    "notes": null
+  }
+}
