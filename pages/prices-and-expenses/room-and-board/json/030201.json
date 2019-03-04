@@ -1,11 +1,12 @@
 {
   "title": "Living Arrangements of Full-Time Undergraduates, 2011–12",
-  "series": "11630",
+  "series": ["", ".1"],
   "data": {
     "type": "bar",
     "columns": [
       [
-        "11630",
+        "",
+        11630,
         10230,
         10480,
         12680,
@@ -13,10 +14,21 @@
         11930,
         11760,
         11140
+      ],
+      [
+        ".1",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
       ]
     ],
     "groups": [
-      "11630"
+      ["", ".1"]
     ],
     "labels": {
       "format": "percent"
@@ -25,7 +37,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["Private nonprofit master's", "Private nonprofit bachelor's", "All private nonprofit four-year", "Public research in-state", "Public master's in-state", "Public bachelor's in-state", "Public four-year in-state"],
+      "categories": ["Private nonprofit doctoral", "Private nonprofit master's", "Private nonprofit bachelor's", "All private nonprofit four-year", "Public research in-state", "Public master's in-state", "Public bachelor's in-state", "Public four-year in-state"],
       "type": "category"
     },
     "y": {

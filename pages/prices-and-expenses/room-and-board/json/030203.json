@@ -1,12 +1,13 @@
 {
   "title": "Average Price of On-Campus Housing at Four-Year Public Institutions by State, 2013–14",
-  "highlightIndex": 27,
-  "series": "2959.14",
+  "highlightIndex": 30,
+  "series": "Average room and board charges",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "2959.14",
+        "Average room and board charges",
+        2959.14,
         3435.64,
         3492.87,
         3769.71,
@@ -66,7 +67,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["Utah", "North Dakota", "Montana", "South Dakota", "Wyoming", "New Mexico", "Oklahoma", "Wisconsin", "Tennessee", "Michigan", "Maine", "Kansas", "Minnesota", "Texas", "Arkansas", "West Virginia", "Alabama", "Colorado", "North Carolina", "Mississippi", "Nebraska", "Florida", "Nevada", "Indiana", "Hawaii", "Louisiana", "South Carolina", "Alaska", "Iowa", "Virginia", "Kentucky", "#N/A", "Georgia", "Maryland", "Missouri", "Illinois", "Ohio", "Connecticut", "Arizona", "Pennsylvania", "Washington", "New Hampshire", "Vermont", "Oregon", "Delaware", "Rhode Island", "Massachusetts", "California", "New Jersey", "New York"],
+      "categories": ["Idaho", "Utah", "North Dakota", "Montana", "South Dakota", "Wyoming", "New Mexico", "Oklahoma", "Wisconsin", "Tennessee", "Michigan", "Maine", "Kansas", "Minnesota", "Texas", "Arkansas", "West Virginia", "Alabama", "Colorado", "North Carolina", "Mississippi", "Nebraska", "Florida", "Nevada", "Indiana", "Hawaii", "Louisiana", "South Carolina", "Alaska", "Iowa", "Virginia", "Kentucky", "#N/A", "Georgia", "Maryland", "Missouri", "Illinois", "Ohio", "Connecticut", "Arizona", "Pennsylvania", "Washington", "New Hampshire", "Vermont", "Oregon", "Delaware", "Rhode Island", "Massachusetts", "California", "New Jersey", "New York"],
       "type": "category"
     },
     "y": {

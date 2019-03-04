@@ -1,7 +1,6 @@
 {
   "wideSmallMultiple": true,
-  "title": "Cost of Attendance by Sector from 2005–06 to 2015–16 in 2015 Dollars",
-  "subtitle": "Private nonprofit four-year, living on campus",
+  "title": "Private nonprofit four-year, living on campus",
   "series": ["Tuition and fees", "Room and board", "Books and supplies", "Transportation", "Other"],
   "data": {
     "type": "bar",

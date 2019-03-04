@@ -1,5 +1,4 @@
 {
-  "overrideTickCount": true,
   "title": "Private nonprofit master's",
   "series": "Average Endowment Income per Student",
   "data": {
@@ -29,7 +28,7 @@
     "y": {
       "tick": {
         "format": "dollar",
-        "count": 4
+        "count": 5
       },
       "padding": {
         "top": 0,

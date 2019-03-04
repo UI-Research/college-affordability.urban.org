@@ -1,5 +1,4 @@
 {
-  "overrideTickCount": true,
   "title": "Public master's",
   "series": "Average Endowment Income per Student",
   "data": {
@@ -29,7 +28,7 @@
     "y": {
       "tick": {
         "format": "dollar",
-        "count": 4
+        "count": 5
       },
       "max": 1000,
       "padding": {

@@ -1,63 +1,51 @@
 {
   "metadata.pluralNotes": true,
   "title": "Full-Time Undergraduate Student Quintiles of Cost of Attendance by Sector in 2014–15",
-  "series": ["Lowest quintile", "20069"],
+  "series": ["Lowest quintile", "2nd", "3rd", "4th", "Highest quintile"],
   "data": {
     "type": "bar",
     "columns": [
       [
         "Lowest quintile",
-        "2nd",
-        "3rd",
-        "4th",
-        "Highest quintile",
-        "Lowest quintile",
-        "2nd",
-        "3rd",
-        "4th",
-        "Highest quintile",
-        "Lowest quintile",
-        "2nd",
-        "3rd",
-        "4th",
-        "Highest quintile",
-        "Lowest quintile",
-        "2nd",
-        "3rd",
-        "4th",
-        "Highest quintile"
+        20069,
+        29649,
+        13219,
+        18705
       ],
       [
-        "20069",
+        "2nd",
         22899,
-        24908,
-        27064,
-        31495,
-        29649,
         43775,
-        52166,
-        61903,
-        70720,
-        13219,
         16335,
+        21527
+      ],
+      [
+        "3rd",
+        24908,
+        52166,
         18225,
+        24453
+      ],
+      [
+        "4th",
+        27064,
+        61903,
         19818,
+        30328
+      ],
+      [
+        "Highest quintile",
+        31495,
+        70720,
         24427,
-        18705,
-        21527,
-        24453,
-        30328,
         39708
       ]
-    ],
-    "labels": {
-      "format": "dollar"
-    }
+    ]
   },
   "axis": {
     "rotated": false,
     "x": {
-      "categories": ["Public four year", "Public four year", "Public four year", "Public four year", "Private nonprofit four year", "Private nonprofit four year", "Private nonprofit four year", "Private nonprofit four year", "Private nonprofit four year", "Public two year", "Public two year", "Public two year", "Public two year", "Public two year", "For-profit", "For-profit", "For-profit", "For-profit", "For-profit"],
+      "categories": ["Public four year", "Private nonprofit four year", "Public two year", "For-profit"],
       "type": "category"
     },
     "y": {
