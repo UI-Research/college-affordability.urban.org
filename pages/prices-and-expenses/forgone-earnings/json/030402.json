@@ -1,6 +1,6 @@
 {
-  "title": "Earnings by Age among Full-Time Full-Year Workers with Only a High School Diploma or GED and Not in School ",
-  "subtitle": "Earnings of men by age",
+  "overrideTickCount": true,
+  "title": "Earnings of men by age",
   "series": ["25th percentile and below", "25th percentile to median", "Median to 75th percentile"],
   "data": {
     "type": "bar",
@@ -35,10 +35,7 @@
     ],
     "groups": [
       ["25th percentile and below", "25th percentile to median", "Median to 75th percentile"]
-    ],
-    "labels": {
-      "format": "dollar"
-    }
+    ]
   },
   "axis": {
     "rotated": true,
@@ -48,7 +45,13 @@
     },
     "y": {
       "tick": {
-        "format": "dollar"
+        "format": "dollar",
+        "count": 4
+      },
+      "max": 150000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
       }
     }
   },

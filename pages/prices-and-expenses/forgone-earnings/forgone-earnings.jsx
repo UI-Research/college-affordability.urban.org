@@ -21,7 +21,12 @@ let singlepage = (
       <Graph file={require('./json/030401.json')}/>
       <p><strong>Even among those who are able to find year-round full-time work, there is considerable variation in earnings.</strong> Men typically earn more than women, and, among both men and women, whites and Asians earn more than blacks and Hispanics. </p>
       <p>But even within demographic groups, there is a wide range in earnings, as the chart below shows. These graphs show the median—half the workers earn more and half earn less than this amount. They also show the 25th percentile—a quarter of the workers earn less than this amount—and the 75th percentile—a quarter of the workers earn more than this amount. </p>
-      <Multiples title="Earnings by Age among Full-Time Full-Year Workers with Only a High School Diploma or GED and Not in School" imageOverride= "Earnings by Age among Full-Time Full-Year Workers with Only a High School Diploma or GED and Not in School__Ages 18–34, by gender and age" subtitle="Ages 18–34, by gender and age" source="ACS, five-year sample 2010–14.">
+      <Multiples 
+        title="Earnings by Age among Full-Time Full-Year Workers with Only a High School Diploma or GED and Not in School" 
+        imageOverride= "Earnings by Age among Full-Time Full-Year Workers with Only a High School Diploma or GED and Not in School__Ages 18–34, by gender and age" 
+        subtitle="Ages 18–34, by gender and age" 
+        source="ACS, five-year sample 2010–14."
+      >
         <Graph file={require('./json/030402.json')} small="true"/>
         <Graph file={require('./json/030403.json')} small="true"/>
       </Multiples>

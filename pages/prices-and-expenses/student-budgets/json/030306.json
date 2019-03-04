@@ -1,6 +1,5 @@
 {
   "connectNull": true,
-  "wideSmallMultiple": true,
   "line": {
     "connectNull": true
   },

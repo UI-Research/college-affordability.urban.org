@@ -1,5 +1,8 @@
 {
   "title": "Type of Employment over the Last Year among Individuals with Only a High School Diploma or GED and Not Currently Attending School",
+  "padding": {
+    "bottom": 30
+  },
   "series": ["Not employed", "Part-year or part-time", "Full-year or full-time"],
   "data": {
     "type": "bar",
@@ -43,6 +46,7 @@
     "rotated": true,
     "x": {
       "categories": ["18-20", "21-23", "24-26", "27-29", "30-34", "Total"],
+      "label": "Age groups",
       "type": "category"
     },
     "y": {
