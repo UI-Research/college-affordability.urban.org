@@ -7,3 +7,4 @@ external_data
 /.buildpath
 /.project
 *.log
+temp.text
