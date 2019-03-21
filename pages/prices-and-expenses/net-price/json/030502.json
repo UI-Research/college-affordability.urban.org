@@ -33,7 +33,7 @@
       ["Tuition and fees left over", "Grant Aid"]
     ],
     "labels": {
-      "format": "dollar"
+      "format": "percent"
     }
   },
   "axis": {
@@ -44,7 +44,7 @@
     },
     "y": {
       "tick": {
-        "format": "dollar"
+        "format": "percent"
       }
     }
   },

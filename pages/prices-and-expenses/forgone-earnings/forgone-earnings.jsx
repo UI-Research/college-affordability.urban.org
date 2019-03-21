@@ -30,11 +30,21 @@ let singlepage = (
         <Graph file={require('./json/030402.json')} small="true"/>
         <Graph file={require('./json/030403.json')} small="true"/>
       </Multiples>
-      <Multiples title="" subtitle="Ages 18–23, by gender and race and ethnicity" imageOverride= "Earnings by Age among Full-Time Full-Year Workers with Only a High School Diploma or GED and Not in School__Ages 18–23, by gender and race and ethnicity" source="ACS, five-year sample 2010–14.">
+      <Multiples 
+        title="" 
+        subtitle="Ages 18–23, by gender and race and ethnicity" 
+        imageOverride= "Earnings by Age among Full-Time Full-Year Workers with Only a High School Diploma or GED and Not in School__Ages 18–23, by gender and race and ethnicity" 
+        source="ACS, five-year sample 2010–14."
+      >
         <Graph file={require('./json/030404.json')} small="true"/>
         <Graph file={require('./json/030405.json')} small="true"/>
       </Multiples>
-      <Multiples title="" subtitle="Ages 24–34, by gender and race and ethnicity" imageOverride= "Earnings by Age among Full-Time Full-Year Workers with Only a High School Diploma or GED and Not in School__Ages 24–34, by gender and race and ethnicity" source="ACS, five-year sample 2010–14.">
+      <Multiples 
+        title="" 
+        subtitle="Ages 24–34, by gender and race and ethnicity" 
+        imageOverride= "Earnings by Age among Full-Time Full-Year Workers with Only a High School Diploma or GED and Not in School__Ages 24–34, by gender and race and ethnicity" 
+        source="ACS, five-year sample 2010–14."
+      >
         <Graph file={require('./json/030406.json')} small="true"/>
         <Graph file={require('./json/030407.json')} small="true"/>
       </Multiples>
