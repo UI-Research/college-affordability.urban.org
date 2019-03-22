@@ -1,0 +1,36 @@
+{
+  "title": "Percentage of Undergraduates Receiving Private Scholarships, 2015-16",
+  "subtitle": "Dependent students' parental income",
+  "series": "0.16967",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "0.16967",
+        0.2127,
+        0.236,
+        0.209
+      ]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["$27,900-62,999", "$63,000-113,499", "$113,500 or more"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      },
+      "max": 0.15
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016",
+    "notes": null
+  }
+}

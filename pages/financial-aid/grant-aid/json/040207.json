@@ -1,0 +1,82 @@
+{
+  "title": "Average Grant Aid per Full-Time Sependent Student by Family Income within Sectors, 2015–16",
+  "subtitle": "$65,000 to $105,999",
+  "series": ["Veterans and military grants", "State grants", "Institutional grants", "Employer and private grants"],
+  "data": {
+    "type": "bar",
+    "sets": {
+      "set1": [
+        200,
+        [
+          [
+            "Veterans and military grants",
+            300,
+            800
+          ],
+          [
+            "State grants",
+            900,
+            400
+          ],
+          [
+            "Institutional grants",
+            2700,
+            2700
+          ],
+          [
+            "Employer and private grants",
+            900,
+            900
+          ]
+        ]
+      ],
+      "set2": [
+        300,
+        [
+          [
+            "Veterans and military grants",
+            300,
+            100
+          ],
+          [
+            "State grants",
+            800,
+            600
+          ],
+          [
+            "Institutional grants",
+            18100,
+            800
+          ],
+          [
+            "Employer and private grants",
+            1500,
+            500
+          ]
+        ]
+      ]
+    },
+    "groups": [
+      ["Veterans and military grants", "State grants", "Institutional grants", "Employer and private grants"]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study, 2016. ",
+    "notes": null
+  }
+}

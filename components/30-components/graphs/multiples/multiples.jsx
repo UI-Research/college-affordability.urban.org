@@ -113,13 +113,21 @@ if (!Array.prototype.includes) {
       let arr;
       let uniformCats;
       let cats;
+      // console.log(dataObjs[0].props.file.axis.x.categories)
       if(dataObjs[0].props.file.axis.x.categories.slice(0).toString() == dataObjs[1].props.file.axis.x.categories.slice(0).toString()){
        uniformCats = true;
        cats = dataObjs[0].props.file.axis.x.categories.slice(0) 
+
      }else{
       uniformCats = false;
       cats = []
         _.each(dataObjs, (dataObj, dataInd) => {
+          
+          // Dan Wood addition: If its a string instead of an object, make category an object of length 1...otherwise, the first letter will be selected instead of the word/string. 
+          if (typeof(dataObj.props.file.axis.x.categories) === "string") {
+            dataObj.props.file.axis.x.categories = [dataObj.props.file.axis.x.categories]
+          }
+
           if(typeof(dataObj.props.file.axis.x.categories) != "undefined"){
             cats = cats.concat(dataObj.props.file.axis.x.categories.slice(0) )
           }
@@ -128,6 +136,7 @@ if (!Array.prototype.includes) {
       // let cats = dataObjs[0].props.file.axis.x.categories.slice(0)
       cats.unshift("data_category")
       cats.unshift("data_set")
+      console.log(cats)
       let s ='';
       let objLen = 0;
       let oldSetName = "";

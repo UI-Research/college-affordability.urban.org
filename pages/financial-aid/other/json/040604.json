@@ -1,0 +1,36 @@
+{
+  "title": "Percentage of Undergraduates Receiving Employer Assistance, 2015-16",
+  "subtitle": "Dependent students' parental income",
+  "series": "0.032153",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "0.032153",
+        0.0339,
+        0.0465,
+        0.0544
+      ]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["$27,900-62,999", "$63,000-113,499", "$113,500 or more"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      },
+      "max": 0.15
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016",
+    "notes": null
+  }
+}

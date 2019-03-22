@@ -1,0 +1,35 @@
+{
+  "title": "Distribution of Tax Credits and Deductions by Adjusted Gross Income",
+  "series": "0.22",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "0.22",
+        0.24,
+        0.16,
+        0.14,
+        0.24
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["$25,000 to $49,999", "$50,000 to $74,999", "$75,000 to $99,999", "$100,000 to $180,000"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": null,
+    "notes": null
+  }
+}

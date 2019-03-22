@@ -1,0 +1,36 @@
+{
+  "title": "Average Employer Assistance and Private Scholarships per Recipient, 2015-16",
+  "subtitle": "Institutional sector",
+  "series": "8100",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "8100",
+        11400,
+        3200,
+        6400
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Private nonprofit four-year", "Public two-year", "For-profit"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      },
+      "max": 15000
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016",
+    "notes": null
+  }
+}

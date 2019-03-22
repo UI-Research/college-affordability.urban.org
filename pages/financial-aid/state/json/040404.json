@@ -1,0 +1,33 @@
+{
+  "title": "Share of Undergraduates Receiving State Grant Aid, 2015–17",
+  "subtitle": "Dependency status",
+  "series": "0.329349",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "0.329349",
+        0.2467
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": "Independent",
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study, 2016. ",
+    "notes": null
+  }
+}

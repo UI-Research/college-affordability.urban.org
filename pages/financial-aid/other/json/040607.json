@@ -1,0 +1,36 @@
+{
+  "title": "Percentage of Undergraduates Receiving Private Scholarships, 2015-16",
+  "subtitle": "Institutional sector",
+  "series": "0.197763",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "0.197763",
+        0.2511,
+        0.1293,
+        0.0907
+      ]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Private nonprofit four-year", "Public two-year", "For-profit"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      },
+      "max": 0.15
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016",
+    "notes": null
+  }
+}

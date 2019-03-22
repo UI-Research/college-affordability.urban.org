@@ -1,0 +1,34 @@
+{
+  "title": "Percentage of Undergraduates Receiving Private Scholarships, 2015-16",
+  "subtitle": "Dependency status",
+  "series": "0.208257",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "0.208257",
+        0.1231
+      ]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": "Independent",
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      },
+      "max": 0.15
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016",
+    "notes": null
+  }
+}

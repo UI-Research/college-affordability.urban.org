@@ -1,0 +1,34 @@
+{
+  "title": "Percentage of Full-Time First-Year Students Receiving Institutional Grant Aid, 2013–14",
+  "series": "0.449614",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "0.449614",
+        0.8095,
+        0.1586,
+        0.2341
+      ]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Private nonprofit four-year", "Publc two-year", "For-profit"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Integrated Postsecondary Education Data System (IPEDS).",
+    "notes": null
+  }
+}

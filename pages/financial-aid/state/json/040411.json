@@ -1,0 +1,33 @@
+{
+  "title": "Average State Grant Aid per Recipient, 2015–19",
+  "subtitle": "State residency",
+  "series": "3463.92",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "3463.92",
+        3503.5596
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": "Out-of-sate",
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "NPSAS, 2015. ",
+    "notes": null
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "title": "Grant Aid by Source for Independent and Dependent Students, by Sector, 2015–16",
+  "subtitle": "Independent",
+  "series": ["3300", "1800", "1100", "1500", "800", "8500"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "3300",
+        2900,
+        3100,
+        3600
+      ],
+      [
+        "1800",
+        2200,
+        1600,
+        3500
+      ],
+      [
+        "1100",
+        800,
+        600,
+        300
+      ],
+      [
+        "1500",
+        5100,
+        200,
+        900
+      ],
+      [
+        "800",
+        1000,
+        300,
+        500
+      ],
+      [
+        "8500",
+        12000,
+        5800,
+        8800
+      ]
+    ],
+    "groups": [
+      ["3300", "1800", "1100", "1500", "800", "8500"]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Private nonprofit four-year", "Public two-year", "For-profit"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      },
+      "max": 20000
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study, 2016. ",
+    "notes": null
+  }
+}

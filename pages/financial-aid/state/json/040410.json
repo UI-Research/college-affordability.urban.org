@@ -1,0 +1,35 @@
+{
+  "title": "Average State Grant Aid per Recipient, 2015–18",
+  "subtitle": "Dependent students' parental income",
+  "series": "4030.41",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "4030.41",
+        3731.65,
+        3127.15,
+        2899.49
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["$27,900-62,999", "$63,000-113,499", "$113,500 or more"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "NPSAS, 2015. ",
+    "notes": null
+  }
+}

@@ -17,16 +17,16 @@ let singlepage = (
       <p>By far the largest tax benefit for undergraduate students is the American opportunity tax credit (AOTC), through which students (or parents paying tuition and fees) can reduce their taxes by as much as $2,500. The AOTC covers 100 percent of the first $2,000 in eligible expenses and 25 percent of the next $2,000. To get the full benefit, the taxpayer must have spent at least $4,000 on tuition and required fees and course materials. Living expenses do not count toward this amount.</p>
       <p>Students or parents who do not owe taxes can still benefit from the AOTC, but the maximum amount that is refundable is $1,000—40 percent of the total AOTC.</p>
       <p>The implementation of the AOTC in 2009 led to a dramatic increase in tax breaks. The total benefits (for undergraduate and graduate students combined) rose from about $7 billion (in 2014 dollars) in 2008 to $18 billion in 2014.</p>
-      <Graph file={require('./json/04_0240.json')}/>
+      <Graph file={require('./json/040701.json')}/>
     <h2>By Income</h2>
       <p><strong>Unlike federal grant aid, federal education tax benefits are not targeted toward low-income students and their families; they offer benefits that extend to families with incomes up to $180,000.</strong> In fact, because students who don&rsquo;t pay tuition and fees are not eligible for the tax benefit, the lowest-income students, for whom grant aid covers tuition, often don&rsquo;t benefit from tax credits at all. </p>
       <p>In 2014, tax filers with adjusted gross incomes under $25,000 received about a quarter of the federal education tax credits and deductions. Filers with incomes above $100,000 received a similar share.</p>
-      <Graph file={require('./json/04_0250.json')}/>
+      <Graph file={require('./json/040702.json')}/>
       <p><strong>Full-time students at public two-year college are less likely to be eligible for federal education tax credits and deductions than students with similar incomes enrolled in other postsecondary sectors. Students at for-profit colleges are most likely to be eligible.</strong></p>
-      <Graph file={require('./json/04_0260.json')}/>
+      <Graph file={require('./json/040703.json')}/>
       <p>Low-income students&rsquo; benefits are limited because their tuition is frequently covered by grant aid and because they are less likely to owe taxes. At the upper end of the income scale, the credits and deductions phase out, so some filers receive only partial benefits.</p>
       <p><strong>Average federal education tax credits are largest for middle-income students and for those enrolled in private for-profit and nonprofit institutions.</strong></p>
-      <Graph file={require('./json/04_0270.json')}/>
+      <Graph file={require('./json/040704.json')}/>
       <Box>
         <h3><em>Other Tax Benefits for Postsecondary Students</em></h3>
         <p><em>The AOTC is the largest of a number of existing federal education tax credits and deductions. Created in 2009, this credit replaced the less generous Hope scholarship credit. The Hope credit and the <a href="https://www.irs.gov/publications/p970/ch03.html" target="_blank">lifetime learning credit</a> (LLC), which is still in effect, were created in 1997. Unlike the AOTC, which a student can use for only four years, the LLC can be claimed for an unlimited number of years. It is available to students enrolled in any postsecondary courses, but the income limits are lower than those for the AOTC. The LLC does not cover course materials and is not refundable—only filers with tax liabilities can benefit from it.</em></p>

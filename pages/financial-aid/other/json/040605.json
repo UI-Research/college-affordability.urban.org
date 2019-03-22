@@ -1,0 +1,34 @@
+{
+  "title": "Percentage of Undergraduates Receiving Private Scholarships, 2015-16",
+  "subtitle": "All full-time undergraduates",
+  "series": "",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "",
+        0.1864
+      ]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": "All full-time undergraduates",
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      },
+      "max": 0.15
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016",
+    "notes": null
+  }
+}

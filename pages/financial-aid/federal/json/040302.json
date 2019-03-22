@@ -1,0 +1,36 @@
+{
+  "title": "Pell Grant by Dependency Status and Income, Full-Time Students, 2015–16 (with Percentage Peceiving Pell Grants)",
+  "subtitle": "All students",
+  "series": "5530",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "5530",
+        3930,
+        2230,
+        0
+      ]
+    ],
+    "labels": {
+      "format": "$s"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["$27,900-62,999 (75%)", "$63,000-113,499 (10%)", "$113,500 or more (0%)"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "$s"
+      },
+      "max": 8000
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study, 2016. ",
+    "notes": null
+  }
+}

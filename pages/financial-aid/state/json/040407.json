@@ -1,0 +1,35 @@
+{
+  "title": "Share of Undergraduates Receiving State Grant Aid, 2015–20",
+  "subtitle": "Institutional sector",
+  "series": "0.361891",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "0.361891",
+        0.2317,
+        0.354,
+        0.1229
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Private nonprofit four-year", "Public two-year", "For-profit"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study, 2016. ",
+    "notes": null
+  }
+}

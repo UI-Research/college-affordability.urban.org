@@ -1,0 +1,34 @@
+{
+  "title": "Average Employer Assistance and Private Scholarships per Recipient, 2015-16",
+  "subtitle": "All full-time undergraduates",
+  "series": "",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "",
+        8300
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": "All full-time undergraduates",
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      },
+      "max": 15000
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016",
+    "notes": null
+  }
+}

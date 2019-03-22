@@ -1,0 +1,33 @@
+{
+  "title": "Share of Undergraduates Receiving State Grant Aid, 2015–19",
+  "subtitle": "State residency",
+  "series": "0.378406",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "0.378406",
+        0.0319
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": "Out-of-sate",
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study, 2016. ",
+    "notes": null
+  }
+}

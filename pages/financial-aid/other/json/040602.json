@@ -1,0 +1,34 @@
+{
+  "title": "Percentage of Undergraduates Receiving Employer Assistance, 2015-16",
+  "subtitle": "Dependency status",
+  "series": "0.042758",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "0.042758",
+        0.0526
+      ]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": "Independent",
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      },
+      "max": 0.15
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016",
+    "notes": null
+  }
+}

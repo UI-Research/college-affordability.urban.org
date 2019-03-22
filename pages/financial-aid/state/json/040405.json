@@ -1,0 +1,35 @@
+{
+  "title": "Share of Undergraduates Receiving State Grant Aid, 2015–18",
+  "subtitle": "Dependent students' parental income",
+  "series": "0.522592",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "0.522592",
+        0.4957,
+        0.2572,
+        0.1166
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["$27,900-62,999", "$63,000-113,499", "$113,500 or more"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study, 2016. ",
+    "notes": null
+  }
+}

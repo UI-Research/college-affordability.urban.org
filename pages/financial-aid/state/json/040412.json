@@ -1,0 +1,35 @@
+{
+  "title": "Average State Grant Aid per Recipient, 2015–20",
+  "subtitle": "Institutional sector",
+  "series": "3984.44",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "3984.44",
+        4073.76,
+        1872.34,
+        3058.42
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Private nonprofit four-year", "Public two-year", "For-profit"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "NPSAS, 2015. ",
+    "notes": null
+  }
+}

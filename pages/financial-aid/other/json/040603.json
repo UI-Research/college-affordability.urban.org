@@ -1,0 +1,36 @@
+{
+  "title": "Percentage of Undergraduates Receiving Employer Assistance, 2015-16",
+  "subtitle": "Institutional sector",
+  "series": "0.044816",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "0.044816",
+        0.0582,
+        0.0322,
+        0.0592
+      ]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Private nonprofit four-year", "Public two-year", "For-profit"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      },
+      "max": 0.15
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016",
+    "notes": null
+  }
+}

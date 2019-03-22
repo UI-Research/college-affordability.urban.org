@@ -1,0 +1,36 @@
+{
+  "title": "Average Employer Assistance and Private Scholarships per Recipient, 2015-16",
+  "subtitle": "Dependent students' parental income",
+  "series": "7500",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "7500",
+        8200,
+        9700,
+        11200
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["$27,900-62,999", "$63,000-113,499", "$113,500 or more"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      },
+      "max": 15000
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016",
+    "notes": null
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "title": "Average Need-Based and Non-need-Based Grant Aid per Full-Time Student (and Percentage Receiving Institutional Aid), Public Four-Year Institutions",
+  "subtitle": "Dependent students' parental income quartile",
+  "series": ["Institutional need-based", "Institutional non-need<96>based"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Institutional need-based",
+        940.7401,
+        1197.3,
+        1000.94,
+        226.9605
+      ],
+      [
+        "Institutional non-need<96>based",
+        635.5771,
+        1070.85,
+        1443.56,
+        1987.94
+      ]
+    ],
+    "groups": [
+      ["Institutional need-based", "Institutional non-need<96>based"]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Lowest", "Second", "Third", "Highest"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Baum et al, Trends in Student Aid 2014, The College Board, based on NPSAS 2012.",
+    "notes": null
+  }
+}

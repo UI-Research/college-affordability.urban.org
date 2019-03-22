@@ -1,0 +1,68 @@
+{
+  "hideTooltip": true,
+  "title": "For-profit",
+  "series": ["$0", "$1-$4,999", "$5,000-$9,999", "$10,000-$14,999", "$150,000-$199,999", "$200,000 or higher "],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "$0",
+        0.2737,
+        0.261
+      ],
+      [
+        "$1-$4,999",
+        0.2025,
+        0.2239
+      ],
+      [
+        "$5,000-$9,999",
+        0.2087,
+        0.2024
+      ],
+      [
+        "$10,000-$14,999",
+        0.1303,
+        0.1367
+      ],
+      [
+        "$150,000-$199,999",
+        0.0736,
+        0.0724
+      ],
+      [
+        "$200,000 or higher ",
+        0.1112,
+        0.1035
+      ]
+    ],
+    "groups": [
+      ["$0", "$1-$4,999", "$5,000-$9,999", "$10,000-$14,999", "$150,000-$199,999", "$200,000 or higher "]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Dependent", "Independent"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent",
+        "count": 5
+      },
+      "max": 1,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study, 2016. ",
+    "notes": null
+  }
+}
