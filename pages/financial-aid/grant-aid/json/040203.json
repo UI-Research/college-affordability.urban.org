@@ -1,49 +1,54 @@
 {
-  "title": "Grant Aid by Source for Independent and Dependent Students, by Sector, 2015–16",
-  "subtitle": "Independent",
-  "series": ["3300", "1800", "1100", "1500", "800", "8500"],
+  "title": "Independent",
+  "series": ["", ".1", ".2", ".3", ".4", ".5"],
   "data": {
     "type": "bar",
     "columns": [
       [
-        "3300",
+        "",
+        3300,
         2900,
         3100,
         3600
       ],
       [
-        "1800",
+        ".1",
+        1800,
         2200,
         1600,
         3500
       ],
       [
-        "1100",
+        ".2",
+        1100,
         800,
         600,
         300
       ],
       [
-        "1500",
+        ".3",
+        1500,
         5100,
         200,
         900
       ],
       [
-        "800",
+        ".4",
+        800,
         1000,
         300,
         500
       ],
       [
-        "8500",
+        ".5",
+        8500,
         12000,
         5800,
         8800
       ]
     ],
     "groups": [
-      ["3300", "1800", "1100", "1500", "800", "8500"]
+      ["", ".1", ".2", ".3", ".4", ".5"]
     ],
     "labels": {
       "format": "dollar"
@@ -52,14 +57,19 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["Private nonprofit four-year", "Public two-year", "For-profit"],
+      "categories": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit"],
       "type": "category"
     },
     "y": {
       "tick": {
-        "format": "dollar"
+        "format": "dollar",
+        "count": 6
       },
-      "max": 20000
+      "max": 25000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
     }
   },
   "metadata": {

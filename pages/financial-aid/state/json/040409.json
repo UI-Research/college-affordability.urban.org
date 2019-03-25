@@ -1,12 +1,13 @@
 {
-  "title": "Average State Grant Aid per Recipient, 2015–17",
-  "subtitle": "Dependency status",
-  "series": "3627.16",
+  "wideSmallMultiple": true,
+  "title": "Dependency status",
+  "series": "Average state grant aid per recipient",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "3627.16",
+        "Average state grant aid per recipient",
+        3627.16,
         2838.72
       ]
     ],
@@ -17,12 +18,18 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": "Independent",
+      "categories": ["Dependent", "Independent"],
       "type": "category"
     },
     "y": {
       "tick": {
-        "format": "dollar"
+        "format": "dollar",
+        "count": 6
+      },
+      "max": 5000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
       }
     }
   },

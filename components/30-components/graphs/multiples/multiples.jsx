@@ -113,7 +113,6 @@ if (!Array.prototype.includes) {
       let arr;
       let uniformCats;
       let cats;
-      // console.log(dataObjs[0].props.file.axis.x.categories)
       if(dataObjs[0].props.file.axis.x.categories.slice(0).toString() == dataObjs[1].props.file.axis.x.categories.slice(0).toString()){
        uniformCats = true;
        cats = dataObjs[0].props.file.axis.x.categories.slice(0) 
@@ -136,7 +135,6 @@ if (!Array.prototype.includes) {
       // let cats = dataObjs[0].props.file.axis.x.categories.slice(0)
       cats.unshift("data_category")
       cats.unshift("data_set")
-      console.log(cats)
       let s ='';
       let objLen = 0;
       let oldSetName = "";

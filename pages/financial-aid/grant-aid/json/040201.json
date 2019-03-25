@@ -1,11 +1,12 @@
 {
   "title": "Undergraduate Grant Aid by Source, Percentage Distribution and Total Dollars (in billions), 2015–16",
-  "series": "48.687",
+  "series": "Grant aid",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "48.687",
+        "Grant aid",
+        48.687,
         28.232,
         12.321,
         10.868,
@@ -19,7 +20,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["Federal Pell grants (25%)", "Private and employer grants (11%)", "State grants (10%)", "Veterans and military grants (10%)"],
+      "categories": ["Institutional grants (44%)", "Federal Pell grants (25%)", "Private and employer grants (11%)", "State grants (10%)", "Veterans and military grants (10%)"],
       "type": "category"
     },
     "y": {

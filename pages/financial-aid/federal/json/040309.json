@@ -1,6 +1,6 @@
 {
   "title": "Average Pell Grant and Veteran’s and Military Benefits per FTE Undergraduate Student ",
-  "series": ["Pell per FTE undergraduate", "Veterans and military aid per FTE undergraduat"],
+  "series": ["Pell per FTE undergraduate", "Veterans and military aid per FTE undergraduate"],
   "data": {
     "type": "line",
     "columns": [
@@ -35,7 +35,7 @@
         2110
       ],
       [
-        "Veterans and military aid per FTE undergraduat",
+        "Veterans and military aid per FTE undergraduate",
         140,
         160,
         170,

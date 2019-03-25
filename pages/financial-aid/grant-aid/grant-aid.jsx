@@ -35,8 +35,8 @@ let singlepage = (
   <h2>By Income and Dependency Status</h2>
     <p><strong>Independent and dependent students are equally likely to receive grant aid, but independent students are more likely to receive federal grants, and dependent students are more likely to receive each of the other types of grant.</strong></p>
     <Multiples 
-      title="Average Grant Aid by Source for Independent and Dependent Students, by Sector, 2011–12" 
-      source="National Postsecondary Student Aid Study (NPSAS), 2012."
+      title="Grant Aid by Source for Independent and Dependent Students, by Sector, 2015–16" 
+      source="National Postsecondary Student Aid Study, 2016."
     >
         <Graph file={require('./json/040203.json')} small="true"/>
         <Graph file={require('./json/040204.json')} small="true"/>

@@ -94,7 +94,7 @@
       ]
     ],
     "labels": {
-      "format": "$.2s"
+      "format": "dollar"
     }
   },
   "axis": {
@@ -105,7 +105,7 @@
     },
     "y": {
       "tick": {
-        "format": "$.2s"
+        "format": "dollar"
       }
     }
   },

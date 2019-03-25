@@ -1,6 +1,5 @@
 {
-  "title": "Grant Aid by Source for Independent and Dependent Students, by Sector, 2015–16",
-  "subtitle": "Dependent",
+  "title": "Dependent",
   "series": ["Federal grants", "Veterans and military grants", "State grants", "Institutional grants", "Employer and private grants"],
   "data": {
     "type": "bar",
@@ -56,9 +55,14 @@
     },
     "y": {
       "tick": {
-        "format": "dollar"
+        "format": "dollar",
+        "count": 6
       },
-      "max": 20000
+      "max": 25000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
     }
   },
   "metadata": {

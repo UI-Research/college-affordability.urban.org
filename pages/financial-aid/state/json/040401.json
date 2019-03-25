@@ -1,11 +1,13 @@
 {
   "title": "State Grant Aid per Full-time Equivalent Undergraduate, 2014–15",
-  "series": "2100",
+  "highlightIndex": 19,
+  "series": "State grant aid per FTE undergraduate",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "2100",
+        "State grant aid per FTE undergraduate",
+        2100,
         1900,
         1640,
         1580,
@@ -65,7 +67,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["Georgia", "Tennessee", "Louisiana", "New Jersey", "Washington", "Kentucky", "New York", "California", "West Virginia", "Virginia", "Indiana", "Arkansas", "New Mexico", "Pennsylvania", "Texas", "North Carolina", "Minnesota", "Alaska", "United States", "Illinois", "Oklahoma", "Delaware", "Nevada", "Colorado", "Florida", "Vermont", "Wisconsin", "North Dakota", "Missouri", "Maryland", "Oregon", "Maine", "Iowa", "Connecticut", "Ohio", "Massachusetts", "Mississippi", "Michigan", "Nebraska", "South Dakota", "Rhode Island", "Kansas", "Hawaii", "Idaho", "Utah", "Arizona", "Montana", "Alabama", "New Hampshire", "Wyoming"],
+      "categories": ["South Carolina", "Georgia", "Tennessee", "Louisiana", "New Jersey", "Washington", "Kentucky", "New York", "California", "West Virginia", "Virginia", "Indiana", "Arkansas", "New Mexico", "Pennsylvania", "Texas", "North Carolina", "Minnesota", "Alaska", "United States", "Illinois", "Oklahoma", "Delaware", "Nevada", "Colorado", "Florida", "Vermont", "Wisconsin", "North Dakota", "Missouri", "Maryland", "Oregon", "Maine", "Iowa", "Connecticut", "Ohio", "Massachusetts", "Mississippi", "Michigan", "Nebraska", "South Dakota", "Rhode Island", "Kansas", "Hawaii", "Idaho", "Utah", "Arizona", "Montana", "Alabama", "New Hampshire", "Wyoming"],
       "type": "category"
     },
     "y": {

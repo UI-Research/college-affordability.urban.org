@@ -1,12 +1,12 @@
 {
-  "title": "Average State Grant Aid per Recipient, 2015–16",
-  "subtitle": "All recipients",
-  "series": "",
+  "wideSmallMultiple": true,
+  "title": "All recipients",
+  "series": "Average state grant aid per recipient",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "",
+        "Average state grant aid per recipient",
         3464.75
       ]
     ],
@@ -22,7 +22,13 @@
     },
     "y": {
       "tick": {
-        "format": "dollar"
+        "format": "dollar",
+        "count": 6
+      },
+      "max": 5000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
       }
     }
   },

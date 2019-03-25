@@ -1,12 +1,13 @@
 {
-  "title": "Average State Grant Aid per Recipient, 2015–19",
-  "subtitle": "State residency",
-  "series": "3463.92",
+  "wideSmallMultiple": true,
+  "title": "State residency",
+  "series": "Average state grant aid per recipient",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "3463.92",
+        "Average state grant aid per recipient",
+        3463.92,
         3503.5596
       ]
     ],
@@ -17,12 +18,18 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": "Out-of-sate",
+      "categories": ["In-state", "Out-of-sate"],
       "type": "category"
     },
     "y": {
       "tick": {
-        "format": "dollar"
+        "format": "dollar",
+        "count": 6
+      },
+      "max": 5000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
       }
     }
   },

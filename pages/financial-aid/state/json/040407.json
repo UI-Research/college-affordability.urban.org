@@ -1,30 +1,37 @@
 {
-  "title": "Share of Undergraduates Receiving State Grant Aid, 2015–20",
-  "subtitle": "Institutional sector",
-  "series": "0.361891",
+  "wideSmallMultiple": true,
+  "title": "Institutional sector",
+  "series": "Undergraduates receiving state aid",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "0.361891",
+        "Undergraduates receiving state aid",
+        0.3619,
         0.2317,
         0.354,
         0.1229
       ]
     ],
     "labels": {
-      "format": "dollar"
+      "format": "percent"
     }
   },
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["Private nonprofit four-year", "Public two-year", "For-profit"],
+      "categories": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit"],
       "type": "category"
     },
     "y": {
       "tick": {
-        "format": "dollar"
+        "format": "percent",
+        "count": 4
+      },
+      "max": 0.6,
+      "padding": {
+        "top": 0,
+        "bottom": 0
       }
     }
   },
