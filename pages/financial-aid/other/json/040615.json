@@ -1,12 +1,13 @@
 {
-  "title": "Private Scholarships per Recipient, 2015-16",
-  "subtitle": "Institutional sector",
-  "series": "3600",
+  "wideSmallMultiple": true,
+  "title": "Institutional sector",
+  "series": "Private grants",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "3600",
+        "Private grants",
+        3600,
         4700,
         2700,
         5100
@@ -19,14 +20,19 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["Private nonprofit four-year", "Public two-year", "For-profit"],
+      "categories": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit"],
       "type": "category"
     },
     "y": {
       "tick": {
-        "format": "dollar"
+        "format": "dollar",
+        "count": 6
       },
-      "max": 10000
+      "max": 10000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
     }
   },
   "metadata": {

@@ -1,7 +1,7 @@
 {
-  "title": "Average Need-Based and Non-need-Based Grant Aid per Full-Time Student (and Percentage Receiving Institutional Aid), Public Four-Year Institutions",
-  "subtitle": "All dependent students",
-  "series": ["Institutional need-based", "Institutional non-need<96>based"],
+  "wideSmallMultiple": true,
+  "title": "All dependent students",
+  "series": ["Institutional need-based", "Institutional non-need-based"],
   "data": {
     "type": "bar",
     "columns": [
@@ -10,12 +10,12 @@
         826.4445
       ],
       [
-        "Institutional non-need<96>based",
+        "Institutional non-need-based",
         1304.95
       ]
     ],
     "groups": [
-      ["Institutional need-based", "Institutional non-need<96>based"]
+      ["Institutional need-based", "Institutional non-need-based"]
     ],
     "labels": {
       "format": "dollar"
@@ -29,7 +29,13 @@
     },
     "y": {
       "tick": {
-        "format": "dollar"
+        "format": "dollar",
+        "count": 6
+      },
+      "max": 2500,
+      "padding": {
+        "top": 0,
+        "bottom": 0
       }
     }
   },

@@ -1,8 +1,5 @@
 {
   "title": "State Grant Aid per Full-Time Equivalent Undergraduate in 2014 Dollars, 1984–85 to 2014–15",
-  "padding": {
-    "top": 10
-  },
   "series": ["Need-based", "Non-need-based"],
   "data": {
     "type": "area",

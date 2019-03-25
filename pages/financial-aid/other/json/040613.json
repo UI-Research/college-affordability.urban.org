@@ -1,12 +1,12 @@
 {
-  "title": "Private Scholarships per Recipient, 2015-16",
-  "subtitle": "All full-time undergraduates",
-  "series": "",
+  "wideSmallMultiple": true,
+  "title": "All full-time undergraduates",
+  "series": "Private grants",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "",
+        "Private grants",
         3900
       ]
     ],
@@ -22,9 +22,14 @@
     },
     "y": {
       "tick": {
-        "format": "dollar"
+        "format": "dollar",
+        "count": 6
       },
-      "max": 10000
+      "max": 10000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
     }
   },
   "metadata": {

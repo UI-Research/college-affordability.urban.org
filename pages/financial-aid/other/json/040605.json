@@ -1,12 +1,12 @@
 {
-  "title": "Percentage of Undergraduates Receiving Private Scholarships, 2015-16",
-  "subtitle": "All full-time undergraduates",
-  "series": "",
+  "wideSmallMultiple": true,
+  "title": "All full-time undergraduates",
+  "series": "Private grants",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "",
+        "Private grants",
         0.1864
       ]
     ],
@@ -22,9 +22,14 @@
     },
     "y": {
       "tick": {
-        "format": "percent"
+        "format": "percent",
+        "count": 4
       },
-      "max": 0.15
+      "max": 0.3,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
     }
   },
   "metadata": {

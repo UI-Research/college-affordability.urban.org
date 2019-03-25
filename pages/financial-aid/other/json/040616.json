@@ -1,12 +1,13 @@
 {
-  "title": "Private Scholarships per Recipient, 2015-16",
-  "subtitle": "Dependent students' parental income",
-  "series": "4800",
+  "wideSmallMultiple": true,
+  "title": "Dependent students' parental income",
+  "series": "Private grants",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "4800",
+        "Private grants",
+        4800,
         3800,
         3300,
         3800
@@ -19,14 +20,19 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["$27,900-62,999", "$63,000-113,499", "$113,500 or more"],
+      "categories": ["Less than $27,900", "$27,900-62,999", "$63,000-113,499", "$113,500 or more"],
       "type": "category"
     },
     "y": {
       "tick": {
-        "format": "dollar"
+        "format": "dollar",
+        "count": 6
       },
-      "max": 10000
+      "max": 10000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
     }
   },
   "metadata": {

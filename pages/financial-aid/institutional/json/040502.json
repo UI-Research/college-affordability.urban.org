@@ -1,6 +1,5 @@
 {
   "title": "Average Institutional Grant Aid and Remaining (Net) Tuition and Fees",
-  "subtitle": "Per first-time full-time student",
   "series": ["Remaining (net) tuition and fees", "Institutional grant aid"],
   "data": {
     "type": "bar",

@@ -2,7 +2,7 @@
   "title": "Federal Education Tax Credits and Deductions",
   "series": ["Total credits", "Total deductions"],
   "data": {
-    "type": "bar",
+    "type": "area",
     "columns": [
       [
         "Total credits",
@@ -31,19 +31,30 @@
         0.6
       ]
     ],
+    "groups": [
+      ["Total credits", "Total deductions"]
+    ],
     "labels": {
       "format": "dollar"
     }
   },
   "axis": {
-    "rotated": true,
+    "rotated": false,
     "x": {
       "categories": ["1998", "2000", "2002", "2004", "2006", "2008", "2010", "2012", "2014", "2016"],
       "type": "category"
     },
     "y": {
       "tick": {
-        "format": "dollar"
+        "format": "dollar",
+        "count": 6
+      },
+      "label": "Billions",
+      "padding": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
       }
     }
   },

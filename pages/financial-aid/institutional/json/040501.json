@@ -1,11 +1,12 @@
 {
   "title": "Percentage of Full-Time First-Year Students Receiving Institutional Grant Aid, 2013–14",
-  "series": "0.449614",
+  "series": "Percent receiving institutional grant aid",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "0.449614",
+        "Percent receiving institutional grant aid",
+        0.4496,
         0.8095,
         0.1586,
         0.2341
@@ -18,7 +19,8 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["Private nonprofit four-year", "Publc two-year", "For-profit"],
+      "categories": ["Public four-year", "Private nonprofit four-year", "Publc two-year", "For-profit"],
+      "label": "Type of institution",
       "type": "category"
     },
     "y": {

@@ -1,12 +1,13 @@
 {
-  "title": "Private Scholarships per Recipient, 2015-16",
-  "subtitle": "Dependency status",
-  "series": "3800",
+  "wideSmallMultiple": true,
+  "title": "Dependency status",
+  "series": "Private grants",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "3800",
+        "Private grants",
+        3800,
         4300
       ]
     ],
@@ -17,14 +18,19 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": "Independent",
+      "categories": ["Dependent", "Independent"],
       "type": "category"
     },
     "y": {
       "tick": {
-        "format": "dollar"
+        "format": "dollar",
+        "count": 6
       },
-      "max": 10000
+      "max": 10000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
     }
   },
   "metadata": {

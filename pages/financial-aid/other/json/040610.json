@@ -1,12 +1,13 @@
 {
-  "title": "Average Employer Assistance and Private Scholarships per Recipient, 2015-16",
-  "subtitle": "Dependency status",
-  "series": "9600",
+  "wideSmallMultiple": true,
+  "title": "Dependency status",
+  "series": "Employer aid",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "9600",
+        "Employer aid",
+        9600,
         5100
       ]
     ],
@@ -17,14 +18,19 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": "Independent",
+      "categories": ["Dependent", "Independent"],
       "type": "category"
     },
     "y": {
       "tick": {
-        "format": "dollar"
+        "format": "dollar",
+        "count": 4
       },
-      "max": 15000
+      "max": 15000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
     }
   },
   "metadata": {
