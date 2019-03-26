@@ -1,5 +1,6 @@
 {
   "title": "Median family Income by state, families with children ages 15 to 17",
+  "highlightIndex": 26,
   "series": "Median Income",
   "data": {
     "type": "bar",
@@ -65,7 +66,7 @@
     }
   },
   "axis": {
-    "rotated": false,
+    "rotated": true,
     "x": {
       "categories": ["Mississippi", "New Mexico", "Arkansas", "West Virginia", "Kentucky", "South Carolina", "Oklahoma", "Florida", "Alabama", "Arizona", "Tennessee", "North Carolina", "Idaho", "Nevada", "Louisiana", "Georgia", "Texas", "Montana", "Indiana", "Missouri", "Maine", "Oregon", "Michigan", "Ohio", "South Dakota", "Kansas", "United States", "Nebraska", "California", "Iowa", "Wisconsin", "Vermont", "Wyoming", "Utah", "Pennsylvania", "Illinois", "Washington", "New York", "Delaware", "Colorado", "Rhode Island", "North Dakota", "District of Columbia", "Virginia", "Minnesota", "Alaska", "New Hampshire", "Hawaii", "Maryland", "Connecticut", "New Jersey", "Massachusetts"],
       "type": "category"
@@ -77,7 +78,7 @@
     }
   },
   "metadata": {
-    "source": "ACS 5 year sample",
+    "source": "ACS 5 year sample.",
     "notes": null
   }
 }

@@ -22,7 +22,7 @@ let singlepage = (
       <p>Of particular importance for thinking about how people pay for college, incomes are higher among 45- to 54-year-olds—the age range of the parents of most traditional-age college students—than for both older and younger families. In 2015, median income for families headed by individuals in this age range was $85,700, 21 percent higher than the overall median.</p>
       <Multiples 
       title="Median Total Income of Families by Race and Ethnicity, Geographical Region, and Age, 2015" 
-      source="Current Population Survey (CPS), Annual Social and Economic Supplement (ASEC), 2015, table FINC-01."
+      source="U.S. Census Bureau, Current Population Survey, 2016 Annual Social and Economic Supplement, Table FINC-01."
       >
         <Graph file={require('./json/050101.json')} small="true"/>
         <Graph file={require('./json/050102.json')} small="true"/>

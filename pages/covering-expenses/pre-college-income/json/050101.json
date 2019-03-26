@@ -1,6 +1,6 @@
 {
-  "title": "Median Total Income of Families by Race/Ethnicity, Geographical Region, and Age, 2015",
-  "subtitle": "All families",
+  "wideSmallMultiple": true,
+  "title": "All families",
   "series": "Income",
   "data": {
     "type": "bar",
@@ -22,13 +22,18 @@
     },
     "y": {
       "tick": {
-        "format": "dollar"
+        "format": "dollar",
+        "count": 4
       },
-      "max": 150000
+      "max": 150000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
     }
   },
   "metadata": {
-    "source": "U.S. Census Bureau, Current Population Survey, 2016 Annual Social and Economic Supplement, Table FINC-01",
+    "source": "U.S. Census Bureau, Current Population Survey, 2016 Annual Social and Economic Supplement, Table FINC-01.",
     "notes": null
   }
 }
