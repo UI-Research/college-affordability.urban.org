@@ -1,0 +1,44 @@
+{
+  "title": "Annual borrowing by student characteristics: averages per borrower and per undergraduate student (with percentage borrowing) in 2011-12",
+  "subtitle": "Dependent students' parental income",
+  "series": ["Average per borrower", "Average per student"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Average per borrower",
+        6869.08,
+        7605.19,
+        8467.72,
+        9259.09
+      ],
+      [
+        "Average per student",
+        3807.39,
+        4611.48,
+        4988.54,
+        4559.32
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Less than $27,900 (55%)", "$27,900-62,999 (60%)", "$63,000-113,499 (58%)", "$113,500 or more (49%)"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      },
+      "max": 10000
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016",
+    "notes": null
+  }
+}

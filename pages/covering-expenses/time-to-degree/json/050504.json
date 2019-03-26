@@ -1,0 +1,46 @@
+{
+  "title": "Tuition and Fees and Room and Board over four, five, and six years, 2015–16 prices",
+  "series": ["Four years", "Five years", "Six years"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Four years",
+        39880,
+        43200,
+        83080
+      ],
+      [
+        "Five years",
+        49850,
+        54000,
+        103850
+      ],
+      [
+        "Six years",
+        59820,
+        64800,
+        124620
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Tuition and fees", "On-campus room and board", "Total charges"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Jennifer Ma, Sandy Baum, Matea Pender, and Meredith Welch, Trends in College Pricing 2016 (New York: College Board, 2016), table 1A",
+    "notes": null
+  }
+}

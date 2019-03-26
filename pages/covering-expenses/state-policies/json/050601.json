@@ -1,0 +1,82 @@
+{
+  "title": "Expenditures on Grants as a Share of State Support for Public Higher Education, 2014–15",
+  "series": "Share of State Fiscal Support",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Share of State Fiscal Support",
+        0.375,
+        0.273,
+        0.245,
+        0.241,
+        0.24,
+        0.23,
+        0.226,
+        0.206,
+        0.201,
+        0.198,
+        0.186,
+        0.179,
+        0.169,
+        0.151,
+        0.144,
+        0.134,
+        0.128,
+        0.124,
+        0.119,
+        0.116,
+        0.11,
+        0.106,
+        0.101,
+        0.095,
+        0.085,
+        0.083,
+        0.083,
+        0.081,
+        0.077,
+        0.064,
+        0.06,
+        0.059,
+        0.057,
+        0.053,
+        0.051,
+        0.045,
+        0.044,
+        0.039,
+        0.035,
+        0.035,
+        0.028,
+        0.027,
+        0.023,
+        0.023,
+        0.014,
+        0.013,
+        0.007,
+        0.005,
+        0.005,
+        0.001,
+        null
+      ]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["South Carolina", "Pennsylvania", "Virginia", "Tennessee", "Louisiana", "Vermont", "Georgia", "West Virginia", "Washington", "New Jersey", "Kentucky", "New York", "Indiana", "Colorado", "California", "Nation", "Arkansas", "Texas", "Minnesota", "Missouri", "New Mexico", "Oklahoma", "Delaware", "Florida", "Wisconsin", "Oregon", "North Carolina", "Nevada", "Iowa", "Maine", "Massachusetts", "Ohio", "Michigan", "Maryland", "North Dakota", "Alaska", "Rhode Island", "Wyoming", "Connecticut", "Mississippi", "Arizona", "Nebraska", "South Dakot", "Kansas", "Utah", "Idaho", "Montana", "Hawaii", "Alabama", "New Hampshire", "Illinois"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Association of State Student Grant and Aid Programs, 2014–15, table 14.",
+    "notes": null
+  }
+}

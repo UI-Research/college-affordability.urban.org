@@ -1,0 +1,42 @@
+{
+  "title": "Effect of Savings on Expected Family Contribution",
+  "series": "Expected Family Contribution",
+  "data": {
+    "type": "line",
+    "columns": [
+      [
+        "Expected Family Contribution",
+        5000,
+        5000,
+        5011.2,
+        5571.2,
+        6131.2,
+        6691.2,
+        7251.2,
+        7811.2,
+        8371.2,
+        8931.2,
+        9491.2
+      ]
+    ],
+    "labels": {
+      "format": "$.2s"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["0", "10000", "20000", "30000", "40000", "50000", "60000", "70000", "80000", "90000", "100000"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "$.2s"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Estimates based on federal methodology formula for EFC.",
+    "notes": null
+  }
+}

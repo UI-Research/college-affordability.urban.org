@@ -1,0 +1,33 @@
+{
+  "title": "Average Parent PLUS Loans borrowed among full-time dependent students, 2015-16",
+  "series": "all",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "all",
+        14786.6
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": "All (13%)",
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      },
+      "max": 32000
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016",
+    "notes": null
+  }
+}

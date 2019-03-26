@@ -1,0 +1,83 @@
+{
+  "title": "Median family Income by state, families with children ages 15 to 17",
+  "series": "Median Income",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Median Income",
+        52700,
+        54500,
+        55695,
+        59700,
+        60793,
+        60828,
+        60890,
+        60961,
+        61436,
+        61823,
+        61823,
+        62009,
+        62722,
+        63290,
+        63767,
+        64302,
+        66975,
+        66986,
+        67200,
+        67215,
+        67847,
+        67847,
+        70000,
+        70000,
+        72127,
+        72130,
+        72370,
+        73158,
+        74188,
+        74935,
+        75948,
+        76249,
+        76249,
+        76960,
+        77300,
+        79076,
+        79583,
+        79998,
+        80597,
+        81104,
+        81104,
+        81213,
+        81254,
+        86100,
+        86378,
+        87583,
+        92000,
+        94501,
+        98000,
+        99555,
+        100000,
+        100251
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["Mississippi", "New Mexico", "Arkansas", "West Virginia", "Kentucky", "South Carolina", "Oklahoma", "Florida", "Alabama", "Arizona", "Tennessee", "North Carolina", "Idaho", "Nevada", "Louisiana", "Georgia", "Texas", "Montana", "Indiana", "Missouri", "Maine", "Oregon", "Michigan", "Ohio", "South Dakota", "Kansas", "United States", "Nebraska", "California", "Iowa", "Wisconsin", "Vermont", "Wyoming", "Utah", "Pennsylvania", "Illinois", "Washington", "New York", "Delaware", "Colorado", "Rhode Island", "North Dakota", "District of Columbia", "Virginia", "Minnesota", "Alaska", "New Hampshire", "Hawaii", "Maryland", "Connecticut", "New Jersey", "Massachusetts"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "ACS 5 year sample",
+    "notes": null
+  }
+}

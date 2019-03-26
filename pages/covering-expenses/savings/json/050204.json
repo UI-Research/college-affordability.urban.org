@@ -1,0 +1,84 @@
+{
+  "title": "Distribution of Net Worth by Family Income Groups",
+  "series": ["Zero or Negative", "$1 to $4,999", "$5,000 to $44,999", "$50,000 to $99,999", "$100,000 to $249,999", "$250,000 to $499,999", "$500,000 or over"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Zero or Negative",
+        0.311,
+        0.211,
+        0.171,
+        0.118,
+        0.053
+      ],
+      [
+        "$1 to $4,999",
+        0.213,
+        0.129,
+        0.063,
+        0.025,
+        0.009
+      ],
+      [
+        "$5,000 to $44,999",
+        0.193,
+        0.248,
+        0.227,
+        0.158,
+        0.066
+      ],
+      [
+        "$50,000 to $99,999",
+        0.076,
+        0.105,
+        0.111,
+        0.119,
+        0.065
+      ],
+      [
+        "$100,000 to $249,999",
+        0.112,
+        0.151,
+        0.187,
+        0.222,
+        0.17
+      ],
+      [
+        "$250,000 to $499,999",
+        0.052,
+        0.088,
+        0.127,
+        0.16,
+        0.196
+      ],
+      [
+        "$500,000 or over",
+        0.044,
+        0.068,
+        0.113,
+        0.199,
+        0.441
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["Lowest income quintile", "Second income quintile", "Third income quintile", "Fourth income quiintile", "Highest income quintil"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "United States Census Bureau ",
+    "notes": null
+  }
+}
