@@ -36,7 +36,8 @@
     "y": {
       "tick": {
         "format": "number"
-      }
+      },
+      "label": "In millions"
     }
   },
   "metadata": {

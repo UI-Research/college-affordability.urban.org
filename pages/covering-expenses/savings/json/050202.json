@@ -1,5 +1,10 @@
 {
+  "noAxisPadding": true,
+  "customLabelPosition": true,
   "title": "Effect of Savings on Expected Family Contribution",
+  "size": {
+    "height": 400
+  },
   "series": "Expected Family Contribution",
   "data": {
     "type": "line",
@@ -20,18 +25,19 @@
       ]
     ],
     "labels": {
-      "format": "$.2s"
+      "format": "dollar"
     }
   },
   "axis": {
     "rotated": false,
     "x": {
-      "categories": ["0", "10000", "20000", "30000", "40000", "50000", "60000", "70000", "80000", "90000", "100000"],
+      "categories": ["$0", "$10k", "$20k", "$30k", "$40k", "$50k", "$60k", "$70k", "$80k", "$90k", "$100k"],
+      "label": "Savings",
       "type": "category"
     },
     "y": {
       "tick": {
-        "format": "$.2s"
+        "format": "dollar"
       }
     }
   },
