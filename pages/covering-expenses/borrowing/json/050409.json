@@ -1,11 +1,12 @@
 {
+  "hideTooltip": true,
   "title": "Average Annual Parent PLUS Loan per Borrower and Percentage of Dependent Students’ Parents Borrowing, 2000-01 to 2015-16",
-  "series": "test",
+  "series": "all",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "test",
+        "all",
         9626.6645,
         11010.4161,
         13322.945,

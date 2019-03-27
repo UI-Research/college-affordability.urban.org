@@ -1,62 +1,15 @@
-{ "overrideTickCount": true,
-  "metadata": {
-    "source": "Current Population Survey (CPS), Annual Social and Economic Supplement (ASES), 1993–2015.",
-    "notes": null
+{
+  "overrideTickCount": true,
+  "title": "Labor Force Participation Rates Among Individuals Ages 25–34 by Educational Attainment, 1994–2014",
+  "size": {
+    "height": 400
   },
-  "axis": {
-    "x": {
-        "padding": {"top": 400},
-      "tick": {"count": 9},
-      "type": "category",
-      "categories": [
-        "",
-        1993,
-        1994,
-        1995,
-        1996,
-        1997,
-        1998,
-        1999,
-        2000,
-        2001,
-        2002,
-        2003,
-        2004,
-        2005,
-        2006,
-        2007,
-        2008,
-        2009,
-        2010,
-        2011,
-        2012,
-        2013,
-        2014,
-        2015,
-        ""
-      ]
-    },
-    "y": {
-    	"padding": {
-    		"top": 0, "bottom": 0
-    	},
-    	"max": 1,
-    	"min": 0.5,
-      "tick": {
-        "format": "percent"
-      }
-    },
-    "rotated": false
-  },
-  "title": "Labor Force Participation Rates among Individuals Ages 25\u201334 by Educational Attainment, 1993\u20132015",
+  "series": ["High school", "Some college, no degree", "Associate degree", "Bachelor's degree", "Advanced degree"],
   "data": {
     "type": "line",
-    "labels": {
-      "format": "percent"
-    },
     "columns": [
       [
-        "High school or equivalent",
+        "High school",
         null,
         0.8218,
         0.8252,
@@ -64,7 +17,7 @@
         0.8225,
         0.8314,
         0.8332,
-        0.8365,
+        0.8364,
         0.839,
         0.836,
         0.8228,
@@ -81,6 +34,8 @@
         0.7789,
         0.7691,
         0.7735,
+        0.7675,
+        0.7754,
         null
       ],
       [
@@ -92,7 +47,7 @@
         0.8451,
         0.8394,
         0.8467,
-        0.8459,
+        0.8458,
         0.8496,
         0.8392,
         0.8372,
@@ -109,6 +64,8 @@
         0.7859,
         0.7805,
         0.7898,
+        0.7845,
+        0.8064,
         null
       ],
       [
@@ -137,6 +94,8 @@
         0.8586,
         0.8526,
         0.8532,
+        0.8455,
+        0.8582,
         null
       ],
       [
@@ -165,6 +124,8 @@
         0.8696,
         0.8617,
         0.8646,
+        0.8665,
+        0.8665,
         null
       ],
       [
@@ -193,15 +154,33 @@
         0.8901,
         0.9013,
         0.8826,
+        0.8864,
+        0.8925,
         null
       ]
-    ]
+    ],
+    "labels": {
+      "format": "percent"
+    }
   },
-  "series": [
-    "High school or equivalent",
-    "Some college, no degree",
-    "Associate degree",
-    "Bachelor's degree",
-    "Advanced degree"
-  ]
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["", "1993", "1994", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", ""],
+      "tick": {
+        "count": 14
+      },
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      },
+      "max": 0.9
+    }
+  },
+  "metadata": {
+    "source": "CPS-ASEC 1995–2015.",
+    "notes": null
+  }
 }

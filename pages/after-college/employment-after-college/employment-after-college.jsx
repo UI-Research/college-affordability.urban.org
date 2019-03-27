@@ -20,15 +20,15 @@ let singlepage = (
       <p>The labor force includes both people who are working and those who are unemployed but actively seeking work</p>
       <p><strong><a href="https://www.bls.gov/emp/ep_table_303.htm" target="_blank">In addition to being related to age and gender</a>, labor force participation is highly correlated with educational attainment. </strong></p>
       <p>In 2015, labor force participation rates among 25- to 34-year-olds were 77 percent for high school graduates with no further education, 79 percent for those with some college but no degree, 85 percent for those with associate degrees, 87 percent for those with bachelor&rsquo;s degrees, and 88 percent for those with advanced degrees.</p>
-      <Graph file={require('./json/06_0010.json')}/>
+      <Graph file={require('./json/060101.json')}/>
     <h2>Unemployment</h2>
       <p><strong>In addition to being more likely to participate in the labor force, people with higher levels of education are more likely to be employed when they do seek work. </strong></p>
       <p>Unemployment rates for 25- to 34-year-old graduates from four-year college are consistently about one-third of the rate for high school graduates. People with some college but no degree or with associate degrees are also more likely than high school graduates to be employed. </p>
-      <Graph file={require('./json/06_0020.json')}/>
+      <Graph file={require('./json/060102.json')}/>
     <h2>Work Patterns</h2>
       <p>Earnings depend on how much you work, and <strong>those with lower levels of educational attainment are more likely to be working part time or part year than those with college degrees.</strong></p>
       <p>Between 2009 and 2013, for example, approximately 60 percent of 25- to 34-year-olds in the labor force with no higher than a high school education worked full time, full year, but over 75 percent of those with bachelor&rsquo;s degrees did. </p>
-     <Graph file={require('./json/06_0030.json')}/>
+     <Graph file={require('./json/060103.json')}/>
   </div>
 );
 

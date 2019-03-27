@@ -1,4 +1,5 @@
 {
+  "hideTooltip": true,
   "title": "Average Amount Borrowed by All Undergraduates",
   "series": "Average Amount Borrowed by All Undergraduates",
   "data": {

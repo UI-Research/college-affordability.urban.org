@@ -1,0 +1,41 @@
+{
+  "title": "Federal Student Loan Three-Year Repayment Rates by Completion Status and by Dependency Status: Borrowers Entering Repayment in 2010-11 and 2011-12",
+  "series": ["Noncompleters", "Completers"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Noncompleters",
+        0.3431,
+        0.1962,
+        0.4818,
+        0.4733,
+        0.3245
+      ],
+      [
+        "Completers",
+        0.5987,
+        0.3624,
+        0.7669,
+        0.7415,
+        0.6118
+      ]
+    ]
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["All", "For-Profit", "Private Nonprofit Four-Year", "Public Four-Year", "Public Two-Year"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": null
+      }
+    }
+  },
+  "metadata": {
+    "source": null,
+    "notes": null
+  }
+}

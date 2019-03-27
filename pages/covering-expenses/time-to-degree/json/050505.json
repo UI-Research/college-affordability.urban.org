@@ -1,5 +1,7 @@
 {
-  "title": "Tuition and Fees and Room and Board over four, five, and six years, 2015–16 prices",
+  "wideSmallMultiple": true,
+  "overrideTickCount": true,
+  "title": "Private nonprofit four-year",
   "series": ["Four years", "Five years", "Six years"],
   "data": {
     "type": "bar",
@@ -22,10 +24,7 @@
         73260,
         281700
       ]
-    ],
-    "labels": {
-      "format": "dollar"
-    }
+    ]
   },
   "axis": {
     "rotated": true,
@@ -35,7 +34,13 @@
     },
     "y": {
       "tick": {
-        "format": "dollar"
+        "format": "dollar",
+        "count": 4
+      },
+      "max": 300000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
       }
     }
   },

@@ -462,7 +462,15 @@ export class BaseGraph extends Component {
     const toCSV = (dataObj) => {
       // let dataObj = jQuery.extend(true, {}, oldDataObj);
       let arr;
-      let cats = dataObj.axis.x.categories.slice(0)      
+      let cats = dataObj.axis.x.categories.slice(0)    
+      // console.log(cats)
+      
+      // Dan Wood addition: If its a string instead of an object, make category an object of length 1...otherwise, the first letter will be selected instead of the word/string. 
+      if (typeof(cats) === "string") {
+        cats = [cats]
+        // console.log(cats)
+      }
+
       if(dataObj.data.sets){
         arr = []
         let sets = dataObj.data.sets

@@ -1,0 +1,88 @@
+{
+  "title": "Earnings by field of bachelor’s degree at the median, 25th percentile, and 75th percentile, employed workers with bachelor’s degree ages 35 to 44, 2014",
+  "series": ["25th percentile and below", "25th percentile to median", "Median to 75th percentile"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "25th percentile and below",
+        23194,
+        24181,
+        23074,
+        25211,
+        31039,
+        24202,
+        35357,
+        32040,
+        31261,
+        30306,
+        30228,
+        35295,
+        40337,
+        36272,
+        45340,
+        52395
+      ],
+      [
+        "25th percentile to median",
+        40304,
+        43362,
+        43439,
+        46107,
+        50063,
+        45845,
+        58489,
+        52395,
+        53447,
+        55270,
+        53541,
+        60076,
+        66083,
+        60505,
+        75632,
+        85117
+      ],
+      [
+        "Median to 75th percentile",
+        54005,
+        70531,
+        70714,
+        72607,
+        74094,
+        75766,
+        80604,
+        80607,
+        87660,
+        88111,
+        90679,
+        90758,
+        95800,
+        96809,
+        109827,
+        115969
+      ]
+    ],
+    "groups": [
+      ["25th percentile and below", "25th percentile to median", "Median to 75th percentile"]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["Education", "Psychology", "Arts", "Liberal arts", "Public service", "Literature and language", "Medical and health science", "Biological, agricultural, and environmen", "History", "Communications", "Social sciences", "Physical and related science", "Architecture and construction", "Business", "Computers and mathematics", "Engineering"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "IPUMS 2014 ACS 5-year sample (2009–2013).",
+    "notes": null
+  }
+}

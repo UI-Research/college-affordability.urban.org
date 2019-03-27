@@ -1,5 +1,6 @@
 {
   "title": "Expenditures on Grants as a Share of State Support for Public Higher Education, 2014–15",
+  "highlightIndex": 15,
   "series": "Share of State Fiscal Support",
   "data": {
     "type": "bar",
@@ -56,7 +57,7 @@
         0.005,
         0.005,
         0.001,
-        null
+        0
       ]
     ],
     "labels": {
@@ -67,6 +68,7 @@
     "rotated": true,
     "x": {
       "categories": ["South Carolina", "Pennsylvania", "Virginia", "Tennessee", "Louisiana", "Vermont", "Georgia", "West Virginia", "Washington", "New Jersey", "Kentucky", "New York", "Indiana", "Colorado", "California", "Nation", "Arkansas", "Texas", "Minnesota", "Missouri", "New Mexico", "Oklahoma", "Delaware", "Florida", "Wisconsin", "Oregon", "North Carolina", "Nevada", "Iowa", "Maine", "Massachusetts", "Ohio", "Michigan", "Maryland", "North Dakota", "Alaska", "Rhode Island", "Wyoming", "Connecticut", "Mississippi", "Arizona", "Nebraska", "South Dakot", "Kansas", "Utah", "Idaho", "Montana", "Hawaii", "Alabama", "New Hampshire", "Illinois"],
+      "label": "Percent",
       "type": "category"
     },
     "y": {

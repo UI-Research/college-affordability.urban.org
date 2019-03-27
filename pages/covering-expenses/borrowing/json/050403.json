@@ -1,6 +1,6 @@
 {
-  "title": "Annual borrowing by student characteristics: averages per borrower and per undergraduate student (with percentage borrowing) in 2011-12",
-  "subtitle": "Dependency status",
+  "wideSmallMultiple": true,
+  "title": "Dependency status",
   "series": ["Average per borrower", "Average per student"],
   "data": {
     "type": "bar",
@@ -28,13 +28,18 @@
     },
     "y": {
       "tick": {
-        "format": "dollar"
+        "format": "dollar",
+        "count": 3
       },
-      "max": 10000
+      "max": 10000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
     }
   },
   "metadata": {
-    "source": "National Postsecondary Student Aid Study 2016",
+    "source": "National Postsecondary Student Aid Study 2016.",
     "notes": null
   }
 }

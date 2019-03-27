@@ -1,32 +1,23 @@
 {
   "title": "Average Number of Years Enrolled and Average Number of Years Elapsed Between First Enrollment and Degree Completion, 2014–15 College Graduates",
-  "series": ["Public two-year", "Public four-year", "Private nonprofit four-year", "Private for-profit four-year", "Total bachelor's"],
+  "series": ["Average years enrolled", "Average years elapsed"],
   "data": {
     "type": "bar",
     "columns": [
       [
-        "Public two-year",
+        "Average years enrolled",
         3.4,
-        5.6
-      ],
-      [
-        "Public four-year",
         5.2,
-        5.6
-      ],
-      [
-        "Private nonprofit four-year",
         4.8,
-        5.4
-      ],
-      [
-        "Private for-profit four-year",
         5.8,
-        8.8
+        5.1
       ],
       [
-        "Total bachelor's",
-        5.1,
+        "Average years elapsed",
+        5.6,
+        5.6,
+        5.4,
+        8.8,
         5.7
       ]
     ],
@@ -37,7 +28,7 @@
   "axis": {
     "rotated": false,
     "x": {
-      "categories": ["Average years enrolled", "Average years elasped"],
+      "categories": ["Public two-year", "Public four-year", "Private nonprofit four-year", "Private for-profit four-year", "Total bachelor's"],
       "type": "category"
     },
     "y": {
