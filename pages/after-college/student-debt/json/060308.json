@@ -1,6 +1,6 @@
 {
   "title": "Debt Levels of 2011–12 Bachelor’s Degree Recipients by Race/Ethnicity",
-  "series": ["No debt", "$1-$9,999", "$10,000-$19,999", "$20,000-$29,999", "$30,000-$39,999", "$40,000-$49,999", "$50,000-$74,999", "$75,000 or more"],
+  "series": ["No debt", "Less than $10,000", "$10,000-$19,999", "$20,000-$29,999", "$30,000-$39,999", "$40,000-$49,999", "$50,000-$74,999", "$75,000 or more"],
   "data": {
     "type": "bar",
     "columns": [
@@ -12,7 +12,7 @@
         0.4133
       ],
       [
-        "$1-$9,999",
+        "Less than $10,000",
         0.0956,
         0.1191,
         0.1437,
@@ -62,7 +62,7 @@
       ]
     ],
     "groups": [
-      ["No debt", "$1-$9,999", "$10,000-$19,999", "$20,000-$29,999", "$30,000-$39,999", "$40,000-$49,999", "$50,000-$74,999", "$75,000 or more"]
+      ["No debt", "Less than $10,000", "$10,000-$19,999", "$20,000-$29,999", "$30,000-$39,999", "$40,000-$49,999", "$50,000-$74,999", "$75,000 or more"]
     ],
     "labels": {
       "format": "percent"
@@ -81,7 +81,7 @@
     }
   },
   "metadata": {
-    "source": "National Postsecondary Student Aid Study 2016",
+    "source": "National Postsecondary Student Aid Study 2016.",
     "notes": null
   }
 }

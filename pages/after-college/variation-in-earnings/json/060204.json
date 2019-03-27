@@ -1,5 +1,9 @@
 {
+  "forceTall": true,
   "title": "Earnings by field of bachelor’s degree at the median, 25th percentile, and 75th percentile, employed workers with bachelor’s degree ages 35 to 44, 2014",
+  "padding": {
+    "bottom": 30
+  },
   "series": ["25th percentile and below", "25th percentile to median", "Median to 75th percentile"],
   "data": {
     "type": "bar",
@@ -70,7 +74,7 @@
     }
   },
   "axis": {
-    "rotated": false,
+    "rotated": true,
     "x": {
       "categories": ["Education", "Psychology", "Arts", "Liberal arts", "Public service", "Literature and language", "Medical and health science", "Biological, agricultural, and environmen", "History", "Communications", "Social sciences", "Physical and related science", "Architecture and construction", "Business", "Computers and mathematics", "Engineering"],
       "type": "category"
