@@ -1,4 +1,5 @@
 {
+  "overrideTickCount": true,
   "title": "Earnings of men by age",
   "series": ["25th percentile and below", "25th percentile to median", "Median to 75th percentile"],
   "data": {
@@ -34,27 +35,28 @@
     ],
     "groups": [
       ["25th percentile and below", "25th percentile to median", "Median to 75th percentile"]
-    ],
-    "labels": {
-      "format": "dollar"
-    }
+    ]
   },
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["18-20", "21-23", "24-26", "27-29", "30-34", "Total"],
+      "categories": ["18–20", "21–23", "24–26", "27–29", "30–34", "Total"],
       "type": "category"
     },
     "y": {
-      "axis": {
-        "tick": {
-          "format": "dollar"
-        }
+      "tick": {
+        "format": "dollar",
+        "count": 4
+      },
+      "max": 150000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
       }
     }
   },
   "metadata": {
-    "source": "Integrated Public Use Microdata Series (IPUMS) 2014 American Community Survery (ACS) five-year sample (2010–14).",
+    "source": null,
     "notes": null
   }
 }

@@ -85,15 +85,13 @@
       "type": "category"
     },
     "y": {
-      "axis": {
-        "tick": {
-          "format": "percent"
-        }
+      "tick": {
+        "format": "percent"
       }
     }
   },
   "metadata": {
-    "source": "Integrated Postsecondary Education Data System",
+    "source": "Integrated Postsecondary Education Data System.",
     "notes": null
   }
 }

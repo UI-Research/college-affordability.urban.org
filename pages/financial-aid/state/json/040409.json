@@ -1,0 +1,40 @@
+{
+  "wideSmallMultiple": true,
+  "title": "Dependency status",
+  "series": "Average state grant aid per recipient",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Average state grant aid per recipient",
+        3627.16,
+        2838.72
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Dependent", "Independent"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 6
+      },
+      "max": 5000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "NPSAS, 2015. ",
+    "notes": null
+  }
+}

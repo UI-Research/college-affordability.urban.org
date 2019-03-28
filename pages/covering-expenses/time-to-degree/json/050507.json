@@ -1,0 +1,34 @@
+{
+  "title": "Forgone Earnings for Taking four, five, and six years to Earn a Bachelor’s Degree",
+  "series": "Forgone earnings",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Forgone earnings",
+        78000,
+        100000,
+        123000
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["Four-years", "Five years", "Six years"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "IPUMS 5-year 2014 ACS",
+    "notes": null
+  }
+}

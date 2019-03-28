@@ -7,15 +7,15 @@
     "columns": [
       [
         "Average net tuition revenue per FTE student",
-        2740,
-        2980,
-        3460
+        5070,
+        5540,
+        6100
       ],
       [
         "Average subsidy per FTE student",
-        6260,
-        5340,
-        6090
+        6980,
+        6330,
+        7410
       ]
     ],
     "groups": [
@@ -28,20 +28,23 @@
   "axis": {
     "rotated": false,
     "x": {
-      "categories": ["04-'05", "09-'10", "14-'15"],
+      "categories": ["2005-06", "2010-11", "2015-16"],
       "type": "category"
     },
     "y": {
-      "axis": {
-        "tick": {
-          "format": "dollar"
-        },
-        "max": 25000
+      "tick": {
+        "format": "dollar",
+        "count": 6
+      },
+      "max": 20000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
       }
     }
   },
   "metadata": {
-    "source": "IPEDS.",
+    "source": "Integrated Postsecondary Education Data System (IPEDS).",
     "notes": null
   }
 }

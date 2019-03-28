@@ -1,0 +1,43 @@
+{
+  "wideSmallMultiple": true,
+  "title": "All undergraduates",
+  "series": ["Average per borrower", "Average per student"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Average per borrower",
+        7635.81
+      ],
+      [
+        "Average per student",
+        3012.67
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": "All undergraduates (39%)",
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 3
+      },
+      "max": 10000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016.",
+    "notes": null
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "wideSmallMultiple": true,
+  "title": "Geographical region",
+  "series": "Income",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Income",
+        81502,
+        75275,
+        66505,
+        75525
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Northeast", "Midwest", "South", "West"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 4
+      },
+      "max": 150000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "U.S. Census Bureau, Current Population Survey, 2016 Annual Social and Economic Supplement, Table FINC-01.",
+    "notes": null
+  }
+}

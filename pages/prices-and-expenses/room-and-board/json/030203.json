@@ -1,0 +1,82 @@
+{
+  "title": "Average Price of On-Campus Housing at Four-Year Public Institutions by State, 2013–14",
+  "series": "Average room and board charges",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Average room and board charges",
+        2959.14,
+        3435.64,
+        3492.87,
+        3769.71,
+        3802.96,
+        4493,
+        4493.71,
+        4605.96,
+        4699.18,
+        4827.88,
+        4943.95,
+        5019.67,
+        5065.76,
+        5155.4,
+        5168.17,
+        5201.58,
+        5294.09,
+        5355.73,
+        5386.83,
+        5408.86,
+        5538.63,
+        5631.05,
+        5667.41,
+        5706.41,
+        5756.39,
+        5756.42,
+        5787.53,
+        5823.4,
+        5830.02,
+        6012.64,
+        6043.47,
+        6125.44,
+        6200,
+        6205.97,
+        6230.58,
+        6370.14,
+        6479,
+        6487.64,
+        6714.58,
+        6735.58,
+        6762.37,
+        6762.62,
+        6835.07,
+        7195.9,
+        7218.64,
+        7258.79,
+        7352.35,
+        7527.58,
+        7841.22,
+        7991.45,
+        9010.48
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Idaho", "Utah", "North Dakota", "Montana", "South Dakota", "Wyoming", "New Mexico", "Oklahoma", "Wisconsin", "Tennessee", "Michigan", "Maine", "Kansas", "Minnesota", "Texas", "Arkansas", "West Virginia", "Alabama", "Colorado", "North Carolina", "Mississippi", "Nebraska", "Florida", "Nevada", "Indiana", "Hawaii", "Louisiana", "South Carolina", "Alaska", "Iowa", "Virginia", "Kentucky", "#N/A", "Georgia", "Maryland", "Missouri", "Illinois", "Ohio", "Connecticut", "Arizona", "Pennsylvania", "Washington", "New Hampshire", "Vermont", "Oregon", "Delaware", "Rhode Island", "Massachusetts", "California", "New Jersey", "New York"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "IPEDS.",
+    "notes": null
+  }
+}

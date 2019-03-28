@@ -1,0 +1,40 @@
+{
+  "wideSmallMultiple": true,
+  "title": "Dependency status",
+  "series": "Employer aid",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Employer aid",
+        0.0428,
+        0.0526
+      ]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Dependent", "Independent"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent",
+        "count": 4
+      },
+      "max": 0.15,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016",
+    "notes": null
+  }
+}

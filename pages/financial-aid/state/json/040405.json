@@ -1,0 +1,42 @@
+{
+  "wideSmallMultiple": true,
+  "title": "Dependent students' parental income",
+  "series": "Undergraduates receiving state aid",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Undergraduates receiving state aid",
+        0.5226,
+        0.4957,
+        0.2572,
+        0.1166
+      ]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Less than $27,900", "$27,900–62,999", "$63,000–113,499", "$113,500 or more"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent",
+        "count": 4
+      },
+      "max": 0.6,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study, 2016. ",
+    "notes": null
+  }
+}

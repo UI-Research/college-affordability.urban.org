@@ -25,21 +25,24 @@ let singlepage = (
         <li><strong><a href="../state/">State grant aid</a></strong> varies widely by state and supports students on the basis of need or academic merit. Most states provide this aid only to students who remain in their state to attend public or private colleges.</li>
       </ul>
     <p><strong>Eighty percent of the grant aid supporting undergraduate students comes either from the federal government or from colleges and universities.</strong></p>
-    <Graph file={require('./json/04_0050.json')}/>
+    <Graph file={require('./json/040201.json')}/>
     <p>The national distribution of grant aid by source, however, does not represent what typical students in any type of institution receive because grant aid varies by type of institution and student. </p>
   <h2>By Sector</h2>
     <p><strong>Regardless of income or dependency status, students receive the highest levels of grant aid at private nonprofit four-year institutions and the lowest levels at public two-year and for-profit institutions.</strong></p>
     <p>The sources of that aid differ. Students in public two-year and for-profit institutions get most of their grant aid from the federal government, and those attending private nonprofit four-year colleges and universities get two-thirds of their grants from their institutions.</p>
     <p>Some grant aid follows students no matter where they choose to enroll. For example, students get the same Pell grant wherever they go to college. But other grant aid, particularly institutional grant aid, but also Federal Supplemental Educational Opportunity Grant funds, will differ depending on the institution.</p>
-    <Graph file={require('./json/04_0060.json')}/>
+    <Graph file={require('./json/040202.json')}/>
   <h2>By Income and Dependency Status</h2>
     <p><strong>Independent and dependent students are equally likely to receive grant aid, but independent students are more likely to receive federal grants, and dependent students are more likely to receive each of the other types of grant.</strong></p>
-    <Multiples title="Average Grant Aid by Source for Independent and Dependent Students, by Sector, 2011–12" source="National Postsecondary Student Aid Study (NPSAS), 2012.">
-        <Graph file={require('./json/04_0071.json')} small="true"/>
-        <Graph file={require('./json/04_0072.json')} small="true"/>
+    <Multiples 
+      title="Grant Aid by Source for Independent and Dependent Students, by Sector, 2015–16" 
+      source="National Postsecondary Student Aid Study, 2016."
+    >
+        <Graph file={require('./json/040203.json')} small="true"/>
+        <Graph file={require('./json/040204.json')} small="true"/>
     </Multiples>
     <p><strong>Within each sector, dependent students from families with lower incomes receive more aid than those from more affluent families—but the aid is not nearly enough to make up for differences in ability to pay.</strong> For example, the average full-time student in a private nonprofit four-year college or university whose family income was $155,000 or higher received more than half of the average grant that students from families with incomes of less than $30,000 received in 2011&ndash;12, despite having more than five times the resources.  </p>
-    <Graph file={require('./json/04_0080.json')}/>
+    <Graph file={require('./json/040205.json')}/>
     <Box>
       <h3><em>How Do Colleges Assess the Income of an Independent Student?</em></h3>
       <p><em>Categorizing dependent students according to their parents&rsquo; incomes is a meaningful way to differentiate among those who can comfortably pay for college with assistance from their parents, those whose parents are not in a position to help at all, and those whose circumstances are between these two extremes. The incomes of independent students are much more difficult to interpret, however.</em></p>

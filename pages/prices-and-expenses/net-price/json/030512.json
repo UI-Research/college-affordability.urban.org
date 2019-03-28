@@ -1,0 +1,71 @@
+{
+  "wideSmallMultiple": true,
+  "title": "Lowest income quartile",
+  "series": ["Tuition and fees covered by grant aid", "Remaining (net) tuition  and fees", "Living expenses covered by grant aid", "Remaining (net) living expenses"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Tuition and fees covered by grant aid",
+        12100,
+        12500,
+        13900,
+        17000,
+        23800,
+        26200
+      ],
+      [
+        "Remaining (net) tuition  and fees",
+        5500,
+        5800,
+        7100,
+        7000,
+        5300,
+        4400
+      ],
+      [
+        "Living expenses covered by grant aid",
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        "Remaining (net) living expenses",
+        9700,
+        10900,
+        12300,
+        12700,
+        15100,
+        15400
+      ]
+    ],
+    "groups": [
+      ["Tuition and fees covered by grant aid", "Remaining (net) tuition  and fees", "Living expenses covered by grant aid", "Remaining (net) living expenses"]
+    ]
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["'96", "'00", "'04", "'08", "'12", "'16"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 7
+      },
+      "max": 60000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study, 2016. ",
+    "notes": null
+  }
+}

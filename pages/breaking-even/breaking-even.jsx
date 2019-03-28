@@ -26,7 +26,7 @@ let singlepage = (
 		<li>Students pay the full tuition and fee price less average grant aid at the time they are enrolled, rather than borrowing for this expense. (Borrowing increases the cost because of interest on the loans, but that effect is counteracted by the postponement of the payments, which has the opposite effect.)</li>
 	</ul>
 	<p>The median student who graduates from high school, enrolls in college full time at age 18, and earns an associate degree after three years will, at age 28, surpass the cumulative earnings of the median high school graduate who went straight into the labor force. The median student who earns a bachelor&rsquo;s degree after five years of full-time study will pass the break-even point at age 30, even without any earnings while in college.</p>
- 	<Graph file={require('./json/06_0210.json')}/>
+ 	<Graph file={require('./json/070001.json')}/>
 	<p><em>What is the impact of variation in tuition prices?</em></p>
 	<p>Paying the average net tuition price at a private nonprofit four-year college for five years ($33,639 for one year in 2015–16 instead of $16,838, which is the average for both public and private nonprofit four year college students), but still earning median income for bachelor&rsquo;s degree recipients, would <strong>raise the estimated break-even age from 30 to 33</strong>, still leaving over 30 years of the typical work life to reap the earnings premium.</p>
 	<p>Paying the average net tuition price at a public four-year college for five years ($9,466 instead of $16,838) would <strong>lower the break-even age from 30 to 29</strong>.</p>

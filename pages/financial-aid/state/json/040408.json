@@ -1,0 +1,39 @@
+{
+  "wideSmallMultiple": true,
+  "title": "All recipients",
+  "series": "Average state grant aid per recipient",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Average state grant aid per recipient",
+        3464.75
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": "All",
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 6
+      },
+      "max": 5000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "NPSAS, 2015. ",
+    "notes": null
+  }
+}

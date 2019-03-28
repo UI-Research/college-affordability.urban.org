@@ -1,0 +1,50 @@
+{
+  "wideSmallMultiple": true,
+  "title": "Research",
+  "series": ["Average net tuition revenue per FTE student", "Average subsidy per FTE student"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Average net tuition revenue per FTE student",
+        20820,
+        22090,
+        24070
+      ],
+      [
+        "Average subsidy per FTE student",
+        17180,
+        17890,
+        20540
+      ]
+    ],
+    "groups": [
+      ["Average net tuition revenue per FTE student", "Average subsidy per FTE student"]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["2005-06", "2010-11", "2015-16"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 6
+      },
+      "max": 60000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "Integrated Postsecondary Education Data System (IPEDS).",
+    "notes": null
+  }
+}

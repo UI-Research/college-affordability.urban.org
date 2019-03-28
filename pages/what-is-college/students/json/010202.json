@@ -1,0 +1,82 @@
+{
+  "hideTooltip": true,
+  "title": "Enrollment Sector By Age and Dependency: All Undergraduates",
+  "series": ["Public four-year", "Private four-year", "Public two-year", "For-profit", "Other"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Public four-year",
+        0.37,
+        0.38,
+        0.23,
+        0.17,
+        0.13,
+        0.4,
+        0.19
+      ],
+      [
+        "Private four-year",
+        0.17,
+        0.16,
+        0.09,
+        0.12,
+        0.13,
+        0.17,
+        0.11
+      ],
+      [
+        "Public two-year",
+        0.41,
+        0.39,
+        0.49,
+        0.51,
+        0.56,
+        0.37,
+        0.51
+      ],
+      [
+        "For-profit",
+        0.02,
+        0.04,
+        0.12,
+        0.15,
+        0.14,
+        0.03,
+        0.13
+      ],
+      [
+        "Other",
+        0.03,
+        0.03,
+        0.06,
+        0.06,
+        0.05,
+        0.03,
+        0.06
+      ]
+    ],
+    "groups": [
+      ["Public four-year", "Private four-year", "Public two-year", "For-profit", "Other"]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["18 or younger (9%)", "19 to 23 (49%)", "24 to 29 (18%)", "30 to 39 (14%)", "40 or older (10%)", "Dependent student (51%)", "Independent student (49%)"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016.",
+    "notes": null
+  }
+}

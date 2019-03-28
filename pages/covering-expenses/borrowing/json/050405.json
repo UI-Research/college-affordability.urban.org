@@ -1,0 +1,49 @@
+{
+  "wideSmallMultiple": true,
+  "title": "Attendance pattern",
+  "series": ["Average per borrower", "Average per student"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Average per borrower",
+        8653.38,
+        6271.23,
+        7615.29,
+        5133.07
+      ],
+      [
+        "Average per student",
+        4828.88,
+        2589.93,
+        2599.91,
+        1009.11
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Full-time full-year (55%)", "Full-time part-year (41%) ", "Part-time full-year (34%)", "Part-time part-year (20%)"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 3
+      },
+      "max": 10000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016.",
+    "notes": null
+  }
+}

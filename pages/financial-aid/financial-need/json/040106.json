@@ -1,0 +1,68 @@
+{
+  "hideTooltip": true,
+  "title": "Public two-year",
+  "series": ["$0", "$1-$4,999", "$5,000-$9,999", "$10,000-$14,999", "$150,000-$199,999", "$200,000 or higher "],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "$0",
+        0.3745,
+        0.316
+      ],
+      [
+        "$1-$4,999",
+        0.3128,
+        0.3354
+      ],
+      [
+        "$5,000-$9,999",
+        0.1975,
+        0.198
+      ],
+      [
+        "$10,000-$14,999",
+        0.083,
+        0.0994
+      ],
+      [
+        "$150,000-$199,999",
+        0.0222,
+        0.0371
+      ],
+      [
+        "$200,000 or higher ",
+        0.01,
+        0.0141
+      ]
+    ],
+    "groups": [
+      ["$0", "$1-$4,999", "$5,000-$9,999", "$10,000-$14,999", "$150,000-$199,999", "$200,000 or higher "]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Dependent", "Independent"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent",
+        "count": 5
+      },
+      "max": 1,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study, 2016. ",
+    "notes": null
+  }
+}

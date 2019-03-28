@@ -1,0 +1,71 @@
+{
+  "wideSmallMultiple": true,
+  "title": "Third income quartile",
+  "series": ["Tuition and fees covered by grant aid", "Remaining (net) tuition  and fees", "Living expenses covered by grant aid", "Remaining (net) living expenses"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Tuition and fees covered by grant aid",
+        300,
+        600,
+        800,
+        900,
+        1100,
+        2100
+      ],
+      [
+        "Remaining (net) tuition  and fees",
+        1800,
+        1700,
+        1900,
+        2300,
+        2200,
+        2000
+      ],
+      [
+        "Living expenses covered by grant aid",
+        100,
+        100,
+        200,
+        300,
+        100,
+        100
+      ],
+      [
+        "Remaining (net) living expenses",
+        8400,
+        9800,
+        10000,
+        10800,
+        11800,
+        10900
+      ]
+    ],
+    "groups": [
+      ["Tuition and fees covered by grant aid", "Remaining (net) tuition  and fees", "Living expenses covered by grant aid", "Remaining (net) living expenses"]
+    ]
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["'96", "'00", "'04", "'08", "'12", "'16"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 5
+      },
+      "max": 20000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study, 2016. ",
+    "notes": null
+  }
+}

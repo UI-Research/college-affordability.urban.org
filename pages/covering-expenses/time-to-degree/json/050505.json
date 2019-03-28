@@ -1,0 +1,51 @@
+{
+  "wideSmallMultiple": true,
+  "overrideTickCount": true,
+  "title": "Private nonprofit four-year",
+  "series": ["Four years", "Five years", "Six years"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Four years",
+        138960,
+        48840,
+        187800
+      ],
+      [
+        "Five years",
+        173700,
+        61050,
+        234750
+      ],
+      [
+        "Six years",
+        208440,
+        73260,
+        281700
+      ]
+    ]
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Tuition and fees", "On-campus room and board", "Total charges"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 4
+      },
+      "max": 300000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "Jennifer Ma, Sandy Baum, Matea Pender, and Meredith Welch, Trends in College Pricing 2016 (New York: College Board, 2016), table 1A",
+    "notes": null
+  }
+}

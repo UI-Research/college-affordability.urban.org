@@ -1,0 +1,83 @@
+{
+  "title": "State Grant Aid per Full-time Equivalent Undergraduate, 2014–15",
+  "highlightIndex": 19,
+  "series": "State grant aid per FTE undergraduate",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "State grant aid per FTE undergraduate",
+        2100,
+        1900,
+        1640,
+        1580,
+        1370,
+        1340,
+        1280,
+        1140,
+        1110,
+        1080,
+        1050,
+        1030,
+        1010,
+        1000,
+        870,
+        850,
+        830,
+        800,
+        790,
+        790,
+        660,
+        60,
+        590,
+        560,
+        550,
+        540,
+        540,
+        530,
+        480,
+        460,
+        440,
+        410,
+        380,
+        370,
+        310,
+        290,
+        280,
+        270,
+        270,
+        220,
+        140,
+        120,
+        120,
+        70,
+        70,
+        60,
+        50,
+        40,
+        30,
+        0,
+        0
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["South Carolina", "Georgia", "Tennessee", "Louisiana", "New Jersey", "Washington", "Kentucky", "New York", "California", "West Virginia", "Virginia", "Indiana", "Arkansas", "New Mexico", "Pennsylvania", "Texas", "North Carolina", "Minnesota", "Alaska", "United States", "Illinois", "Oklahoma", "Delaware", "Nevada", "Colorado", "Florida", "Vermont", "Wisconsin", "North Dakota", "Missouri", "Maryland", "Oregon", "Maine", "Iowa", "Connecticut", "Ohio", "Massachusetts", "Mississippi", "Michigan", "Nebraska", "South Dakota", "Rhode Island", "Kansas", "Hawaii", "Idaho", "Utah", "Arizona", "Montana", "Alabama", "New Hampshire", "Wyoming"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Association of State Student Grant and Aid Programs (NASSGAP) Annual Survey, 2014–15, Table 12.",
+    "notes": null
+  }
+}

@@ -23,20 +23,20 @@ let singlepage = (
       <p>Because of the wide range of tuition and fees among private nonprofit four-year colleges and universities, COA also varies most widely in this sector. Here, the average COA for students in the top COA quintile is double the average for students in the bottom quintile. </p>
       <p>The average cost of attendance for the 20 percent of students attending private nonprofit four-year institutions with the lowest COAs is similar to the average for the 20 percent of in-state students in public four-year institutions with the highest COAs.</p>
       <p><strong>Tuition and fees constitute the largest single component of estimated COA for students attending private four-year nonprofit institutions and for-profit colleges. But for students attending public two-year or public four-year colleges in their home states, room and board is the largest component of estimated COA. </strong></p>
-      <Multiples title="Cost of Attendance by Sector from 2001–02 to 2016–17, in 2016 Dollars" source="The 2015, 2016, 2012, and 2011 (figure 1); 2006 (figure 2); and 2001 (table 3) editions of <em>Trends in College Pricing</em> (New York: College Board).">
-        <Graph file={require('./json/03_0121.json')} small="true"/>
-        <Graph file={require('./json/03_0122.json')} small="true"/>
-        <Graph file={require('./json/03_0123.json')} small="true"/>
-        <Graph file={require('./json/03_0124.json')} small="true"/>
+      <Multiples title="Cost of Attendance by Sector from 2005–06 to 2015–16, in 2015 Dollars" source="IPEDS; Jennifer Ma, Sandy Baum, Matea Pender, and D'Wayne Bell, <em>Trends in College Pricing 2015</em> (New York: College Board, 2015).">
+        <Graph file={require('./json/030302.json')} small="true"/>
+        <Graph file={require('./json/030303.json')} small="true"/>
+        <Graph file={require('./json/030304.json')} small="true"/>
+        <Graph file={require('./json/030305.json')} small="true"/>
     </Multiples>
       <p><strong>Over time, tuition and fees have grown as a portion of total student budgets in all sectors except the for-profit sector.</strong></p>
       <p>Still, tuition and fees make up less than 20 percent of the total estimated COA for students attending two-year in-district public colleges and less than 40 percent of total COA for students at four-year in-state colleges and universities.</p>
     <h2>Books and Supplies</h2>
       <p>Like tuition and fees, expenditures on books and supplies are a real cost of going to college, because they are only necessary when people are in school. We know from the data that students in all sectors of postsecondary education spend similar amounts on books and supplies, although there is variation by major.</p>
       <p><strong>The prices of textbooks have risen faster than inflation, but what students are spending on required books and supplies appears to have fallen over the last several years as students have found new ways to access resources, frequently online. </strong></p>
-      <Graph file={require('./json/03_0140.json')}/>
+      <Graph file={require('./json/030306.json')}/>
       <p>An increasing amount of course material is available at no charge online, and alternative ways of obtaining materials are becoming more prevalent. Students may also opt not to buy all their textbooks. In addition, according to the National Association of College Stores, the average price of new textbooks has risen about twice as fast in recent years as the average price of used textbooks.</p>
-      <Graph file={require('./json/03_0150.json')}/>
+      <Graph file={require('./json/030307.json')}/>
     <h2>Other Expenses</h2>
       <p>Other expenses students might encounter in college include transportation, toiletries, snack food, entertainment, and clothing. Individual students have considerably more discretion over these expenditures than they do over tuition and fees, and other components of their budgets.</p>
       <p><strong>On average, private four-year nonprofit colleges have lower estimates for other expenses in their reported COAs than do other types of institutions.</strong></p>

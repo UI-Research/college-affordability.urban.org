@@ -1,0 +1,51 @@
+{
+  "wideSmallMultiple": true,
+  "overrideTickCount": true,
+  "title": "Public four-year in-state",
+  "series": ["Four years", "Five years", "Six years"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Four years",
+        39880,
+        43200,
+        83080
+      ],
+      [
+        "Five years",
+        49850,
+        54000,
+        103850
+      ],
+      [
+        "Six years",
+        59820,
+        64800,
+        124620
+      ]
+    ]
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Tuition and fees", "On-campus room and board", "Total charges"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 4
+      },
+      "max": 300000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "Jennifer Ma, Sandy Baum, Matea Pender, and Meredith Welch, Trends in College Pricing 2016 (New York: College Board, 2016), table 1A",
+    "notes": null
+  }
+}

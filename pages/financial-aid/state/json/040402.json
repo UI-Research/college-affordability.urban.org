@@ -1,0 +1,81 @@
+{
+  "title": "Share of State Grants Based on Financial Need, 2014–15",
+  "highlightIndex": 20,
+  "series": "State grants based on financial need",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "State grants based on financial need",
+        0,
+        0.036,
+        0.072,
+        0.094,
+        0.17,
+        0.198,
+        0.275,
+        0.294,
+        0.314,
+        0.324,
+        0.326,
+        0.395,
+        0.42,
+        0.423,
+        0.454,
+        0.481,
+        0.568,
+        0.612,
+        0.631,
+        0.714,
+        0.76,
+        0.812,
+        0.884,
+        0.909,
+        0.926,
+        0.952,
+        0.956,
+        0.962,
+        0.967,
+        0.973,
+        0.977,
+        0.979,
+        0.982,
+        0.984,
+        0.989,
+        0.993,
+        0.993,
+        0.994,
+        0.997,
+        0.998,
+        0.999,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Georgia", "South Dakota", "Arkansas", "Louisiana", "South Carolina", "Utah", "Tennessee", "Nevada", "New Mexico", "Alaska", "Montana", "Florida", "Mississippi", "West Virginia", "Kentucky", "Alabama", "Missouri", "North Dakota", "Delaware", "Ohio", "United States", "Virginia", "Oklahoma", "Nebraska", "Iowa", "Colorado", "Idaho", "New York", "Massachusetts", "Connecticut", "Wisconsin", "Indiana", "New Jersey", "North Carolina", "Michigan", "Maryland", "Vermont", "Minnesota", "Pennsylvania", "Illinois", "California", "Arizona", "Hawaii", "Kansas", "Maine", "Oregon", "Rhode Island", "Texas", "Washington"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "NASSGAP Annual Survey, 2014–15 Table 1.",
+    "notes": null
+  }
+}

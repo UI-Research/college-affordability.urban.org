@@ -1,0 +1,54 @@
+{
+  "title": "Percentage of Undergraduate Students Participating in Federal Work-Study, 2011–17",
+  "subtitle": "For-profit",
+  "data": {
+    "type": "bar",
+    "sets": {
+      "set1": [
+        "type1",
+        [
+          [
+            "Test Data",
+            7.25,
+            7.5,
+            7.85,
+            8.25,
+            8.25
+          ]
+        ]
+      ],
+      "set2": [
+        "type2",
+        [
+          [
+            "Test Data",
+            7.25,
+            7.5,
+            7.85,
+            8.25,
+            8.25
+          ]
+        ]
+      ]
+    },
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["United States", "New Mexico", "Missouri", "Delaware", "Florida"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016.",
+    "notes": null
+  }
+}

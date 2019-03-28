@@ -1,0 +1,115 @@
+{
+  "title": "Average Grant Aid per Full-Time Sependent Student by Family Income within Sectors, 2015–16",
+  "series": ["Veterans and military grants", "State grants", "Institutional grants", "Employer and private grants"],
+  "data": {
+    "type": "bar",
+    "sets": {
+      "set1": [
+        3100,
+        [
+          [
+            "Veterans and military grants",
+            200
+          ],
+          [
+            "State grants",
+            2400
+          ],
+          [
+            "Institutional grants",
+            2600
+          ],
+          [
+            "Employer and private grants",
+            1000
+          ]
+        ]
+      ],
+      "set2": [
+        3600,
+        [
+          [
+            "Veterans and military grants",
+            100
+          ],
+          [
+            "State grants",
+            1900
+          ],
+          [
+            "Institutional grants",
+            18300
+          ],
+          [
+            "Employer and private grants",
+            1500
+          ]
+        ]
+      ],
+      "set3": [
+        2700,
+        [
+          [
+            "Veterans and military grants",
+            100
+          ],
+          [
+            "State grants",
+            800
+          ],
+          [
+            "Institutional grants",
+            500
+          ],
+          [
+            "Employer and private grants",
+            300
+          ]
+        ]
+      ],
+      "set4": [
+        2900,
+        [
+          [
+            "Veterans and military grants",
+            600
+          ],
+          [
+            "State grants",
+            600
+          ],
+          [
+            "Institutional grants",
+            2200
+          ],
+          [
+            "Employer and private grants",
+            500
+          ]
+        ]
+      ]
+    },
+    "groups": [
+      ["Veterans and military grants", "State grants", "Institutional grants", "Employer and private grants"]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study, 2016. ",
+    "notes": null
+  }
+}

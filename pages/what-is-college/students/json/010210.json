@@ -1,0 +1,67 @@
+{
+  "hideTooltip": true,
+  "title": "Sectors of Full-Time and Part-Time First-Year Students",
+  "series": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit", "Other or non-degree-granting"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Public four-year",
+        0.22,
+        0.05,
+        0.05,
+        0.11
+      ],
+      [
+        "Private nonprofit four-year",
+        0.14,
+        0.04,
+        0.02,
+        0.06
+      ],
+      [
+        "Public two-year",
+        0.35,
+        0.8,
+        0.91,
+        0.71
+      ],
+      [
+        "For-profit",
+        0.14,
+        0.07,
+        0.02,
+        0.08
+      ],
+      [
+        "Other or non-degree-granting",
+        0.15,
+        0.04,
+        0.01,
+        0.04
+      ]
+    ],
+    "groups": [
+      ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit", "Other or non-degree-granting"]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Exclusively full time (42%)", "Exclusively half time (22%)", "Exclusively less than half time (22%)", "Mixed (25%)"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016.",
+    "notes": null
+  }
+}

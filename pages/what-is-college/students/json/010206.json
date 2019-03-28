@@ -1,0 +1,67 @@
+{
+  "hideTooltip": true,
+  "title": "Enrollment Sectors of Dependent First-Year Students by Parent Income",
+  "series": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit", "Other or non-degree-granting"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Public four-year",
+        0.18,
+        0.23,
+        0.23,
+        0.31
+      ],
+      [
+        "Private nonprofit four-year",
+        0.08,
+        0.09,
+        0.11,
+        0.22
+      ],
+      [
+        "Public two-year",
+        0.6,
+        0.59,
+        0.6,
+        0.44
+      ],
+      [
+        "For-profit",
+        0.07,
+        0.05,
+        0.02,
+        0.01
+      ],
+      [
+        "Other or non-degree-granting",
+        0.07,
+        0.05,
+        0.04,
+        0.02
+      ]
+    ],
+    "groups": [
+      ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit", "Other or non-degree-granting"]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Less than $27,900 (31%)", "$27,900 - $62,999 (26%)", "$63,000 - $113,499 (23%)", "$113,500 or more (19%)"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016.",
+    "notes": null
+  }
+}

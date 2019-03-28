@@ -1,0 +1,79 @@
+{
+  "title": "Debt Levels of 2011–12 Bachelor’s Degree Recipients by Dependency Status",
+  "series": ["No debt", "Less than $10,000", "$10,000-$19,999", "$20,000-$29,999", "$30,000-$39,999", "$40,000-$49,999", "$50,000-$74,999", "$75,000 or more"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "No debt",
+        0.3169,
+        0.2594,
+        0.2403
+      ],
+      [
+        "Less than $10,000",
+        0.1095,
+        0.1041,
+        0.1082
+      ],
+      [
+        "$10,000-$19,999",
+        0.1411,
+        0.1153,
+        0.1123
+      ],
+      [
+        "$20,000-$29,999",
+        0.2127,
+        0.1369,
+        0.1082
+      ],
+      [
+        "$30,000-$39,999",
+        0.1131,
+        0.1373,
+        0.1078
+      ],
+      [
+        "$40,000-$49,999",
+        0.0478,
+        0.1017,
+        0.1226
+      ],
+      [
+        "$50,000-$74,999",
+        0.0402,
+        0.1315,
+        0.1906
+      ],
+      [
+        "$75,000 or more",
+        0.0187,
+        0.0138,
+        0.0101
+      ]
+    ],
+    "groups": [
+      ["No debt", "Less than $10,000", "$10,000-$19,999", "$20,000-$29,999", "$30,000-$39,999", "$40,000-$49,999", "$50,000-$74,999", "$75,000 or more"]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Dependent (54%)", "Independent without dependents (28%)", "Independent with dependents (18%)"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016.",
+    "notes": null
+  }
+}

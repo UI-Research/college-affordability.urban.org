@@ -1,6 +1,6 @@
 {
   "metadata.pluralNotes": true,
-  "title": null,
+  "title": "Full-Time Undergraduate Student Quintiles of Cost of Attendance by Sector in 2014–15",
   "series": ["Lowest quintile", "2nd", "3rd", "4th", "Highest quintile"],
   "data": {
     "type": "bar",
@@ -40,10 +40,7 @@
         24427,
         39708
       ]
-    ],
-    "labels": {
-      "format": "dollar"
-    }
+    ]
   },
   "axis": {
     "rotated": false,
@@ -52,10 +49,8 @@
       "type": "category"
     },
     "y": {
-      "axis": {
-        "tick": {
-          "format": "dollar"
-        }
+      "tick": {
+        "format": "dollar"
       }
     }
   },

@@ -1,0 +1,72 @@
+{
+  "title": "Dependent",
+  "series": ["Federal grants", "Veterans and military grants", "State grants", "Institutional grants", "Employer and private grants"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Federal grants",
+        1900,
+        1700,
+        2300,
+        3200
+      ],
+      [
+        "Veterans and military grants",
+        200,
+        300,
+        100,
+        500
+      ],
+      [
+        "State grants",
+        1500,
+        1000,
+        700,
+        600
+      ],
+      [
+        "Institutional grants",
+        2400,
+        16200,
+        600,
+        2200
+      ],
+      [
+        "Employer and private grants",
+        1000,
+        1600,
+        400,
+        600
+      ]
+    ],
+    "groups": [
+      ["Federal grants", "Veterans and military grants", "State grants", "Institutional grants", "Employer and private grants"]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 6
+      },
+      "max": 25000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study, 2016. ",
+    "notes": null
+  }
+}

@@ -35,7 +35,7 @@ let singlepage = (
 	<h2>Tuition and Fees over Time</h2>
 		<p><strong>For decades, average published tuition and fee prices in all sectors have been rising faster than the average prices of all goods and services (as measured by the Consumer Price Index), but the rate of increase is not accelerating. </strong></p>
 		<p>For example, tuition at public four-year institutions increased, on average, about 7 percent per year beyond general inflation between 2001–02 and 2006–07 and about 5 percent per year between 2006–07 and 2011–12, compared with 2 percent per year for the last five years.</p>
-		<Graph file={require('./json/03_0020.json')}/>
+		<Graph file={require('./json/030102.json')}/>
 		<p><strong>As shown in the figure above, the <em>rate</em> of growth in tuition prices in the public four-year sector outpaced those in the public two-year and private nonprofit four-year sectors between 2001&ndash;02 and 2011&ndash;12. But the <em>dollar</em> increases are much larger in the private sector</strong>, where the average published tuition and fee price is about three and a half times as high as in the public four-year sector—a decline from five times as high in the early 1990s. Between 2006–07 and 2016–17, tuition and fees for full-time students increased by an average of $739 per year (in 2015 dollars) at private nonprofit four-year institutions, $273 per year at public four-year institutions, and $73 per year at public two-year colleges.</p>
 		<Box>
 			<h3><em><strong>What Effect Does a Recession Have on College Tuition?</strong></em></h3>
@@ -52,8 +52,8 @@ let singlepage = (
 	<h2>Variation across States</h2>
 		<p><strong>Tuition prices—particularly at public universities—vary dramatically across states.</strong></p>
 		<p>In 2016&ndash;17, the average public two-year college tuition and fee price was about five and a half times as high in Vermont as in California&mdash;a difference of $6,300. The average published price at public four-year institutions was three times as high in New Hampshire as in Wyoming&mdash;a difference of $10,600. </p>
-		<Graph file={require('./json/03_0410.json')}/>
-		<Graph file={require('./json/03_0420.json')}/>
+		<Graph file={require('./json/030104.json')}/>
+		<Graph file={require('./json/030105.json')}/>
 		<p><strong>In 2016&ndash;17, published tuition and fees for in-state students at public four-year institutions ranged from $5,060 in Wyoming to $15,650 in New Hampshire.</strong> Twenty-three states charged at least $1,000 less than the national average of $9,650, and 15 states charged more than $1,000 above the national average. These differences arise primarily from variation in state funding levels, but they are also associated with enrollment patterns, cost of living, and other factors. </p>
   </div>
 );

@@ -1,0 +1,85 @@
+{
+  "metadata.pluralSources": true,
+  "metadata.pluralNotes": true,
+  "title": "Difference between the Average Price of On-Campus Housing over the Academic Year at Four-Year Public and Private Nonprofit Colleges in 2013–14 and Average Rent over Nine Months among 18–24-Year-Olds in 2013 dollars, by State",
+  "highlightIndex": 27,
+  "series": "Difference",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Difference",
+        -8712.31,
+        -6834.24,
+        -5931.77,
+        -4880.47,
+        -4748.57,
+        -4265.06,
+        -4212.96,
+        -3744.62,
+        -3527.38,
+        -3221.614,
+        -3097.54,
+        -3050.659,
+        -2925.792,
+        -2920.71,
+        -2912.648,
+        -2718.568,
+        -2659.712,
+        -2633.746,
+        -2496.673,
+        -2446.117,
+        -2284.621,
+        -2233.067,
+        -2204.167,
+        -2198.515,
+        -2132.141,
+        -2125.693,
+        -1824.686,
+        -1711.176,
+        -1549.318,
+        -1549.17,
+        -1524.721,
+        -1249.308,
+        -1173.06,
+        -1104.083,
+        -1060.8,
+        -782.479,
+        -696.928,
+        -687.326,
+        -677.122,
+        -671.27,
+        -562.789,
+        -555.583,
+        -390.585,
+        -299.99,
+        -219.7,
+        -39.681,
+        32.283,
+        185.841,
+        203.359,
+        635.74,
+        1974.558
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["New York", "District of Columbia", "Mississippi", "New Jersey", "Hawaii", "West Virginia", "Massachusetts", "Virginia", "California", "Texas", "North Carolina", "South Carolina", "Kansas", "Florida", "Washington", "Connecticut", "Minnesota", "New Hampshire", "Colorado", "Alaska", "Oklahoma", "Michigan", "Arizona", "Illinois", "Rhode Island", "Tennessee", "Georgia", "Wisconsin", "New Mexico", "Idaho", "Nevada", "Utah", "Indiana", "Vermont", "Maryland", "South Dakota", "Nebraska", "Missouri", "Alabama", "Pennsylvania", "North Dakota", "Arkansas", "Wyoming", "Louisiana", "Oregon", "Iowa", "Kentucky", "Delaware", "Montana", "Ohio", "Maine"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "IPEDS; American Community Survey 2014 five-year sample (2010–14).",
+    "notes": null
+  }
+}

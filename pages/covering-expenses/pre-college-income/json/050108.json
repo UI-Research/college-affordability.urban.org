@@ -1,0 +1,34 @@
+{
+  "title": "Median Incomes Over Time of Families Ages 45 to 54 ",
+  "series": "Median Income",
+  "data": {
+    "type": "line",
+    "columns": [
+      [
+        "Median Income",
+        56700,
+        77700,
+        90100
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["Ages 25 to 34 (1996)", "Ages 35 to 44 (2006)", "Ages 45 to 54 (2016)"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "US Census Bureau, Historical Income Tables: Families, table F-11.",
+    "notes": null
+  }
+}

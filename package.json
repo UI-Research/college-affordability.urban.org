@@ -93,6 +93,7 @@
     "react-sticky": "^5.0.4",
     "react-tabbordion": "^0.4.1",
     "react-tools": "^0.13.3",
+    "require-dir": "^1.2.0",
     "standard": "^7.1.0",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",

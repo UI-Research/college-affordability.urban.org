@@ -1,4 +1,5 @@
 {
+  "overrideTickCount": true,
   "title": "Earnings of men by race",
   "series": ["25th percentile and below", "25th percentile to median", "Median to 75th percentile"],
   "data": {
@@ -28,10 +29,7 @@
     ],
     "groups": [
       ["25th percentile and below", "25th percentile to median", "Median to 75th percentile"]
-    ],
-    "labels": {
-      "format": "dollar"
-    }
+    ]
   },
   "axis": {
     "rotated": true,
@@ -40,15 +38,19 @@
       "type": "category"
     },
     "y": {
-      "axis": {
-        "tick": {
-          "format": "dollar"
-        }
+      "tick": {
+        "format": "dollar",
+        "count": 4
+      },
+      "max": 90000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
       }
     }
   },
   "metadata": {
-    "source": "Integrated Public Use Microdata Series (IPUMS) 2014 American Community Survery (ACS) five-year sample (2010–14).",
+    "source": null,
     "notes": null
   }
 }

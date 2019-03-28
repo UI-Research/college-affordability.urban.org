@@ -1,0 +1,45 @@
+{
+  "title": "Private nonprofit bachelor's",
+  "series": "Average Endowment Income per Student",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Average Endowment Income per Student",
+        170,
+        429,
+        728,
+        1129,
+        1603,
+        2307,
+        2965,
+        4938,
+        8912,
+        24834
+      ]
+    ]
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 5
+      },
+      "max": 30000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "Integrated Postsecondary Education Data System (IPEDS).",
+    "notes": null,
+    "subtitle": null
+  }
+}

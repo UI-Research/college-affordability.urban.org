@@ -1,0 +1,42 @@
+{
+  "wideSmallMultiple": true,
+  "title": "Dependent students' parental income",
+  "series": "Employer aid",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Employer aid",
+        7500,
+        8200,
+        9700,
+        11200
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Less than $27,900", "$27,900-62,999", "$63,000-113,499", "$113,500 or more"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 4
+      },
+      "max": 15000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016",
+    "notes": null
+  }
+}

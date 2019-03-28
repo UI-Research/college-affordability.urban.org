@@ -27,28 +27,39 @@ let singlepage = (
       <p>In 2011–12, averaged across all full-time students, the program provided $1,700 per dependent student and $3,300 per independent student. Among dependent students, those whose parents&rsquo; incomes were less than $30,000 received an average of $4,800 per student, and those whose parental income was between $30,000 and $65,000 received an average of $2,200 per full-time student.</p>
       <p><strong>Not everyone who gets a Pell grant receives the maximum amount. Instead, the size of the grant varies by income, family circumstances, and full-time or part-time enrollment.</strong></p>
       <p>In 2011–12, the average grant for dependent full-time Pell recipients from families with incomes under $30,000 was $5,200.  </p>
-       <Multiples title="Pell Grant by Dependency Status and Income, Full-Time Students, 2011–12 (with Percentage Receiving Pell)" subtitle= "Dollars per recipient" imageOverride = "Pell Grant by Dependency Status and Income, Full-Time Students, 2011–12 (with Percentage Receiving Pell)__Dollars per recipient" source="National Postsecondary Student Aid Study (NPSAS), 2012.">
-        <Graph file={require('./json/04_0911.json')} small="true"/>
-        <Graph file={require('./json/04_0912.json')} small="true"/>
-        <Graph file={require('./json/04_0913.json')} small="true"/>
+      <Multiples 
+        title="Pell Grant by Dependency Status and Income, Full-Time Students, 2015–16 (with Percentage Peceiving Pell Grants)" 
+        subtitle= "Dollars per recipient" 
+        imageOverride = "Pell Grant by Dependency Status and Income, Full-Time Students, 2015–16 (with Percentage Peceiving Pell Grants)__Dollars per recipient" 
+        source="National Postsecondary Student Aid Study, 2016."
+      >
+        <Graph file={require('./json/040301.json')} small="true"/>
+        <Graph file={require('./json/040302.json')} small="true"/>
+        <Graph file={require('./json/040303.json')} small="true"/>
     </Multiples>
-        <Multiples title="" subtitle="Dollars per full-time student" imageOverride = "Pell Grant by Dependency Status and Income, Full-Time Students, 2011–12 (with Percentage Receiving Pell)__Dollars per full-time student" source="NPSAS, 2012" notes="Includes all full-time students, both Pell grant recipients and nonrecipients.">
-        <Graph file={require('./json/04_0921.json')} small="true"/>
-        <Graph file={require('./json/04_0922.json')} small="true"/>
-        <Graph file={require('./json/04_0923.json')} small="true"/>
+    <Multiples 
+      title="" 
+      subtitle="Dollars per full-time student" 
+      imageOverride = "Pell Grant by Dependency Status and Income, Full-Time Students, 2015–16 (with Percentage Peceiving Pell Grants)__Dollars per full-time student" 
+      source="National Postsecondary Student Aid Study, 2016." 
+      notes="Includes all full-time students, both Pell grant recipients and nonrecipients."
+    >
+        <Graph file={require('./json/040304.json')} small="true"/>
+        <Graph file={require('./json/040305.json')} small="true"/>
+        <Graph file={require('./json/040306.json')} small="true"/>
     </Multiples>
       <p>Part-time students also receive Pell grants, but their awards are smaller than those of similar students who are enrolled full time. </p>
       <p>PELL GRANTS SINCE 2011–12</p>
       <p><strong>After adjusting for inflation, Pell award levels have declined somewhat since 2011</strong><strong>–12.</strong></p>
-      <Graph file={require('./json/04_0100.json')}/>
+      <Graph file={require('./json/040307.json')}/>
     <h2>Post-9/11 GI Benefits</h2>
       <p><strong>Some veterans are eligible for generous benefits from the Post-9/11 GI Bill. The program covers full tuition for in-state students at public institutions and, in 2016</strong><strong>–17, up to </strong><a href="http://www.benefits.va.gov/GIBILL/resources/benefits_resources/rates/ch33/ch33rates080116.asp#TUITION" target="_blank"><strong>$21,970 </strong></a><strong>for students at participating private colleges.</strong></p>
       <p>Participation in the Post-9/11 GI Bill program has grown rapidly since it was introduced in 2009–10. Almost 850,000 students received this support in 2015–16. On average, recipients got $14,575 per year toward tuition, fees, and living expenses while they were in school.</p>
-      <Graph file={require('./json/04_0110.json')}/>
+      <Graph file={require('./json/040308.json')}/>
     <h2>Federal Grant Aid over Time</h2>
       <p><strong>Both Pell grants and aid to veterans through the Post-9/11 GI Bill increased dramatically in 2009</strong><strong>–10 as a result of policy changes, increased financial need, and increased enrollment during the economic downturn. </strong></p>
       <p>In 2008–09, undergraduate students received an average of $1,400 (in 2015 dollars) in Pell grants and $360 in veterans&rsquo; and military assistance. The following year, they received an average of $2,170 in Pell grants and $650 in veterans&rsquo; and military assistance. In 2015–16, veterans&rsquo; and military educational support provided approximately half as much aid as Pell grants.</p>
-      <Graph file={require('./json/04_0120.json')}/>      
+      <Graph file={require('./json/040309.json')}/>      
   </div>
 );
 

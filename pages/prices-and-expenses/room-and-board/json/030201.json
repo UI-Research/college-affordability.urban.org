@@ -1,0 +1,55 @@
+{
+  "title": "Living Arrangements of Full-Time Undergraduates, 2011–12",
+  "series": ["On-campus", "Off-campus", "With parents"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "On-campus",
+        0.03,
+        0.05,
+        0.58,
+        0.36,
+        0.32
+      ],
+      [
+        "Off-campus",
+        0.73,
+        0.44,
+        0.29,
+        0.46,
+        0.44
+      ],
+      [
+        "With parents",
+        0.24,
+        0.51,
+        0.13,
+        0.17,
+        0.24
+      ]
+    ],
+    "groups": [
+      ["On-campus", "Off-campus", "With parents"]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["For-profit", "Public two-year", "Private noprofit four-year", "Public four-year", "Total"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study (NPSAS, 2012; Power Stats).",
+    "notes": null
+  }
+}

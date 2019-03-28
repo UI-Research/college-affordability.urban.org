@@ -1,5 +1,9 @@
 {
+  "forceMediumHeight": true,
   "title": "Enrollment Patterns by Sector",
+  "padding": {
+    "bottom": 50
+  },
   "series": ["Graduate enrollment", "Full-time Undergraduate enrollment", "Part-time Undergraduate enrollment"],
   "data": {
     "type": "bar",
@@ -58,15 +62,13 @@
       "type": "category"
     },
     "y": {
-      "axis": {
-        "tick": {
-          "format": "number"
-        }
+      "tick": {
+        "format": "number"
       }
     }
   },
   "metadata": {
-    "source": "Integrated Postsecondary Education Data System",
+    "source": "Integrated Postsecondary Education Data System.",
     "notes": null
   }
 }

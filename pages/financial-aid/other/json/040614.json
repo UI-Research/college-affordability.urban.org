@@ -1,0 +1,40 @@
+{
+  "wideSmallMultiple": true,
+  "title": "Dependency status",
+  "series": "Private grants",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Private grants",
+        3800,
+        4300
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Dependent", "Independent"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 6
+      },
+      "max": 10000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016",
+    "notes": null
+  }
+}

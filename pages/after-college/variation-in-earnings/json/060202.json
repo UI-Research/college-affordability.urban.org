@@ -1,0 +1,63 @@
+{
+  "title": "Median earnings among employed workers by age and educational attainment",
+  "series": ["High school diploma or GED", "Some college, no degree", "Associate degree", "Bachelor's degree", "Advanced degree"],
+  "data": {
+    "type": "line",
+    "columns": [
+      [
+        "High school diploma or GED",
+        24043,
+        30379,
+        32973,
+        33796
+      ],
+      [
+        "Some college, no degree",
+        26329,
+        36064,
+        40505,
+        40700
+      ],
+      [
+        "Associate degree",
+        30912,
+        40552,
+        45000,
+        45621
+      ],
+      [
+        "Bachelor's degree",
+        41769,
+        57720,
+        62783,
+        60828
+      ],
+      [
+        "Advanced degree",
+        52268,
+        74221,
+        83817,
+        82431
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["Ages 25-34", "Ages 35-44", "Ages 45-54", "Ages 55-64"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "IPUMS 2014 ACS 5-year sample (2009–2013).",
+    "notes": null
+  }
+}

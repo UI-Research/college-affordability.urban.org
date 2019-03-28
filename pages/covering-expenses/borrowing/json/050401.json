@@ -1,0 +1,40 @@
+{
+  "title": "Percentage of undergraduates with debt and percentage borrowing for the current year, 2015-16",
+  "series": ["With debt", "Borrowed in 2015-16"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "With debt",
+        0.5648,
+        0.5287,
+        0.6015
+      ],
+      [
+        "Borrowed in 2015-16",
+        0.3963,
+        0.4422,
+        0.3495
+      ]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["All", "Dependent", "Independent"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016.",
+    "notes": null
+  }
+}

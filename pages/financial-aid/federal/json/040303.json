@@ -1,0 +1,41 @@
+{
+  "hideTooltip": true,
+  "wideSmallMultiple": true,
+  "title": "Dependency status",
+  "series": "All",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "All",
+        4850,
+        4620
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Inependent (64%)", "Dependent (40%)"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 4
+      },
+      "max": 8000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study, 2016. ",
+    "notes": null
+  }
+}

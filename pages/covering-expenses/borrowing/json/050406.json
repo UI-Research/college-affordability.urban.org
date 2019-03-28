@@ -1,0 +1,70 @@
+{
+  "overrideTickCount": true,
+  "title": "Average Federal Loans per Undergraduate Student and per Undergraduate Borrower, with Percentage of Undergraduates Borrowing, 2001-02 to 2015-16",
+  "series": ["Average per borrower", "Average per student"],
+  "data": {
+    "type": "line",
+    "columns": [
+      [
+        "Average per borrower",
+        6142.49,
+        6208.31,
+        6254.21,
+        6215.33,
+        6112.81,
+        5899.02,
+        6253.19,
+        7423.19,
+        7568.98,
+        6974.56,
+        6663.9,
+        6671.68,
+        6986.51,
+        6751.43,
+        6653.04,
+        6590.12
+      ],
+      [
+        "Average per student",
+        1417.88,
+        1498.38,
+        1658.01,
+        1722.4,
+        1730.84,
+        1671.94,
+        1815.31,
+        2286.54,
+        2588.23,
+        2566.68,
+        2512.99,
+        2454.95,
+        2331.64,
+        2175.54,
+        2049.56,
+        1928.81
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["2001-02", "2002-03", "2003-04", "2004-05", "2005-06", "2006-07", "2007-08", "2008-09", "2009-10", "2010-11", "2011-12", "2012-13", "2013-14", "2014-15", "2015-16", "2016-17"],
+      "tick": {
+        "count": 6
+      },
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "IPEDS and Baum et al. (2016).",
+    "notes": null
+  }
+}

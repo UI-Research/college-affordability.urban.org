@@ -1,0 +1,40 @@
+{
+  "wideSmallMultiple": true,
+  "title": "Dependency status",
+  "series": "Undergraduates receiving state aid",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Undergraduates receiving state aid",
+        0.3293,
+        0.2467
+      ]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Dependent", "Independent"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent",
+        "count": 4
+      },
+      "max": 0.6,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study, 2016. ",
+    "notes": null
+  }
+}
