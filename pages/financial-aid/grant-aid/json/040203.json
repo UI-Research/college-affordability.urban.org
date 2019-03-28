@@ -1,54 +1,47 @@
 {
   "title": "Independent",
-  "series": ["", ".1", ".2", ".3", ".4", ".5"],
+  "series": ["Federal grants", "Veterans and military grants", "State grants", "Institutional grants", "Employer and private grants"],
   "data": {
     "type": "bar",
     "columns": [
       [
-        "",
+        "Federal grants",
         3300,
         2900,
         3100,
         3600
       ],
       [
-        ".1",
+        "Veterans and military grants",
         1800,
         2200,
         1600,
         3500
       ],
       [
-        ".2",
+        "State grants",
         1100,
         800,
         600,
         300
       ],
       [
-        ".3",
+        "Institutional grants",
         1500,
         5100,
         200,
         900
       ],
       [
-        ".4",
+        "Employer and private grants",
         800,
         1000,
         300,
         500
-      ],
-      [
-        ".5",
-        8500,
-        12000,
-        5800,
-        8800
       ]
     ],
     "groups": [
-      ["", ".1", ".2", ".3", ".4", ".5"]
+      ["Federal grants", "Veterans and military grants", "State grants", "Institutional grants", "Employer and private grants"]
     ],
     "labels": {
       "format": "dollar"

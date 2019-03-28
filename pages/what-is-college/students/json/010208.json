@@ -2,48 +2,48 @@
   "hideTooltip": true,
   "customHideLabelTwo": true,
   "title": "Enrollment Patterns by Race and Ethnicity, First-Year Students",
-  "series": ["Public four-year", "Private four-year", "Public two-year", "For-profit", "Other"],
+  "series": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit", "Other or non-degree-granting"],
   "data": {
     "type": "bar",
     "columns": [
       [
         "Public four-year",
-        0.382,
-        0.1613,
-        0.1183,
-        0.3109
+        0.15,
+        0.14,
+        0.1,
+        0.16
       ],
       [
-        "Private four-year",
-        0.198,
-        0.0786,
-        0.0515,
-        0.1185
+        "Private nonprofit four-year",
+        0.1,
+        0.08,
+        0.06,
+        0.07
       ],
       [
         "Public two-year",
-        0.2413,
-        0.6615,
-        0.8021,
-        0.4926
+        0.61,
+        0.51,
+        0.64,
+        0.66
       ],
       [
         "For-profit",
-        0.1058,
-        0.0708,
-        0.0194,
+        0.08,
+        0.16,
+        0.1,
         0.06
       ],
       [
-        "Other",
-        0.073,
-        0.0277,
-        0.0087,
-        0.0179
+        "Other or non-degree-granting",
+        0.07,
+        0.11,
+        0.09,
+        0.05
       ]
     ],
     "groups": [
-      ["Public four-year", "Private four-year", "Public two-year", "For-profit", "Other"]
+      ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit", "Other or non-degree-granting"]
     ],
     "labels": {
       "format": "percent"
@@ -52,7 +52,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["Exclusively full-time", "Exclusively half-time", "Exclusively less than half-time", "Mixed"],
+      "categories": ["White (48%)", "Black or African American (18%)", "Hispanic or Latino (24%)", "Asian (5%)"],
       "type": "category"
     },
     "y": {
@@ -62,7 +62,7 @@
     }
   },
   "metadata": {
-    "source": "National Postsecondary Student Aid Study 2016",
+    "source": "National Postsecondary Student Aid Study 2016.",
     "notes": null
   }
 }

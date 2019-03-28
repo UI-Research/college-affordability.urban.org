@@ -1,33 +1,63 @@
 {
   "hideTooltip": true,
   "title": "Enrollment Sector By Age and Dependency, First-Year Undergraduates",
-  "series": ["<a0><a0>Less than $27,900", "<a0><a0>$27,900-62,999", "<a0><a0>$63,000-113,499", "<a0><a0>$113,500 or more"],
+  "series": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit", "Other or non-degree-granting"],
   "data": {
     "type": "bar",
     "columns": [
       [
-        "<a0><a0>Less than $27,900",
-        0.2523,
-        0.2569
+        "Public four-year",
+        0.34,
+        0.14,
+        0.05,
+        0.04,
+        0.03,
+        0.23,
+        0.05
       ],
       [
-        "<a0><a0>$27,900-62,999",
-        0.2532,
-        0.2582
+        "Private nonprofit four-year",
+        0.17,
+        0.08,
+        0.04,
+        0.06,
+        0.06,
+        0.11,
+        0.05
       ],
       [
-        "<a0><a0>$63,000-113,499",
-        0.2526,
-        0.2623
+        "Public two-year",
+        0.44,
+        0.64,
+        0.63,
+        0.62,
+        0.67,
+        0.57,
+        0.64
       ],
       [
-        "<a0><a0>$113,500 or more",
-        0.2419,
-        0.2226
+        "For-profit",
+        0.02,
+        0.07,
+        0.16,
+        0.17,
+        0.15,
+        0.04,
+        0.15
+      ],
+      [
+        "Other or non-degree-granting",
+        0.03,
+        0.07,
+        0.12,
+        0.11,
+        0.09,
+        0.05,
+        0.11
       ]
     ],
     "groups": [
-      ["<a0><a0>Less than $27,900", "<a0><a0>$27,900-62,999", "<a0><a0>$63,000-113,499", "<a0><a0>$113,500 or more"]
+      ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit", "Other or non-degree-granting"]
     ],
     "labels": {
       "format": "percent"
@@ -36,7 +66,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["All undergraduates", "First-year undergraduates "],
+      "categories": ["18 or younger (20%)", "19 to 23 (41%)", "24 to 29 (17%)", "30 to 39 (13%)", "40 or older (9%)", "Dependent student (50%)", "Independent student (50%)"],
       "type": "category"
     },
     "y": {
@@ -46,7 +76,7 @@
     }
   },
   "metadata": {
-    "source": "National Postsecondary Student Aid Study 2016",
+    "source": "National Postsecondary Student Aid Study 2016.",
     "notes": null
   }
 }

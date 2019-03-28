@@ -1,5 +1,4 @@
 {
-  "hideTooltip": true,
   "title": "Undergraduate Postsecondary Enrollment",
   "series": ["Public four-year", "Public two-year", "Private nonprofit four-year", "For-profit"],
   "data": {
@@ -127,7 +126,7 @@
       ]
     ],
     "labels": {
-      "format": "dollar"
+      "format": "number"
     }
   },
   "axis": {
@@ -138,12 +137,12 @@
     },
     "y": {
       "tick": {
-        "format": "dollar"
+        "format": "number"
       }
     }
   },
   "metadata": {
-    "source": "United States Department of Education Digest of Education Statisitcs",
+    "source": "United States Department of Education Digest of Education Statisitcs.",
     "notes": null
   }
 }

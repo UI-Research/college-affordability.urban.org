@@ -1,7 +1,7 @@
 {
   "wideSmallMultiple": true,
   "title": "Independent",
-  "series": ["Tuition and fees covered by grant aid", "Remaining (net) tuition  and fees", "Living expenses covered by grant aid", "Remaining (net) living expenses", ""],
+  "series": ["Tuition and fees covered by grant aid", "Remaining (net) tuition  and fees", "Living expenses covered by grant aid", "Remaining (net) living expenses"],
   "data": {
     "type": "bar",
     "columns": [
@@ -40,19 +40,10 @@
         22300,
         14600,
         15900
-      ],
-      [
-        "",
-        24000,
-        26000,
-        25800,
-        34100,
-        29700,
-        33200
       ]
     ],
     "groups": [
-      ["Tuition and fees covered by grant aid", "Remaining (net) tuition  and fees", "Living expenses covered by grant aid", "Remaining (net) living expenses", ""]
+      ["Tuition and fees covered by grant aid", "Remaining (net) tuition  and fees", "Living expenses covered by grant aid", "Remaining (net) living expenses"]
     ]
   },
   "axis": {

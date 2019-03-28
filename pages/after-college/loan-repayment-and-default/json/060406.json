@@ -20,7 +20,10 @@
         0.7415,
         0.6118
       ]
-    ]
+    ],
+    "labels": {
+      "format": "percent"
+    }
   },
   "axis": {
     "rotated": false,
@@ -30,7 +33,7 @@
     },
     "y": {
       "tick": {
-        "format": null
+        "format": "percent"
       }
     }
   },

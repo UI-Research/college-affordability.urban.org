@@ -2,48 +2,48 @@
   "hideTooltip": true,
   "customHideLabelTwo": true,
   "title": "Enrollment Patterns by Race and Ethnicity",
-  "series": ["Public four-year", "Private four-year", "Public two-year", "For-profit", "Other"],
+  "series": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit", "Other or non-degree-granting"],
   "data": {
     "type": "bar",
     "columns": [
       [
         "Public four-year",
-        0.1531,
-        0.1385,
-        0.1044,
-        0.1632
+        0.32,
+        0.26,
+        0.24,
+        0.35
       ],
       [
-        "Private four-year",
-        0.0987,
-        0.0819,
-        0.0611,
-        0.0682
+        "Private nonprofit four-year",
+        0.16,
+        0.12,
+        0.1,
+        0.13
       ],
       [
         "Public two-year",
-        0.606,
-        0.5055,
-        0.642,
-        0.6649
+        0.42,
+        0.41,
+        0.52,
+        0.44
       ],
       [
         "For-profit",
-        0.075,
-        0.164,
-        0.099,
-        0.0585
+        0.06,
+        0.15,
+        0.08,
+        0.05
       ],
       [
-        "Other",
-        0.0672,
-        0.1102,
-        0.0935,
-        0.0452
+        "Other or non-degree-granting",
+        0.04,
+        0.06,
+        0.05,
+        0.02
       ]
     ],
     "groups": [
-      ["Public four-year", "Private four-year", "Public two-year", "For-profit", "Other"]
+      ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit", "Other or non-degree-granting"]
     ],
     "labels": {
       "format": "percent"
@@ -52,7 +52,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["White", "Black or African American", "Hispanic or Latino", "Asian"],
+      "categories": ["White (53%)", "Black or African American (16%)", "Hispanic or Latino (20%)", "Asian (6%)"],
       "type": "category"
     },
     "y": {
@@ -62,7 +62,7 @@
     }
   },
   "metadata": {
-    "source": "National Postsecondary Student Aid Study 2016",
+    "source": "National Postsecondary Student Aid Study 2016.",
     "notes": null
   }
 }

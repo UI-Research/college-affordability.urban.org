@@ -1,11 +1,14 @@
 {
   "title": "Official Three-Year Cohort Default Rates by Year Entering Repayment and Sector",
-  "series": ["2011-12", "2012-13", "2013-14"],
+  "size": {
+    "height": 400
+  },
+  "series": ["2011‒12", "2012‒13", "2013‒14"],
   "data": {
     "type": "bar",
     "columns": [
       [
-        "2011-12",
+        "2011‒12",
         0.177,
         0.147,
         0.191,
@@ -14,7 +17,7 @@
         0.118
       ],
       [
-        "2012-13",
+        "2012‒13",
         0.168,
         0.14,
         0.185,
@@ -23,7 +26,7 @@
         0.113
       ],
       [
-        "2013-14",
+        "2013‒14",
         0.175,
         0.146,
         0.183,
@@ -31,15 +34,12 @@
         0.07,
         0.115
       ]
-    ],
-    "labels": {
-      "format": "percent"
-    }
+    ]
   },
   "axis": {
     "rotated": false,
     "x": {
-      "categories": ["For-profit 2-year", "For-profit 4-year", "Public 2-year", "Public 4-year", "Private nonprofit 4-yr", "All"],
+      "categories": ["For-profit two-year", "For-profit four-year", "Public two-year", "Public four-year", "Private nonprofit four-year", "All"],
       "type": "category"
     },
     "y": {

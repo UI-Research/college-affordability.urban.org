@@ -1,34 +1,36 @@
 {
   "title": "Living Arrangements of Full-Time Undergraduates, 2011–12",
-  "series": ["", ".1"],
+  "series": ["On-campus", "Off-campus", "With parents"],
   "data": {
     "type": "bar",
     "columns": [
       [
-        "",
-        11630,
-        10230,
-        10480,
-        12680,
-        14430,
-        11930,
-        11760,
-        11140
+        "On-campus",
+        0.03,
+        0.05,
+        0.58,
+        0.36,
+        0.32
       ],
       [
-        ".1",
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "Off-campus",
+        0.73,
+        0.44,
+        0.29,
+        0.46,
+        0.44
+      ],
+      [
+        "With parents",
+        0.24,
+        0.51,
+        0.13,
+        0.17,
+        0.24
       ]
     ],
     "groups": [
-      ["", ".1"]
+      ["On-campus", "Off-campus", "With parents"]
     ],
     "labels": {
       "format": "percent"
@@ -37,7 +39,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["Private nonprofit doctoral", "Private nonprofit master's", "Private nonprofit bachelor's", "All private nonprofit four-year", "Public research in-state", "Public master's in-state", "Public bachelor's in-state", "Public four-year in-state"],
+      "categories": ["For-profit", "Public two-year", "Private noprofit four-year", "Public four-year", "Total"],
       "type": "category"
     },
     "y": {

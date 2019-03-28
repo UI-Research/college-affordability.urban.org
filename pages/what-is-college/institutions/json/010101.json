@@ -1,5 +1,6 @@
 {
   "forceMediumHeight": true,
+  "overrideTickCount": true,
   "title": "Degree-Granting Institutions by Sector and Degree-Type in Fall 2014",
   "series": "Number of institutions",
   "data": {
@@ -32,12 +33,18 @@
     },
     "y": {
       "tick": {
-        "format": "number"
+        "format": "number",
+        "count": 6
+      },
+      "max": 5000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
       }
     }
   },
   "metadata": {
-    "source": "Integrated Postsecondary Education Data System",
+    "source": "Integrated Postsecondary Education Data System.",
     "notes": null
   }
 }

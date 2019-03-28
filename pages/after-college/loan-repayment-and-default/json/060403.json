@@ -1,5 +1,8 @@
 {
   "title": "New Monthly Repayments Chart",
+  "size": {
+    "height": 400
+  },
   "series": ["Debt", "10-year Fixed", "Family size = 1", "Family size = 3"],
   "data": {
     "type": "bar",
