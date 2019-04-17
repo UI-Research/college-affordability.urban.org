@@ -1,6 +1,6 @@
 {
   "overrideTickCount": true,
-  "title": "Unemployment Rates Among Individuals in the Labor Force Ages 25–34 by Educational Attainment, 1994–2014",
+  "title": "Unemployment Rates Among Individuals in the Labor Force Ages 25–34 by Educational Attainment, 1993–2017",
   "size": {
     "height": 400
   },
@@ -179,7 +179,7 @@
     }
   },
   "metadata": {
-    "source": "CPS-ASEC 1995–2015.",
+    "source": "CPS-ASEC 1993–2017.",
     "notes": null
   }
 }

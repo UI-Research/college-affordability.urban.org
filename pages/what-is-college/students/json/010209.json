@@ -1,6 +1,6 @@
 {
   "hideTooltip": true,
-  "title": "Sectors of Full-Time and Part-Time Students",
+  "title": "Sectors of Full-Time and Part-Time Students, 2015-16",
   "series": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit", "Other or non-degree-granting"],
   "data": {
     "type": "bar",

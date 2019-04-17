@@ -1,6 +1,6 @@
 {
   "hideTooltip": true,
-  "title": "Enrollment Sector By Age and Dependency, First-Year Undergraduates",
+  "title": "Enrollment Sector By Age and Dependency, First-Year Undergraduates, 2015-16",
   "series": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit", "Other or non-degree-granting"],
   "data": {
     "type": "bar",

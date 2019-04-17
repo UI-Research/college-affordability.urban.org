@@ -1,5 +1,5 @@
 {
-  "title": "Median Income of Families by Age Group in 2015 dollars, 1985 to 2015 ",
+  "title": "Median Income of Families by Age Group in 2016 dollars, 1985 to 2016",
   "series": ["Ages 25 to 34", "Ages 35 to 44", "Ages 45 to 54", "Ages 55 to 64"],
   "data": {
     "type": "line",

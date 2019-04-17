@@ -1,4 +1,5 @@
 {
+  "overrideTickCount": true,
   "title": "Public research",
   "series": "Average Endowment Income per Student",
   "data": {
@@ -30,6 +31,7 @@
         "format": "dollar",
         "count": 5
       },
+      "max": 8000,
       "padding": {
         "top": 0,
         "bottom": 0

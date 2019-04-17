@@ -1,6 +1,6 @@
 {
   "hideTooltip": true,
-  "title": "Enrollment Sector By Age and Dependency: All Undergraduates",
+  "title": "Enrollment Sector By Age and Dependency: All Undergraduates, 2015-16",
   "series": ["Public four-year", "Private four-year", "Public two-year", "For-profit", "Other"],
   "data": {
     "type": "bar",
@@ -50,8 +50,8 @@
         0.03,
         0.03,
         0.06,
-        0.06,
         0.05,
+        0.04,
         0.03,
         0.06
       ]

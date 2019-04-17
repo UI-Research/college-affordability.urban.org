@@ -1,6 +1,6 @@
 {
   "hideTooltip": true,
-  "title": "Average Published Tuition and Fees by Sector and Degree Type, 2015–16",
+  "title": "Average Published Tuition and Fees by Sector and Degree Type, 2018–19",
   "series": "Amount",
   "data": {
     "type": "bar",
@@ -34,7 +34,7 @@
     }
   },
   "metadata": {
-    "source": "Integrated Postsecondary Education Data System (IPEDS), 2015; Jennifer Ma, Sandy Baum, Matea Pender, and D'Wayne Bell, Trends in College Pricing 2015, (New York: College Board, 2015).",
+    "source": "Jennifer Ma, Sandy Baum, Matea Pender, and D'Wayne Bell, Trends in College Pricing 2018, (New York: College Board, 2018).",
     "notes": null
   }
 }

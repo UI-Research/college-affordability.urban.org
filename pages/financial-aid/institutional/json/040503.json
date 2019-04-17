@@ -1,81 +1,81 @@
 {
-  "title": "Average Need-Based and Non-Need-Based Institutional Grant Aid per Full-Time Dependent Student (and Percentage Receiving Institutional Aid), Private Nonprofit Four-Year Institutions, 2011-12",
+  "title": "Average Need-Based and Non-Need-Based Institutional Grant Aid per Full-Time Dependent Student (and Percentage Receiving Institutional Aid), Private Nonprofit Four-Year Institutions, 2015-16",
   "series": ["Need-based institutional grants", "Non-need-based institutional grants"],
   "data": {
     "type": "bar",
     "sets": {
       "set1": [
-        "Lowest tuition group",
+        "Lowest",
         [
           [
             "Need-based institutional grants",
             3070,
-            2833.9,
-            2467.3,
-            2310.6
+            5432.9,
+            12328,
+            28505.5
           ],
           [
             "Non-need-based institutional grants",
             2693.9,
-            3725.1,
-            6638.9,
-            6494
+            7418.9,
+            8495,
+            4220.1
           ]
         ]
       ],
       "set2": [
-        "Second tuition group",
+        "Second",
         [
           [
             "Need-based institutional grants",
-            5432.9,
+            2833.9,
             5233,
-            3854.8,
-            2379
+            7734.5,
+            25312.8
           ],
           [
             "Non-need-based institutional grants",
-            7418.9,
+            3725.1,
             9287,
-            11287.7,
-            10442.5
+            11289.5,
+            6926
           ]
         ]
       ],
       "set3": [
-        "Third tuition group",
+        "Third",
         [
           [
             "Need-based institutional grants",
-            12328,
-            7734.5,
+            2467.3,
+            3854.8,
             8048.1,
-            4347.6
+            17912
           ],
           [
             "Non-need-based institutional grants",
-            8495,
-            11289.5,
+            6638.9,
+            11287.7,
             10662.5,
-            10595.9
+            6364.7
           ]
         ]
       ],
       "set4": [
-        "Highest tuition group",
+        "Fourth ",
         [
           [
             "Need-based institutional grants",
-            28505.5,
-            25312.8,
-            17912,
+            2310.6,
+            2379,
+            4347.6,
             6711.8
           ],
           [
             "Non-need-based institutional grants",
-            4220.1,
-            6926,
-            6364.7,
+            6494,
+            10442.5,
+            10595.9,
             4693.5
           ]
         ]
@@ -91,7 +91,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["Lowest", "Second", "Third", "Fourth "],
+      "categories": ["Lowest tuition group", "Second tuition group", "Third tuition group", "Highest tuition group"],
       "label": "Parental income quartile",
       "type": "category"
     },
@@ -102,7 +102,7 @@
     }
   },
   "metadata": {
-    "source": "Baum et al, Trends in Student Aid 2014, The College Board, based on NPSAS 2012.",
+    "source": "Baum et al, Trends in Student Aid 2018, The College Board, based on NPSAS 2016.",
     "notes": null
   }
 }

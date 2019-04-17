@@ -1,12 +1,12 @@
 {
-  "title": "Distribution of Tax Credits and Deductions by Adjusted Gross Income",
-  "series": "share",
+  "hideTooltip": true,
+  "title": "Distribution of Tax Credits and Deductions by Adjusted Gross Income, 2016",
+  "series": "0.22",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "share",
-        0.22,
+        "0.22",
         0.24,
         0.16,
         0.14,
@@ -20,7 +20,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["Less than $25,000", "$25,000 to $49,999", "$50,000 to $74,999", "$75,000 to $99,999", "$100,000 to $180,000"],
+      "categories": ["$25,000 to $49,999", "$50,000 to $74,999", "$75,000 to $99,999", "$100,000 to $180,000"],
       "type": "category"
     },
     "y": {
@@ -30,7 +30,7 @@
     }
   },
   "metadata": {
-    "source": null,
+    "source": "Baum et al, Trends in Student Aid 2018, table 26A. ",
     "notes": null
   }
 }

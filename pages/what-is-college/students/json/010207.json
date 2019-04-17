@@ -1,7 +1,7 @@
 {
   "hideTooltip": true,
   "customHideLabelTwo": true,
-  "title": "Enrollment Patterns by Race and Ethnicity",
+  "title": "Enrollment Patterns by Race and Ethnicity, 2015-16",
   "series": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit", "Other or non-degree-granting"],
   "data": {
     "type": "bar",

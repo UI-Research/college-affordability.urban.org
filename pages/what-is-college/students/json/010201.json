@@ -1,6 +1,6 @@
 {
   "hideTooltip": true,
-  "title": "Distribution of Enrollment by Sector Among All Undergraduates versus First-Year Only",
+  "title": "Distribution of Enrollment by Sector Among All Undergraduates versus First-Year Only, 2015-16",
   "series": ["Public four-year", "Private four-year", "Public two-year", "For-profit", "Other"],
   "data": {
     "type": "bar",

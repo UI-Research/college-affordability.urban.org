@@ -17,7 +17,7 @@ let singlepage = (
       <p><strong>Overall, subsidies have shrunk in recent years, leaving revenue from tuition and fees to cover more of the cost of education.</strong></p>
       <Multiples 
         title="Education and Related Spending per Full-Time Equivalent Student at Public Institutions, 2005–06 to 2013–14" 
-        source="Integrated Postsecondary Education Data System (IPEDS)." 
+        source="Jennifer Ma, Sandy Baum, Matea Pender, and Meredith Welch, Trends in College Pricing 2018 (New York: College Board, 2018)." 
         notes="" 
         pluralSources="true" 
       >
@@ -29,7 +29,7 @@ let singlepage = (
       <p><strong>At private institutions, unlike public institutions, tuition revenues covered roughly the same share of education spending from 2005–06 to 2013–14.</strong></p>
       <Multiples 
         title="Education and Related Spending per Full-Time Equivalent Student at Private Nonprofit Institutions, 2005–06 to 2013–16" 
-        source="Integrated Postsecondary Education Data System (IPEDS)." 
+        source="Jennifer Ma, Sandy Baum, Matea Pender, and Meredith Welch, Trends in College Pricing 2018 (New York: College Board, 2018)." 
         pluralNotes="true" 
         // notes="Institutions are sorted according to the Carnegie Classification of Institutions of Higher Education framework. FTE = full-time equivalent. This graph excludes the small private nonprofit two-year and special purpose sectors."
       >

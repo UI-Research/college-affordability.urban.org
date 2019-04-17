@@ -1,32 +1,96 @@
 {
-  "title": "Percentage of Undergraduate Students Participating in Federal Work-Study, 2011–17",
+  "title": "Percentage of Undergraduate Students Participating in Federal Work-Study, 2015–16",
   "subtitle": "For-profit",
   "data": {
     "type": "bar",
     "sets": {
       "set1": [
-        "type1",
+        "All dependent students",
         [
           [
-            "Test Data",
-            7.25,
-            7.5,
-            7.85,
-            8.25,
-            8.25
+            "0.065007",
+            0.0775,
+            0.0336,
+            0.1547,
+            0.0529,
+            0.0702
           ]
         ]
       ],
       "set2": [
-        "type2",
+        "Less than $27,900",
         [
           [
-            "Test Data",
-            7.25,
-            7.5,
-            7.85,
-            8.25,
-            8.25
+            "0.065007",
+            0.0936,
+            0.0394,
+            0.1816,
+            0.0904,
+            0.081
+          ]
+        ]
+      ],
+      "set3": [
+        "$27,900-62,999",
+        [
+          [
+            "0.065007",
+            0.0914,
+            0.0454,
+            0.1833,
+            0.0778,
+            0.0537
+          ]
+        ]
+      ],
+      "set4": [
+        "$63,000-113,499",
+        [
+          [
+            "0.065007",
+            0.0788,
+            0.0313,
+            0.1817,
+            0.0504,
+            0.0711
+          ]
+        ]
+      ],
+      "set5": [
+        "$113,500 or more",
+        [
+          [
+            "0.065007",
+            0.0541,
+            0.0088,
+            0.1137,
+            0.0259,
+            0.0718
+          ]
+        ]
+      ],
+      "set6": [
+        "All independent students ",
+        [
+          [
+            "0.065007",
+            0.0295,
+            0.029,
+            0.0514,
+            0.0323,
+            0.0116
+          ]
+        ]
+      ],
+      "set7": [
+        "All undergraduates",
+        [
+          [
+            "0.065007",
+            0.0321,
+            0.1345,
+            0.0529,
+            0.0274
           ]
         ]
       ]
@@ -38,7 +102,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["United States", "New Mexico", "Missouri", "Delaware", "Florida"],
+      "categories": ["Total", "Public two-year", "Private nonprofit four-year", "Public four-year", "For-profit"],
       "type": "category"
     },
     "y": {

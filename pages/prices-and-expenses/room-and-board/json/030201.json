@@ -1,5 +1,5 @@
 {
-  "title": "Living Arrangements of Full-Time Undergraduates, 2011–12",
+  "title": "Living Arrangements of Full-Time Undergraduates, 2015–16",
   "series": ["On-campus", "Off-campus", "With parents"],
   "data": {
     "type": "bar",
@@ -49,7 +49,7 @@
     }
   },
   "metadata": {
-    "source": "National Postsecondary Student Aid Study (NPSAS, 2012; Power Stats).",
+    "source": "National Postsecondary Student Aid Study (NPSAS, 2016; Power Stats).",
     "notes": null
   }
 }

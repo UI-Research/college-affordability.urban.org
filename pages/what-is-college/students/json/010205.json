@@ -1,6 +1,6 @@
 {
   "hideTooltip": true,
-  "title": "Enrollment Sectors of All Dependent Undergraduates by Parent Income",
+  "title": "Enrollment Sectors of All Dependent Undergraduates by Parent Income, 2015-16",
   "series": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit", "Other or non-degree-granting"],
   "data": {
     "type": "bar",

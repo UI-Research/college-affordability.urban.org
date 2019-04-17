@@ -1,7 +1,7 @@
 {
   "wideSmallMultiple": true,
   "title": "All dependent students",
-  "series": ["Institutional need-based", "Institutional non-need-based"],
+  "series": ["Institutional need-based", "Institutional non-need<96>based"],
   "data": {
     "type": "bar",
     "columns": [
@@ -10,12 +10,12 @@
         826.4445
       ],
       [
-        "Institutional non-need-based",
+        "Institutional non-need<96>based",
         1304.95
       ]
     ],
     "groups": [
-      ["Institutional need-based", "Institutional non-need-based"]
+      ["Institutional need-based", "Institutional non-need<96>based"]
     ],
     "labels": {
       "format": "dollar"
@@ -40,7 +40,7 @@
     }
   },
   "metadata": {
-    "source": "Baum et al, Trends in Student Aid 2014, The College Board, based on NPSAS 2012.",
+    "source": "Baum et al, Trends in Student Aid 2018, The College Board, based on NPSAS 2016.",
     "notes": null
   }
 }

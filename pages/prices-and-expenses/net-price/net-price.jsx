@@ -41,7 +41,7 @@ let singlepage = (
                 <p><em>Another issue is that the income categories available in these federal data do not distinguish between independent and dependent students. The financial aid system, however, treats students with similar family incomes quite differently, depending on whether the income is that of the student and spouse or that of their parents.</em></p>
             </Box>
             <Multiples 
-                title="Cost of Attendance (Total Expenses) Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, 2011–12" 
+                title="Cost of Attendance (Total Expenses) Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, 2015–16" 
                 source="National Postsecondary Student Aid Study (NPSAS), 2016." 
                 notes="Net tuition and fee amounts are calculated by subtracting average total grant aid for all full-time students, including those who do and do not receive grant aid, from the published tuition and fee price. This yields a slightly different measure than that identified in NPSAS as net tuition and fees, because that calculation excludes any aid individual students receive that exceeds their tuition and fee prices." 
                 pluralNotes="true"

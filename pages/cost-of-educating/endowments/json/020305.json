@@ -1,4 +1,5 @@
 {
+  "overrideTickCount": true,
   "title": "Private nonprofit bachelor's",
   "series": "Average Endowment Income per Student",
   "data": {
@@ -28,9 +29,9 @@
     "y": {
       "tick": {
         "format": "dollar",
-        "count": 5
+        "count": 6
       },
-      "max": 30000,
+      "max": 25000,
       "padding": {
         "top": 0,
         "bottom": 0

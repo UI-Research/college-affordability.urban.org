@@ -1,12 +1,12 @@
 {
-  "title": "State Grant Aid per Full-time Equivalent Undergraduate, 2014–15",
+  "title": "State Grant Aid per Full-time Equivalent Undergraduate, 2015–16",
   "highlightIndex": 19,
-  "series": "State grant aid per FTE undergraduate",
+  "series": "",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "State grant aid per FTE undergraduate",
+        "",
         2100,
         1900,
         1640,
@@ -28,7 +28,7 @@
         790,
         790,
         660,
-        60,
+        630,
         590,
         560,
         550,
@@ -77,7 +77,7 @@
     }
   },
   "metadata": {
-    "source": "National Association of State Student Grant and Aid Programs (NASSGAP) Annual Survey, 2014–15, Table 12.",
+    "source": "National Association of State Student Grant and Aid Programs (NASSGAP) Annual Survey, 2015–16, Table 12.",
     "notes": null
   }
 }

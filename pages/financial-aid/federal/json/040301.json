@@ -2,12 +2,12 @@
   "hideTooltip": true,
   "wideSmallMultiple": true,
   "title": "All students",
-  "series": "All",
+  "series": "test",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "All",
+        "test",
         4700
       ]
     ],
@@ -35,6 +35,6 @@
   },
   "metadata": {
     "source": "National Postsecondary Student Aid Study, 2016. ",
-    "notes": null
+    "notes": "Includes all full-time students, both Pell grant recipients and nonrecipients."
   }
 }
