@@ -1,6 +1,6 @@
 {
   "hideTooltip": true,
-  "title": "Distribution of Full-Time Students by Published Tuition and Fees within Sectors, 2017–18",
+  "title": "Distribution of Full-Time Students by Published Tuition and Fees within Sectors, 2018–19",
   "data": {
     "type": "bar",
     "sets": {
@@ -103,7 +103,7 @@
     }
   },
   "metadata": {
-    "source": "IPEDS.",
+    "source": "Ma et al., Trends in College Pricing 2018, figure 2.",
     "notes": null
   }
 }

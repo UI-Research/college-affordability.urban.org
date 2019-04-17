@@ -1,5 +1,5 @@
 {
-  "title": "Federal Education Tax Credits and Deductions",
+  "title": "Federal Education Tax Credits and Deductions, 1998-2016",
   "series": ["Total credits", "Total deductions"],
   "data": {
     "type": "area",
@@ -49,17 +49,11 @@
         "format": "dollar",
         "count": 6
       },
-      "label": "Billions",
-      "padding": {
-        "left": 0,
-        "right": 0,
-        "top": 0,
-        "bottom": 0
-      }
+      "label": "Billions"
     }
   },
   "metadata": {
-    "source": null,
+    "source": "Sandy Baum, Jennifer Ma, Matea Pender, and Meredith Welch, Trends in Student Aid 2018 (Washington, DC: College Board, 2018), table 26B.",
     "notes": null
   }
 }

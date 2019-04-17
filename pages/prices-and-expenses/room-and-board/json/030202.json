@@ -1,5 +1,5 @@
 {
-  "title": "Average Published On-Campus Room and Board Price by Type of Institution, 2016–17",
+  "title": "Average Published On-Campus Room and Board Price by Type of Institution, 2018–19",
   "series": "Price",
   "data": {
     "type": "bar",
@@ -33,7 +33,7 @@
     }
   },
   "metadata": {
-    "source": "IPEDS, 2015; and the percentage increase from 2014–15 to 2016–17 from Jennifer Ma, Sandy Baum, Matea Pender, and D’Wayne Bell, Trends in College Pricing 2015 (New York: College Board, 2015).",
+    "source": "Jennifer Ma, Sandy Baum, Matea Pender, and D'Wayne Bell, Trends in College Pricing 2018, (New York: College Board, 2018), table 1.",
     "notes": null
   }
 }

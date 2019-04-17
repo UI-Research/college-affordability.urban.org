@@ -47,7 +47,7 @@
   "axis": {
     "rotated": false,
     "x": {
-      "categories": ["Ages 25-34", "Ages 35-44", "Ages 45-54", "Ages 55-64"],
+      "categories": ["25-34", "35-44", "45-54", "55-64"],
       "type": "category"
     },
     "y": {
@@ -57,7 +57,7 @@
     }
   },
   "metadata": {
-    "source": "IPUMS 2014 ACS 5-year sample (2009–2013).",
+    "source": "IPUMS 2016 ACS 5-year sample (2012–2016).",
     "notes": null
   }
 }

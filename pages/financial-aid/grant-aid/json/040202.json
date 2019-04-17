@@ -7,36 +7,36 @@
     "columns": [
       [
         "Federal grants",
-        0.1011,
         0.2967,
+        0.1011,
         0.5589,
         0.4197
       ],
       [
         "Veterans and military grants",
-        0.0335,
         0.0675,
+        0.0335,
         0.1204,
         0.3266
       ],
       [
         "State grants",
-        0.0495,
         0.1975,
+        0.0495,
         0.1418,
         0.0447
       ],
       [
         "Institutional grants",
-        0.7378,
         0.3114,
+        0.7378,
         0.0989,
         0.148
       ],
       [
         "Employer and private grants",
-        0.078,
         0.1269,
+        0.078,
         0.0801,
         0.0609
       ]
@@ -51,7 +51,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["Private nonprofit four-year", "Public four-year", "Public two-year", "For-profit"],
+      "categories": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit"],
       "type": "category"
     },
     "y": {
@@ -61,7 +61,7 @@
     }
   },
   "metadata": {
-    "source": "Sandy Baum, Jennifer Ma, Matea Pender, D'Wayne Bell, Trends in Student Aid 2015 (New York: College Board, 2015), based on data from the National Center for Education Statistics, NPSAS, 2012.",
-    "notes": null
+    "source": "Sandy Baum, Jennifer Ma, Matea Pender, D'Wayne Bell, Trends in Student Aid 2018 (New York: College Board, 2018), based on data from the National Center for Education Statistics, NPSAS, 2012.",
+    "notes": "Averages include both grant recipients and those who did not receive aid."
   }
 }

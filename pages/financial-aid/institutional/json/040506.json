@@ -1,7 +1,7 @@
 {
   "wideSmallMultiple": true,
   "title": "Dependent students' parental income quartile",
-  "series": ["Institutional need-based", "Institutional non-need-based"],
+  "series": ["Institutional need-based", "Institutional non-need<96>based"],
   "data": {
     "type": "bar",
     "columns": [
@@ -13,7 +13,7 @@
         226.9605
       ],
       [
-        "Institutional non-need-based",
+        "Institutional non-need<96>based",
         635.5771,
         1070.85,
         1443.56,
@@ -21,7 +21,7 @@
       ]
     ],
     "groups": [
-      ["Institutional need-based", "Institutional non-need-based"]
+      ["Institutional need-based", "Institutional non-need<96>based"]
     ],
     "labels": {
       "format": "dollar"
@@ -46,7 +46,7 @@
     }
   },
   "metadata": {
-    "source": "Baum et al, Trends in Student Aid 2014, The College Board, based on NPSAS 2012.",
+    "source": "Baum et al, Trends in Student Aid 2018, The College Board, based on NPSAS 2016.",
     "notes": null
   }
 }

@@ -1,6 +1,6 @@
 {
   "title": "Average Pell Grant and Veteran’s and Military Benefits per FTE Undergraduate Student ",
-  "series": ["Pell per FTE undergraduate", "Veterans and military aid per FTE undergraduate"],
+  "series": ["Pell per FTE undergraduate", "Veterans and military aid per FTE undergraduat"],
   "data": {
     "type": "line",
     "columns": [
@@ -35,7 +35,7 @@
         2110
       ],
       [
-        "Veterans and military aid per FTE undergraduate",
+        "Veterans and military aid per FTE undergraduat",
         140,
         160,
         170,
@@ -72,7 +72,7 @@
   "axis": {
     "rotated": false,
     "x": {
-      "categories": ["90-'91", "91-'92", "92-'93", "93-'94", "94-'95", "95-'96", "96-'97", "97-'98", "98-'99", "99-'00", "00-'01", "01-'02", "02-'03", "03-'04", "04-'05", "05-'06", "06-'07", "07-'08", "08-'09", "09-'10", "10-'11", "11-'12", "12-'13", "13-'14", "14-'15", "15-'16", "16-'17 "],
+      "categories": ["90-'91", "91-'92", "92-'93", "93-'94", "94-'95", "95-'96", "96-'97", "97-'98", "98-'99", "99-'00", "00-'01", "01-'02", "02-'03", "03-'04", "04-'05", "05-'06", "06-'07", "07-'08", "08-'09", "09-'10", "10-'11", "11-'12", "12-'13", "13-'14", "14-'15", "15-'16", "16-'17"],
       "type": "category"
     },
     "y": {

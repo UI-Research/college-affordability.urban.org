@@ -1,0 +1,35 @@
+{
+  "title": "Independent Students: Enrollment by Sector, 2011-12",
+  "series": "0.188309",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "0.188309",
+        0.1071,
+        0.5138,
+        0.1296,
+        0.0612
+      ]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["Private nonprofit four-year", "Public two-year", "For-profit", "Other"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016.",
+    "notes": null
+  }
+}

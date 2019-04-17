@@ -1,12 +1,12 @@
 {
   "wideSmallMultiple": true,
   "title": "All full-time undergraduates",
-  "series": "Private grants",
+  "series": "",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "Private grants",
+        "",
         0.1864
       ]
     ],

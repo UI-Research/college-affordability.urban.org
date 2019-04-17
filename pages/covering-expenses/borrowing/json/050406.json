@@ -1,6 +1,6 @@
 {
   "overrideTickCount": true,
-  "title": "Average Federal Loans per Undergraduate Student and per Undergraduate Borrower, with Percentage of Undergraduates Borrowing, 2001-02 to 2015-16",
+  "title": "Average Federal Loans per Undergraduate Student and per Undergraduate Borrower, with Percentage of Undergraduates Borrowing, 2001-02 to 2016-17",
   "series": ["Average per borrower", "Average per student"],
   "data": {
     "type": "line",

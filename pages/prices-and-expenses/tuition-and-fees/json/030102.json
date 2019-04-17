@@ -1,6 +1,6 @@
 {
   "overrideTickCount": true,
-  "title": "Inflation-Adjusted Growth in Average Published Tuition and Fees from 1990–91 to 2015–16, by Sector",
+  "title": "Inflation-Adjusted Growth in Average Published Tuition and Fees from 1971–72 to 2018–19, by Sector",
   "series": ["Private nonprofit four-year", "Public four-year", "Public two-year"],
   "data": {
     "type": "line",
@@ -188,7 +188,7 @@
     }
   },
   "metadata": {
-    "source": "IPEDS, 2015; Ma et al., Trends in College Pricing 2015.",
+    "source": "Ma et al., Trends in College Pricing 2018, table 2.",
     "notes": null
   }
 }

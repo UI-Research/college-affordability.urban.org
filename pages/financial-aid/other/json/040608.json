@@ -1,13 +1,12 @@
 {
   "wideSmallMultiple": true,
   "title": "Dependent students' parental income",
-  "series": "Private grants",
+  "series": "0.16967",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "Private grants",
-        0.1697,
+        "0.16967",
         0.2127,
         0.236,
         0.209
@@ -20,7 +19,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["Less than $27,900", "$27,900-62,999", "$63,000-113,499", "$113,500 or more"],
+      "categories": ["$27,900-62,999", "$63,000-113,499", "$113,500 or more"],
       "type": "category"
     },
     "y": {

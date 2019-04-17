@@ -23,7 +23,9 @@ let singlepage = (
       <p>Because of the wide range of tuition and fees among private nonprofit four-year colleges and universities, COA also varies most widely in this sector. Here, the average COA for students in the top COA quintile is double the average for students in the bottom quintile. </p>
       <p>The average cost of attendance for the 20 percent of students attending private nonprofit four-year institutions with the lowest COAs is similar to the average for the 20 percent of in-state students in public four-year institutions with the highest COAs.</p>
       <p><strong>Tuition and fees constitute the largest single component of estimated COA for students attending private four-year nonprofit institutions and for-profit colleges. But for students attending public two-year or public four-year colleges in their home states, room and board is the largest component of estimated COA. </strong></p>
-      <Multiples title="Cost of Attendance by Sector from 2005–06 to 2015–16, in 2015 Dollars" source="IPEDS; Jennifer Ma, Sandy Baum, Matea Pender, and D'Wayne Bell, <em>Trends in College Pricing 2015</em> (New York: College Board, 2015).">
+      <Multiples 
+        title="Cost of Attendance by Sector from 2002–03 to 2017–18 in 2017 Dollars" 
+        source="Ma et al., Trends in College Pricing 2018, 2013, 2008, 2003.">
         <Graph file={require('./json/030302.json')} small="true"/>
         <Graph file={require('./json/030303.json')} small="true"/>
         <Graph file={require('./json/030304.json')} small="true"/>

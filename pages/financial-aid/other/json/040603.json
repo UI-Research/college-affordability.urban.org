@@ -1,13 +1,12 @@
 {
   "wideSmallMultiple": true,
   "title": "Institutional sector",
-  "series": "Employer aid",
+  "series": "0.044816",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "Employer aid",
-        0.0448,
+        "0.044816",
         0.0582,
         0.0322,
         0.0592
@@ -20,7 +19,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit"],
+      "categories": ["Private nonprofit four-year", "Public two-year", "For-profit"],
       "type": "category"
     },
     "y": {

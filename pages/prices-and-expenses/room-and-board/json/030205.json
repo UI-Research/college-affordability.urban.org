@@ -1,5 +1,5 @@
 {
-  "title": "Average On-Campus Room and Board Charges by Sector, 2000–01 to 2016–17, in 2016 dollars",
+  "title": "Average On-Campus Room and Board Charges by Sector, 1971-72 to 2018–19, in 2018 dollars",
   "series": ["Private nonprofit four-year", "Public four-year"],
   "data": {
     "type": "line",
@@ -122,7 +122,7 @@
     }
   },
   "metadata": {
-    "source": "IPDES, 2001 through 2015; Jennifer Ma, Sandy Baum, Matea Pender, and Meredith Welch, Trends in College Pricing 2016 (New York: College Board, 2016).\r\n",
+    "source": "Ma et al., Trends in College Pricing 2018, table 2.",
     "notes": "Institutions are weighted by full-time equivalent undergraduate fall enrollment."
   }
 }

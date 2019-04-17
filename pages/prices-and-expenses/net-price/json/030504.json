@@ -41,7 +41,10 @@
     ],
     "groups": [
       ["Tuition and fees covered by grant aid", "Remaining (net) tuition  and fees", "Living expenses covered by grant aid", "Remaining (net) living expenses"]
-    ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
   },
   "axis": {
     "rotated": true,

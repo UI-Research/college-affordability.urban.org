@@ -20,7 +20,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["Less than $27,900", "$27,900–62,999", "$63,000–113,499", "$113,500 or more"],
+      "categories": ["Less than $27,900", "$27,900-62,999", "$63,000-113,499", "$113,500 or more"],
       "type": "category"
     },
     "y": {
@@ -36,7 +36,7 @@
     }
   },
   "metadata": {
-    "source": "NPSAS, 2015. ",
+    "source": "NPSAS, 2016. ",
     "notes": null
   }
 }
