@@ -1,12 +1,13 @@
 {
   "title": "Share of State Grants Based on Financial Need, 2015–16",
   "highlightIndex": 20,
-  "series": "0.000",
+  "series": "State grants based on financial needs",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "0.000",
+        "State grants based on financial needs",
+        0,
         0.036,
         0.072,
         0.094,
@@ -64,7 +65,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["South Dakota", "Arkansas", "Louisiana", "South Carolina", "Utah", "Tennessee", "Nevada", "New Mexico", "Alaska", "Montana", "Florida", "Mississippi", "West Virginia", "Kentucky", "Alabama", "Missouri", "North Dakota", "Delaware", "Ohio", "United States", "Virginia", "Oklahoma", "Nebraska", "Iowa", "Colorado", "Idaho", "New York", "Massachusetts", "Connecticut", "Wisconsin", "Indiana", "New Jersey", "North Carolina", "Michigan", "Maryland", "Vermont", "Minnesota", "Pennsylvania", "Illinois", "California", "Arizona", "Hawaii", "Kansas", "Maine", "Oregon", "Rhode Island", "Texas", "Washington"],
+      "categories": ["Georgia", "South Dakota", "Arkansas", "Louisiana", "South Carolina", "Utah", "Tennessee", "Nevada", "New Mexico", "Alaska", "Montana", "Florida", "Mississippi", "West Virginia", "Kentucky", "Alabama", "Missouri", "North Dakota", "Delaware", "Ohio", "United States", "Virginia", "Oklahoma", "Nebraska", "Iowa", "Colorado", "Idaho", "New York", "Massachusetts", "Connecticut", "Wisconsin", "Indiana", "New Jersey", "North Carolina", "Michigan", "Maryland", "Vermont", "Minnesota", "Pennsylvania", "Illinois", "California", "Arizona", "Hawaii", "Kansas", "Maine", "Oregon", "Rhode Island", "Texas", "Washington"],
       "type": "category"
     },
     "y": {

@@ -19,8 +19,8 @@ let singlepage = (
         <p><em>The number of people—both recent high school graduates and older adults—enrolling in college has increased rapidly over time, but the percentage of people earning degrees has grown much more slowly.</em></p>
         <p><em>There are a number of ways to measure completion rates. The federal government collects the information only for first-time full-time students and counts completions only for students who earn their degrees at the institution in which they first enrolled. Among students who first enrolled full time at a public four-year institution in 2008, 34 percent had earned a bachelor&rsquo;s degree within four years; two years later a total of 59 percent had earned bachelor&rsquo;s degrees. Completion rates were higher for students at private nonprofit institutions, and much lower for those enrolled in the for-profit sector.</em></p>
         <p><em>According to the federal definition, the six-year bachelor&rsquo;s degree completion rate is much higher than the four-year completion rate in all sectors.</em></p>
-        <Graph file={require('./06_1000.json')}/>
-        <Graph file={require('./06_2000.json')}/>
+        <Graph file={require('./json/060001.json')}/>
+        <Graph file={require('./json/060002.json')}/>
         <p><em>The National Student Clearinghouse (NSC) tracks students across institutions and measures completion rates for both full-time and part-time students. Including those who transfer raises measured completion rates, but including part-time students has the opposite effect, since full-time students are more likely than part-time students to finish their degrees.</em></p>
         <p><em>According to NSC data, only 50 percent of all students beginning at a public four-year institution in 2008 completed a bachelor&rsquo;s degree within six years at their first college, but another 10 percent earned degrees at other institutions. When considering only full-time students, NSC&rsquo;s completion rate jumps to 80 percent.</em></p>
     </Box>

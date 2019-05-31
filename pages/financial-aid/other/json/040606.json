@@ -1,12 +1,13 @@
 {
   "wideSmallMultiple": true,
   "title": "Dependency status",
-  "series": "0.208257",
+  "series": "Private grants",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "0.208257",
+        "Private grants",
+        0.2083,
         0.1231
       ]
     ],
@@ -17,7 +18,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": "Independent",
+      "categories": ["Dependent", "Independent"],
       "type": "category"
     },
     "y": {

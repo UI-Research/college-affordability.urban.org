@@ -1,12 +1,12 @@
 {
   "wideSmallMultiple": true,
   "title": "All full-time undergraduates",
-  "series": "",
+  "series": "Employer aid",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "",
+        "Employer aid",
         0.0453
       ]
     ],
@@ -17,7 +17,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": "All full-time undergraduates",
+      "categories": "Total",
       "type": "category"
     },
     "y": {

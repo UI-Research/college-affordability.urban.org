@@ -29,7 +29,7 @@
     }
   },
   "axis": {
-    "rotated": true,
+    "rotated": false,
     "x": {
       "categories": "Education debt",
       "type": "category"
