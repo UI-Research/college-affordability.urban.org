@@ -1,12 +1,13 @@
 {
   "wideSmallMultiple": true,
   "title": "Dependent students' parental income",
-  "series": "0.032153",
+  "series": "Employer aid",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "0.032153",
+        "Employer aid",
+        0.0322,
         0.0339,
         0.0465,
         0.0544
@@ -19,7 +20,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["$27,900-62,999", "$63,000-113,499", "$113,500 or more"],
+      "categories": ["Less than $27,900", "$27,900-62,999", "$63,000-113,499", "$113,500 or more"],
       "type": "category"
     },
     "y": {

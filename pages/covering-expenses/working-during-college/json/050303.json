@@ -1,12 +1,13 @@
 {
   "title": "State Minimum Wages Higher than the Federal Minimum Wage, January 1, 2019",
   "highlightIndex": 0,
-  "series": "7.25",
+  "series": "State minimum wage",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "7.25",
+        "State minimum wage",
+        7.25,
         7.5,
         8.25,
         8.25,
@@ -46,7 +47,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["New Mexico", "Illinois", "Nevada", "Florida", "Montana", "Ohio", "Missouri", "Delaware", "West Virginia", "New Jersey", "Nebraska", "South Dakota", "Arkansas", "Michigan", "Minnesota", "Alaska", "Connecticut", "Hawaii", "Maryland", "Rhode Island", "Oregon", "Vermont", "Arizona", "California", "Maine", "Colorado", "New York", "Massachusetts", "Washington", "District of Columbia"],
+      "categories": ["United States", "New Mexico", "Illinois", "Nevada", "Florida", "Montana", "Ohio", "Missouri", "Delaware", "West Virginia", "New Jersey", "Nebraska", "South Dakota", "Arkansas", "Michigan", "Minnesota", "Alaska", "Connecticut", "Hawaii", "Maryland", "Rhode Island", "Oregon", "Vermont", "Arizona", "California", "Maine", "Colorado", "New York", "Massachusetts", "Washington", "District of Columbia"],
       "type": "category"
     },
     "y": {

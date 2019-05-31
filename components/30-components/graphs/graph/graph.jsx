@@ -462,6 +462,7 @@ export class BaseGraph extends Component {
     const toCSV = (dataObj) => {
       // let dataObj = jQuery.extend(true, {}, oldDataObj);
       let arr;
+      // console.log(dataObj.axis.x.categories)
       let cats = dataObj.axis.x.categories.slice(0)    
       // console.log(cats)
       

@@ -3,6 +3,9 @@
   "size": {
     "height": 400
   },
+  "padding": {
+    "bottom": 20
+  },
   "series": ["2011‒12", "2012‒13", "2013‒14"],
   "data": {
     "type": "bar",

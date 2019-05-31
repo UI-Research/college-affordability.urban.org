@@ -1,12 +1,13 @@
 {
   "wideSmallMultiple": true,
   "title": "Dependency status",
-  "series": "0.042758",
+  "series": "Employer aid",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "0.042758",
+        "Employer aid",
+        0.0428,
         0.0526
       ]
     ],
@@ -17,7 +18,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": "Independent",
+      "categories": ["Dependent", "Independent"],
       "type": "category"
     },
     "y": {

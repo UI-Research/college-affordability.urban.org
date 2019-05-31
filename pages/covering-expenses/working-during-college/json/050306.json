@@ -1,96 +1,81 @@
 {
+  "hideTooltip": true,
   "title": "Percentage of Undergraduate Students Participating in Federal Work-Study, 2015–16",
-  "subtitle": "For-profit",
   "data": {
     "type": "bar",
     "sets": {
       "set1": [
-        "All dependent students",
+        "Total",
         [
           [
-            "0.065007",
+            ".1",
+            0.065,
             0.0775,
-            0.0336,
-            0.1547,
-            0.0529,
-            0.0702
+            0.0936,
+            0.0914,
+            0.0788,
+            0.0541,
+            0.0295
           ]
         ]
       ],
       "set2": [
-        "Less than $27,900",
+        "Public two-year",
         [
           [
-            "0.065007",
-            0.0936,
+            ".1",
+            0.0321,
+            0.0336,
             0.0394,
-            0.1816,
-            0.0904,
-            0.081
+            0.0454,
+            0.0313,
+            0.0088,
+            0.029
           ]
         ]
       ],
       "set3": [
-        "$27,900-62,999",
+        "Private nonprofit four-year",
         [
           [
-            "0.065007",
-            0.0914,
-            0.0454,
+            ".1",
+            0.1345,
+            0.1547,
+            0.1816,
             0.1833,
-            0.0778,
-            0.0537
+            0.1817,
+            0.1137,
+            0.0514
           ]
         ]
       ],
       "set4": [
-        "$63,000-113,499",
+        "Public four-year",
         [
           [
-            "0.065007",
-            0.0788,
-            0.0313,
-            0.1817,
+            ".1",
+            0.0529,
+            0.0529,
+            0.0904,
+            0.0778,
             0.0504,
-            0.0711
+            0.0259,
+            0.0323
           ]
         ]
       ],
       "set5": [
-        "$113,500 or more",
+        "For-profit",
         [
           [
-            "0.065007",
-            0.0541,
-            0.0088,
-            0.1137,
-            0.0259,
-            0.0718
-          ]
-        ]
-      ],
-      "set6": [
-        "All independent students ",
-        [
-          [
-            "0.065007",
-            0.0295,
-            0.029,
-            0.0514,
-            0.0323,
+            ".1",
+            0.0274,
+            0.0702,
+            0.081,
+            0.0537,
+            0.0711,
+            0.0718,
             0.0116
-          ]
-        ]
-      ],
-      "set7": [
-        "All undergraduates",
-        [
-          [
-            "0.065007",
-            0.0321,
-            0.1345,
-            0.0529,
-            0.0274
           ]
         ]
       ]
@@ -102,7 +87,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["Total", "Public two-year", "Private nonprofit four-year", "Public four-year", "For-profit"],
+      "categories": ["All undergraduates", "All dependent students", "Less than $27,900", "$27,900-62,999", "$63,000-113,499", "$113,500 or more", "All independent students "],
       "type": "category"
     },
     "y": {

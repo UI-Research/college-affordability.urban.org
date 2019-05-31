@@ -43,7 +43,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["Public four-year", "Private nonprofit four-year", "Other", "All "],
+      "categories": ["Public four-year", "Private nonprofit four-year", "Other", "All"],
       "type": "category"
     },
     "y": {
