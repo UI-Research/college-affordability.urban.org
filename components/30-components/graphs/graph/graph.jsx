@@ -75,6 +75,10 @@ export class BaseGraph extends Component {
       // Acquire graph data.
       let data = this.props.file;
 
+      if (typeof(data.axis.x.categories) === "string") {
+        data.axis.x.categories = [data.axis.x.categories]
+        // console.log(cats)
+      }
 
       // Identify DOM element we want to apply the graph to.
       data.bindto = '#' + this.props.id;
