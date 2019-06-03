@@ -1,32 +1,14 @@
 {
-  "title": "New Monthly Repayments Chart",
+  "title": "Income of $25,000",
   "size": {
     "height": 400
   },
-  "series": ["Debt", "10-year Fixed", "Family size = 1", "Family size = 3"],
+  "series": ["10-year Fixed", "Family size = 1", "Family size = 3"],
   "data": {
     "type": "bar",
     "columns": [
       [
-        "Debt",
-        10000,
-        30000,
-        50000,
-        10000,
-        30000,
-        50000,
-        10000,
-        30000,
-        50000
-      ],
-      [
         "10-year Fixed",
-        265.78,
-        318.93,
-        531.55,
-        265.78,
-        318.93,
-        531.55,
         265.78,
         318.93,
         531.55
@@ -35,40 +17,25 @@
         "Family size = 1",
         56.5833,
         56.5833,
-        56.5833,
-        264.9167,
-        264.9167,
-        264.9167,
-        473.25,
-        473.25,
-        473.25
+        56.5833
       ],
       [
         "Family size = 3",
         0,
         0,
-        0,
-        156.9167,
-        156.9167,
-        156.9167,
-        365.25,
-        365.25,
-        365.25
+        0
       ]
-    ],
-    "labels": {
-      "format": "percent"
-    }
+    ]
   },
   "axis": {
     "rotated": false,
     "x": {
-      "categories": ["25000", null, "50000", "75000"],
+      "categories": ["$10,000", "$30,000", "$50,000"],
       "type": "category"
     },
     "y": {
       "tick": {
-        "format": "percent"
+        "format": "dollar"
       }
     }
   },

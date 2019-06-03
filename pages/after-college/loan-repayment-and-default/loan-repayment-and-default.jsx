@@ -60,7 +60,15 @@ let singlepage = (
       </Box>
       <p><strong>Borrowers&rsquo; estimated monthly payments under a 10-year plan have grown as a percentage of their monthly incomes—especially for those who borrowed to attend for-profit colleges.</strong></p>
       <p>For those who entered repayment in 2011, the payment under the 10-year plan ranged from 8 percent of total income for the average borrower from a public two-year college to an average of 11 percent for borrowers from the for-profit sector. In most cases, these average payments are higher than the 10 percent of discretionary income required under the PAYE and REPAYE programs. </p>
-      <Graph file={require('./json/060403.json')}/>
+      <Multiples 
+      title="Monthly Repayments" 
+      source="Department of Education http://www2.ed.gov/offices/OSFAP/defaultmanagement/schooltyperates.pdf."
+      >
+        <Graph file={require('./json/060403.json')} small="true"/>
+        <Graph file={require('./json/060404.json')} small="true"/>
+        <Graph file={require('./json/060405.json')} small="true"/>
+      </Multiples>
+      
       <p>The interest rates available in the economy can also help borrowers decide on a payment plan. If a loan carries a 4 percent interest rate but borrowers can find a way to earn a 5 percent return on savings, they will be better off postponing the payments and paying more interest over time.</p>
     <h2>Delinquency and Default</h2>
       <p><strong>Official three-year default rates for borrowers entering repayment in 2011–12 ranged from 6 percent among those who attended private nonprofit four-year institutions and 8 percent for public four-year colleges and universities to 16 percent among those who attended for-profit institutions and 19 percent for public two-year colleges.</strong></p>
@@ -70,13 +78,13 @@ let singlepage = (
         <p><em>The government also projects the percentage of dollars loaned each year that are likely to go into default over 20 years (president&rsquo;s budget lifetime default rate). The <a href="https://studentaid.ed.gov/sa/about/data-center/student/default" target="_blank">cumulative lifetime default rate</a> is based on the percentage of loans (not dollars) that have defaulted from the year they went into repayment to the present.</em></p>
         <p><em>The three-year default rate for borrowers entering repayment in 2011–12 was 12 percent, but the two-year default rate was 10 percent. The projected 20-year default rate was 18 percent.</em></p>
       </Box>
-      <Graph file={require('./json/060404.json')}/>
+      <Graph file={require('./json/060406.json')}/>
       <p><strong>Students who leave school without a degree or certificate are much more likely than those who graduate to default on their student loans.</strong></p>
       <p>Among borrowers entering repayment in 2011–12, 9 percent of those who graduated had defaulted on their loans within two years of entering repayment compared with 24 percent of those who left school without a credential.</p>
-      <Graph file={require('./json/060405.json')}/>
+      <Graph file={require('./json/060407.json')}/>
       <p>Borrowers with high balances are least likely to default. High balances are associated with more years of education and higher post-college earnings. Most borrowers with very high debt levels went to graduate school. In contrast, many of those with very low debt levels were not in college long enough to earn a degree.</p>
       <p>Among borrowers entering repayment during the economic downturn in 2009, rates of default within the next five years ranged from about 20 percent among those leaving school with $25,000 or more in student loans, to 34 percent among those with smaller balances of $1,000 to $5,000.</p>
-      <Graph file={require('./json/060406.json')}/>   
+      <Graph file={require('./json/060408.json')}/>   
   </div>
 );
 
