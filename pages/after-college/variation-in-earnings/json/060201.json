@@ -1,6 +1,6 @@
 {
   "overrideTickCount": true,
-  "title": "Median earnings among individuals ages 25-34 by educational attainment, 1994 to 2014, in 2014 dollars",
+  "title": "Median earnings among individuals ages 25-34 by educational attainment, 1992 to 2017, in 2017 dollars",
   "series": ["High school or equivalent", "Some college, no degree", "Associate degree", "Bachelor's degree", "Advanced degree"],
   "data": {
     "type": "line",

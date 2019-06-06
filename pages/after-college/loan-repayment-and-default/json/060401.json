@@ -21,7 +21,7 @@
   "axis": {
     "rotated": false,
     "x": {
-      "categories": ["Level repayment", "Graduated repayment", "Income-driven reayment"],
+      "categories": ["Level repayment", "Graduated repayment", "Income-driven repayment"],
       "type": "category"
     },
     "y": {

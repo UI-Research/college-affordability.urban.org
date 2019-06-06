@@ -7,10 +7,10 @@
     "columns": [
       [
         "Income",
-        81502,
-        75275,
-        66505,
-        75525
+        83641,
+        78118,
+        69278,
+        78346
       ]
     ],
     "labels": {
@@ -36,7 +36,7 @@
     }
   },
   "metadata": {
-    "source": "U.S. Census Bureau, Current Population Survey, 2016 Annual Social and Economic Supplement, Table FINC-01.",
+    "source": "U.S. Census Bureau, Current Population Survey, 2017 Annual Social and Economic Supplement, Table FINC-01.",
     "notes": null
   }
 }

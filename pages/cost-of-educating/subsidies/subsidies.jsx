@@ -16,7 +16,7 @@ let singlepage = (
       <p>This subsidy is different from financial aid or scholarships because it is given to all students at the institution&mdash;and most don&rsquo;t even know they&rsquo;re receiving it. The subsidy supplements the college&rsquo;s published tuition price to equal the true total cost of providing an education. Subsidies vary both across and <a href="http://collegeaffordability.urban.org/cost-of-educating/subsidies/#distribution_of_subsidies"><strong>within sectors</strong></a>.</p>
       <p><strong>Overall, subsidies have shrunk in recent years, leaving revenue from tuition and fees to cover more of the cost of education.</strong></p>
       <Multiples 
-        title="Education and Related Spending per Full-Time Equivalent Student at Public Institutions, 2005–06 to 2013–14" 
+        title="Education and Related Spending per Full-Time Equivalent Student at Public Institutions, 2005–06 to 2015–16" 
         source="Jennifer Ma, Sandy Baum, Matea Pender, and Meredith Welch, Trends in College Pricing 2018 (New York: College Board, 2018)." 
         notes="" 
         pluralSources="true" 
@@ -28,7 +28,7 @@ let singlepage = (
       <p>Students receive different subsidies at different types of private nonprofit colleges and universities. Revenues from tuition and fees cover almost all the cost of education at private nonprofit master&rsquo;s universities, as students, on average, receive little institutional subsidy. But in 2015&ndash;16, subsidies covered 46 percent of total educational expenditures at private nonprofit doctoral universities.</p>
       <p><strong>At private institutions, unlike public institutions, tuition revenues covered roughly the same share of education spending from 2005&ndash;06 to 2015&ndash;16.</strong></p>
       <Multiples 
-        title="Education and Related Spending per Full-Time Equivalent Student at Private Nonprofit Institutions, 2005–06 to 2013–16" 
+        title="Education and Related Spending per Full-Time Equivalent Student at Private Nonprofit Institutions, 2005–06 to 2015–16" 
         source="Jennifer Ma, Sandy Baum, Matea Pender, and Meredith Welch, Trends in College Pricing 2018 (New York: College Board, 2018)." 
         pluralNotes="true" 
         // notes="Institutions are sorted according to the Carnegie Classification of Institutions of Higher Education framework. FTE = full-time equivalent. This graph excludes the small private nonprofit two-year and special purpose sectors."

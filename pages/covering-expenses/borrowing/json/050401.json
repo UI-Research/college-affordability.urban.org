@@ -24,7 +24,7 @@
   "axis": {
     "rotated": false,
     "x": {
-      "categories": ["All", "Dependent", "Independent"],
+      "categories": ["All Undergraduates", "Dependent", "Independent"],
       "type": "category"
     },
     "y": {

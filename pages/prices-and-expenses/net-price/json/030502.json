@@ -39,7 +39,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["For-profit", "Private nonprofit bachelor's", "Private nonprofit master's", "Private nonprofit research", "Private nonprofit special focus or two-y", "Public associate", "Public bachelor's", "Public master's", "Public research"],
+      "categories": ["For-profit", "Private nonprofit bachelor's", "Private nonprofit master's", "Private nonprofit research", "Private nonprofit special focus or two-year", "Public associate", "Public bachelor's", "Public master's", "Public research"],
       "type": "category"
     },
     "y": {

@@ -58,10 +58,19 @@ let singlepage = (
         <p><em>The federal Direct Unsubsidized Loan program lends to graduate students, not just undergraduates. The Grad PLUS program is just for graduate students. Graduate students can borrow up to $20,500 a year in direct loans and up to the full cost of attendance less financial aid under Grad PLUS. Because they can borrow so much from the federal government and their loans are eligible for income-driven repayment, these borrowers are likely to have the most dollars of debt forgiven. For example, a borrower with $100,000 in debt&mdash;more than anyone can borrow from the federal government for undergraduate study&mdash;would have remaining balances after 10 years in the REPAYE plan despite a starting income of up to $125,000.</em></p>
         <p><em>Under current law, forgiven student loan balances outside the PSLF program are considered income and are taxable.</em></p>
       </Box>
+
       <p><strong>In some repayment plans, borrowers&rsquo; monthly payments depend on the amount they borrowed. In other plans, required payments depend on the borrower&rsquo;s income and family size.</strong></p>
       <p>Borrowers who do not make a different choice are placed in a plan that requires equal payments each month for 10 years until the loan is paid off. At an interest rate of 5.05 percent, a $10,000 debt generates payments of $266 a month, a $30,000 debt generates payments of $319 a month, and a $50,000 debt generates payments of $532 a month. About half of all borrowers are in this plan.</p>
       <p>About 30 percent of borrowers are enrolled in income-driven plans that require monthly payments that depend on income and family size. Under the newest of these plans, REPAYE, single borrowers with annual incomes of $25,000 have payments of $57 a month, regardless of the size of their debt. Borrowers earning $50,000 owe $265 a month, and those earning $75,000 owe $473. Required payments are lower for borrowers with larger families.</p>
-      <Graph file={require('./json/060403.json')}/>
+      <Multiples 
+      title="Monthly Loan Payments by Family Income, Debt Amount, and Payment Plan" 
+      source="Department of Education http://www2.ed.gov/offices/OSFAP/defaultmanagement/schooltyperates.pdf."
+      >
+        <Graph file={require('./json/060403.json')} small="true"/>
+        <Graph file={require('./json/060404.json')} small="true"/>
+        <Graph file={require('./json/060405.json')} small="true"/>
+      </Multiples>
+
       <p>The interest rates available in the economy can also help borrowers decide on a payment plan. If a loan carries a 4 percent interest rate but borrowers can find a way to earn a 5 percent return on savings, they will be better off postponing the payments and paying more interest over time.</p>
     <h2>Delinquency, Default, and Repayment</h2>
       <p><strong>Official three-year default rates for borrowers entering repayment in 2013&ndash;14 ranged from 7.0 percent among those who attended private nonprofit four-year institutions and 7.5 percent for public four-year colleges and universities to 17.5 percent among those who attended two-year for-profit institutions and 18.3 percent for public two-year colleges.</strong></p>
@@ -71,14 +80,16 @@ let singlepage = (
         <p><em>The government also projects the share of dollars loaned each year that are likely to go into default over 20 years (president&rsquo;s budget lifetime default rate). The </em><a href="https://studentaid.ed.gov/sa/about/data-center/student/default" target="_blank"><strong><em>cumulative lifetime default rate</em></strong></a><em> is based on the share of loans (not dollars) that have defaulted from the year they went into repayment to the present.</em></p>
         <p><em>The 3-year default rate for borrowers entering repayment in 2013&ndash;14 was 11.5 percent, and the projected 20-year default rate for 2016&ndash;17 unsubsidized loans was 16.7 percent.</em></p>
       </Box>
-      <Graph file={require('./json/060404.json')}/>
+
+      <Graph file={require('./json/060406.json')}/>
       <p>Borrowers with high balances are least likely to default. High balances are associated with more years of education and higher postcollege earnings. Most borrowers with high debt levels went to graduate school. In contrast, many of those with very low debt levels were not in college long enough to earn a degree.</p>
       <p>Among borrowers entering repayment during the economic downturn in 2009, default rates within the next five years ranged from about 20 percent among those leaving school with $25,000 or more in student loans, to 34 percent among those with smaller balances of $1,000 to $5,000.</p>
-      <Graph file={require('./json/060406.json')}/>
+      <Graph file={require('./json/060407.json')}/>
       <p><strong>Some borrowers may be in good standing without making any progress lowering the amount they owe.</strong></p>
-<p>Sixty percent of federal student loan borrowers who entered repayment in 2010&ndash;11 and 2011&ndash;12 after earning a degree or certificate had paid down at least one dollar of their loan principal after three years. This repayment rate was 34 percent for borrowers who did not complete a degree or certificate program.</p>
-<p>Borrowers who graduated from public and private nonprofit four-year colleges are most likely to be paying down their debts. Those who attended for-profit institutions have the lowest repayment rates.</p> 
-      <Graph file={require('./json/060407.json')}/> 
+      <p>Sixty percent of federal student loan borrowers who entered repayment in 2010&ndash;11 and 2011&ndash;12 after earning a degree or certificate had paid down at least one dollar of their loan principal after three years. This repayment rate was 34 percent for borrowers who did not complete a degree or certificate program.</p>
+      <p>Borrowers who graduated from public and private nonprofit four-year colleges are most likely to be paying down their debts. Those who attended for-profit institutions have the lowest repayment rates.</p> 
+      <Graph file={require('./json/060408.json')}/>   
+
   </div>
 );
 

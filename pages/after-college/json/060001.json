@@ -1,0 +1,46 @@
+{
+  "title": "Percentage of First-Time Full-Time Students Enrolling in 2010 Who Earned Bachelor's Degrees at Their First Institution within Four, Five, and Six Years",
+  "series": ["Four years", "Five years", "Six years"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Four years",
+        0.369,
+        0.543,
+        0.145
+      ],
+      [
+        "Five years",
+        0.549,
+        0.641,
+        0.19
+      ],
+      [
+        "Six years",
+        0.589,
+        0.659,
+        0.208
+      ]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["Public four-year", "Private nonprofit four-year", "For-profit four-year"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Digest of Education Statistics 2017, Table 326.10",
+    "notes": null
+  }
+}

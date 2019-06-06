@@ -1,55 +1,46 @@
 {
-  "title": "Official Three-Year Cohort Default Rates by Year Entering Repayment and Sector",
+  "title": "Income of $50,000",
   "size": {
     "height": 400
   },
-  "series": ["2011‒12", "2012‒13", "2013‒14"],
+  "series": ["10-year Fixed", "REPAYE (family size = 1)", "REPAYE (family size = 3)"],
   "data": {
     "type": "bar",
     "columns": [
       [
-        "2011‒12",
-        0.177,
-        0.147,
-        0.191,
-        0.076,
-        0.063,
-        0.118
+        "10-year Fixed",
+        265.78,
+        318.93,
+        531.55
       ],
       [
-        "2012‒13",
-        0.168,
-        0.14,
-        0.185,
-        0.073,
-        0.065,
-        0.113
+        "REPAYE (family size = 1)",
+        264.9167,
+        264.9167,
+        264.9167
       ],
       [
-        "2013‒14",
-        0.175,
-        0.146,
-        0.183,
-        0.075,
-        0.07,
-        0.115
+        "REPAYE (family size = 3)",
+        156.9167,
+        156.9167,
+        156.9167
       ]
     ]
   },
   "axis": {
     "rotated": false,
     "x": {
-      "categories": ["For-profit two-year", "For-profit four-year", "Public two-year", "Public four-year", "Private nonprofit four-year", "All"],
+      "categories": ["$10,000 ", "$30,000 ", "$50,000 "],
       "type": "category"
     },
     "y": {
       "tick": {
-        "format": "percent"
+        "format": "dollar"
       }
     }
   },
   "metadata": {
-    "source": "Federal Reserve Bank of New York Consumer Credit Panel / Equifax.",
+    "source": "US Department of Education http://www2.ed.gov/offices/OSFAP/defaultmanagement/schooltyperates.pdf.",
     "notes": null
   }
 }

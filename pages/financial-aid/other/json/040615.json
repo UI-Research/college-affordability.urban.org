@@ -1,12 +1,13 @@
 {
   "wideSmallMultiple": true,
   "title": "Institutional sector",
-  "series": "3600",
+  "series": "Private grants",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "3600",
+        "Private grants",
+        3600,
         4700,
         2700,
         5100
@@ -19,7 +20,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["Private nonprofit four-year", "Public two-year", "For-profit"],
+      "categories": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit"],
       "type": "category"
     },
     "y": {

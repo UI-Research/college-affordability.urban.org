@@ -1,0 +1,97 @@
+{
+  "title": "Outcomes Six Years Later for Students Enrolling for the First Time in 2010",
+  "series": ["Completed degree at two-year college", "Completed bachelor's degere at four-year college", "Still enrolled", "Not enrolled, did not complete degree"],
+  "data": {
+    "type": "bar",
+    "sets": {
+      "set1": [
+        "Full-time",
+        [
+          [
+            "Completed degree at two-year college",
+            0.0195,
+            0.0116,
+            0.0116,
+            0.2991
+          ],
+          [
+            "Completed bachelor's degere at four-year college",
+            0.7847,
+            0.8272,
+            0.4352,
+            0.2468
+          ],
+          [
+            "Still enrolled",
+            0.0384,
+            0.0273,
+            0.0397,
+            0.036
+          ],
+          [
+            "Not enrolled, did not complete degree",
+            0.1573,
+            0.1339,
+            0.5135,
+            0.4181
+          ]
+        ]
+      ],
+      "set2": [
+        "Mixed",
+        [
+          [
+            "Completed degree at two-year college",
+            0.0451,
+            0.0454,
+            0.0284,
+            0.2165
+          ],
+          [
+            "Completed bachelor's degere at four-year college",
+            0.4513,
+            0.4806,
+            0.2247,
+            0.1352
+          ],
+          [
+            "Still enrolled",
+            0.2368,
+            0.2137,
+            0.1915,
+            0.2227
+          ],
+          [
+            "Not enrolled, did not complete degree",
+            0.2668,
+            0.2603,
+            0.5554,
+            0.4256
+          ]
+        ]
+      ]
+    },
+    "groups": [
+      ["Completed degree at two-year college", "Completed bachelor's degere at four-year college", "Still enrolled", "Not enrolled, did not complete degree"]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Public four-year ", "Private nonprofit four-year", "For-profit", "Public two-year"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Shapiro, D., Dundar, A., Wakhungu, P.K., Yuan, X., Nathan, A. & Hwang, Y. (2016, November). Completing College: A National View of Student Attainment Rates – Fall 2010 Cohort (Signature Report No. 12). Herndon, VA: National Student Clearinghouse Research Center.",
+    "notes": "The share of students completing in six years includes those who completed after transferring to different four-year institutions."
+  }
+}

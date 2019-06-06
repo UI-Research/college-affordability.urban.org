@@ -1,34 +1,48 @@
 {
-  "title": "Federal Student Loan Three-Year Repayment Rates by Completion Status and by Dependency Status: Borrowers Entering Repayment in 2010-11 and 2011-12",
-  "series": ["Noncompleters", "Completers"],
+  "title": "Official Three-Year Cohort Default Rates by Year Entering Repayment and Sector",
+  "size": {
+    "height": 400
+  },
+  "padding": {
+    "bottom": 20
+  },
+  "series": ["2011‒12", "2012‒13", "2013‒14"],
   "data": {
     "type": "bar",
     "columns": [
       [
-        "Noncompleters",
-        0.3431,
-        0.1962,
-        0.4818,
-        0.4733,
-        0.3245
+        "2011‒12",
+        0.177,
+        0.147,
+        0.191,
+        0.076,
+        0.063,
+        0.118
       ],
       [
-        "Completers",
-        0.5987,
-        0.3624,
-        0.7669,
-        0.7415,
-        0.6118
+        "2012‒13",
+        0.168,
+        0.14,
+        0.185,
+        0.073,
+        0.065,
+        0.113
+      ],
+      [
+        "2013‒14",
+        0.175,
+        0.146,
+        0.183,
+        0.075,
+        0.07,
+        0.115
       ]
-    ],
-    "labels": {
-      "format": "percent"
-    }
+    ]
   },
   "axis": {
     "rotated": false,
     "x": {
-      "categories": ["All", "For-Profit", "Private Nonprofit Four-Year", "Public Four-Year", "Public Two-Year"],
+      "categories": ["For-profit two-year", "For-profit four-year", "Public two-year", "Public four-year", "Private nonprofit four-year", "All"],
       "type": "category"
     },
     "y": {
@@ -38,7 +52,7 @@
     }
   },
   "metadata": {
-    "source": null,
+    "source": "US Department of Education, Federal Student Aid, https://www2.ed.gov/offices/OSFAP/defaultmanagement/cdr.html",
     "notes": null
   }
 }
