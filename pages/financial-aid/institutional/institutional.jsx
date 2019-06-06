@@ -18,18 +18,18 @@ let singlepage = (
       <p>In 2011–12, the share of full-time first-year students receiving institutional grant aid ranged from 7 percent in for-profit colleges to 75 percent in private nonprofit four-year colleges.</p>
       <Graph file={require('./json/040501.json')}/>
     <h2>Average Institutional Grants</h2>
-      <p><strong>The average institutional grant per recipient is more than three times as high in private nonprofit as in public four-year colleges and universities—a ratio similar to that for published tuition and fees.</strong></p>
+      <p><strong>The average institutional grant per recipient is more than three times as high in private nonprofit colleges and universities as in public four-year colleges and universities. The $13,000 difference in average institutional aid fills about 60 percent of the $21,000 difference in average tuition and fee prices.</strong></p>
       <h3>Average Institutional Grant Aid Relative to Tuition and Fees</h3>
         <p><strong>Institutions with higher tuition prices narrow, but do not close, the price gaps by awarding more institutional grant aid.</strong></p>
-        <p>Although students at private nonprofit four-year colleges and universities receive more institutional grant and scholarship aid than students at public four-year universities, they still pay higher average net tuition and fees.</p>
-        <p>Students attending public two-year and for-profit institutions receive similar institutional aid, but those attending for-profits have much higher remaining tuition and fees because the sticker prices in that sector are much higher.</p>
-        <p>On average, students receiving institutional grant aid at public and private nonprofit colleges receive discounts worth approximately 50 percent of tuition and fees.</p>
+        <p>Although students at private nonprofit four-year colleges and universities receive more institutional grant and scholarship aid than do students at public four-year universities, they still pay higher average net tuition and fees.</p>
+        <p>Students attending public two-year and for-profit institutions receive similar average institutional aid, but those attending for-profits have higher remaining tuition and fees because the sticker prices in that sector are higher.</p>
+        <p>On average, in 2015&ndash;16 students receiving institutional grant aid at public four-year colleges received discounts worth almost 50 percent of tuition and fees. Average institutional grants at private nonprofit colleges covered 56 percent of the published tuition and fee price.</p>
         <Graph file={require('./json/040502.json')}/>
       <h3>Distribution of Need-Based and Non-need–Based Institutional Grant Aid</h3>
-      <p>Both public and private nonprofit institutions award a combination of &ldquo;need based&rdquo; institutional grants, which depend on financial circumstances, and &ldquo;non-need based&rdquo; or &ldquo;merit-based&rdquo; institutional grants, which are based on other characteristics. Lower-income students receive more need-based aid than their peers from more affluent families, but even students from families in the highest-income quartile receive some need-based aid. Non-need–based aid goes to students from all income backgrounds.</p>
-      <p><strong>At the highest-priced private nonprofit colleges and universities, where most aid is need-based, students from low-income families receive significantly more institutional grant aid than their more affluent classmates, but this is not the case at lower-priced institutions in the sector.</strong></p>
+      <p>Both public and private nonprofit institutions award &ldquo;need-based&rdquo; institutional grants, which depend on financial circumstances, and &ldquo;non-need-based&rdquo; or &ldquo;merit-based&rdquo; institutional grants, which are based on other characteristics. Low-income students receive more need-based aid than their peers from more affluent families, but even students from families in the highest income quartile receive some need-based aid. Non-need-based aid goes to students from all income backgrounds.</p>
+      <p><strong>At the highest-price private nonprofit colleges and universities, where most aid is need based, students from low-income families receive significantly more institutional grant aid than their more affluent classmates, but this is not the case at low-price institutions in the sector.</strong></p>
       <Graph file={require('./json/040503.json')}/>
-      <p>At the highest-tuition private nonprofit colleges and universities, students from low-income families receive much more institutional grant aid than those from higher-income families. However, at lower-price institutions in the sector, there is much less variation in the grant aid received by students from families with different income levels. In 2011-12, students from the lowest family income quartile received more than twice as much institutional grant aid, on average, as those from the highest family income quartile. But in the half of institutions with the lowest prices, grant aid was similar for these two groups.</p>
+      <p>At the highest-tuition private nonprofit colleges and universities, on average students from low-income families received about three times as much institutional grant aid in 2015&ndash;16 as those families in the highest income quartile.. But at the lowest-price institutions in the sector, students from more affluent families received more institutional grant aid than those from the lower half of the income distribution.</p>
       <Multiples 
         title="Average Need-Based and Non-need-Based Grant Aid per Full-Time Student (and Percentage Receiving Institutional Aid), Public Four-Year Institutions" 
         source="Baum et al, Trends in Student Aid 2014, The College Board, based on NPSAS 2012."
@@ -38,7 +38,7 @@ let singlepage = (
         <Graph file={require('./json/040505.json')} small="true"/>
         <Graph file={require('./json/040506.json')} small="true"/>
        </Multiples>
-       <p>Full-time dependent students from the lower half of the income distribution attending public four-year institutions in 2011&ndash;12 received about two and half times as much need-based institutional grant aid as those from the upper half of the income distribution. But because the more affluent students received more non-need&ndash;based aid, the gap in total institutional grant aid was much smaller.</p>
+       <p>Full-time first-year dependent students the top 25 percent of the income distribution enrolled in public four-year institutions received very little need-based institutional grant aid. But because they received more non-need-based aid than less affluent students, their total institutional grant aid was as high as the aid received by other students.</p>
   </div>
   
 );
