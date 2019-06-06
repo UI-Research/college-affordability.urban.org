@@ -13,27 +13,27 @@ let singlepage = (
   <div>
     <h1>Grant Aid</h1>
       <p><strong>Grant aid, sometimes called scholarships or tuition discounts, lowers the price a student pays for college.</strong></p>
-      <p>Unlike <a href="../../covering-expenses/borrowing/">student loans</a>, grant aid does not have to be repaid. Subtracting grant aid from the cost of attendance yields the net price—the price a student actually pays. This matters more for college affordability than the sticker price.</p>
-      <p>Typically, students get more grant aid if they attend private nonprofit colleges than if they attend public colleges, narrowing the gap between the prices of these different types of institutions. </p>
-      <p>Grant aid does not <a href="#by_income_and_dependency_status">close the gap</a> in ability to pay for college between high-income and low-income families. Though low-income students tend to receive more grant aid, it is not enough to put them on equal footing with the highest-income families.</p>
+      <p>Unlike <a href="http://collegeaffordability.urban.org/covering-expenses/borrowing/">student loans</a>, grant aid does not have to be repaid. Subtracting grant aid from the cost of attendance yields the net price&mdash;the price a student actually pays. This matters more for college affordability than the sticker price.</p>
+      <p>Typically, students get more grant aid if they attend private nonprofit colleges than if they attend public colleges, narrowing the gap between the prices of these institutions.</p>
+      <p>Grant aid does not <a href="http://collegeaffordability.urban.org/financial-aid/grant-aid/#by_income_and_dependency_status">close the gap</a> in ability to pay for college between high-income and low-income families. Though low-income students tend to receive more grant aid, it is not enough to put them on equal footing with the highest-income families.</p>
     <h2>Sources of Grant Aid</h2>
-      <p>Grants come from a variety of sources: the federal government, state governments, the colleges and universities students attend, and employers or other private sources.</p>
+      <p>Grants come from various sources: the federal government, state governments, colleges and universities, and employers or other private sources.</p>
       <ul>
-        <li><strong><a href="../institutional/">Institutional grant aid</a></strong>, often called a scholarship, discounts tuition and fees on the basis of need, academic qualifications, or other characteristics. </li>
-        <li><strong><a href="../federal/">Federal grant aid</a></strong> is typically targeted to low-income students and families. By far the largest program is the <a href="https://studentaid.ed.gov/sa/types/grants-scholarships/pell" target="_blank">Pell Grant program</a>. In 2015–16, 7.6 million low-income students received up to $5,775 in Pell grant aid. More than 1.6 million students also benefit from the Federal Supplemental Educational Opportunity Grant program, through which many colleges distribute federal funds to some of their lower-income students. The federal government also provides aid to veterans and their dependents and members of the armed forces on active duty. </li>
-        <li><strong><a href="../other/">Private and employer grant aid</a></strong> includes scholarships from private sources, such as foundations, as well as educational stipends from employers.</li>
-        <li><strong><a href="../state/">State grant aid</a></strong> varies widely by state and supports students on the basis of need or academic merit. Most states provide this aid only to students who remain in their state to attend public or private colleges.</li>
+        <li><a href="http://collegeaffordability.urban.org/financial-aid/institutional/">Institutional grant aid</a>, often called a scholarship, discounts tuition and fees based on need, academic qualifications, or other characteristics.</li>
+        <li><a href="http://collegeaffordability.urban.org/financial-aid/federal/">Federal grant aid</a> typically targets low-income students and families. By far the largest program is the <a href="https://studentaid.ed.gov/sa/types/grants-scholarships/pell" target="_blank">Pell grant program</a>. In 2017&ndash;18, 7.0 million low-income students received up to $5,920 in Pell grant aid. About 1.4 million students also benefit from the Federal Supplemental Educational Opportunity Grant program, through which many colleges distribute federal funds to some low-income students. The federal government also provides aid to veterans and their dependents and members of the armed forces on active duty.</li>
+        <li><a href="http://collegeaffordability.urban.org/financial-aid/other/">Private and employer grant aid</a> includes scholarships from private sources, such as foundations, as well as educational stipends from employers.</li>
+        <li><a href="http://collegeaffordability.urban.org/financial-aid/state/">State grant aid</a> varies widely by state and supports students based on need or academic merit. Most states provide this aid only to students who remain in the state to attend public or private colleges.</li>
       </ul>
-    <p><strong>Eighty percent of the grant aid supporting undergraduate students comes either from the federal government or from colleges and universities.</strong></p>
+      <p><strong>Eighty-seven percent of the grant aid supporting undergraduate students comes either from the federal government or from colleges and universities.</strong></p>
     <Graph file={require('./json/040201.json')}/>
-    <p>The national distribution of grant aid by source, however, does not represent what typical students in any type of institution receive because grant aid varies by type of institution and student. </p>
+    <p>The national distribution of grant aid by source does not represent what typical students in any type of institution receive because grant aid varies by type of institution and student.</p>
   <h2>By Sector</h2>
-    <p><strong>Regardless of income or dependency status, students receive the highest levels of grant aid at private nonprofit four-year institutions and the lowest levels at public two-year and for-profit institutions.</strong></p>
-    <p>The sources of that aid differ. Students in public two-year and for-profit institutions get most of their grant aid from the federal government, and those attending private nonprofit four-year colleges and universities get two-thirds of their grants from their institutions.</p>
-    <p>Some grant aid follows students no matter where they choose to enroll. For example, students get the same Pell grant wherever they go to college. But other grant aid, particularly institutional grant aid, but also Federal Supplemental Educational Opportunity Grant funds, will differ depending on the institution.</p>
+    <p><strong>Regardless of income or dependency status, students receive the most grant aid at private nonprofit four-year institutions and the least at public two-year and for-profit institutions.</strong></p>
+    <p>The sources of that aid differ. Students in public two-year and for-profit institutions get most of their grant aid from the federal government, and those attending private nonprofit four-year colleges and universities get more than two-thirds of their grants from their institutions.</p>
+    <p>Some grant aid follows students no matter where they enroll. For example, students get the same Pell grant wherever they go to college. But other grant aid, particularly institutional grant aid and Federal Supplemental Educational Opportunity Grant funds, differ depending on the institution.</p>
     <Graph file={require('./json/040202.json')}/>
   <h2>By Income and Dependency Status</h2>
-    <p><strong>Independent and dependent students are equally likely to receive grant aid, but independent students are more likely to receive federal grants, and dependent students are more likely to receive each of the other types of grant.</strong></p>
+    <p><strong>Independent and dependent students are equally likely to receive grant aid, but independent students are more likely to receive federal grants and military/veterans benefits, and dependent students are more likely to receive each of the other types of grants.</strong></p>
     <Multiples 
       title="Grant Aid by Source for Independent and Dependent Students, by Sector, 2015–16" 
       source="National Postsecondary Student Aid Study, 2016."
@@ -41,7 +41,7 @@ let singlepage = (
         <Graph file={require('./json/040203.json')} small="true"/>
         <Graph file={require('./json/040204.json')} small="true"/>
     </Multiples>
-    <p><strong>Within each sector, dependent students from families with lower incomes receive more aid than those from more affluent families—but the aid is not nearly enough to make up for differences in ability to pay.</strong> For example, the average full-time student in a private nonprofit four-year college or university whose family income was $155,000 or higher received more than half of the average grant that students from families with incomes of less than $30,000 received in 2011&ndash;12, despite having more than five times the resources.  </p>
+    <p><strong>Within each sector, dependent students from families with lower incomes receive more aid than those from more affluent families, but the aid is not nearly enough to make up for differences in ability to pay.</strong> For example, the average full-time student in a private nonprofit four-year college or university whose family income was $160,000 or higher received more than half the average grant that students from families with incomes of less than $27,900 received in 2015&ndash;16, despite having more than five times the resources.</p>
     <Graph file={require('./json/040205.json')}/>
     <Box>
       <h3><em>How Do Colleges Assess the Income of an Independent Student?</em></h3>
