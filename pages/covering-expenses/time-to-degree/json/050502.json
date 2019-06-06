@@ -43,7 +43,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["Public four-year", "Private nonprofit four-year", "Other", "All"],
+      "categories": ["Public four-year", "Private nonprofit four-year", "For-profit and other", "All"],
       "type": "category"
     },
     "y": {
@@ -53,7 +53,7 @@
     }
   },
   "metadata": {
-    "source": "National Postsecondary Student Aid Study 2016",
-    "notes": null
+    "source": "Shapiro, D., Dundar, A., Wakhungu, P.K., Yuan, X., Nathan, A, & Hwang, Y. (2016, September). Time to Degree: A National View of the Time Enrolled and Elapsed for Associate and Bachelor’s Degree Earners (Signature Report No. 11). Herndon, VA: National Student Clearinghouse Research Center.",
+    "notes": "Other includes less-than-four-year institutions offering some bachelor's degrees."
   }
 }

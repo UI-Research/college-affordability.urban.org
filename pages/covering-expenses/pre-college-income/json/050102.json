@@ -7,9 +7,10 @@
     "columns": [
       [
         "Income",
-        76264,
-        49365,
-        51105
+        85852,
+        50597,
+        53614,
+        92784
       ]
     ],
     "labels": {
@@ -19,7 +20,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["White", "Black", "Hispanic"],
+      "categories": ["White", "Black", "Hispanic", "Asian"],
       "type": "category"
     },
     "y": {
@@ -35,7 +36,7 @@
     }
   },
   "metadata": {
-    "source": "U.S. Census Bureau, Current Population Survey, 2016 Annual Social and Economic Supplement, Table FINC-01.",
+    "source": "U.S. Census Bureau, Current Population Survey, 2017 Annual Social and Economic Supplement, Table FINC-01.",
     "notes": null
   }
 }

@@ -61,7 +61,7 @@ let singlepage = (
       <p><strong>Borrowers&rsquo; estimated monthly payments under a 10-year plan have grown as a percentage of their monthly incomes—especially for those who borrowed to attend for-profit colleges.</strong></p>
       <p>For those who entered repayment in 2011, the payment under the 10-year plan ranged from 8 percent of total income for the average borrower from a public two-year college to an average of 11 percent for borrowers from the for-profit sector. In most cases, these average payments are higher than the 10 percent of discretionary income required under the PAYE and REPAYE programs. </p>
       <Multiples 
-      title="Monthly Repayments" 
+      title="Monthly Loan Payments by Family Income, Debt Amount, and Payment Plan" 
       source="Department of Education http://www2.ed.gov/offices/OSFAP/defaultmanagement/schooltyperates.pdf."
       >
         <Graph file={require('./json/060403.json')} small="true"/>

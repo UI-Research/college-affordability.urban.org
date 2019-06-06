@@ -1,6 +1,6 @@
 {
   "metadata.pluralNotes": true,
-  "title": "State and Local Appropriations for Public Higher Education per Public Full-Time Equivalent Student, 2014–15",
+  "title": "State and Local Appropriations for Public Higher Education per Public Full-Time Equivalent Student, 2016–17",
   "highlightIndex": 34,
   "series": "State and Local Appropriations for Higher Education per Public-Sector FTE Student",
   "data": {
@@ -79,7 +79,7 @@
     }
   },
   "metadata": {
-    "source": "SHEF, FY 2016.",
-    "notes": null
+    "source": "SHEF, FY 2017.",
+    "notes": "Public-sector FTE students include undergraduate and graduate students but exclude medical students. State and local appropriations for public higher education exclude state support for private institutions and funds used for special purposes, research, and medical schools."
   }
 }
