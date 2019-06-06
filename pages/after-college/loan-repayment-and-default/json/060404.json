@@ -3,7 +3,7 @@
   "size": {
     "height": 400
   },
-  "series": ["10-year Fixed", "Family size = 1", "Family size = 3"],
+  "series": ["10-year Fixed", "REPAYE (family size = 1)", "REPAYE (family size = 3)"],
   "data": {
     "type": "bar",
     "columns": [
@@ -14,13 +14,13 @@
         531.55
       ],
       [
-        "Family size = 1",
+        "REPAYE (family size = 1)",
         264.9167,
         264.9167,
         264.9167
       ],
       [
-        "Family size = 3",
+        "REPAYE (family size = 3)",
         156.9167,
         156.9167,
         156.9167
@@ -30,7 +30,7 @@
   "axis": {
     "rotated": false,
     "x": {
-      "categories": ["$10,000", "$30,000", "$50,000"],
+      "categories": ["$10,000 ", "$30,000 ", "$50,000 "],
       "type": "category"
     },
     "y": {
@@ -40,7 +40,7 @@
     }
   },
   "metadata": {
-    "source": "Department of Education http://www2.ed.gov/offices/OSFAP/defaultmanagement/schooltyperates.pdf.",
+    "source": "US Department of Education http://www2.ed.gov/offices/OSFAP/defaultmanagement/schooltyperates.pdf.",
     "notes": null
   }
 }
