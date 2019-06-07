@@ -104,44 +104,6 @@
             11880
           ]
         ]
-      ],
-      "set6": [
-        "",
-        [
-          [
-            "Four years",
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null
-          ],
-          [
-            "Five years",
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null
-          ],
-          [
-            "Six years",
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null
-          ]
-        ]
       ]
     },
     "labels": {
@@ -151,7 +113,7 @@
   "axis": {
     "rotated": false,
     "x": {
-      "categories": ["Tuition and Fees", "Debt", ""],
+      "categories": ["Tuition and Fees", "Debt"],
       "type": "category"
     },
     "y": {

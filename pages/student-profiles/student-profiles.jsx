@@ -58,15 +58,15 @@ let singlepage = (
   </tr>
   <tr>
     <td width="146" nowrap="nowrap" valign="top">Total grants</td>
-    <td width="53" align="right" valign="top" nowrap="nowrap">$6,530</td>
-    <td width="62" align="right" valign="top" nowrap="nowrap">$8,540</td>
-    <td width="60" align="right" valign="top" nowrap="nowrap">$9,690</td>
-    <td width="53" align="right" valign="top" nowrap="nowrap">$5,320</td>
-    <td width="53" align="right" valign="top" nowrap="nowrap">$4,200</td>
+    <td width="53" align="right" valign="top" nowrap="nowrap">$8,100</td>
+    <td width="62" align="right" valign="top" nowrap="nowrap">$12,410</td>
+    <td width="60" align="right" valign="top" nowrap="nowrap">$11,890</td>
+    <td width="53" align="right" valign="top" nowrap="nowrap">$8,820</td>
+    <td width="53" align="right" valign="top" nowrap="nowrap">$5,740</td>
   </tr>
   <tr>
     <td width="146" nowrap="nowrap" valign="top">Total loans</td>
-    <td width="53" align="right" valign="top" nowrap="nowrap">$8,100</td>
+    <td width="53" align="right" valign="top" nowrap="nowrap">$6,470</td>
     <td width="62" align="right" valign="top" nowrap="nowrap">$6,570</td>
     <td width="60" align="right" valign="top" nowrap="nowrap">$6,970</td>
     <td width="53" align="right" valign="top" nowrap="nowrap">$9,030</td>
@@ -74,11 +74,11 @@ let singlepage = (
   </tr>
   <tr>
     <td width="146" nowrap="nowrap" valign="top">Earnings and other resources</td>
-    <td width="53" align="right" valign="top" nowrap="nowrap">$9,910</td>
-    <td width="62" align="right" valign="top" nowrap="nowrap">$16,370</td>
-    <td width="60" align="right" valign="top" nowrap="nowrap">$16,960</td>
-    <td width="53" align="right" valign="top" nowrap="nowrap">$15,830</td>
-    <td width="53" align="right" valign="top" nowrap="nowrap">$8,840</td>
+    <td width="53" align="right" valign="top" nowrap="nowrap">$8,350</td>
+    <td width="62" align="right" valign="top" nowrap="nowrap">$12,500</td>
+    <td width="60" align="right" valign="top" nowrap="nowrap">$14,760</td>
+    <td width="53" align="right" valign="top" nowrap="nowrap">$12,330</td>
+    <td width="53" align="right" valign="top" nowrap="nowrap">$7,300</td>
   </tr>
 </table>
 <p><strong>Source:</strong> National Postsecondary Student Aid Study 2016.</p>
