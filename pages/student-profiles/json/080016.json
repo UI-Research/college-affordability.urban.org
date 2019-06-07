@@ -1,0 +1,129 @@
+{
+  "forceMediumHeight": true,
+  "title": "Tuition and debt based on time to degree by sector ",
+  "series": ["Four years", "Five years", "Six years"],
+  "data": {
+    "type": "bar",
+    "sets": {
+      "set1": [
+        "Public four-year in-state",
+        [
+          [
+            "Four years",
+            42882.1767,
+            27600
+          ],
+          [
+            "Five years",
+            54418.6421,
+            34500
+          ],
+          [
+            "Six years",
+            66301.2013,
+            41400
+          ]
+        ]
+      ],
+      "set2": [
+        "Public four-year out-of-state",
+        [
+          [
+            "Four years",
+            92541.8292,
+            31400
+          ],
+          [
+            "Five years",
+            117438.0841,
+            39250
+          ],
+          [
+            "Six years",
+            143081.2266,
+            47100
+          ]
+        ]
+      ],
+      "set3": [
+        "Private nonprofit four-year",
+        [
+          [
+            "Four years",
+            144293.2952,
+            46080
+          ],
+          [
+            "Five years",
+            183112.0941,
+            57600
+          ],
+          [
+            "Six years",
+            223095.4569,
+            69120
+          ]
+        ]
+      ],
+      "set4": [
+        "For-profit",
+        [
+          [
+            "Four years",
+            88609.2199,
+            52280
+          ],
+          [
+            "Five years",
+            112447.4965,
+            65350
+          ],
+          [
+            "Six years",
+            137000.9213,
+            78420
+          ]
+        ]
+      ],
+      "set5": [
+        "Public two-year",
+        [
+          [
+            "Four years",
+            16901.8531,
+            5400
+          ],
+          [
+            "Five years",
+            21448.9087,
+            6750
+          ],
+          [
+            "Six years",
+            26132.3759,
+            8100
+          ]
+        ]
+      ]
+    },
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["Tuition and Fees", "Debt"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "National Postsecondary Student Aid Study 2016.",
+    "notes": null
+  }
+}

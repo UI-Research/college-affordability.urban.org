@@ -1,17 +1,17 @@
 {
   "forceMediumHeight": true,
-  "title": "Independent Students: Enrollment by Sector, 2015–16",
+  "title": "Upper Income Dependent Students: Enrollment by Sector, 2015–16",
   "series": "Enrollment",
   "data": {
     "type": "bar",
     "columns": [
       [
         "Enrollment",
-        0.1883,
-        0.1071,
-        0.5138,
-        0.1296,
-        0.0612
+        0.487,
+        0.2632,
+        0.2286,
+        0.01,
+        0.0111
       ]
     ],
     "labels": {
