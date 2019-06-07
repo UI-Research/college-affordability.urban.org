@@ -1,16 +1,17 @@
 {
   "forceMediumHeight": true,
-  "title": "Independent Students: Enrollment by Sector, 2015–16",
-  "series": "0.188309",
+  "title": "Upper-Middle Income Students: Enrollment by Sector, 2015–16 ",
+  "series": "Enrollment",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "0.188309",
-        0.1071,
-        0.5138,
-        0.1296,
-        0.0612
+        "Enrollment",
+        0.4213,
+        0.166,
+        0.3741,
+        0.017,
+        0.0215
       ]
     ],
     "labels": {
@@ -20,7 +21,7 @@
   "axis": {
     "rotated": false,
     "x": {
-      "categories": ["Private nonprofit four-year", "Public two-year", "For-profit", "Other"],
+      "categories": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit", "Other"],
       "type": "category"
     },
     "y": {

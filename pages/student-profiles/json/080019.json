@@ -10,128 +10,128 @@
         [
           [
             "Expected contribution",
-            3570,
+            47790,
             0
           ],
           [
             "Federal grant aid",
-            2750,
+            50,
             0
           ],
           [
             "Military and veterans grants aid",
-            3870,
+            250,
             0
           ],
           [
             "State grant aid",
-            0,
+            60,
             0
           ],
           [
             "Institutional grant aid",
-            3840,
+            4530,
             0
           ],
           [
             "Private and employer grant aid",
-            1950,
+            940,
             0
           ],
           [
             "Federal student loans",
-            5960,
+            2890,
             0
           ],
           [
             "Federal parent loans",
-            0,
+            4280,
             0
           ],
           [
             "Private loans",
-            610,
+            1780,
             0
           ],
           [
             "Earnings and other resources",
-            11740,
+            -21920,
             0
           ],
           [
             "Tuition and fees",
             0,
-            18270
+            24490
           ],
           [
             "Budget beyond tuiiton and fees",
             0,
-            16020
+            16160
           ]
         ]
       ],
       "set2": [
-        "Public four-year in-state ",
+        "Public four-year in-state",
         [
           [
             "Expected contribution",
-            2280,
+            39510,
             0
           ],
           [
             "Federal grant aid",
-            3380,
+            40,
             0
           ],
           [
             "Military and veterans grants aid",
-            1570,
+            340,
             0
           ],
           [
             "State grant aid",
-            1220,
+            490,
             0
           ],
           [
             "Institutional grant aid",
-            1250,
+            1460,
             0
           ],
           [
             "Private and employer grant aid",
-            680,
+            970,
             0
           ],
           [
             "Federal student loans",
-            6050,
+            2900,
             0
           ],
           [
             "Federal parent loans",
-            0,
+            2000,
             0
           ],
           [
             "Private loans",
-            420,
+            1110,
             0
           ],
           [
             "Earnings and other resources",
-            8350,
+            -22960,
             0
           ],
           [
             "Tuition and fees",
             0,
-            9370
+            11010
           ],
           [
             "Budget beyond tuiiton and fees",
             0,
-            15830
+            14850
           ]
         ]
       ],
@@ -140,63 +140,63 @@
         [
           [
             "Expected contribution",
-            2950,
+            33010,
             0
           ],
           [
             "Federal grant aid",
-            3130,
+            20,
             0
           ],
           [
             "Military and veterans grants aid",
-            1550,
+            60,
             0
           ],
           [
             "State grant aid",
-            580,
+            390,
             0
           ],
           [
             "Institutional grant aid",
-            230,
+            890,
             0
           ],
           [
             "Private and employer grant aid",
-            250,
+            660,
             0
           ],
           [
             "Federal student loans",
-            1910,
+            890,
             0
           ],
           [
             "Federal parent loans",
-            0,
+            90,
             0
           ],
           [
             "Private loans",
-            70,
+            100,
             0
           ],
           [
             "Earnings and other resources",
-            7300,
+            -20510,
             0
           ],
           [
             "Tuition and fees",
             0,
-            3740
+            4060
           ],
           [
             "Budget beyond tuiiton and fees",
             0,
-            14230
+            11540
           ]
         ]
       ],
@@ -205,63 +205,63 @@
         [
           [
             "Expected contribution",
-            3570,
+            55500,
             0
           ],
           [
             "Federal grant aid",
-            2860,
+            20,
             0
           ],
           [
             "Military and veterans grants aid",
-            2210,
+            400,
             0
           ],
           [
             "State grant aid",
-            750,
+            240,
             0
           ],
           [
             "Institutional grant aid",
-            5070,
+            13840,
             0
           ],
           [
             "Private and employer grant aid",
-            1000,
+            1680,
             0
           ],
           [
             "Federal student loans",
-            6020,
+            3260,
             0
           ],
           [
             "Federal parent loans",
-            0,
+            3130,
             0
           ],
           [
             "Private loans",
-            950,
+            3140,
             0
           ],
           [
             "Earnings and other resources",
-            14760,
+            -26960,
             0
           ],
           [
             "Tuition and fees",
             0,
-            22120
+            38740
           ],
           [
             "Budget beyond tuiiton and fees",
             0,
-            15070
+            15510
           ]
         ]
       ],
@@ -270,63 +270,63 @@
         [
           [
             "Expected contribution",
-            2850,
+            37300,
             0
           ],
           [
             "Federal grant aid",
-            3630,
-            0
-          ],
-          [
-            "Military and veterans grants aid",
-            3500,
-            0
-          ],
-          [
-            "State grant aid",
-            290,
-            0
-          ],
-          [
-            "Institutional grant aid",
-            910,
-            0
-          ],
-          [
-            "Private and employer grant aid",
-            490,
-            0
-          ],
-          [
-            "Federal student loans",
-            8060,
-            0
-          ],
-          [
-            "Federal parent loans",
             0,
             0
           ],
           [
+            "Military and veterans grants aid",
+            190,
+            0
+          ],
+          [
+            "State grant aid",
+            100,
+            0
+          ],
+          [
+            "Institutional grant aid",
+            2180,
+            0
+          ],
+          [
+            "Private and employer grant aid",
+            280,
+            0
+          ],
+          [
+            "Federal student loans",
+            5830,
+            0
+          ],
+          [
+            "Federal parent loans",
+            8520,
+            0
+          ],
+          [
             "Private loans",
-            970,
+            2480,
             0
           ],
           [
             "Earnings and other resources",
-            12330,
+            -15370,
             0
           ],
           [
             "Tuition and fees",
             0,
-            17280
+            25850
           ],
           [
             "Budget beyond tuiiton and fees",
             0,
-            15750
+            15660
           ]
         ]
       ]

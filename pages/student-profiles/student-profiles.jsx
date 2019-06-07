@@ -20,7 +20,7 @@ let singlepage = (
 <p>Independent students are 24 and older, are married, have dependents, are active-duty military or veterans, or are orphans, in foster care, wards of the court, or unaccompanied homeless youth. These students&rsquo; eligibility for financial aid is based only on their own financial circumstances (and their spouse&rsquo;s if they are married). Their parents&rsquo; resources are not considered.</p>
 <p><strong>Where do independent students enroll?</strong></p>
 <p>In 2015&ndash;16, more than half of all independent undergraduates attended community colleges.</p>
-<Graph file={require('./json/07_0010.json')}/>
+<Graph file={require('./json/080001.json')}/>
 <p><strong>How do annual finances differ across sectors?</strong></p>
 <p><a name="OLE_LINK10" id="OLE_LINK10">Average Published Prices, Budgets, and Resources Used to Pay for College for Independent Students, 2015&ndash;16</a></p>
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
@@ -84,15 +84,15 @@ let singlepage = (
 <p><strong>Source:</strong> National Postsecondary Student Aid Study 2016.</p>
 
 <p><strong>How do independent students pay for college?</strong></p>
-<Graph file={require('./json/07_0030.json')}/>
+<Graph file={require('./json/080003.json')}/>
 <p><strong>How does time to degree affect cost? </strong></p>
-<Graph file={require('./json/07_0040.json')}/>
+<Graph file={require('./json/080004.json')}/>
 <h2>Low-Income Dependent Students</h2>
 <p><strong>Who are low-income dependent students?</strong></p>
 <p>In 2015&ndash;16, about 25 percent of dependent students came from families with incomes below $27,900. These low-income dependent students are younger than 24. They are not married, do not have dependents, and have no other characteristics that would make the financial aid system declare them independent of their parents.</p>
 <p><strong>Where do low-income dependent students enroll?</strong></p>
 <p>Almost half of all low-income dependent undergraduates attend community colleges.</p>
-<Graph file={require('./json/07_0050.json')}/>
+<Graph file={require('./json/080005.json')}/>
 <p><strong>How do annual finances differ across sectors?</strong></p>
 <p>Average Published Prices, Budgets, and Resources Used to Pay for College for Low-Income Dependent Students, 2015&ndash;16</p>
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
@@ -156,15 +156,15 @@ let singlepage = (
 <p><strong>Source:</strong> National Postsecondary Student Aid Study 2016.</p>
 
 <p><strong>How do low-income dependent students pay for college?</strong></p>
-<Graph file={require('./json/07_0070.json')}/>
+<Graph file={require('./json/080007.json')}/>
 <p><strong>How does time to degree affect cost? </strong></p>
-<Graph file={require('./json/07_0080.json')}/>
+<Graph file={require('./json/080008.json')}/>
 <h2>Lower-Middle-Income Dependent Students</h2>
 <p><strong>Who are lower-middle-income dependent students?</strong></p>
 <p>In 2015&ndash;16, about 25 percent of dependent students came from families with incomes between $27,900 and $63,000. These lower-middle-income dependent students are younger than 24. They are not married, do not have dependents, and have no other characteristics that would make the financial aid system declare them independent of their parents.</p>
 <p><strong>Where do lower-middle-income dependent students enroll?</strong></p>
 <p>In 2015&ndash;16, 80 percent of lower-middle-income students were enrolled in public two-year or four-year institutions.</p>
-<Graph file={require('./json/07_0090.json')}/>
+<Graph file={require('./json/080009.json')}/>
 <p><strong>How do annual finances differ across sectors?</strong></p>
 <p>Average Published Prices, Budgets, and Resources Used to Pay for College for Lower-Middle-Income Dependent Students, 2015&ndash;16</p>
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
@@ -227,16 +227,16 @@ let singlepage = (
 </table>
 <p><strong>Source:</strong> National Postsecondary Student Aid Study 2016.</p>
 <p><strong>How do lower-middle-income dependent students pay for college?</strong></p>
-<Graph file={require('./json/07_0110.json')}/>
+<Graph file={require('./json/080011.json')}/>
 <p><strong>How does time to degree affect cost? </strong><strong> </strong></p>
 
-<Graph file={require('./json/07_0120.json')}/>
+<Graph file={require('./json/080012.json')}/>
 <h2>Upper-Middle-Income Dependent Students</h2>
 <p><strong>Who are upper-middle-income dependent students?</strong></p>
 <p>In 2015&ndash;16, about 25 percent of dependent students came from families with incomes between $63,000 and $113,500. These upper-middle-income dependent students are younger than 24. They are not married, do not have dependents, and have no other characteristics that would make the financial aid system declare them independent of their parents.</p>
 <p><strong>Where do upper-middle-income dependent students enroll?</strong></p>
 <p>Very few upper-middle-income students enroll in for-profit institutions.</p>
-<Graph file={require('./json/07_0130.json')}/>
+<Graph file={require('./json/080013.json')}/>
 <p><strong>How do annual finances differ across sectors?</strong></p>
 <p>Average Published Prices, Budgets, and Resources Used to Pay for College for Upper-Middle-Income Dependent Students, 2015&ndash;16</p>
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
@@ -299,15 +299,15 @@ let singlepage = (
 </table>
 <p><strong>Source:</strong> National Postsecondary Student Aid Study 2016.</p>
 <p><strong>How do upper-middle-income dependent students pay for college?</strong></p>
-<Graph file={require('./json/07_0150.json')}/>
+<Graph file={require('./json/080015.json')}/>
 <p><strong>How does time to degree affect cost? </strong><strong> </strong></p>
-    <Graph file={require('./json/07_0160.json')}/>
+    <Graph file={require('./json/080016.json')}/>
 <h2>Upper-Income Dependent Students</h2>
 <p><strong>Who are upper-income dependent students?</strong></p>
 <p>In 2015&ndash;16, about 25 percent of dependent students came from families with incomes above $113,500. This translates to about $120,000 in 2018 dollars. These upper-income dependent students are younger than 24. They are not married, do not have dependents, and have no other characteristics that would make the financial aid system declare them independent of their parents.</p>
 <p><strong>Where do upper-income dependent students enroll?</strong></p>
 <p>Three-quarters of upper-income dependent students enroll in public or private nonprofit four-year colleges and universities.</p>
-<Graph file={require('./json/07_0170.json')}/>
+<Graph file={require('./json/080017.json')}/>
 <p><strong>How do annual finances differ across sectors?</strong></p>
 <p>Average Published Prices, Budgets, and Resources Used to Pay for College for Upper-Income Dependent Students, 2011–12</p>
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
@@ -378,9 +378,9 @@ let singlepage = (
 </table>
 <p><strong>Source:</strong> National Postsecondary Student Aid Study 2016.</p>
 <p><strong>How do upper-income dependent students pay for college?</strong></p>
-<Graph file={require('./json/07_0190.json')}/>
+<Graph file={require('./json/080019.json')}/>
  <p><strong>How does time to degree affect cost? </strong></p>
-<Graph file={require('./json/07_0200.json')}/>
+<Graph file={require('./json/080020.json')}/>
   </div>
 );
 
