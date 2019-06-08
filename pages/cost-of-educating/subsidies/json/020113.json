@@ -1,22 +1,22 @@
 {
   "overrideTickCount": true,
-  "title": "Public research",
+  "title": "Private nonprofit bachelor's",
   "series": "Average subsidy per FTE student",
   "data": {
     "type": "bar",
     "columns": [
       [
         "Average subsidy per FTE student",
-        1413,
-        2501,
-        3449,
-        4813,
-        5889,
-        7045,
-        8329,
-        10434,
-        15602,
-        25309
+        323,
+        2065,
+        3414,
+        4359,
+        5327,
+        6825,
+        8765,
+        11491,
+        15304,
+        28587
       ]
     ]
   },

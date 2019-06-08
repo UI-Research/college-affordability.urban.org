@@ -23,6 +23,8 @@ let singlepage = (
       >
         <Graph file={require('./json/020101.json')} small="true"/>
         <Graph file={require('./json/020102.json')} small="true"/>
+        <Graph file={require('./json/020103.json')} small="true"/>
+        <Graph file={require('./json/020104.json')} small="true"/>
       </Multiples>
       <p>Net tuition revenues per student&mdash;the amount students paid schools either out of pocket or through financial aid&mdash;increased 42 percent at public research universities between 2005&ndash;06 and 2015&ndash;16, but total educational expenditures grew only 17 percent. Schools were asking students to cover a larger share of their educational expenses. Indeed, the portion of educational costs covered by institutions from nontuition revenues&mdash;the subsidy&mdash;fell from 50 percent to 40 percent during that period.</p>
       <p>Students receive different subsidies at different types of private nonprofit colleges and universities. Revenues from tuition and fees cover almost all the cost of education at private nonprofit master&rsquo;s universities, as students, on average, receive little institutional subsidy. But in 2015&ndash;16, subsidies covered 46 percent of total educational expenditures at private nonprofit doctoral universities.</p>
@@ -33,9 +35,9 @@ let singlepage = (
         pluralNotes="true" 
         // notes="Institutions are sorted according to the Carnegie Classification of Institutions of Higher Education framework. FTE = full-time equivalent. This graph excludes the small private nonprofit two-year and special purpose sectors."
       >
-        <Graph file={require('./json/020103.json')} small="true"/>
-        <Graph file={require('./json/020104.json')} small="true"/>
         <Graph file={require('./json/020105.json')} small="true"/>
+        <Graph file={require('./json/020106.json')} small="true"/>
+        <Graph file={require('./json/020107.json')} small="true"/>
       </Multiples>
     <h2>Distribution of Subsidies</h2>
       <p><strong>Looking at average subsidies by sector conceals wide variation across institutions, and just a few colleges and universities in each sector provide the majority of total subsidies.</strong></p>
@@ -45,12 +47,12 @@ let singlepage = (
         title="Average Subsidy per Full-Time Equivalent Student within Undergraduate Deciles" 
         source="Integrated Postsecondary Education Data System (IPEDS)."
       >
-        <Graph file={require('./json/020106.json')} small="true"/>
-        <Graph file={require('./json/020107.json')} small="true"/>
         <Graph file={require('./json/020108.json')} small="true"/>
         <Graph file={require('./json/020109.json')} small="true"/>
         <Graph file={require('./json/020110.json')} small="true"/>
         <Graph file={require('./json/020111.json')} small="true"/>
+        <Graph file={require('./json/020112.json')} small="true"/>
+        <Graph file={require('./json/020113.json')} small="true"/>
       </Multiples>
 
   </div>

@@ -1,21 +1,21 @@
 {
   "wideSmallMultiple": true,
-  "title": "Research",
+  "title": "Bachelor's",
   "series": ["Average net tuition revenue per FTE student", "Average subsidy per FTE student"],
   "data": {
     "type": "bar",
     "columns": [
       [
         "Average net tuition revenue per FTE student",
-        20820,
-        22090,
-        24070
+        5070,
+        5540,
+        6100
       ],
       [
         "Average subsidy per FTE student",
-        17180,
-        17890,
-        20540
+        6980,
+        6330,
+        7410
       ]
     ],
     "groups": [
@@ -36,7 +36,7 @@
         "format": "dollar",
         "count": 6
       },
-      "max": 60000,
+      "max": 20000,
       "padding": {
         "top": 0,
         "bottom": 0
