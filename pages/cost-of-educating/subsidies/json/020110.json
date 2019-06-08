@@ -1,22 +1,22 @@
 {
   "overrideTickCount": true,
-  "title": "Private nonprofit master's",
+  "title": "Public associate",
   "series": "Average subsidy per FTE student",
   "data": {
     "type": "bar",
     "columns": [
       [
         "Average subsidy per FTE student",
-        0,
-        0,
-        0,
-        250,
-        839,
-        1615,
-        2478,
-        3365,
-        4440,
-        7570
+        2329,
+        3777,
+        4409,
+        5044,
+        5551,
+        6186,
+        6786,
+        7547,
+        8621,
+        12442
       ]
     ]
   },

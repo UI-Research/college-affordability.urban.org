@@ -1,21 +1,21 @@
 {
   "wideSmallMultiple": true,
-  "title": "Master's",
+  "title": "Associate",
   "series": ["Average net tuition revenue per FTE student", "Average subsidy per FTE student"],
   "data": {
     "type": "bar",
     "columns": [
       [
         "Average net tuition revenue per FTE student",
-        14450,
-        15340,
-        15940
+        2800,
+        3150,
+        3510
       ],
       [
         "Average subsidy per FTE student",
-        2170,
-        1760,
-        2560
+        6320,
+        5380,
+        6570
       ]
     ],
     "groups": [
@@ -36,7 +36,7 @@
         "format": "dollar",
         "count": 6
       },
-      "max": 60000,
+      "max": 20000,
       "padding": {
         "top": 0,
         "bottom": 0

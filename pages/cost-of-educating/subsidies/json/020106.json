@@ -1,37 +1,42 @@
 {
-  "overrideTickCount": true,
-  "title": "Public research",
-  "series": "Average subsidy per FTE student",
+  "wideSmallMultiple": true,
+  "title": "Master's",
+  "series": ["Average net tuition revenue per FTE student", "Average subsidy per FTE student"],
   "data": {
     "type": "bar",
     "columns": [
       [
+        "Average net tuition revenue per FTE student",
+        14450,
+        15340,
+        15940
+      ],
+      [
         "Average subsidy per FTE student",
-        1413,
-        2501,
-        3449,
-        4813,
-        5889,
-        7045,
-        8329,
-        10434,
-        15602,
-        25309
+        2170,
+        1760,
+        2560
       ]
-    ]
+    ],
+    "groups": [
+      ["Average net tuition revenue per FTE student", "Average subsidy per FTE student"]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
   },
   "axis": {
-    "rotated": true,
+    "rotated": false,
     "x": {
-      "categories": ["1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th"],
+      "categories": ["2005-06", "2010-11", "2015-16"],
       "type": "category"
     },
     "y": {
       "tick": {
         "format": "dollar",
-        "count": 5
+        "count": 6
       },
-      "max": 100000,
+      "max": 60000,
       "padding": {
         "top": 0,
         "bottom": 0
@@ -39,7 +44,7 @@
     }
   },
   "metadata": {
-    "source": "Integrated Postsecondary Education Data System (IPEDS).",
+    "source": "Jennifer Ma, Sandy Baum, Matea Pender, and Meredith Welch, Trends in College Pricing 2018 (New York: College Board, 2018).",
     "notes": null
   }
 }
