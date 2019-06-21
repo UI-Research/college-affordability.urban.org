@@ -12,8 +12,8 @@ import util from 'util.jsx';
 let singlepage = (
   <div>
     <h1>After College</h1>
-      <p>Although it&rsquo;s tempting to think about college affordability as whether a family has the resources to pay at the time of enrollment, affordability depends on resources available before, during, and<em> after</em> college.</p>
-	  <p>Whether students borrow to help finance their college education, the investment of time, money, and effort is significant. Many students leave school without a degree or certificate. For them, the investment may not pay off well, and any debts will be difficult to repay. But for most of those who do earn a degree, the earnings premium is large enough to repay any debts and maintain a higher standard of living than they would have had if they had not gone to college.</p>
+      <p>Although it&rsquo;s tempting to think about college affordability as whether a family has the resources to pay at the time of enrollment, affordability depends on resources available before, during, and <em>after</em> college.</p>
+	  <p>Whether or not students borrow to help finance their college education, the investment of time, money, and effort is significant. Many students leave school without a degree or certificate. For them, the investment may not pay off well, and any debts will be difficult to repay. But for most of those who do earn a degree, the earnings premium is large enough to repay any debts and maintain a higher standard of living than they would have had if they had not gone to college.</p>
     <Box>
       <h3><em>College Completion Rates</em></h3>
 

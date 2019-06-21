@@ -11,14 +11,14 @@ import util from 'util.jsx';
 
 let singlepage = (
   <div>
-    <h1>Pre-college Income</h1>
-      <p>Whether college is affordable depends on the opportunities it opens up for a student, but it also depends on the resources available at the time the student enrolls. Those resources depend on how much income a family has earned over the previous years and how much the family has saved.</p>
+    <h1>Precollege Income</h1>
+      <p>Whether college is affordable depends on the opportunities it opens up for a student, but it also depends on the resources available at the time the student enrolls. Those resources depend on how much income a family has earned over the previous years and how much the family has saved, in addition to current earnings.</p>
       <p>Income and savings can also affect financial aid, because the financial aid system in the United States is grounded in the principle that those who are in a financial position to do so should help pay for their own or their children&rsquo;s college education.</p>
       <p>Although there is considerable variation within groups, differences in savings and wealth, current incomes, and income paths over time mean that some students tend to have an easier time paying for college than others.</p>
     <h2>Income before College</h2>
       <p>About <a href="http://www.theatlantic.com/politics/archive/2013/08/why-americans-all-believe-they-are-middle-class/278240/" target="_blank">90 percent of Americans</a> perceive themselves as members of the lower, middle, or upper-middle class. This means many families overestimate how much financial aid they&rsquo;ll receive, not realizing that many families earn significantly less. In 2017 <a href="https://www.census.gov/data/tables/time-series/demo/income-poverty/historical-income-inequality.html" target="_blank">20 percent of families</a> had incomes below $34,000, and 20 percent had incomes above $145,000.</p>
-      <p>To understand why people receive the financial aid they do, it&rsquo;s important to understand how income is distributed across families and how it changes.</p>
-      <p>In 2017, the <a href="https://www.census.gov/data/tables/time-series/demo/income-poverty/cps-finc/finc-01.html" target="_blank">median income</a> for all families was $75,900. But median income differs by race and ethnicity, by location, and by age. For example, median incomes for black and Hispanic families were about 70 percent of the overall median, and median family income was about $14,000 a year higher in the Northeast than in the South.</p>
+      <p>To understand why people receive the financial aid they do, it&rsquo;s important to understand how income is distributed across families.</p>
+      <p>In 2017, the <a href="https://www.census.gov/data/tables/time-series/demo/income-poverty/cps-finc/finc-01.html" target="_blank">median income</a> for all families was $75,900. But median income differs by race or ethnicity, by location, and by age. For example, median incomes for black and Hispanic families were about 70 percent of the overall median, and median family income was about $14,000 a year higher in the Northeast than in the South.</p>
       <p>Of particular importance for thinking about how people pay for college, incomes are higher among 45-to-54-year-olds&mdash;the age range of the parents of most traditional-age college students&mdash;than for both older and younger families. In 2017, median income for families headed by 45-to-54-year-olds was $93,900, 24 percent higher than the overall median.</p>
       <Multiples 
       title="Median Total Income of Families by Race/Ethnicity, Geographical Region, and Age, 2017" 
@@ -31,7 +31,7 @@ let singlepage = (
       </Multiples>
       <p>Another characteristic that predicts family income is education levels. In 2017, the median income of families headed by a person whose highest degree was a bachelor&rsquo;s degree was about twice as high as the median for high school graduates. Median income was 64 percent higher for those with professional degrees than for those with bachelor&rsquo;s degrees.</p>
       <Graph file={require('./json/050105.json')}/>
-      <p>Family incomes vary widely by state, ranging from more than $17,000 below the US average in Mississippi and New Mexico to more than $27,000 above it in Connecticut, New Jersey, and Massachusetts. There are also significant differences in the cost of living across.</p>
+      <p>Family incomes vary widely by state, ranging from more than $17,000 below the US average in Mississippi and New Mexico to more than $27,000 above it in Connecticut, New Jersey, and Massachusetts. There are also significant differences in the cost of living by state.</p>
       <Graph file={require('./json/050106.json')}/>
     <h2>Income over Time</h2>
       <p>The financial aid system looks at one year of income to determine expected family contributions. This is an imperfect measure of a family&rsquo;s ability to pay because incomes fluctuate and not all families with the same current level of income have the same earnings histories.</p>

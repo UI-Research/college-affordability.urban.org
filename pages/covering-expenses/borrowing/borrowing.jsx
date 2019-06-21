@@ -12,16 +12,16 @@ import util from 'util.jsx';
 let singlepage = (
   <div>
     <h1>Borrowing</h1>
-      <p>Many students borrow to fund a portion of their college expenses. Each year, 40 percent of all undergraduate students take federal student loans, and 70 percent of students who receive a bachelor&rsquo;s degree have education debt by the time they graduate.</p>
-      <p>Borrowers face complicated choices. Most loans come directly from the federal government, but some students take private loans from banks or other lenders or borrow through state or institutional programs. Annual borrowing has risen significantly over the past decade, but it has declined each year from a peak in 2010&ndash;11.</p>
+      <p>Many students borrow to fund a portion of their college expenses. Each year, 30 to 40 percent of all undergraduate students take federal student loans; 70 percent of students who receive a bachelor&rsquo;s degree have education debt by the time they graduate.</p>
+      <p>Borrowers face complicated choices. Most loans come directly from the federal government, but some students take private loans from banks or other lenders or borrow through state or institutional programs. Annual borrowing has risen significantly over the past decades, but it has declined each year from a peak in 2010&ndash;11.</p>
       <p>The federal government makes loans to students and families on better terms than the private market would offer to students with no credit history or collateral. There are two main types of federal loans for undergraduate students and a program for parents:</p>
       <ul>
         <li><strong>Subsidized federal loans</strong> are available to undergraduate students with documented financial need. These loans do not accrue interest while the student is in school.</li>
         <li><strong>Unsubsidized federal loans</strong> are available to all students. Interest begins to accrue as soon as the loans are disbursed. Because the federal government regulates the interest rates on these loans and offers them to all students regardless of credit ratings, they are considered part of the financial aid package.</li>
-        <li><strong>Parent PLUS Loans</strong> are available to parents without adverse credit histories. Parents begin making payments, including interest, as soon as loans are disbursed.</li>
+        <li><strong>Parent PLUS loans</strong> are available to parents without adverse credit histories. Parents begin making payments, including interest, as soon as loans are disbursed.</li>
       </ul>
       <p>Congress sets the interest rates and annual borrowing limits for federal student loans. As of 2018&ndash;19, the lifetime borrowing limit for a dependent undergraduate student was $31,000, including a maximum of $23,000 of subsidized loans. Independent students have higher borrowing limits for unsubsidized loans, and Parent PLUS Loans are limited only by colleges&rsquo; estimated costs of attendance.</p>
-      <p>Many students borrow from federal or other sources during some of their college years. As a result,<strong> the share of students borrowing in any year is lower than the share of students who will leave college with debt.</strong></p>
+      <p>Many students borrow from federal or other sources during some of their college years. As a result, <strong>the share of students borrowing in any year is lower than the share of students who will leave college with debt.</strong></p>
       <Graph file={require('./json/050401.json')}/>
     <h2>By Student Characteristics</h2>
       <p><strong>Larger shares of middle-income students than of low- and high-income students borrow for college, but when they borrow, high-income students borrow the largest amounts.</strong></p>
@@ -54,12 +54,12 @@ let singlepage = (
       <Graph file={require('./json/050407.json')}/>
       <Graph file={require('./json/050408.json')}/>
     <h2>Parent Borrowing</h2>
-      <p>Through the federal Parent PLUS Loan program, parents without adverse credit histories can borrow an amount equal to the difference between the full student budget (the cost of attendance) and the amount of financial aid received.</p>
-      <p>The interest rate on these loans is 7.6 percent for the 2018&ndash;19 academic year compared with 5.1 percent for subsidized and unsubsidized federal student loans. The parents of 9 percent of dependent students took PLUS Loans in 2015&ndash;16.</p>
-      <p><strong>Parents of dependent students attending for-profit colleges are most likely to borrow Parent PLUS Loans.</strong> Although only 23 percent of full-time students in the for-profit sector are dependent students (and are potentially eligible for Parent PLUS Loans), 30 percent of these parents borrowed from the federal government in 2015&ndash;16, a higher participation rate than the 13 percent of full-time dependent undergraduates overall.</p>
+      <p>Through the federal Parent PLUS loan program, parents without adverse credit histories can borrow an amount equal to the difference between the full student budget (the cost of attendance) and the amount of grant aid received.</p>
+      <p>The interest rate on these loans is 7.6 percent for the 2018&ndash;19 academic year compared with 5.1 percent for subsidized and unsubsidized federal student loans. The share of dependent students whose parents borrowed PLUS loans increased from 5 percent in 1995&ndash;96 to 7 percent in 2007&ndash;08 and 9 percent in 2015&ndash;16.</p>
+      <p><strong>Parents of dependent students attending for-profit colleges are most likely to borrow Parent PLUS loans.</strong> Although only 23 percent of full-time students in the for-profit sector are dependent students (and are potentially eligible for Parent PLUS Loans), 30 percent of these parents borrowed from the federal government in 2015&ndash;16, a higher participation rate than the 13 percent of full-time dependent undergraduates overall.</p>
       <p>Because eligibility for Parent PLUS Loans depends on cost of attendance exceeding financial aid, higher Parent PLUS borrowing in the for-profit and private nonprofit sectors is related to these institutions&rsquo; higher net prices relative to public two-year and public four-year prices.</p>
       <Graph file={require('./json/050409.json')}/>
-      <p><strong>Parents in the highest income quartile who take PLUS Loans borrow more, on average, than others. </strong>Low-income students are more likely than others to enroll in community colleges and to live at home with their parents, but these parents are also most likely to be ineligible for PLUS Loans because of problems with their credit histories.</p>
+      <p><strong>Parents in the highest income quartile who take PLUS loans borrow more, on average, than others. </strong>Low-income students are more likely than others to enroll in community colleges and to live at home with their parents, but these parents are also most likely to be ineligible for PLUS loans because of problems with their credit histories.</p>
       <Multiples 
         title="Average Parent PLUS Loans borrowed among full-time dependent students, 2015–16" 
         source="National Postsecondary Student Aid Study 2016."
