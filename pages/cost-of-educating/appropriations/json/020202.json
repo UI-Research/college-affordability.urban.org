@@ -1,6 +1,6 @@
 {
   "overrideTickCount": true,
-  "title": "Changes in State and Local Support for Higher Education Relative to 2000–01",
+  "title": "State and Local Support for Higher Education Relative to 2000–01",
   "series": ["State support", "Local support"],
   "data": {
     "type": "line",
@@ -68,7 +68,7 @@
     }
   },
   "metadata": {
-    "source": "SHEF, FY 2017.",
-    "notes": null
+    "source": "Sophia Laderman, <em>SHEF: FY 2017: State Higher Education Finance <\/em>(Boulder, CO: State Higher Education Executive Officers Association, 2018).",
+    "notes": "Years indicate fall semester (e.g., 2001 is the 2001–02 school year)."
   }
 }

@@ -1,5 +1,5 @@
 {
-  "title": "Federal Student Loan Three-Year Repayment Rates by Completion Status and by Dependency Status: Borrowers Entering Repayment in 2010-11 and 2011-12",
+  "title": "Federal Student Loan Five-Year Repayment Rate by Completion Status and by Dependency Status: Borrowers Entering Repayment in 2009–10 and 2010–11",
   "series": ["Noncompleters", "Completers"],
   "data": {
     "type": "bar",
@@ -38,7 +38,7 @@
     }
   },
   "metadata": {
-    "source": null,
+    "source": "Sandy Baum, Jennifer Ma, Matea Pender, and CJ Libassi, <em>Trends in Student Aid 2018 <\/em>(New York: College Board, 2018), figure 14A.",
     "notes": null
   }
 }

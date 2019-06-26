@@ -1,6 +1,6 @@
 {
   "overrideTickCount": true,
-  "title": "Federal Minimum Wage, 1946–1916, 2016 dollars",
+  "title": "Federal Minimum Wage, 1946–2018, 2018 Dollars",
   "series": "Federal minimum wage",
   "data": {
     "type": "line",
@@ -102,7 +102,7 @@
     }
   },
   "metadata": {
-    "source": "United States Department of Labor, Wage and Hour Division. http://www.dol.gov/whd/minwage/chart.htm. ",
+    "source": "\"History of Federal Minimum Wage Rates under the Fair Labor Standards Act, 1938–2009,\" US Department of Labor, Wage and Hour Division, accessed June 14, 2019, http://www.dol.gov/whd/minwage/chart.htm. ",
     "notes": null
   }
 }

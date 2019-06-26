@@ -28,8 +28,8 @@ let singlepage = (
       <p>Dependent students from families in the highest income quartile were least likely to borrow in 2015&ndash;16, but when they took loans, they borrowed larger amounts, on average, than those from low- and middle-income families. This is in part because students from high-income families are more likely to enroll full time and more likely to attend high-price colleges than students from low-income families. Students from high-income families might have other options if they just need a few thousand dollars, so there are fewer borrowers in this group who take small loans.</p>
       <p>Students who attend college part time are less likely to borrow than those who attend full time, but borrowing limits are the same for full- and part-time students.</p>     
       <Multiples 
-      title="Annual borrowing by student characteristics: averages per borrower and per undergraduate student (with percentage borrowing) in 2015–16" 
-      source="National Postsecondary Student Aid Study 2016."
+      title="Annual Borrowing by Student Characteristics: Averages per Borrower and per Undergraduate Student (with Share Borrowing) in 2015–16" 
+      source="2016 National Postsecondary Student Aid Study."
       >
         <Graph file={require('./json/050402.json')} small="true"/>
         <Graph file={require('./json/050403.json')} small="true"/>
@@ -61,8 +61,8 @@ let singlepage = (
       <Graph file={require('./json/050409.json')}/>
       <p><strong>Parents in the highest income quartile who take PLUS loans borrow more, on average, than others. </strong>Low-income students are more likely than others to enroll in community colleges and to live at home with their parents, but these parents are also most likely to be ineligible for PLUS loans because of problems with their credit histories.</p>
       <Multiples 
-        title="Average Parent PLUS Loans borrowed among full-time dependent students, 2015–16" 
-        source="National Postsecondary Student Aid Study 2016."
+        title="Average Parent PLUS Loans Borrowed among Full-Time Dependent Students, 2015–16" 
+        source="2016 National Postsecondary Student Aid Study."
       >
         <Graph file={require('./json/050410.json')} small="true"/>
         <Graph file={require('./json/050411.json')} small="true"/>

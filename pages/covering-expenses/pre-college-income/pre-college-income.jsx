@@ -21,8 +21,8 @@ let singlepage = (
       <p>In 2017, the <a href="https://www.census.gov/data/tables/time-series/demo/income-poverty/cps-finc/finc-01.html" target="_blank">median income</a> for all families was $75,900. But median income differs by race or ethnicity, by location, and by age. For example, median incomes for black and Hispanic families were about 70 percent of the overall median, and median family income was about $14,000 a year higher in the Northeast than in the South.</p>
       <p>Of particular importance for thinking about how people pay for college, incomes are higher among 45-to-54-year-olds&mdash;the age range of the parents of most traditional-age college students&mdash;than for both older and younger families. In 2017, median income for families headed by 45-to-54-year-olds was $93,900, 24 percent higher than the overall median.</p>
       <Multiples 
-      title="Median Total Income of Families by Race/Ethnicity, Geographical Region, and Age, 2017" 
-      source="U.S. Census Bureau, Current Population Survey, 2017 Annual Social and Economic Supplement, Table FINC-01."
+      title="Median Total Income of Families by Race or Ethnicity, Geographic Region, and Age, 2016" 
+      source="2016 Annual Social and Economic Supplement to the Current Population Survey, table FINC-01."
       >
         <Graph file={require('./json/050101.json')} small="true"/>
         <Graph file={require('./json/050102.json')} small="true"/>

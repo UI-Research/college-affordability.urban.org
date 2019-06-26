@@ -1,5 +1,5 @@
 {
-  "title": "Undergraduate Postsecondary Enrollment",
+  "title": "Undergraduate Postsecondary Fall Enrollment",
   "series": ["Public four-year", "Public two-year", "Private nonprofit four-year", "For-profit"],
   "data": {
     "type": "line",
@@ -142,7 +142,7 @@
     }
   },
   "metadata": {
-    "source": "United States Department of Education Digest of Education Statisitcs.",
+    "source": "2017 Digest of Education Statisitcs, table 303.70.",
     "notes": null
   }
 }

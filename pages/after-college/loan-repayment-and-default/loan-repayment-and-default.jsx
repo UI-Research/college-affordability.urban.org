@@ -64,7 +64,7 @@ let singlepage = (
       <p>About 30 percent of borrowers are enrolled in income-driven plans that require monthly payments that depend on income and family size. Under the newest of these plans, REPAYE, single borrowers with annual incomes of $25,000 have payments of $57 a month, regardless of the size of their debt. Borrowers earning $50,000 owe $265 a month, and those earning $75,000 owe $473. Required payments are lower for borrowers with larger families.</p>
       <Multiples 
       title="Monthly Loan Payments by Family Income, Debt Amount, and Payment Plan" 
-      source="Department of Education http://www2.ed.gov/offices/OSFAP/defaultmanagement/schooltyperates.pdf."
+      source='"Comparison of FY 2015 Official National Cohort Default Rates to Prior Two Official Cohort Default Rates," US Department of Education, last updated August 18, 2018, http://www2.ed.gov/offices/OSFAP/defaultmanagement/schooltyperates.pdf.'
       >
         <Graph file={require('./json/060403.json')} small="true"/>
         <Graph file={require('./json/060404.json')} small="true"/>

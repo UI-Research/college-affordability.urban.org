@@ -1,5 +1,5 @@
 {
-  "title": "Distribution of Net Worth by Family Income Groups, 2013",
+  "title": "Distribution of Net Worth by Family Income Groups, 2015",
   "size": {
     "height": 400
   },
@@ -78,7 +78,7 @@
     }
   },
   "metadata": {
-    "source": "U.S. Census Bureau Detailed Tables on Distribution of Wealth and Debt 2013",
+    "source": "\"Wealth, Asset Ownership, and Debt of Households Detailed Tables: 2013,\" US Census Bureau, last updated September 17, 2018, https://www.census.gov/data/tables/2013/demo/wealth/wealth-asset-ownership.html. ",
     "notes": null
   }
 }

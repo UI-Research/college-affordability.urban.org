@@ -28,10 +28,11 @@ let singlepage = (
       <p><strong>Not everyone who gets a Pell grant receives the maximum amount. Instead, the grant size varies by income, family circumstances, and full-time or part-time enrollment.</strong></p>
       <p>In 2015&ndash;16, the average grant for dependent full-time Pell recipients from families with incomes below $27,900 was $5,530.</p>
       <Multiples 
-        title="Pell Grant by Dependency Status and Income, Full-Time Students, 2015–16 (with Percentage Peceiving Pell Grants)" 
+        title="Pell Grant by Dependency Status and Income, Full-Time Students, 2015–16 (with Share Receiving Pell Grants)" 
         subtitle= "Dollars per recipient" 
         imageOverride = "Pell Grant by Dependency Status and Income, Full-Time Students, 2015–16 (with Percentage Peceiving Pell Grants)__Dollars per recipient" 
-        source="National Postsecondary Student Aid Study, 2016."
+        source="2016 National Postsecondary Student Aid Study."
+        notes="Includes all full-time students, both Pell grant recipients and nonrecipients."
       >
         <Graph file={require('./json/040301.json')} small="true"/>
         <Graph file={require('./json/040302.json')} small="true"/>
@@ -41,7 +42,7 @@ let singlepage = (
       title="" 
       subtitle="Dollars per full-time student" 
       imageOverride = "Pell Grant by Dependency Status and Income, Full-Time Students, 2015–16 (with Percentage Peceiving Pell Grants)__Dollars per full-time student" 
-      source="National Postsecondary Student Aid Study, 2016." 
+      source="2016 National Postsecondary Student Aid Study." 
       notes="Includes all full-time students, both Pell grant recipients and nonrecipients."
     >
         <Graph file={require('./json/040304.json')} small="true"/>

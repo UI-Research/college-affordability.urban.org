@@ -1,6 +1,6 @@
 {
   "overrideTickCount": true,
-  "title": "Earnings of women by race",
+  "title": "Earnings of women by race or ethnicity",
   "series": ["25th percentile and below", "25th percentile to median", "Median to 75th percentile"],
   "data": {
     "type": "bar",
@@ -50,7 +50,7 @@
     }
   },
   "metadata": {
-    "source": null,
+    "source": "2012–16 American Community Survey, five-year sample. ",
     "notes": null
   }
 }

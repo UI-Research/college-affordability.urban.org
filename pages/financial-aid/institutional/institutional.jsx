@@ -31,8 +31,8 @@ let singlepage = (
       <Graph file={require('./json/040503.json')}/>
       <p>At the highest-tuition private nonprofit colleges and universities, on average students from low-income families received about three times as much institutional grant aid in 2015&ndash;16 as those from families in the highest income quartile.. But at the lowest-price institutions in the sector, students from more affluent families received more institutional grant aid than those from the lower half of the income distribution.</p>
       <Multiples 
-        title="Average Need-Based and Non-need-Based Grant Aid per Full-Time Student (and Percentage Receiving Institutional Aid), Public Four-Year Institutions" 
-        source="Baum et al, Trends in Student Aid 2014, The College Board, based on NPSAS 2012."
+        title="Average Need-Based and Non-need-based Grant Aid per Full-Time Student (and Share Receiving Institutional Aid), Public Four-Year Institutions" 
+        source="Sandy Baum, Jennifer Ma, Matea Pender, and CJ Libassi, <em>Trends in Student Aid 2018 </em>(New York: College Board, 2018), based on data from the 2016 National Postsecondary Student Aid Study."
       >
         <Graph file={require('./json/040504.json')} small="true"/>
         <Graph file={require('./json/040505.json')} small="true"/>

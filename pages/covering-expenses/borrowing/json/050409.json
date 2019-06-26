@@ -1,6 +1,6 @@
 {
   "hideTooltip": true,
-  "title": "Average Annual Parent PLUS Loan per Borrower and Percentage of Dependent Students’ Parents Borrowing, 2000-01 to 2015–16",
+  "title": "Average Annual Parent PLUS Loan per Borrower and Share of Dependent Students’ Parents Borrowing, 1997–98 to 2017–18",
   "series": "all",
   "data": {
     "type": "bar",
@@ -31,7 +31,7 @@
     }
   },
   "metadata": {
-    "source": "Baum et al, Trends in Student Aid 2016, The College Board",
+    "source": "Sandy Baum, Jennifer Ma, Matea Pender, and CJ Libassi, <em>Trends in Student Aid 2018 <\/em>(New York: College Board, 2018).",
     "notes": null
   }
 }

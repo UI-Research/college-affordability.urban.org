@@ -1,6 +1,6 @@
 {
   "forceMediumHeight": true,
-  "title": "Tuition and debt based on time to degree by sector ",
+  "title": "Tuition and Debt Based on Time to Degree by sector ",
   "series": ["Four years", "Five years", "Six years"],
   "data": {
     "type": "bar",
@@ -120,7 +120,7 @@
     }
   },
   "metadata": {
-    "source": "National Postsecondary Student Aid Study 2016.",
+    "source": "2016 National Postsecondary Student Aid Study. ",
     "notes": null
   }
 }

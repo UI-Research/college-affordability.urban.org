@@ -1,5 +1,5 @@
 {
-  "title": "Share of Undergraduate Students with $0 EFC, by Dependency Status, 2015–16",
+  "title": "Share of Undergraduate Students with $0 Expected Family Contributions, by Dependency Status, 2015–16",
   "series": "Undergraduate Student Percentage",
   "data": {
     "type": "bar",
@@ -28,7 +28,7 @@
     }
   },
   "metadata": {
-    "source": "National Postsecondary Student Aid Study, 2016. ",
+    "source": "2016 National Postsecondary Student Aid Study. ",
     "notes": null
   }
 }

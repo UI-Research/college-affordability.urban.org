@@ -3,7 +3,7 @@
   "line": {
     "connectNull": true
   },
-  "title": "Average Annual Spending on Required Course Materials, 2007–08 to 2017–18 in 2017 dollars",
+  "title": "Average Annual Spending on Required Course Materials, 2007–08 to 2017–18, in 2017 Dollars",
   "series": "Annual Spending",
   "data": {
     "type": "line",
@@ -40,7 +40,7 @@
     }
   },
   "metadata": {
-    "source": "National Association of College Stores, \"Infographic: Course Materials - Student Spending and Preferences,\" last modified fall 2015, http://www.nacs.org/research/industrystatistics/higheredfactsfigures.aspx.",
+    "source": "\"Infographic: Course Materials–Student Spending and Preferences,\" National Association of College Stores, accessed June 12, 2019, http://www.nacs.org/research/industrystatistics/higheredfactsfigures.aspx.",
     "notes": null
   }
 }

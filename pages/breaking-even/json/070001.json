@@ -1,5 +1,5 @@
 {
-  "title": "Cumulative Earnings of College Graduates Net of Tuition Payments and Forgone Earnings in 2015 Dollars",
+  "title": "Cumulative Earnings of College Graduates Net of Tuition Payments and Forgone Earnings, in 2018 Dollars",
   "size": {
     "height": 400
   },
@@ -182,7 +182,7 @@
     }
   },
   "metadata": {
-    "source": "U.S. Census Bureau, calculations by the authors. ",
+    "source": "Authors' calculations from US Census Bureau data.",
     "notes": null
   }
 }

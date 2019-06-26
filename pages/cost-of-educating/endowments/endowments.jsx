@@ -31,7 +31,7 @@ let singlepage = (
       <p>The few public and private nonprofit universities with high endowment income per student use those assets to support undergraduate and graduate students and to further their research missions. <strong>During the 2015&ndash;16 academic year, 10 percent of students enrolled at private universities benefited from about $66,800 of endowment spending per full-time equivalent (FTE) student, but median endowment spending per FTE student in this sector was only $3,900. In public universities, 10 percent of students attended institutions with an average of $6,200 of endowment spending per student compared with just $900 for the median student.</strong></p>
       <Multiples 
         title="Average Endowment Income per Student by Decile" 
-        source="Integrated Postsecondary Education Data System (IPEDS)." 
+        source="Integrated Postsecondary Education Data System." 
         // notes="Institutions are sorted according to the Carnegie Classification of Institutions of Higher Education framework." 
         pluralNotes="true">
         <Graph file={require('./json/020301.json')} small="true"/>

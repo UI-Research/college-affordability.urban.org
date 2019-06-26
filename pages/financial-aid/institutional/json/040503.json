@@ -1,5 +1,5 @@
 {
-  "title": "Average Need-Based and Non-Need-Based Institutional Grant Aid per Full-Time Dependent Student (and Percentage Receiving Institutional Aid), Private Nonprofit Four-Year Institutions, 2015-16",
+  "title": "Average Need-Based and Non-need-based Institutional Grant Aid per Full-Time Dependent Student (and Share Receiving Institutional Aid), Private Nonprofit Four-Year Institutions, 2015–16",
   "padding": {
     "bottom": 20
   },
@@ -105,7 +105,7 @@
     }
   },
   "metadata": {
-    "source": "Baum et al, Trends in Student Aid 2018, The College Board, based on NPSAS 2016.",
-    "notes": "Tuition and fees are in-state for public four-year institutions and in-district for public two-year colleges."
+    "source": "Sandy Baum, Jennifer Ma, Matea Pender, and CJ Libassi, <em>Trends in Student Aid 2018 <\/em>(New York: College Board, 2018), based on data from the 2016 National Postsecondary Student Aid Study.",
+    "notes": "Tuition and fee groups are: Lowest—Less than $25,000; Second--$25,000 to $34,999; Third--$35,000 to $44,999; Highest--$45,000 or more."
   }
 }

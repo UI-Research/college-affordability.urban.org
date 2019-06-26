@@ -32,8 +32,8 @@ let singlepage = (
         <p><strong>Extra years of enrollment add significantly to the price of a bachelor&rsquo;s degree.</strong></p>
         <p>For example, a student paying the full sticker price of tuition and fees and room and board at an in-state public four-year university at 2018&ndash;19 prices would pay $85,500 in tuition, fees, room, and board over four years. But enrolling full time for five years would cost $106,900, and for six years the charges would be $128,.</p>
       <Multiples 
-      title="Tuition and Fees and Room and Board over four, five, and six years, 2015–16 prices"       
-      source="Jennifer Ma, Sandy Baum, Matea Pender, and Meredith Welch, Trends in College Pricing 2016 (New York: College Board, 2016), table 1A."
+      title="Tuition and Fees and Room and Board over Four, Five, and Six years, 2017–18 Prices"
+      source="Jennifer Ma, Sandy Baum, Matea Pender, and Meredith Welch, <em>Trends in College Pricing 2018 </em>(New York: College Board, 2016), table 1A."
       >
         <Graph file={require('./json/050504.json')} small="true"/>
         <Graph file={require('./json/050505.json')} small="true"/>

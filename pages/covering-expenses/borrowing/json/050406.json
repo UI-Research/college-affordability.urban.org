@@ -1,6 +1,6 @@
 {
   "overrideTickCount": true,
-  "title": "Average Federal Loans per Undergraduate Student and per Undergraduate Borrower, with Percentage of Undergraduates Borrowing, 2001-02 to 2016-17",
+  "title": "Average Federal Loans per Undergraduate Student and per Undergraduate Borrower, with Share of Undergraduates Borrowing, 2001–02 to 2017–18",
   "series": ["Average per borrower", "Average per student"],
   "data": {
     "type": "line",
@@ -64,7 +64,7 @@
     }
   },
   "metadata": {
-    "source": "IPEDS and Baum et al. (2016).",
+    "source": "Sandy Baum, Jennifer Ma, Matea Pender, and CJ Libassi, <em>Trends in Student Aid 2018 <\/em>(New York: College Board, 2018), table 6.",
     "notes": null
   }
 }

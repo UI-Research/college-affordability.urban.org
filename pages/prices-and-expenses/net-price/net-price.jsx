@@ -28,7 +28,7 @@ let singlepage = (
             <p>Full-time dependent students from the lowest family income quartile attending public two-year and four-year colleges in 2015&ndash;16 received enough grant aid, on average, to cover their tuition and fees and have some money left over to put toward living expenses. The same was true for independent students attending public two-year colleges.</p>
             <Multiples 
                 title="Cost of Attendance (Total Expenses) Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, 2015–16" 
-                source="National Postsecondary Student Aid Study (NPSAS), 2016." 
+                source="2016 National Postsecondary Student Aid Study." 
                 notes="Net tuition and fee amounts are calculated by subtracting average total grant aid for all full-time students, including those who do and do not receive grant aid, from the published tuition and fee price. This yields a slightly different measure than that identified in NPSAS as net tuition and fees, because that calculation excludes any aid individual students receive that exceeds their tuition and fee prices." 
                 pluralNotes="true"
             >
@@ -46,9 +46,9 @@ let singlepage = (
             <p>For independent students, net prices have risen in all sectors except at public two-year colleges, where their tuition and fees have consistently been covered by grant aid.</p>
             <Multiples 
                 title="Total Student Budget, Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2015–16, in 2015 Dollars" 
-                imageOverride = "Total Student Budget and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2015–16, in 2015 Dollars ___Public four-year institutions"
+                imageOverride = "Total Student Budget, Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2015–16, in 2015 Dollars ___Public four-year institutions"
                 subtitle = "Public four-year institutions"
-                source="National Postsecondary Student Aid Study 2016."
+                source="2016 National Postsecondary Student Aid Study."
             >
                 <Graph file={require('./json/030507.json')} small="true"/>
                 <Graph file={require('./json/030508.json')} small="true"/>
@@ -58,9 +58,9 @@ let singlepage = (
             </Multiples>
             <Multiples 
                 title="" 
-                imageOverride = "Total Student Budget and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2015–16, in 2015 Dollars ___Private four-year institutions" 
+                imageOverride = "Total Student Budget, Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2015–16, in 2015 Dollars ___Private four-year institutions" 
                 subtitle = "Private four-year institutions" 
-                source="National Postsecondary Student Aid Study 2016."
+                source="2016 National Postsecondary Student Aid Study. "
             >
                 <Graph file={require('./json/030512.json')} small="true"/>
                 <Graph file={require('./json/030513.json')} small="true"/>
@@ -68,14 +68,23 @@ let singlepage = (
                 <Graph file={require('./json/030515.json')} small="true"/>
                 <Graph file={require('./json/030516.json')} small="true"/>
             </Multiples>
-            <Multiples title="" imageOverride = "Total Student Budget and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2015–16, in 2015 Dollars ___Public two-year institutions" subtitle = "Public two-year institutions" source="National Postsecondary Student Aid Study 2016.">
+            <Multiples 
+                title="" 
+                imageOverride = "Total Student Budget, Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2015–16, in 2015 Dollars___Public two-year institutions" 
+                subtitle = "Public two-year institutions" 
+                source="2016 National Postsecondary Student Aid Study. "
+            >
                 <Graph file={require('./json/030517.json')} small="true"/>
                 <Graph file={require('./json/030518.json')} small="true"/>
                 <Graph file={require('./json/030519.json')} small="true"/>
                 <Graph file={require('./json/030520.json')} small="true"/>
                 <Graph file={require('./json/030521.json')} small="true"/>
             </Multiples>
-            <Multiples title="" imageOverride = "Total Student Budget and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2015–16, in 2015 Dollars ___For-profit institutions" subtitle = "For-profit institutions" source="National Postsecondary Student Aid Study 2016.">
+            <Multiples 
+                title="" 
+                imageOverride = "Total Student Budget, Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2015–16, in 2015 Dollars ___For-profit institutions" 
+                subtitle = "For-profit institutions" 
+                source="2016 National Postsecondary Student Aid Study.">
                 <Graph file={require('./json/030522.json')} small="true"/>
                 <Graph file={require('./json/030523.json')} small="true"/>
                 <Graph file={require('./json/030524.json')} small="true"/>

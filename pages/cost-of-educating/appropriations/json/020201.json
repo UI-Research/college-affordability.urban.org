@@ -1,6 +1,6 @@
 {
   "overrideTickCount": true,
-  "title": "Change in Total Appropriations, Enrollment, and Appropriations per Full-Time Equivalent (FTE) Student Relative to 2000–01",
+  "title": "Total Appropriations, Enrollment, and Appropriations per Full-Time Equivalent Student Relative to 2000–01",
   "series": ["Public-sector FTE student enrollment", "State and local public higher education appropriations", "State and local public higher education appropriations per public-sector FTE student"],
   "data": {
     "type": "line",
@@ -86,7 +86,7 @@
     }
   },
   "metadata": {
-    "source": "State Higher Education Executive Officers Association (SHEEO), State Higher Education Finance (SHEF), Fiscal Year (FY) 2016.",
-    "notes": null
+    "source": "Sophia Laderman, <em>SHEF: FY 2017: State Higher Education Finance (<\/em>Boulder, CO: State Higher Education Executive Officers Association, 2018).",
+    "notes": "FTE = full-time equivalent. Years indicate fall semester (e.g., 2001 is the 2001–02 school year)."
   }
 }

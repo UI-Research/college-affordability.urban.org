@@ -1,5 +1,5 @@
 {
-  "title": "Earnings of Men Ages 18-23 and 24-34 with High School Diploma or Equivalent Working Full Time Full Year",
+  "title": "Earnings of Men Ages 18–23 and 24–34 with High School Diploma or Equivalent Working Full Time Full Year",
   "series": ["25th percentile", "Median", "75th percentile"],
   "data": {
     "type": "line",
@@ -239,7 +239,7 @@
     }
   },
   "metadata": {
-    "source": "Current Population Suvey, Annual Social and Economic Supplement, 1990-2017. ",
+    "source": "1990–2017 Annual Social and Economic Supplements to the Current Population Survey. ",
     "notes": null
   }
 }

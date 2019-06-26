@@ -1,5 +1,5 @@
 {
-  "title": "Number of 529 College Savings Accounts and Average Account Size ",
+  "title": "Number of 529 College Savings Accounts, in 2018 Dollars",
   "series": "Accounts in millions",
   "data": {
     "type": "bar",
@@ -41,7 +41,7 @@
     }
   },
   "metadata": {
-    "source": "College Savings Plans Network, 529 Report, March 2017, http://www.collegesavings.org/wp-content/uploads/2015/09/FINAL-CSPN-Report-3.20.pdf",
+    "source": "College Savings Plans Network, 529 Plan data, 2018 and earlier years.",
     "notes": null
   }
 }

@@ -1,5 +1,5 @@
 {
-  "title": "Median Net Worth of Families by Family Type, 1989–2016",
+  "title": "Median Net Worth of Families, by Family Type, 1989–2016",
   "size": {
     "height": 400
   },
@@ -77,7 +77,7 @@
     }
   },
   "metadata": {
-    "source": "Survey of Consumer Finance, 1989-2016 surveys.",
+    "source": "1989–2016 Surveys of Consumer Finances.",
     "notes": null
   }
 }
