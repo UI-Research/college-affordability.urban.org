@@ -1,5 +1,5 @@
 {
-  "title": "Earnings from 800 Hours of Work at the Minimum Wage Compared to Average Published Tuition and Fees and Total Charges at Public Four-Year Institutions Over Time",
+  "title": "Earnings from 800 Hours of Work at the Minimum Wage Compared with Average Published Tuition and Fees and Total Charges at Public Four-Year Institutions over Time",
   "series": ["Tuition, fees, room, and board", "800 hours at minimum wage", "Tuition and fees"],
   "data": {
     "type": "line",
@@ -124,7 +124,7 @@
     }
   },
   "metadata": {
-    "source": "United States Department of Labor, Wage and Hour Division; NCES, Digest of Education Statistics; Ma et al. 2018.",
+    "source": "US Department of Labor Wage and Hour Division, the National Center for Education Statistics' Digest of Education Statistics, and Jennifer Ma, Sandy Baum, Matea Pender, and CJ Libassi, <em>Trends in College Pricing 2018 <\/em>(New York: College Board, 2018).",
     "notes": null
   }
 }

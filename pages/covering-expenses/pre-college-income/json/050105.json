@@ -1,5 +1,5 @@
 {
-  "title": "Median Total Income of Families by Education Level, 2016",
+  "title": "Median Total Income of Families by Education Level, 2017",
   "padding": {
     "right": 20
   },
@@ -35,7 +35,7 @@
     }
   },
   "metadata": {
-    "source": "U.S. Census Bureau, Current Population Survey, 2016 Annual Social and Economic Supplement, Table FINC-01.",
+    "source": "U.S. Census Bureau, Current Population Survey, 2017 Annual Social and Economic Supplement, Table FINC-01.",
     "notes": null
   }
 }

@@ -1,6 +1,6 @@
 {
   "forceTall": true,
-  "title": "Earnings by field of bachelor’s degree at the median, 25th percentile, and 75th percentile, employed workers with bachelor’s degree ages 35 to 44, 2014",
+  "title": "2016 Earnings by Field at the Median and the 25th and 75th Percentiles among Employed 35-to-44-Year-Olds with Bachelor's Degrees",
   "padding": {
     "bottom": 30
   },
@@ -86,7 +86,7 @@
     }
   },
   "metadata": {
-    "source": "IPUMS 2016 ACS 5-year sample (2012–2016).",
+    "source": "2016 Integrated Public Use Microdata Series data and the 2012–16 American Community Survey, five-year sample.",
     "notes": null
   }
 }

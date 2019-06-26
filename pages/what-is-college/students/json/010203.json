@@ -1,6 +1,6 @@
 {
   "hideTooltip": true,
-  "title": "Enrollment Sector By Age and Dependency, First-Year Undergraduates, 2015-16",
+  "title": "Enrollment Sector by Age and Dependency, First-Year Undergraduates, 2015–16",
   "series": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit", "Other or non-degree-granting"],
   "data": {
     "type": "bar",
@@ -76,7 +76,7 @@
     }
   },
   "metadata": {
-    "source": "National Postsecondary Student Aid Study 2016.",
+    "source": "2016 National Postsecondary Student Aid Study.",
     "notes": null
   }
 }

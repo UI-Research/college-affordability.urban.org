@@ -1,6 +1,6 @@
 {
   "hideTooltip": true,
-  "title": "Median EFC by Parents’ Income: Dependent Students 2015–16",
+  "title": "Median EFC by Parents’ Income: Dependent Students, 2015–16",
   "padding": {
     "bottom": 30
   },
@@ -64,7 +64,7 @@
     }
   },
   "metadata": {
-    "source": "National Postsecondary Student Aid Study, 2016. ",
-    "notes": null
+    "source": "2016 National Postsecondary Student Aid Study. ",
+    "notes": "EFC = expected family contribution."
   }
 }

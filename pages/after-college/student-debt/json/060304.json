@@ -1,5 +1,5 @@
 {
-  "title": "Distribution of Cumulative Debt of Associate’s Degree Recipients by Sector, 2015–16",
+  "title": "Distribution of Cumulative Debt of Associate Degree Recipients by Sector, 2015–16",
   "series": ["No debt", "Less than $10,000", "$10,000‒$19,999", "$20,000‒$29,999", "$30,000‒$39,999", "$40,000 or more"],
   "data": {
     "type": "bar",
@@ -55,7 +55,7 @@
     }
   },
   "metadata": {
-    "source": "National Postsecondary Student Aid Study 2016.",
-    "notes": null
+    "source": "2016 National Postsecondary Student Aid Study. ",
+    "notes": "Percentages in parentheses on the vertical axis report the share of associate degree recipients in each sector."
   }
 }

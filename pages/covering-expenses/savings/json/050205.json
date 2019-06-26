@@ -1,5 +1,5 @@
 {
-  "title": "Median Net Worth of Families by Race and Ethnicity, 1989–2016",
+  "title": "Median Net Worth of Families by Race or Ethnicity, 1989–2016",
   "size": {
     "height": 400
   },
@@ -77,7 +77,7 @@
     }
   },
   "metadata": {
-    "source": "Survey of Consumer Finances, 1989-2016 surveys.",
+    "source": "1989–2016 Surveys of Consumer Finances.",
     "notes": null
   }
 }

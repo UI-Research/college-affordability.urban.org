@@ -24,8 +24,8 @@ let singlepage = (
       <p>The average cost of attendance for the 20 percent of students attending private nonprofit four-year institutions with the lowest COAs is about $2,400 higher than the average for the 20 percent of in-state students in public four-year institutions with the highest COAs.</p>
       <p><strong>Tuition and fees constitute the largest component of estimated COA for students attending private four-year nonprofit institutions and for-profit colleges. But for students attending public two-year or public four-year colleges in their home states, room and board is the largest component of estimated COA.</strong></p>
       <Multiples 
-        title="Cost of Attendance by Sector from 2002–03 to 2017–18 in 2017 Dollars" 
-        source="Ma et al., Trends in College Pricing 2018, 2013, 2008, 2003.">
+        title="Cost of Attendance by Sector from 2002–03 to 2017–18, in 2017 Dollars" 
+        source="The 2003, 2008, 2013, and 2018 editions of <em>Trends in College Pricing</em>.">
         <Graph file={require('./json/030302.json')} small="true"/>
         <Graph file={require('./json/030303.json')} small="true"/>
         <Graph file={require('./json/030304.json')} small="true"/>

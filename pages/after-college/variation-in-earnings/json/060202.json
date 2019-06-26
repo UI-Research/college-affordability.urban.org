@@ -1,5 +1,5 @@
 {
-  "title": "Median earnings among employed workers by age and educational attainment",
+  "title": "Median Earnings among Employed Workers by Age and Educational Attainment",
   "series": ["High school diploma or GED", "Some college, no degree", "Associate degree", "Bachelor's degree", "Advanced degree"],
   "data": {
     "type": "line",
@@ -57,7 +57,7 @@
     }
   },
   "metadata": {
-    "source": "IPUMS 2016 ACS 5-year sample (2012–2016).",
+    "source": "2016 Integrated Public Use Microdata Series data and the 2012–16 American Community Survey, five-year sample.",
     "notes": null
   }
 }

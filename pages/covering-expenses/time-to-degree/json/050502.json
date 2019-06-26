@@ -1,5 +1,5 @@
 {
-  "title": "Time Between First Postsecondary Enrollment and Degree Completion, Among 2015–16 Bachelor’s Degree Recipients, by Sector ",
+  "title": "Time between First Postsecondary Enrollment and Degree Completion, among 2015–16 Bachelor’s Degree Recipients, by Sector ",
   "series": ["Four years or less", "Five years", "Six years", "Seven years or more"],
   "data": {
     "type": "bar",
@@ -53,7 +53,7 @@
     }
   },
   "metadata": {
-    "source": "Shapiro, D., Dundar, A., Wakhungu, P.K., Yuan, X., Nathan, A, & Hwang, Y. (2016, September). Time to Degree: A National View of the Time Enrolled and Elapsed for Associate and Bachelor’s Degree Earners (Signature Report No. 11). Herndon, VA: National Student Clearinghouse Research Center.",
+    "source": "Doug Shapiro, Afet Dundar, Phoebe Khasiala Wakhungu, Xin Yuan, Angel Nathan, and Youngsik Hwang, <em>Time to Degree: A National View of the Time Enrolled and Elapsed for Associate and Bachelor’s Degree Earners <\/em>(Herndon, VA: National Student Clearinghouse Research Center, 2016)",
     "notes": "Other includes less-than-four-year institutions offering some bachelor's degrees."
   }
 }

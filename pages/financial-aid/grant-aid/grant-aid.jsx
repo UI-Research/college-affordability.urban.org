@@ -36,7 +36,7 @@ let singlepage = (
     <p><strong>Independent and dependent students are equally likely to receive grant aid, but independent students are more likely to receive federal grants and military/veterans benefits, and dependent students are more likely to receive each of the other types of grants.</strong></p>
     <Multiples 
       title="Grant Aid by Source for Independent and Dependent Students, by Sector, 2015–16" 
-      source="National Postsecondary Student Aid Study, 2016."
+      source="2016 National Postsecondary Student Aid Study."
     >
         <Graph file={require('./json/040203.json')} small="true"/>
         <Graph file={require('./json/040204.json')} small="true"/>

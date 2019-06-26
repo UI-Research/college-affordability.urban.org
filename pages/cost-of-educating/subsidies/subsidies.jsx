@@ -17,8 +17,8 @@ let singlepage = (
       <p><strong>Overall, subsidies have shrunk in recent years, leaving revenue from tuition and fees to cover more of the cost of education.</strong></p>
       <Multiples 
         title="Education and Related Spending per Full-Time Equivalent Student at Public Institutions, 2005–06 to 2015–16" 
-        source="Jennifer Ma, Sandy Baum, Matea Pender, and Meredith Welch, Trends in College Pricing 2018 (New York: College Board, 2018)." 
-        notes="" 
+        source="Jennifer Ma, Sandy Baum, Matea Pender, and CJ Libassi, <em>Trends in College Pricing 2018 </em>(New York: College Board, 2018)." 
+        notes="FTE = full-time equivalent." 
         pluralSources="true" 
       >
         <Graph file={require('./json/020101.json')} small="true"/>
@@ -31,9 +31,9 @@ let singlepage = (
       <p><strong>At private institutions, unlike public institutions, tuition revenues covered roughly the same share of education spending from 2005&ndash;06 to 2015&ndash;16.</strong></p>
       <Multiples 
         title="Education and Related Spending per Full-Time Equivalent Student at Private Nonprofit Institutions, 2005–06 to 2015–16" 
-        source="Jennifer Ma, Sandy Baum, Matea Pender, and Meredith Welch, Trends in College Pricing 2018 (New York: College Board, 2018)." 
+        source="Jennifer Ma, Sandy Baum, Matea Pender, and CJ Libassi, <em>Trends in College Pricing 2018 </em>(New York: College Board, 2018)." 
         pluralNotes="true" 
-        // notes="Institutions are sorted according to the Carnegie Classification of Institutions of Higher Education framework. FTE = full-time equivalent. This graph excludes the small private nonprofit two-year and special purpose sectors."
+        notes="FTE = full-time equivalent."
       >
         <Graph file={require('./json/020105.json')} small="true"/>
         <Graph file={require('./json/020106.json')} small="true"/>
@@ -45,7 +45,7 @@ let singlepage = (
       <p>Estimated subsidies are many times higher among the top decile of students at research institutions than among students at less resourced institutions. But high per student subsidies at research universities may not translate to resources available to undergraduates. These institutions enroll large graduate populations and have active research agendas, both of which command considerable financial resources. Precise measurements are not available, but research universities with high estimated subsidies spend considerably less on undergraduate students than these figures would suggest.</p>
       <Multiples 
         title="Average Subsidy per Full-Time Equivalent Student within Undergraduate Deciles" 
-        source="Integrated Postsecondary Education Data System (IPEDS)."
+        source="Integrated Postsecondary Education Data System."
       >
         <Graph file={require('./json/020108.json')} small="true"/>
         <Graph file={require('./json/020109.json')} small="true"/>

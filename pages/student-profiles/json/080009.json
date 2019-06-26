@@ -1,6 +1,6 @@
 {
   "forceMediumHeight": true,
-  "title": "Lower-Middle Income Students: Enrollment by Sector, 2015–16",
+  "title": "Lower-Middle-Income Students: Enrollment by Sector, 2015–16",
   "series": "Enrollment",
   "data": {
     "type": "bar",
@@ -31,7 +31,7 @@
     }
   },
   "metadata": {
-    "source": "National Postsecondary Student Aid Study 2016.",
+    "source": "2016 National Postsecondary Student Aid Study. ",
     "notes": null
   }
 }

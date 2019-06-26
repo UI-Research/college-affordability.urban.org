@@ -1,7 +1,7 @@
 {
   "metadata.pluralSources": true,
   "metadata.pluralNotes": true,
-  "title": "Difference between the Average Price of On-Campus Housing over the Academic Year at Four-Year Public and Private Nonprofit Colleges in 2015–16 and Average Rent over Nine Months among 18–24-Year-Olds in 2015 dollars, by State",
+  "title": "Difference between the Average Price of On-Campus Housing over the Academic Year at Four-Year Public and Private Nonprofit Colleges in 2015–16 and Average Rent over Nine Months among 18-to-24-Year-Olds in 2015 Dollars, by State",
   "series": "On-campus housing - average rent",
   "data": {
     "type": "bar",
@@ -78,7 +78,7 @@
     }
   },
   "metadata": {
-    "source": "IPEDS; American Community Survey 2016 five-year sample (2012–16).",
-    "notes": null
+    "source": "Integrated Postsecondary Education Data System and 2012–16 American Community Survey, five-year sample.",
+    "notes": "On-campus housing is the room portion of on-campus room and board. Institutions are weighted by full-time undergraduate fall enrollment. Average nine-month rent amounts are calculated as nine times the average monthly rent of 18-to-24-year-old heads of household renting one-bedroom or studio apartments between 2012 and 2016, in 2015 dollars  . These data are less reliable for smaller states. Negative values indicate on-campus housing prices lower than average rents; positive values indicate prices higher than average rents"
   }
 }

@@ -1,7 +1,7 @@
 {
   "forceMediumHeight": true,
   "overrideTickCount": true,
-  "title": "Degree-Granting Institutions by Sector and Degree-Type in Fall 2017",
+  "title": "Degree-Granting Institutions by Sector and Degree Type in Fall 2017",
   "series": "Number of institutions",
   "data": {
     "type": "bar",

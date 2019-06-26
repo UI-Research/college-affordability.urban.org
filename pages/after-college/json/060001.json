@@ -1,5 +1,5 @@
 {
-  "title": "Percentage of First-Time Full-Time Students Enrolling in 2010 Who Earned Bachelor's Degrees at Their First Institution within Four, Five, and Six Years",
+  "title": "Share of First-Time Full-Time Students Enrolling in 2010 Who Earned Bachelor's Degrees at Their First Institution within Four, Five, and Six Years",
   "series": ["Four years", "Five years", "Six years"],
   "data": {
     "type": "bar",
@@ -40,7 +40,7 @@
     }
   },
   "metadata": {
-    "source": "Digest of Education Statistics 2017, Table 326.10",
+    "source": "2017 Digest of Education Statistics 2017, table 326.10.",
     "notes": null
   }
 }

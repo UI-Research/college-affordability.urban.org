@@ -1,5 +1,5 @@
 {
-  "title": "Average Institutional Grant Aid and Remaining (Net) Tuition and Fees, 2015-16",
+  "title": "Average Institutional Grant Aid and Remaining (Net) Tuition and Fees, 2015–16",
   "series": ["Remaining (net) tuition and fees", "Institutional grant aid"],
   "data": {
     "type": "bar",
@@ -63,7 +63,7 @@
     }
   },
   "metadata": {
-    "source": "NPSAS, 2016. ",
+    "source": "2016 National Postsecondary Student Aid Study. ",
     "notes": null
   }
 }

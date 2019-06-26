@@ -1,5 +1,5 @@
 {
-  "title": "Median family Income by state, families with children ages 15 to 17",
+  "title": "Median Family Income by State, Families with Children Ages 15 to 17",
   "highlightIndex": 26,
   "series": "Median Income",
   "data": {
@@ -78,7 +78,7 @@
     }
   },
   "metadata": {
-    "source": "American Community Survey, five-year sample, 2012–16",
+    "source": "2012–16 American Community Survey five-year sample. ",
     "notes": null
   }
 }

@@ -1,5 +1,5 @@
 {
-  "title": "Median Incomes Over Time of Families Headed by Persons Ages 45 to 54",
+  "title": "Median Income over Time of Families 45-to-54-Year-Olds ",
   "series": "Median Income",
   "data": {
     "type": "line",
@@ -28,7 +28,7 @@
     }
   },
   "metadata": {
-    "source": "U.S. Census Bureau, Historical Income Tables: Families, Table F-11.",
+    "source": "US Census Bureau, Historical Income Tables: Families, table F-11.",
     "notes": null
   }
 }

@@ -1,5 +1,6 @@
 {
-  "title": "In-State or In-District Tuition and Fees at Public Institutions, by State, 2018–19",
+  "title": "Tuition and Fees at Public Institutions, by State, 2018–19",
+  "subtitle": "Public Two-Year In-district",
   "highlightIndex": 37,
   "series": "Amount",
   "data": {
@@ -76,7 +77,7 @@
     }
   },
   "metadata": {
-    "source": "Ma et al., Trends in College Pricing 2018, tables 5 and 6.",
+    "source": "Jennifer Ma, Sandy Baum, Matea Pender, and CJ Libassi, <em>Trends in College Pricing 2018 <\/em>(New York: College Board, 2018), tables 5 and 6.",
     "notes": null
   }
 }

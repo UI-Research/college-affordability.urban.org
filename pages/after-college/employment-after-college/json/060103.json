@@ -1,5 +1,5 @@
 {
-  "title": "Type of Employment Over the Past Year, Among Individuals Ages 25–34 in the Labor Force",
+  "title": "Type of Employment over the Past Year, among 25-to-34-Year-Olds in the Labor Force",
   "series": ["No work last year", "Part year or part time", "Full year full time"],
   "data": {
     "type": "bar",
@@ -49,7 +49,7 @@
     }
   },
   "metadata": {
-    "source": "IPUMS 2014 ACS 5-year sample (2012–2016).",
+    "source": "2014 Integrated Public Use Microdata Series data and the 2012–16 American Community Survey, five-year sample.",
     "notes": null
   }
 }

@@ -32,7 +32,7 @@ let singlepage = (
 
       <Multiples 
         title="Share of Undergraduates Receiving State Grant Aid, 2015–16" 
-        source="National Postsecondary Student Aid Study, 2016."
+        source="2016 National Postsecondary Student Aid Study."
       >
         <Graph file={require('./json/040403.json')} small="true"/>
         <Graph file={require('./json/040404.json')} small="true"/>
@@ -46,7 +46,7 @@ let singlepage = (
       <p>Students from low-income families are more likely than their more affluent peers to receive state grant aid and they receive somewhat larger grants </p>
       <Multiples 
         title="Average State Grant Aid per Recipient, 2015–16" 
-        source="NPSAS, 2015."
+        source="2016 National Postsecondary Student Aid Study."
       >
         <Graph file={require('./json/040408.json')} small="true"/>
         <Graph file={require('./json/040409.json')} small="true"/>

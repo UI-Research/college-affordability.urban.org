@@ -1,5 +1,5 @@
 {
-  "title": "Distribution of Borrowers by Federal Student Loan Repayment Plan, as of March 31, 2018",
+  "title": "Distribution of Borrowers by Federal Student Loan Repayment Plan, as of December 31, 2018",
   "size": {
     "height": 400
   },
@@ -31,7 +31,7 @@
     }
   },
   "metadata": {
-    "source": "US Department of Education, Federal Student Aid, Data Center, Student Data, Federal Student Loan Portfolio.",
+    "source": "US Department of Education, Federal Student Aid Data Center, Federal Student Loan Portfolio.",
     "notes": null
   }
 }

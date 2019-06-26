@@ -1,5 +1,5 @@
 {
-  "title": "Percentage of undergraduates with debt and percentage borrowing for the current year, 2015–16",
+  "title": "Share of Undergraduates with Debt and Share Borrowing for the Current Year, 2015–16",
   "series": ["With debt", "Borrowed in 2015-16"],
   "data": {
     "type": "bar",
@@ -34,7 +34,7 @@
     }
   },
   "metadata": {
-    "source": "National Postsecondary Student Aid Study 2016.",
-    "notes": "Includes both federal and nonfederal student borrowing and debt. Estimates of the percentage of undergraduates borrowing federal student loans in NPSAS are slightly higher than suggested by the number of borrowers in the Department of Education’s Federal Student Aid Data Center."
+    "source": "2016 National Postsecondary Student Aid Study. ",
+    "notes": "Includes both federal and nonfederal student borrowing and debt. Estimates of the share of undergraduates borrowing federal student loans in the National Postsecondary Student Aid Study are slightly higher than suggested by the number of borrowers in the US Department of Education’s Federal Student Aid Data Center."
   }
 }

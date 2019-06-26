@@ -1,5 +1,5 @@
 {
-  "title": "Type of Employment over the Last Year among Individuals with Only a High School Diploma or GED and Not Currently Attending School",
+  "title": "Type of Employment over the Past Year among Peoplewith Only a High School Diploma or GED and Not Currently Attending School",
   "padding": {
     "bottom": 30
   },
@@ -56,7 +56,7 @@
     }
   },
   "metadata": {
-    "source": "Integrated Public Use Microdata Series (IPUMS) 2016 American Community Survery (ACS) five-year sample (2012–16).",
+    "source": "Integrated Public Use Microdata Series and the 2012–16 American Community Survey, five-year sample.",
     "notes": null
   }
 }

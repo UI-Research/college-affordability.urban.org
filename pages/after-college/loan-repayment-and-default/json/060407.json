@@ -1,5 +1,5 @@
 {
-  "title": "Rates of Default by End of 2014 among Borrowers Entering Repayment in 2009, by School-Leaving Balance (with Percentage of Borrowers in Each Balance Category)",
+  "title": "Share of Defaulters and Three-Year Federal Student Loan Default Rate among Borrowers Entering Repayment in 2010–11, by Loan Balance",
   "size": {
     "height": 400
   },
@@ -33,7 +33,7 @@
     }
   },
   "metadata": {
-    "source": null,
-    "notes": null
+    "source": "Sandy Baum, Jennifer Ma, Matea Pender, and CJ Libassi, <em>Trends in Student Aid 2018 <\/em>(New York: College Board, 2018), figure 12B. ",
+    "notes": "Percentages in parentheses on the horizontal axis report the share of borrowers in each balance category."
   }
 }

@@ -1,6 +1,6 @@
 {
   "hideTooltip": true,
-  "title": "Percentage of Undergraduate Students Participating in Federal Work-Study, 2015–16",
+  "title": "Share of Undergraduate Students Participating in Federal Work-Study, 2015–16",
   "data": {
     "type": "bar",
     "sets": {
@@ -97,7 +97,7 @@
     }
   },
   "metadata": {
-    "source": "National Postsecondary Student Aid Study 2016.",
+    "source": "2016 National Postsecondary Student Aid Study. ",
     "notes": null
   }
 }

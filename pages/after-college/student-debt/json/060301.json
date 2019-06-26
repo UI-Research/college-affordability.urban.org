@@ -1,5 +1,5 @@
 {
-  "title": "Distribution of Outstanding Education Debt by Income Quartile, 2013. ",
+  "title": "Distribution of Outstanding Education Debt by Income Quartile, 2016 ",
   "series": ["Lowest quartile", "Second quartile", "Third quartile", "Highest quartile"],
   "data": {
     "type": "bar",
@@ -41,7 +41,7 @@
     }
   },
   "metadata": {
-    "source": " Federal Reserve Board, Survey of Consumer Finances 2016; calculations by  the Urban Institute.",
+    "source": "Urban Institute calculations from the 2016 Survey of Consumer Finances.",
     "notes": null
   }
 }

@@ -22,10 +22,10 @@ let singlepage = (
       <p><strong>Even among those who find year-round full-time work, there is considerable variation in earnings.</strong> Men typically earn more than women, and, among both men and women, white and Asian workers earn more than black and Hispanic workers.</p>
       <p>But even within demographic groups, there is a wide range in earnings. The graphs below show the median (half the workers earn more and half earn less than this amount). They also show the 25th percentile (a quarter of the workers earn less than this amount) and the 75th percentile (a quarter of the workers earn more than this amount).</p>
       <Multiples 
-        title="Earnings by Age among Full-Time Full-Year Workers with Only a High School Diploma or GED and Not in School" 
-        imageOverride= "Earnings by Age among Full-Time Full-Year Workers with Only a High School Diploma or GED and Not in School__Ages 18–34, by gender and age" 
+        title="Earnings by Age among Full-Time Full-Year Workers with Only a High School Diploma or GED and Not Currently Attending School" 
+        imageOverride= "Earnings by Age among Full-Time Full-Year Workers with Only a High School Diploma or GED and Not Currently Attending School__Ages 18–34, by gender and age" 
         subtitle="Ages 18–34, by gender and age" 
-        source="ACS, five-year sample 2010–14."
+        source="2012–16 American Community Survey, five-year sample."
       >
         <Graph file={require('./json/030402.json')} small="true"/>
         <Graph file={require('./json/030403.json')} small="true"/>
@@ -34,7 +34,7 @@ let singlepage = (
         title="" 
         subtitle="Ages 18–23, by gender and race and ethnicity" 
         imageOverride= "Earnings by Age among Full-Time Full-Year Workers with Only a High School Diploma or GED and Not in School__Ages 18–23, by gender and race and ethnicity" 
-        source="ACS, five-year sample 2010–14."
+        source="2012–16 American Community Survey, five-year sample."
       >
         <Graph file={require('./json/030404.json')} small="true"/>
         <Graph file={require('./json/030405.json')} small="true"/>
@@ -43,7 +43,7 @@ let singlepage = (
         title="" 
         subtitle="Ages 24–34, by gender and race and ethnicity" 
         imageOverride= "Earnings by Age among Full-Time Full-Year Workers with Only a High School Diploma or GED and Not in School__Ages 24–34, by gender and race and ethnicity" 
-        source="ACS, five-year sample 2010–14."
+        source="2012–16 American Community Survey, five-year sample."
       >
         <Graph file={require('./json/030406.json')} small="true"/>
         <Graph file={require('./json/030407.json')} small="true"/>

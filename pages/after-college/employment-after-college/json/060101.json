@@ -1,6 +1,6 @@
 {
   "overrideTickCount": true,
-  "title": "Labor Force Participation Rates Among Individuals Ages 25–34 by Educational Attainment, 1993–2017",
+  "title": "Labor Force Participation Rates among 25-to-34-Year-Olds by Educational Attainment, 1993–2017",
   "size": {
     "height": 400
   },
@@ -180,7 +180,7 @@
     }
   },
   "metadata": {
-    "source": "CPS-ASEC 1993–2017.",
+    "source": "1993–2017 Annual Social and Economic Supplements to the Current Population Survey.",
     "notes": null
   }
 }
