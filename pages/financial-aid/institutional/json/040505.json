@@ -7,11 +7,11 @@
     "columns": [
       [
         "institutional need-based",
-        819.7203
+        659.5444
       ],
       [
         "Institutional non-need-based",
-        1396.929
+        584.1379
       ]
     ],
     "groups": [
@@ -24,7 +24,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": "Independent students",
+      "categories": "All independent students(32%)",
       "type": "category"
     },
     "y": {

@@ -6,27 +6,29 @@
     "columns": [
       [
         "Tuition and fees left over",
-        11484.2821,
-        12530.3013,
-        16338.0377,
-        21691.5192,
-        8563.1028,
-        1893.0613,
-        3921.5356,
-        3531.9492,
-        4311.0618
+        10099.3877,
+        11219.4502,
+        14135.7383,
+        15618.9521,
+        14128.9844,
+        -770.0127,
+        896.8005,
+        1328.6678,
+        1245.2234,
+        1006.8555
       ],
       [
         "Grant aid",
-        3758.6579,
-        15699.8987,
-        11400.9423,
-        15893.2408,
-        7206.5872,
-        2398.5847,
-        3817.2734,
-        4432.3818,
-        5508.6832
+        4823.9212,
+        21268.9696,
+        16376.8789,
+        25863.4818,
+        10614.6267,
+        3908.7563,
+        5815.6878,
+        6860.7628,
+        9246.5881,
+        5252.8964
       ]
     ],
     "groups": [
@@ -39,7 +41,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["For-profit", "Private nonprofit bachelor's", "Private nonprofit master's", "Private nonprofit research", "Private nonprofit special focus or two-year", "Public associate", "Public bachelor's", "Public master's", "Public research"],
+      "categories": ["For-profit", "Private nonprofit bachelor's", "Private nonprofit master's", "Private nonprofit research", "Private nonprofit special focus or two-year", "Public associate", "Public bachelor's", "Public master's", "Public research", "Public Special Focus"],
       "type": "category"
     },
     "y": {

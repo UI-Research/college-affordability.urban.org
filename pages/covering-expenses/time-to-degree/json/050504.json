@@ -8,28 +8,28 @@
     "columns": [
       [
         "Four years",
-        39880,
-        43200,
-        83080
+        40920,
+        44560,
+        85480
       ],
       [
         "Five years",
-        49850,
-        54000,
-        103850
+        51150,
+        55700,
+        106850
       ],
       [
         "Six years",
-        59820,
-        64800,
-        124620
+        61380,
+        66840,
+        128220
       ]
     ]
   },
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["Tuition and fees", "On-campus room and board", "Total charges"],
+      "categories": ["Tuition and fees", "On-campus room and board", "Tuition and fees and room and board"],
       "type": "category"
     },
     "y": {
