@@ -47,7 +47,7 @@
   "axis": {
     "rotated": false,
     "x": {
-      "categories": ["25-34", "35-44", "45-54", "55-64"],
+      "categories": ["25‒34", "35‒44", "45‒54", "55‒64"],
       "type": "category"
     },
     "y": {

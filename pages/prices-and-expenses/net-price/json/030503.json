@@ -49,7 +49,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["Lowest", "Second", "Third", "Hghest ", "Independent"],
+      "categories": ["Lowest", "Second", "Third", "Highest ", "Independent"],
       "type": "category"
     },
     "y": {

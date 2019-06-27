@@ -1,6 +1,6 @@
 {
   "title": "Outcomes Six Years Later for Students Enrolling for the First Time in 2010",
-  "series": ["Completed degree at two-year college", "Completed bachelor's degere at four-year college", "Still enrolled", "Not enrolled, did not complete degree"],
+  "series": ["Completed degree at two-year college", "Completed bachelor's degree at four-year college", "Still enrolled", "Not enrolled, did not complete degree"],
   "data": {
     "type": "bar",
     "sets": {
@@ -15,7 +15,7 @@
             0.2991
           ],
           [
-            "Completed bachelor's degere at four-year college",
+            "Completed bachelor's degree at four-year college",
             0.7847,
             0.8272,
             0.4352,
@@ -48,7 +48,7 @@
             0.2165
           ],
           [
-            "Completed bachelor's degere at four-year college",
+            "Completed bachelor's degree at four-year college",
             0.4513,
             0.4806,
             0.2247,
@@ -72,7 +72,7 @@
       ]
     },
     "groups": [
-      ["Completed degree at two-year college", "Completed bachelor's degere at four-year college", "Still enrolled", "Not enrolled, did not complete degree"]
+      ["Completed degree at two-year college", "Completed bachelor's degree at four-year college", "Still enrolled", "Not enrolled, did not complete degree"]
     ],
     "labels": {
       "format": "percent"

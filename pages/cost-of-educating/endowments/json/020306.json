@@ -1,12 +1,12 @@
 {
   "title": "Average Endowment Income per Student by Institution Selectivity",
   "subtitle": "Private nonprofit four-year institutions by share of applicants admitted",
-  "series": "Average Endowment Draw per Student",
+  "series": "Average endowment draw per student",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "Average Endowment Draw per Student",
+        "Average endowment draw per student",
         21693,
         4633,
         1529,
@@ -21,7 +21,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["0-25%", "25-50%", "50-75%", "75-100%", "Open admissions"],
+      "categories": ["0‒25%", "25‒50%", "50‒75%", "75‒100%", "Open admissions"],
       "type": "category"
     },
     "y": {

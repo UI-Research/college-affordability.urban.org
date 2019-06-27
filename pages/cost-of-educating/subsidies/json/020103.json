@@ -28,7 +28,7 @@
   "axis": {
     "rotated": false,
     "x": {
-      "categories": ["2005-06", "2010-11", "2015-16"],
+      "categories": ["2005‒06", "2010‒11", "2015‒16"],
       "type": "category"
     },
     "y": {

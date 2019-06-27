@@ -1,12 +1,12 @@
 {
   "title": "Median Family Income by State, Families with Children Ages 15 to 17",
   "highlightIndex": 26,
-  "series": "Median Income",
+  "series": "Median income",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "Median Income",
+        "Median income",
         52700,
         54500,
         55695,

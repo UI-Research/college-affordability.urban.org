@@ -3,12 +3,12 @@
   "size": {
     "height": 400
   },
-  "series": ["Family with head 45-54", "Couple with child(ren)", "All families", "Single with child(ren"],
+  "series": ["Family with head ages 45‒54", "Couple with child(ren)", "All families", "Single parent with child(ren)"],
   "data": {
     "type": "line",
     "columns": [
       [
-        "Family with head 45-54",
+        "Family with head ages 45‒54",
         184200,
         131200,
         148600,
@@ -47,7 +47,7 @@
         97300
       ],
       [
-        "Single with child(ren",
+        "Single parent with child(ren)",
         13500,
         14300,
         18800,

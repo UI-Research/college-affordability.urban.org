@@ -1,7 +1,7 @@
 {
   "hideTooltip": true,
   "wideSmallMultiple": true,
-  "title": "Dollars per full-time student",
+  "title": "All students",
   "series": "test",
   "data": {
     "type": "bar",

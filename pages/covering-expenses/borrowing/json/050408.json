@@ -21,7 +21,7 @@
   "axis": {
     "rotated": false,
     "x": {
-      "categories": ["Less than $27,900", "$27,900-62,999", "$63,000-113,499", "$113,500 or more", "Total"],
+      "categories": ["Less than $27,900", "$27,900‒$62,999", "$63,000‒$113,499", "$113,500 or more", "Total"],
       "type": "category"
     },
     "y": {

@@ -1,12 +1,12 @@
 {
   "overrideTickCount": true,
   "title": "Median Earnings among 25-to-34-Year-Olds by Educational Attainment, 1992 to 2017, in 2017 Dollars",
-  "series": ["High school or equivalent", "Some college, no degree", "Associate degree", "Bachelor's degree", "Advanced degree"],
+  "series": ["High school diploma or GED", "Some college, no degree", "Associate degree", "Bachelor's degree", "Advanced degree"],
   "data": {
     "type": "line",
     "columns": [
       [
-        "High school or equivalent",
+        "High school diploma or GED",
         null,
         30574.4833,
         29109.0602,

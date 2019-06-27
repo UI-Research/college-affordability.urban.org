@@ -24,7 +24,7 @@
   "axis": {
     "rotated": false,
     "x": {
-      "categories": ["Public doctoral in-state", "Public master's in-state", "Public bachelor's in-state", "Public two-year in-district", "Private nonprofit doctoral", "Private nonprofit master's", "Private nonprofit bachelor's", "For-profit"],
+      "categories": ["Public research in-state", "Public master's in-state", "Public bachelor's in-state", "Public two-year in-district", "Private nonprofit research", "Private nonprofit master's", "Private nonprofit bachelor's", "For-profit"],
       "type": "category"
     },
     "y": {

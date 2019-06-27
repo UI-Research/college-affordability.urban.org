@@ -4,12 +4,12 @@
   "size": {
     "height": 400
   },
-  "series": ["High school", "Some college, no degree", "Associate degree", "Bachelor's degree", "Advanced degree"],
+  "series": ["High school diploma or GED", "Some college, no degree", "Associate degree", "Bachelor's degree", "Advanced degree"],
   "data": {
     "type": "line",
     "columns": [
       [
-        "High school",
+        "High school diploma or GED",
         null,
         0.8218,
         0.8252,

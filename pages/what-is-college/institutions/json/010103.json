@@ -4,7 +4,7 @@
   "padding": {
     "bottom": 50
   },
-  "series": ["Graduate enrollment", "Full-time Undergraduate enrollment", "Part-time Undergraduate enrollment"],
+  "series": ["Graduate enrollment", "Full-time Undergraduate enrollment", "Part-time undergraduate enrollment"],
   "data": {
     "type": "bar",
     "columns": [
@@ -35,7 +35,7 @@
         25431
       ],
       [
-        "Part-time Undergraduate enrollment",
+        "Part-time undergraduate enrollment",
         294953,
         97931,
         264218,
@@ -49,7 +49,7 @@
       ]
     ],
     "groups": [
-      ["Graduate enrollment", "Full-time Undergraduate enrollment", "Part-time Undergraduate enrollment"]
+      ["Graduate enrollment", "Full-time Undergraduate enrollment", "Part-time undergraduate enrollment"]
     ],
     "labels": {
       "format": "number"
@@ -58,7 +58,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["For-profit", "Private nonprofit bachelor's", "Private nonprofit master's", "Private nonprofit research", "Private nonprofit special focus or two-year", "Public associate", "Public bachelor's", "Public master's", "Public research", "Public Special Focus"],
+      "categories": ["For-profit", "Private nonprofit bachelor's", "Private nonprofit master's", "Private nonprofit research", "Private nonprofit special focus or two-year", "Public associate", "Public bachelor's", "Public master's", "Public research", "Public special Focus"],
       "type": "category"
     },
     "y": {

@@ -1,11 +1,11 @@
 {
   "title": "Share of Undergraduate Students with $0 Expected Family Contributions, by Dependency Status, 2015–16",
-  "series": "Undergraduate Student Percentage",
+  "series": "Undergraduate student percentage",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "Undergraduate Student Percentage",
+        "Undergraduate student percentage",
         0.2439,
         0.477,
         0.1794,

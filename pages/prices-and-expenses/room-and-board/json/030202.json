@@ -23,7 +23,7 @@
   "axis": {
     "rotated": false,
     "x": {
-      "categories": ["Private nonprofit doctoral", "Private nonprofit master's", "Private nonprofit bachelor's", "All private nonprofit four-year", "Public doctoral", "Public master's", "Public bachelor's in-state", "All public four-year in-state"],
+      "categories": ["Private nonprofit research", "Private nonprofit master's", "Private nonprofit bachelor's", "All private nonprofit four-year", "Public research", "Public master's", "Public bachelor's in-state", "All public four-year in-state"],
       "type": "category"
     },
     "y": {

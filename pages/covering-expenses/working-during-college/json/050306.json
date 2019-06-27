@@ -87,7 +87,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["All undergraduates", "All dependent students", "Less than $27,900", "$27,900-62,999", "$63,000-113,499", "$113,500 or more", "All independent students "],
+      "categories": ["All undergraduates", "All dependent students", "Less than $27,900", "$27,900‒$62,999", "$63,000‒$113,499", "$113,500 or more", "All independent students "],
       "type": "category"
     },
     "y": {
