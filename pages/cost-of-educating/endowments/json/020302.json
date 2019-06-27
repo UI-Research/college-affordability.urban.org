@@ -1,12 +1,12 @@
 {
   "overrideTickCount": true,
   "title": "Public master's",
-  "series": "Average Endowment Income per Student",
+  "series": "Average endowment income per student",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "Average Endowment Income per Student",
+        "Average endowment income per student",
         48,
         84,
         109,

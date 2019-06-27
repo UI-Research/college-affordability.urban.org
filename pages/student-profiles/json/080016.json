@@ -1,6 +1,6 @@
 {
   "forceMediumHeight": true,
-  "title": "Tuition and Debt Based on Time to Degree by Sector ",
+  "title": "Tuition and Debt Based on Time to Degree, by Sector ",
   "series": ["Four years", "Five years", "Six years"],
   "data": {
     "type": "bar",
@@ -113,7 +113,7 @@
   "axis": {
     "rotated": false,
     "x": {
-      "categories": ["Tuition and Fees", "Debt"],
+      "categories": ["Tuition and fees", "Debt"],
       "type": "category"
     },
     "y": {

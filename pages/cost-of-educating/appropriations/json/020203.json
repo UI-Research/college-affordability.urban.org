@@ -2,12 +2,12 @@
   "metadata.pluralNotes": true,
   "title": "State and Local Appropriations for Public Higher Education per Public Full-Time Equivalent Student, 2016–17",
   "highlightIndex": 34,
-  "series": "State and Local Appropriations for Higher Education per Public-Sector FTE Student",
+  "series": "State and local appropriations for higher education per public-sector FTE student",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "State and Local Appropriations for Higher Education per Public-Sector FTE Student",
+        "State and local appropriations for higher education per public-sector FTE student",
         2958.9474,
         3016.8246,
         4394.1648,
@@ -69,7 +69,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["New Hampshire", "Vermont", "Colorado", "Pennsylvania", "West Virginia", "Louisiana", "Arizona", "South Carolina", "Ohio", "Oklahoma", "Alabama", "Missouri", "Montana", "Virginia", "Iowa", "Kansas", "Mississippi", "Wisconsin", "Michigan", "South Dakota", "Rhode Island", "Delaware", "Utah", "Indiana", "Florida", "Oregon", "Kentucky", "Arkansas", "Minnesota", "Nevada", "New Jersey", "Tennessee", "Washington", "Texas", "US", "Maine", "Georgia", "Idaho", "Maryland", "Massachusetts", "North Carolina", "New Mexico", "North Dakota", "Nebraska", "Washington DC", "California", "Connecticut", "New York", "Hawaii", "Illinois", "Wyoming", "Alaska"],
+      "categories": ["New Hampshire", "Vermont", "Colorado", "Pennsylvania", "West Virginia", "Louisiana", "Arizona", "South Carolina", "Ohio", "Oklahoma", "Alabama", "Missouri", "Montana", "Virginia", "Iowa", "Kansas", "Mississippi", "Wisconsin", "Michigan", "South Dakota", "Rhode Island", "Delaware", "Utah", "Indiana", "Florida", "Oregon", "Kentucky", "Arkansas", "Minnesota", "Nevada", "New Jersey", "Tennessee", "Washington", "Texas", "United States", "Maine", "Georgia", "Idaho", "Maryland", "Massachusetts", "North Carolina", "New Mexico", "North Dakota", "Nebraska", "Washington, DC", "California", "Connecticut", "New York", "Hawaii", "Illinois", "Wyoming", "Alaska"],
       "type": "category"
     },
     "y": {

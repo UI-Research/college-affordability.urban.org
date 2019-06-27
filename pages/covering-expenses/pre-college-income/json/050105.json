@@ -3,19 +3,20 @@
   "padding": {
     "right": 20
   },
-  "series": "Median Income",
+  "series": "Median income",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "Median Income",
-        54601,
-        66859,
-        76012,
-        105271,
-        124302,
-        166662,
-        155089
+        "Median income",
+        37.4936,
+        56.063,
+        68.442,
+        76.075,
+        107.112,
+        131.893,
+        175.163,
+        156.409
       ]
     ],
     "labels": {
@@ -25,7 +26,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["High school or equivalent", "Some college, no degree", "Associate degree", "Bachelor's degree", "Master's degree", "Professional degree", "Doctorate degree"],
+      "categories": ["Less than high school", "High school or equivalent", "Some college, no degree", "Associate degree", "Bachelor's degree", "Master's degree", "Professional degree", "Doctorate degree"],
       "type": "category"
     },
     "y": {

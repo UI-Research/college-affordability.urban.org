@@ -1,11 +1,11 @@
 {
   "title": "Median Income of Families by Age Group in 2017 Dollars, 1987 to 2017",
-  "series": ["Ages 25 to 34", "Ages 35 to 44", "Ages 45 to 54", "Ages 55 to 64"],
+  "series": ["Ages 25‒34", "Ages 35‒44", "Ages 45‒54", "Ages 55‒64"],
   "data": {
     "type": "line",
     "columns": [
       [
-        "Ages 25 to 34",
+        "Ages 25‒34",
         55375,
         56245,
         57148,
@@ -40,7 +40,7 @@
         61641
       ],
       [
-        "Ages 35 to 44",
+        "Ages 35‒44",
         69518,
         73180,
         74711,
@@ -75,7 +75,7 @@
         80168
       ],
       [
-        "Ages 45 to 54",
+        "Ages 45‒54",
         77995,
         81272,
         83728,
@@ -110,7 +110,7 @@
         90119
       ],
       [
-        "Ages 55 to 64",
+        "Ages 55‒64",
         65126,
         66574,
         66899,

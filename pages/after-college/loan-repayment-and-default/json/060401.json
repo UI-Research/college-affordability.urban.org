@@ -3,15 +3,15 @@
   "size": {
     "height": 400
   },
-  "series": "Borrowers in Repayment",
+  "series": "Borrowers in repayment",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "Borrowers in Repayment",
-        0.5459,
-        0.1388,
-        0.2885
+        "Borrowers in repayment",
+        0.5164,
+        0.1393,
+        0.3072
       ]
     ],
     "labels": {

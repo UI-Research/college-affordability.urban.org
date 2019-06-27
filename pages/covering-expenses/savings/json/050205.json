@@ -3,12 +3,12 @@
   "size": {
     "height": 400
   },
-  "series": ["White non-Hispanic", "Black, non-Hispanic", "Hispanic", "Other"],
+  "series": ["White, non-Hispanic", "Black, non-Hispanic", "Hispanic", "Other"],
   "data": {
     "type": "line",
     "columns": [
       [
-        "White non-Hispanic",
+        "White, non-Hispanic",
         132700,
         116900,
         120000,

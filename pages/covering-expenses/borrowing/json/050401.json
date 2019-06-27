@@ -1,6 +1,6 @@
 {
   "title": "Share of Undergraduates with Debt and Share Borrowing for the Current Year, 2015–16",
-  "series": ["With debt", "Borrowed in 2015-16"],
+  "series": ["With debt", "Borrowed in 2015‒16"],
   "data": {
     "type": "bar",
     "columns": [
@@ -11,7 +11,7 @@
         0.6015
       ],
       [
-        "Borrowed in 2015-16",
+        "Borrowed in 2015‒16",
         0.3963,
         0.4422,
         0.3495
@@ -24,7 +24,7 @@
   "axis": {
     "rotated": false,
     "x": {
-      "categories": ["All Undergraduates", "Dependent", "Independent"],
+      "categories": ["All undergraduates", "Dependent", "Independent"],
       "type": "category"
     },
     "y": {

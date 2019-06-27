@@ -3,12 +3,12 @@
   "size": {
     "height": 400
   },
-  "series": ["10-year Fixed", "REPAYE (family size = 1)", "REPAYE (family size = 3)"],
+  "series": ["10-year fixed", "REPAYE (family size = 1)", "REPAYE (family size = 3)"],
   "data": {
     "type": "bar",
     "columns": [
       [
-        "10-year Fixed",
+        "10-year fixed",
         265.78,
         318.93,
         531.55

@@ -1,36 +1,38 @@
 {
   "title": "Average Share of Tuition and Fees Covered by Grant Aid and Percentage of Tuition and Fees Left Over, by Sector, 2016–17",
-  "series": ["Tuition and fees left over", "Grant Aid"],
+  "series": ["Tuition and fees left over", "Grant aid"],
   "data": {
     "type": "bar",
     "columns": [
       [
         "Tuition and fees left over",
-        0.7534,
-        0.4439,
-        0.589,
-        0.5771,
-        0.543,
-        0.4411,
-        0.5067,
-        0.4435,
-        0.439
+        0.6768,
+        0.3453,
+        0.4633,
+        0.3765,
+        0.571,
+        0,
+        0.1336,
+        0.1622,
+        0.1187,
+        0.1608
       ],
       [
-        "Grant Aid",
-        0.2466,
-        0.5561,
-        0.411,
-        0.4229,
-        0.457,
-        0.5589,
-        0.4933,
-        0.5565,
-        0.561
+        "Grant aid",
+        0.3232,
+        0.6547,
+        0.5367,
+        0.6235,
+        0.429,
+        1,
+        0.8664,
+        0.8378,
+        0.8813,
+        0.8392
       ]
     ],
     "groups": [
-      ["Tuition and fees left over", "Grant Aid"]
+      ["Tuition and fees left over", "Grant aid"]
     ],
     "labels": {
       "format": "percent"
@@ -39,7 +41,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["For-profit", "Private nonprofit bachelor's", "Private nonprofit master's", "Private nonprofit research", "Private nonprofit special focus or two-year", "Public associate", "Public bachelor's", "Public master's", "Public research"],
+      "categories": ["For-profit", "Private nonprofit bachelor's", "Private nonprofit master's", "Private nonprofit research", "Private nonprofit special focus or two-year", "Public associate", "Public bachelor's", "Public master's", "Public research", "Public Special Focus"],
       "type": "category"
     },
     "y": {

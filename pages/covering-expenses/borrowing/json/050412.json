@@ -20,7 +20,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["Public four-year(14%)", "Private nonprofit four-year (18%)", "Public two-year (1%)", "For-profi (30%)"],
+      "categories": ["Public four-year (14%)", "Private nonprofit four-year (18%)", "Public two-year (1%)", "For-profi (30%)"],
       "type": "category"
     },
     "y": {

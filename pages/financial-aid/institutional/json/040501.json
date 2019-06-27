@@ -1,11 +1,11 @@
 {
   "title": "Percentage of Full-Time First-Year Students Receiving Institutional Grant Aid, 2015–16",
-  "series": "Percent receiving institutional grant aid",
+  "series": "Share receiving institutional grant aid",
   "data": {
     "type": "bar",
     "columns": [
       [
-        "Percent receiving institutional grant aid",
+        "Share receiving institutional grant aid",
         0.4496,
         0.8095,
         0.1586,

@@ -113,7 +113,7 @@
   "axis": {
     "rotated": false,
     "x": {
-      "categories": ["Tuition and Fees", "Debt"],
+      "categories": ["Tuition and fees", "Debt", "Tuition and Fees"],
       "type": "category"
     },
     "y": {
