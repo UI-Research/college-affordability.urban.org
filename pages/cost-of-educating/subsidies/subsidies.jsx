@@ -14,7 +14,7 @@ let singlepage = (
     <h1>Institutional Subsidies</h1>
       <p>Colleges use <a href="http://collegeaffordability.urban.org/cost-of-educating/appropriations"><strong>appropriations</strong></a>, <a href="http://collegeaffordability.urban.org/cost-of-educating/endowments"><strong>endowments</strong></a>, and other revenue sources to <em>subsidize </em>the cost of education for students. Many students paying the full tuition price are still paying less than the school is spending to educate them.</p>
       <p>This subsidy is different from financial aid or scholarships because it is given to all students at the institution&mdash;and most don&rsquo;t even know they&rsquo;re receiving it. The subsidy supplements the college&rsquo;s published tuition price to equal the true total cost of providing an education. Subsidies vary both across and <a href="http://collegeaffordability.urban.org/cost-of-educating/subsidies/#distribution_of_subsidies"><strong>within sectors</strong></a>.</p>
-      <p><strong>Overall, subsidies have shrunk in recent years, leaving revenue from tuition and fees to cover more of the cost of education.</strong></p>
+      <p><strong>Overall, subsidies have declined in recent years, leaving revenue from tuition and fees to cover more of the cost of education.</strong></p>
       <Multiples 
         title="Education and Related Spending per Full-Time Equivalent Student at Public Institutions, 2005–06 to 2015–16" 
         source="Jennifer Ma, Sandy Baum, Matea Pender, and CJ Libassi, <em>Trends in College Pricing 2018 </em>(New York: College Board, 2018)." 

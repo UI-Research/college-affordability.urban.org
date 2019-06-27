@@ -31,7 +31,7 @@ let singlepage = (
         <Graph file={require('./json/030304.json')} small="true"/>
         <Graph file={require('./json/030305.json')} small="true"/>
     </Multiples>
-      <p>Still, tuition and fees make up only 20 percent of the total estimated COA for students attending two-year in-district public colleges and 40 percent of total COA for students at four-year in-state colleges and universities.</p>
+      <p>Tuition and fees make up only 20 percent of the total estimated COA for students attending two-year in-district public colleges and 40 percent of total COA for students at four-year in-state colleges and universities.</p>
     <h2>Books and Supplies</h2>
       <p>Like tuition and fees, expenditures on books and supplies are a real cost of going to college because they are necessary only when people are in school. We know from the data that students in all sectors of postsecondary education spend similar amounts on books and supplies, although there is variation by major.</p>
       <p><strong>Textbook prices have risen faster than inflation, but what students are spending on required books and supplies appears to have fallen over the past several years as students have found new ways to access resources, frequently online.</strong></p>

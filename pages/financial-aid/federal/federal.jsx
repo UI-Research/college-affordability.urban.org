@@ -16,17 +16,17 @@ let singlepage = (
       <ul>
         <li><strong>Pell grants</strong>, the largest source of federal grant aid, are available to low- and moderate-income students. Students receive federal Pell grants based on their financial circumstances and whether they enroll full time or part time. It doesn&rsquo;t matter where they go to school.</li>
         <li><strong>Federal Supplemental Educational Opportunity Grants</strong> are also based on financial need, often supplementing Pell grants for low-income students. But these grants are limited to students at participating colleges, which must contribute a quarter of the aid their students receive through this program.</li>
-        <li><strong>GI Bill benefits </strong>and other veterans&rsquo; or military benefits are restricted to veterans, members of the military, and their dependents. The Post-9/11 GI Bill is the largest of these programs, providing about $12 billion in support to undergraduates in 2016&ndash;17.</li>
+        <li><strong>GI Bill benefits </strong>and other veterans&rsquo; or military benefits are restricted to veterans, members of the military, and their dependents. The Post-9/11 GI Bill is the largest of these programs, providing about $12 billion in support to undergraduates in 2017&ndash;18.</li>
       </ul>
       <p><strong>The federal government provides more grant aid to students now than it did before the Great Recession. The two main types of federal grants&mdash;Pell grants and aid to veterans&mdash;increased dramatically in 2009&ndash;10 and 2010&ndash;11.</strong></p>
-      <p>More than 7.5 million students received Pell grants in 2015&ndash;16, with an average award of $3,720. In contrast, about 1.6 million students received Federal Supplemental Educational Opportunity Grants, averaging $450 each. Fewer than 1 million students received veterans&rsquo; benefits, but the average benefit was more than $14,500 per recipient.</p>
+      <p>Seven million students received Pell grants in 2017&ndash;18, with an average award of $4,000. In contrast, 1.4 million students received Federal Supplemental Educational Opportunity Grants, averaging $530 each. Fewer than 800,000 students received veterans&rsquo; benefits, but the average benefit was more than $15,000 per recipient.</p>
     <h2>Pell Grants</h2>
-      <p>About two-thirds of federal grant aid for undergraduate students comes from the Pell grant program. This program has funded low- and moderate-income students to enroll in the colleges and universities of their choice since the 1970s. In 2018&ndash;19 the lowest-income students received $6,095 toward their college expenses.</p>
+      <p>About two-thirds of federal grant aid for undergraduate students comes from the Pell Grant Program. This program has funded low- and moderate-income students to enroll in the colleges and universities of their choice since the 1970s. In 2019-20, &nbsp;the lowest-income students can receive $6,195 toward their college expenses.</p>
       <p>WHO GETS PELL GRANTS?</p>
       <p><strong>Almost all Pell grant recipients are independent students or dependent students from the bottom half of the income distribution.</strong> In 2015&ndash;16, 47 percent of full-time students received Pell grants, and the average grant per recipient was $4,700.</p>
-      <p>In 2015&ndash;16, averaged across all full-time students, the program provided $1,860 per dependent student and $3130 per independent student. Among dependent students, those whose parental incomes was less than $27,900 received an average of $5,160 per student, and those whose parental income was between $27,900 and $63,000 received an average of $2,960 per full-time student.</p>
+      <p>In 2015&ndash;16, averaged across all full-time students, the program provided $1,860 per dependent student and $3,130 per independent student. Among dependent students, those whose parental incomes were less than $27,900 received an average of $5,160 per student, and those whose parental incomes were between $27,900 and $63,000 received an average of $2,960 per full-time student.</p>
       <p><strong>Not everyone who gets a Pell grant receives the maximum amount. Instead, the grant size varies by income, family circumstances, and full-time or part-time enrollment.</strong></p>
-      <p>In 2015&ndash;16&ndash;12, the average grant for dependent full-time Pell recipients from families with incomes below $27,900 was $5,530.</p>
+      <p>In 2015&ndash;16, the average grant for dependent full-time Pell recipients from families with incomes below $27,900 was $5,530.</p>
       <Multiples 
         title="Pell Grant by Dependency Status and Income, Full-Time Students, 2015–16 (with Share Receiving Pell Grants)" 
         subtitle= "Dollars per recipient" 
@@ -54,8 +54,8 @@ let singlepage = (
       <p><strong>After adjusting for inflation, both the average and maximum Pell award levels&nbsp; have&nbsp; declined from their 2010-11 peaks.</strong></p>
       <Graph file={require('./json/040307.json')}/>
     <h2>Post-9/11 GI Benefits</h2>
-      <p><strong>Some veterans are eligible for generous benefits from the Post-9/11 GI Bill. The program covers full tuition for in-state students at public institutions and, in 2017&ndash;18, up to </strong> <strong> students at participating private colleges.</strong></p>
-      <p>Participation in the Post-9/11 GI Bill program has grown rapidly since it was introduced in 2009&ndash;10. Almost 770,000 students received this support in 2017&ndash;18. On average, recipients got $15,310 a year toward tuition, fees, and living expenses while they were in school.</p>
+      <p><strong>Some veterans are eligible for generous benefits from the Post-9/11 GI Bill. The program covers full tuition for in-state students at public institutions and, in 2019&ndash;20, up to&nbsp;$24,478 for students at participating private colleges.</strong></p>
+      <p>Participation in the Post-9/11 GI Bill program has grown rapidly since it was introduced in 2009&ndash;10. About 770,000 students received this support in 2017&ndash;18. On average, recipients got $15,310 a year toward tuition, fees, and living expenses while they were in .</p>
       <Graph file={require('./json/040308.json')}/>
     <h2>Federal Grant Aid over Time</h2>
       <p><strong>Both Pell grants and aid to veterans through the Post-9/11 GI Bill increased dramatically in 2009&ndash;10 because of policy changes, increased financial need, and increased enrollment during the economic downturn.</strong></p>
