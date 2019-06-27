@@ -7,11 +7,11 @@
     "columns": [
       [
         "Institutional need-based",
-        826.4445
+        801.064
       ],
       [
         "Institutional non-need-based",
-        1304.95
+        1134.11
       ]
     ],
     "groups": [
@@ -24,7 +24,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": "All dependent students",
+      "categories": "All dependent students (41%)",
       "type": "category"
     },
     "y": {

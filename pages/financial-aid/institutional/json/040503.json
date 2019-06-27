@@ -94,7 +94,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["Lowest", "Second", "Third", "Fourth"],
+      "categories": ["Lowest (56%)", "Second (71%)", "Third (80%)", "Fourth (83%)", "Lowest (95%)", "Second (98%)", "Third (97%)", "Fourth (92%)", "Lowest (92%)", "Second (97%)", "Third (94%)", "Fourth (89%)", "Second (93%)", "Third (81%)", "Fourth (62%)"],
       "label": "Parental income quartile",
       "type": "category"
     },

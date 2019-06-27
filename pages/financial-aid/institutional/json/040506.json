@@ -7,17 +7,17 @@
     "columns": [
       [
         "Institutional need-based",
-        940.7401,
-        1197.3,
-        1000.94,
-        226.9605
+        1180.87,
+        1191.2,
+        721.2047,
+        236.4944
       ],
       [
         "Institutional non-need-based",
-        635.5771,
-        1070.85,
-        1443.56,
-        1987.94
+        801.8196,
+        971.4577,
+        1466.49,
+        1227.22
       ]
     ],
     "groups": [
@@ -30,7 +30,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["Lowest", "Second", "Third", "Highest"],
+      "categories": ["Lowest (42%)", "Second (47%)", "Third (43%)", "Highest (32%)"],
       "type": "category"
     },
     "y": {

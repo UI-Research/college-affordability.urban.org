@@ -6,9 +6,9 @@
     "columns": [
       [
         "Median Income",
-        56700,
-        77700,
-        90100
+        61100,
+        80400,
+        93900
       ]
     ],
     "labels": {
@@ -18,7 +18,7 @@
   "axis": {
     "rotated": false,
     "x": {
-      "categories": ["Ages 25‒34 (1996)", "Ages 35‒44 (2006)", "Ages 45‒54 (2016)"],
+      "categories": [" Ages 25 to 34 (1997)", "Ages 35 to 44 (2007)", "Ages 45 to 54 (2017)"],
       "type": "category"
     },
     "y": {
