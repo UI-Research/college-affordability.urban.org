@@ -11,7 +11,7 @@ import util from 'util.jsx';
 
 let singlepage = (
   <div>
-    <h1>Precollege Income</h1>
+    <h1>Pre-college Income</h1>
       <p>Whether college is affordable depends on the opportunities it opens up for a student, but it also depends on the resources available at the time the student enrolls. Those resources depend on how much income a family has earned over the previous years and how much the family has saved, in addition to current earnings.</p>
       <p>Income and savings can also affect financial aid, because the financial aid system in the United States is grounded in the principle that those who are in a financial position to do so should help pay for their own or their children&rsquo;s college education.</p>
       <p>Although there is considerable variation within groups, differences in savings and wealth, current incomes, and income paths over time mean that some students tend to have an easier time paying for college than others.</p>
