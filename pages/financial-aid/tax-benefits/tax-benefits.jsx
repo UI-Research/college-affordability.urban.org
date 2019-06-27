@@ -16,6 +16,7 @@ let singlepage = (
       <p>Tax benefits, unlike most financial aid, come long after the bills have been paid. When students or parents file taxes, they can report tuition and fees paid and receive their credit either as a reduction in the amount of taxes due or as a refund check.</p>
       <p>By far, the largest tax benefit for undergraduate students is the American opportunity tax credit (AOTC), through which students (or parents paying tuition and fees) can reduce their taxes by as much as $2,500. The AOTC covers 100 percent of the first $2,000 in eligible expenses and 25 percent of the next $2,000. To get the full benefit, the taxpayer must have spent at least $4,000 on tuition and required fees and course materials. Living expenses do not count toward this amount.</p>
       <p>Students or parents who do not owe taxes can still benefit from the AOTC, but the maximum amount that is refundable is $1,000, or 40 percent of the total AOTC.</p>
+      <p>From 2002 through 2017, some parents and students benefited from a tax deduction for a portion of tuition and fees paid.</p>
       <Graph file={require('./json/040701.json')}/>
       <p>The AOTC&rsquo;s 2009 implementation led to a dramatic increase in tax breaks. The total benefits (for undergraduate and graduate students combined) rose from about $9 billion (in 2016 dollars) in 2008 to $123 billion in 2010.</p>
     <h2>By Income</h2>
