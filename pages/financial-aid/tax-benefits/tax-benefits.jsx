@@ -18,7 +18,7 @@ let singlepage = (
       <p>Students or parents who do not owe taxes can still benefit from the AOTC, but the maximum amount that is refundable is $1,000, or 40 percent of the total AOTC.</p>
       <p>From 2002 through 2017, some parents and students benefited from a tax deduction for a portion of tuition and fees paid.</p>
       <Graph file={require('./json/040701.json')}/>
-      <p>The AOTC&rsquo;s 2009 implementation led to a dramatic increase in tax breaks. The total benefits (for undergraduate and graduate students combined) rose from about $9 billion (in 2016 dollars) in 2008 to $123 billion in 2010.</p>
+      <p>The AOTC&rsquo;s 2009 implementation led to a dramatic increase in tax breaks. The total benefits (for undergraduate and graduate students combined) rose from about $9 billion (in 2016 dollars) in 2008 to $23 billion in 2010.</p>
     <h2>By Income</h2>
       <p><strong>Unlike federal grant aid, federal education tax benefits do not target low-income students and their families. They offer benefits that extend to families with incomes up to $180,000.</strong> In fact, because students who don&rsquo;t pay tuition and fees are not eligible for the tax benefit, the lowest-income students, for whom grant aid covers tuition, often don&rsquo;t benefit from tax credits.</p>
       <p>In 2016, tax filers with adjusted gross incomes below $25,000 received about 22 percent of the federal education tax credits. Filers with incomes above $100,000 received 24 percent.</p>

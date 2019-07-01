@@ -55,7 +55,7 @@ let singlepage = (
       <Graph file={require('./json/040307.json')}/>
     <h2>Post-9/11 GI Benefits</h2>
       <p><strong>Some veterans are eligible for generous benefits from the Post-9/11 GI Bill. The program covers full tuition for in-state students at public institutions and, in 2019&ndash;20, up to&nbsp;$24,478 for students at participating private colleges.</strong></p>
-      <p>Participation in the Post-9/11 GI Bill program has grown rapidly since it was introduced in 2009&ndash;10. About 770,000 students received this support in 2017&ndash;18. On average, recipients got $15,310 a year toward tuition, fees, and living expenses while they were in .</p>
+      <p>Participation in the Post-9/11 GI Bill program has grown rapidly since it was introduced in 2009&ndash;10. About 770,000 students received this support in 2017&ndash;18. On average, recipients got $15,310 a year toward tuition, fees, and living expenses while they were in school.</p>
       <Graph file={require('./json/040308.json')}/>
     <h2>Federal Grant Aid over Time</h2>
       <p><strong>Both Pell grants and aid to veterans through the Post-9/11 GI Bill increased dramatically in 2009&ndash;10 because of policy changes, increased financial need, and increased enrollment during the economic downturn.</strong></p>

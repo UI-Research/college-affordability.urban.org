@@ -43,7 +43,7 @@ let singlepage = (
 
     <h2>Average State Grant Aid</h2>
       <p><strong>Most variation in state grant aid is a function of eligibility requirements. Among those who receive state grants, the award average sizes are similar.</strong></p>
-      <p>Students from low-income families are more likely than their more affluent peers to receive state grant aid and they receive somewhat larger grants </p>
+      <p>Students from low-income families are more likely than their more affluent peers to receive state grant aid and they receive somewhat larger grants.</p>
       <Multiples 
         title="Average State Grant Aid per Recipient, 2015–16" 
         source="2016 National Postsecondary Student Aid Study."

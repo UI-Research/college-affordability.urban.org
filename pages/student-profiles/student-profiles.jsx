@@ -309,7 +309,7 @@ let singlepage = (
 <p>Three-quarters of upper-income dependent students enroll in public or private nonprofit four-year colleges and universities.</p>
 <Graph file={require('./json/080017.json')}/>
 <p><strong>How do annual finances differ across sectors?</strong></p>
-<p>Average Published Prices, Budgets, and Resources Used to Pay for College for Upper-Income Dependent Students, 2011–12</p>
+<p>Average Published Prices, Budgets, and Resources Used to Pay for College for Upper-Income Dependent Students, 2015–16</p>
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
   <tr>
     <td width="149" nowrap="nowrap" colspan="2" valign="top">&nbsp;</td>
