@@ -1,12 +1,13 @@
 {
   "overrideTickCount": true,
-  "title": "Average Federal Loans per Undergraduate Student and per Undergraduate Borrower, with Share of Undergraduates Borrowing, 2001–02 to 2017–18",
+  "title": "Average Federal Loans per Undergraduate Student and per Undergraduate Borrower, 2001–02 to 2017–18",
   "series": ["Average per Borrower", "Average per undergraduate student"],
   "data": {
     "type": "line",
     "columns": [
       [
         "Average per Borrower",
+        null,
         6319.7181,
         6248.139,
         6315.0879,
@@ -28,6 +29,7 @@
       ],
       [
         "Average per undergraduate student",
+        null,
         2055.809,
         2087.3113,
         2215.8893,
@@ -55,9 +57,9 @@
   "axis": {
     "rotated": false,
     "x": {
-      "categories": ["2000‒01", "2001‒02", "2002‒03", "2003‒04", "2004‒05", "2005‒06", "2006‒07", "2007‒08", "2008‒09", "2009‒10", "2010‒11", "2011‒12", "2012‒13", "2013‒14", "2014‒15", "2015‒16", "2016‒17", "2017‒18"],
+      "categories": ["", "2000‒01", "2001‒02", "2002‒03", "2003‒04", "2004‒05", "2005‒06", "2006‒07", "2007‒08", "2008‒09", "2009‒10", "2010‒11", "2011‒12", "2012‒13", "2013‒14", "2014‒15", "2015‒16", "2016‒17", "2017‒18"],
       "tick": {
-        "count": 6
+        "count": 10
       },
       "type": "category"
     },
