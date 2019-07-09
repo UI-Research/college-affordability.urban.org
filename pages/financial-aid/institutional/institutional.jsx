@@ -22,7 +22,7 @@ let singlepage = (
       <h3>Average Institutional Grant Aid Relative to Tuition and Fees</h3>
         <p><strong>Institutions with higher tuition prices narrow, but do not close, the price gaps by awarding more institutional grant aid.</strong></p>
         <p>Although students at private nonprofit four-year colleges and universities receive more institutional grant and scholarship aid than do students at public four-year universities, they still pay higher average net tuition and fees.</p>
-        <p>Students attending for-profit institutions receive somewhat higher average institutional aid than those at public two-year colleges,, but students receiving this aid in the for-profit sector pay net prices that are almost four times as high as the average published tuition and fees at public two-year colleges.</p>
+        <p>Students attending for-profit institutions receive somewhat higher average institutional aid than those at public two-year colleges, but students receiving this aid in the for-profit sector pay net prices that are almost four times as high as the average published tuition and fees at public two-year colleges.</p>
         <p>On average, in 2015&ndash;16, students receiving institutional&nbsp;grant&nbsp;aid at public four-year colleges received discounts worth more than 40 percent of tuition and fees. Average institutional grants at private nonprofit colleges covered 55 percent of the published tuition and fee price.</p>
         <Graph file={require('./json/040502.json')}/>
       <h3>Distribution of Need-Based and Non-need–based Institutional Grant Aid</h3>

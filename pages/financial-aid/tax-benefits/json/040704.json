@@ -1,39 +1,46 @@
 {
-  "title": "This is test data. Please find real data",
-  "series": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit"],
+  "hideTooltip": true,
+  "title": "Average Federal Education Tax Benefit per Full-Time Recipient, by Income within Sectors, 2011‒12",
+  "padding": {
+    "bottom": 30
+  },
+  "series": ["Less than $30,000", "$30,001‒$65,000", "$65,0001‒$106,000", "More than $106,000", "Total"],
   "data": {
     "type": "bar",
     "columns": [
       [
-        "Public four-year",
+        "Less than $30,000",
         520,
-        1420,
-        1810,
-        1310,
-        1150
-      ],
-      [
-        "Private nonprofit four-year",
         910,
-        1870,
-        1930,
-        1200,
-        1430
-      ],
-      [
-        "Public two-year",
         240,
-        780,
-        1250,
-        890,
-        540
+        1050
       ],
       [
-        "For-profit",
-        1050,
-        2100,
-        2010,
-        1320,
+        "$30,001‒$65,000",
+        1420,
+        1870,
+        780,
+        2100
+      ],
+      [
+        "$65,0001‒$106,000",
+        1810,
+        1930,
+        1250,
+        2010
+      ],
+      [
+        "More than $106,000",
+        1310,
+        1200,
+        890,
+        1320
+      ],
+      [
+        "Total",
+        1150,
+        1430,
+        540,
         1350
       ]
     ],
@@ -44,7 +51,7 @@
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["Less than $30,000", "$30,001-$65,000", "$65,0001-$106,000", "More than $106,000", "Total"],
+      "categories": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit"],
       "type": "category"
     },
     "y": {
@@ -54,7 +61,7 @@
     }
   },
   "metadata": {
-    "source": null,
-    "notes": null
+    "source": "Delisle and Dancy, <em>A New Look at Tuition Tax Benefits.<\/em>",
+    "notes": "Tax benefits include the AOTC, LLC, and tuition and fees deduction."
   }
 }

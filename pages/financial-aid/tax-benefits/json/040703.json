@@ -1,60 +1,67 @@
 {
-  "title": "Share of Full-Time Undergraduates Eligible for Federal Education Tax Credits and Deductions, 2015-16",
-  "series": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit"],
+  "hideTooltip": true,
+  "title": "Share of Full-Time Undergraduates Eligible for Federal Education Tax Credits and Deductions, 2011‒12",
+  "padding": {
+    "bottom": 30
+  },
+  "series": ["Less than $30,000", "$30,001‒$65,000", "$65,0001‒$106,000", "More than $106,000", "Total"],
   "data": {
     "type": "bar",
     "columns": [
       [
-        "Public four-year",
-        520,
-        1420,
-        1810,
-        1310,
-        1150
+        "Less than $30,000",
+        0.4189,
+        0.5979,
+        0.2495,
+        0.7022
       ],
       [
-        "Private nonprofit four-year",
-        910,
-        1870,
-        1930,
-        1200,
-        1430
+        "$30,001‒$65,000",
+        0.6913,
+        0.8153,
+        0.5469,
+        0.9296
       ],
       [
-        "Public two-year",
-        240,
-        780,
-        1250,
-        890,
-        540
+        "$65,0001‒$106,000",
+        0.8124,
+        0.8182,
+        0.8123,
+        0.881
       ],
       [
-        "For-profit",
-        1050,
-        2100,
-        2010,
-        1320,
-        1350
+        "More than $106,000",
+        0.6104,
+        0.5387,
+        0.5813,
+        0.6092
+      ],
+      [
+        "Total",
+        0.6001,
+        0.6816,
+        0.4138,
+        0.7593
       ]
     ],
     "labels": {
-      "format": "dollar"
+      "format": "percent"
     }
   },
   "axis": {
     "rotated": true,
     "x": {
-      "categories": ["Less than $30,000", "$30,001-$65,000", "$65,0001-$106,000", "More than $106,000", "Total"],
+      "categories": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit"],
       "type": "category"
     },
     "y": {
       "tick": {
-        "format": "dollar"
+        "format": "percent"
       }
     }
   },
   "metadata": {
-    "source": null,
-    "notes": null
+    "source": "Jason Delisle and Kim Dancy, <em>A New Look at Tuition Tax Benefits<\/em> (New York: New America, 2015).",
+    "notes": "Tax benefits include the AOTC, LLC, and tuition and fees deduction."
   }
 }

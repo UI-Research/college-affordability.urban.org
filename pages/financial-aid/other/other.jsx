@@ -37,7 +37,7 @@ let singlepage = (
         <Graph file={require('./json/040608.json')} small="true"/>
       </Multiples>
       <Multiples 
-        title="Average Employer Assistance and Private Scholarships per Recipient, 2015–16" 
+        title="Average Employer Assistance per Recipient, 2015–16" 
         source="2016 National Postsecondary Student Aid Study."
       >
         <Graph file={require('./json/040609.json')} small="true"/>

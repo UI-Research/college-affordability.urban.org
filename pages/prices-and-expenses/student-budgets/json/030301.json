@@ -1,40 +1,40 @@
 {
   "metadata.pluralNotes": true,
   "title": "Full-Time Undergraduate Student Quintiles of Cost of Attendance by Sector in 2017–18",
-  "series": ["Lowest income quintile", "Second income quintile", "Third income quintile", "Fourth income quiintile", "Highest income quintile"],
+  "series": ["Lowest quintile", "Second quintile", "Third quintile", "Fourth quintile", "Highest quintile"],
   "data": {
     "type": "bar",
     "columns": [
       [
-        "Lowest income quintile",
+        "Lowest quintile",
         20069,
         29649,
         13219,
         18705
       ],
       [
-        "Second income quintile",
+        "Second quintile",
         22899,
         43775,
         16335,
         21527
       ],
       [
-        "Third income quintile",
+        "Third quintile",
         24908,
         52166,
         18225,
         24453
       ],
       [
-        "Fourth income quiintile",
+        "Fourth quintile",
         27064,
         61903,
         19818,
         30328
       ],
       [
-        "Highest income quintile",
+        "Highest quintile",
         31495,
         70720,
         24427,

@@ -1,6 +1,6 @@
 {
   "title": "Median Net Worth of Families by Parents’ Highest Educational Attainment, 1989–2016",
-  "series": ["No high school diploma", "High school diploma", "Some college", "College degree"],
+  "series": ["No high school diploma", "High school diploma", "Some college", "Bachelor's degree or higher"],
   "data": {
     "type": "line",
     "columns": [
@@ -44,7 +44,7 @@
         66000
       ],
       [
-        "College degree",
+        "Bachelor's degree or higher",
         234000,
         183900,
         189600,

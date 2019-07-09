@@ -22,9 +22,9 @@ let singlepage = (
       <h2>How Long Are Students in College?</h2>
         <p><strong>Most students who complete their programs take longer than two years to complete an associate degree and more than four years to complete a bachelor&rsquo;s degree.</strong></p>
         <p>The time elapsed from initial enrollment to degree completion does not necessarily reflect how long students were enrolled. A student who takes a year off, for example, may still graduate after four years of enrollment, even though five years will have passed between starting college and graduation.</p>
-        <p>Forty-five percent of 2014&ndash;15 bachelor&rsquo;s degree recipients completed their degrees within four years, and another 25 percent finished within five years. But for 30 percent of students, six or more years elapsed before they received their bachelor&rsquo;s degrees.</p>
+        <p>Over 40 percent of 2014&ndash;15 bachelor&rsquo;s degree recipients completed their degrees within four calendar years, and another quarter finished within five years. But for about one-third of students, six or more years elapsed before they received their bachelor&rsquo;s degrees.</p>
         <Graph file={require('./json/050502.json')}/>
-        <p>Only 7 percent of 2014&ndash;15 associate degree recipients completed their degrees in two years or less. Another 35 percent finished within three years, but most students receiving associate degrees took at least four years to graduate.</p>
+        <p>Only 7 percent of 2014&ndash;15 associate degree recipients completed their degrees in two academic years or less. Another 35 percent finished with three years full-time years of enrollment, but most students receiving associate degrees were enrolled for at least four years.</p>
         <p>One reason it is so common for associate degree recipients to take longer than two years to graduate is that many of these students attend college part time while working.</p>
         <Graph file={require('./json/050503.json')}/>
         

@@ -21,7 +21,7 @@ let singlepage = (
 			<p><em>The prices reported to the <strong><a href="https://nces.ed.gov/ipeds/" target="_blank">US Department of Education</a></strong> and in the College Board&rsquo;s <strong><a href="https://trends.collegeboard.org/college-pricing" target="_blank">Trends in College Pricing</a></strong>&nbsp;</em><em>reports and reflected in the sectoral averages do not necessarily incorporate this complexity.</em></p>
 		</Box>
 	<h2>Tuition and Fees by Sector</h2>
-		<p>Media coverage of the few schools whose tuition and fees exceed $50,000 or $60,000 ignores the fact that prices at most colleges are lower. Tuition is&nbsp;<strong>highest at private nonprofit research universities</strong>, where tuition averaging $44,000 in 2018&ndash;19.</p>
+		<p>Media coverage of the few schools whose tuition and fees exceed $50,000 or $60,000 ignores the fact that prices at most colleges are lower. Tuition is&nbsp;<strong>highest at private nonprofit research universities</strong>, where tuition averaged $44,000 in 2018&ndash;19.</p>
 		<Graph file={require('./json/030101.json')}/>
 		<Box>
 			<h3><em><strong>One-Year Prices and Time to Degree</strong></em></h3>
