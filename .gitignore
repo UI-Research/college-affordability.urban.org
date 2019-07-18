@@ -8,3 +8,4 @@ external_data
 /.project
 *.log
 temp.text
+.Rhistory

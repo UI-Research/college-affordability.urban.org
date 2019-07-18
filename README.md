@@ -9,7 +9,7 @@ This is a static site generator.  Webpack handles the compilation and bundling o
 
 ## Set up
 
-To be able to generate and serve the college affordability site
+To be able to **generate and serve the college affordability site**
 1. Clone this repo
 2. Install Homebrew (http://brew.sh/)
 3. Install node with `brew install node` 
@@ -18,12 +18,16 @@ To be able to generate and serve the college affordability site
 6. Install all dependencies `npm install`
 7. Install imagemagick on your machine (Refer to https://github.com/scalableminds/gulp-gm/blob/master/README.md for information on installing it on your machine).
 
-To set up the process to combine data and metadata into jsons for the above to use in charts
-1. 
-1.
-
 
 **Tested with node v6. Codeship is configured for node v6. If you are experiencing deployment issues, check your node version. To control the version of node in use, you can use a node version control manager like [n](https://www.npmjs.com/package/n)*
+
+To **set up the process to combine data and metadata into jsons for the above to use in charts**
+
+
+1. Install or make sure you have: R, Python 3
+2. RStudio is helpful for interfacing with R...it can be downloaded here: https://www.rstudio.com/products/rstudio/download3/
+3. Install Rscript if you don't have it already. (ensure you have it by typing `which Rscript`. 
+4. In R, install the dependencies via this command: `install.packages(c("dplyr", "tidyr", "stringr", "Hmisc", "openxlsx", "readxl"))`
 
 ## How do I get started?
 
@@ -58,6 +62,9 @@ There are several processes for updating and editing different aspects of this p
 
 Editing text requires a working knowledge of 
 
+Editing main pages
+Editing special pages (chart index, works cited, etc)
+
 ### Editing charts
 
 #### Chart data
@@ -68,8 +75,15 @@ Quirks
 #### Chart metadata, titles, sources, etc
 Location
 Quirks
+Macro for finding/replacing problematic characters
 
 ### Updating `dist` folder
+
+Make clearer!!!!!DAN
+- Make sure data/is up to date
+- Update R script to reference up to date name of GraphText.xlsx
+- Run R Script
+
 Whenever you've made changes to either the data or the GraphText file, you have to rerun the R script AND the gulp process
 
 
