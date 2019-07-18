@@ -1,10 +1,10 @@
 {
   "title": "Cumulative Earnings of College Graduates Net of Tuition Payments and Forgone Earnings, in 2018 Dollars",
   "size": {
-    "height": 400
+    "height": "360"
   },
   "padding": {
-    "bottom": 60
+    "bottom": 30
   },
   "series": ["High school graduate", "Associate degree", "Bachelor's degree"],
   "data": {

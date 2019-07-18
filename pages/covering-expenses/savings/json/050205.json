@@ -1,7 +1,7 @@
 {
   "title": "Median Net Worth of Families by Race or Ethnicity, 1989–2016",
   "size": {
-    "height": 360
+    "height": "360"
   },
   "series": ["White, non-Hispanic", "Black, non-Hispanic", "Hispanic", "Other"],
   "data": {
