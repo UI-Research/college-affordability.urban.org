@@ -46,7 +46,7 @@ let singlepage = (
             <p>For independent students, net prices have risen in all sectors except at public two-year colleges, where their tuition and fees have consistently been covered by grant aid.</p>
             <Multiples 
                 title="Total Student Budget, Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2015–16, in 2015 Dollars" 
-                imageOverride = "Total Student Budget, Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2015–16, in 2015 Dollars ___Public four-year institutions"
+                imageOverride = "Public four-year institutions"
                 subtitle = "Public four-year institutions"
                 source="2016 National Postsecondary Student Aid Study."
             >
@@ -57,8 +57,8 @@ let singlepage = (
                 <Graph file={require('./json/030511.json')} small="true"/>
             </Multiples>
             <Multiples 
-                title="" 
-                imageOverride = "Total Student Budget, Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2015–16, in 2015 Dollars ___Private four-year institutions" 
+                title="Total Student Budget, Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2015–16, in 2015 Dollars" 
+                imageOverride = "Private four-year institutions" 
                 subtitle = "Private four-year institutions" 
                 source="2016 National Postsecondary Student Aid Study. "
             >
@@ -69,8 +69,8 @@ let singlepage = (
                 <Graph file={require('./json/030516.json')} small="true"/>
             </Multiples>
             <Multiples 
-                title="" 
-                imageOverride = "Total Student Budget, Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2015–16, in 2015 Dollars___Public two-year institutions" 
+                title="Total Student Budget, Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2015–16, in 2015 Dollars" 
+                imageOverride = "Public two-year institutions" 
                 subtitle = "Public two-year institutions" 
                 source="2016 National Postsecondary Student Aid Study. "
             >
@@ -81,8 +81,8 @@ let singlepage = (
                 <Graph file={require('./json/030521.json')} small="true"/>
             </Multiples>
             <Multiples 
-                title="" 
-                imageOverride = "Total Student Budget, Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2015–16, in 2015 Dollars ___For-profit institutions" 
+                title="Total Student Budget, Divided into the Portions of Tuition and Fees and Living Expenses Covered by Grant Aid, and the Tuition and Fees and Living Expenses Remaining, from 1995–96 to 2015–16, in 2015 Dollars" 
+                imageOverride = "For-profit institutions" 
                 subtitle = "For-profit institutions" 
                 source="2016 National Postsecondary Student Aid Study.">
                 <Graph file={require('./json/030522.json')} small="true"/>
