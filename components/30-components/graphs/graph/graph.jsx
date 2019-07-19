@@ -1145,9 +1145,27 @@ export default class Graph extends Component {
         </Actions>
       );
     }
+
+
+
+    let splitTitle;
+    if(typeof(this.props.file.title) != "undefined"){
+      splitTitle = 
+        this.props.file.title.split('\n').map(function(item, key) {
+          return (
+            <span key={key}>
+              {item}
+              <br/>
+            </span>
+          )
+        })
+    }else{
+      splitTitle = this.props.file.title
+    }
     return (
       <div className={base_class}>
-        <h2 className="graphTitle">{this.props.file.title}</h2>
+        <h2 className="graphTitle">{splitTitle}
+        </h2>
         {subtitle}
         {anchor}
         <div className="c-graph__wrapper">
