@@ -1,11 +1,25 @@
 
 
+
 # README
 
 This repository encompasses the Urban Institute College Affordability Static Site Generation Project.
 
 ## Background information
 This is a static site generator.  Webpack handles the compilation and bundling of static assets for use in production. To get up to speed on this project it would be helpful to have a working understanding of how gulp and webpack work (this is the build/compiling technology), and how ReactJS works (this is the tool for building modular components, which is used extensively for the charts and pages). It is not crucial to understand them in depth or to be an expert, but it would be helpful to have a cursory understanding.
+
+## Workflow
+
+1. [Set up](#set-up) your machine for generating the static site and transforming the data into the static site.
+2. The research team will [gather and edit data](#editing-data) and place it in the `data/` folder, taking care to maintain order of columns for special group, stacked, and toggle charts.
+3. Update text information and get it copyedited. Store in a word file with track changes.
+4. In a new github branch, developer will [edit text](#editing-text).
+5. Researcher will update all chart related text (sources, notes, titles, subtitles, etc.) in a new GraphText file.
+6. In this same github branch, developer will [edit charts](#editing-charts) using the recently updated GraphText file.
+7. This branch will be merged into the `develop` branch in order to view on [http://collegeaffordability-stg.s3-website-us-east-1.amazonaws.com](http://collegeaffordability-stg.s3-website-us-east-1.amazonaws.com/)
+8. Copyediting and spot checks from researchers and copyeditors
+9. Once everything is correct, developer will [update screenshots and check data downloads](#downloadable-screenshots-and-data).
+10. Push live by merging branch into the `live` branch.  
 
 ## Set up
 
@@ -58,6 +72,9 @@ Refer to the EDITING.md in this repository for guidelines of how to edit and cre
 
 There are several processes for updating and editing different aspects of this project.
 
+### Editing data
+
+
 ### Editing text
 
 Editing text requires a working knowledge of 
@@ -76,6 +93,13 @@ Quirks
 Location
 Quirks
 Macro for finding/replacing problematic characters
+
+#### Downloadable screenshots and data
+By default, the names of these files are a generalized transformation of the title of the chart. For instance, a chart titled "Type of Employment over the Past Year among People with Only a High School Diploma or GED and Not Currently Attending School" will generate file names of "type_of_employment_over_the_past_year_among_people_with_only_a_high_school_diploma_or_ged_and_not_currently_attending_school.png". Please note that very long titles will get truncated after some number of characters. In this event, use the "imageOverride" flag in the GraphText file to rename the resulting savable files.
+
+The data is uploaded and made downloadable automatically during the update process. There should not be any need for manual edits to these items.
+
+*NOTE: If any issues arise in the creation of the screenshots and data, there is a good chance it has to do with the naming of these files. If this happens, use the imageOverride flag to create a new, unique, and shorter file name *
 
 ### Updating `dist` folder
 
