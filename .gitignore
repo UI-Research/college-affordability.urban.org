@@ -9,3 +9,4 @@ external_data
 *.log
 temp.text
 .Rhistory
+~$*
