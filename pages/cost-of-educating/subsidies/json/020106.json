@@ -1,0 +1,50 @@
+{
+  "wideSmallMultiple": true,
+  "title": "Master's",
+  "series": ["Average net tuition revenue per FTE student", "Average subsidy per FTE student"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Average net tuition revenue per FTE student",
+        14450,
+        15340,
+        15940
+      ],
+      [
+        "Average subsidy per FTE student",
+        2170,
+        1760,
+        2560
+      ]
+    ],
+    "groups": [
+      ["Average net tuition revenue per FTE student", "Average subsidy per FTE student"]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["2005‒06", "2010‒11", "2015‒16"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 6
+      },
+      "max": 60000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "Jennifer Ma, Sandy Baum, Matea Pender, and CJ Libassi, <em>Trends in College Pricing 2018 <\/em>(New York: College Board, 2018).",
+    "notes": "FTE = full-time equivalent."
+  }
+}

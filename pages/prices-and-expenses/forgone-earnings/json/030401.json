@@ -1,0 +1,62 @@
+{
+  "title": "Type of Employment over the Past Year among People with Only a High School Diploma or GED and Not Currently Attending School",
+  "padding": {
+    "bottom": 30
+  },
+  "series": ["Not employed", "Part-year or part-time", "Full-year or full-time"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Not employed",
+        0.3358,
+        0.2274,
+        0.2276,
+        0.2337,
+        0.4359,
+        0.398
+      ],
+      [
+        "Part-year or part-time",
+        0.5324,
+        0.4348,
+        0.3381,
+        0.2971,
+        0.1879,
+        0.2379
+      ],
+      [
+        "Full-year or full-time",
+        0.1318,
+        0.3378,
+        0.4344,
+        0.4692,
+        0.3762,
+        0.3641
+      ]
+    ],
+    "groups": [
+      ["Not employed", "Part-year or part-time", "Full-year or full-time"]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["18‒20", "21‒23", "24‒26", "27‒29", "30‒34", "Total"],
+      "label": "Age groups",
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Integrated Public Use Microdata Series and the 2012–16 American Community Survey, five-year sample.",
+    "notes": null
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "wideSmallMultiple": true,
+  "multipleCustomLabelPosition": true,
+  "title": "Public two-year",
+  "series": ["Tuition and fees covered by grant aid", "Remaining (net) tuition  and fees", "Living expenses covered by grant aid", "Remaining (net) living expenses"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Tuition and fees covered by grant aid",
+        3800,
+        3800,
+        2200,
+        2000,
+        3700
+      ],
+      [
+        "Remaining (net) tuition  and fees",
+        0,
+        0,
+        1900,
+        2100,
+        0
+      ],
+      [
+        "Living expenses covered by grant aid",
+        2800,
+        400,
+        0,
+        0,
+        500
+      ],
+      [
+        "Remaining (net) living expenses",
+        9200,
+        11000,
+        11000,
+        11500,
+        13800
+      ]
+    ],
+    "groups": [
+      ["Tuition and fees covered by grant aid", "Remaining (net) tuition  and fees", "Living expenses covered by grant aid", "Remaining (net) living expenses"]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Lowest", "Second", "Third", "Highest", "Independent"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 3
+      },
+      "max": 50000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "2016 National Postsecondary Student Aid Study. ",
+    "notes": "Net tuition and fee amounts are calculated by subtracting average total grant aid for all full-time students, including those who do and do not receive grant aid, from the published tuition and fee price. This yields a slightly different measure than that identified in NPSAS as net tuition and fees, because that calculation excludes any aid individual students receive that exceeds their tuition and fee prices."
+  }
+}

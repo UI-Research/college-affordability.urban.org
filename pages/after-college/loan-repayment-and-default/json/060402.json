@@ -1,0 +1,37 @@
+{
+  "title": "Average Debt Levels by Federal Student Loan Repayment Plan, as of December 31, 2018",
+  "size": {
+    "height": "380"
+  },
+  "series": "Average debt",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Average debt",
+        22300.5698,
+        28739.4958,
+        53436.6577
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["Level repaymemt", "Graduated repayment", "Income-driven repayment"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "US Department of Education, Federal Student Aid Data Center, Federal Student Loan Portfolio.",
+    "notes": null
+  }
+}

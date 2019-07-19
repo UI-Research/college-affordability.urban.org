@@ -1,0 +1,55 @@
+{
+  "title": "Type of Employment over the Past Year, among 25-to-34-Year-Olds in the Labor Force",
+  "series": ["No work last year", "Part year or part time", "Full year full time"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "No work last year",
+        0.0407,
+        0.0306,
+        0.0229,
+        0.0147,
+        0.0098
+      ],
+      [
+        "Part year or part time",
+        0.2706,
+        0.2573,
+        0.2483,
+        0.2069,
+        0.2013
+      ],
+      [
+        "Full year full time",
+        0.6887,
+        0.7121,
+        0.7288,
+        0.7783,
+        0.7889
+      ]
+    ],
+    "groups": [
+      ["No work last year", "Part year or part time", "Full year full time"]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["High school diploma or GED", "Some college, no degree", "Associate degree", "Bachelor's degree", "Advanced degree"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "2014 Integrated Public Use Microdata Series data and the 2012–16 American Community Survey, five-year sample.",
+    "notes": null
+  }
+}

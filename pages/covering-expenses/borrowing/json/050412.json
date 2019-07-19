@@ -1,0 +1,42 @@
+{
+  "wideSmallMultiple": true,
+  "title": "Institutional sector",
+  "series": "Loans borrowed",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Loans borrowed",
+        13146.5,
+        18079.94,
+        8512.8,
+        16271.28
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Public four-year (14%)", "Private nonprofit four-year (18%)", "Public two-year (1%)", "For-profi (30%)"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 5
+      },
+      "max": 20000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "2016 National Postsecondary Student Aid Study. ",
+    "notes": null
+  }
+}

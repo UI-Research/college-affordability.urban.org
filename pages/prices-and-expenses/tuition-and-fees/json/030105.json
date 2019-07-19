@@ -1,0 +1,84 @@
+{
+  "title": "Tuition and Fees at Public Institutions, by State, 2018–19",
+  "subtitle": "Public Four-Year In-state",
+  "highlightIndex": 22,
+  "series": "Amount",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Amount",
+        16610,
+        16460,
+        14770,
+        14180,
+        13970,
+        13490,
+        13420,
+        13200,
+        12950,
+        12760,
+        12700,
+        12530,
+        11540,
+        11540,
+        11140,
+        10870,
+        10800,
+        10790,
+        10710,
+        10610,
+        10300,
+        10230,
+        10230,
+        9950,
+        9900,
+        9870,
+        9760,
+        9550,
+        9490,
+        9100,
+        9080,
+        9080,
+        8750,
+        8710,
+        8690,
+        8670,
+        8660,
+        8580,
+        8510,
+        8420,
+        8290,
+        8190,
+        7820,
+        7660,
+        7590,
+        7220,
+        7130,
+        7100,
+        6990,
+        6360,
+        5400
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Vermont", "New Hampshire", "Pennsylvania", "New Jersey", "Illinois", "Virginia", "Michigan", "Massachusetts", "South Carolina", "Connecticut", "Delaware", "Rhode Island", "Arizona", "Minnesota", "Colorado", "Alabama", "Hawaii", "Ohio", "Kentucky", "Oregon", "Texas", "Maine", "United States", "Tennessee", "Maryland", "California", "Washington", "Louisiana", "Indiana", "Kansas", "Iowa", "Wisconsin", "Oklahoma", "Arkansas", "South Dakota", "Missouri", "North Dakota", "Georgia", "Nebraska", "Mississippi", "West Virginia", "New York", "Alaska", "Nevada", "Idaho", "North Carolina", "New Mexico", "Montana", "Utah", "Florida", "Wyoming"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Jennifer Ma, Sandy Baum, Matea Pender, and CJ Libassi, <em>Trends in College Pricing 2018 <\/em>(New York: College Board, 2018), tables 5 and 6.",
+    "notes": null
+  }
+}

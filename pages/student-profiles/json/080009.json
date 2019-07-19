@@ -1,0 +1,37 @@
+{
+  "forceMediumHeight": true,
+  "title": "Lower-Middle-Income Dependent Students: Enrollment by Sector, 2015–16",
+  "series": "Enrollment",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Enrollment",
+        0.3827,
+        0.1399,
+        0.4162,
+        0.0315,
+        0.0296
+      ]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit", "Other"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "2016 National Postsecondary Student Aid Study. ",
+    "notes": null
+  }
+}

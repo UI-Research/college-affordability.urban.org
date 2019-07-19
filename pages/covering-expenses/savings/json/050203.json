@@ -1,0 +1,83 @@
+{
+  "title": "Median Net Worth of Families, by Family Type, 1989–2016",
+  "size": {
+    "height": "360"
+  },
+  "series": ["Family with head ages 45‒54", "Couple with child(ren)", "All families", "Single parent with child(ren)"],
+  "data": {
+    "type": "line",
+    "columns": [
+      [
+        "Family with head ages 45‒54",
+        184200,
+        131200,
+        148600,
+        155800,
+        182400,
+        184700,
+        214100,
+        130300,
+        108600,
+        124200
+      ],
+      [
+        "Couple with child(ren)",
+        115700,
+        101400,
+        103100,
+        128500,
+        154000,
+        155400,
+        163000,
+        95800,
+        95300,
+        116700
+      ],
+      [
+        "All families",
+        87500,
+        83100,
+        90600,
+        105800,
+        117300,
+        118400,
+        139700,
+        85400,
+        83700,
+        97300
+      ],
+      [
+        "Single parent with child(ren)",
+        13500,
+        14300,
+        18800,
+        23800,
+        17900,
+        26500,
+        26500,
+        17200,
+        14500,
+        21700
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["1989", "1992", "1995", "1998", "2001", "2004", "2007", "2010", "2013", "2016"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "1989–2016 Surveys of Consumer Finances.",
+    "notes": null
+  }
+}

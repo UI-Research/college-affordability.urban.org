@@ -1,0 +1,44 @@
+{
+  "title": "Federal Student Loan Five-Year Repayment Rate by Completion Status and by Dependency Status: Borrowers Entering Repayment in 2009–10 and 2010–11",
+  "series": ["Noncompleters", "Completers"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Noncompleters",
+        0.4129,
+        0.2565,
+        0.5437,
+        0.5422,
+        0.3861
+      ],
+      [
+        "Completers",
+        0.6671,
+        0.4269,
+        0.7987,
+        0.791,
+        0.6774
+      ]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["All", "For-profit", "Private nonprofit four-year", "Public four-year", "Public two-year"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Sandy Baum, Jennifer Ma, Matea Pender, and CJ Libassi, <em>Trends in Student Aid 2018 <\/em>(New York: College Board, 2018), figure 14A.",
+    "notes": null
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "hideTooltip": true,
+  "customHideLabelTwo": true,
+  "title": "Enrollment Patterns by Race or Ethnicity, 2015–16",
+  "series": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit", "Other or non-degree-granting"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Public four-year",
+        0.32,
+        0.26,
+        0.24,
+        0.35
+      ],
+      [
+        "Private nonprofit four-year",
+        0.16,
+        0.12,
+        0.1,
+        0.13
+      ],
+      [
+        "Public two-year",
+        0.42,
+        0.41,
+        0.52,
+        0.44
+      ],
+      [
+        "For-profit",
+        0.06,
+        0.15,
+        0.08,
+        0.05
+      ],
+      [
+        "Other or non-degree-granting",
+        0.04,
+        0.06,
+        0.05,
+        0.02
+      ]
+    ],
+    "groups": [
+      ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit", "Other or non-degree-granting"]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["White (53%)", "Black or African American (16%)", "Hispanic or Latino (20%)", "Asian (6%)"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "2016 National Postsecondary Student Aid Study.",
+    "notes": "Percentages may not add to 100 percent because of rounding."
+  }
+}

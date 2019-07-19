@@ -1,0 +1,42 @@
+{
+  "wideSmallMultiple": true,
+  "title": "Institutional sector",
+  "series": "Employer aid",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Employer aid",
+        8100,
+        11400,
+        3200,
+        6400
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 4
+      },
+      "max": 15000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "2016 National Postsecondary Student Aid Study. ",
+    "notes": null
+  }
+}

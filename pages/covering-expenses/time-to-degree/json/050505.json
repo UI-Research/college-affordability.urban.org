@@ -1,0 +1,51 @@
+{
+  "wideSmallMultiple": true,
+  "overrideTickCount": true,
+  "title": "Private nonprofit four-year",
+  "series": ["Four years", "Five years", "Six years"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Four years",
+        143320,
+        50720,
+        194040
+      ],
+      [
+        "Five years",
+        179150,
+        63400,
+        242550
+      ],
+      [
+        "Six years",
+        214980,
+        76080,
+        291060
+      ]
+    ]
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Tuition and fees", "On-campus room and board", "Tuition and fees and room and board"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 4
+      },
+      "max": 300000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "Jennifer Ma, Sandy Baum, Matea Pender, and Meredith Welch, <em>Trends in College Pricing 2018 <\/em>(New York: College Board, 2018), table 1A.",
+    "notes": null
+  }
+}

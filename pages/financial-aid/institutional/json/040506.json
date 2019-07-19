@@ -1,0 +1,52 @@
+{
+  "wideSmallMultiple": true,
+  "title": "Dependent students' parental income quartile",
+  "series": ["Institutional need-based", "Institutional non-need-based"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Institutional need-based",
+        1180.87,
+        1191.2,
+        721.2047,
+        236.4944
+      ],
+      [
+        "Institutional non-need-based",
+        801.8196,
+        971.4577,
+        1466.49,
+        1227.22
+      ]
+    ],
+    "groups": [
+      ["Institutional need-based", "Institutional non-need-based"]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Lowest (42%)", "Second (47%)", "Third (43%)", "Highest (32%)"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 6
+      },
+      "max": 2500,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "Sandy Baum, Jennifer Ma, Matea Pender, and CJ Libassi, <em>Trends in Student Aid 2018 <\/em>(New York: College Board, 2018), based on data from the 2016 National Postsecondary Student Aid Study.",
+    "notes": null
+  }
+}

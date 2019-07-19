@@ -1,0 +1,61 @@
+{
+  "metadata.pluralNotes": true,
+  "title": "Full-Time Undergraduate Student Quintiles of Cost of Attendance by Sector in 2017–18",
+  "series": ["Lowest quintile", "Second quintile", "Third quintile", "Fourth quintile", "Highest quintile"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Lowest quintile",
+        20069,
+        29649,
+        13219,
+        18705
+      ],
+      [
+        "Second quintile",
+        22899,
+        43775,
+        16335,
+        21527
+      ],
+      [
+        "Third quintile",
+        24908,
+        52166,
+        18225,
+        24453
+      ],
+      [
+        "Fourth quintile",
+        27064,
+        61903,
+        19818,
+        30328
+      ],
+      [
+        "Highest quintile",
+        31495,
+        70720,
+        24427,
+        39708
+      ]
+    ]
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["Public four-year", "Private nonprofit four year", "Public two-year", "For-profit"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Integrated Postsecondary Education Data System (IPEDS).",
+    "notes": "The figure shows the average COAs for students living on campus at public and private nonprofit four-year institutions. For public two-year and for profit institutions, it displays the COAs for students living off campus and not with their families. Students living at home with their parents have lower costs of attendance than those living on their own either on or off campus."
+  }
+}

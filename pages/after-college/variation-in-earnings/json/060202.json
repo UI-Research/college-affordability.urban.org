@@ -1,0 +1,63 @@
+{
+  "title": "Median Earnings among Employed Workers by Age and Educational Attainment",
+  "series": ["High school diploma or GED", "Some college, no degree", "Associate degree", "Bachelor's degree", "Advanced degree"],
+  "data": {
+    "type": "line",
+    "columns": [
+      [
+        "High school diploma or GED",
+        24043,
+        30379,
+        32973,
+        33796
+      ],
+      [
+        "Some college, no degree",
+        26329,
+        36064,
+        40505,
+        40700
+      ],
+      [
+        "Associate degree",
+        30912,
+        40552,
+        45000,
+        45621
+      ],
+      [
+        "Bachelor's degree",
+        41769,
+        57720,
+        62783,
+        60828
+      ],
+      [
+        "Advanced degree",
+        52268,
+        74221,
+        83817,
+        82431
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["25‒34", "35‒44", "45‒54", "55‒64"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "2016 Integrated Public Use Microdata Series data and the 2012–16 American Community Survey, five-year sample.",
+    "notes": null
+  }
+}

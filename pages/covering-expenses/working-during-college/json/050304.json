@@ -1,0 +1,66 @@
+{
+  "title": "Distribution of Hours Worked, Full-Time Full-Year Undergraduates, 2015–16",
+  "series": ["No work", "1‒7", "8‒14", "15‒21", "22‒28", "29‒34", "35 or more"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "No work",
+        0.4276,
+        0.355
+      ],
+      [
+        "1‒7",
+        0.058,
+        0.0207
+      ],
+      [
+        "8‒14",
+        0.131,
+        0.0544
+      ],
+      [
+        "15‒21",
+        0.1839,
+        0.1207
+      ],
+      [
+        "22‒28",
+        0.0808,
+        0.0708
+      ],
+      [
+        "29‒34",
+        0.0521,
+        0.0669
+      ],
+      [
+        "35 or more",
+        0.0666,
+        0.3116
+      ]
+    ],
+    "groups": [
+      ["No work", "1‒7", "8‒14", "15‒21", "22‒28", "29‒34", "35 or more"]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Dependent", "Independent"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "2016 National Postsecondary Student Aid Study. ",
+    "notes": null
+  }
+}

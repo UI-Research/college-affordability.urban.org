@@ -1,0 +1,47 @@
+{
+  "title": "Academic Years Enrolled Before Degree Completion, 2014–15 Associate Degree Recipients from Public Two-Year Colleges",
+  "series": ["Two years or less", "Three years", "Four years", "Five years or more"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Two years or less",
+        0.0737
+      ],
+      [
+        "Three years",
+        0.3523
+      ],
+      [
+        "Four years",
+        0.3257
+      ],
+      [
+        "Five years or more",
+        0.2483
+      ]
+    ],
+    "groups": [
+      ["Two years or less", "Three years", "Four years", "Five years or more"]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": "All sectors",
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Doug Shapiro, Afet Dundar, Phoebe Khasiala Wakhungu, Xin Yuan, Angel Nathan, and Youngsik Hwang, <em>Time to Degree: A National View of the Time Enrolled and Elapsed for Associate and Bachelor’s Degree Earners <\/em>(Herndon, VA: National Student Clearinghouse Research Center, 2016).",
+    "notes": "For-profit category also includes all less-than-four-year insittutions offering some bachelor's degrees. "
+  }
+}

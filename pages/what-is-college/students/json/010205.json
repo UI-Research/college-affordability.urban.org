@@ -1,0 +1,67 @@
+{
+  "hideTooltip": true,
+  "title": "Enrollment Sectors of All Dependent Undergraduates by Parent Income, 2015–16",
+  "series": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit", "Other or non-degree-granting"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Public four-year",
+        0.3211,
+        0.3827,
+        0.4214,
+        0.4871
+      ],
+      [
+        "Private nonprofit four-year",
+        0.1159,
+        0.1399,
+        0.166,
+        0.2633
+      ],
+      [
+        "Public two-year",
+        0.4648,
+        0.4162,
+        0.3741,
+        0.2287
+      ],
+      [
+        "For-profit",
+        0.053,
+        0.0315,
+        0.017,
+        0.01
+      ],
+      [
+        "Other or non-degree-granting",
+        0.0452,
+        0.0296,
+        0.0215,
+        0.011
+      ]
+    ],
+    "groups": [
+      ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit", "Other or non-degree-granting"]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Less than $27,900 (25%)", "$27,900‒$62,999 (25%)", "$63,000‒$113,499 (25%)", "$113,500 or more (25%)"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "2016 National Postsecondary Student Aid Study.",
+    "notes": null
+  }
+}

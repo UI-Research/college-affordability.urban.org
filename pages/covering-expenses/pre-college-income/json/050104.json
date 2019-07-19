@@ -1,0 +1,45 @@
+{
+  "wideSmallMultiple": true,
+  "title": "Age category",
+  "series": "Income",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Income",
+        41855,
+        63088,
+        82452,
+        93891,
+        86575,
+        70609,
+        48933
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["15‒24", "25‒34", "35‒44", "45‒54", "55‒64", "65‒74", "75 and older"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 4
+      },
+      "max": 150000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "2016 Annual Social and Economic Supplement to the Current Population Survey, table FINC-01.",
+    "notes": null
+  }
+}

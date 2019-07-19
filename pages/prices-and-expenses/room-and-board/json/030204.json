@@ -1,0 +1,83 @@
+{
+  "metadata.pluralSources": true,
+  "metadata.pluralNotes": true,
+  "title": "Difference between the Average Price of On-Campus Housing over the Academic Year at Four-Year Public and Private Nonprofit Colleges in 2015–16 and Average Rent over Nine Months among 18-to-24-Year-Olds in 2015 Dollars, by State",
+  "series": "On-campus housing less average rent",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "On-campus housing less average rent",
+        1236.03,
+        1036.704,
+        449.075,
+        432.097,
+        429.871,
+        386.23,
+        205.103,
+        160.762,
+        -80.692,
+        -275.051,
+        -317.753,
+        -320.747,
+        -444.756,
+        -456.271,
+        -478.35,
+        -677.43,
+        -784.53,
+        -1058.378,
+        -1098.42,
+        -1098.469,
+        -1111.072,
+        -1293.599,
+        -1356.173,
+        -1374.981,
+        -1390.247,
+        -1434.921,
+        -1484.268,
+        -1490.45,
+        -1679.436,
+        -1725.768,
+        -1772.389,
+        -1773.806,
+        -1834.107,
+        -1957.311,
+        -2088.26,
+        -2107.154,
+        -2155.032,
+        -2239.288,
+        -2357.585,
+        -2793.76,
+        -2801.003,
+        -3113.21,
+        -3137.08,
+        -3406.54,
+        -3564.662,
+        -4118.22,
+        -4637.07,
+        -4902.32,
+        -5026.93,
+        -5101.35
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Ohio", "Missouri", "Wyoming", "Vermont", "Delaware", "Oregon", "Kentucky", "Nebraska", "Alabama", "Iowa", "Arkansas", "Arizona", "New Hampshire", "Nevada", "Louisiana", "Pennsylvania", "Indiana", "Utah", "Idaho", "South Dakota", "Maine", "South Carolina", "Tennessee", "Montana", "Alaska", "Rhode Island", "Connecticut", "New Jersey", "Georgia", "New Mexico", "North Dakota", "Wisconsin", "Michigan", "Oklahoma", "North Carolina", "Texas", "Minnesota", "Washington", "Illinois", "Maryland", "Colorado", "California", "Florida", "Virginia", "Kansas", "New York", "Massachusetts", "West Virginia", "Mississippi", "Hawaii"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Integrated Postsecondary Education Data System and 2012–16 American Community Survey, five-year sample.",
+    "notes": "On-campus housing is the room portion of on-campus room and board. Institutions are weighted by full-time undergraduate fall enrollment. Average nine-month rent amounts are calculated as nine times the average monthly rent of 18-to-24-year-old heads of household renting one-bedroom or studio apartments between 2012 and 2016, in 2015 dollars  . These data are less reliable for smaller states. Negative values indicate on-campus housing prices lower than average rents; positive values indicate prices higher than average rents"
+  }
+}

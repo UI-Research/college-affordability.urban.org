@@ -1,0 +1,42 @@
+{
+  "wideSmallMultiple": true,
+  "title": "Institutional sector",
+  "series": "Undergraduates receiving state aid",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Undergraduates receiving state aid",
+        0.3619,
+        0.2317,
+        0.354,
+        0.1229
+      ]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent",
+        "count": 4
+      },
+      "max": 0.6,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "2016 National Postsecondary Student Aid Study. ",
+    "notes": null
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "overrideTickCount": true,
+  "title": "Average Federal Loans per Undergraduate Student and per Undergraduate Borrower, 2001–02 to 2017–18",
+  "series": ["Average per Borrower", "Average per undergraduate student"],
+  "data": {
+    "type": "line",
+    "columns": [
+      [
+        "Average per Borrower",
+        null,
+        6319.7181,
+        6248.139,
+        6315.0879,
+        6361.7758,
+        6322.2332,
+        6217.9427,
+        6000.4839,
+        6360.7424,
+        7550.8627,
+        7699.1648,
+        7094.5164,
+        6778.5129,
+        6786.428,
+        7106.6728,
+        6866.8832,
+        6767.0202,
+        6682.9047,
+        6565.5687
+      ],
+      [
+        "Average per undergraduate student",
+        null,
+        2055.809,
+        2087.3113,
+        2215.8893,
+        2413.4284,
+        2497.5576,
+        2500.1205,
+        2415.8497,
+        2637.1778,
+        3368.0095,
+        3783.1107,
+        3702.8982,
+        3564.1924,
+        3453.1157,
+        3264.9881,
+        3018.2399,
+        2830.7174,
+        2685.4184,
+        2547.76
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["", "2000‒01", "2001‒02", "2002‒03", "2003‒04", "2004‒05", "2005‒06", "2006‒07", "2007‒08", "2008‒09", "2009‒10", "2010‒11", "2011‒12", "2012‒13", "2013‒14", "2014‒15", "2015‒16", "2016‒17", "2017‒18"],
+      "tick": {
+        "count": 10
+      },
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Sandy Baum, Jennifer Ma, Matea Pender, and CJ Libassi, <em>Trends in Student Aid 2018 <\/em>(New York: College Board, 2018), table 6.",
+    "notes": null
+  }
+}

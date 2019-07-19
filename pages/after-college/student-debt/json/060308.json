@@ -1,0 +1,87 @@
+{
+  "title": "Debt Levels of 2015–16 Bachelor’s Degree Recipients by Race or Ethnicity",
+  "series": ["No debt", "Less than $10,000", "$10,000‒$19,999", "$20,000‒$29,999", "$30,000‒$39,999", "$40,000‒$49,999", "$50,000‒$74,999", "$75,000 or more"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "No debt",
+        0.2967,
+        0.1359,
+        0.3268,
+        0.4133
+      ],
+      [
+        "Less than $10,000",
+        0.0956,
+        0.1191,
+        0.1437,
+        0.1052
+      ],
+      [
+        "$10,000‒$19,999",
+        0.1282,
+        0.1025,
+        0.1483,
+        0.1406
+      ],
+      [
+        "$20,000‒$29,999",
+        0.1822,
+        0.154,
+        0.1532,
+        0.1625
+      ],
+      [
+        "$30,000‒$39,999",
+        0.1188,
+        0.1582,
+        0.0987,
+        0.0872
+      ],
+      [
+        "$40,000‒$49,999",
+        0.0735,
+        0.1204,
+        0.0611,
+        0.0345
+      ],
+      [
+        "$50,000‒$74,999",
+        0.0863,
+        0.1958,
+        0.0597,
+        0.0436
+      ],
+      [
+        "$75,000 or more",
+        0.0187,
+        0.0141,
+        0.0085,
+        0.0132
+      ]
+    ],
+    "groups": [
+      ["No debt", "Less than $10,000", "$10,000‒$19,999", "$20,000‒$29,999", "$30,000‒$39,999", "$40,000‒$49,999", "$50,000‒$74,999", "$75,000 or more"]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["White (61%)", "Black (12%)", "Hispanic (16%)", "Asian (7%)"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "2016 National Postsecondary Student Aid Study. ",
+    "notes": "Percentages in parentheses on the vertical axis report the share of bachelor’s degree recipients of each race or ethnicity."
+  }
+}

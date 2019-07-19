@@ -1,0 +1,37 @@
+{
+  "hideTooltip": true,
+  "title": "Average Annual Parent PLUS Loan per Borrower, 1997–98 to 2017–18",
+  "series": "All",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "All",
+        10046.8785,
+        11746.1219,
+        13483.4207,
+        16086.8291,
+        16451.6553
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["1997‒98", "2002‒03", "2007‒08", "2012‒13", "2017‒18"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Sandy Baum, Jennifer Ma, Matea Pender, and CJ Libassi, <em>Trends in Student Aid 2018 <\/em>(New York: College Board, 2018).",
+    "notes": null
+  }
+}

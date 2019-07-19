@@ -1,0 +1,52 @@
+{
+  "hideTooltip": true,
+  "title": "Distribution of Family Income among All Dependent Undergraduates versus First-Year Undergraduates Only, 2015–16",
+  "series": ["Less than $27,900", "$27,900‒$62,999", "$63,000‒$113,499", "$113,500 or more"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Less than $27,900",
+        0.31,
+        0.25
+      ],
+      [
+        "$27,900‒$62,999",
+        0.26,
+        0.25
+      ],
+      [
+        "$63,000‒$113,499",
+        0.23,
+        0.25
+      ],
+      [
+        "$113,500 or more",
+        0.19,
+        0.25
+      ]
+    ],
+    "groups": [
+      ["Less than $27,900", "$27,900‒$62,999", "$63,000‒$113,499", "$113,500 or more"]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["First-year undergraduates", "All undergraduates"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "2016 National Postsecondary Student Aid Study.",
+    "notes": "Percentages may not add to 100 percent because of rounding."
+  }
+}

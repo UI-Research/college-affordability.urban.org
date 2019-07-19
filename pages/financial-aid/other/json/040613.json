@@ -1,0 +1,39 @@
+{
+  "wideSmallMultiple": true,
+  "title": "All full-time undergraduates",
+  "series": "Private grants",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Private grants",
+        3900
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": "All full-time undergraduates",
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 6
+      },
+      "max": 10000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "2016 National Postsecondary Student Aid Study. ",
+    "notes": null
+  }
+}

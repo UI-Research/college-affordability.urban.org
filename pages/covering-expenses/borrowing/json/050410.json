@@ -1,0 +1,39 @@
+{
+  "wideSmallMultiple": true,
+  "title": "All full-time dependent students",
+  "series": "Loans borrowed",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Loans borrowed",
+        14786.6
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": "All (13%)",
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 5
+      },
+      "max": 20000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "2016 National Postsecondary Student Aid Study. ",
+    "notes": null
+  }
+}

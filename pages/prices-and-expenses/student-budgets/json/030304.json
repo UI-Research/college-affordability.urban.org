@@ -1,0 +1,73 @@
+{
+  "wideSmallMultiple": true,
+  "title": "Private nonprofit four-year, living on campus",
+  "series": ["Tuition and fees", "Room and board", "Books and supplies", "Transportation", "Other"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Tuition and fees",
+        24550,
+        27520,
+        30970,
+        34740
+      ],
+      [
+        "Room and board",
+        9250,
+        10070,
+        11170,
+        12210
+      ],
+      [
+        "Books and supplies",
+        1100,
+        1160,
+        1320,
+        1220
+      ],
+      [
+        "Transportation",
+        880,
+        900,
+        1030,
+        1030
+      ],
+      [
+        "Other",
+        2220,
+        1570,
+        1680,
+        1700
+      ]
+    ],
+    "groups": [
+      ["Tuition and fees", "Room and board", "Books and supplies", "Transportation", "Other"]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["2002‒03", "2007‒08", "2012‒13", "2017‒18"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 6
+      },
+      "max": 50000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "The 2003, 2008, 2013, and 2018 editions of <em>Trends in College Pricing<\/em>.",
+    "notes": null
+  }
+}

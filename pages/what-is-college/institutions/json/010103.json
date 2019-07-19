@@ -1,0 +1,74 @@
+{
+  "forceMediumHeight": true,
+  "title": "Fall Enrollment Patterns by Sector, 2017–18",
+  "padding": {
+    "bottom": 50
+  },
+  "series": ["Graduate enrollment", "Full-time Undergraduate enrollment", "Part-time undergraduate enrollment"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Graduate enrollment",
+        264824,
+        32214,
+        438849,
+        598321,
+        188006,
+        194,
+        5051,
+        332437,
+        1042948,
+        54459
+      ],
+      [
+        "Full-time Undergraduate enrollment",
+        593753,
+        538026,
+        870667,
+        689748,
+        177012,
+        2434311,
+        285364,
+        1615908,
+        3140859,
+        25431
+      ],
+      [
+        "Part-time undergraduate enrollment",
+        294953,
+        97931,
+        264218,
+        89790,
+        63282,
+        4300689,
+        182628,
+        516449,
+        578561,
+        15543
+      ]
+    ],
+    "groups": [
+      ["Graduate enrollment", "Full-time Undergraduate enrollment", "Part-time undergraduate enrollment"]
+    ],
+    "labels": {
+      "format": "number"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["For-profit", "Private nonprofit bachelor's", "Private nonprofit master's", "Private nonprofit research", "Private nonprofit special focus or two-year", "Public associate", "Public bachelor's", "Public master's", "Public research", "Public special Focus"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "number"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Integrated Postsecondary Education Data System.",
+    "notes": null
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "title": "Median Net Worth of Families by Parents’ Highest Educational Attainment, 1989–2016",
+  "size": {
+    "height": " "
+  },
+  "series": ["No high school diploma", "High school diploma", "Some college", "Bachelor's degree or higher"],
+  "data": {
+    "type": "line",
+    "columns": [
+      [
+        "No high school diploma",
+        45000,
+        31300,
+        35500,
+        31100,
+        34600,
+        26200,
+        38400,
+        17800,
+        17700,
+        22800
+      ],
+      [
+        "High school diploma",
+        68700,
+        64500,
+        81300,
+        79800,
+        78700,
+        87400,
+        93200,
+        62600,
+        54100,
+        67100
+      ],
+      [
+        "Some college",
+        86000,
+        95600,
+        78300,
+        113100,
+        112300,
+        99900,
+        113600,
+        63200,
+        52300,
+        66000
+      ],
+      [
+        "Bachelor's degree or higher",
+        234000,
+        183900,
+        189600,
+        251000,
+        329200,
+        344200,
+        373800,
+        275900,
+        285600,
+        292100
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["1989", "1992", "1995", "1998", "2001", "2004", "2007", "2010", "2013", "2016"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "1989–2016 Surveys of Consumer Finances.",
+    "notes": null
+  }
+}

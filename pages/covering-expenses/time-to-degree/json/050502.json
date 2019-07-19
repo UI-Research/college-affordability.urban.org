@@ -1,0 +1,59 @@
+{
+  "title": "Academic Years Enrolled Before Degree Completion, 2014–15 Bachelor’s Degree Recipients, by Sector",
+  "series": ["Four years or less", "Five years", "Six years", "Seven years or more"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Four years or less",
+        0.1012,
+        0.1702,
+        0.1616,
+        0.1219
+      ],
+      [
+        "Five years",
+        0.3932,
+        0.5303,
+        0.1644,
+        0.4175
+      ],
+      [
+        "Six years",
+        0.299,
+        0.1749,
+        0.1991,
+        0.2622
+      ],
+      [
+        "Seven years or more",
+        0.2066,
+        0.1246,
+        0.475,
+        0.1985
+      ]
+    ],
+    "groups": [
+      ["Four years or less", "Five years", "Six years", "Seven years or more"]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Public four-year", "Private nonprofit four-year", "For-profit and other", "All"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Doug Shapiro, Afet Dundar, Phoebe Khasiala Wakhungu, Xin Yuan, Angel Nathan, and Youngsik Hwang, <em>Time to Degree: A National View of the Time Enrolled and Elapsed for Associate and Bachelor’s Degree Earners <\/em>(Herndon, VA: National Student Clearinghouse Research Center, 2016)",
+    "notes": "Other includes less-than-four-year institutions offering some bachelor's degrees."
+  }
+}

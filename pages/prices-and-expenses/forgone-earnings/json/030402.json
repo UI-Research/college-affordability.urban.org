@@ -1,0 +1,62 @@
+{
+  "overrideTickCount": true,
+  "title": "Earnings of men by age",
+  "series": ["25th percentile and below", "25th percentile to median", "Median to 75th percentile"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "25th percentile and below",
+        14722,
+        18168.12,
+        22973.01,
+        26400.75,
+        30227.64,
+        24333.72
+      ],
+      [
+        "25th percentile to median",
+        20278.6,
+        24536.97,
+        32242.82,
+        39542.92,
+        45626.6,
+        36336.25
+      ],
+      [
+        "Median to 75th percentile",
+        26400.75,
+        33250.4,
+        47416.09,
+        57099.82,
+        68641.55,
+        55417.34
+      ]
+    ],
+    "groups": [
+      ["25th percentile and below", "25th percentile to median", "Median to 75th percentile"]
+    ]
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["18‒20", "21‒23", "24‒26", "27‒29", "30‒34", "Total"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 4
+      },
+      "max": 150000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "2012–16 American Community Survey, five-year sample. ",
+    "notes": null
+  }
+}

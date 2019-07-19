@@ -1,0 +1,69 @@
+{
+  "title": "Average Institutional Grant Aid and Remaining (Net) Tuition and Fees, 2015–16",
+  "series": ["Remaining (net) tuition and fees", "Institutional grant aid"],
+  "data": {
+    "type": "bar",
+    "sets": {
+      "set1": [
+        "Per first-time full-time recipient",
+        [
+          [
+            "Remaining (net) tuition and fees",
+            7700,
+            15800,
+            1500,
+            16500
+          ],
+          [
+            "Institutional grant aid",
+            5700,
+            19100,
+            2900,
+            4200
+          ]
+        ]
+      ],
+      "set2": [
+        "Per first-time full-time student",
+        [
+          [
+            "Remaining (net) tuition and fees",
+            9200,
+            18300,
+            3300,
+            16100
+          ],
+          [
+            "Institutional grant aid",
+            2600,
+            15500,
+            500,
+            1000
+          ]
+        ]
+      ]
+    },
+    "groups": [
+      ["Remaining (net) tuition and fees", "Institutional grant aid"]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "2016 National Postsecondary Student Aid Study. ",
+    "notes": null
+  }
+}

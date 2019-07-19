@@ -1,0 +1,37 @@
+{
+  "title": "Recipients of Post-9/11 GI Benefits",
+  "series": "Recipients",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Recipients",
+        366,
+        555,
+        646,
+        754,
+        790,
+        791,
+        790,
+        755,
+        767
+      ]
+    ]
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["'09‒'10", "'10‒'11", "'11‒'12", "'12‒'13", "'13‒'14", "'14‒'15", "'15‒'16", "'16‒'17", "'17‒'18"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "number"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Sandy Baum, Jennifer Ma, Matea Pender, and CJ Libassi, <em>Trends in College Pricing 2018 <\/em>(New York: College Board, 2018).",
+    "notes": null
+  }
+}

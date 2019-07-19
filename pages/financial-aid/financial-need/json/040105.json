@@ -1,0 +1,67 @@
+{
+  "title": "Private four-year",
+  "series": ["$0", "$1‒$4,999", "$5,000‒$9,999", "$10,000‒$14,999", "$15,000‒$19,999", "$20,000 or higher "],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "$0",
+        0.4571,
+        0.3365
+      ],
+      [
+        "$1‒$4,999",
+        0.1468,
+        0.2077
+      ],
+      [
+        "$5,000‒$9,999",
+        0.1168,
+        0.1925
+      ],
+      [
+        "$10,000‒$14,999",
+        0.0862,
+        0.093
+      ],
+      [
+        "$15,000‒$19,999",
+        0.0553,
+        0.0441
+      ],
+      [
+        "$20,000 or higher ",
+        0.1378,
+        0.1262
+      ]
+    ],
+    "groups": [
+      ["$0", "$1‒$4,999", "$5,000‒$9,999", "$10,000‒$14,999", "$15,000‒$19,999", "$20,000 or higher "]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Dependent", "Independent"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent",
+        "count": 5
+      },
+      "max": 1,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "2016 National Postsecondary Student Aid Study. ",
+    "notes": null
+  }
+}

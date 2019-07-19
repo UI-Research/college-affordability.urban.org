@@ -1,0 +1,73 @@
+{
+  "wideSmallMultiple": true,
+  "title": "Public two-year, living off campus",
+  "series": ["Tuition and fees", "Room and board", "Books and supplies", "Transportation", "Other"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Tuition and fees",
+        2280,
+        2700,
+        3370,
+        3570
+      ],
+      [
+        "Room and board",
+        7750,
+        8120,
+        7840,
+        8400
+      ],
+      [
+        "Books and supplies",
+        990,
+        1100,
+        1320,
+        1420
+      ],
+      [
+        "Transportation",
+        1450,
+        1510,
+        1780,
+        1780
+      ],
+      [
+        "Other",
+        2150,
+        2150,
+        2320,
+        2410
+      ]
+    ],
+    "groups": [
+      ["Tuition and fees", "Room and board", "Books and supplies", "Transportation", "Other"]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["2002‒03", "2007‒08", "2012‒13", "2017‒18"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 6
+      },
+      "max": 50000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "The 2003, 2008, 2013, and 2018 editions of <em>Trends in College Pricing<\/em>.",
+    "notes": null
+  }
+}

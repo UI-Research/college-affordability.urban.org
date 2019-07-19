@@ -1,0 +1,357 @@
+{
+  "forceMediumHeight": true,
+  "title": "Upper-Middle-Income Dependent Students: Average Expected Family Contribution, Total Grants, Total Loans, and Earnings and Other Resources Equal Tuition and Fees and Other Expenses",
+  "series": ["Expected contribution", "Federal grant aid", "Military and veterans' grants aid", "State grant aid", "Institutional grant aid", "Private and employer grant aid", "Federal student loans", "Federal parent loans", "Private loans", "Earnings and other resources", "Tuition and fees", "Budget beyond tuiton and fees"],
+  "data": {
+    "type": "bar",
+    "sets": {
+      "set1": [
+        "Public four-year out-of-state",
+        [
+          [
+            "Expected contribution",
+            14230,
+            0
+          ],
+          [
+            "Federal grant aid",
+            170,
+            0
+          ],
+          [
+            "Military and veterans' grants aid",
+            750,
+            0
+          ],
+          [
+            "State grant aid",
+            80,
+            0
+          ],
+          [
+            "Institutional grant aid",
+            6220,
+            0
+          ],
+          [
+            "Private and employer grant aid",
+            1770,
+            0
+          ],
+          [
+            "Federal student loans",
+            3580,
+            0
+          ],
+          [
+            "Federal parent loans",
+            3100,
+            0
+          ],
+          [
+            "Private loans",
+            1170,
+            0
+          ],
+          [
+            "Earnings and other resources",
+            6510,
+            0
+          ],
+          [
+            "Tuition and fees",
+            0,
+            22120
+          ],
+          [
+            "Budget beyond tuiton and fees",
+            0,
+            15460
+          ]
+        ]
+      ],
+      "set2": [
+        "Public four-year in-state",
+        [
+          [
+            "Expected contribution",
+            13660,
+            0
+          ],
+          [
+            "Federal grant aid",
+            260,
+            0
+          ],
+          [
+            "Military and veterans' grants aid",
+            180,
+            0
+          ],
+          [
+            "State grant aid",
+            1030,
+            0
+          ],
+          [
+            "Institutional grant aid",
+            2190,
+            0
+          ],
+          [
+            "Private and employer grant aid",
+            800,
+            0
+          ],
+          [
+            "Federal student loans",
+            4070,
+            0
+          ],
+          [
+            "Federal parent loans",
+            1860,
+            0
+          ],
+          [
+            "Private loans",
+            970,
+            0
+          ],
+          [
+            "Earnings and other resources",
+            -460,
+            0
+          ],
+          [
+            "Tuition and fees",
+            0,
+            10250
+          ],
+          [
+            "Budget beyond tuiton and fees",
+            0,
+            14310
+          ]
+        ]
+      ],
+      "set3": [
+        "Public two-year",
+        [
+          [
+            "Expected contribution",
+            12020,
+            0
+          ],
+          [
+            "Federal grant aid",
+            270,
+            0
+          ],
+          [
+            "Military and veterans' grants aid",
+            50,
+            0
+          ],
+          [
+            "State grant aid",
+            550,
+            0
+          ],
+          [
+            "Institutional grant aid",
+            790,
+            0
+          ],
+          [
+            "Private and employer grant aid",
+            540,
+            0
+          ],
+          [
+            "Federal student loans",
+            1140,
+            0
+          ],
+          [
+            "Federal parent loans",
+            50,
+            0
+          ],
+          [
+            "Private loans",
+            160,
+            0
+          ],
+          [
+            "Earnings and other resources",
+            -490,
+            0
+          ],
+          [
+            "Tuition and fees",
+            0,
+            4040
+          ],
+          [
+            "Budget beyond tuiton and fees",
+            0,
+            11040
+          ]
+        ]
+      ],
+      "set4": [
+        "Private nonprofit four-year",
+        [
+          [
+            "Expected contribution",
+            13670,
+            0
+          ],
+          [
+            "Federal grant aid",
+            330,
+            0
+          ],
+          [
+            "Military and veterans' grants aid",
+            250,
+            0
+          ],
+          [
+            "State grant aid",
+            830,
+            0
+          ],
+          [
+            "Institutional grant aid",
+            18140,
+            0
+          ],
+          [
+            "Private and employer grant aid",
+            1520,
+            0
+          ],
+          [
+            "Federal student loans",
+            4700,
+            0
+          ],
+          [
+            "Federal parent loans",
+            3870,
+            0
+          ],
+          [
+            "Private loans",
+            2950,
+            0
+          ],
+          [
+            "Earnings and other resources",
+            3390,
+            0
+          ],
+          [
+            "Tuition and fees",
+            0,
+            34490
+          ],
+          [
+            "Budget beyond tuiton and fees",
+            0,
+            15160
+          ]
+        ]
+      ],
+      "set5": [
+        "For-profit",
+        [
+          [
+            "Expected contribution",
+            12250,
+            0
+          ],
+          [
+            "Federal grant aid",
+            250,
+            0
+          ],
+          [
+            "Military and veterans' grants aid",
+            810,
+            0
+          ],
+          [
+            "State grant aid",
+            370,
+            0
+          ],
+          [
+            "Institutional grant aid",
+            2730,
+            0
+          ],
+          [
+            "Private and employer grant aid",
+            850,
+            0
+          ],
+          [
+            "Federal student loans",
+            6250,
+            0
+          ],
+          [
+            "Federal parent loans",
+            4480,
+            0
+          ],
+          [
+            "Private loans",
+            2340,
+            0
+          ],
+          [
+            "Earnings and other resources",
+            5080,
+            0
+          ],
+          [
+            "Tuition and fees",
+            0,
+            21180
+          ],
+          [
+            "Budget beyond tuiton and fees",
+            0,
+            14230
+          ]
+        ]
+      ]
+    },
+    "groups": [
+      ["Expected contribution", "Federal grant aid", "Military and veterans' grants aid", "State grant aid", "Institutional grant aid", "Private and employer grant aid", "Federal student loans", "Federal parent loans", "Private loans", "Earnings and other resources", "Tuition and fees", "Budget beyond tuiton and fees"]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["Student resources", "Student budget"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "2016 National Postsecondary Student Aid Study. ",
+    "notes": null
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "hideTooltip": true,
+  "title": "Earnings Distribution of Employed Workers Ages 34 to 44, by Educational Attainment",
+  "series": ["$0<96>$20,999", "$21,000<96>$35,399", "$35,400<96>$51,999", "$52,000<96>$79,999", "$80,000+"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "$0<96>$20,999",
+        0.3255,
+        0.2536,
+        0.2048,
+        0.1343,
+        0.0838,
+        0.2094
+      ],
+      [
+        "$21,000<96>$35,399",
+        0.2636,
+        0.226,
+        0.2077,
+        0.1139,
+        0.0633,
+        0.1794
+      ],
+      [
+        "$35,400<96>$51,999",
+        0.2183,
+        0.2347,
+        0.2475,
+        0.1942,
+        0.1464,
+        0.2076
+      ],
+      [
+        "$52,000<96>$79,999",
+        0.129,
+        0.1783,
+        0.2179,
+        0.2349,
+        0.2458,
+        0.1951
+      ],
+      [
+        "$80,000+",
+        0.0636,
+        0.1074,
+        0.1221,
+        0.3228,
+        0.4607,
+        0.2085
+      ]
+    ],
+    "groups": [
+      ["$0<96>$20,999", "$21,000<96>$35,399", "$35,400<96>$51,999", "$52,000<96>$79,999", "$80,000+"]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["High school diploma or GED", "Some college, no degree", "Associate degree", "Bachelor's degree", "Advanced degree", "Total"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "2016 Integrated Public Use Microdata Series data and the 2012–16 American Community Survey, five-year sample.",
+    "notes": null
+  }
+}

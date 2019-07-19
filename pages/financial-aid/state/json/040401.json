@@ -1,0 +1,82 @@
+{
+  "title": "State Grant Aid per Full-time Equivalent Undergraduate, 2016-17",
+  "highlightIndex": 19,
+  "series": "2190",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "2190",
+        2030,
+        1690,
+        1410,
+        1320,
+        1310,
+        1290,
+        1270,
+        1180,
+        1140,
+        1110,
+        1110,
+        1110,
+        950,
+        940,
+        870,
+        870,
+        860,
+        820,
+        820,
+        750,
+        750,
+        650,
+        630,
+        580,
+        550,
+        550,
+        540,
+        540,
+        520,
+        480,
+        460,
+        450,
+        390,
+        380,
+        380,
+        300,
+        290,
+        280,
+        270,
+        270,
+        230,
+        150,
+        150,
+        130,
+        120,
+        80,
+        60,
+        60,
+        30,
+        0
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Georgia", "Tennessee", "New Jersey", "Kentucky", "Louisiana", "New Mexico", "Washington", "California", "West Virginia", "Virginia", "New York", "Indiana", "Arkansas", "Alaska", "Texas", "Minnesota", "Pennsylvania", "North Carolina", "United States", "Illinois", "Wyoming", "Vermont", "Oklahoma", "Delaware", "Nevada", "Florida", "Colorado", "Wisconsin", "Missouri", "North Dakota", "Oregon", "Maryland", "Iowa", "Alabama", "Maine", "Massachusetts", "Ohio", "Michigan", "Connecticut", "Mississippi", "Nebraska", "South Dakota", "Rhode Island", "Idaho", "Kansas", "Hawaii", "Arizona", "Utah", "Montana", "New Hampshire"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "2016–17 National Association of State Student Grant and Aid Programs Annual Survey, tables 1 and 12.",
+    "notes": null
+  }
+}

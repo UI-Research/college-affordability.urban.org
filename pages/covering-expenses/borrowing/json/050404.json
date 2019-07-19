@@ -1,0 +1,49 @@
+{
+  "wideSmallMultiple": true,
+  "title": "Dependent students' parental income",
+  "series": ["Average per borrower", "Average per student"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Average per borrower",
+        6869.08,
+        7605.19,
+        8467.72,
+        9259.09
+      ],
+      [
+        "Average per student",
+        3807.39,
+        4611.48,
+        4988.54,
+        4559.32
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Less than $27,900 (55%)", "$27,900‒$62,999 (60%)", "$63,000‒$113,499 (58%)", "$113,500 or more (49%)"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 3
+      },
+      "max": 10000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "2016 National Postsecondary Student Aid Study. ",
+    "notes": null
+  }
+}

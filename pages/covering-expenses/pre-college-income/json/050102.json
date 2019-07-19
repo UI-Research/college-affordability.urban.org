@@ -1,0 +1,42 @@
+{
+  "wideSmallMultiple": true,
+  "title": "Race and ethnicity",
+  "series": "Income",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Income",
+        85852,
+        50597,
+        53614,
+        92784
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["White", "Black", "Hispanic", "Asian"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 4
+      },
+      "max": 150000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "2016 Annual Social and Economic Supplement to the Current Population Survey, table FINC-01.",
+    "notes": null
+  }
+}

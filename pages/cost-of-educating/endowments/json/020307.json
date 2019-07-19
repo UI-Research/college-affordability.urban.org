@@ -1,0 +1,37 @@
+{
+  "title": "Average Endowment Income per Student by Institution Selectivity",
+  "subtitle": "Public four-year institutions by share of applicants admitted",
+  "series": "Average endowment draw per student",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Average endowment draw per student",
+        1743,
+        1597,
+        856,
+        577,
+        219
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["0‒25%", "25‒50%", "50‒75%", "75‒100%", "Open admissions"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Integrated Postsecondary Education Data System.",
+    "notes": null
+  }
+}

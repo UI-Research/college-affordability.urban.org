@@ -1,0 +1,44 @@
+{
+  "title": "Average Number of Years Enrolled and Average Number of Years Elapsed between First Enrollment and Degree Completion, 2014–15 College Graduates",
+  "series": ["Average years enrolled", "Average years elapsed"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Average years enrolled",
+        3.4,
+        5.2,
+        4.8,
+        5.8,
+        5.1
+      ],
+      [
+        "Average years elapsed",
+        5.6,
+        5.6,
+        5.4,
+        8.8,
+        5.7
+      ]
+    ],
+    "labels": {
+      "format": "number"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["Public two-year", "Public four-year", "Private nonprofit four-year", "Private for-profit four-year", "Total bachelor's"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "number"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Doug Shapiro, Afet Dundar, Phoebe Khasiala Wakhungu, Xin Yuan, Angel Nathan, and Youngsik Hwang, <em>Time to Degree: A National View of the Time Enrolled and Elapsed for Associate and Bachelor’s Degree Earners <\/em>(Herndon, VA: National Student Clearinghouse Research Center, 2016).",
+    "notes": null
+  }
+}

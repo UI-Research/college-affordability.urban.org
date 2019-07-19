@@ -1,0 +1,111 @@
+{
+  "title": "Average Need-Based and Non-need-based Institutional Grant Aid per Full-Time Dependent Student (and Share Receiving Institutional Aid), Private Nonprofit Four-Year Institutions, 2015–16",
+  "padding": {
+    "bottom": 20
+  },
+  "series": ["Need-based institutional grants", "Non-need-based institutional grants"],
+  "data": {
+    "type": "bar",
+    "sets": {
+      "set1": [
+        "Lowest tuition group",
+        [
+          [
+            "Need-based institutional grants",
+            3070,
+            2833.9,
+            2467.3,
+            2310.6
+          ],
+          [
+            "Non-need-based institutional grants",
+            2693.9,
+            3725.1,
+            6638.9,
+            6494
+          ]
+        ]
+      ],
+      "set2": [
+        "Second tuition group",
+        [
+          [
+            "Need-based institutional grants",
+            5432.9,
+            5233,
+            3854.8,
+            2379
+          ],
+          [
+            "Non-need-based institutional grants",
+            7418.9,
+            9287,
+            11287.7,
+            10442.5
+          ]
+        ]
+      ],
+      "set3": [
+        "Third tuition group",
+        [
+          [
+            "Need-based institutional grants",
+            12328,
+            7734.5,
+            8048.1,
+            4347.6
+          ],
+          [
+            "Non-need-based institutional grants",
+            8495,
+            11289.5,
+            10662.5,
+            10595.9
+          ]
+        ]
+      ],
+      "set4": [
+        "Highest tuition group",
+        [
+          [
+            "Need-based institutional grants",
+            28505.5,
+            25312.8,
+            17912,
+            6711.8
+          ],
+          [
+            "Non-need-based institutional grants",
+            4220.1,
+            6926,
+            6364.7,
+            4693.5
+          ]
+        ]
+      ]
+    },
+    "groups": [
+      ["Need-based institutional grants", "Non-need-based institutional grants"]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Lowest (56%)", "Second (71%)", "Third (80%)", "Fourth (83%)", "Lowest (95%)", "Second (98%)", "Third (97%)", "Fourth (92%)", "Lowest (92%)", "Second (97%)", "Third (94%)", "Fourth (89%)", "Second (93%)", "Third (81%)", "Fourth (62%)"],
+      "label": "Parental income quartile",
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Sandy Baum, Jennifer Ma, Matea Pender, and CJ Libassi, <em>Trends in Student Aid 2018 <\/em>(New York: College Board, 2018), based on data from the 2016 National Postsecondary Student Aid Study.",
+    "notes": "Tuition and fee groups are: Lowest—Less than $25,000; Second--$25,000 to $34,999; Third--$35,000 to $44,999; Highest--$45,000 or more."
+  }
+}

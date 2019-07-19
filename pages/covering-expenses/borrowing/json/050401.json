@@ -1,0 +1,40 @@
+{
+  "title": "Share of Undergraduates with Debt and Share Borrowing for the Current Year, 2015–16",
+  "series": ["With debt", "Borrowed in 2015‒16"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "With debt",
+        0.5648,
+        0.5287,
+        0.6015
+      ],
+      [
+        "Borrowed in 2015‒16",
+        0.3963,
+        0.4422,
+        0.3495
+      ]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["All undergraduates", "Dependent", "Independent"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "2016 National Postsecondary Student Aid Study. ",
+    "notes": "Includes both federal and nonfederal student borrowing and debt. Estimates of the share of undergraduates borrowing federal student loans in the National Postsecondary Student Aid Study are slightly higher than suggested by the number of borrowers in the US Department of Education’s Federal Student Aid Data Center."
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "overrideTickCount": true,
+  "title": "State and Local Support for Higher Education Relative to 2000–01",
+  "series": ["State support", "Local support"],
+  "data": {
+    "type": "line",
+    "columns": [
+      [
+        "State support",
+        0,
+        0.0442,
+        0.0591,
+        0.0291,
+        -0.0208,
+        -0.0082,
+        0.0214,
+        0.0746,
+        0.0938,
+        0.1002,
+        0.0748,
+        0.0361,
+        -0.0638,
+        -0.0686,
+        -0.0311,
+        0.0173,
+        0.0347,
+        0.1241
+      ],
+      [
+        "Local support",
+        0,
+        0.0329,
+        0.1271,
+        0.1785,
+        0.1946,
+        0.1566,
+        0.1637,
+        0.1911,
+        0.2554,
+        0.3251,
+        0.3602,
+        0.3312,
+        0.3011,
+        0.3459,
+        0.3386,
+        0.3679,
+        0.427,
+        0.4728
+      ]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017"],
+      "tick": {
+        "count": 18
+      },
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Sophia Laderman, <em>SHEF: FY 2017: State Higher Education Finance <\/em>(Boulder, CO: State Higher Education Executive Officers Association, 2018).",
+    "notes": "Years indicate fall semester (e.g., 2001 is the 2001–02 school year)."
+  }
+}

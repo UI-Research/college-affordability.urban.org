@@ -1,0 +1,42 @@
+{
+  "wideSmallMultiple": true,
+  "title": "Dependent students' parental income",
+  "series": "Average state grant aid per recipient",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Average state grant aid per recipient",
+        4030.41,
+        3731.65,
+        3127.15,
+        2899.49
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Less than $27,900", "$27,900‒$62,999", "$63,000‒$113,499", "$113,500 or more"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 6
+      },
+      "max": 5000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "2016 National Postsecondary Student Aid Study. ",
+    "notes": null
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "title": "Federal Education Tax Credits and Deductions, 1998–2016",
+  "series": ["Total credits", "Total deductions"],
+  "data": {
+    "type": "area",
+    "columns": [
+      [
+        "Total credits",
+        4.7,
+        6.3,
+        5.9,
+        6.6,
+        7.2,
+        7.1,
+        22.4,
+        18.5,
+        18,
+        16
+      ],
+      [
+        "Total deductions",
+        0,
+        0,
+        1.5,
+        2.1,
+        1.6,
+        1.6,
+        0.5,
+        0.5,
+        0.5,
+        0.6
+      ]
+    ],
+    "groups": [
+      ["Total credits", "Total deductions"]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["1998", "2000", "2002", "2004", "2006", "2008", "2010", "2012", "2014", "2016"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 6
+      },
+      "label": "Billions"
+    }
+  },
+  "metadata": {
+    "source": "Sandy Baum, Jennifer Ma, Matea Pender, and CJ Libassi, <em>Trends in Student Aid 2018 <\/em>(New York: College Board, 2018), table 26B.",
+    "notes": "Credits and deductions include the Hope scholarship tax credit/AOTC, lifetime learning credit (LLC), and the tuition and fees deduction."
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "title": "Income of $25,000",
+  "size": {
+    "height": "400"
+  },
+  "series": ["10-year fixed", "REPAYE (family size = 1)", "REPAYE (family size = 3)"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "10-year fixed",
+        265.78,
+        318.93,
+        531.55
+      ],
+      [
+        "REPAYE (family size = 1)",
+        56.5833,
+        56.5833,
+        56.5833
+      ],
+      [
+        "REPAYE (family size = 3)",
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["$10,000 ", "$30,000 ", "$50,000 "],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "\"Comparison of FY 2015 Official National Cohort Default Rates to Prior Two Official Cohort Default Rates,\" US Department of Education, last updated August 18, 2018, http://www2.ed.gov/offices/OSFAP/defaultmanagement/schooltyperates.pdf.",
+    "notes": null
+  }
+}

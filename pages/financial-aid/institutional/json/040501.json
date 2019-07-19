@@ -1,0 +1,36 @@
+{
+  "title": "Percentage of Full-Time First-Year Students Receiving Institutional Grant Aid, 2015–16",
+  "series": "Share receiving institutional grant aid",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Share receiving institutional grant aid",
+        0.4496,
+        0.8095,
+        0.1586,
+        0.2341
+      ]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Public four-year", "Private nonprofit four-year", "Publc two-year", "For-profit"],
+      "label": "Type of institution",
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "2016 National Postsecondary Student Aid Study. ",
+    "notes": null
+  }
+}

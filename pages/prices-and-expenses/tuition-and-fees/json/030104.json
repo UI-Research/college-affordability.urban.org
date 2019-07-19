@@ -1,0 +1,83 @@
+{
+  "title": "Tuition and Fees at Public Institutions, by State, 2018–19",
+  "subtitle": "Public Two-Year In-district",
+  "highlightIndex": 37,
+  "series": "Amount",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Amount",
+        8190,
+        7090,
+        6700,
+        6300,
+        5640,
+        5490,
+        5480,
+        5440,
+        5320,
+        5310,
+        5310,
+        5260,
+        5040,
+        4850,
+        4830,
+        4760,
+        4720,
+        4710,
+        4680,
+        4560,
+        4560,
+        4550,
+        4510,
+        4440,
+        4400,
+        4380,
+        4320,
+        4190,
+        4190,
+        4140,
+        3920,
+        3860,
+        3810,
+        3810,
+        3750,
+        3730,
+        3700,
+        3660,
+        3580,
+        3400,
+        3250,
+        3240,
+        3190,
+        3180,
+        3130,
+        2620,
+        2580,
+        2470,
+        1840,
+        1430
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Vermont", "New Hampshire", "South Dakota", "Massachusetts", "South Carolina", "New York", "Pennsylvania", "Minnesota", "Iowa", "Kentucky", "Oregon", "Virginia", "New Jersey", "Delaware", "North Dakota", "Alabama", "Ohio", "Indiana", "Maryland", "Rhode Island", "Tennessee", "Wisconsin", "Colorado", "Washington", "Connecticut", "Oklahoma", "West Virginia", "Idaho", "Louisiana", "Illinois", "Hawaii", "Michigan", "Georgia", "Utah", "Maine", "Montana", "Arkansas", "United States", "Missouri", "Nevada", "Florida", "Wyoming", "Mississippi", "Nebraska", "Kansas", "Texas", "Arizona", "North Carolina", "New Mexico", "California"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Jennifer Ma, Sandy Baum, Matea Pender, and CJ Libassi, <em>Trends in College Pricing 2018 <\/em>(New York: College Board, 2018), tables 5 and 6.",
+    "notes": null
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "wideSmallMultiple": true,
+  "title": "Institutional sector",
+  "series": "Average state grant aid per recipient",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Average state grant aid per recipient",
+        3984.44,
+        4073.76,
+        1872.34,
+        3058.42
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Public four-year", "Private nonprofit four-year", "Public two-year", "For-profit"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 6
+      },
+      "max": 5000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "2016 National Postsecondary Student Aid Study. ",
+    "notes": null
+  }
+}

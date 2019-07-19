@@ -1,0 +1,63 @@
+{
+  "title": "State Minimum Wages Higher Than the Federal Minimum Wage, January 1, 2019",
+  "highlightIndex": 0,
+  "series": "State minimum wage",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "State minimum wage",
+        7.25,
+        7.5,
+        8.25,
+        8.25,
+        8.46,
+        8.5,
+        8.55,
+        8.6,
+        8.75,
+        8.75,
+        8.85,
+        9,
+        9.1,
+        9.25,
+        9.45,
+        9.86,
+        9.89,
+        10.1,
+        10.1,
+        10.1,
+        10.5,
+        10.75,
+        10.78,
+        11,
+        11,
+        11,
+        11.1,
+        11.1,
+        12,
+        12,
+        13.25
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["United States", "New Mexico", "Illinois", "Nevada", "Florida", "Montana", "Ohio", "Missouri", "Delaware", "West Virginia", "New Jersey", "Nebraska", "South Dakota", "Arkansas", "Michigan", "Minnesota", "Alaska", "Connecticut", "Hawaii", "Maryland", "Rhode Island", "Oregon", "Vermont", "Arizona", "California", "Maine", "Colorado", "New York", "Massachusetts", "Washington", "District of Columbia"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "\"Minimum Wage Laws in the States, US Department of Labor, Wage and Hour Division, last updated March 29, 2019, https://www.dol.gov/whd/minwage/america.htm#Consolidated. ",
+    "notes": null
+  }
+}

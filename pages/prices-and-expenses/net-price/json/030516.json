@@ -1,0 +1,71 @@
+{
+  "wideSmallMultiple": true,
+  "title": "Independent",
+  "series": ["Tuition and fees covered by grant aid", "Remaining (net) tuition  and fees", "Living expenses covered by grant aid", "Remaining (net) living expenses"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Tuition and fees covered by grant aid",
+        6000,
+        6000,
+        7100,
+        7900,
+        10900,
+        9400
+      ],
+      [
+        "Remaining (net) tuition  and fees",
+        7800,
+        7700,
+        9000,
+        9900,
+        10500,
+        12400
+      ],
+      [
+        "Living expenses covered by grant aid",
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        "Remaining (net) living expenses",
+        11500,
+        12400,
+        12900,
+        14900,
+        15300,
+        14900
+      ]
+    ],
+    "groups": [
+      ["Tuition and fees covered by grant aid", "Remaining (net) tuition  and fees", "Living expenses covered by grant aid", "Remaining (net) living expenses"]
+    ]
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["'96", "'00", "'04", "'08", "'12", "'16"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 7
+      },
+      "max": 60000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "2016 National Postsecondary Student Aid Study. ",
+    "notes": null
+  }
+}

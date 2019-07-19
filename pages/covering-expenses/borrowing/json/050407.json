@@ -1,0 +1,37 @@
+{
+  "hideTooltip": true,
+  "title": "Share of All Undergraduates Borrowing Federal Loans, 2015-16",
+  "series": "Share of All Undergraduates Borrowing Federal Loans",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Share of All Undergraduates Borrowing Federal Loans",
+        0.1652,
+        0.5501,
+        0.61,
+        0.6622,
+        0.3963
+      ]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["Public two-year", "Public four-year", "Private nonprofit four-year", "For-profit", "Total"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "2016 National Postsecondary Student Aid Study. ",
+    "notes": null
+  }
+}

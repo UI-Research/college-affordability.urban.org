@@ -75,6 +75,10 @@ export class BaseGraph extends Component {
       // Acquire graph data.
       let data = this.props.file;
 
+      if (typeof(data.axis.x.categories) === "string") {
+        data.axis.x.categories = [data.axis.x.categories]
+        // console.log(cats)
+      }
 
       // Identify DOM element we want to apply the graph to.
       data.bindto = '#' + this.props.id;
@@ -462,7 +466,16 @@ export class BaseGraph extends Component {
     const toCSV = (dataObj) => {
       // let dataObj = jQuery.extend(true, {}, oldDataObj);
       let arr;
-      let cats = dataObj.axis.x.categories.slice(0)
+      // console.log(dataObj.axis.x.categories)
+      let cats = dataObj.axis.x.categories.slice(0)    
+      // console.log(cats)
+      
+      // Dan Wood addition: If its a string instead of an object, make category an object of length 1...otherwise, the first letter will be selected instead of the word/string. 
+      if (typeof(cats) === "string") {
+        cats = [cats]
+        // console.log(cats)
+      }
+
       if(dataObj.data.sets){
         arr = []
         let sets = dataObj.data.sets

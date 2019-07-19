@@ -1,0 +1,40 @@
+{
+  "wideSmallMultiple": true,
+  "title": "State residency",
+  "series": "Average state grant aid per recipient",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Average state grant aid per recipient",
+        3463.92,
+        3503.5596
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["In-state", "Out-of-sate"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 6
+      },
+      "max": 5000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "2016 National Postsecondary Student Aid Study. ",
+    "notes": null
+  }
+}

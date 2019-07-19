@@ -1,0 +1,48 @@
+{
+  "title": "Average Account Size of 529 College Savings Accounts",
+  "series": "Average account size",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Average account size",
+        13495.2824,
+        16310.1654,
+        17243.3555,
+        17527.9394,
+        17514.3699,
+        17914.6239,
+        12813.5403,
+        15388.8954,
+        17811.0445,
+        17138.8949,
+        18848.5978,
+        21175.6025,
+        21954.0622,
+        21509.9563,
+        22318.284,
+        24593.1388,
+        24146.5384
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "College Savings Plans Network, 529 Plan data, 2018 and earlier years.",
+    "notes": null
+  }
+}

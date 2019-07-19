@@ -1,0 +1,47 @@
+{
+  "title": "Distribution of Outstanding Education Debt by Income Quartile, 2016 ",
+  "series": ["Lowest quartile", "Second quartile", "Third quartile", "Highest quartile"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Lowest quartile",
+        0.12
+      ],
+      [
+        "Second quartile",
+        0.24
+      ],
+      [
+        "Third quartile",
+        0.29
+      ],
+      [
+        "Highest quartile",
+        0.34
+      ]
+    ],
+    "groups": [
+      ["Lowest quartile", "Second quartile", "Third quartile", "Highest quartile"]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": "Education debt",
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Urban Institute calculations from the 2016 Survey of Consumer Finances.",
+    "notes": null
+  }
+}

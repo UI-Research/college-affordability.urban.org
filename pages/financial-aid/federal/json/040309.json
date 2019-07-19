@@ -1,0 +1,90 @@
+{
+  "title": "Average Pell Grant and Veteran’s and Military Benefits per FTE Undergraduate Student ",
+  "series": ["Pell grant per FTE undergraduate", "Veterans' and military aid per FTE undergraduate"],
+  "data": {
+    "type": "line",
+    "columns": [
+      [
+        "Pell grant per FTE undergraduate",
+        1070,
+        1160,
+        1200,
+        1080,
+        1030,
+        990,
+        1000,
+        1060,
+        1180,
+        1120,
+        1170,
+        1360,
+        1500,
+        1560,
+        1530,
+        1410,
+        1350,
+        1470,
+        1660,
+        2570,
+        2930,
+        2680,
+        2570,
+        2510,
+        2430,
+        2300,
+        2180,
+        2270
+      ],
+      [
+        "Veterans' and military aid per FTE undergraduate",
+        140,
+        160,
+        170,
+        180,
+        180,
+        170,
+        160,
+        160,
+        170,
+        160,
+        180,
+        200,
+        230,
+        250,
+        260,
+        260,
+        260,
+        260,
+        280,
+        600,
+        730,
+        720,
+        830,
+        840,
+        840,
+        870,
+        830,
+        870
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["'90‒'91", "'91‒'92", "'92‒'93", "'93‒'94", "'94‒'95", "'95‒'96", "'96‒'97", "'97‒'98", "'98‒'99", "'99‒'00", "'00‒'01", "'01‒'02", "'02‒'03", "'03‒'04", "'04‒'05", "'05‒'06", "'06‒'07", "'07‒'08", "'08‒'09", "'09‒'10", "'10‒'11", "'11‒'12", "'12‒'13", "'13‒'14", "'14‒'15", "'15‒'16", "'16‒'17", "'17‒'18"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Sandy Baum, Jennifer Ma, Matea Pender, and CJ Libassi, <em>Trends in Student Aid 2018 <\/em>(New York: College Board, 2018), tables 1 and 3. ",
+    "notes": null
+  }
+}

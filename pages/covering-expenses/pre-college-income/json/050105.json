@@ -1,0 +1,42 @@
+{
+  "title": "Median Total Income of Families by Education Level, 2017",
+  "padding": {
+    "right": 20
+  },
+  "series": "Median income",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Median income",
+        37.4936,
+        56.063,
+        68.442,
+        76.075,
+        107.112,
+        131.893,
+        175.163,
+        156.409
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Less than high school", "High school or equivalent", "Some college, no degree", "Associate degree", "Bachelor's degree", "Master's degree", "Professional degree", "Doctorate degree"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "U.S. Census Bureau, Current Population Survey, 2017 Annual Social and Economic Supplement, Table FINC-01.",
+    "notes": null
+  }
+}

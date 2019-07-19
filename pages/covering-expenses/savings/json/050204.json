@@ -1,0 +1,84 @@
+{
+  "title": "Distribution of Net Worth by Family Income Groups, 2015",
+  "size": {
+    "height": "390"
+  },
+  "series": ["Zero or negative", "$1‒$9,999", "$10,000‒$49,999", "$50,000‒$99,999", "$100,000‒$249,999", "$250,000‒$499,999", "$500,000 or more"],
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Zero or negative",
+        0.291,
+        0.195,
+        0.135,
+        0.112,
+        0.053
+      ],
+      [
+        "$1‒$9,999",
+        0.281,
+        0.192,
+        0.103,
+        0.051,
+        0.02
+      ],
+      [
+        "$10,000‒$49,999",
+        0.146,
+        0.166,
+        0.176,
+        0.129,
+        0.06
+      ],
+      [
+        "$50,000‒$99,999",
+        0.073,
+        0.109,
+        0.124,
+        0.124,
+        0.063
+      ],
+      [
+        "$100,000‒$249,999",
+        0.104,
+        0.157,
+        0.195,
+        0.216,
+        0.153
+      ],
+      [
+        "$250,000‒$499,999",
+        0.059,
+        0.095,
+        0.135,
+        0.171,
+        0.196
+      ],
+      [
+        "$500,000 or more",
+        0.045,
+        0.086,
+        0.131,
+        0.197,
+        0.456
+      ]
+    ]
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["Lowest income quintile", "Second income quintile", "Third income quintile", "Fourth income quitile", "Highest income quintile"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "\"Wealth, Asset Ownership, and Debt of Households Detailed Tables: 2013,\" US Census Bureau, last updated September 17, 2018, https://www.census.gov/data/tables/2013/demo/wealth/wealth-asset-ownership.html. ",
+    "notes": null
+  }
+}

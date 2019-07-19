@@ -1,0 +1,39 @@
+{
+  "title": "Average Published On-Campus Room and Board Price by Type of Institution, 2018–19",
+  "series": "Price",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Price",
+        13800,
+        11490,
+        11370,
+        12210,
+        11220,
+        10020,
+        10160,
+        10800
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["Private nonprofit research", "Private nonprofit master's", "Private nonprofit bachelor's", "All private nonprofit four-year", "Public research", "Public master's", "Public bachelor's in-state", "All public four-year in-state"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Jennifer Ma, Sandy Baum, Matea Pender, and CJ Libassi, <em>Trends in College Pricing 2018 <\/em>(New York: College Board, 2018), table 1.",
+    "notes": null
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "metadata.pluralNotes": true,
+  "title": "State and Local Appropriations for Public Higher Education per Public Full-Time Equivalent Student, 2016–17",
+  "highlightIndex": 34,
+  "series": "State and local appropriations for higher education per public-sector FTE student",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "State and local appropriations for higher education per public-sector FTE student",
+        2958.9474,
+        3016.8246,
+        4394.1648,
+        4430.8774,
+        4744.4971,
+        4891.7872,
+        5148.1705,
+        5506.1253,
+        5591.5387,
+        5665.4876,
+        5668.9621,
+        5691.4506,
+        5746.6503,
+        5795.1802,
+        5818.2016,
+        5847.4121,
+        5891.819,
+        5953.0348,
+        5956.6586,
+        6082.7988,
+        6104.2245,
+        6326.7392,
+        6380.0314,
+        6454.7653,
+        6483.8715,
+        6513.8985,
+        6622.7723,
+        6757.2053,
+        6774.9255,
+        7046.3648,
+        7062.4545,
+        7225.2382,
+        7294.5909,
+        7355.8212,
+        7642.4116,
+        7733.4712,
+        8079.7754,
+        8254.462,
+        8684.2191,
+        8740.6284,
+        8778.046,
+        8932.2284,
+        8975.8735,
+        9274.3385,
+        9756.5844,
+        10157.4788,
+        10281.453,
+        10636.2092,
+        15367.0253,
+        15467.5735,
+        15820.8291,
+        16391.4118
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["New Hampshire", "Vermont", "Colorado", "Pennsylvania", "West Virginia", "Louisiana", "Arizona", "South Carolina", "Ohio", "Oklahoma", "Alabama", "Missouri", "Montana", "Virginia", "Iowa", "Kansas", "Mississippi", "Wisconsin", "Michigan", "South Dakota", "Rhode Island", "Delaware", "Utah", "Indiana", "Florida", "Oregon", "Kentucky", "Arkansas", "Minnesota", "Nevada", "New Jersey", "Tennessee", "Washington", "Texas", "United States", "Maine", "Georgia", "Idaho", "Maryland", "Massachusetts", "North Carolina", "New Mexico", "North Dakota", "Nebraska", "Washington, DC", "California", "Connecticut", "New York", "Hawaii", "Illinois", "Wyoming", "Alaska"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Sophia Laderman, <em>SHEF: FY 2017: State Higher Education Finance <\/em>(Boulder, CO: State Higher Education Executive Officers Association, 2018).",
+    "notes": "FTE = full-time equivalent. Public-sector FTE students include undergraduate and graduate students but exclude medical students. State and local appropriations for public higher education exclude state support for private institutions and funds used for special purposes, research, and medical schools."
+  }
+}

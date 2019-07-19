@@ -1,0 +1,36 @@
+{
+  "title": "Undergraduate Grant Aid by Source, Percentage Distribution and Total Dollars (in Billions), 2017–18",
+  "series": "Grant aid",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Grant aid",
+        48.687,
+        28.232,
+        12.321,
+        10.868,
+        10.836
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Institutional grants (44%)", "Federal Pell grants (25%)", "Private and employer grants (11%)", "State grants (10%)", "Veterans and military grants (10%)"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Sandy Baum, Jennifer Ma, Matea Pender, and CJ Libassi, <em>Trends in Student Aid 2018 <\/em>(New York: College Board, 2018).",
+    "notes": null
+  }
+}

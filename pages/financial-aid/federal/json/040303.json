@@ -1,0 +1,41 @@
+{
+  "hideTooltip": true,
+  "wideSmallMultiple": true,
+  "title": "Dependency status",
+  "series": "test",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "test",
+        4850,
+        4620
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["Inependent (64%)", "Dependent (40%)"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar",
+        "count": 4
+      },
+      "max": 8000,
+      "padding": {
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  },
+  "metadata": {
+    "source": "2016 National Postsecondary Student Aid Study. ",
+    "notes": "Includes all full-time students, both Pell grant recipients and nonrecipients."
+  }
+}

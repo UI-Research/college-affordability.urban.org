@@ -1,0 +1,40 @@
+{
+  "hideTooltip": true,
+  "title": "Average Published Tuition and Fees by Sector and Degree Type, 2018–19",
+  "series": "Amount",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Amount",
+        11120,
+        8850,
+        8600,
+        3660,
+        44020,
+        30450,
+        34920,
+        14000
+      ]
+    ],
+    "labels": {
+      "format": "dollar"
+    }
+  },
+  "axis": {
+    "rotated": false,
+    "x": {
+      "categories": ["Public research in-state", "Public master's in-state", "Public bachelor's in-state", "Public two-year in-district", "Private nonprofit research", "Private nonprofit master's", "Private nonprofit bachelor's", "For-profit"],
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "dollar"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Jennifer Ma, Sandy Baum, Matea Pender, and CJ Libassi, <em>Trends in College Pricing 2018 <\/em>(New York: College Board, 2018).",
+    "notes": "Prices reflect average tuition and fees for full-time undergraduates over a full academic year. Institutions are weighted by full-time undergraduate fall enrollment."
+  }
+}

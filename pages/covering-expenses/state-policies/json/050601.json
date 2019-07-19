@@ -1,0 +1,84 @@
+{
+  "title": "Expenditures on Grants as a Share of State Support for Public Higher Education, 2016–17",
+  "highlightIndex": 15,
+  "series": "Share of state fiscal support",
+  "data": {
+    "type": "bar",
+    "columns": [
+      [
+        "Share of state fiscal support",
+        0,
+        0.0049,
+        0.0053,
+        0.0145,
+        0.022,
+        0.0224,
+        0.0233,
+        0.0268,
+        0.0271,
+        0.0309,
+        0.0358,
+        0.0446,
+        0.049,
+        0.0502,
+        0.0506,
+        0.0506,
+        0.0527,
+        0.0572,
+        0.0577,
+        0.0607,
+        0.0614,
+        0.075,
+        0.0755,
+        0.0786,
+        0.08,
+        0.0859,
+        0.0873,
+        0.0885,
+        0.1073,
+        0.1135,
+        0.1207,
+        0.1234,
+        0.1257,
+        0.1265,
+        0.1271,
+        0.1281,
+        0.1468,
+        0.1503,
+        0.1686,
+        0.1741,
+        0.1819,
+        0.1894,
+        0.2009,
+        0.2106,
+        0.2126,
+        0.227,
+        0.2316,
+        0.2331,
+        0.2346,
+        0.2574,
+        0.3637
+      ]
+    ],
+    "labels": {
+      "format": "percent"
+    }
+  },
+  "axis": {
+    "rotated": true,
+    "x": {
+      "categories": ["New Hampshire", "Hawaii", "Montana", "Utah", "Idaho", "Kansas", "South Dakota", "Arizona", "Nebraska", "Connecticut", "Mississippi", "Wyoming", "North Dakota", "Rhode Island", "Maryland", "Alaska", "Alabama", "Ohio", "Michigan", "Massachusetts", "Maine", "Nevada", "Illinois", "North Carolina", "Iowa", "Wisconsin", "Florida", "Oregon", "Delaware", "Oklahoma", "Arkansas", "Texas", "New Mexico", "United States", "Minnesota", "Missouri", "California", "Colorado", "New York", "Indiana", "Washington", "Kentucky", "New Jersey", "Louisiana", "West Virginia", "Georgia", "Vermont", "Virginia", "Tennessee", "Pennsylvania", "South Carolina"],
+      "label": "Percent",
+      "type": "category"
+    },
+    "y": {
+      "tick": {
+        "format": "percent"
+      }
+    }
+  },
+  "metadata": {
+    "source": "Sandy Baum, Jennifer Ma, Matea Pender, and CJ Libassi, <em>Trends in Student Aid 2018 <\/em>(New York: College Board, 2018), figure 24B. ",
+    "notes": null
+  }
+}
