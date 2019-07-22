@@ -13,27 +13,27 @@ This is a static site generator.  Webpack handles the compilation and bundling o
 For each of the following steps, detailed instructions can be found by following the links. 
 
 1. Dev: [Set up](#set-up) your machine for generating the static site and transforming the data into the static site.
-2. Research: The research team will [gather and edit data](#editing-data) and place it in the  [data_scripts/data/](data_scripts/data/) folder, or short of that, giving it directly to the developer to add to that folder.
-3. Dev: [add/edit text](#editing-text) given by the Research team.
-4. Researcher: update all chart related text (sources, notes, titles, subtitles, etc.) in GraphText file found in [this folder](data_scripts/scripts).
-5. Dev: [edit charts](#editing-charts) using the updated GraphText file.
-6. Dev: [Run the R and Gulp scripts](#running-r-with-gulp-together) to see your changes locally
-7. Dev: Push changes and merge this working branch into the `develop` branch in order to view on [http://collegeaffordability-stg.s3-website-us-east-1.amazonaws.com](http://collegeaffordability-stg.s3-website-us-east-1.amazonaws.com/)
-8. Research/Copyedit: Copyediting and spot check text, data, charts
-9. Dev: Once everything is correct, developer will [update screenshots and check data downloads](#downloadable-screenshots-and-data).
-10. Dev: Push live by merging `develop` branch into the `live` branch.  
+1. Research: The research team will [gather and edit data](#editing-data) and place it in the  [data_scripts/data/](data_scripts/data/) folder, or short of that, giving it directly to the developer to add to that folder.
+1. Dev: [add/edit text](#editing-text) given by the Research team.
+1. Researcher: update all chart related text (sources, notes, titles, subtitles, etc.) in GraphText file found in [this folder](data_scripts/scripts).
+1. Dev: [edit charts](#editing-charts) using the updated GraphText file.
+1. Dev: [Run the R and Gulp scripts](#running-r-with-gulp-together) to see your changes locally
+1. Dev: Push changes and merge this working branch into the `develop` branch in order to view on [http://collegeaffordability-stg.s3-website-us-east-1.amazonaws.com](http://collegeaffordability-stg.s3-website-us-east-1.amazonaws.com/)
+1. Research/Copyedit: Copyediting and spot check text, data, charts
+1. Dev: Once everything is correct, developer will [update screenshots and check data downloads](#downloadable-screenshots-and-data).
+1. Dev: Push live by merging `develop` branch into the `live` branch.  
 
 ## Set up
 
 To be able to **generate and serve the college affordability site**
 1. Clone this repo
-2. Install Homebrew (http://brew.sh/)
-3. Install node with `brew install node` 
-4. Install n (see below*) and switch to v6 of node
-5. Install npm with `sudo npm install npm -g`
-6. Install all dependencies `npm install`
-7. Install imagemagick on your machine (Refer to https://github.com/scalableminds/gulp-gm/blob/master/README.md for information on installing it on your machine).
-8. Then follow [these directions](#how-do-i-get-started) to use gulp
+1. Install Homebrew (http://brew.sh/)
+1. Install node with `brew install node` 
+1. Install n (see below*) and switch to v6 of node
+1. Install npm with `sudo npm install npm -g`
+1. Install all dependencies `npm install`
+1. Install imagemagick on your machine (Refer to https://github.com/scalableminds/gulp-gm/blob/master/README.md for information on installing it on your machine).
+1. Then follow [these directions](#how-do-i-get-started) to use gulp
 
 **Tested with node v6. Codeship is configured for node v6. If you are experiencing deployment issues, check your node version. To control the version of node in use, you can use a node version control manager like [n](https://www.npmjs.com/package/n)*
 
@@ -41,11 +41,11 @@ To **set up the process to combine data and metadata into jsons for the above to
 
 
 1. Install or make sure you have: R, Python 3
-2. RStudio is helpful for interfacing with R...it can be downloaded here: https://www.rstudio.com/products/rstudio/download3/
-3. Install Rscript if you don't have it already. (ensure you have it by typing `which Rscript`. 
-4. In R, install the dependencies via this command: 
+1. RStudio is helpful for interfacing with R...it can be downloaded here: https://www.rstudio.com/products/rstudio/download3/
+1. Install Rscript if you don't have it already. (ensure you have it by typing `which Rscript`. 
+1. In R, install the dependencies via this command: 
 	- `install.packages(c("dplyr", "tidyr", "stringr", "Hmisc", "openxlsx", "readxl"))`
-5. Then follow [these directions](#running-r-scripts) to use the R scripts
+1. Then follow [these directions](#running-r-scripts) to use the R scripts
 
 ## How do I get started?
 
