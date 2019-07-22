@@ -1,6 +1,6 @@
 {
   "forceMediumHeight": true,
-  "title": "Average Expected Family Contribution, Total Grants, Total Loans, and Earnings and Other Resources Equal Tuition and Fees and Other Expenses",
+  "title": "Independent Students: Average Expected Family Contribution, Total Grants, Total Loans, and Earnings and Other Resources Equal Tuition and Fees and Other Expenses",
   "series": ["Expected contribution", "Federal grant aid", "Military and veterans' grants aid", "State grant aid", "Institutional grant aid", "Private and employer grant aid", "Federal student loans", "Federal parent loans", "Private loans", "Earnings and other resources", "Tuition and fees", "Budget beyond tuiton and fees"],
   "data": {
     "type": "bar",

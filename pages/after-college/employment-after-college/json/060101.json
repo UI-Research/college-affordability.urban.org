@@ -2,7 +2,7 @@
   "overrideTickCount": true,
   "title": "Labor Force Participation Rates among 25-to-34-Year-Olds by Educational Attainment, 1993–2017",
   "size": {
-    "height": 400
+    "height": "360"
   },
   "series": ["High school diploma or GED", "Some college, no degree", "Associate degree", "Bachelor's degree", "Advanced degree"],
   "data": {
