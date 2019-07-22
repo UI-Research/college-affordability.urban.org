@@ -1,9 +1,6 @@
 #!/bin/bash
-# stop the reload function
-pwd
-stop 8080
 
 # run the R script
-cd /Users/dwood/Box\ Sync/sites/ed-data
+cd data_scripts
 pwd
-Rscript updated_script/process_graphs.R 
+Rscript scripts/process_graphs.R 

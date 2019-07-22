@@ -4,16 +4,16 @@ pwd
 stop 8080
 
 # run the R script
-cd /Users/dwood/Box\ Sync/sites/ed-data
+cd data_scripts
 pwd
-Rscript updated_script/process_graphs.R 
+Rscript scripts/process_graphs.R 
 
 # run the gulp command
-cd /Users/dwood/Box\ Sync/sites/college-affordability.urban.org
+cd ..
 pwd
 gulp
 
 # run the reload function
-cd /Users/dwood/Box\ Sync/sites/college-affordability.urban.org/dist
+cd dist
 pwd
-reload
+http-server
