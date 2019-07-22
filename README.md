@@ -112,14 +112,14 @@ When a section of data are updated along with the corresponding GraphText rows (
 ```
 						  
 data_scripts/data/*.csv        data_scripts/scripts/GraphTextV2.xlsx
-				↘	     		  ↙
-  run   data_scripts/scripts/process_graphs.R 
-						 ↓
+	  ↘	     		  ↙
+    run   data_scripts/scripts/process_graphs.R 
+			↓
 		(charts) pages/*/json/*.json	   pages/*/*.jsx (text)
-							↘	     		  ↙
-								 run gulp						
-					       			↓
-								  dist/ (production folder)
+				↘	     		  ↙
+				      run gulp						
+					↓
+		    	    dist/ (production folder)
 ```
 
 Whenever you've made changes to either the data or the GraphText file, you have to rerun the R script for the chart to be up to date in the `pages/` folder. To have that change compiled in the browser, you must then run the gulp process to compile the `pages/` components, data, etc. into static html pages in the `dist/` folder.
